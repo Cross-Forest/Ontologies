@@ -1,0 +1,312 @@
+@prefix mfe: <http://crossforest.eu/mfe/ontology/> .
+@prefix fio: <http://crossforest.eu/forinv/ontology/> .
+@prefix smo: <http://crossforest.eu/measures/ontology/> .
+@prefix spo: <http://crossforest.eu/position/ontology/> .
+@prefix ifn: <http://crossforest.eu/ifn/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+@prefix te: <http://crossforest.eu/mfe/data/vegetationStructure/> .  # cambiado x ACO: tipoEstructural x vegetationStructure
+@prefix distribution: <http://crossforest.eu/mfe/data/spatialDistribution/> . # cambiado x ACO: Distribución x spatialDistribution
+@prefix fdm: <http://crossforest.eu/mfe/data/patchShape/> .  # cambiado x ACO: formaDeMasa x patchShape
+@prefix edd: <http://crossforest.eu/mfe/data/standDevelopment/> . # cambiado x ACO: estadoDeDesarrollo x standDevelopment
+@prefix tof: <http://crossforest.eu/mfe/data/typeOfForest/> .
+@prefix realm: <http://crossforest.eu/mfe/data/biogeographicRegion/> . # cambiado x ACO: biogeographicRealm x biogeographicRegion
+@prefix use: <http://crossforest.eu/mfe/data/use/> .
+
+
+mfe: a owl:Ontology ;
+  rdfs:label "Spanish MFE Ontology"@en , "Ontología del MFE de España"@es ; # yo pondría: "Spanish National Forest Map (MFE) Ontology"@en , "Ontología del Mapa Forestal Nacional de España (MFE)"@es
+  rdfs:comment "Ontology to publish data of the Spanish Forestry Map"@en , "Ontología para publicar datos del Mapa Forestal Nacional de España" ;
+  owl:versionInfo 0.1 ;
+  dc:creator <https://www.crossforest.eu/members/josgim> , <https://www.crossforest.eu/members/guiveg> ;
+  dc:date "2019-07-17"^^xsd:date ;
+  owl:imports fio: , spo: ;
+  vann:preferredNamespacePrefix "mfe" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+mfe:Patch a owl:Class , rdfs:Class ;
+  rdfs:subClassOf spo:SpatialEntity ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:Area a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:MeasurableEntityInSquareMeters ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:CanopyCover a owl:Class , rdfs:Class ;
+  rdfs:label "Canopy Cover"@es , "Fracción de Cabida Cubierta"@es ;
+  rdfs:comment "Canopy Cover of the Vegetation Structure"@en , "Representa la proporción total de la vegetación."@es ; 
+  rdfs:isDefinedBy mfe: .
+
+mfe:CanopyCoverTotal a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:CanopyCover ;
+  rdfs:label "Total Canopy Cover"@es , "Fracción de Cabida Cubierta Total"@es ;
+  rdfs:comment ""@en , "Representa la proporción total de la vegetación arbórea y de matorral. Proporciona información sobre la proyección sobre el suelo de los principales pisos de vegetación. En algún caso se incluirán fracciones de cabida cubierta de pastizales o cultivos. Para su cuantificación se tendrá en cuenta todas las especies en conjunto, con independencia de que se presenten por razones de edad o de otro tipo de alturas muy distintas."@es ; 
+  rdfs:isDefinedBy mfe: .
+
+mfe:CanopyCoverTrees a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:CanopyCover ;
+  rdfs:label "Canopy Cover of Trees"@es , "Fracción de Cabida Cubierta Arbórea"@es ;
+  rdfs:comment ""@en , "Representa la proporción del conjunto de las especies del estrato arbóreo como porcentaje de suelo cubierto por la proyección de todas las copas. No influye en su cálculo el hecho de tratarse de masas monoespecíficas o pluriespecíficas, o el de encontrarse en distinto estado de masa las distintas especies."@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:VegetationStructure a owl:Class , rdfs:Class ; # cambiado x ACO: tipoEstructural x VegetationStructure
+  rdfs:label "Tipo Estructural"@es ;
+  rdfs:comment "Indica los distintos usos del suelo que pueden aparecer y, dentro del uso forestal, las distintas estructuras de vegetación que lo pueden ocupar, atendiendo más que a la densidad vegetal a la estructura de la vegetación que ocupa." ; # modificado x ACO; eliminado cormótico, palabra inventada y que solo aparece en 6 documentos todos relacionados con el MFE
+  rdfs:isDefinedBy mfe: .
+
+mfe:SpatialDistribution a owl:Class , rdfs:Class ; # cambiado x ACO
+  rdfs:label "Distribución"@es ;
+  rdfs:comment "Indica las distintas formas en las que puede aparecer agrupada la vegetación arbórea. Está más referido a la distribución espacial visual de la mancha vegetal que a su composición específica o la relación entre especies."@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:PatchShape a owl:Class , rdfs:Class ; # cambiado x ACO: FormaDeMasa x PatchShape 
+  rdfs:label "Forma de la tesela"@es , "Shape of the patch"@en ;
+  rdfs:comment "Indica la forma geométrica que presenta la tesela"@es , "Diferenciates the geometric shape of the patch and vegetation asociated"@en ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:PatchInPatch a owl:Class , rdfs:Class ;
+  rdfs:label "Patch in the patch"@es ;
+  rdfs:comment "Patch contained in the patch"@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:SpeciesInPatch a owl:Class , rdfs:Class ;
+  rdfs:label "Species in the patch"@es ;
+  rdfs:comment "Species present in the patch"@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:UseInPatch a owl:Class , rdfs:Class ;
+  rdfs:label "Use in the patch"@es ;
+  rdfs:comment "Use present in the patch"@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:RateOfPatch a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:MeasureInPercentage ;
+  rdfs:label "Proporción de la tesela"@es ;
+  rdfs:comment "Indica la proporción de la tesela dentro de la agrupación."@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:OccupationOfSpecies a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:MeasureInPercentage ;
+  rdfs:label "Ocupación de especie"@es ;
+  rdfs:comment "Indica la ocupación para cada una de las especies descritas. Los valores que adopta informan del grado de presencia en porcentaje de las especies arbóreas existentes, siendo tanto mayor, cuanto mayor representatividad posee la especie en cuestión, en comparación con las otras especies arbóreas presentes en la tesela."@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:RateofUse a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:MeasureInPercentage ;
+  rdfs:label "Propoción del uso"@es ;
+  rdfs:comment "Indica la proporción para cada una de las usos dentro de la agrupación de teselas."@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:StandDevelopment a owl:Class , rdfs:Class ; # cambiado x ACO: estadoDeDesarrollo x standDevelopment
+  rdfs:label "Estado de Desarrollo"@es ;
+  rdfs:comment "Indica la fase de desarrollo en que se encuentran las poblaciones de especies arbóreas presentes en la tesela"@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:Classification a owl:Class , rdfs:Class ; 
+  rdfs:label "Clasificación MFE-IFN"@es ;
+  rdfs:comment "Pasarela entre el Tipo Estructural y la clasificación por niveles del IFN3"@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:TypeOfForest a owl:Class , rdfs:Class ;
+  rdfs:label "Tipo de Bosque"@es ;
+  rdfs:comment "Tipo de bosque (coníferas, frondosas o mixtas)"@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:BiogeographicRegion a owl:Class , rdfs:Class ;
+  rdfs:label "Biogeographic Region"@en , "Región biogeográfica"@es ;
+  rdfs:comment ""@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:Use a owl:Class , rdfs:Class ; # Debería in en una ontología de ordenación de territorio (land use planning)
+  rdfs:label "Soil use"@en , "Uso del suelo"@es ;
+  rdfs:comment ""@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:SetOfSpecies a owl:Class , rdfs:Class ;
+  rdfs:label "Set of Species"@en , "Agrupación de Especies"@es ;
+  rdfs:comment ""@es ;
+  rdfs:isDefinedBy mfe: .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+mfe:hasVegetationStructure a owl:ObjectProperty , rdf:Property ; # cambiar x ACO: TipoEstructural x VegetationStructure
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain mfe:Patch ;
+  rdfs:range mfe:VegetationStructure ;  
+  rdfs:isDefinedBy mfe: .
+
+mfe:hasSpatialDistribution a owl:ObjectProperty , rdf:Property ; # cambiado x ACO
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain mfe:Patch ;
+  rdfs:range mfe:SpatialDistribution ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:hasPatchShape a owl:ObjectProperty , rdf:Property ; # cambiado x ACO: FormaDeMasa x PatchShape
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain mfe:Patch ;
+  rdfs:range mfe:PatchShape ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:hasStandDevelopment a owl:ObjectProperty , rdf:Property ; # cambiado x ACO: estadoDeDesarrollo x standDevelopment
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain mfe:SpeciesInPatch ;
+  rdfs:range mfe:StandDevelopment ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:hasRateofPatch a owl:ObjectProperty , rdf:Property ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain mfe:PatchInPatch ;
+  rdfs:range mfe:RateOfPatch ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:hasOccupationOfSpecies a owl:ObjectProperty , rdf:Property ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain mfe:SpeciesInPatch ;
+  rdfs:range mfe:OccupationOfSpecies ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:hasRateOfUse a owl:ObjectProperty , rdf:Property ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain mfe:UseInPatch ;
+  rdfs:range mfe:RateOfUse ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:hasClassification a owl:ObjectProperty , rdf:Property ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain mfe:Patch ;
+  rdfs:range mfe:Classification ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:hasTypeofForest a owl:ObjectProperty , rdf:Property ;
+  rdfs:label ""@en , "Tipo de Bosque"@es ;
+  rdfs:comment ""@en , "Indica la tipología de bosque predominante"@es ;
+  rdfs:domain mfe:Patch ;
+  rdfs:range mfe:TypeOfForest ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:containsPatch a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "contains patch"@en , "contiene tesela"@es ;
+  rdfs:comment "the merged patch contains sub-patch"@en , "la tesela agregada contiene sub-tesela"@es ;
+  rdfs:domain mfe:Patch ;
+  rdfs:range mfe:PatchInPatch ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:containsSpecies a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "contains species"@en , "contiene especie"@es ;
+  rdfs:comment "the patch contains species"@en , "la tesela agregada contiene especie"@es ;
+  rdfs:domain mfe:Patch ;
+  rdfs:range mfe:SpeciesInPatch ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:containsUse a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "contains use"@en , "contiene use"@es ;
+  rdfs:comment "the patch contains use"@en , "la tesela contiene uso"@es ;
+  rdfs:domain mfe:Patch ;
+  rdfs:range mfe:UseInPatch ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:hasPatch a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasure ;
+  rdfs:label "has patch"@en , "tiene tesela"@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:range mfe:Patch ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:hasSpecies a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasure ;
+  rdfs:label "has species"@en , "tiene especie"@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:range ifn:Species ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:hasUse a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasure ;
+  rdfs:label "has use"@en , "tiene uso"@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:range mfe:Use ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:hasCanopyCoverTotal a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasure ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain mfe:Patch ;
+  rdfs:range mfe:CanopyCoverTotal ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:hasCanopyCoverTrees a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasure ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain mfe:Patch ;
+  rdfs:range mfe:CanopyCoverTrees ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:hasSetOfSpecies a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasure ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:range mfe:SetOfSpecies ;
+  rdfs:isDefinedBy mfe: .
+
+#################################################################
+#    Datatype Properties
+#################################################################
+
+mfe:hasPercentageOfSpecies a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureinPercentage ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain mfe:SpeciesInPatch ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:hasPercentageOfPatch a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureinPercentage ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain mfe:PatchInPatch ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:hasPercentageOfUse a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureinPercentage ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain mfe:UseInPatch ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:hasCanopyCoverTotalPercent a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureinPercentage ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain mfe:Patch ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:hasCanopyCoverTreesPercent a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureinPercentage ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain mfe:Patch ;
+  rdfs:isDefinedBy mfe: .

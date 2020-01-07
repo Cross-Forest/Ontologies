@@ -1,0 +1,32 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix mfe:   <http://crossforest.eu/mfe/ontology/> .
+
+mfe:ForestType-RI # modificado x ACO; FormacionArbolada x ForestType
+        a           owl:Class , rdfs:Class ;
+        rdfs:label  "Riberas"@es .
+
+mfe:ForestType-DI
+        a           owl:Class , rdfs:Class ;
+        rdfs:label  "Arbolado disperso"@es .
+
+mfe:ForestType-AA
+        a           owl:Class , rdfs:Class ;
+        rdfs:label  "Mezcla autóctonas y alóctonas"@es .
+
+mfe:ForestType-AU
+        a           owl:Class , rdfs:Class ;
+        rdfs:label  "Autóctonas"@es .
+
+mfe:ForestType-RE
+        a           owl:Class , rdfs:Class ;
+        rdfs:label  "Repoblaciones"@es .
+
+mfe:ForestType-DE
+        a           owl:Class , rdfs:Class ;
+        rdfs:label  "Dehesas"@es .
+
+mfe:ForestType-AL
+        a           owl:Class , rdfs:Class ;
+        rdfs:label  "Alóctonas"@es .

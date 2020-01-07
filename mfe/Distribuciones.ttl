@@ -1,0 +1,52 @@
+@prefix mfe: <http://crossforest.eu/mfe/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+mfe:SpatialDistribution1 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:SpatialDistribution ;
+  rdfs:label "Uniforme"@es , "Uniform"@en ;
+  rdfs:comment "Para teselas en las que el arbolado está distribuido de forma homogénea en toda su superficie"@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:SpatialDistribution3 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:SpatialDistribution ;
+  rdfs:label "Discontinua en bosquetes"@es ;
+  rdfs:comment "Para teselas en las que en la distribución visual del arbolado se aprecian manchas formadas por conjuntos de árboles más o menos separadas unas de otras, más o menos grandes y más o menos globosas en cuanto a la forma de cada mancha aislada. Estas manchas están separadas entre sí por zonas más ralas o desarboladas"@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:SpatialDistribution4 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:SpatialDistribution ;
+  rdfs:label "Discontinua en fajas"@es ;
+  rdfs:comment "Para teselas arboladas en las que en la distribución visual del arbolado se aprecian manchas formadas por conjuntos de árboles, más o menos separadas unas de otras, más o menos grandes y más o menos geométricas con tendencia a la forma rectangular en cuanto a la forma de cada mancha aislada. Estas manchas están separadas entre sí por zonas más ralas o desarboladas."@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:SpatialDistribution5 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:SpatialDistribution ;
+  rdfs:label "Discontinua en mosaico"@es ;
+  rdfs:comment "Para teselas arboladas en las que la distribución visual del paisaje vegetal está determinada por la yuxtaposición de piezas de dos o más tipos de agrupación que se reparten el terreno de forma irregular, pero repitiendo o integrando unas ciertas pautas de distribución. El mosaico es el resultado de la influencia de factores o combinaciones de factores que se distribuyen sobre la superficie del terreno con variaciones aleatorias y generalmente discontínuas de sus valores. No se especifica el tipo de mosaico (dendriforme, dinámico, intrazonal, de orientación, ...)"@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:SpatialDistribution6 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:SpatialDistribution ;
+  rdfs:label "Discontinua irregular"@es ;
+  rdfs:comment "Para teselas con arbolado agrupado en las que la distribución es irregular, sin seguir pauta alguna de las anteriormente mencionadas o conjugando varias de ellas de forma que no se pueda incluir la tesela en los grupos anteriores"@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:SpatialDistribution7 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:SpatialDistribution ;
+  rdfs:label "Piés aislados"@es ;
+  rdfs:comment "Para teselas con poca densidad arbórea y distribuida regular o irregularmente, pero sin formar agrupaciones de árboles que pudieran hacer pensar en manchas arbóreas dentro de la tesela"@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:SpatialDistribution8 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:SpatialDistribution ;
+  rdfs:label "Otras"@es ;
+  rdfs:comment "Para teselas arboladas que por cualquier circunstancia no pueden ser incluidas en los apartados anteriores"@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:SpatialDistribution9 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:SpatialDistribution ;
+  rdfs:label "Adehesada"@es ;
+  rdfs:comment "Distribución adehesada: teselas con superficie forestal ocupada por un estrato arbolado, con una fracción de cabida cubierta (superficie de suelo cubierta por la proyección de la copa de los árboles) comprendida entre el 5% y el 75%, compuesto principalmente por encinas, alcornoques, quejigos, rebollos, acebuches o fresnos, y ocasionalmente por otro arbolado, que permita el desarrollo de un estrato esencialmente herbáceo (pasto), para aprovechamiento del ganado o de las especies cinegéticas."@es ;
+  rdfs:isDefinedBy mfe: .

@@ -1,0 +1,1867 @@
+@prefix : <https://crossforest.eu/def/spatial-grid##> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://crossforest.eu/def/spatial-grid#> .
+
+<https://crossforest.eu/def/spatial-grid#> rdf:type owl:Ontology ;
+                                            owl:versionIRI <https://crossforest.eu/def/spatial-grid/1.0> ;
+                                            <http://purl.org/dc/elements/1.1/creator> "Tragsatec"@es ;
+                                            <http://purl.org/dc/elements/1.1/description> "This ontology specifies a geographical grid system available for the provision of spatial information  for multipurposes uses."@en ;
+                                            <http://purl.org/dc/terms/title> "Spatial grid ontology"@en ;
+                                            rdfs:isDefinedBy <https://crossforest.eu/def/spatial-grid> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://aims.fao.org/aos/geopolitical.owl#sourceCreator
+<http://aims.fao.org/aos/geopolitical.owl#sourceCreator> rdf:type owl:AnnotationProperty .
+
+
+###  http://aims.fao.org/aos/geopolitical.owl#sourceIdentifier
+<http://aims.fao.org/aos/geopolitical.owl#sourceIdentifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://aims.fao.org/aos/geopolitical.owl#sourceModified
+<http://aims.fao.org/aos/geopolitical.owl#sourceModified> rdf:type owl:AnnotationProperty .
+
+
+###  http://ainf.aau.at/ontodebug#axiom
+<http://ainf.aau.at/ontodebug#axiom> rdf:type owl:AnnotationProperty ;
+                                     rdfs:subPropertyOf <http://ainf.aau.at/ontodebug#testCase> .
+
+
+###  http://ainf.aau.at/ontodebug#testCase
+<http://ainf.aau.at/ontodebug#testCase> rdf:type owl:AnnotationProperty .
+
+
+###  http://ainf.aau.at/ontodebug#type
+<http://ainf.aau.at/ontodebug#type> rdf:type owl:AnnotationProperty ;
+                                    rdfs:subPropertyOf <http://ainf.aau.at/ontodebug#testCase> .
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://qudt.org/schema/qudt/description
+<http://qudt.org/schema/qudt/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://qudt.org/schema/qudt/id
+<http://qudt.org/schema/qudt/id> rdf:type owl:AnnotationProperty .
+
+
+###  http://qudt.org/schema/qudt/ucumCaseInsensitiveCode
+<http://qudt.org/schema/qudt/ucumCaseInsensitiveCode> rdf:type owl:AnnotationProperty .
+
+
+###  http://qudt.org/schema/qudt/ucumCaseSensitiveCode
+<http://qudt.org/schema/qudt/ucumCaseSensitiveCode> rdf:type owl:AnnotationProperty .
+
+
+###  http://qudt.org/schema/qudt/ucumCode
+<http://qudt.org/schema/qudt/ucumCode> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.linkedmodel.org/schema/vaem#comment
+<http://www.linkedmodel.org/schema/vaem#comment> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#cardinality
+owl:cardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#maxCardinality
+owl:maxCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#maxQualifiedCardinality
+owl:maxQualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#wasInfluencedBy
+<http://www.w3.org/ns/prov#wasInfluencedBy> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#wasQuotedFrom
+<http://www.w3.org/ns/prov#wasQuotedFrom> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/2002/07/owl#sameAs
+<https://www.w3.org/2002/07/owl#sameAs> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://qudt.org/schema/qudt/UCUMci-term
+<http://qudt.org/schema/qudt/UCUMci-term> rdf:type rdfs:Datatype .
+
+
+###  http://qudt.org/schema/qudt/UCUMcs-term
+<http://qudt.org/schema/qudt/UCUMcs-term> rdf:type rdfs:Datatype .
+
+
+###  http://www.opengis.net/ont/geosparql#gmlLiteral
+<http://www.opengis.net/ont/geosparql#gmlLiteral> rdf:type rdfs:Datatype .
+
+
+###  http://www.opengis.net/ont/geosparql#wktLiteral
+<http://www.opengis.net/ont/geosparql#wktLiteral> rdf:type rdfs:Datatype ;
+                                                  rdfs:label "Well-known Text Literal"@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Well-known Text Literal"@en .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML
+rdf:HTML rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/dc/terms/type
+<http://purl.org/dc/terms/type> rdf:type owl:ObjectProperty .
+
+
+###  http://qudt.org/schema/qudt#quantity
+<http://qudt.org/schema/qudt#quantity> rdf:type owl:ObjectProperty ;
+                                       <http://purl.org/dc/elements/1.1/description> "a property to relate an observable thing with a quantity (qud:Quantity)"^^xsd:string ;
+                                       rdfs:label "quantity"^^xsd:string .
+
+
+###  http://qudt.org/schema/qudt/hasQuantity
+<http://qudt.org/schema/qudt/hasQuantity> rdf:type owl:ObjectProperty ;
+                                          owl:equivalentProperty <https://crossforest.eu/def/spatial-grid#hasMeasure> ;
+                                          rdfs:range <http://qudt.org/schema/qudt/Quantity> ;
+                                          rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ,
+                                                           <http://qudt.org/schema/qudt> ;
+                                          rdfs:label "has quantity"^^xsd:string .
+
+
+###  http://qudt.org/schema/qudt/quantityValue
+<http://qudt.org/schema/qudt/quantityValue> rdf:type owl:ObjectProperty ;
+                                            rdfs:range <http://qudt.org/schema/qudt/QuantityValue> .
+
+
+###  http://qudt.org/schema/qudt/unit
+<http://qudt.org/schema/qudt/unit> rdf:type owl:ObjectProperty ;
+                                   rdfs:range <http://qudt.org/schema/qudt/Unit> ;
+                                   <http://qudt.org/schema/qudt/description> "A reference to the unit of measure of a quantity (variable or constant) of interest."^^rdf:HTML ;
+                                   rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ,
+                                                    <http://qudt.org/schema/qudt> ;
+                                   rdfs:label "unit"^^xsd:string .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                                                                                   <http://purl.org/dc/terms/issued> "2014-03-28"^^xsd:string ;
+                                                                                   rdfs:comment "Autonomía (Comunidad Autónoma o Ciudad Autónoma) a la que pertenece un fenómeno geográfico o una entidad administrativa"@es ;
+                                                                                   rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                   rdfs:label "pertenece a la autonomía"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#capital
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#capital> rdf:type owl:ObjectProperty ;
+                                                                                 owl:inverseOf <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#esCapitalDe> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#esCapitalDe
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#esCapitalDe> rdf:type owl:ObjectProperty ;
+                                                                                     rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                                                                                     <http://purl.org/dc/terms/issued> "2018-01-08"^^xsd:dateTime ;
+                                                                                     rdfs:comment "Especifica una unidad territorial de la que esta unidad territorial es capital"@es ;
+                                                                                     rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                     rdfs:label "es capital de"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#isla
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#isla> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                                                                              <http://purl.org/dc/terms/issued> "2014-05-03"^^xsd:dateTime ;
+                                                                              rdfs:comment "Isla a la que pertenece un fenómeno geográfico o una entidad administrativa"@es ;
+                                                                              rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                              rdfs:label "isla"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                                                                                   rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> ;
+                                                                                   <http://purl.org/dc/terms/issued> "2014-03-28"^^xsd:string ;
+                                                                                   rdfs:comment "Municipio al que pertenece un fenómeno geográfico o una entidad administrativa"@es ;
+                                                                                   rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                   rdfs:label "pertenece al municipio"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#pais
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#pais> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                                                                              rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Pais> ;
+                                                                              <http://purl.org/dc/terms/issued> "2014-03-28"^^xsd:string ;
+                                                                              rdfs:comment "País al que pertenece un fenómeno geográfico o una entidad administrativa"@es ;
+                                                                              rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                              rdfs:label "pertenece al país"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#provincia
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#provincia> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                                                                                   rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> ;
+                                                                                   <http://purl.org/dc/terms/issued> "2014-04-15"^^xsd:string ;
+                                                                                   rdfs:comment "Provincia a la que pertenece un fenómeno geográfico o una entidad administrativa"@es ;
+                                                                                   rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                   rdfs:label "pertenece a provincia"@es .
+
+
+###  http://www.opengis.net/ont/geosparql#defaultGeometry
+<http://www.opengis.net/ont/geosparql#defaultGeometry> rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#hasGeometry> ;
+                                                       rdfs:domain <http://www.opengis.net/ont/geosparql#Feature> ;
+                                                       rdfs:range <http://www.opengis.net/ont/geosparql#Geometry> .
+
+
+###  http://www.opengis.net/ont/geosparql#hasGeometry
+<http://www.opengis.net/ont/geosparql#hasGeometry> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <http://www.opengis.net/ont/geosparql#Feature> ;
+                                                   rdfs:range <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                   <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group"^^xsd:string ;
+                                                   <http://purl.org/dc/elements/1.1/description> "A spatial representation for a given feature."@en ;
+                                                   rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                    <http://www.opengis.net/spec/geosparql/1.0> .
+
+
+###  http://www.opengis.net/ont/geosparql#sfContains
+<http://www.opengis.net/ont/geosparql#sfContains> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                  rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                  <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group"@en ;
+                                                  <http://purl.org/dc/elements/1.1/description> "Existe si el sujeto SpatialObject contiene espacialmente el objeto SpatialObject."@es ,
+                                                                                                """Exists if the subject SpatialObject spatially contains the 
+      object SpatialObject. DE-9IM: T*****FF*"""@en ;
+                                                  rdfs:label "contains"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#sfWithin
+<http://www.opengis.net/ont/geosparql#sfWithin> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group"@en ;
+                                                <http://purl.org/dc/elements/1.1/description> "Existe si el sujeto SpatialObject está espacialmente dentro del objeto SpatialObject."@es ,
+                                                                                              """Exists if the subject SpatialObject is spatially within the 
+      object SpatialObject. DE-9IM: T*F**F***"""@en ;
+                                                rdfs:label "within"@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#hasTopConcept
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> rdf:type owl:ObjectProperty ;
+                                                    owl:inverseOf <http://www.w3.org/2004/02/skos/core#topConceptOf> ;
+                                                    rdfs:domain <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                                    rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                    <http://purl.org/dc/elements/1.1/description> "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty ;
+                                               rdfs:range <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  http://www.w3.org/2004/02/skos/core#topConceptOf
+<http://www.w3.org/2004/02/skos/core#topConceptOf> rdf:type owl:ObjectProperty ;
+                                                   rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#inScheme> .
+
+
+###  https://crossforest.eu/def/spatial-grid#belongsToCell
+<https://crossforest.eu/def/spatial-grid#belongsToCell> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                                                        rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                        rdfs:range <https://crossforest.eu/def/spatial-grid#cell> .
+
+
+###  https://crossforest.eu/def/spatial-grid#belongsToGrid
+<https://crossforest.eu/def/spatial-grid#belongsToGrid> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                                                        owl:inverseOf <https://crossforest.eu/def/spatial-grid#gridOf> ;
+                                                        rdfs:domain <https://crossforest.eu/def/spatial-grid#cell> ;
+                                                        rdfs:range <https://crossforest.eu/def/spatial-grid#grid> .
+
+
+###  https://crossforest.eu/def/spatial-grid#centroidOf
+<https://crossforest.eu/def/spatial-grid#centroidOf> rdf:type owl:ObjectProperty ;
+                                                     rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                                                     owl:inverseOf <https://crossforest.eu/def/spatial-grid#hasCentroid> ;
+                                                     rdfs:domain <https://crossforest.eu/def/spatial-grid#centroid> ;
+                                                     rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> .
+
+
+###  https://crossforest.eu/def/spatial-grid#gridOf
+<https://crossforest.eu/def/spatial-grid#gridOf> rdf:type owl:ObjectProperty ;
+                                                 rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfContains> ;
+                                                 rdfs:domain <https://crossforest.eu/def/spatial-grid#grid> ;
+                                                 rdfs:range <https://crossforest.eu/def/spatial-grid#cell> .
+
+
+###  https://crossforest.eu/def/spatial-grid#hasCell
+<https://crossforest.eu/def/spatial-grid#hasCell> rdf:type owl:ObjectProperty ;
+                                                  rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfContains> ;
+                                                  rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                  rdfs:range <https://crossforest.eu/def/spatial-grid#cell> .
+
+
+###  https://crossforest.eu/def/spatial-grid#hasCentroid
+<https://crossforest.eu/def/spatial-grid#hasCentroid> rdf:type owl:ObjectProperty ;
+                                                      rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfContains> ;
+                                                      rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                      rdfs:range <https://crossforest.eu/def/spatial-grid#centroid> .
+
+
+###  https://crossforest.eu/def/spatial-grid#hasMeasure
+<https://crossforest.eu/def/spatial-grid#hasMeasure> rdf:type owl:ObjectProperty ;
+                                                     rdfs:range <http://qudt.org/schema/qudt/Quantity> ;
+                                                     <http://qudt.org/schema/qudt/description> "a property to relate an observable thing with a quantity (qud:Quantity)"^^xsd:string .
+
+
+###  https://crossforest.eu/def/spatial-grid#spatialReferenceSystem
+<https://crossforest.eu/def/spatial-grid#spatialReferenceSystem> rdf:type owl:ObjectProperty ,
+                                                                          owl:FunctionalProperty ;
+                                                                 rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                                 rdfs:label "Spatial Reference System"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:DatatypeProperty .
+
+
+###  http://qudt.org/schema/qudt/abbreviation
+<http://qudt.org/schema/qudt/abbreviation> rdf:type owl:DatatypeProperty .
+
+
+###  http://qudt.org/schema/qudt/baseCGSUnitDimensions
+<http://qudt.org/schema/qudt/baseCGSUnitDimensions> rdf:type owl:DatatypeProperty .
+
+
+###  http://qudt.org/schema/qudt/baseISOUnitDimensions
+<http://qudt.org/schema/qudt/baseISOUnitDimensions> rdf:type owl:DatatypeProperty .
+
+
+###  http://qudt.org/schema/qudt/baseImperialUnitDimensions
+<http://qudt.org/schema/qudt/baseImperialUnitDimensions> rdf:type owl:DatatypeProperty .
+
+
+###  http://qudt.org/schema/qudt/baseSIUnitDimensions
+<http://qudt.org/schema/qudt/baseSIUnitDimensions> rdf:type owl:DatatypeProperty .
+
+
+###  http://qudt.org/schema/qudt/baseUSCustomaryUnitDimensions
+<http://qudt.org/schema/qudt/baseUSCustomaryUnitDimensions> rdf:type owl:DatatypeProperty .
+
+
+###  http://qudt.org/schema/qudt/baseUnitDimensions
+<http://qudt.org/schema/qudt/baseUnitDimensions> rdf:type owl:DatatypeProperty .
+
+
+###  http://qudt.org/schema/qudt/code
+<http://qudt.org/schema/qudt/code> rdf:type owl:DatatypeProperty .
+
+
+###  http://qudt.org/schema/qudt/conversionCoefficient
+<http://qudt.org/schema/qudt/conversionCoefficient> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:range xsd:double ;
+                                                    rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ,
+                                                                     <http://qudt.org/schema/qudt> ;
+                                                    rdfs:label "conversion coefficient"^^xsd:string .
+
+
+###  http://qudt.org/schema/qudt/conversionMultiplier
+<http://qudt.org/schema/qudt/conversionMultiplier> rdf:type owl:DatatypeProperty ,
+                                                            owl:FunctionalProperty .
+
+
+###  http://qudt.org/schema/qudt/conversionOffset
+<http://qudt.org/schema/qudt/conversionOffset> rdf:type owl:DatatypeProperty ,
+                                                        owl:FunctionalProperty .
+
+
+###  http://qudt.org/schema/qudt/height
+<http://qudt.org/schema/qudt/height> rdf:type owl:DatatypeProperty ;
+                                     rdfs:range xsd:string ;
+                                     rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ,
+                                                      <http://qudt.org/schema/qudt> ;
+                                     rdfs:label "height"^^xsd:string .
+
+
+###  http://qudt.org/schema/qudt/latexSymbol
+<http://qudt.org/schema/qudt/latexSymbol> rdf:type owl:DatatypeProperty ;
+                                          rdfs:subPropertyOf <http://qudt.org/schema/qudt/literal> ;
+                                          rdfs:range xsd:string ;
+                                          <http://qudt.org/schema/qudt/description> "The symbol is a glyph that is used to represent some concept, typically a unit or a quantity, in a compact form. For example, the symbol for an Ohm is $\\ohm$. This contrasts with 'unit:abbreviation', which gives a short alphanumeric abbreviation for the unit, 'ohm' for Ohm."^^rdf:HTML ;
+                                          rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ,
+                                                           <http://qudt.org/schema/qudt> ;
+                                          rdfs:label "latex symbol"^^xsd:string .
+
+
+###  http://qudt.org/schema/qudt/literal
+<http://qudt.org/schema/qudt/literal> rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf <http://www.linkedmodel.org/schema/dtype#literal> ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ,
+                                                       <http://qudt.org/schema/qudt> ;
+                                      rdfs:label "literal"^^xsd:string .
+
+
+###  http://qudt.org/schema/qudt/longDescription
+<http://qudt.org/schema/qudt/longDescription> rdf:type owl:DatatypeProperty .
+
+
+###  http://qudt.org/schema/qudt/mathMLdefinition
+<http://qudt.org/schema/qudt/mathMLdefinition> rdf:type owl:DatatypeProperty .
+
+
+###  http://qudt.org/schema/qudt/numericValue
+<http://qudt.org/schema/qudt/numericValue> rdf:type owl:DatatypeProperty .
+
+
+###  http://qudt.org/schema/qudt/relativeStandardUncertainty
+<http://qudt.org/schema/qudt/relativeStandardUncertainty> rdf:type owl:DatatypeProperty .
+
+
+###  http://qudt.org/schema/qudt/siUnitsExpression
+<http://qudt.org/schema/qudt/siUnitsExpression> rdf:type owl:DatatypeProperty .
+
+
+###  http://qudt.org/schema/qudt/standardUncertainty
+<http://qudt.org/schema/qudt/standardUncertainty> rdf:type owl:DatatypeProperty .
+
+
+###  http://qudt.org/schema/qudt/symbol
+<http://qudt.org/schema/qudt/symbol> rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf <http://qudt.org/schema/qudt/literal> .
+
+
+###  http://qudt.org/schema/qudt/symbolToken
+<http://qudt.org/schema/qudt/symbolToken> rdf:type owl:DatatypeProperty ;
+                                          rdfs:subPropertyOf <http://qudt.org/schema/qudt/literal> ;
+                                          rdfs:range xsd:token ;
+                                          <http://qudt.org/schema/qudt/description> "A token represents tokenized strings. The value space of token is the set of strings that do not contain the carriage return (#xD), line feed (#xA) nor tab (#x9) characters, that have no leading or trailing spaces (#x20) and that have no internal sequences of two or more spaces. The lexical space· of token is the set of strings that do not contain the carriage return (#xD), line feed (#xA) nor tab (#x9) characters, that have no leading or trailing spaces (#x20) and that have no internal sequences of two or more spaces. The base type of token is normalizedString."^^rdf:HTML ;
+                                          rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ,
+                                                           <http://qudt.org/schema/qudt> ;
+                                          rdfs:label "symbol token"^^xsd:string ;
+                                          <http://www.w3.org/ns/prov#wasQuotedFrom> <http://www.w3.org/TR/xmlschema-2/#token> .
+
+
+###  http://qudt.org/schema/qudt/uneceCommonCode
+<http://qudt.org/schema/qudt/uneceCommonCode> rdf:type owl:DatatypeProperty .
+
+
+###  http://qudt.org/schema/qudt/url
+<http://qudt.org/schema/qudt/url> rdf:type owl:DatatypeProperty .
+
+
+###  http://qudt.org/schema/qudt/width
+<http://qudt.org/schema/qudt/width> rdf:type owl:DatatypeProperty ;
+                                    rdfs:range xsd:string ;
+                                    rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ,
+                                                     <http://qudt.org/schema/qudt> ;
+                                    rdfs:label "width"^^xsd:string .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.geonames.org/ontology#countryCode
+<http://www.geonames.org/ontology#countryCode> rdf:type owl:DatatypeProperty ;
+                                               rdfs:range xsd:string ;
+                                               rdfs:comment "Un código de país de dos letras, de la lista ISO 3166"@es ;
+                                               rdfs:isDefinedBy <http://www.geonames.org/ontology> ;
+                                               rdfs:label "código de país ISO"@es .
+
+
+###  http://www.linkedmodel.org/schema/dtype#literal
+<http://www.linkedmodel.org/schema/dtype#literal> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:range xsd:string ;
+                                                  <http://www.linkedmodel.org/schema/vaem#comment> "A general purpose property for holding string literals."^^xsd:string ;
+                                                  rdfs:isDefinedBy <http://www.linkedmodel.org/1.1/schema/dtype> ,
+                                                                   <http://www.linkedmodel.org/schema/dtype> ;
+                                                  rdfs:label "literal"^^xsd:string .
+
+
+###  http://www.linkedmodel.org/schema/vaem#title
+<http://www.linkedmodel.org/schema/vaem#title> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.opengis.net/ont/geosparql#asGML
+<http://www.opengis.net/ont/geosparql#asGML> rdf:type owl:DatatypeProperty ;
+                                             rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#hasSerialization> ;
+                                             rdfs:domain <http://www.opengis.net/ont/sf#Geometry> ;
+                                             rdfs:range <http://www.opengis.net/ont/geosparql#gmlLiteral> ;
+                                             <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry"^^xsd:string ;
+                                             <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group"^^xsd:string ;
+                                             <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                             <http://purl.org/dc/elements/1.1/description> "The GML serialization of a geometry"@en ;
+                                             rdfs:comment "The GML serialization of a geometry"@en ;
+                                             rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                              <http://www.opengis.net/spec/geosparql/1.0> ;
+                                             rdfs:label "asGML"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "The GML serialization of a geometry"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "asGML"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#asWKT
+<http://www.opengis.net/ont/geosparql#asWKT> rdf:type owl:DatatypeProperty ;
+                                             rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#hasSerialization> ;
+                                             rdfs:domain <http://www.opengis.net/ont/sf#Geometry> ;
+                                             rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                                             <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry"^^xsd:string ;
+                                             <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group"^^xsd:string ;
+                                             <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                             <http://purl.org/dc/elements/1.1/description> "The WKT serialization of a geometry"@en ;
+                                             rdfs:comment "The WKT serialization of a geometry"@en ;
+                                             rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                              <http://www.opengis.net/spec/geosparql/1.0> ;
+                                             rdfs:label "asWKT"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "The WKT serialization of a geometry"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "asWKT"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#hasSerialization
+<http://www.opengis.net/ont/geosparql#hasSerialization> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <http://www.opengis.net/ont/sf#Geometry> ;
+                                                        rdfs:range rdfs:Literal ;
+                                                        <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry"^^xsd:string ;
+                                                        <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group"^^xsd:string ;
+                                                        <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                        <http://purl.org/dc/elements/1.1/description> "Connects a geometry object with its text-based serialization."@en ;
+                                                        rdfs:comment "Connects a geometry object with its text-based serialization."@en ;
+                                                        rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                         <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                        rdfs:label "has serialization"@en ;
+                                                        <http://www.w3.org/2004/02/skos/core#definition> "Connects a geometry object with its text-based serialization."@en ;
+                                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "has serialization"@en .
+
+
+###  https://crossforest.eu/def/spatial-grid#cod
+<https://crossforest.eu/def/spatial-grid#cod> rdf:type owl:DatatypeProperty ;
+                                              rdfs:range xsd:string .
+
+
+###  https://crossforest.eu/def/spatial-grid#column
+<https://crossforest.eu/def/spatial-grid#column> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <https://crossforest.eu/def/spatial-grid#cell> ;
+                                                 rdfs:range xsd:integer ;
+                                                 <http://purl.org/dc/elements/1.1/description> "The number that identifies the column the cell belongs to in the grid. It will allow to obtain the adjacent cells in the horizontal axis."@en .
+
+
+###  https://crossforest.eu/def/spatial-grid#row
+<https://crossforest.eu/def/spatial-grid#row> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <https://crossforest.eu/def/spatial-grid#cell> ;
+                                              rdfs:range xsd:integer ;
+                                              <http://purl.org/dc/elements/1.1/description> "The number that identifies the row the cell belongs to in the grid. It will allow to obtain the adjacent cells in the vertical axis."@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/dc/terms/Standard
+<http://purl.org/dc/terms/Standard> rdf:type owl:Class .
+
+
+###  http://qudt.org/schema/qudt/AreaUnit
+<http://qudt.org/schema/qudt/AreaUnit> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://qudt.org/schema/qudt/Unit> .
+
+
+###  http://qudt.org/schema/qudt/BaseUnit
+<http://qudt.org/schema/qudt/BaseUnit> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://qudt.org/schema/qudt/Unit> ;
+                                       owl:disjointWith <http://qudt.org/schema/qudt/DerivedUnit> .
+
+
+###  http://qudt.org/schema/qudt/Concept
+<http://qudt.org/schema/qudt/Concept> rdf:type owl:Class ;
+                                      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://qudt.org/schema/qudt/url> ;
+                                                        owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://qudt.org/schema/qudt/longDescription> ;
+                                                        owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://www.linkedmodel.org/schema/vaem#title> ;
+                                                        owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                      ] ;
+                                      <http://qudt.org/schema/qudt/description> "The root class for all QUDT concepts."^^rdf:HTML ;
+                                      rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ,
+                                                       <http://qudt.org/schema/qudt> ;
+                                      rdfs:label "QUDT Concept"^^xsd:string .
+
+
+###  http://qudt.org/schema/qudt/DerivedUnit
+<http://qudt.org/schema/qudt/DerivedUnit> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://qudt.org/schema/qudt/Unit> ;
+                                          <http://qudt.org/schema/qudt/description> "A DerivedUnit is a type specification for units that are derived from other units."^^rdf:HTML ;
+                                          rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ,
+                                                           <http://qudt.org/schema/qudt> ;
+                                          rdfs:label "Derived Unit"^^xsd:string ;
+                                          owl:deprecated "true"^^xsd:boolean .
+
+
+###  http://qudt.org/schema/qudt/LengthUnit
+<http://qudt.org/schema/qudt/LengthUnit> rdf:type owl:Class .
+
+
+###  http://qudt.org/schema/qudt/MKS-Unit
+<http://qudt.org/schema/qudt/MKS-Unit> rdf:type owl:Class .
+
+
+###  http://qudt.org/schema/qudt/Quantity
+<http://qudt.org/schema/qudt/Quantity> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://qudt.org/schema/qudt/Concept> ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://qudt.org/schema/qudt/hasQuantityKind> ;
+                                                         owl:allValuesFrom <http://qudt.org/schema/qudt/QuantityKind>
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://qudt.org/schema/qudt/quantityValue> ;
+                                                         owl:allValuesFrom <http://qudt.org/schema/qudt/QuantityValue>
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://qudt.org/schema/qudt/quantityValue> ;
+                                                         owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://qudt.org/schema/qudt/baseUnitDimensions> ;
+                                                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://qudt.org/schema/qudt/mathMLdefinition> ;
+                                                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                       ] ;
+                                       <http://qudt.org/schema/qudt/description> """<p class=\"lm-para\">A quantity is the measurement of an observable property of a particular object, event, or physical system. A quantity is always associated with the context of measurement (i.e. the thing measured, the measured value, the accuracy of measurement, etc.) whereas the underlying quantity kind is independent of any particular measurement. Thus, length is a quantity kind while the height of a rocket is a specific quantity of length; its magnitude that may be expressed in meters, feet, inches, etc. Examples of physical quantities include physical constants, such as the speed of light in a vacuum, Planck's constant, the electric permittivity of free space, and the fine structure constant. </p>
+
+<p class=\"lm-para\">In other words, quantities are quantifiable aspects of the world, such as time, distance, velocity, mass, momentum, energy, and weight, and units are used to describe their measure. Many of which are related to each other by various physical laws, and as a result the units of some of the quantities can be expressed as products (or ratios) of powers of other units (e.g., momentum is mass times velocity and velocity is measured in distance divided by time). These relationships are discussed in dimensional analysis. Those that cannot be so expressed can be regarded as \"fundamental\" in this sense.</p>
+<p class=\"lm-para\">A quantity is distinguished from a \"quantity kind\" in that the former carries a value and the latter is a type specifier.</p>"""^^rdf:HTML ;
+                                       rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ,
+                                                        <http://qudt.org/schema/qudt> ;
+                                       rdfs:label "Quantity"^^xsd:string .
+
+
+###  http://qudt.org/schema/qudt/QuantityKind
+<http://qudt.org/schema/qudt/QuantityKind> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://qudt.org/schema/qudt/Concept> ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://www.w3.org/2004/02/skos/core#broader> ;
+                                                             owl:allValuesFrom <http://qudt.org/schema/qudt/QuantityKind>
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://qudt.org/schema/qudt/baseCGSUnitDimensions> ;
+                                                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://qudt.org/schema/qudt/baseISOUnitDimensions> ;
+                                                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://qudt.org/schema/qudt/baseImperialUnitDimensions> ;
+                                                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://qudt.org/schema/qudt/baseSIUnitDimensions> ;
+                                                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://qudt.org/schema/qudt/baseUSCustomaryUnitDimensions> ;
+                                                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://qudt.org/schema/qudt/baseUnitDimensions> ;
+                                                             owl:maxCardinality "4"^^xsd:nonNegativeInteger
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://qudt.org/schema/qudt/latexSymbol> ;
+                                                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://qudt.org/schema/qudt/mathMLdefinition> ;
+                                                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://qudt.org/schema/qudt/symbolToken> ;
+                                                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                           ] ;
+                                           <http://qudt.org/schema/qudt/description> "A <b>Quantity Kind</b> is any observable property that can be  measured and quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity."^^rdf:HTML ;
+                                           rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ,
+                                                            <http://qudt.org/schema/qudt> ;
+                                           rdfs:label "Quantity Kind"^^xsd:string .
+
+
+###  http://qudt.org/schema/qudt/QuantityValue
+<http://qudt.org/schema/qudt/QuantityValue> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://qudt.org/schema/qudt/Concept> ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://qudt.org/schema/qudt/hasQuantityKind> ;
+                                                              owl:allValuesFrom <http://qudt.org/schema/qudt/QuantityKind>
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://qudt.org/schema/qudt/relativeStandardUncertainty> ;
+                                                              owl:allValuesFrom xsd:double
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://qudt.org/schema/qudt/standardUncertainty> ;
+                                                              owl:allValuesFrom xsd:double
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://qudt.org/schema/qudt/relativeStandardUncertainty> ;
+                                                              owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://qudt.org/schema/qudt/standardUncertainty> ;
+                                                              owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                            ] ;
+                                            <http://qudt.org/schema/qudt/description> "A <i>Quantity Value</i> expresses the magnitude and kind of a quantity and is given by the product of a numerical value <code>n</code> and a unit of measure <code>U</code>. The number multiplying the unit is referred to as the numerical value of the quantity expressed in that unit. Refer to <a href=\"http://physics.nist.gov/Pubs/SP811/sec07.html\">NIST SP 811 section 7</a> for more on quantity values."^^rdf:HTML ;
+                                            rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ,
+                                                             <http://qudt.org/schema/qudt> ;
+                                            rdfs:label "Quantity value"^^xsd:string .
+
+
+###  http://qudt.org/schema/qudt/Unit
+<http://qudt.org/schema/qudt/Unit> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://qudt.org/schema/qudt/Concept> ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://qudt.org/schema/qudt/hasQuantityKind> ;
+                                                     owl:allValuesFrom <http://qudt.org/schema/qudt/QuantityKind>
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://qudt.org/schema/qudt/baseISOUnitDimensions> ;
+                                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://qudt.org/schema/qudt/baseImperialUnitDimensions> ;
+                                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://qudt.org/schema/qudt/baseSIUnitDimensions> ;
+                                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://qudt.org/schema/qudt/baseUSCustomaryUnitDimensions> ;
+                                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://qudt.org/schema/qudt/baseUnitDimensions> ;
+                                                     owl:maxCardinality "4"^^xsd:nonNegativeInteger
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://qudt.org/schema/qudt/latexSymbol> ;
+                                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://qudt.org/schema/qudt/mathMLdefinition> ;
+                                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://qudt.org/schema/qudt/siUnitsExpression> ;
+                                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://qudt.org/schema/qudt/symbolToken> ;
+                                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://qudt.org/schema/qudt/uneceCommonCode> ;
+                                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ;
+                                   <http://qudt.org/schema/qudt/description> "A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). Any measurement of the length can be expressed as a number multiplied by the unit meter. More formally, the value of a physical quantity Q with respect to a unit (U) is expressed as the scalar multiple of a real number (n) and U, as  \\(Q = nU\\)."^^rdf:HTML ;
+                                   rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ,
+                                                    <http://qudt.org/schema/qudt> ;
+                                   rdfs:label "Unit"^^xsd:string .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#CiudadAutonoma
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#CiudadAutonoma> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <https://datos.ign.es/def/btn100#UnidadAdministrativa> ;
+                                                                                        rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                        rdfs:label "Ciudad Autónoma"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#ComunidadAutonoma
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#ComunidadAutonoma> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://datos.ign.es/def/btn100#UnidadAdministrativa> ;
+                                                                                           rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                           rdfs:label "Comunidad Autónoma"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#ComunidadJurisdiccional
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#ComunidadJurisdiccional> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf <https://datos.ign.es/def/btn100#UnidadAdministrativa> ;
+                                                                                                 rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                                 rdfs:label "Comunidad Jurisdiccional"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <https://datos.ign.es/def/btn100#UnidadAdministrativa> ;
+                                                                                   rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                   rdfs:label "Municipio"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Pais
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Pais> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <https://datos.ign.es/def/btn100#UnidadAdministrativa> ;
+                                                                              rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                              rdfs:label "País"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <https://datos.ign.es/def/btn100#UnidadAdministrativa> ;
+                                                                                   rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                   rdfs:label "Provincia"@es .
+
+
+###  http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:Class ;
+                                               owl:equivalentClass <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+                                               rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                               owl:disjointWith <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                               <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry"^^xsd:string ;
+                                               <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group"^^xsd:string ;
+                                               <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                               <http://purl.org/dc/elements/1.1/description> """
+      This class represents the top-level feature type. This class is 
+      equivalent to GFI_Feature defined in ISO 19156:2011, and it is 
+      superclass of all feature types.
+    """@en ,
+                                                                                             """Esta clase representa el tipo de entidad de nivel superior. Esta clase es
+equivalente a GFI_Feature definido en ISO 19156: 2011, y es Superclase de todos los tipos Feature."""@es ,
+                                                                                             "This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156:2011, and it is superclass of all feature types."@en ;
+                                               rdfs:comment """
+      This class represents the top-level feature type. This class is 
+      equivalent to GFI_Feature defined in ISO 19156:2011, and it is 
+      superclass of all feature types.
+    """@en ;
+                                               rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                <http://www.opengis.net/ont/gml> ,
+                                                                <http://www.opengis.net/spec/geosparql/1.0> ;
+                                               rdfs:label "Feature"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> """
+      This class represents the top-level feature type. This class is 
+      equivalent to GFI_Feature defined in ISO 19156:2011, and it is 
+      superclass of all feature types.
+    """@en ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Feature"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry"^^xsd:string ;
+                                                <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group"^^xsd:string ;
+                                                <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                <http://purl.org/dc/elements/1.1/description> """
+      The class represents the top-level geometry type. This class is 
+      equivalent to the UML class GM_Object defined in ISO 19107, and 
+      it is superclass of all geometry types.
+    """@en ;
+                                                rdfs:comment """
+      The class represents the top-level geometry type. This class is 
+      equivalent to the UML class GM_Object defined in ISO 19107, and 
+      it is superclass of all geometry types.
+    """@en ;
+                                                rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                 <http://www.opengis.net/ont/gml> ,
+                                                                 <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                rdfs:label "Geometry"@en ;
+                                                <http://www.w3.org/2004/02/skos/core#definition> """
+      The class represents the top-level geometry type. This class is 
+      equivalent to the UML class GM_Object defined in ISO 19107, and 
+      it is superclass of all geometry types.
+    """@en ;
+                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "Geometry"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#SpatialObject
+<http://www.opengis.net/ont/geosparql#SpatialObject> rdf:type owl:Class ;
+                                                     <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry"^^xsd:string ;
+                                                     <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group"^^xsd:string ;
+                                                     <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                     <http://purl.org/dc/elements/1.1/description> """
+      The class spatial-object represents everything that can have 
+      a spatial representation. It is superclass of feature and geometry.
+    """@en ;
+                                                     rdfs:comment """
+      The class spatial-object represents everything that can have 
+      a spatial representation. It is superclass of feature and geometry.
+    """@en ;
+                                                     rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                      <http://www.opengis.net/ont/gml> ,
+                                                                      <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                     rdfs:label "SpatialObject"@en ;
+                                                     <http://www.w3.org/2004/02/skos/core#definition> """
+      The class spatial-object represents everything that can have 
+      a spatial representation. It is superclass of feature and geometry.
+    """@en ;
+                                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "SpatialObject"@en .
+
+
+###  http://www.opengis.net/ont/gml#AbstractCurveSegment
+<http://www.opengis.net/ont/gml#AbstractCurveSegment> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                      rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                                      rdfs:label "Abstract Curve Segment"@en .
+
+
+###  http://www.opengis.net/ont/gml#AbstractGeometricPrimitive
+<http://www.opengis.net/ont/gml#AbstractGeometricPrimitive> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractGeometry> ;
+                                                            rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                                            rdfs:label "Abstract Geometric Primitive"@en .
+
+
+###  http://www.opengis.net/ont/gml#AbstractGeometry
+<http://www.opengis.net/ont/gml#AbstractGeometry> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                  rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                                  rdfs:label "Abstract Geometry"@en .
+
+
+###  http://www.opengis.net/ont/gml#AbstractGriddedSurface
+<http://www.opengis.net/ont/gml#AbstractGriddedSurface> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractParametricCurveSurface> ;
+                                                        rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                                        rdfs:label "Abstract Gridded Surface"@en .
+
+
+###  http://www.opengis.net/ont/gml#AbstractParametricCurveSurface
+<http://www.opengis.net/ont/gml#AbstractParametricCurveSurface> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractSurfacePatch> ;
+                                                                rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                                                rdfs:label "Abstract Parametric Curve Surface"@en .
+
+
+###  http://www.opengis.net/ont/gml#AbstractSurfacePatch
+<http://www.opengis.net/ont/gml#AbstractSurfacePatch> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                      rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                                      rdfs:label "Abstract Surface Patch"@en .
+
+
+###  http://www.opengis.net/ont/gml#Arc
+<http://www.opengis.net/ont/gml#Arc> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://www.opengis.net/ont/gml#ArcString> ;
+                                     rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                     rdfs:label "Arc"@en .
+
+
+###  http://www.opengis.net/ont/gml#ArcByBulge
+<http://www.opengis.net/ont/gml#ArcByBulge> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://www.opengis.net/ont/gml#ArcStringByBulge> ;
+                                            rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                            rdfs:label "Arc by Bulge"@en .
+
+
+###  http://www.opengis.net/ont/gml#ArcByCenterPoint
+<http://www.opengis.net/ont/gml#ArcByCenterPoint> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractCurveSegment> ;
+                                                  rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                                  rdfs:label "Arc by Center Point"@en .
+
+
+###  http://www.opengis.net/ont/gml#ArcString
+<http://www.opengis.net/ont/gml#ArcString> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractCurveSegment> ;
+                                           rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                           rdfs:label "Arc String"@en .
+
+
+###  http://www.opengis.net/ont/gml#ArcStringByBulge
+<http://www.opengis.net/ont/gml#ArcStringByBulge> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractCurveSegment> ;
+                                                  rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                                  rdfs:label "Arc String by Bulge"@en .
+
+
+###  http://www.opengis.net/ont/gml#BSpline
+<http://www.opengis.net/ont/gml#BSpline> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://www.opengis.net/ont/gml#SplineCurve> ;
+                                         rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                         rdfs:label "BSpline"@en .
+
+
+###  http://www.opengis.net/ont/gml#CircleByCenterPoint
+<http://www.opengis.net/ont/gml#CircleByCenterPoint> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.opengis.net/ont/gml#ArcByCenterPoint> ;
+                                                     rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                                     rdfs:label "CircleByCenterPoint"@en .
+
+
+###  http://www.opengis.net/ont/gml#Clothoid
+<http://www.opengis.net/ont/gml#Clothoid> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractCurveSegment> ;
+                                          rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                          rdfs:label "Clothoid"@en .
+
+
+###  http://www.opengis.net/ont/gml#Composite
+<http://www.opengis.net/ont/gml#Composite> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://www.opengis.net/ont/gml#GeometricComplex> ;
+                                           rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                           rdfs:label "Composite"@en .
+
+
+###  http://www.opengis.net/ont/gml#CompositeCurve
+<http://www.opengis.net/ont/gml#CompositeCurve> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.opengis.net/ont/gml#Composite> ,
+                                                                <http://www.opengis.net/ont/gml#OrientableCurve> ;
+                                                rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                                rdfs:label "Composite Curve"@en .
+
+
+###  http://www.opengis.net/ont/gml#CompositeSolid
+<http://www.opengis.net/ont/gml#CompositeSolid> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.opengis.net/ont/gml#Composite> ,
+                                                                <http://www.opengis.net/ont/gml#Solid> ;
+                                                rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                                rdfs:label "Composite Solid"@en .
+
+
+###  http://www.opengis.net/ont/gml#CompositeSurface
+<http://www.opengis.net/ont/gml#CompositeSurface> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.opengis.net/ont/gml#Composite> ,
+                                                                  <http://www.opengis.net/ont/gml#OrientableSurface> ;
+                                                  rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                                  rdfs:label "Composite Surface"@en .
+
+
+###  http://www.opengis.net/ont/gml#Cone
+<http://www.opengis.net/ont/gml#Cone> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractGriddedSurface> ;
+                                      rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                      rdfs:label "Cone"@en .
+
+
+###  http://www.opengis.net/ont/gml#Curve
+<http://www.opengis.net/ont/gml#Curve> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractGeometricPrimitive> ,
+                                                       <http://www.opengis.net/ont/gml#OrientableCurve> ;
+                                       rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                       rdfs:label "Curve"@en .
+
+
+###  http://www.opengis.net/ont/gml#Cylinder
+<http://www.opengis.net/ont/gml#Cylinder> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractGriddedSurface> ;
+                                          rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                          rdfs:label "Cylinder"@en .
+
+
+###  http://www.opengis.net/ont/gml#Geodesic
+<http://www.opengis.net/ont/gml#Geodesic> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://www.opengis.net/ont/gml#GeodesicString> ;
+                                          rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                          rdfs:label "Geodesic"@en .
+
+
+###  http://www.opengis.net/ont/gml#GeodesicString
+<http://www.opengis.net/ont/gml#GeodesicString> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractCurveSegment> ;
+                                                rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                                rdfs:label "Geodesic String"@en .
+
+
+###  http://www.opengis.net/ont/gml#GeometricComplex
+<http://www.opengis.net/ont/gml#GeometricComplex> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractGeometry> ;
+                                                  rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                                  rdfs:label "Geometric Complex"@en .
+
+
+###  http://www.opengis.net/ont/gml#LineString
+<http://www.opengis.net/ont/gml#LineString> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://www.opengis.net/ont/gml#LineStringSegment> ;
+                                            rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                            rdfs:label "Line String"@en .
+
+
+###  http://www.opengis.net/ont/gml#LineStringSegment
+<http://www.opengis.net/ont/gml#LineStringSegment> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractCurveSegment> ;
+                                                   rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                                   rdfs:label "Line String Segment"@en .
+
+
+###  http://www.opengis.net/ont/gml#LinearRing
+<http://www.opengis.net/ont/gml#LinearRing> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://www.opengis.net/ont/gml#Ring> ;
+                                            rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                            rdfs:label "Linear Ring"@en .
+
+
+###  http://www.opengis.net/ont/gml#MultiCurve
+<http://www.opengis.net/ont/gml#MultiCurve> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://www.opengis.net/ont/gml#MultiGeometry> ;
+                                            rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                            rdfs:label "Multi-Curve"@en .
+
+
+###  http://www.opengis.net/ont/gml#MultiGeometry
+<http://www.opengis.net/ont/gml#MultiGeometry> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractGeometry> ;
+                                               rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                               rdfs:label "Multi-Geometry"@en .
+
+
+###  http://www.opengis.net/ont/gml#MultiPoint
+<http://www.opengis.net/ont/gml#MultiPoint> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://www.opengis.net/ont/gml#MultiGeometry> ;
+                                            rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                            rdfs:label "Multi-Point"@en .
+
+
+###  http://www.opengis.net/ont/gml#MultiSolid
+<http://www.opengis.net/ont/gml#MultiSolid> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://www.opengis.net/ont/gml#MultiGeometry> ;
+                                            rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                            rdfs:label "Multi-Solid"@en .
+
+
+###  http://www.opengis.net/ont/gml#MultiSurface
+<http://www.opengis.net/ont/gml#MultiSurface> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://www.opengis.net/ont/gml#MultiGeometry> ;
+                                              rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                              rdfs:label "Multi-Surface"@en .
+
+
+###  http://www.opengis.net/ont/gml#OffsetCurve
+<http://www.opengis.net/ont/gml#OffsetCurve> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractCurveSegment> ;
+                                             rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                             rdfs:label "Offset Curve"@en .
+
+
+###  http://www.opengis.net/ont/gml#OrientableCurve
+<http://www.opengis.net/ont/gml#OrientableCurve> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractGeometricPrimitive> ;
+                                                 rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                                 rdfs:label "Orientable Curve"@en .
+
+
+###  http://www.opengis.net/ont/gml#OrientableSurface
+<http://www.opengis.net/ont/gml#OrientableSurface> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractGeometricPrimitive> ;
+                                                   rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                                   rdfs:label "Orientable Surface"@en .
+
+
+###  http://www.opengis.net/ont/gml#Point
+<http://www.opengis.net/ont/gml#Point> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractGeometricPrimitive> ;
+                                       rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                       rdfs:label "Point"@en .
+
+
+###  http://www.opengis.net/ont/gml#Polygon
+<http://www.opengis.net/ont/gml#Polygon> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://www.opengis.net/ont/gml#Surface> ;
+                                         rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                         rdfs:label "Polygon"@en .
+
+
+###  http://www.opengis.net/ont/gml#PolygonPatch
+<http://www.opengis.net/ont/gml#PolygonPatch> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractSurfacePatch> ;
+                                              rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                              rdfs:label "Polygon Patch"@en .
+
+
+###  http://www.opengis.net/ont/gml#PolyhedralSurface
+<http://www.opengis.net/ont/gml#PolyhedralSurface> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://www.opengis.net/ont/gml#Surface> ;
+                                                   rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                                   rdfs:label "Polyhedral Surface"@en .
+
+
+###  http://www.opengis.net/ont/gml#PolynomialSpline
+<http://www.opengis.net/ont/gml#PolynomialSpline> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.opengis.net/ont/gml#SplineCurve> ;
+                                                  rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                                  rdfs:label "Polynomial Spline"@en .
+
+
+###  http://www.opengis.net/ont/gml#Rectangle
+<http://www.opengis.net/ont/gml#Rectangle> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://www.opengis.net/ont/gml#PolygonPatch> ;
+                                           rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                           rdfs:label "Rectangle"@en .
+
+
+###  http://www.opengis.net/ont/gml#Ring
+<http://www.opengis.net/ont/gml#Ring> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.opengis.net/ont/gml#CompositeCurve> ;
+                                      rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                      rdfs:label "Ring"@en .
+
+
+###  http://www.opengis.net/ont/gml#Shell
+<http://www.opengis.net/ont/gml#Shell> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.opengis.net/ont/gml#CompositeSurface> ;
+                                       rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                       rdfs:label "Shell"@en .
+
+
+###  http://www.opengis.net/ont/gml#Solid
+<http://www.opengis.net/ont/gml#Solid> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractGeometricPrimitive> ;
+                                       rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                       rdfs:label "Solid"@en .
+
+
+###  http://www.opengis.net/ont/gml#Sphere
+<http://www.opengis.net/ont/gml#Sphere> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractGriddedSurface> ;
+                                        rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                        rdfs:label "Sphere"@en .
+
+
+###  http://www.opengis.net/ont/gml#SplineCurve
+<http://www.opengis.net/ont/gml#SplineCurve> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractCurveSegment> ;
+                                             rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                             rdfs:label "Spline Curve"@en .
+
+
+###  http://www.opengis.net/ont/gml#Surface
+<http://www.opengis.net/ont/gml#Surface> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://www.opengis.net/ont/gml#AbstractGeometricPrimitive> ,
+                                                         <http://www.opengis.net/ont/gml#OrientableSurface> ;
+                                         rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                         rdfs:label "Surface"@en .
+
+
+###  http://www.opengis.net/ont/gml#Tin
+<http://www.opengis.net/ont/gml#Tin> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://www.opengis.net/ont/gml#TriangulatedSurface> ;
+                                     rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                     rdfs:label "Triangulated Irregular Network"@en .
+
+
+###  http://www.opengis.net/ont/gml#Triangle
+<http://www.opengis.net/ont/gml#Triangle> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://www.opengis.net/ont/gml#PolygonPatch> ;
+                                          rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                          rdfs:label "Triangle"@en .
+
+
+###  http://www.opengis.net/ont/gml#TriangulatedSurface
+<http://www.opengis.net/ont/gml#TriangulatedSurface> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.opengis.net/ont/gml#PolyhedralSurface> ;
+                                                     rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+                                                     rdfs:label "Triangulated Surface"@en .
+
+
+###  http://www.opengis.net/ont/sf#Curve
+<http://www.opengis.net/ont/sf#Curve> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.opengis.net/ont/sf#Geometry> ;
+                                      rdfs:comment """
+A Curve is a 1-dimensional geometric object usually stored as a sequence of Points, with the subtype of Curve specifying the form of the interpolation between Points. This specification defines only one subclass of Curve, LineString, which uses linear interpolation between Points.
+A Curve is a 1-dimensional geometric object that is the homeomorphic image of a real, closed, interval.
+A Curve is simple if it does not pass through the same Point twice with the possible exception of the two end
+points.
+A Curve is closed if its start Point is equal to its end Point.
+The boundary of a closed Curve is empty.
+A Curve that is simple and closed is a Ring.
+The boundary of a non-closed Curve consists of its two end Points.
+A Curve is defined as topologically closed, that is, it contains its endpoints f(a) and f(b).
+    """@en ;
+                                      rdfs:isDefinedBy <http://www.opengis.net/ont/sf> ;
+                                      rdfs:label "Curve"@en .
+
+
+###  http://www.opengis.net/ont/sf#Geometry
+<http://www.opengis.net/ont/sf#Geometry> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> ,
+                                                         <http://www.opengis.net/ont/sf#Geometry> ;
+                                         <http://purl.org/dc/elements/1.1/description> "The class represents the top-level geometry type. This class is equivalent to the UML class GM_Object defined in ISO 19107, and it is superclass of all geometry types."@en ;
+                                         rdfs:comment """
+Geometry is the root class of the hierarchy.
+The instantiable subclasses of Geometry are restricted to 0, 1 and 2-dimensional geometric objects that exist in 2, 3 or 4-dimensional coordinate space (R2, R3 or R4). Geometry values in R2 have points with coordinate values for x and y. Geometry values in R3 have points with coordinate values for x, y and z or for x, y and m. Geometry values in R4 have points with coordinate values for x, y, z and m.
+The interpretation of the coordinates is subject to the coordinate reference systems associated to the point. All coordinates within a geometry object should be in the same coordinate reference systems. Each coordinate shall be unambiguously associated to a coordinate reference system either directly or through its containing geometry. The z coordinate of a point is typically, but not necessarily, represents altitude or elevation. The m coordinate represents a measurement.
+All Geometry classes described in this specification are defined so that instances of Geometry are topologically closed, i.e. all represented geometries include their boundary as point sets. This does not affect their representation, and open version of the same classes may be used in other circumstances, such as topological representations.
+    """@en ;
+                                         rdfs:isDefinedBy <http://www.opengis.net/ont/sf> ;
+                                         rdfs:label "Geometry"@en .
+
+
+###  http://www.opengis.net/ont/sf#GeometryCollection
+<http://www.opengis.net/ont/sf#GeometryCollection> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://www.opengis.net/ont/sf#Geometry> ;
+                                                   rdfs:comment """
+A GeometryCollection is a geometric object that is a collection of some number of geometric objects.
+All the elements in a GeometryCollection shall be in the same Spatial Reference System. This is also the Spatial Reference System for the GeometryCollection.
+GeometryCollection places no other constraints on its elements. Subclasses of GeometryCollection may restrict membership based on dimension and may also place other constraints on the degree of spatial overlap between elements.
+    """@en ;
+                                                   rdfs:isDefinedBy <http://www.opengis.net/ont/sf> ;
+                                                   rdfs:label "Geometry Collection"@en .
+
+
+###  http://www.opengis.net/ont/sf#Line
+<http://www.opengis.net/ont/sf#Line> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://www.opengis.net/ont/sf#LineString> ;
+                                     rdfs:comment """
+A Line is a LineString with exactly 2 Points.
+    """@en ;
+                                     rdfs:isDefinedBy <http://www.opengis.net/ont/sf> ;
+                                     rdfs:label "Line"@en .
+
+
+###  http://www.opengis.net/ont/sf#LineString
+<http://www.opengis.net/ont/sf#LineString> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://www.opengis.net/ont/sf#Curve> ;
+                                           rdfs:comment """
+A LineString is a Curve with linear interpolation between Points. Each consecutive pair of Points defines a Line segment.
+    """@en ;
+                                           rdfs:isDefinedBy <http://www.opengis.net/ont/sf> ;
+                                           rdfs:label "Line String"@en .
+
+
+###  http://www.opengis.net/ont/sf#LinearRing
+<http://www.opengis.net/ont/sf#LinearRing> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://www.opengis.net/ont/sf#LineString> ;
+                                           rdfs:comment """
+A LinearRing is a LineString that is both closed and simple.
+    """@en ;
+                                           rdfs:isDefinedBy <http://www.opengis.net/ont/sf> ;
+                                           rdfs:label "Linear Ring"@en .
+
+
+###  http://www.opengis.net/ont/sf#MultiCurve
+<http://www.opengis.net/ont/sf#MultiCurve> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://www.opengis.net/ont/sf#GeometryCollection> ;
+                                           rdfs:comment """
+A MultiCurve is a 1-dimensional GeometryCollection whose elements are Curves.
+A MultiCurve defines a set of methods for its subclasses and is included for reasons of extensibility.
+A MultiCurve is simple if and only if all of its elements are simple and the only intersections between any two elements occur at Points that are on the boundaries of both elements.
+The boundary of a MultiCurve is obtained by applying the mod 2 union rule: A Point is in the boundary of a MultiCurve if it is in the boundaries of an odd number of elements of the MultiCurve.
+A MultiCurve is closed if all of its elements are closed. The boundary of a closed MultiCurve is always empty.
+A MultiCurve is defined as topologically closed.
+    """@en ;
+                                           rdfs:isDefinedBy <http://www.opengis.net/ont/sf> ;
+                                           rdfs:label "Multi Curve"@en .
+
+
+###  http://www.opengis.net/ont/sf#MultiLineString
+<http://www.opengis.net/ont/sf#MultiLineString> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.opengis.net/ont/sf#MultiCurve> ;
+                                                rdfs:comment """
+A MultiLineString is a MultiCurve whose elements are LineStrings.
+    """@en ;
+                                                rdfs:isDefinedBy <http://www.opengis.net/ont/sf> ;
+                                                rdfs:label "Multi Line String"@en .
+
+
+###  http://www.opengis.net/ont/sf#MultiPoint
+<http://www.opengis.net/ont/sf#MultiPoint> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://www.opengis.net/ont/sf#GeometryCollection> ;
+                                           rdfs:comment """
+A MultiPoint is a 0-dimensional GeometryCollection. The elements of a MultiPoint are restricted to Points. ThePoints are not connected or ordered in any semantically important way.
+A MultiPoint is simple if no two Points in the MultiPoint are equal (have identical coordinate values in X and Y).
+Every MultiPoint is spatially equal to a simple Multipoint.
+The boundary of a MultiPoint is the empty set.
+    """@en ;
+                                           rdfs:isDefinedBy <http://www.opengis.net/ont/sf> ;
+                                           rdfs:label "Multi Point"@en .
+
+
+###  http://www.opengis.net/ont/sf#MultiPolygon
+<http://www.opengis.net/ont/sf#MultiPolygon> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://www.opengis.net/ont/sf#MultiSurface> ;
+                                             rdfs:comment """
+A MultiPolygon is a MultiSurface whose elements are Polygons.
+The assertions for MultiPolygons are as follows.
+a) The interiors of 2 Polygons that are elements of a MultiPolygon may not intersect.
+b) The boundaries of any 2 Polygons that are elements of a MultiPolygon may not cross and may touch at only a finite number of Points.
+c) A MultiPolygon is defined as topologically closed.
+d) A MultiPolygon may not have cut lines, spikes or punctures, a MultiPolygon is a regular closed Point set,
+e) The interior of a MultiPolygon with more than 1 Polygon is not connected; the number of connected components of the interior of a MultiPolygon is equal to the number of Polygons in the MultiPolygon. 
+The boundary of a MultiPolygon is a set of closed Curves (LineStrings) corresponding to the boundaries of its element Polygons. Each Curve in the boundary of the MultiPolygon is in the boundary of exactly 1 element Polygon, and every Curve in the boundary of an element Polygon is in the boundary of the MultiPolygon.
+    """@en ;
+                                             rdfs:isDefinedBy <http://www.opengis.net/ont/sf> ;
+                                             rdfs:label "Multi Polygon"@en .
+
+
+###  http://www.opengis.net/ont/sf#MultiSurface
+<http://www.opengis.net/ont/sf#MultiSurface> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://www.opengis.net/ont/sf#GeometryCollection> ;
+                                             rdfs:comment """
+A MultiSurface is a 2-dimensional GeometryCollection whose elements are Surfaces, all using coordinates from the same coordinate reference system. The geometric interiors of any two Surfaces in a MultiSurface may not intersect in the full coordinate system. The boundaries of any two coplanar elements in a MultiSurface may intersect, at most, at a finite number of Points. If they were to meet along a curve, they could be merged into a single surface.
+A MultiSurface may be used to represent heterogeneous surfaces collections of polygons and polyhedral surfaces. It defines a set of methods for its subclasses. The subclass of MultiSurface is MultiPolygon corresponding to a collection of Polygons only. Other collections shall use MultiSurface.
+    """@en ;
+                                             rdfs:isDefinedBy <http://www.opengis.net/ont/sf> ;
+                                             rdfs:label "Multi Surface"@en .
+
+
+###  http://www.opengis.net/ont/sf#Point
+<http://www.opengis.net/ont/sf#Point> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.opengis.net/ont/sf#Geometry> ;
+                                      rdfs:comment """
+A Point is a 0-dimensional geometric object and represents a single location in coordinate space. 
+A Point has an x-coordinate value, a y-coordinate value. If called for by the associated Spatial Reference System, it may also have coordinate values for z and m.
+The boundary of a Point is the empty set.
+    """@en ;
+                                      rdfs:isDefinedBy <http://www.opengis.net/ont/sf> ;
+                                      rdfs:label "Point"@en .
+
+
+###  http://www.opengis.net/ont/sf#Polygon
+<http://www.opengis.net/ont/sf#Polygon> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://www.opengis.net/ont/sf#Surface> ;
+                                        rdfs:comment """
+A Polygon is a planar Surface defined by 1 exterior boundary and 0 or more interior boundaries. Each interior boundary defines a hole in the Polygon.
+The exterior boundary LinearRing defines the top of the surface which is the side of the surface from which the exterior boundary appears to traverse the boundary in a counter clockwise direction. The interior LinearRings will have the opposite orientation, and appear as clockwise when viewed from the top,
+The assertions for Polygons (the rules that define valid Polygons) are as follows:
+a) Polygons are topologically closed;
+b) The boundary of a Polygon consists of a set of LinearRings that make up its exterior and interior boundaries;
+c) No two Rings in the boundary cross and the Rings in the boundary of a Polygon may intersect at a Point but only as a tangent.
+d) A Polygon may not have cut lines, spikes or punctures.
+e) The interior of every Polygon is a connected point set;
+f) The exterior of a Polygon with 1 or more holes is not connected. Each hole defines a connected component of the exterior.
+    """@en ;
+                                        rdfs:isDefinedBy <http://www.opengis.net/ont/sf> ;
+                                        rdfs:label "Polygon"@en .
+
+
+###  http://www.opengis.net/ont/sf#PolyhedralSurface
+<http://www.opengis.net/ont/sf#PolyhedralSurface> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.opengis.net/ont/sf#Surface> ;
+                                                  rdfs:comment """
+A PolyhedralSurface is a contiguous collection of polygons, which share common boundary segments. For each pair of polygons that touch, the common boundary shall be expressible as a finite collection of LineStrings. Each such LineString shall be part of the boundary of at most 2 Polygon patches. 
+For any two polygons that share a common boundary, the top of the polygon shall be consistent. This means that when two LinearRings from these two Polygons traverse the common boundary segment, they do so in opposite directions. Since the Polyhedral surface is contiguous, all polygons will be thus consistently oriented. This means that a non-oriented surface (such as Mbius band) shall not have single surface representations. They may be represented by a MultiSurface.
+If each such LineString is the boundary of exactly 2 Polygon patches, then the PolyhedralSurface is a simple, closed polyhedron and is topologically isomorphic to the surface of a sphere. By the Jordan Surface Theorem (Jordans Theorem for 2-spheres), such polyhedrons enclose a solid topologically isomorphic to the interior of a sphere; the ball. In this case, the top of the surface will either point inward or outward of the enclosed finite solid. If outward, the surface is the exterior boundary of the enclosed surface. If inward, the surface is the interior of the infinite complement of the enclosed solid. A Ball with some number of voids (holes) inside can thus be presented as one exterior boundary shell, and some number in interior boundary shells.
+    """@en ;
+                                                  rdfs:isDefinedBy <http://www.opengis.net/ont/sf> ;
+                                                  rdfs:label "Polyhedral Surface"@en .
+
+
+###  http://www.opengis.net/ont/sf#Surface
+<http://www.opengis.net/ont/sf#Surface> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://www.opengis.net/ont/sf#Geometry> ;
+                                        rdfs:comment """
+A Surface is a 2-dimensional geometric object.
+A simple Surface may consists of a single patch that is associated with one exterior boundary and 0 or more interior boundaries. A single such Surface patch in 3-dimensional space is isometric to planar Surfaces, by a simple affine rotation matrix that rotates the patch onto the plane z = 0. If the patch is not vertical, the projection onto the same plane is an isomorphism, and can be represented as a linear transformation, i.e. an affine.
+Polyhedral Surfaces are formed by stitching together such simple Surfaces patches along their common boundaries. Such polyhedral Surfaces in a 3-dimensional space may not be planar as a whole, depending on the orientation of their planar normals. If all the patches are in alignment (their normals are parallel), then the whole stitched polyhedral surface is co-planar and can be represented as a single patch if it is connected.
+The boundary of a simple Surface is the set of closed Curves corresponding to its exterior and interior boundaries.
+A Polygon is a simple Surface that is planar. A PolyhedralSurface is a simple surface, consisting of some number of Polygon patches or facets. If a PolyhedralSurface is closed, then it bounds a solid. A MultiSurface containing a set of closed PolyhedralSurfaces can be used to represent a Solid object with holes.
+    """@en ;
+                                        rdfs:isDefinedBy <http://www.opengis.net/ont/sf> ;
+                                        rdfs:label "Surface"@en .
+
+
+###  http://www.opengis.net/ont/sf#TIN
+<http://www.opengis.net/ont/sf#TIN> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://www.opengis.net/ont/sf#PolyhedralSurface> ;
+                                    rdfs:comment """
+A TIN (triangulated irregular network) is a PolyhedralSurface consisting only of Triangle patches.
+    """@en ;
+                                    rdfs:isDefinedBy <http://www.opengis.net/ont/sf> ;
+                                    rdfs:label "Triangulated Irregular Network"@en .
+
+
+###  http://www.opengis.net/ont/sf#Triangle
+<http://www.opengis.net/ont/sf#Triangle> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://www.opengis.net/ont/sf#Polygon> ;
+                                         rdfs:comment """
+ A Triangle is a polygon with 3 distinct, non-collinear vertices and no interior boundary.
+    """@en ;
+                                         rdfs:isDefinedBy <http://www.opengis.net/ont/sf> ;
+                                         rdfs:label "Triangle"@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class ;
+                                              <http://purl.org/dc/elements/1.1/description> """A SKOS concept can be viewed as an idea or notion; a unit of thought. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive.
+
+The notion of a SKOS concept is useful when describing the conceptual or intellectual structure of a knowledge organization system, and when referring to specific ideas or meanings established within a KOS."""@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class ;
+                                                    <http://purl.org/dc/elements/1.1/description> """A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts. Semantic relationships (links) between those concepts may also be viewed as part of a concept scheme. This definition is, however, meant to be suggestive rather than restrictive, and there is some flexibility in the formal data model stated below.
+
+The notion of a concept scheme is useful when dealing with data from an unknown source, and when dealing with data that describes two or more different knowledge organization systems."""@en .
+
+
+###  https://crossforest.eu/def/spatial-grid#cell
+<https://crossforest.eu/def/spatial-grid#cell> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+                                               <http://purl.org/dc/elements/1.1/description> "La clase representa una celda perteneciente a una cuadrícula"@es ,
+                                                                                             "The class represents  the cells belonging to a grid."@en ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Cell"@en .
+
+
+###  https://crossforest.eu/def/spatial-grid#centroid
+<https://crossforest.eu/def/spatial-grid#centroid> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+                                                   <http://purl.org/dc/elements/1.1/description> "La clase representa el centroide de una cuadrícula"@es ,
+                                                                                                 "The class represents the centroid belonging to a cell."@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Centroid"@en .
+
+
+###  https://crossforest.eu/def/spatial-grid#grid
+<https://crossforest.eu/def/spatial-grid#grid> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+                                               <http://purl.org/dc/elements/1.1/description> "La clase representa un sistema espacial de cuadrículas"@es ,
+                                                                                             "The class represents a system of spatial grids"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Grid"@en .
+
+
+###  https://datos.ign.es/def/btn100#UnidadAdministrativa
+<https://datos.ign.es/def/btn100#UnidadAdministrativa> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                                         owl:allValuesFrom xsd:string
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE> ;
+                                                                         owl:allValuesFrom xsd:string
+                                                                       ] ;
+                                                       <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                       rdfs:comment "“La Unión Europea entiende como unidades administrativas aquellas áreas donde los Estados miembros tienen o ejercen sus derechos jurisdiccionales a efectos de administración local, regional y nacional. Están separadas mediante límites administrativos y frecuentemente están organizadas jerárquicamente, reflejando los distintos grados de responsabilidad implicados” [INSPIRE ANEXO 1.Tema 4]. Definen las áreas de cada municipio o condominio, provincia, comunidad autónoma y nación española."@es ;
+                                                       rdfs:label "Unidad Administrativa"@es .
+
+
+###  https://datos.ign.es/def/geo_core#ObjetoGeografico
+<https://datos.ign.es/def/geo_core#ObjetoGeografico> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura
+<http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura> rdf:type owl:NamedIndividual ,
+                                                                                       <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#ComunidadAutonoma> .
+
+
+###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Badajoz
+<http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Badajoz> rdf:type owl:NamedIndividual ,
+                                                                                   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> .
+
+
+###  http://inspire.ec.europa.eu/glossary/SpatialReferenceSystem
+<http://inspire.ec.europa.eu/glossary/SpatialReferenceSystem> rdf:type owl:NamedIndividual ,
+                                                                       <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                                              <http://purl.org/dc/terms/title> "Spatial reference system"@en ;
+                                                              <http://qudt.org/schema/qudt/description> "System for identifying position in the real world [ISO 19112]"@en ;
+                                                              <https://www.w3.org/2002/07/owl#sameAs> "http://inspire.ec.europa.eu/glossary/SpatialReferenceSystem:2\""^^xsd:anyURI .
+
+
+###  http://qudt.org/vocab/quantitykind/Area
+<http://qudt.org/vocab/quantitykind/Area> rdf:type owl:NamedIndividual ,
+                                                   <http://qudt.org/schema/qudt/QuantityKind> ;
+                                          <http://qudt.org/schema/qudt/baseCGSUnitDimensions> "L^2"^^xsd:string ;
+                                          <http://qudt.org/schema/qudt/baseSIUnitDimensions> "m^2"^^xsd:string ;
+                                          <http://qudt.org/schema/qudt/baseUnitDimensions> "L^2"^^xsd:string ;
+                                          <http://qudt.org/schema/qudt/description> "Area is a quantity expressing the two-dimensional size of a defined part of a surface, typically a region bounded by a closed curve."^^rdf:HTML ;
+                                          rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+                                          rdfs:label "Area"^^xsd:string ;
+                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "Area"^^xsd:string .
+
+
+###  http://qudt.org/vocab/unit/M
+<http://qudt.org/vocab/unit/M> rdf:type owl:NamedIndividual ,
+                                        <http://qudt.org/schema/qudt/BaseUnit> ,
+                                        <http://qudt.org/schema/qudt/LengthUnit> ,
+                                        <http://qudt.org/schema/qudt/MKS-Unit> ,
+                                        <http://qudt.org/schema/qudt/Unit> ;
+                               <http://qudt.org/schema/qudt/code> "1090"^^xsd:string ;
+                               <http://qudt.org/schema/qudt/longDescription> "The metric and SI base unit of distance.  The 17th General Conference on Weights and Measures in 1983 defined the meter as that distance that makes the speed of light in a vacuum equal to exactly 299 792 458 meters per second. The speed of light in a vacuum, \\(c\\), is one of the fundamental constants of nature. The meter is equal to approximately 1.093 613 3 yards, 3.280 840 feet, or 39.370 079 inches."^^xsd:string ;
+                               <http://qudt.org/schema/qudt/uneceCommonCode> "MTR"^^xsd:string ;
+                               <http://qudt.org/schema/qudt/description> "The metric and SI base unit of distance.   The meter is equal to approximately 1.093 613 3 yards, 3.280 840 feet, or 39.370 079 inches."^^xsd:string ;
+                               <http://qudt.org/schema/qudt/id> "U000E1090"^^xsd:string ;
+                               <http://qudt.org/schema/qudt/ucumCaseInsensitiveCode> "M"^^xsd:string ;
+                               <http://qudt.org/schema/qudt/ucumCaseSensitiveCode> "m"^^xsd:string ;
+                               <http://qudt.org/schema/qudt/ucumCode> "M"^^xsd:string ,
+                                                                      "m"^^xsd:string ;
+                               rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ,
+                                                <http://qudt.org/vocab/unit> ;
+                               rdfs:label "Meter"^^xsd:string ;
+                               <http://www.w3.org/2004/02/skos/core#prefLabel> "meter"^^xsd:string .
+
+
+###  http://qudt.org/vocab/unit/M2
+<http://qudt.org/vocab/unit/M2> rdf:type owl:NamedIndividual ,
+                                         <http://qudt.org/schema/qudt/AreaUnit> ,
+                                         <http://qudt.org/schema/qudt/DerivedUnit> ,
+                                         <http://qudt.org/schema/qudt/Unit> ;
+                                <http://qudt.org/schema/qudt/code> 1705 ,
+                                                                   "1705"^^xsd:string ;
+                                <http://qudt.org/schema/qudt/uneceCommonCode> """M2
+m2"""^^xsd:string ;
+                                <http://qudt.org/schema/qudt/description> "The S I unit of area is the square metre."^^xsd:string ;
+                                <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/Area> ,
+                                                                              <https://crossforest.eu/resource/spatial-grid/quantity-kind/Area> ;
+                                <http://qudt.org/schema/qudt/id> "U150E1705"^^xsd:string ;
+                                <http://qudt.org/schema/qudt/ucumCaseInsensitiveCode> "M2"^^xsd:string ;
+                                <http://qudt.org/schema/qudt/ucumCaseSensitiveCode> "m2"^^xsd:string ;
+                                <http://qudt.org/schema/qudt/ucumCode> "M2"^^xsd:string ,
+                                                                       "m2"^^xsd:string ;
+                                rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ,
+                                                 <http://qudt.org/vocab/unit> ;
+                                rdfs:label "Square Meter"^^xsd:string ;
+                                <http://www.w3.org/2004/02/skos/core#prefLabel> "square-meter"^^xsd:string .
+
+
+###  http://www.opengis.net/def/crs/EPSG/0/
+<http://www.opengis.net/def/crs/EPSG/0/> rdf:type owl:NamedIndividual ,
+                                                  <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                         rdfs:isDefinedBy "http://www.opengis.net/def/crs/EPSG/0/"^^xsd:string ;
+                                         rdfs:label "EPSG-0"^^xsd:string ;
+                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "EPSG-0"^^xsd:string .
+
+
+###  http://www.opengis.net/def/crs/EPSG/0/32630
+<http://www.opengis.net/def/crs/EPSG/0/32630> rdf:type owl:NamedIndividual ,
+                                                       <http://purl.org/dc/terms/Standard> ,
+                                                       <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                              <http://purl.org/dc/terms/type> <http://inspire.ec.europa.eu/glossary/SpatialReferenceSystem> ;
+                                              <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.opengis.net/def/crs/EPSG/0/> ;
+                                              <http://purl.org/dc/terms/identifier> "http://www.opengis.net/def/crs/EPSG/0/32630"^^xsd:anyURI ;
+                                              <http://qudt.org/schema/qudt/description> "https://www.w3.org/TR/sdw-bp/#bp-crs"@en ;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "WGS 84 / UTM zone 30N"@en .
+
+
+###  https://crossforest.eu/def/spatial-grid#1km2
+<https://crossforest.eu/def/spatial-grid#1km2> rdf:type owl:NamedIndividual ,
+                                                        <http://qudt.org/schema/qudt/QuantityValue> ;
+                                               <http://qudt.org/schema/qudt/unit> <http://qudt.org/vocab/unit/M2> ;
+                                               <http://qudt.org/schema/qudt/height> "1000"^^xsd:string ;
+                                               <http://qudt.org/schema/qudt/numericValue> 1000000 ;
+                                               <http://qudt.org/schema/qudt/width> "1000"^^xsd:string .
+
+
+###  https://crossforest.eu/def/spatial-grid#1x1km
+<https://crossforest.eu/def/spatial-grid#1x1km> rdf:type owl:NamedIndividual ,
+                                                         <http://qudt.org/schema/qudt/Quantity> ;
+                                                <http://qudt.org/schema/qudt/quantityValue> <https://crossforest.eu/def/spatial-grid#1km2> .
+
+
+###  https://crossforest.eu/def/spatial-grid#10km2
+<https://crossforest.eu/def/spatial-grid#10km2> rdf:type owl:NamedIndividual ,
+                                                         <http://qudt.org/schema/qudt/QuantityValue> ;
+                                                <http://qudt.org/schema/qudt/unit> <http://qudt.org/vocab/unit/M2> ;
+                                                <http://qudt.org/schema/qudt/height> "10000"^^xsd:string ;
+                                                <http://qudt.org/schema/qudt/numericValue> 10000000 ;
+                                                <http://qudt.org/schema/qudt/width> "10000"^^xsd:string .
+
+
+###  https://crossforest.eu/def/spatial-grid#10x10km
+<https://crossforest.eu/def/spatial-grid#10x10km> rdf:type owl:NamedIndividual ,
+                                                           <http://qudt.org/schema/qudt/Quantity> ;
+                                                  <http://qudt.org/schema/qudt/quantityValue> <https://crossforest.eu/def/spatial-grid#10km2> .
+
+
+###  https://crossforest.eu/def/spatial-grid/grid/GRID-1-KM
+<https://crossforest.eu/def/spatial-grid/grid/GRID-1-KM> rdf:type owl:NamedIndividual ,
+                                                                  <https://crossforest.eu/def/spatial-grid#grid> ;
+                                                         <https://crossforest.eu/def/spatial-grid#hasMeasure> <https://crossforest.eu/def/spatial-grid#10x10km> ;
+                                                         <https://crossforest.eu/def/spatial-grid#spatialReferenceSystem> <http://www.opengis.net/def/crs/EPSG/0/32630> .
+
+
+###  https://crossforest.eu/def/spatial-grid/grid/GRID-10-KM
+<https://crossforest.eu/def/spatial-grid/grid/GRID-10-KM> rdf:type owl:NamedIndividual ,
+                                                                   <https://crossforest.eu/def/spatial-grid#grid> ;
+                                                          <https://crossforest.eu/def/spatial-grid#hasMeasure> <https://crossforest.eu/def/spatial-grid#10x10km> ;
+                                                          <https://crossforest.eu/def/spatial-grid#spatialReferenceSystem> <http://www.opengis.net/def/crs/EPSG/0/32630> .
+
+
+###  https://crossforest.eu/def/spatial-grid/grid/GRID-25-M
+<https://crossforest.eu/def/spatial-grid/grid/GRID-25-M> rdf:type owl:NamedIndividual ,
+                                                                  <https://crossforest.eu/def/spatial-grid#grid> ;
+                                                         <https://crossforest.eu/def/spatial-grid#hasMeasure> <https://crossforest.eu/resource/spatial-grid/quantity/25x25m> ;
+                                                         <https://crossforest.eu/def/spatial-grid#spatialReferenceSystem> <http://www.opengis.net/def/crs/EPSG/0/32630> .
+
+
+###  https://crossforest.eu/resource/spatial-grid/cell/06-25-M-000001
+<https://crossforest.eu/resource/spatial-grid/cell/06-25-M-000001> rdf:type owl:NamedIndividual ,
+                                                                            <https://crossforest.eu/def/spatial-grid#cell> ;
+                                                                   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia> <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura> ;
+                                                                   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#pais> <https://datos.gob.es/recurso/sector-publico/territorio/Pais/España> ;
+                                                                   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#provincia> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Badajoz> ;
+                                                                   <http://www.opengis.net/ont/geosparql#hasGeometry> <https://crossforest.eu/resource/spatial-grid/cell/geo/06-25-M-000001> ;
+                                                                   <https://crossforest.eu/def/spatial-grid#belongsToGrid> <https://crossforest.eu/def/spatial-grid/grid/GRID-25-M> ;
+                                                                   <https://crossforest.eu/def/spatial-grid#hasMeasure> <https://crossforest.eu/resource/spatial-grid/quantity/25x25m> ;
+                                                                   <https://crossforest.eu/def/spatial-grid#cod> "25mP06N1"^^xsd:string .
+
+
+###  https://crossforest.eu/resource/spatial-grid/cell/geo/06-25-M-000001
+<https://crossforest.eu/resource/spatial-grid/cell/geo/06-25-M-000001> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.opengis.net/ont/sf#Polygon> ;
+                                                                       <http://www.opengis.net/ont/geosparql#asWKT> "sfdfdf"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+
+###  https://crossforest.eu/resource/spatial-grid/quantity-value/25m2
+<https://crossforest.eu/resource/spatial-grid/quantity-value/25m2> rdf:type owl:NamedIndividual ,
+                                                                            <http://qudt.org/schema/qudt/QuantityValue> ;
+                                                                   <http://qudt.org/schema/qudt/unit> <http://qudt.org/vocab/unit/M2> ;
+                                                                   <http://qudt.org/schema/qudt/height> "25"^^xsd:string ;
+                                                                   <http://qudt.org/schema/qudt/numericValue> 25 ;
+                                                                   <http://qudt.org/schema/qudt/width> "25"^^xsd:string .
+
+
+###  https://crossforest.eu/resource/spatial-grid/quantity/25x25m
+<https://crossforest.eu/resource/spatial-grid/quantity/25x25m> rdf:type owl:NamedIndividual ,
+                                                                        <http://qudt.org/schema/qudt/Quantity> ;
+                                                               <http://qudt.org/schema/qudt/quantityValue> <https://crossforest.eu/resource/spatial-grid/quantity-value/25m2> .
+
+
+###  https://datos.gob.es/recurso/sector-publico/territorio/Pais/España
+<https://datos.gob.es/recurso/sector-publico/territorio/Pais/España> rdf:type owl:NamedIndividual ,
+                                                                              <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Pais> .
+
+
+_:genid37 <http://ainf.aau.at/ontodebug#axiom> "cuadricula DisjointWith Geometry"^^xsd:string ;
+          <http://ainf.aau.at/ontodebug#type> "true"^^xsd:boolean .
+
+_:genid38 <http://ainf.aau.at/ontodebug#axiom> "celda SubClassOf asWKT some wktLiteral"^^xsd:string ;
+           <http://ainf.aau.at/ontodebug#type> "false"^^xsd:boolean .
+
+_:genid39 <http://ainf.aau.at/ontodebug#axiom> "celda SubClassOf asWKT some wktLiteral"^^xsd:string ;
+           <http://ainf.aau.at/ontodebug#type> "false"^^xsd:boolean .
+
+_:genid40 <http://ainf.aau.at/ontodebug#axiom> "cuadricula DisjointWith Geometry"^^xsd:string ;
+           <http://ainf.aau.at/ontodebug#type> "true"^^xsd:boolean .
+
+_:genid41 <http://ainf.aau.at/ontodebug#axiom> "celda SubClassOf asWKT some wktLiteral"^^xsd:string ;
+           <http://ainf.aau.at/ontodebug#type> "false"^^xsd:boolean .
+
+_:genid42 <http://ainf.aau.at/ontodebug#axiom> "cuadricula DisjointWith Geometry"^^xsd:string ;
+           <http://ainf.aau.at/ontodebug#type> "true"^^xsd:boolean .
+
+_:genid43 <http://ainf.aau.at/ontodebug#axiom> "celda SubClassOf asWKT some wktLiteral"^^xsd:string ;
+           <http://ainf.aau.at/ontodebug#type> "false"^^xsd:boolean .
+
+_:genid44 <http://ainf.aau.at/ontodebug#axiom> "cuadricula DisjointWith Geometry"^^xsd:string ;
+           <http://ainf.aau.at/ontodebug#type> "true"^^xsd:boolean .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+   owl:members ( <http://www.opengis.net/ont/geosparql#SpatialObject>
+                 <http://www.w3.org/2004/02/skos/core#Concept>
+                 <http://www.w3.org/2004/02/skos/core#ConceptScheme>
+               )
+ ] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.w3.org/2004/02/skos/core#Concept>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme>
+                <https://crossforest.eu/def/spatial-grid#cell>
+                <https://crossforest.eu/def/spatial-grid#centroid>
+                <https://crossforest.eu/def/spatial-grid#grid>
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

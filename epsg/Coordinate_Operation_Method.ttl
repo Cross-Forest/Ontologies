@@ -1,0 +1,1544 @@
+@prefix area:  <http://epsg.w3id.org/data/area/> .
+@prefix datum: <http://epsg.w3id.org/data/datum/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix cop:   <http://epsg.w3id.org/data/cop/> .
+@prefix crs:   <http://epsg.w3id.org/data/crs/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix epsg:  <http://epsg.w3id.org/ontology/> .
+@prefix cs:    <http://epsg.w3id.org/data/cs/> .
+@prefix folder: <file:///home/chemi/Documents/EPSG_v9_6/> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix operation: <http://epsg.w3id.org/data/operation/> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+cop:9655  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2008.027 2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9655"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "IGN document NTG_88.pdf, \"Grille de parametres de transformation de coordonnees\". http://www.ign.fr" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "France geocentric interpolation"@en .
+
+cop:9826  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.018 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9826"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Lambert Conic Conformal (West Orientated)"@en .
+
+cop:9805  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2004.320 2004.430 2010.058 2010.098 2015.021" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9805"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Mercator (variant B)"@en ;
+        epsg:remarks            "Used for most nautical charts."@en .
+
+cop:9634  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9634"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "Survey of New Brunswick" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Maritime Provinces polynomial interpolation"@en ;
+        epsg:remarks            "This transformation is an executable module within the application NBGeocalc.  It is an adaptation of the ESTPM program developed by Geodetic Survey of Canada."@en .
+
+cop:1065  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2016.061 2019.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1065"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Time-specific Position Vector transform (geocen)"@en ;
+        epsg:remarks            "Note the analogy with the Time-specifc Coordinate Frame method (code 1066) but beware of the differences!"@en .
+
+cop:9613  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2004.190 2008.027 2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9613"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "US Coast and geodetic Survey - http://www.ngs.noaa.gov" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "NADCON"@en ;
+        epsg:remarks            "Geodetic transformation operating on geographic coordinate differences by bi-linear interpolation.  Input expects longitudes to be positive west."@en .
+
+cop:1044  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2010.058 2010.103 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1044"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Mercator (variant C)"@en .
+
+cop:9663  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2008.010 2010.104 2016.049" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9663"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Geographic3D to GravityRelatedHeight (OSGM-GB)"@en ;
+        epsg:remarks            "Transformation of the vertical component of a Geographic 3D CRS to a Vertical CRS."@en .
+
+cop:9834  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2007.078 2009.023" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9834"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "USGS Professional Paper 1395, \"Map Projections - A Working Manual\" by John P. Snyder." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Lambert Cylindrical Equal Area (Spherical)"@en ;
+        epsg:remarks            "This is the spherical form of the projection.  See coordinate operation method Lambert Cylindrical Equal Area (code 9835) for ellipsoidal form.  Differences of several tens of metres result from comparison of the two methods."@en .
+
+cop:9813  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "1997.613 2006.960 2007.040 2010.058" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9813"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "\"La nouvelle projection du Service Geographique de Madagascar\"; J. Laborde; 1928. Also IGN Paris technical note NT/G 74." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Laborde Oblique Mercator"@en .
+
+cop:9642  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9642"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7." ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Degree representation conversion: HDM to DMSH"@en ;
+        epsg:remarks            "Applies to 2D and the horizontal component of 3D ellipsoidal  systems."@en .
+
+cop:1073  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.045" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1073"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Geographic3D to GravityRelatedHeight (IGN2009)"@en ;
+        epsg:remarks            "Transformation of the vertical component of a Geographic 3D CRS to a Vertical CRS. File header of method code 9664  (4 lines) has changed in this method (1 line);  recommended interpolation method now in a separate XML file with same name as the grid."@en .
+
+cop:9621  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2000.830 2004.670 2010.053" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9621"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Similarity transformation"@en ;
+        epsg:remarks            "Defined for two-dimensional coordinate systems."@en .
+
+cop:1052  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2012.044" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "1052"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Colombia Urban"@en .
+
+cop:1031  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2009.083" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "1031"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Geocentric translations (geocentric domain)"@en ;
+        epsg:remarks            "This method allows calculation of geocentric coords in the target system by adding the parameter values to the corresponding coordinates of the point in the source system. See methods 1035 and 9603 for similar tfms operating between other CRSs types."@en .
+
+cop:9842  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2009.023" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9842"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "ESRI" ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Equidistant Cylindrical"@en ;
+        epsg:remarks            "See method code 9823 for spherical development. See also Pseudo Plate Carree, method code 9825."@en .
+
+cop:9650  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9650"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Reversible polynomial of degree 3"@en ;
+        epsg:remarks            "Reversibility is subject to constraints.  See Guidance Note 7 for conditions and clarification."@en .
+
+cop:9821  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2009.007" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9821"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "USGS Professional Paper 1395, \"Map Projections - A Working Manual\" by John P. Snyder." ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Lambert Azimuthal Equal Area (Spherical)"@en ;
+        epsg:remarks            "This is the spherical form of the projection.  See coordinate operation method Lambert Azimuthal Equal Area (code 9820) for ellipsoidal form.  Differences of several tens of metres result from comparison of the two methods."@en .
+
+cop:9629  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "1999.640" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9629"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7." ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Reversible polynomial (3rd-order)"@en ;
+        epsg:remarks            "Reversibility is subject to constraints.  See Guidance Note 7 for clarification."@en .
+
+cop:1060  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.064 2016.050" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1060"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "Geodetic Survey Division, Natural Resources Canada." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Geographic3D to GravityRelatedHeight (CGG2013)"@en ;
+        epsg:remarks            "For consistency with earlier models the Information Source references software which uses bi-quadratic interpolation. Because of denser node spacing in CGG2013 bi-linear interpolation will be sufficient for most uses. See Info Source for file format doc."@en .
+
+cop:1039  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2009.083 2013.021 2014.039 2014.065 2019.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1039"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Molodensky-Badekas (CF geog3D domain)"@en ;
+        epsg:remarks            "See method codes 1034 and 9636 for this operation in other coordinate domains and method code 1062 for opposite rotation convention in geographic 3D domain."@en .
+
+cop:9658  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2016.046" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9658"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "US National Geodetic Survey - http://www.ngs.noaa.gov" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "VERTCON"@en ;
+        epsg:remarks            "Any NAD realization may be used as the Interpolation CRS; bi-linear interpolation is used. Input expects longitudes to be positive west."@en .
+
+cop:9829  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2004.430 2010.054 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9829"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Polar Stereographic (variant B)"@en .
+
+cop:1068  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2014.027 2019.002" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1068"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG Guidance Note #7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Height Depth Reversal"@en ;
+        epsg:remarks            "This is a parameter-less conversion."@en .
+
+cop:9637  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9637"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7." ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Degree representation conversion: deg to DMSH"@en ;
+        epsg:remarks            "Applies to 2D and the horizontal component of 3D ellipsoidal  systems."@en .
+
+cop:9808  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2002.510 2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9808"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Transverse Mercator (South Orientated)"@en .
+
+cop:9616  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "1999.790 2008.010 2014.027" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9616"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Vertical Offset"@en ;
+        epsg:remarks            "This transformation allows calculation of height (or depth) in the target system by adding the parameter value to the height (or depth)-value of the point in the source system."@en .
+
+cop:1047  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2011.083 2016.050" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1047"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Geographic3D to GravityRelatedHeight (Gravsoft)"@en .
+
+cop:1026  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2008.114 2009.023" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "1026"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Mercator (Spherical)"@en .
+
+cop:9666  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2011.106 2014.044" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9666"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "UKOOA Data Exchange Format P6/98, Definition of 3D Seismic Binning Grids, revision 3, May 2000, and OGP P6/11 seismic bin grid data exchange format user guide, July 2012." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "P6 (I = J+90°) seismic bin grid transformation"@en ;
+        epsg:remarks            "Use only when the bin grid I-axis is rotated 90° clockwise from the J-axis when viewed from above the plane containing the two axes (CS code 1033). If the I-axis is rotated 90° counter-clockwise from the J-axis, method 1049 should be used."@en .
+
+cop:9837  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.018 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9837"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Geographic/topocentric conversions"@en .
+
+cop:1076  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.040" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1076"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "SPE paper 96813 \"Accounting for Earth Curvature in Directional Drilling\", 2005." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Wellbore local to geographic (LMP)"@en ;
+        epsg:remarks            "For wellbore survey."@en .
+
+cop:9645  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9645"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "General polynomial of degree 2"@en .
+
+cop:9816  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "1999.811 2000.080 2012.052" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9816"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Tunisia Mining Grid"@en .
+
+cop:9624  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2004.670 2012.075" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9624"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Affine parametric transformation"@en .
+
+cop:1055  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.021 2018.001 2019.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1055"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Time-dependent Position Vector tfm (geog3D)"@en ;
+        epsg:remarks            "Note the analogy with the Coordinate Frame rotation (code 1058) but beware of the differences!  The Position Vector convention is used by IAG. See method codes 1053 and 1054 for similar methods operating between other CRS types."@en .
+
+cop:9603  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2009.083" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9603"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Geocentric translations (geog2D domain)"@en ;
+        epsg:remarks            "See methods 1031 and 1035 for similar tfms operating between other CRSs types."@en .
+
+cop:1034  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2009.083 2013.021 2014.039 2014.065 2019.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1034"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Molodensky-Badekas (CF geocentric domain)"@en ;
+        epsg:remarks            "See method codes 1039 and 9636 for this operation in other coordinate domains and method code 1061 for opposite rotation convention in geocentric domain."@en .
+
+cop:9653  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9653"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Complex polynomial of degree 4"@en ;
+        epsg:remarks            "Coordinate pairs treated as complex numbers.  This exploits the correlation between the polynomial coefficients and leads to a smaller number of coefficients than the general polynomial of degree 4."@en .
+
+cop:9824  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.018 2017.011" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9824"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Transverse Mercator Zoned Grid System"@en ;
+        epsg:remarks            "If locations fall outwith the fixed zones the general Transverse Mercator method (code 9807) must be used for each zone."@en .
+
+cop:1063  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2014.039 2014.065 2018.001 2019.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1063"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Molodensky-Badekas (PV geog2D domain)"@en ;
+        epsg:remarks            "See method codes 1061 and 1062 for this operation in other coordinate domains and method code 9636 for opposite rotation in geographic 2D domain."@en .
+
+cop:9632  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9632"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7." ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Complex polynomial (4th-order)"@en ;
+        epsg:remarks            "Coordinate pairs treated as complex numbers.  This exploits the correlation between the polynomial coefficients and leads to a smaller number of coefficients than the regular 4th-order polynomial."@en .
+
+cop:9803  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "1999.280 2017.018 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9803"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Lambert Conic Conformal (2SP Belgium)"@en ;
+        epsg:remarks            "In 2000 this modification was replaced through use of the regular Lambert Conic Conformal (2SP) method [9802] with appropriately modified parameter values."@en .
+
+cop:1042  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2010.071 2010.100 2012.011 2017.037 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1042"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "Land Survey Office (ZU), Prague. www.cuzk.cz/zu" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Krovak Modified"@en ;
+        epsg:remarks            "Incorporates a polynomial transformation which is defined to be exact and for practical purposes is considered to be a map projection."@en .
+
+cop:9661  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2008.010 2008.097 2016.050" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9661"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Geographic3D to GravityRelatedHeight (EGM)"@en ;
+        epsg:remarks            "Applies to EGM84 and EGM96 models. For later model see Geographic3D to GravityRelatedHeight (EGM2008), method code 1025."@en .
+
+cop:9832  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2006.200 2017.018 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9832"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "US Geological Survey Professional Paper 1395; \"Map Projections - A Working Manual\";  J. Snyder." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Modified Azimuthal Equidistant"@en ;
+        epsg:remarks            "Modified form of Oblique Azimuthal Equidistant projection method developed for Polynesian islands. For the distances over which these projections are used (under 800km) this modification introduces no significant error."@en .
+
+cop:1071  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2016.031" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1071"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "IOGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Vertical Offset by Grid Interpolation (NZLVD)"@en .
+
+cop:9640  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9640"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7." ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Degree representation conversion: DM to DMSH"@en ;
+        epsg:remarks            "Applies to 2D and the horizontal component of 3D ellipsoidal  systems."@en .
+
+cop:9811  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9811"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "New Zealand Department of Lands technical circular 1973/32" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "New Zealand Map Grid"@en .
+
+cop:9619  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "1999.790 2004.330 2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9619"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Geographic2D offsets"@en ;
+        epsg:remarks            "This transformation allows calculation of coordinates in the target system by adding the parameter value to the coordinate values of the point in the source system."@en .
+
+cop:1050  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2012.095 2016.050 2014.027" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1050"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Geographic3D to GravityRelatedHeight (CI)"@en .
+
+cop:1029  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2009.023" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "1029"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "US Geological Survey Professional Paper 1395; \"Map Projections - A Working Manual\";  J. Snyder." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Equidistant Cylindrical (Spherical)"@en ;
+        epsg:remarks            "See method code 1028 for ellipsoidal development. If the latitude of natural origin is at the equator, also known as Plate Carrée. See also Pseudo Plate Carree, method code 9825."@en .
+
+cop:9840  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9840"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Orthographic"@en ;
+        epsg:remarks            "If the natural origin of the projection is at the topocentric origin, this is a special case of the Vertical Perspective (orthographic case) (method code 9839) in which the ellipsoid height of all mapped points is zero (h = 0)."@en .
+
+cop:9648  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9648"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "General polynomial of degree 6"@en .
+
+cop:9819  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2002.950 2006.180 2007.040 2009.017 2010.071 2010.100 2017.037 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9819"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "Research Institute for Geodesy Topography and Cartography (VUGTK); Prague, and Geodesy, Cartography and Cadastre Authority of Slovak Republic (UGKK SR)." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Krovak"@en .
+
+cop:9627  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9627"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7." ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "General polynomial (4th-order)"@en .
+
+cop:1058  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.021 2019.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1058"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Time-dependent Coordinate Frame rotation (geog3D)"@en ;
+        epsg:remarks            "Note the analogy with the Time-dependent Position Vector transformation (code 1055) but beware of the differences!  The Position Vector convention is used by IAG. See method codes 1056 and 1057 for similar methods operating between other CRS types."@en .
+
+cop:9606  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "1998.160 2009.083 2013.021 2018.001 2019.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9606"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Position Vector transformation (geog2D domain)"@en ;
+        epsg:remarks            "Note the analogy with the Coordinate Frame rotation (code 9607) but beware of the differences!  The Position Vector convention is used by IAG and recommended by ISO 19111. See methods 1033 and 1037 for similar tfms operating between other CRS types."@en .
+
+cop:1037  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2009.083 2013.021 2018.001 2019.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1037"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Position Vector transformation (geog3D domain)"@en ;
+        epsg:remarks            "Note the analogy with the Coordinate Frame rotation (code 1038) but beware of the differences!  The Position Vector convention is used by IAG and recommended by ISO 19111. See methods 1033 and 9606 for similar tfms operating between other CRS types."@en .
+
+cop:9656  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9656"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Cartesian Grid Offsets"@en ;
+        epsg:remarks            "This transformation allows calculation of coordinates in the target system by adding the parameter value to the coordinate values of the point in the source system."@en .
+
+cop:9827  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9827"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "US Geological Survey Professional Paper 1395, \"Map Projections - A Working Manual\" by John P Snyder." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Bonne"@en .
+
+cop:9806  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9806"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Cassini-Soldner"@en .
+
+cop:9635  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2004.190 2004.340 2017.037" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9635"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Geog3D to Geog2D+GravityRelatedHeight (US .gtx)"@en ;
+        epsg:remarks            "Transformation from a Geographic 3D CRS to a Compound CRS consisting of a Geographic 2D CRS and a Vertical CRS, or vice versa. The Geographic 3D and the Geographic 2D CRS must be based on the same Geodetic Datum."@en .
+
+cop:1066  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2016.061 2018.001 2019.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1066"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Time-specific Coordinate Frame rotation (geocen)"@en ;
+        epsg:remarks            "Note the analogy with the Time-specific Position Vector method (code 1065) but beware of the differences!"@en .
+
+cop:9614  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2004.190 2008.027 2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9614"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "Geomatics Canada - Geodetic Survey Division." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "NTv1"@en ;
+        epsg:remarks            "Geodetic transformation operating on geographic coordinate differences by bi-linear interpolation. Superseded in 1997 by NTv2 (transformation method code 9615).  Input expects longitudes to be positive west."@en .
+
+cop:1045  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2010.104" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "1045"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Geographic3D to GravityRelatedHeight (OSGM02-Ire)"@en ;
+        epsg:remarks            "Transformation of the vertical component of a Geographic 3D CRS to a Vertical CRS."@en .
+
+cop:1024  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2008.114 2009.023 2017.030" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1024"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP Guidance Note 7-2" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Popular Visualisation Pseudo Mercator"@en ;
+        epsg:remarks            "Applies spherical formulas to the ellipsoid. As such does not have the properties of a true Mercator projection."@en .
+
+cop:9664  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2008.010 2016.050 2017.045" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9664"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Geographic3D to GravityRelatedHeight (IGN1997)"@en ;
+        epsg:remarks            "Transformation of the vertical component of a Geographic 3D CRS to a Vertical CRS."@en .
+
+cop:9835  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9835"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "USGS Professional Paper 1395, \"Map Projections - A Working Manual\" by John P. Snyder." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Lambert Cylindrical Equal Area"@en ;
+        epsg:remarks            "This is the ellipsoidal form of the projection."@en .
+
+cop:1074  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2018.017" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1074"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "National Geodetic Survey - http://www.ngs.noaa.gov" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "NADCON5 (2D)"@en ;
+        epsg:remarks            "Geodetic transformation operating on geographic coordinate differences by bi-quadratic interpolation.  Input expects longitudes to be positive east in range 0-360° (0° = Greenwich)."@en .
+
+cop:9643  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9643"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7." ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Degree representation conversion: DMS to DMSH"@en ;
+        epsg:remarks            "Applies to 2D and the horizontal component of 3D ellipsoidal  systems."@en .
+
+cop:9814  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "1997.612 2008.106" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9814"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "\"Die projecktionen der Schweizerischen Plan und Kartenwerke\"; J Bollinger; 1967" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Swiss Oblique Cylindrical"@en ;
+        epsg:remarks            "Can be accommodated by Oblique Mercator method (code 9815), for which this method is an approximation (see BfL document swissprojectionen.pdf at www.swisstopo.com)."@en .
+
+cop:9622  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9622"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7, http://www.epsg.org" ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Affine orthogonal geometric transformation"@en .
+
+cop:1053  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.021 2013.065 2014.068 2018.001 2019.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1053"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Time-dependent Position Vector tfm (geocentric)"@en ;
+        epsg:remarks            "Note the analogy with the Time-dependent Coordinate Frame rotation (code 1056) but beware of the differences!  The Position Vector convention is used by IAG. See method codes 1054 and 1055 for similar methods operating between other CRS types."@en .
+
+cop:9601  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "1999.790 2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9601"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Longitude rotation"@en ;
+        epsg:remarks            "This transformation allows calculation of the longitude of a point in the target system by adding the parameter value to the longitude value of the point in the source system."@en .
+
+cop:1032  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2009.083 2013.021 2014.039 2018.001 2019.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1032"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Coordinate Frame rotation (geocentric domain)"@en ;
+        epsg:remarks            "This method is a specific case of the Molodensky-Badekas (CF) method (code 1034) in which the evaluation point is at the geocentre with coordinate values of zero. Note the analogy with the Position Vector method (code 1033) but beware of the differences!"@en .
+
+cop:9843  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2015.007 2015.018 2014.027" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9843"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Axis Order Reversal (2D)"@en ;
+        epsg:remarks            "This is a parameter-less conversion to reverse the order of the axes of a 2D CRS."@en .
+
+cop:9651  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9651"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Reversible polynomial of degree 4"@en ;
+        epsg:remarks            "Reversibility is subject to constraints.  See Guidance Note 7 for conditions and clarification."@en .
+
+cop:9822  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2006.200 2007.049 2015.022 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9822"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "USGS Professional Paper 1395, \"Map Projections - A Working Manual\" by John P. Snyder." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Albers Equal Area"@en .
+
+cop:1061  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2014.039 2014.065 2019.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1061"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Molodensky-Badekas (PV geocentric domain)"@en ;
+        epsg:remarks            "See method codes 1062 and 1063 for this operation in other coordinate domains and method code 1034 for opposite rotation convention in geocentric domain."@en .
+
+cop:9630  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "1999.640" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9630"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7." ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Reversible polynomial (4th-order)"@en ;
+        epsg:remarks            "Reversibility is subject to constraints.  See Guidance Note 7 for clarification."@en .
+
+cop:9801  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2001.080 2017.018 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9801"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Lambert Conic Conformal (1SP)"@en .
+
+cop:1040  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2010.037" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "1040"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "Geo++." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "GNTRANS"@en .
+
+cop:9830  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2010.054 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9830"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Polar Stereographic (variant C)"@en .
+
+cop:9659  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2015.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9659"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Geographic3D to 2D conversion"@en ;
+        epsg:remarks            "This is a parameter-less conversion."@en .
+
+cop:1069  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2014.027 2018.004" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1069"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG Guidance Note #7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Change of Vertical Unit"@en .
+
+cop:9638  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9638"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7." ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Degree representation conversion: degH to DMSH"@en ;
+        epsg:remarks            "Applies to 2D and the horizontal component of 3D ellipsoidal  systems."@en .
+
+cop:9809  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "1999.811 2006.200 2017.018 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9809"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Oblique Stereographic"@en ;
+        epsg:remarks            "This is not the same as the projection method of the same name in USGS Professional Paper no. 1395, \"Map Projections - A Working Manual\" by John P. Snyder."@en .
+
+cop:9617  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "1999.284 1999.820 1999.640 2006.910 2011.003 2011.057" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9617"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org, after Institut de Geomatica; Barcelona." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Madrid to ED50 polynomial"@en .
+
+cop:1048  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2012.009 2016.050 2018.009" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1048"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "Geoscience Australia; http://www.ga.gov.au, geodesy/ausgeoid pages." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Geographic3D to GravityRelatedHeight (Ausgeoid v2)"@en ;
+        epsg:remarks            "The Information Source references software which offers both bi-cubic and bi-linear interpolation methods. Unlike earlier Ausgeoid98 method which used bi-linear interpolation, Ausgeoid v2 uses bi-cubic. See Info Source for file format documentation."@en .
+
+cop:1027  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2009.007 2009.023" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "1027"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "USGS Professional Paper 1395, \"Map Projections - A Working Manual\" by John P. Snyder." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Lambert Azimuthal Equal Area (Spherical)"@en ;
+        epsg:remarks            "This is the spherical form of the projection.  See coordinate operation method Lambert Azimuthal Equal Area (code 9820) for ellipsoidal form.  Differences of several tens of metres result from comparison of the two methods."@en .
+
+cop:9838  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9838"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Vertical Perspective"@en ;
+        epsg:remarks            "For a viewing point height approaching or at infinity, see the Vertical Perspective (orthographic case) (method code 9839)."@en .
+
+cop:1077  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.040" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1077"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "IOGP GN7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Wellbore local to projected (GNL)"@en ;
+        epsg:remarks            "For wellbore survey."@en .
+
+cop:9646  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9646"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "General polynomial of degree 3"@en .
+
+cop:9817  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "1999.811 2004.610 2005.390 2008.029 2010.024 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9817"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Lambert Conic Near-Conformal"@en ;
+        epsg:remarks            "The Lambert Near-Conformal projection is derived from the Lambert Conformal Conic projection by truncating the series expansion of the projection formulae."@en .
+
+cop:9625  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9625"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7." ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "General polynomial (2nd-order)"@en .
+
+cop:1056  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.021 2014.068 2019.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1056"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Time-dependent Coordinate Frame rotation (geocen)"@en ;
+        epsg:remarks            "Note the analogy with the Time-dependent Position Vector transformation (code 1053) but beware of the differences!  The Position Vector convention is used by IAG. See method codes 1057 and 1058 for similar methods operating between other CRS types."@en .
+
+cop:9604  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2004.470" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9604"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Molodensky"@en ;
+        epsg:remarks            "See Abridged Molodensky."@en .
+
+cop:1035  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2009.083" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "1035"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Geocentric translations  (geog3D domain)"@en ;
+        epsg:remarks            "See methods 1031 and 9603 for similar tfms operating between other CRSs types."@en .
+
+cop:9654  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9654"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Reversible polynomial of degree 13"@en .
+
+cop:9825  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9825"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Pseudo Plate Carree"@en ;
+        epsg:remarks            "Used only for depiction of graticule (latitude/longitude) coordinates on a computer display. The axes units are decimal degrees and of variable scale. The origin is at Lat = 0, Long = 0. See Equidistant Cylindrical, code 9823, for proper Plate Carrée."@en .
+
+cop:1064  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2016.060" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1064"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Point motion (geocentric Cartesian)"@en .
+
+cop:9633  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2004.190 2008.027 2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9633"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "http://www.gps.gov.uk/gpssurveying.asp" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Ordnance Survey National Transformation"@en ;
+        epsg:remarks            "Geodetic transformation between ETRS89 (or WGS 84) and OSGB36 / National Grid.  Uses ETRS89 / National Grid as an intermediate coordinate system for bi-linear interpolation of gridded grid coordinate differences."@en .
+
+cop:9804  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2001.080 2004.430 2008.000 2010.058" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9804"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Mercator (variant A)"@en ;
+        epsg:remarks            "Note that in these formulas the parameter latitude of natural origin (latO) is not used. However for this Mercator (variant A) method the EPSG dataset includes this parameter, which must have a value of zero, for completeness in CRS labelling."@en .
+
+cop:1043  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2010.071 2010.100 2012.011 2017.037 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1043"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "Land Survey Office (ZU), Prague. www.cuzk.cz/zu" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Krovak Modified (North Orientated)"@en ;
+        epsg:remarks            "Incorporates a polynomial transformation which is defined to be exact and for practical purposes is considered to be a map projection."@en .
+
+cop:9662  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2008.010 2016.050" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9662"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Geographic3D to GravityRelatedHeight (Ausgeoid98)"@en .
+
+cop:9833  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9833"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Hyperbolic Cassini-Soldner"@en .
+
+cop:9641  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9641"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7." ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Degree representation conversion: DMH to DMSH"@en ;
+        epsg:remarks            "Applies to 2D and the horizontal component of 3D ellipsoidal  systems."@en .
+
+cop:1072  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2016.049" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1072"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Geographic3D to GravityRelatedHeight (OSGM15-Ire)"@en ;
+        epsg:remarks            "Transformation of the vertical component of a Geographic 3D CRS to a Vertical CRS."@en .
+
+cop:9812  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "1997.620 1999.811 2004.430 2004.600 2007.044 2010.058 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9812"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Hotine Oblique Mercator (variant A)"@en .
+
+cop:9620  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2005.230 2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9620"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "Norwegian Mapping Authority note of 13-Feb-1991 \"Om Transformasjon mellom Geodetiske Datum i Norge\"." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Norway Offshore Interpolation"@en ;
+        epsg:remarks            "Although in principle this method is not reversible, in practice reversibility is better than 10 cm. For the applications for which it was designed it may be considered reversible."@en .
+
+cop:1051  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.020 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1051"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Lambert Conic Conformal (2SP Michigan)"@en .
+
+cop:1030  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2009.081 2016.031" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1030"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Geographic3D to GravityRelatedHeight (NZgeoid)"@en ;
+        epsg:remarks            "EPSG initially gave this method the name \"Geographic3D to GravityRelatedHeight (NZgeoid2009)\". As the same file format was retained for the 2016 geoid, date removed from the method name."@en .
+
+cop:9841  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2008.114" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9841"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "USGS Professional Paper 1395, \"Map Projections - A Working Manual\" by John P. Snyder." ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Mercator (1SP) (Spherical)"@en .
+
+cop:9820  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.350 2004.430 2005.075 2005.290 2006.200 2007.005 2017.018 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9820"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "USGS Professional Paper 1395, \"Map Projections - A Working Manual\" by John P. Snyder." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Lambert Azimuthal Equal Area"@en ;
+        epsg:remarks            "This is the ellipsoidal form of the projection."@en .
+
+cop:9649  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9649"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Reversible polynomial of degree 2"@en ;
+        epsg:remarks            "Reversibility is subject to constraints.  See Guidance Note 7 for conditions and clarification."@en .
+
+cop:9628  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "1999.640" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9628"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7." ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Reversible polynomial (2nd-order)"@en ;
+        epsg:remarks            "Reversibility is subject to constraints.  See Guidance Note 7 for clarification."@en .
+
+cop:1059  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2015.052 2016.050" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1059"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Geographic3D to GravityRelatedHeight (PNG)"@en ;
+        epsg:remarks            "Transformation of the vertical component of a Geographic 3D CRS to a Vertical CRS."@en .
+
+cop:9607  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2004.141 2009.083 2013.021 2018.001 2019.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9607"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Coordinate Frame rotation (geog2D domain)"@en ;
+        epsg:remarks            "Note the analogy with the Position Vector tfm (code 9606) but beware of the differences!  The Position Vector convention is used by IAG and recommended by ISO 19111. See methods 1032 and 1038 for similar tfms operating between other CRS types."@en .
+
+cop:1038  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2009.083 2013.021 2018.001 2019.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1038"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Coordinate Frame rotation (geog3D domain)"@en ;
+        epsg:remarks            "Note the analogy with the Position Vector tfm (code 1037) but beware of the differences!  The Position Vector convention is used by IAG and recommended by ISO 19111. See methods 1032 and 9607 for similar tfms operating between other CRS types."@en .
+
+cop:9657  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2011.108" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9657"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Vertical Offset and Slope"@en ;
+        epsg:remarks            "This transformation allows calculation of height in the target system by applying the parameter values to the height value of the point in the source system."@en .
+
+cop:9828  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.018 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9828"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Bonne (South Orientated)"@en .
+
+cop:1067  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2016.060" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1067"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Point motion (ellipsoidal)"@en .
+
+cop:9636  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2002.510 2004.470 2009.083 2013.021 2014.039 2014.065 2017.018 2018.001 2019.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9636"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Molodensky-Badekas (CF geog2D domain)"@en ;
+        epsg:remarks            "See method codes 1034 and 1039 for this operation in other coordinate domains and method code 1063 for the opposite rotation convention in geographic 2D domain."@en .
+
+cop:9807  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2004.680 2007.029 2011.098" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9807"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Transverse Mercator"@en .
+
+cop:9615  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2004.190 2008.027 2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9615"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "Geomatics Canada - Geodetic Survey Division, http://www.geod.nrcan.gc.ca/.  Also GDAit software documentation from University of Melbourne Geomatics Department, http://www.sli.unimelb.edu.au/gda94/." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "NTv2"@en ;
+        epsg:remarks            "Geodetic transformation operating on geographic coordinate differences by bi-linear interpolation.  Supersedes  NTv1 (transformation method code 9614).  Input expects longitudes to be positive west."@en .
+
+cop:1046  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2011.108 2014.027" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1046"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Vertical Offset and Slope"@en ;
+        epsg:remarks            "This transformation allows calculation of height in the target system by applying the parameter values to the height value of the point in the source system."@en .
+
+cop:1025  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2008.097 2016.050" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1025"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Geographic3D to GravityRelatedHeight (EGM2008)"@en ;
+        epsg:remarks            "For earlier EGM84 and EGM96 models see Geographic3D to GravityRelatedHeight (EGM), method code 9661."@en .
+
+cop:9665  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2008.010 2016.050 2017.037" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9665"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Geographic3D to GravityRelatedHeight (US .gtx)"@en ;
+        epsg:remarks            "Transformation of the vertical component of a Geographic 3D CRS to a Vertical CRS. NOAA .gtx grid file format."@en .
+
+cop:9836  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9836"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Geocentric/topocentric conversions"@en .
+
+cop:1075  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2018.017" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1075"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "National Geodetic Survey - http://www.ngs.noaa.gov" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "NADCON5 (3D)"@en ;
+        epsg:remarks            "Geodetic transformation operating on geographic coordinate differences by bi-quadratic interpolation.  Input expects longitudes to be positive east in range 0-360° (0° = Greenwich)."@en .
+
+cop:9644  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9644"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7." ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Degree representation conversion: HDMS to DMSH"@en ;
+        epsg:remarks            "Applies to 2D and the horizontal component of 3D ellipsoidal  systems."@en .
+
+cop:9815  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "1999.811 2004.430 2004.600 2007.044 2010.058 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9815"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Hotine Oblique Mercator (variant B)"@en .
+
+cop:9623  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2004.670" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9623"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Affine geometric transformation"@en .
+
+cop:1054  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.021 2018.001 2019.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1054"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Time-dependent Position Vector tfm (geog2D)"@en ;
+        epsg:remarks            "Note the analogy with the Time-dependent Coordinate Frame rotation (code 1057) but beware of the differences!  The Position Vector convention is used by IAG. See method codes 1053 and 1055 for similar methods operating between other CRS types."@en .
+
+cop:9602  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "1997.290 2002.510 2004.330 2007.058 2017.018 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9602"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org, from \"Datums and Map Projections\"; Iliffe and Lott (2007)." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Geographic/geocentric conversions"@en ;
+        epsg:remarks            "This is a parameter-less conversion. In applications it is often concatenated with the 3- 7- or 10-parameter transformations 9603, 9606, 9607 or 9636 to form a geographic to geographic transformation."@en .
+
+cop:1033  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2009.083 2013.021 2014.039 2018.001 2019.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1033"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Position Vector transformation (geocentric domain)"@en ;
+        epsg:remarks            "This method is a specific case of the Molodensky-Badekas (PV) method (code 1061) in which the evaluation point is the geocentre with coordinate values of zero. Note the analogy with the Coordinate Frame method (code 1032) but beware of the differences!"@en .
+
+cop:9844  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2015.018 2014.027" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9844"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Axis Order Reversal (Geographic3D horizontal)"@en ;
+        epsg:remarks            "This is a parameter-less conversion to change the order of horizontal coordinates of a geographic 3D CRS."@en .
+
+cop:9652  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9652"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Complex polynomial of degree 3"@en ;
+        epsg:remarks            "Coordinate pairs treated as complex numbers.  This exploits the correlation between the polynomial coefficients and leads to a smaller number of coefficients than the general polynomial of degree 3."@en .
+
+cop:9823  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2002.920 2008.003 2009.023" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9823"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "US Geological Survey Professional Paper 1395; \"Map Projections - A Working Manual\";  J. Snyder." ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Equidistant Cylindrical (Spherical)"@en ;
+        epsg:remarks            "See method code 9842 for ellipsoidal development. If the latitude of natural origin is at the equator, also known as Plate Carrée. See also Pseudo Plate Carree, method code 9825."@en .
+
+cop:1062  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2014.039 2014.065 2019.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1062"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Molodensky-Badekas (PV geog3D domain)"@en ;
+        epsg:remarks            "See method codes 1061 and 1063 for this operation in other coordinate domains and method code 1039 for opposite rotation convention in geographic 3D domain."@en .
+
+cop:9631  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9631"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7." ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Complex polynomial (3rd-order)"@en ;
+        epsg:remarks            "Coordinate pairs treated as complex numbers.  This exploits the correlation between the polynomial coefficients and leads to a smaller number of coefficients than the regular 3rd-order polynomial."@en .
+
+cop:9802  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "1999.280 2001.080 2017.018 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9802"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Lambert Conic Conformal (2SP)"@en .
+
+cop:1041  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2010.071 2010.100 2017.037 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1041"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "Land Survey Office (ZU), Prague, www.cuzk.cz/zu, and Geodesy, Cartography and Geodesy, Cartography and Cadastre Authority of Slovak Republic (UGKK SR)." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Krovak (North Orientated)"@en .
+
+cop:9660  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9660"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Geographic3D offsets"@en ;
+        epsg:remarks            "This transformation allows calculation of coordinates in the target system by adding the parameter value to the coordinate values of the point in the source system."@en .
+
+cop:9831  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9831"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "US Geological Survey Professional Paper 1395; \"Map Projections - A Working Manual\";  J. Snyder." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Guam Projection"@en ;
+        epsg:remarks            "Simplified form of Oblique Azimuthal Equidistant projection method."@en .
+
+cop:1070  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2016.060 2018.034" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1070"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "Natural Resources Canada." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Point motion by grid (Canada NTv2_Vel)"@en ;
+        epsg:remarks            "Interpolation within the grid is in the horizontal component of the source CRS."@en .
+
+cop:9810  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.220 2010.054 2017.024" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9810"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Polar Stereographic (variant A)"@en ;
+        epsg:remarks            "Latitude of natural origin must be either 90 degrees or -90 degrees (or equivalent in alternative angle unit)."@en .
+
+cop:9639  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9639"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7." ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Degree representation conversion: Hdeg to DMSH"@en ;
+        epsg:remarks            "Applies to 2D and the horizontal component of 3D ellipsoidal  systems."@en .
+
+cop:9618  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "1999.790 2004.330 2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9618"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Geographic2D with Height Offsets"@en ;
+        epsg:remarks            "This transformation allows calculation of coordinates in the target system by adding the parameter value to the coordinate values of the point in the source system."@en .
+
+cop:1049  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2011.106 2014.044" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "1049"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP P6/11 Seismic Bin Grid Data Exchange Format - User Guidelines, version 1.0, July 2012." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "P6 (I = J-90°) seismic bin grid transformation"@en ;
+        epsg:remarks            "Use only when the bin grid I-axis is rotated 90° counter-clockwise from the J-axis when viewed from above the plane containing the two axes (CS code 1034). If the I-axis is rotated 90° clockwise from the J-axis, method 9666 should be used."@en .
+
+cop:1028  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2009.023" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "1028"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "ESRI" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Equidistant Cylindrical"@en ;
+        epsg:remarks            "See method code 1029 for spherical development. See also Pseudo Plate Carree, method code 9825."@en .
+
+cop:9839  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9839"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "Vertical Perspective (Orthographic case)"@en ;
+        epsg:remarks            "This is a special case of the general Vertical Perspective (method code 9838) in which the viewing point at infinity."@en .
+
+cop:9647  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9647"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "General polynomial of degree 4"@en .
+
+cop:1078  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2018.048" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1078"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "Šavrič et al, International Journal of Geographical Iinformation Science, August 2018." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Equal Earth"@en .
+
+cop:9818  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "1999.550 2017.018" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9818"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "US Geological Survey Professional Paper 1395; \"Map Projections - A Working Manual\";  J. Snyder" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "American Polyconic"@en ;
+        epsg:remarks            "See information source for formula and example."@en .
+
+cop:9626  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9626"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7." ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:isReversible       "0"^^xsd:boolean ;
+        epsg:name               "General polynomial (3rd-order)"@en .
+
+cop:1057  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.021 2018.001 2019.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1057"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Time-dependent Coordinate Frame rotation (geog2D)"@en ;
+        epsg:remarks            "Note the analogy with the Time-dependent Position Vector transformation (code 1054) but beware of the differences!  The Position Vector convention is used by IAG. See methods 1056 and 1058 for similar tfms operating between other CRS types."@en .
+
+cop:9605  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "1999.010 2004.470 2006.420" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9605"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note #7-2, http://www.epsg.org" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Abridged Molodensky"@en ;
+        epsg:remarks            "This transformation is a truncated Taylor series expansion of a transformation between two geographic coordinate systems, modelled as a set of geocentric translations."@en .
+
+cop:1036  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2009.071" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "1036"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "Zeitschrift fur Vermessungswesen (ZfV, the Journal of the German Association of Surveying) volume 128 of April 2003 pages 244-250 and volume 129 of April 2004 pages 258-260." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:isReversible       "1"^^xsd:boolean ;
+        epsg:name               "Cartesian Grid Offsets from Form Function"@en ;
+        epsg:remarks            "Used in German state of Schleswig-Holstein."@en .

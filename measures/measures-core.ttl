@@ -1,0 +1,364 @@
+@prefix smo: <http://crossforest.eu/measures/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+@prefix unit: <http://crossforest.eu/measures/data/unit/> .
+
+smo: a owl:Ontology;
+  rdfs:label "Simple Measures Ontology"@en , "Ontología de Medidas Simples"@es ;
+  rdfs:comment "A simple ontology to publish data about measures in different units"@en , "Una ontología sencilla para publicar datos sobre medidas en diferentes unidades" ;
+  owl:versionInfo 0.2 ;
+  dc:creator <https://www.gsic.uva.es/members/josgim> , <https://www.gsic.uva.es/members/guiveg> ;
+  dc:date "2019-07-17"^^xsd:date ;
+  vann:preferredNamespacePrefix "smo" .
+
+
+
+#################################################################
+#    Classes
+#################################################################
+
+# MEASURABLE ENTITIES
+
+smo:MeasurableEntity a owl:Class , rdfs:Class ;
+  rdfs:label "Measurable Entity"@en , "Entidad medible"@es ;
+  rdfs:comment "Entity from which a measure or a number of measures is taken"@en , "Entidad de la cual se toma una o varias medidas"@es ;
+  owl:disjointWith smo:Measure , smo:Unit ;
+  rdfs:isDefinedBy smo: .
+
+smo:MeasurableEntityInMeters a owl:Class , rdfs:Class ;
+  rdfs:label "Measurable Entity in Meters"@en , "Entidad medible en metros"@es ;
+  rdfs:comment "Entity from which a measure in meters is taken"@en , "Entidad de la cual se toma una medida en metros"@es ;
+  owl:equivalentClass
+    [
+      a owl:Restriction ;
+      owl:onProperty smo:hasMeasure ;
+      owl:someValuesFrom smo:MeasureInMeters
+    ] ;
+  rdfs:isDefinedBy smo: .
+
+smo:MeasurableEntityInDecimeters a owl:Class , rdfs:Class ;
+  rdfs:label "Measurable Entity in Decimeters"@en , "Entidad medible en decímetros"@es ;
+  rdfs:comment "Entity from which a measure in decimeters is taken"@en , "Entidad de la cual se toma una medida en decímetros"@es ;
+  owl:equivalentClass
+    [
+      a owl:Restriction ;
+      owl:onProperty smo:hasMeasure ;
+      owl:someValuesFrom smo:MeasureInDecimeters
+    ] ;
+  rdfs:isDefinedBy smo: .
+
+smo:MeasurableEntityInCentimeters a owl:Class , rdfs:Class ;
+  rdfs:label "Measurable Entity in Centimeters"@en , "Entidad medible en centímetros"@es ;
+  rdfs:comment "Entity from which a measure in centimeters is taken"@en , "Entidad de la cual se toma una medida en centímetros"@es ;
+  owl:equivalentClass
+    [
+      a owl:Restriction ;
+      owl:onProperty smo:hasMeasure ;
+      owl:someValuesFrom smo:MeasureInCentimeters
+    ] ;
+  rdfs:isDefinedBy smo: .
+
+smo:MeasurableEntityInMillimeters a owl:Class , rdfs:Class ;
+  rdfs:label "Measurable Entity in Millimeters"@en , "Entidad medible en milímetros"@es ;
+  rdfs:comment "Entity from which a measure in millimeters is taken"@en , "Entidad de la cual se toma una medida en milímetros"@es ;
+  owl:equivalentClass
+    [
+      a owl:Restriction ;
+      owl:onProperty smo:hasMeasure ;
+      owl:someValuesFrom smo:MeasureInMillimeters
+    ] ;
+  rdfs:isDefinedBy smo: .
+
+smo:MeasurableEntityInSquareMeters a owl:Class , rdfs:Class ;
+  rdfs:label "Measurable Entity in Square Meters"@en , "Entidad medible en metros cuadrados"@es ;
+  rdfs:comment "Entity from which a measure in square meters is taken"@en , "Entidad de la cual se toma una medida en metros cuadrados"@es ;
+  owl:equivalentClass
+    [
+      a owl:Restriction ;
+      owl:onProperty smo:hasMeasure ;
+      owl:someValuesFrom smo:MeasureSquareMeters
+    ] ;
+  rdfs:isDefinedBy smo: .
+
+smo:MeasurableEntityInHectares a owl:Class , rdfs:Class ;
+  rdfs:label "Measurable Entity in Hectares"@en , "Entidad medible en hectáreas"@es ;
+  rdfs:comment "Entity from which a measure in hectares is taken"@en , "Entidad de la cual se toma una medida en hectáreas"@es ;
+  owl:equivalentClass
+    [
+      a owl:Restriction ;
+      owl:onProperty smo:hasMeasure ;
+      owl:someValuesFrom smo:Hectares
+    ] ;
+  rdfs:isDefinedBy smo: .
+
+# MEASURES
+
+smo:Measure a owl:Class , rdfs:Class ;
+  rdfs:label "Measure"@en , "Medida"@es ;
+  rdfs:comment "Measure with a value and expressed used some concrete units"@en , "Una medida con un valor y expresada en unas unidades concretas"@es ;
+  owl:disjointWith smo:MeasurableEntity , smo:Unit ;
+  rdfs:isDefinedBy smo: .
+
+smo:MeasureInMeters a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:Measure ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty smo:hasUnit ;
+    owl:hasValue unit:Meters ] ;
+  rdfs:isDefinedBy smo: .
+
+smo:MeasureInDecimeters a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:Measure ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty smo:hasUnit ;
+    owl:hasValue unit:Decimeters ] ;
+  rdfs:isDefinedBy smo: .
+
+smo:MeasureInCentimeters a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:Measure ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty smo:hasUnit ;
+    owl:hasValue unit:Centimeters ] ;
+  rdfs:isDefinedBy smo: .
+
+smo:MeasureInMillimeters a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:Measure ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty smo:hasUnit ;
+    owl:hasValue unit:Millimeters ] ;
+  rdfs:isDefinedBy smo: .
+
+smo:MeasureInDegrees a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:Measure ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty smo:hasUnit ;
+    owl:hasValue unit:Degrees ] ;
+  rdfs:isDefinedBy smo: .
+
+smo:MeasureInGradians a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:Measure ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty smo:hasUnit ;
+    owl:hasValue unit:Gradians ] ;
+  rdfs:isDefinedBy smo: .
+
+smo:MeasureInSquareMeters a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:Measure ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty smo:hasUnit ;
+    owl:hasValue unit:SquareMeters ] ;
+  rdfs:isDefinedBy smo: .
+
+smo:MeasureInPercentage a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:Measure ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty smo:hasUnit ;
+    owl:hasValue unit:Percentage ] ;
+  rdfs:isDefinedBy smo: .
+
+smo:MeasureInHectares a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:Measure ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty smo:hasUnit ;
+    owl:hasValue unit:Hectare ] ;
+  rdfs:isDefinedBy smo: .
+
+smo:MeasureInUnities a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:Measure ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty smo:hasUnit ;
+    owl:hasValue unit:Unities ] ;
+  rdfs:isDefinedBy smo: .
+
+# UNITS
+
+smo:Unit a owl:Class , rdfs:Class ;
+  rdfs:label "Unit"@en , "Unidades"@es ;
+  rdfs:comment "Unit in which a measure is taken"@en , "Unidades en las que se toma una medida"@es ;
+  owl:disjointWith smo:MeasurableEntity , smo:Measure ;
+  rdfs:isDefinedBy smo: .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+smo:hasMeasure a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "has measure"@en , "tiene medida"@es ;
+  rdfs:comment "has a measure with a value and expressed using some concrete units"@en , "tiene una medida con un valor y expresada en unas unidades concretas"@es ;
+  rdfs:range smo:Measure ;
+  rdfs:isDefinedBy smo: .
+
+smo:hasUnit a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "has unit"@en , "tiene unidades"@es ;
+  rdfs:comment "units of a measure"@en , "unidades de una medida"@es ;
+  rdfs:domain smo:Measure ;
+  rdfs:range smo:Unit ;
+  rdfs:isDefinedBy smo: .
+
+
+#################################################################
+#    Datatype Properties
+#################################################################
+
+smo:hasValue a owl:DatatypeProperty , rdf:Property ;
+  rdfs:label "value"@en , "valor"@es ;
+  rdfs:comment "value of a measure"@en , "valor de una medida"@es ;
+  rdfs:domain smo:Measure ;
+  rdfs:range xsd:decimal ;
+  rdfs:isDefinedBy smo: .
+
+smo:hasMeasureLiteral a owl:DatatypeProperty , rdf:Property ;
+  rdfs:label "measure"@en , "medida"@es ;
+  rdfs:comment "measure expressed as a decimal literal"@en , "medida expresada directamente en un literal decimal"@es ;
+  rdfs:domain smo:MeasurableEntity ;
+  rdfs:range xsd:decimal ;
+  rdfs:isDefinedBy smo: .
+
+smo:hasMeasureInMeters a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureLiteral ;
+  rdfs:label "value in meters"@en , "valor en metros"@es ;
+  rdfs:comment "value of a measure in meters"@en , "valor de una medida en metros"@es ;
+  rdfs:domain smo:MeasurableEntityInMeters ;
+  rdfs:isDefinedBy smo: .
+
+smo:hasMeasureInDecimeters a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureLiteral ;
+  rdfs:label "value in decimeters"@en , "valor en decímetros"@es ;
+  rdfs:comment "value of a measure in decimeters"@en , "valor de una medida en decímetros"@es ;
+  rdfs:domain smo:MeasurableEntityInDecimeters ;
+  rdfs:isDefinedBy smo: .
+
+smo:hasMeasureInCentimeters a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureLiteral ;
+  rdfs:label "value in centimeters"@en , "valor en centímetros"@es ;
+  rdfs:comment "value of a measure in centimeters"@en , "valor de una medida en centímetros"@es ;
+  rdfs:domain smo:MeasureInCentimeters ;
+  rdfs:isDefinedBy smo: .
+
+smo:hasMeasureInMillimeters a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureLiteral ;
+  rdfs:label "value in millimeters"@en , "valor en milímetros"@es ;
+  rdfs:comment "value of a measure in millimeters"@en , "valor de una medida en milímetros"@es ;
+  rdfs:domain smo:MeasurableEntityInMillimeters ;
+  rdfs:isDefinedBy smo: .
+
+smo:hasMeasureinDegrees a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureLiteral ;
+  rdfs:label "value in degrees"@en , "valor en grados"@es ;
+  rdfs:comment "value of an angular meausure in degrees"@en , "valor de una medida angular en grados"@es ;
+  rdfs:domain smo:MeasurableEntityInDegrees ;
+  rdfs:isDefinedBy smo: .
+
+smo:hasMeasureinGradians a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureLiteral ;
+  rdfs:label "value in gradians"@en , "valor en gradianes"@es ;
+  rdfs:comment "value of an angular meausure in gradians"@en , "valor de una medida angular en gradianes"@es ;
+  rdfs:domain smo:MeasurableEntityInGradians ;
+  rdfs:isDefinedBy smo: .
+
+smo:hasMeasureinSquareMeters a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureLiteral ;
+  rdfs:label "value in square meters"@en , "valor en square meters"@es ;
+  rdfs:comment "value of an meausure in square meters"@en , "valor de una medida en square meters"@es ;
+  rdfs:domain smo:MeasurableEntityInSquareMeters ;
+  rdfs:isDefinedBy smo: .
+
+smo:hasMeasureinHectares a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureLiteral ;
+  rdfs:label "value in hectares"@en , "valor en hectáreas"@es ;
+  rdfs:comment "value of an meausure in hectares"@en , "valor de una medida en hectáreas"@es ;
+  rdfs:domain smo:MeasurableEntityInHectares ;
+  rdfs:isDefinedBy smo: .
+
+smo:hasMeasureinPercentage a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureLiteral ;
+  rdfs:label "value in percentage"@en , "valor en porcentaje"@es ;
+  rdfs:comment "value of an meausure in percentage"@en , "valor de una medida en porcentaje"@es ;
+  rdfs:domain smo:MeasurableEntityInSquareMeters ;
+  rdfs:isDefinedBy smo: .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+unit:Meters a owl:NamedIndividual , smo:Unit ;
+  rdfs:label "Meters"@en, "Metros"@es ;
+  rdfs:comment "Meter as unit for a measure"@en , "Metro como unidad de una medida"@es ;
+  rdfs:isDefinedBy smo: .
+
+unit:Decimeters a owl:NamedIndividual , smo:Unit ;
+  rdfs:label "Decimeters"@en, "Decímetros"@es ;
+  rdfs:comment "Decimeter as unit for a measure"@en , "Decímetro como unidad de una medida"@es ;
+  rdfs:isDefinedBy smo: .
+
+unit:Centimeters a owl:NamedIndividual , smo:Unit ;
+  rdfs:label "Centimeters"@en, "Centímetros"@es ;
+  rdfs:comment "Centimeter as unit for a measure"@en , "Centímetro como unidad de una medida"@es ;
+  rdfs:isDefinedBy smo: .
+
+unit:Millimeters a owl:NamedIndividual , smo:Unit ;
+  rdfs:label "Millimeters"@en, "Milímetros"@es ;
+  rdfs:comment "Millimeter as unit for a measure"@en , "Milímetro como unidad de una medida"@es ;
+  rdfs:isDefinedBy smo: .
+
+unit:Degrees a owl:NamedIndividual , smo:Unit ;
+  rdfs:label "Degrees"@en , "Grados"@es ;
+  rdfs:comment "Degree as a unit for angular measure. A degree is equivalent to 0.017453292519943278 radians"@em ,  "Grado como unidad de medida angular. Cada grado es equivalente a 0.017453292519943278 radianes"@es ;
+  rdfs:isDefinedBy smo: .
+
+unit:Gradians a owl:NamedIndividual , smo:Unit ;
+  rdfs:label "Gradians"@en , "Grados Centesimales"@es ;
+  rdfs:comment "Gradians as a unit for angular measure. A gradian is equivalent to 0.015707963267948966192 radians"@em ,  "Gradián como unidad de medida angular. Cada gradián es equivalente a 0.015707963267948966192 radianes"@es ;
+  rdfs:isDefinedBy smo: .
+
+unit:SquareMeters a owl:NamedIndividual , smo:Unit ;
+  rdfs:label "Square Meters"@en , "Metros Cuadrados"@es ;
+  rdfs:comment "Square meters as a unit for area measure."@em ,  "Metros cuadrados como unidad de medida de área."@es ;
+  rdfs:isDefinedBy smo: .
+
+unit:Unities a owl:NamedIndividual , smo:Unit ;
+  rdfs:label "Unities"@en , "Unidades"@es ;
+  rdfs:comment "Unity (i.e., the number 1) as a unity of measure"@en , "Unidad (i.e., el número 1) como unidad de medida"@es ;
+  rdfs:seeAlso <https://iopscience.iop.org/article/10.1088/0026-1394/31/6/013/meta> ;
+  rdfs:isDefinedBy smo: .
+
+unit:Percentage a owl:NamedIndividual , smo:Unit ;
+  rdfs:label "Percentage"@en , "Porcentaje"@es ;
+  rdfs:comment "100 as a unity of measure"@en , "100 como unidad de medida"@es ;
+  rdfs:isDefinedBy smo: .
+
+unit:M3byHA a owl:NamedIndividual , smo:Unit ;
+  rdfs:label "Cubic Meters by Hectare"@en , "Metros cúbicos por hectárea"@es ;
+  rdfs:comment "Cubic Meters by Hectare as a unity of measure"@en , "Metros cúbicos por hectárea como unidad de medida"@es ;
+  rdfs:isDefinedBy smo: .
+
+unit:M2byHA a owl:NamedIndividual , smo:Unit ;
+  rdfs:label "Square Meters by Hectare"@en , "Metros cuadrados por hectárea"@es ;
+  rdfs:comment "Square Meters by Hectare as a unity of measure"@en , "Metros cuadrados por hectárea como unidad de medida"@es ;
+  rdfs:isDefinedBy smo: .
+
+unit:UnitsByHA a owl:NamedIndividual , smo:Unit ;
+  rdfs:label "Units by Hectare"@en , "Unidades por hectárea"@es ;
+  rdfs:comment "Units by Hectare as a unity of measure"@en , "Unidades por hectárea como unidad de medida"@es ;
+  rdfs:isDefinedBy smo: .
+
+unit:Hectares a owl:NamedIndividual , smo:Unit ;
+  rdfs:label "Hectares"@en , "Hectáreas"@es ;
+  rdfs:comment "Hectared as a unity of measure"@en , "Hectáreas como unidad de medida"@es ;
+  rdfs:isDefinedBy smo: .

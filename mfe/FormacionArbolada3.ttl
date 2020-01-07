@@ -1,0 +1,16 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix mfe:   <http://crossforest.eu/mfe/ontology/> .
+
+mfe:ForestType-M # modificado x ACO; FormacionArbolada x ForestType
+        a           owl:Class , rdfs:Class ;
+        rdfs:label  "Mezcla de coníferas y frondosas"@es .
+
+mfe:ForestType-C
+        a           owl:Class , rdfs:Class ;
+        rdfs:label  "Conifer Stand"@en , "Bosque de coníferas"@es .
+
+mfe:ForestType-F
+        a           owl:Class , rdfs:Class ;
+        rdfs:label  "Frondosas"@es , "Bosques de frondosas"@es .

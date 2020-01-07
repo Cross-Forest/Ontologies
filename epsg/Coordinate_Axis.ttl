@@ -1,0 +1,2809 @@
+@prefix epsg:  <http://epsg.w3id.org/ontology/> .
+@prefix folder: <file:///home/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<http://epsg.w3id.org/data/axis/230>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9101> .
+
+<http://epsg.w3id.org/data/axis/145>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2030%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1030>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "x" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/1024> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/Ahead> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/200>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%20140%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/73>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9119> .
+
+<http://epsg.w3id.org/data/cs/6501>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/119> , <http://epsg.w3id.org/data/axis/118> .
+
+<http://epsg.w3id.org/data/axis/115>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9910> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/Geocentre%20%3E%20equator%2F0%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6416>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/90> , <http://epsg.w3id.org/data/axis/89> , <http://epsg.w3id.org/data/axis/88> .
+
+<http://epsg.w3id.org/data/axis/43>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4486>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/153> , <http://epsg.w3id.org/data/axis/170> .
+
+<http://epsg.w3id.org/data/axis/187>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%2090%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/2>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/13>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9036> .
+
+<http://epsg.w3id.org/data/axis/157>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2045%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1042>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "n" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/1029> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/1031>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1102> , <http://epsg.w3id.org/data/axis/1101> .
+
+<http://epsg.w3id.org/data/axis/212>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9919> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/85>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9117> .
+
+<http://epsg.w3id.org/data/axis/127>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "e" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9914> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/northeast> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6428>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/226> , <http://epsg.w3id.org/data/axis/225> .
+
+<http://epsg.w3id.org/data/axis/55>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "h" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9903> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4498>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/40> , <http://epsg.w3id.org/data/axis/39> .
+
+<http://epsg.w3id.org/data/axis/199>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%2050%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1476>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%20108%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/25>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4468>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/192> , <http://epsg.w3id.org/data/axis/191> .
+
+<http://epsg.w3id.org/data/axis/169>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20165%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/1043>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1516> .
+
+<http://epsg.w3id.org/data/axis/224>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "h" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9903> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/97>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9107> .
+
+<http://epsg.w3id.org/data/axis/139>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20150%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1024>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "x" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/1024> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/Ahead> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/67>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9117> .
+
+<http://epsg.w3id.org/data/cs/4408>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/18> , <http://epsg.w3id.org/data/axis/17> .
+
+<http://epsg.w3id.org/data/axis/109>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lon" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9122> .
+
+<http://epsg.w3id.org/data/axis/170>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20135%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/37>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9003> .
+
+<http://epsg.w3id.org/data/axis/140>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20135%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1066>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%20180%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/236>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%2090%EF%BF%BDE.> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/110>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "h" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9903> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6411>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/76> , <http://epsg.w3id.org/data/axis/75> .
+
+<http://epsg.w3id.org/data/axis/1036>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "x" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/1025> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/Starboard> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1428>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "I" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9920> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/J-axis%20plus%2090%EF%BF%BD> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/1024> .
+
+<http://epsg.w3id.org/data/cs/1025>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1063> , <http://epsg.w3id.org/data/axis/1062> .
+
+<http://epsg.w3id.org/data/axis/206>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "V" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9931> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/79>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9102> .
+
+<http://epsg.w3id.org/data/cs/6507>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/131> , <http://epsg.w3id.org/data/axis/130> .
+
+<http://epsg.w3id.org/data/cs/4481>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/148> , <http://epsg.w3id.org/data/axis/165> .
+
+<http://epsg.w3id.org/data/axis/182>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9301> .
+
+<http://epsg.w3id.org/data/axis/49>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/152>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20105%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1078>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9002> .
+
+<http://epsg.w3id.org/data/axis/8>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9005> .
+
+<http://epsg.w3id.org/data/axis/19>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9040> .
+
+<http://epsg.w3id.org/data/axis/80>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Long" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9102> .
+
+<http://epsg.w3id.org/data/axis/122>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9908> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/west> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6423>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/110> , <http://epsg.w3id.org/data/axis/109> , <http://epsg.w3id.org/data/axis/108> .
+
+<http://epsg.w3id.org/data/axis/1525>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20180%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/1037>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1477> , <http://epsg.w3id.org/data/axis/1476> .
+
+<http://epsg.w3id.org/data/axis/50>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "x" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/218>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9105> .
+
+<http://epsg.w3id.org/data/cs/4493>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/30> , <http://epsg.w3id.org/data/axis/29> .
+
+<http://epsg.w3id.org/data/axis/194>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%2090%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6495>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/214> .
+
+<http://epsg.w3id.org/data/axis/1471>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%2057%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/20>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9040> .
+
+<http://epsg.w3id.org/data/cs/4463>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/196> , <http://epsg.w3id.org/data/axis/195> .
+
+<http://epsg.w3id.org/data/axis/164>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20105%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/92>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Long" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9118> .
+
+<http://epsg.w3id.org/data/axis/134>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "M" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9908> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/west> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/1049>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1051> .
+
+<http://epsg.w3id.org/data/axis/62>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "R" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9928> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4403>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/8> , <http://epsg.w3id.org/data/axis/7> .
+
+<http://epsg.w3id.org/data/axis/104>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lon" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9105> .
+
+<http://epsg.w3id.org/data/cs/6405>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/64> , <http://epsg.w3id.org/data/axis/63> .
+
+<http://epsg.w3id.org/data/axis/32>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%200%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4475>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/142> , <http://epsg.w3id.org/data/axis/159> .
+
+<http://epsg.w3id.org/data/cs/1050>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1053> .
+
+<http://epsg.w3id.org/data/cs/4530>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/48> , <http://epsg.w3id.org/data/axis/47> .
+
+<http://epsg.w3id.org/data/axis/231>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lon" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9101> .
+
+<http://epsg.w3id.org/data/axis/146>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2015%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1031>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/1025> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/Starboard> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/201>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%2010%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4500>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/44> , <http://epsg.w3id.org/data/axis/43> .
+
+<http://epsg.w3id.org/data/axis/74>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Long" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9119> .
+
+<http://epsg.w3id.org/data/cs/6502>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/121> , <http://epsg.w3id.org/data/axis/120> .
+
+<http://epsg.w3id.org/data/axis/116>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9911> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/Geocentre%20%3E%20equator%2F90%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6417>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/93> , <http://epsg.w3id.org/data/axis/92> , <http://epsg.w3id.org/data/axis/91> .
+
+<http://epsg.w3id.org/data/axis/44>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4487>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/154> , <http://epsg.w3id.org/data/axis/171> .
+
+<http://epsg.w3id.org/data/axis/188>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%20180%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1073>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9037> .
+
+<http://epsg.w3id.org/data/axis/3>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9062> .
+
+<http://epsg.w3id.org/data/axis/14>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9036> .
+
+<http://epsg.w3id.org/data/axis/158>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2015%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1043>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "e" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/1028> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/1032>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1111> , <http://epsg.w3id.org/data/axis/1110> , <http://epsg.w3id.org/data/axis/1112> .
+
+<http://epsg.w3id.org/data/axis/213>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "z" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9916> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/86>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Long" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9117> .
+
+<http://epsg.w3id.org/data/axis/128>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "I" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9913> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east-south-east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9205> .
+
+<http://epsg.w3id.org/data/cs/6429>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/227> , <http://epsg.w3id.org/data/axis/228> .
+
+<http://epsg.w3id.org/data/axis/56>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9108> .
+
+<http://epsg.w3id.org/data/cs/4499>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/42> , <http://epsg.w3id.org/data/axis/41> .
+
+<http://epsg.w3id.org/data/axis/1477>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%20162%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/26>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "W" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9908> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/west> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4469>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/188> , <http://epsg.w3id.org/data/axis/187> .
+
+<http://epsg.w3id.org/data/cs/6430>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/232> , <http://epsg.w3id.org/data/axis/231> , <http://epsg.w3id.org/data/axis/230> .
+
+<http://epsg.w3id.org/data/cs/1044>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1525> , <http://epsg.w3id.org/data/axis/1526> .
+
+<http://epsg.w3id.org/data/axis/225>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9101> .
+
+<http://epsg.w3id.org/data/axis/98>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Long" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9107> .
+
+<http://epsg.w3id.org/data/axis/1110>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "x" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9918> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1025>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/1025> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/Starboard> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/68>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Long" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9117> .
+
+<http://epsg.w3id.org/data/cs/4409>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/20> , <http://epsg.w3id.org/data/axis/19> .
+
+<http://epsg.w3id.org/data/cs/4470>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/186> , <http://epsg.w3id.org/data/axis/185> .
+
+<http://epsg.w3id.org/data/axis/171>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20120%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/38>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9003> .
+
+<http://epsg.w3id.org/data/axis/141>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20105%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/237>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%20180%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4410>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/182> , <http://epsg.w3id.org/data/axis/181> .
+
+<http://epsg.w3id.org/data/axis/111>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "H" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9904> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9095> .
+
+<http://epsg.w3id.org/data/cs/6412>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/78> , <http://epsg.w3id.org/data/axis/77> .
+
+<http://epsg.w3id.org/data/axis/1037>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/1024> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/Ahead> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1429>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "J" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9921> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/See%20associated%20operation> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/1024> .
+
+<http://epsg.w3id.org/data/cs/1026>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1066> , <http://epsg.w3id.org/data/axis/1065> .
+
+<http://epsg.w3id.org/data/axis/207>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "W" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9929> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6508>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/133> , <http://epsg.w3id.org/data/axis/132> .
+
+<http://epsg.w3id.org/data/cs/4482>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/149> , <http://epsg.w3id.org/data/axis/166> .
+
+<http://epsg.w3id.org/data/axis/183>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "none" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/153>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20135%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1079>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9002> .
+
+<http://epsg.w3id.org/data/axis/9>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9094> .
+
+<http://epsg.w3id.org/data/axis/81>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "h" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9903> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/123>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9909> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/south> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6424>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/220> , <http://epsg.w3id.org/data/axis/221> .
+
+<http://epsg.w3id.org/data/axis/1526>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2090%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1049>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "n" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/1029> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9002> .
+
+<http://epsg.w3id.org/data/cs/1038>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1482> , <http://epsg.w3id.org/data/axis/1481> .
+
+<http://epsg.w3id.org/data/axis/51>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/219>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "h" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9903> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4494>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/32> , <http://epsg.w3id.org/data/axis/31> .
+
+<http://epsg.w3id.org/data/axis/195>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%20100%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6496>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/111> .
+
+<http://epsg.w3id.org/data/axis/1472>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%20147%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/21>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20160%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4464>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/198> , <http://epsg.w3id.org/data/axis/197> .
+
+<http://epsg.w3id.org/data/axis/165>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20120%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1050>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "e" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/1028> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9002> .
+
+<http://epsg.w3id.org/data/axis/220>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lon" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9122> .
+
+<http://epsg.w3id.org/data/axis/93>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "h" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9903> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/135>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "P" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9909> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/south> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/63>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9102> .
+
+<http://epsg.w3id.org/data/cs/4404>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/10> , <http://epsg.w3id.org/data/axis/9> .
+
+<http://epsg.w3id.org/data/axis/105>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "h" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9903> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6406>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/66> , <http://epsg.w3id.org/data/axis/65> .
+
+<http://epsg.w3id.org/data/axis/33>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9002> .
+
+<http://epsg.w3id.org/data/cs/4476>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/143> , <http://epsg.w3id.org/data/axis/160> .
+
+<http://epsg.w3id.org/data/axis/177>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "I" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9922> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/Along%20receiver%20lines> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9208> .
+
+<http://epsg.w3id.org/data/axis/1062>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20130%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4531>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/50> , <http://epsg.w3id.org/data/axis/49> .
+
+<http://epsg.w3id.org/data/axis/232>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "h" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9903> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/147>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2015%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1032>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "z" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/1027> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/Downward> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/202>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%2080%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4501>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/46> , <http://epsg.w3id.org/data/axis/45> .
+
+<http://epsg.w3id.org/data/axis/75>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9107> .
+
+<http://epsg.w3id.org/data/cs/6503>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/123> , <http://epsg.w3id.org/data/axis/122> .
+
+<http://epsg.w3id.org/data/axis/117>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Z" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9912> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/Geocentre%20%3E%20north%20pole> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6418>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/96> , <http://epsg.w3id.org/data/axis/95> , <http://epsg.w3id.org/data/axis/94> .
+
+<http://epsg.w3id.org/data/axis/45>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4488>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/155> , <http://epsg.w3id.org/data/axis/172> .
+
+<http://epsg.w3id.org/data/axis/189>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9005> .
+
+<http://epsg.w3id.org/data/axis/4>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9062> .
+
+<http://epsg.w3id.org/data/axis/1074>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9037> .
+
+<http://epsg.w3id.org/data/axis/1466>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%20180%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/15>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9039> .
+
+<http://epsg.w3id.org/data/axis/159>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%200%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1044>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "x" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/1025> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/Starboard> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/1033>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1429> , <http://epsg.w3id.org/data/axis/1428> .
+
+<http://epsg.w3id.org/data/axis/214>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "D" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9905> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/down> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9002> .
+
+<http://epsg.w3id.org/data/axis/87>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "h" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9903> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/129>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "J" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9914> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north-north-east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9204> .
+
+<http://epsg.w3id.org/data/axis/190>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9005> .
+
+<http://epsg.w3id.org/data/axis/57>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Long" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9108> .
+
+<http://epsg.w3id.org/data/axis/160>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2015%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/27>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9913> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20130%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/130>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9913> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6431>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/235> , <http://epsg.w3id.org/data/axis/233> , <http://epsg.w3id.org/data/axis/234> .
+
+<http://epsg.w3id.org/data/axis/1056>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2090%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/1045>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1046> , <http://epsg.w3id.org/data/axis/1044> , <http://epsg.w3id.org/data/axis/1045> .
+
+<http://epsg.w3id.org/data/axis/226>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lon" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9101> .
+
+<http://epsg.w3id.org/data/axis/99>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "h" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9903> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/100>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9120> .
+
+<http://epsg.w3id.org/data/cs/6401>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/55> , <http://epsg.w3id.org/data/axis/54> , <http://epsg.w3id.org/data/axis/53> .
+
+<http://epsg.w3id.org/data/axis/1111>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9919> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1026>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "z" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/1026> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/Upward> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/69>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9115> .
+
+<http://epsg.w3id.org/data/cs/4471>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/138> , <http://epsg.w3id.org/data/axis/137> .
+
+<http://epsg.w3id.org/data/axis/172>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20105%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/39>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/142>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2090%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/70>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Long" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9115> .
+
+<http://epsg.w3id.org/data/axis/112>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "H" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9904> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9003> .
+
+<http://epsg.w3id.org/data/cs/6413>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/81> , <http://epsg.w3id.org/data/axis/80> , <http://epsg.w3id.org/data/axis/79> .
+
+<http://epsg.w3id.org/data/axis/1038>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "z" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/1026> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/Upward> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/1027>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1058> , <http://epsg.w3id.org/data/axis/1056> .
+
+<http://epsg.w3id.org/data/axis/40>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6509>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/135> , <http://epsg.w3id.org/data/axis/134> .
+
+<http://epsg.w3id.org/data/cs/4483>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/150> , <http://epsg.w3id.org/data/axis/167> .
+
+<http://epsg.w3id.org/data/axis/184>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "none" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/10>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9094> .
+
+<http://epsg.w3id.org/data/axis/154>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20150%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1431>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "I" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9920> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/J-axis%20minus%2090%EF%BF%BD> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/1024> .
+
+<http://epsg.w3id.org/data/axis/82>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9116> .
+
+<http://epsg.w3id.org/data/cs/6510>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/174> , <http://epsg.w3id.org/data/axis/173> .
+
+<http://epsg.w3id.org/data/axis/124>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "e" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9918> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/northeast> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6425>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/215> , <http://epsg.w3id.org/data/axis/216> .
+
+<http://epsg.w3id.org/data/cs/1039>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1487> , <http://epsg.w3id.org/data/axis/1486> .
+
+<http://epsg.w3id.org/data/axis/52>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4495>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/34> , <http://epsg.w3id.org/data/axis/33> .
+
+<http://epsg.w3id.org/data/axis/196>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%20170%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6497>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/112> .
+
+<http://epsg.w3id.org/data/axis/22>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2070%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4465>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/200> , <http://epsg.w3id.org/data/axis/199> .
+
+<http://epsg.w3id.org/data/axis/166>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20135%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1051>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "d" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/1030> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/down> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/1040>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1026> , <http://epsg.w3id.org/data/axis/1025> , <http://epsg.w3id.org/data/axis/1024> .
+
+<http://epsg.w3id.org/data/axis/221>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9122> .
+
+<http://epsg.w3id.org/data/axis/94>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9119> .
+
+<http://epsg.w3id.org/data/axis/64>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Long" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9102> .
+
+<http://epsg.w3id.org/data/cs/4405>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/12> , <http://epsg.w3id.org/data/axis/11> .
+
+<http://epsg.w3id.org/data/axis/106>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9122> .
+
+<http://epsg.w3id.org/data/cs/6407>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/68> , <http://epsg.w3id.org/data/axis/67> .
+
+<http://epsg.w3id.org/data/axis/34>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9002> .
+
+<http://epsg.w3id.org/data/cs/4477>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/144> , <http://epsg.w3id.org/data/axis/161> .
+
+<http://epsg.w3id.org/data/axis/178>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "J" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9923> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/Across%20receiver%20lines> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9209> .
+
+<http://epsg.w3id.org/data/axis/1063>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20140%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4532>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/52> , <http://epsg.w3id.org/data/axis/51> .
+
+<http://epsg.w3id.org/data/axis/233>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lon" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9101> .
+
+<http://epsg.w3id.org/data/axis/148>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2030%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4502>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/189> , <http://epsg.w3id.org/data/axis/190> .
+
+<http://epsg.w3id.org/data/axis/76>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Long" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9107> .
+
+<http://epsg.w3id.org/data/axis/203>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%2060%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6504>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/125> , <http://epsg.w3id.org/data/axis/124> .
+
+<http://epsg.w3id.org/data/axis/118>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9908> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/west> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6419>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/99> , <http://epsg.w3id.org/data/axis/98> , <http://epsg.w3id.org/data/axis/97> .
+
+<http://epsg.w3id.org/data/axis/46>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9908> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/west> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4489>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/22> , <http://epsg.w3id.org/data/axis/21> .
+
+<http://epsg.w3id.org/data/axis/1467>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%2090%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/5>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9042> .
+
+<http://epsg.w3id.org/data/axis/16>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9039> .
+
+<http://epsg.w3id.org/data/cs/6420>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/102> , <http://epsg.w3id.org/data/axis/101> , <http://epsg.w3id.org/data/axis/100> .
+
+<http://epsg.w3id.org/data/axis/1045>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/1024> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/Ahead> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/1034>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1432> , <http://epsg.w3id.org/data/axis/1431> .
+
+<http://epsg.w3id.org/data/axis/215>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lon" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9105> .
+
+<http://epsg.w3id.org/data/axis/88>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9115> .
+
+<http://epsg.w3id.org/data/cs/4490>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/24> , <http://epsg.w3id.org/data/axis/23> .
+
+<http://epsg.w3id.org/data/axis/191>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%2045%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/58>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9105> .
+
+<http://epsg.w3id.org/data/cs/4460>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/237> , <http://epsg.w3id.org/data/axis/236> .
+
+<http://epsg.w3id.org/data/axis/161>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2045%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/28>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9914> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20140%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/131>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9914> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/west> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/227>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lon" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9101> .
+
+<http://epsg.w3id.org/data/axis/101>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Long" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9120> .
+
+<http://epsg.w3id.org/data/cs/4400>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/2> , <http://epsg.w3id.org/data/axis/1> .
+
+<http://epsg.w3id.org/data/axis/1112>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "z" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9904> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6402>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/57> , <http://epsg.w3id.org/data/axis/56> .
+
+<http://epsg.w3id.org/data/cs/4472>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/139> , <http://epsg.w3id.org/data/axis/156> .
+
+<http://epsg.w3id.org/data/axis/173>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "x" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9918> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/northeast> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/143>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2075%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/71>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9118> .
+
+<http://epsg.w3id.org/data/axis/113>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "D" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9905> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/down> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6414>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/84> , <http://epsg.w3id.org/data/axis/83> , <http://epsg.w3id.org/data/axis/82> .
+
+<http://epsg.w3id.org/data/axis/1516>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "D" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9905> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/down> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9003> .
+
+<http://epsg.w3id.org/data/axis/1039>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "M" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/1028>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1074> , <http://epsg.w3id.org/data/axis/1073> .
+
+<http://epsg.w3id.org/data/axis/41>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4484>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/151> , <http://epsg.w3id.org/data/axis/168> .
+
+<http://epsg.w3id.org/data/axis/185>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2090%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/11>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9041> .
+
+<http://epsg.w3id.org/data/axis/155>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20165%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1040>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "P" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1432>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "J" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9921> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/See%20associated%20operation> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/1024> .
+
+<http://epsg.w3id.org/data/axis/83>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Long" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9116> .
+
+<http://epsg.w3id.org/data/cs/6511>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/178> , <http://epsg.w3id.org/data/axis/177> .
+
+<http://epsg.w3id.org/data/axis/125>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "n" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9919> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/northwest> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6426>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/224> , <http://epsg.w3id.org/data/axis/222> , <http://epsg.w3id.org/data/axis/223> .
+
+<http://epsg.w3id.org/data/axis/53>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9108> .
+
+<http://epsg.w3id.org/data/cs/4496>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/36> , <http://epsg.w3id.org/data/axis/35> .
+
+<http://epsg.w3id.org/data/axis/197>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%2090%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6498>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/113> .
+
+<http://epsg.w3id.org/data/axis/1082>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "H" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9904> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9002> .
+
+<http://epsg.w3id.org/data/axis/23>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2090%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4466>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/202> , <http://epsg.w3id.org/data/axis/201> .
+
+<http://epsg.w3id.org/data/axis/167>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20165%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/1041>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1032> , <http://epsg.w3id.org/data/axis/1031> , <http://epsg.w3id.org/data/axis/1030> .
+
+<http://epsg.w3id.org/data/axis/222>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lon" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9122> .
+
+<http://epsg.w3id.org/data/axis/95>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Long" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9119> .
+
+<http://epsg.w3id.org/data/axis/137>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2075%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/65>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9116> .
+
+<http://epsg.w3id.org/data/cs/4406>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/14> , <http://epsg.w3id.org/data/axis/13> .
+
+<http://epsg.w3id.org/data/axis/107>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lon" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9122> .
+
+<http://epsg.w3id.org/data/cs/6408>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/70> , <http://epsg.w3id.org/data/axis/69> .
+
+<http://epsg.w3id.org/data/axis/1486>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9002> .
+
+<http://epsg.w3id.org/data/axis/35>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E(X)" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4478>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/145> , <http://epsg.w3id.org/data/axis/162> .
+
+<http://epsg.w3id.org/data/axis/179>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9098> .
+
+<http://epsg.w3id.org/data/cs/4533>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/180> , <http://epsg.w3id.org/data/axis/179> .
+
+<http://epsg.w3id.org/data/axis/234>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9101> .
+
+<http://epsg.w3id.org/data/axis/149>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2045%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/204>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%2030%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/77>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9120> .
+
+<http://epsg.w3id.org/data/cs/6505>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/127> , <http://epsg.w3id.org/data/axis/126> .
+
+<http://epsg.w3id.org/data/axis/119>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9909> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/south> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/180>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9098> .
+
+<http://epsg.w3id.org/data/axis/47>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/150>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2075%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/6>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9042> .
+
+<http://epsg.w3id.org/data/axis/17>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9084> .
+
+<http://epsg.w3id.org/data/axis/120>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9908> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/west> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9031> .
+
+<http://epsg.w3id.org/data/cs/6421>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/105> , <http://epsg.w3id.org/data/axis/104> , <http://epsg.w3id.org/data/axis/103> .
+
+<http://epsg.w3id.org/data/axis/1046>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "z" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/1027> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/Downward> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/1035>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1467> , <http://epsg.w3id.org/data/axis/1466> .
+
+<http://epsg.w3id.org/data/axis/216>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9105> .
+
+<http://epsg.w3id.org/data/axis/89>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Long" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9115> .
+
+<http://epsg.w3id.org/data/axis/1101>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4491>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/26> , <http://epsg.w3id.org/data/axis/25> .
+
+<http://epsg.w3id.org/data/axis/192>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%20135%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/59>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lon" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9105> .
+
+<http://epsg.w3id.org/data/cs/4461>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/206> , <http://epsg.w3id.org/data/axis/205> , <http://epsg.w3id.org/data/axis/207> .
+
+<http://epsg.w3id.org/data/axis/162>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2060%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/29>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%2090%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/90>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "h" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9903> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/132>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "I" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9920> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east%20south%20east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9208> .
+
+<http://epsg.w3id.org/data/axis/1058>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%200%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/1047>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1042> , <http://epsg.w3id.org/data/axis/1043> .
+
+<http://epsg.w3id.org/data/axis/60>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9926> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9122> .
+
+<http://epsg.w3id.org/data/axis/228>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9101> .
+
+<http://epsg.w3id.org/data/cs/4401>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/4> , <http://epsg.w3id.org/data/axis/3> .
+
+<http://epsg.w3id.org/data/axis/102>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "h" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9903> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6403>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/59> , <http://epsg.w3id.org/data/axis/58> .
+
+<http://epsg.w3id.org/data/axis/1481>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%20165%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/30>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%20180%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4473>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/140> , <http://epsg.w3id.org/data/axis/157> .
+
+<http://epsg.w3id.org/data/axis/174>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9919> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/northwest> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/144>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2045%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/72>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Long" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9118> .
+
+<http://epsg.w3id.org/data/cs/6500>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/117> , <http://epsg.w3id.org/data/axis/116> , <http://epsg.w3id.org/data/axis/115> .
+
+<http://epsg.w3id.org/data/axis/114>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "H" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9904> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6415>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/87> , <http://epsg.w3id.org/data/axis/86> , <http://epsg.w3id.org/data/axis/85> .
+
+<http://epsg.w3id.org/data/cs/1029>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1078> , <http://epsg.w3id.org/data/axis/1079> .
+
+<http://epsg.w3id.org/data/axis/42>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4485>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/152> , <http://epsg.w3id.org/data/axis/169> .
+
+<http://epsg.w3id.org/data/axis/186>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%200%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/12>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9041> .
+
+<http://epsg.w3id.org/data/axis/156>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2060%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/1030>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1082> .
+
+<http://epsg.w3id.org/data/axis/211>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "x" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9918> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/84>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "h" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9903> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6512>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/212> , <http://epsg.w3id.org/data/axis/211> , <http://epsg.w3id.org/data/axis/213> .
+
+<http://epsg.w3id.org/data/axis/126>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "n" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9913> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/northwest> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6427>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/219> , <http://epsg.w3id.org/data/axis/217> , <http://epsg.w3id.org/data/axis/218> .
+
+<http://epsg.w3id.org/data/axis/54>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Long" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9108> .
+
+<http://epsg.w3id.org/data/cs/4497>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/38> , <http://epsg.w3id.org/data/axis/37> .
+
+<http://epsg.w3id.org/data/axis/198>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%200%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6499>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/114> .
+
+<http://epsg.w3id.org/data/axis/24>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%200%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4467>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/204> , <http://epsg.w3id.org/data/axis/203> .
+
+<http://epsg.w3id.org/data/axis/168>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20180%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/1053>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "d" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/1030> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/down> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9002> .
+
+<http://epsg.w3id.org/data/cs/1042>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1038> , <http://epsg.w3id.org/data/axis/1036> , <http://epsg.w3id.org/data/axis/1037> .
+
+<http://epsg.w3id.org/data/axis/223>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9122> .
+
+<http://epsg.w3id.org/data/axis/96>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "h" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9903> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/138>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%20165%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/66>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Long" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9116> .
+
+<http://epsg.w3id.org/data/cs/4407>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/16> , <http://epsg.w3id.org/data/axis/15> .
+
+<http://epsg.w3id.org/data/axis/108>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9122> .
+
+<http://epsg.w3id.org/data/cs/6409>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/72> , <http://epsg.w3id.org/data/axis/71> .
+
+<http://epsg.w3id.org/data/axis/1487>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9002> .
+
+<http://epsg.w3id.org/data/axis/36>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N(Y)" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4479>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/146> , <http://epsg.w3id.org/data/axis/163> .
+
+<http://epsg.w3id.org/data/axis/1065>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%2090%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4534>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/183> , <http://epsg.w3id.org/data/axis/184> .
+
+<http://epsg.w3id.org/data/axis/235>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "h" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9903> ;
+        epsg:hasOrder          "3"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/up> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/6410>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/74> , <http://epsg.w3id.org/data/axis/73> .
+
+<http://epsg.w3id.org/data/cs/1024>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1040> , <http://epsg.w3id.org/data/axis/1039> .
+
+<http://epsg.w3id.org/data/axis/205>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "U" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9930> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/78>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Long" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9120> .
+
+<http://epsg.w3id.org/data/cs/6506>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/129> , <http://epsg.w3id.org/data/axis/128> .
+
+<http://epsg.w3id.org/data/cs/4480>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/147> , <http://epsg.w3id.org/data/axis/164> .
+
+<http://epsg.w3id.org/data/axis/181>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9301> .
+
+<http://epsg.w3id.org/data/axis/48>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/151>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2090%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/7>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9005> .
+
+<http://epsg.w3id.org/data/axis/18>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "N" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9084> .
+
+<http://epsg.w3id.org/data/axis/121>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9909> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/south> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9031> .
+
+<http://epsg.w3id.org/data/cs/6422>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/107> , <http://epsg.w3id.org/data/axis/106> .
+
+<http://epsg.w3id.org/data/cs/1036>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1472> , <http://epsg.w3id.org/data/axis/1471> .
+
+<http://epsg.w3id.org/data/axis/217>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lon" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9902> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9105> .
+
+<http://epsg.w3id.org/data/axis/1102>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9908> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/west> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4492>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/28> , <http://epsg.w3id.org/data/axis/27> .
+
+<http://epsg.w3id.org/data/axis/193>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "X" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%20180%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4462>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/194> , <http://epsg.w3id.org/data/axis/193> .
+
+<http://epsg.w3id.org/data/axis/163>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2075%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/91>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9118> .
+
+<http://epsg.w3id.org/data/axis/133>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "J" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9921> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north%20north%20east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9209> .
+
+<http://epsg.w3id.org/data/cs/1048>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/1049> , <http://epsg.w3id.org/data/axis/1050> .
+
+<http://epsg.w3id.org/data/axis/61>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Long" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9927> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/east> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9122> .
+
+<http://epsg.w3id.org/data/cs/4402>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/6> , <http://epsg.w3id.org/data/axis/5> .
+
+<http://epsg.w3id.org/data/axis/103>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Lat" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9901> ;
+        epsg:hasOrder          "1"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/north> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9105> .
+
+<http://epsg.w3id.org/data/cs/6404>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/62> , <http://epsg.w3id.org/data/axis/61> , <http://epsg.w3id.org/data/axis/60> .
+
+<http://epsg.w3id.org/data/axis/1482>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "Y" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9907> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/South%20along%2075%EF%BF%BDW> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/axis/31>
+        a                      epsg:Axis ;
+        epsg:hasAbbreviation   "E" ;
+        epsg:hasAxisName       <http://epsg.w3id.org/data/axisname/9906> ;
+        epsg:hasOrder          "2"^^xsd:nonNegativeInteger ;
+        epsg:hasOrientation    <http://epsg.w3id.org/data/orientation/North%20along%2090%EF%BF%BDE> ;
+        epsg:hasUnitofMeasure  <http://epsg.w3id.org/data/unit/9001> .
+
+<http://epsg.w3id.org/data/cs/4474>
+        a             epsg:CoordinateSystem ;
+        epsg:hasAxis  <http://epsg.w3id.org/data/axis/141> , <http://epsg.w3id.org/data/axis/158> .

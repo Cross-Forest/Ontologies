@@ -1,0 +1,28 @@
+@prefix mfe: <http://crossforest.eu/mfe/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+mfe:BiogeographicRegion-ATL a owl:Class , rdfs:Class ; # cambiado x ACO: Realm x BiogeographicRegion
+  rdfs:subClassOf mfe:BiogeographicRegion ; #"atlantic region" "macharonesian region" "alpine region" "mediterranean region"
+  rdfs:label "Atlántica"@es ;
+  rdfs:comment ""@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:BiogeographicRegion-MAC a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:BiogeographicRegion ;
+  rdfs:label "Macaronésica"@es ;
+  rdfs:comment ""@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:BiogeographicRegion-ALP a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:BiogeographicRegion ;
+  rdfs:label "Alpina"@es ;
+  rdfs:comment ""@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:BiogeographicRegion-MED a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:BiogeographicRegion ;
+  rdfs:label "Mediterránea"@es ;
+  rdfs:comment ""@es ;
+  rdfs:isDefinedBy mfe: .

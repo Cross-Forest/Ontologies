@@ -1,0 +1,16 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix mfe:   <http://crossforest.eu/mfe/ontology/> .
+
+mfe:ForestType-ST # modificado x ACO; FormacionArbolada x ForestType
+        a           owl:Class , rdfs:Class ;
+        rdfs:label  "Masas mixtas o puras caracterizadas por su estructura (Tipo estructural)"@es .
+
+mfe:ForestType-DO
+        a           owl:Class , rdfs:Class ;
+        rdfs:label  "Masas con una especie dominante"@es .
+
+mfe:ForestType-MX
+        a           owl:Class , rdfs:Class ;
+        rdfs:label  "Masas mixtas"@es .

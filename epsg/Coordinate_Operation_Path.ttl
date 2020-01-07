@@ -1,0 +1,893 @@
+@prefix area:  <http://epsg.w3id.org/data/area/> .
+@prefix datum: <http://epsg.w3id.org/data/datum/> .
+@prefix method: <http://epsg.w3id.org/data/method/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix crs:   <http://epsg.w3id.org/data/crs/> .
+@prefix usage: <http://epsg.w3id.org/data/usage/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix epsg:  <http://epsg.w3id.org/ontology/> .
+@prefix cs:    <http://epsg.w3id.org/data/cs/> .
+@prefix unit:  <http://epsg.w3id.org/data/unit/> .
+@prefix folder: <file:///home/chemi/Documents/EPSG_v9_6/> .
+@prefix parameter: <http://epsg.w3id.org/data/parameter/> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix value: <http://epsg.w3id.org/data/value/> .
+@prefix operation: <http://epsg.w3id.org/data/operation/> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+value:4435-1495-2  a  epsg:CoordinateOperationPath .
+
+value:8645-1757-1  a  epsg:CoordinateOperationPath .
+
+value:8612-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8608-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8466-1480-2  a  epsg:CoordinateOperationPath .
+
+value:8571-1570-1  a  epsg:CoordinateOperationPath .
+
+value:8509-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8496-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8473-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8469-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8211-1294-2  a  epsg:CoordinateOperationPath .
+
+value:8488-1502-2  a  epsg:CoordinateOperationPath .
+
+value:8643-1272-2  a  epsg:CoordinateOperationPath .
+
+value:8594-1750-2  a  epsg:CoordinateOperationPath .
+
+value:7965-7964-2  a  epsg:CoordinateOperationPath .
+
+value:8537-1237-2  a  epsg:CoordinateOperationPath .
+
+value:8467-1481-2  a  epsg:CoordinateOperationPath .
+
+value:8572-1571-1  a  epsg:CoordinateOperationPath .
+
+value:8398-1150-2  a  epsg:CoordinateOperationPath .
+
+value:8394-1188-2  a  epsg:CoordinateOperationPath .
+
+value:8245-1188-2  a  epsg:CoordinateOperationPath .
+
+value:8186-1763-1  a  epsg:CoordinateOperationPath .
+
+value:8489-1503-2  a  epsg:CoordinateOperationPath .
+
+value:8639-1762-1  a  epsg:CoordinateOperationPath .
+
+value:8599-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8553-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8221-1302-2  a  epsg:CoordinateOperationPath .
+
+value:8418-1473-2  a  epsg:CoordinateOperationPath .
+
+value:8217-1302-2  a  epsg:CoordinateOperationPath .
+
+value:8463-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8363-8362-2  a  epsg:CoordinateOperationPath .
+
+value:7983-7977-2  a  epsg:CoordinateOperationPath .
+
+value:8480-1494-2  a  epsg:CoordinateOperationPath .
+
+value:7967-7966-2  a  epsg:CoordinateOperationPath .
+
+value:8628-1747-2  a  epsg:CoordinateOperationPath .
+
+value:8537-1545-1  a  epsg:CoordinateOperationPath .
+
+value:8577-1150-2  a  epsg:CoordinateOperationPath .
+
+value:8443-8364-1  a  epsg:CoordinateOperationPath .
+
+value:8217-1298-1  a  epsg:CoordinateOperationPath .
+
+value:8481-1495-2  a  epsg:CoordinateOperationPath .
+
+value:8388-1455-1  a  epsg:CoordinateOperationPath .
+
+value:8629-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8621-1737-2  a  epsg:CoordinateOperationPath .
+
+value:8610-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8606-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8593-1739-2  a  epsg:CoordinateOperationPath .
+
+value:8564-1576-1  a  epsg:CoordinateOperationPath .
+
+value:8593-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8471-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8467-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8573-1591-1  a  epsg:CoordinateOperationPath .
+
+value:8482-1496-2  a  epsg:CoordinateOperationPath .
+
+value:5240-5227-2  a  epsg:CoordinateOperationPath .
+
+value:8517-1527-2  a  epsg:CoordinateOperationPath .
+
+value:8199-1283-2  a  epsg:CoordinateOperationPath .
+
+value:8648-1986-2  a  epsg:CoordinateOperationPath .
+
+value:8396-1150-2  a  epsg:CoordinateOperationPath .
+
+value:8633-1828-1  a  epsg:CoordinateOperationPath .
+
+value:8392-1188-2  a  epsg:CoordinateOperationPath .
+
+value:8654-15753-1  a  epsg:CoordinateOperationPath .
+
+value:6714-6713-2  a  epsg:CoordinateOperationPath .
+
+value:8243-1188-2  a  epsg:CoordinateOperationPath .
+
+value:8094-1193-2  a  epsg:CoordinateOperationPath .
+
+value:8241-1026-1  a  epsg:CoordinateOperationPath .
+
+value:8650-1071-1  a  epsg:CoordinateOperationPath .
+
+value:7811-15958-2  a  epsg:CoordinateOperationPath .
+
+value:8560-1559-1  a  epsg:CoordinateOperationPath .
+
+value:8094-1763-1  a  epsg:CoordinateOperationPath .
+
+value:8483-1497-2  a  epsg:CoordinateOperationPath .
+
+value:8630-1740-2  a  epsg:CoordinateOperationPath .
+
+value:8567-1036-1  a  epsg:CoordinateOperationPath .
+
+value:8657-1240-2  a  epsg:CoordinateOperationPath .
+
+value:8623-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8600-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8597-1241-1  a  epsg:CoordinateOperationPath .
+
+value:5242-1884-1  a  epsg:CoordinateOperationPath .
+
+value:8647-1313-1  a  epsg:CoordinateOperationPath .
+
+value:8530-1539-1  a  epsg:CoordinateOperationPath .
+
+value:8046-1043-1  a  epsg:CoordinateOperationPath .
+
+value:8215-1302-2  a  epsg:CoordinateOperationPath .
+
+value:8461-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8484-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8634-1240-2  a  epsg:CoordinateOperationPath .
+
+value:7967-7963-1  a  epsg:CoordinateOperationPath .
+
+value:8571-1240-2  a  epsg:CoordinateOperationPath .
+
+value:8615-1749-2  a  epsg:CoordinateOperationPath .
+
+value:8484-1498-2  a  epsg:CoordinateOperationPath .
+
+value:8192-1279-1  a  epsg:CoordinateOperationPath .
+
+value:5838-1988-2  a  epsg:CoordinateOperationPath .
+
+value:8572-1149-2  a  epsg:CoordinateOperationPath .
+
+value:8609-1723-2  a  epsg:CoordinateOperationPath .
+
+value:8576-1594-1  a  epsg:CoordinateOperationPath .
+
+value:8485-1499-2  a  epsg:CoordinateOperationPath .
+
+value:8563-1565-2  a  epsg:CoordinateOperationPath .
+
+value:8655-1902-1  a  epsg:CoordinateOperationPath .
+
+value:8442-8365-1  a  epsg:CoordinateOperationPath .
+
+value:8223-1301-1  a  epsg:CoordinateOperationPath .
+
+value:8627-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8604-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8488-1241-1  a  epsg:CoordinateOperationPath .
+
+value:7987-7984-2  a  epsg:CoordinateOperationPath .
+
+value:8591-1241-1  a  epsg:CoordinateOperationPath .
+
+value:7975-7972-1  a  epsg:CoordinateOperationPath .
+
+value:8587-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8514-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8465-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8406-1463-1  a  epsg:CoordinateOperationPath .
+
+value:8457-1511-2  a  epsg:CoordinateOperationPath .
+
+value:8579-1593-1  a  epsg:CoordinateOperationPath .
+
+value:8263-1757-1  a  epsg:CoordinateOperationPath .
+
+value:8577-1595-1  a  epsg:CoordinateOperationPath .
+
+value:8579-1150-2  a  epsg:CoordinateOperationPath .
+
+value:8642-1623-2  a  epsg:CoordinateOperationPath .
+
+value:8627-1736-2  a  epsg:CoordinateOperationPath .
+
+value:8390-1188-2  a  epsg:CoordinateOperationPath .
+
+value:8386-1188-2  a  epsg:CoordinateOperationPath .
+
+value:8578-1596-1  a  epsg:CoordinateOperationPath .
+
+value:8243-1312-1  a  epsg:CoordinateOperationPath .
+
+value:8392-1457-1  a  epsg:CoordinateOperationPath .
+
+value:8621-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8617-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8595-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8655-1240-2  a  epsg:CoordinateOperationPath .
+
+value:8651-1065-2  a  epsg:CoordinateOperationPath .
+
+value:8632-1240-2  a  epsg:CoordinateOperationPath .
+
+value:8616-1726-2  a  epsg:CoordinateOperationPath .
+
+value:8402-1461-1  a  epsg:CoordinateOperationPath .
+
+value:8178-1123-2  a  epsg:CoordinateOperationPath .
+
+value:8478-1241-1  a  epsg:CoordinateOperationPath .
+
+value:7965-7963-1  a  epsg:CoordinateOperationPath .
+
+value:8641-1897-2  a  epsg:CoordinateOperationPath .
+
+value:8419-1599-1  a  epsg:CoordinateOperationPath .
+
+value:7986-7980-1  a  epsg:CoordinateOperationPath .
+
+value:8629-1738-2  a  epsg:CoordinateOperationPath .
+
+value:8532-1541-1  a  epsg:CoordinateOperationPath .
+
+value:8175-1262-1  a  epsg:CoordinateOperationPath .
+
+value:8453-1506-1  a  epsg:CoordinateOperationPath .
+
+value:8617-1727-2  a  epsg:CoordinateOperationPath .
+
+value:6874-6873-2  a  epsg:CoordinateOperationPath .
+
+value:8625-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8602-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8468-1482-2  a  epsg:CoordinateOperationPath .
+
+value:8418-1472-1  a  epsg:CoordinateOperationPath .
+
+value:8470-1484-2  a  epsg:CoordinateOperationPath .
+
+value:8637-1944-2  a  epsg:CoordinateOperationPath .
+
+value:7973-7972-1  a  epsg:CoordinateOperationPath .
+
+value:8363-8361-1  a  epsg:CoordinateOperationPath .
+
+value:8512-1241-1  a  epsg:CoordinateOperationPath .
+
+value:5230-1884-1  a  epsg:CoordinateOperationPath .
+
+value:8454-1507-1  a  epsg:CoordinateOperationPath .
+
+value:8486-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8263-1306-2  a  epsg:CoordinateOperationPath .
+
+value:8654-1149-3  a  epsg:CoordinateOperationPath .
+
+value:8581-1237-2  a  epsg:CoordinateOperationPath .
+
+value:8569-1588-1  a  epsg:CoordinateOperationPath .
+
+value:8469-1483-2  a  epsg:CoordinateOperationPath .
+
+value:8471-1485-2  a  epsg:CoordinateOperationPath .
+
+value:5240-5238-1  a  epsg:CoordinateOperationPath .
+
+value:8656-15790-1  a  epsg:CoordinateOperationPath .
+
+value:7810-1053-2  a  epsg:CoordinateOperationPath .
+
+value:8649-1991-1  a  epsg:CoordinateOperationPath .
+
+value:8647-1946-3  a  epsg:CoordinateOperationPath .
+
+value:8398-1459-1  a  epsg:CoordinateOperationPath .
+
+value:8595-1712-2  a  epsg:CoordinateOperationPath .
+
+value:8472-1486-2  a  epsg:CoordinateOperationPath .
+
+value:8615-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8589-1241-1  a  epsg:CoordinateOperationPath .
+
+value:4837-1672-1  a  epsg:CoordinateOperationPath .
+
+value:8574-1580-2  a  epsg:CoordinateOperationPath .
+
+value:8496-1515-2  a  epsg:CoordinateOperationPath .
+
+value:8480-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8476-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8421-1473-2  a  epsg:CoordinateOperationPath .
+
+value:8611-1715-2  a  epsg:CoordinateOperationPath .
+
+value:8636-1881-1  a  epsg:CoordinateOperationPath .
+
+value:8047-1146-2  a  epsg:CoordinateOperationPath .
+
+value:8592-1708-2  a  epsg:CoordinateOperationPath .
+
+value:8473-1487-2  a  epsg:CoordinateOperationPath .
+
+value:8620-1730-2  a  epsg:CoordinateOperationPath .
+
+value:6714-6712-1  a  epsg:CoordinateOperationPath .
+
+value:8388-1188-2  a  epsg:CoordinateOperationPath .
+
+value:8636-1130-2  a  epsg:CoordinateOperationPath .
+
+value:8612-1716-2  a  epsg:CoordinateOperationPath .
+
+value:8654-1146-2  a  epsg:CoordinateOperationPath .
+
+value:8619-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8565-1574-1  a  epsg:CoordinateOperationPath .
+
+value:8510-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8584-1313-1  a  epsg:CoordinateOperationPath .
+
+value:8605-1720-2  a  epsg:CoordinateOperationPath .
+
+value:6739-1496-2  a  epsg:CoordinateOperationPath .
+
+value:8470-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8638-1260-1  a  epsg:CoordinateOperationPath .
+
+value:8644-1891-2  a  epsg:CoordinateOperationPath .
+
+value:3966-3962-2  a  epsg:CoordinateOperationPath .
+
+value:8586-1704-2  a  epsg:CoordinateOperationPath .
+
+value:8635-1849-2  a  epsg:CoordinateOperationPath .
+
+value:8408-1150-2  a  epsg:CoordinateOperationPath .
+
+value:8657-15792-1  a  epsg:CoordinateOperationPath .
+
+value:8653-15753-1  a  epsg:CoordinateOperationPath .
+
+value:8587-1705-2  a  epsg:CoordinateOperationPath .
+
+value:8613-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8609-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8188-1277-2  a  epsg:CoordinateOperationPath .
+
+value:8176-1265-1  a  epsg:CoordinateOperationPath .
+
+value:8474-1241-1  a  epsg:CoordinateOperationPath .
+
+value:3896-3895-1  a  epsg:CoordinateOperationPath .
+
+value:8607-1722-2  a  epsg:CoordinateOperationPath .
+
+value:8570-1149-3  a  epsg:CoordinateOperationPath .
+
+value:8584-1752-2  a  epsg:CoordinateOperationPath .
+
+value:7810-1763-1  a  epsg:CoordinateOperationPath .
+
+value:8183-1273-1  a  epsg:CoordinateOperationPath .
+
+value:8588-1706-2  a  epsg:CoordinateOperationPath .
+
+value:8650-1073-2  a  epsg:CoordinateOperationPath .
+
+value:5190-5134-1  a  epsg:CoordinateOperationPath .
+
+value:8633-1238-2  a  epsg:CoordinateOperationPath .
+
+value:8589-1707-2  a  epsg:CoordinateOperationPath .
+
+value:8630-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8554-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8583-1461-1  a  epsg:CoordinateOperationPath .
+
+value:8419-1473-2  a  epsg:CoordinateOperationPath .
+
+value:8613-1724-2  a  epsg:CoordinateOperationPath .
+
+value:8176-1227-2  a  epsg:CoordinateOperationPath .
+
+value:8517-1528-1  a  epsg:CoordinateOperationPath .
+
+value:8174-1755-1  a  epsg:CoordinateOperationPath .
+
+value:8211-1266-1  a  epsg:CoordinateOperationPath .
+
+value:8565-1188-2  a  epsg:CoordinateOperationPath .
+
+value:8578-1150-2  a  epsg:CoordinateOperationPath .
+
+value:8553-1553-2  a  epsg:CoordinateOperationPath .
+
+value:8647-1950-2  a  epsg:CoordinateOperationPath .
+
+value:8580-1611-1  a  epsg:CoordinateOperationPath .
+
+value:8604-1721-2  a  epsg:CoordinateOperationPath .
+
+value:8400-1460-1  a  epsg:CoordinateOperationPath .
+
+value:8635-1313-1  a  epsg:CoordinateOperationPath .
+
+value:8611-1241-1  a  epsg:CoordinateOperationPath .
+
+value:6739-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8554-1554-2  a  epsg:CoordinateOperationPath .
+
+value:8607-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8219-1299-1  a  epsg:CoordinateOperationPath .
+
+value:8570-1146-2  a  epsg:CoordinateOperationPath .
+
+value:8583-1731-2  a  epsg:CoordinateOperationPath .
+
+value:8594-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8472-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8468-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8591-1728-2  a  epsg:CoordinateOperationPath .
+
+value:8508-1454-1  a  epsg:CoordinateOperationPath .
+
+value:8532-1240-2  a  epsg:CoordinateOperationPath .
+
+value:8568-1584-1  a  epsg:CoordinateOperationPath .
+
+value:8585-1702-2  a  epsg:CoordinateOperationPath .
+
+value:8400-1150-2  a  epsg:CoordinateOperationPath .
+
+value:8406-1188-2  a  epsg:CoordinateOperationPath .
+
+value:8626-1746-2  a  epsg:CoordinateOperationPath .
+
+value:8598-1748-2  a  epsg:CoordinateOperationPath .
+
+value:8599-1742-2  a  epsg:CoordinateOperationPath .
+
+value:8508-1520-2  a  epsg:CoordinateOperationPath .
+
+value:8640-1253-2  a  epsg:CoordinateOperationPath .
+
+value:8624-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8215-1297-1  a  epsg:CoordinateOperationPath .
+
+value:8601-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8598-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8174-1125-2  a  epsg:CoordinateOperationPath .
+
+value:8497-1243-1  a  epsg:CoordinateOperationPath .
+
+value:8462-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8485-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8610-1711-2  a  epsg:CoordinateOperationPath .
+
+value:8386-1454-1  a  epsg:CoordinateOperationPath .
+
+value:8631-1805-1  a  epsg:CoordinateOperationPath .
+
+value:8576-1150-2  a  epsg:CoordinateOperationPath .
+
+value:5192-5134-1  a  epsg:CoordinateOperationPath .
+
+value:8454-1150-2  a  epsg:CoordinateOperationPath .
+
+value:8637-1756-1  a  epsg:CoordinateOperationPath .
+
+value:8573-1149-2  a  epsg:CoordinateOperationPath .
+
+value:8175-1169-2  a  epsg:CoordinateOperationPath .
+
+value:8569-1149-2  a  epsg:CoordinateOperationPath .
+
+value:8645-1618-2  a  epsg:CoordinateOperationPath .
+
+value:8195-1149-2  a  epsg:CoordinateOperationPath .
+
+value:8644-1272-3  a  epsg:CoordinateOperationPath .
+
+value:8474-1488-2  a  epsg:CoordinateOperationPath .
+
+value:8628-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8605-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8592-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8588-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8489-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8466-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8619-1745-2  a  epsg:CoordinateOperationPath .
+
+value:8046-1146-2  a  epsg:CoordinateOperationPath .
+
+value:8475-1489-2  a  epsg:CoordinateOperationPath .
+
+value:8622-1732-2  a  epsg:CoordinateOperationPath .
+
+value:5838-1756-1  a  epsg:CoordinateOperationPath .
+
+value:8404-1188-2  a  epsg:CoordinateOperationPath .
+
+value:8408-1464-1  a  epsg:CoordinateOperationPath .
+
+value:8562-1560-1  a  epsg:CoordinateOperationPath .
+
+value:7973-7969-2  a  epsg:CoordinateOperationPath .
+
+value:8394-1451-1  a  epsg:CoordinateOperationPath .
+
+value:8600-1709-2  a  epsg:CoordinateOperationPath .
+
+value:8190-1278-1  a  epsg:CoordinateOperationPath .
+
+value:8199-1274-1  a  epsg:CoordinateOperationPath .
+
+value:8623-1733-2  a  epsg:CoordinateOperationPath .
+
+value:8622-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8596-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8566-1572-1  a  epsg:CoordinateOperationPath .
+
+value:8564-1473-2  a  epsg:CoordinateOperationPath .
+
+value:8639-1654-2  a  epsg:CoordinateOperationPath .
+
+value:8652-1065-2  a  epsg:CoordinateOperationPath .
+
+value:8656-1240-2  a  epsg:CoordinateOperationPath .
+
+value:8460-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8483-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8479-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8486-1500-2  a  epsg:CoordinateOperationPath .
+
+value:8245-1313-1  a  epsg:CoordinateOperationPath .
+
+value:8590-1717-2  a  epsg:CoordinateOperationPath .
+
+value:3966-3913-1  a  epsg:CoordinateOperationPath .
+
+value:7987-7980-1  a  epsg:CoordinateOperationPath .
+
+value:8221-1300-1  a  epsg:CoordinateOperationPath .
+
+value:8624-1734-2  a  epsg:CoordinateOperationPath .
+
+value:8567-1149-2  a  epsg:CoordinateOperationPath .
+
+value:3896-1618-2  a  epsg:CoordinateOperationPath .
+
+value:8606-1725-2  a  epsg:CoordinateOperationPath .
+
+value:8404-1462-1  a  epsg:CoordinateOperationPath .
+
+value:4837-1311-2  a  epsg:CoordinateOperationPath .
+
+value:8563-1568-1  a  epsg:CoordinateOperationPath .
+
+value:8420-1600-1  a  epsg:CoordinateOperationPath .
+
+value:8482-1747-1  a  epsg:CoordinateOperationPath .
+
+value:8487-1501-2  a  epsg:CoordinateOperationPath .
+
+value:8236-1310-1  a  epsg:CoordinateOperationPath .
+
+value:8626-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8625-1735-2  a  epsg:CoordinateOperationPath .
+
+value:8603-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8590-1241-1  a  epsg:CoordinateOperationPath .
+
+value:7974-7972-1  a  epsg:CoordinateOperationPath .
+
+value:7986-7984-2  a  epsg:CoordinateOperationPath .
+
+value:8513-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8586-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8464-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8487-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8646-1240-2  a  epsg:CoordinateOperationPath .
+
+value:8047-1147-1  a  epsg:CoordinateOperationPath .
+
+value:8421-1601-1  a  epsg:CoordinateOperationPath .
+
+value:8390-1456-1  a  epsg:CoordinateOperationPath .
+
+value:8476-1490-2  a  epsg:CoordinateOperationPath .
+
+value:8402-1188-2  a  epsg:CoordinateOperationPath .
+
+value:8643-1891-1  a  epsg:CoordinateOperationPath .
+
+value:8460-1474-2  a  epsg:CoordinateOperationPath .
+
+value:7974-7970-2  a  epsg:CoordinateOperationPath .
+
+value:8190-1150-2  a  epsg:CoordinateOperationPath .
+
+value:8570-1043-1  a  epsg:CoordinateOperationPath .
+
+value:8422-1602-1  a  epsg:CoordinateOperationPath .
+
+value:8183-1149-2  a  epsg:CoordinateOperationPath .
+
+value:8477-1491-2  a  epsg:CoordinateOperationPath .
+
+value:8638-1837-2  a  epsg:CoordinateOperationPath .
+
+value:8631-1240-2  a  epsg:CoordinateOperationPath .
+
+value:8620-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8616-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8442-8364-2  a  epsg:CoordinateOperationPath .
+
+value:8575-1580-2  a  epsg:CoordinateOperationPath .
+
+value:8457-1509-1  a  epsg:CoordinateOperationPath .
+
+value:8497-1515-2  a  epsg:CoordinateOperationPath .
+
+value:8461-1475-2  a  epsg:CoordinateOperationPath .
+
+value:8481-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8477-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8422-1473-2  a  epsg:CoordinateOperationPath .
+
+value:7975-7971-2  a  epsg:CoordinateOperationPath .
+
+value:8195-1437-1  a  epsg:CoordinateOperationPath .
+
+value:4435-1461-1  a  epsg:CoordinateOperationPath .
+
+value:8597-1713-2  a  epsg:CoordinateOperationPath .
+
+value:8478-1492-2  a  epsg:CoordinateOperationPath .
+
+value:7983-7982-1  a  epsg:CoordinateOperationPath .
+
+value:8462-1476-2  a  epsg:CoordinateOperationPath .
+
+value:8194-1150-2  a  epsg:CoordinateOperationPath .
+
+value:8602-1718-2  a  epsg:CoordinateOperationPath .
+
+value:8236-1149-2  a  epsg:CoordinateOperationPath .
+
+value:8614-1744-2  a  epsg:CoordinateOperationPath .
+
+value:8479-1493-2  a  epsg:CoordinateOperationPath .
+
+value:8510-1522-2  a  epsg:CoordinateOperationPath .
+
+value:8581-1616-1  a  epsg:CoordinateOperationPath .
+
+value:8511-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8585-1313-1  a  epsg:CoordinateOperationPath .
+
+value:8463-1477-2  a  epsg:CoordinateOperationPath .
+
+value:8568-1240-2  a  epsg:CoordinateOperationPath .
+
+value:8603-1719-2  a  epsg:CoordinateOperationPath .
+
+value:8396-1458-1  a  epsg:CoordinateOperationPath .
+
+value:8659-1158-2  a  epsg:CoordinateOperationPath .
+
+value:8178-1759-1  a  epsg:CoordinateOperationPath .
+
+value:5190-5189-2  a  epsg:CoordinateOperationPath .
+
+value:8509-1521-2  a  epsg:CoordinateOperationPath .
+
+value:8511-1523-2  a  epsg:CoordinateOperationPath .
+
+value:8618-1729-2  a  epsg:CoordinateOperationPath .
+
+value:8464-1478-2  a  epsg:CoordinateOperationPath .
+
+value:8648-1991-1  a  epsg:CoordinateOperationPath .
+
+value:8632-1806-1  a  epsg:CoordinateOperationPath .
+
+value:8512-1524-2  a  epsg:CoordinateOperationPath .
+
+value:8614-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8465-1479-2  a  epsg:CoordinateOperationPath .
+
+value:8475-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8420-1473-2  a  epsg:CoordinateOperationPath .
+
+value:8562-1240-2  a  epsg:CoordinateOperationPath .
+
+value:7811-1763-1  a  epsg:CoordinateOperationPath .
+
+value:8644-1761-1  a  epsg:CoordinateOperationPath .
+
+value:8513-1525-2  a  epsg:CoordinateOperationPath .
+
+value:8582-1741-2  a  epsg:CoordinateOperationPath .
+
+value:8651-1063-1  a  epsg:CoordinateOperationPath .
+
+value:8453-1150-2  a  epsg:CoordinateOperationPath .
+
+value:8192-1150-2  a  epsg:CoordinateOperationPath .
+
+value:8188-1763-1  a  epsg:CoordinateOperationPath .
+
+value:8234-1149-2  a  epsg:CoordinateOperationPath .
+
+value:8640-1882-1  a  epsg:CoordinateOperationPath .
+
+value:8608-1710-2  a  epsg:CoordinateOperationPath .
+
+value:8596-1714-2  a  epsg:CoordinateOperationPath .
+
+value:8649-1990-2  a  epsg:CoordinateOperationPath .
+
+value:8514-1526-2  a  epsg:CoordinateOperationPath .
+
+value:8652-1064-1  a  epsg:CoordinateOperationPath .
+
+value:8234-1309-1  a  epsg:CoordinateOperationPath .
+
+value:8653-1146-2  a  epsg:CoordinateOperationPath .
+
+value:8618-1241-1  a  epsg:CoordinateOperationPath .
+
+value:8574-1578-1  a  epsg:CoordinateOperationPath .
+
+value:8646-1902-1  a  epsg:CoordinateOperationPath .
+
+value:8223-1302-2  a  epsg:CoordinateOperationPath .
+
+value:8219-1302-2  a  epsg:CoordinateOperationPath .
+
+value:8582-1454-1  a  epsg:CoordinateOperationPath .
+
+value:7987-7985-3  a  epsg:CoordinateOperationPath .
+
+value:8194-1280-1  a  epsg:CoordinateOperationPath .
+
+value:8641-1883-1  a  epsg:CoordinateOperationPath .
+
+value:8601-1743-2  a  epsg:CoordinateOperationPath .
+
+value:8634-1839-1  a  epsg:CoordinateOperationPath .
+
+value:8560-1150-2  a  epsg:CoordinateOperationPath .
+
+value:8566-1188-2  a  epsg:CoordinateOperationPath .
+
+value:8186-1276-2  a  epsg:CoordinateOperationPath .
+
+value:8575-1579-1  a  epsg:CoordinateOperationPath .
+
+value:8580-1149-2  a  epsg:CoordinateOperationPath .
+
+value:6874-1265-1  a  epsg:CoordinateOperationPath .
+
+value:8443-8367-2  a  epsg:CoordinateOperationPath .
+
+value:8530-1540-2  a  epsg:CoordinateOperationPath .
+
+value:8659-15896-1  a  epsg:CoordinateOperationPath .
+
+value:5242-5239-2  a  epsg:CoordinateOperationPath .
+
+value:8642-1884-1  a  epsg:CoordinateOperationPath .
+
+value:5230-4836-2  a  epsg:CoordinateOperationPath .
+
+value:8241-1145-2  a  epsg:CoordinateOperationPath .
+
+value:5192-5191-2  a  epsg:CoordinateOperationPath .

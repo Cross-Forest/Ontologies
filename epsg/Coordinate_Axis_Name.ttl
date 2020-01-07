@@ -1,0 +1,357 @@
+@prefix epsg:  <http://epsg.w3id.org/ontology/> .
+@prefix folder: <file:///home/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<http://epsg.w3id.org/data/axisname/9919>
+        a                       epsg:AxisName ;
+        epsg:changeID           "2016.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9919"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Plant North" ;
+        epsg:remarks            "Not necessarily orientated to geographical north." .
+
+<http://epsg.w3id.org/data/axisname/9913>
+        a                       epsg:AxisName ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9913"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "First local axis" ;
+        epsg:remarks            "First and second local coordinate axes are assumed to be horizontal and may be supplemented by 'local height' or 'local depth' to form a local 3D coordinate system." .
+
+<http://epsg.w3id.org/data/axisname/1029>
+        a                       epsg:AxisName ;
+        epsg:changeID           "2017.040" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1029"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "IOGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Local northing" .
+
+<http://epsg.w3id.org/data/axisname/9922>
+        a                       epsg:AxisName ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9922"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Inline" ;
+        epsg:remarks            "Inline is an ambiguous term, varying by usage." .
+
+<http://epsg.w3id.org/data/axisname/9928>
+        a                       epsg:AxisName ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9928"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "Open GIS Consortium" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Geocentric radius" ;
+        epsg:remarks            "Used to avoid the singularity when the two angles in a 3D polar coordinate system lie in the same plane." .
+
+<http://epsg.w3id.org/data/axisname/9903>
+        a                       epsg:AxisName ;
+        epsg:changeID           "2016.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9903"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP based on ISO 19111" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Ellipsoidal height" ;
+        epsg:remarks            "Used only as part of an ellipsoidal 3D coordinate system in a geographic 3D coordinate reference system, never on its own." .
+
+<http://epsg.w3id.org/data/axisname/9909>
+        a                       epsg:AxisName ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9909"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Southing" .
+
+<http://epsg.w3id.org/data/axisname/9931>
+        a                       epsg:AxisName ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9931"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Topocentric North" .
+
+<http://epsg.w3id.org/data/axisname/9918>
+        a                       epsg:AxisName ;
+        epsg:changeID           "2016.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9918"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Plant East" ;
+        epsg:remarks            "Not necessarily orientated to geographical east." .
+
+<http://epsg.w3id.org/data/axisname/9912>
+        a                       epsg:AxisName ;
+        epsg:changeID           "2016.045" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9912"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Geocentric Z" .
+
+<http://epsg.w3id.org/data/axisname/1028>
+        a                       epsg:AxisName ;
+        epsg:changeID           "2017.040" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1028"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "IOGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Local easting" .
+
+<http://epsg.w3id.org/data/axisname/9921>
+        a                       epsg:AxisName ;
+        epsg:changeID           "2011.106" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9921"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bin grid J" ;
+        epsg:remarks            "The map grid bearing of this axis defines the orientation of the bin grid." .
+
+<http://epsg.w3id.org/data/axisname/9927>
+        a                       epsg:AxisName ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9927"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "Open GIS Consortium" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Spherical longitude" .
+
+<http://epsg.w3id.org/data/axisname/9902>
+        a                       epsg:AxisName ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9902"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Geodetic longitude" ;
+        epsg:remarks            "Used in geographic 2D and geographic 3D coordinate reference systems." .
+
+<http://epsg.w3id.org/data/axisname/9908>
+        a                       epsg:AxisName ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9908"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Westing" .
+
+<http://epsg.w3id.org/data/axisname/9930>
+        a                       epsg:AxisName ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9930"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Topocentric East" .
+
+<http://epsg.w3id.org/data/axisname/9917>
+        a                       epsg:AxisName ;
+        epsg:changeID           "2012.068" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9917"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:name               "Local depth" ;
+        epsg:remarks            "Similar to local height, but with the positive increments in the opposite direction." .
+
+<http://epsg.w3id.org/data/axisname/9911>
+        a                       epsg:AxisName ;
+        epsg:changeID           "2016.045" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9911"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Geocentric Y" .
+
+<http://epsg.w3id.org/data/axisname/1027>
+        a                       epsg:AxisName ;
+        epsg:changeID           "2016.003" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1027"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "IOGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Platform Down" ;
+        epsg:remarks            "For a moving platform, aligned to the body of the platform and independent of its movement." .
+
+<http://epsg.w3id.org/data/axisname/9920>
+        a                       epsg:AxisName ;
+        epsg:changeID           "2011.106" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9920"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bin grid I" ;
+        epsg:remarks            "The rotation of this axis relative to the J-axis defines the handedness of the bin grid." .
+
+<http://epsg.w3id.org/data/axisname/1030>
+        a                       epsg:AxisName ;
+        epsg:changeID           "2017.040" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1030"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "IOGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Local depth" .
+
+<http://epsg.w3id.org/data/axisname/9926>
+        a                       epsg:AxisName ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9926"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "Open GIS Consortium" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Spherical latitude" .
+
+<http://epsg.w3id.org/data/axisname/9901>
+        a                       epsg:AxisName ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9901"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Geodetic latitude" ;
+        epsg:remarks            "Used in geographic 2D and geographic 3D coordinate reference systems." .
+
+<http://epsg.w3id.org/data/axisname/9907>
+        a                       epsg:AxisName ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9907"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Northing" .
+
+<http://epsg.w3id.org/data/axisname/9916>
+        a                       epsg:AxisName ;
+        epsg:changeID           "2012.068" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9916"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:name               "Local height" ;
+        epsg:remarks            "Differs from gravity-related height in having an origin offset from sea level." .
+
+<http://epsg.w3id.org/data/axisname/9910>
+        a                       epsg:AxisName ;
+        epsg:changeID           "2016.045" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9910"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Geocentric X" .
+
+<http://epsg.w3id.org/data/axisname/1026>
+        a                       epsg:AxisName ;
+        epsg:changeID           "2016.003" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1026"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "IOGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Platform Up" ;
+        epsg:remarks            "For a moving platform, aligned to the body of the platform and independent of its movement." .
+
+<http://epsg.w3id.org/data/axisname/9925>
+        a                       epsg:AxisName ;
+        epsg:changeID           "2016.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9925"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Platform North" ;
+        epsg:remarks            "Not necessarily orientated to geographical north." .
+
+<http://epsg.w3id.org/data/axisname/9906>
+        a                       epsg:AxisName ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9906"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Easting" .
+
+<http://epsg.w3id.org/data/axisname/9915>
+        a                       epsg:AxisName ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9915"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Third local axis" ;
+        epsg:remarks            "If the local coordinate system is 3-dimensional, then the first and second local coordinate axes shall be horizontal and the third axis vertical." .
+
+<http://epsg.w3id.org/data/axisname/1025>
+        a                       epsg:AxisName ;
+        epsg:changeID           "2016.003" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1025"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Starboard" ;
+        epsg:remarks            "Aligned to the body of the moving platform and independent of the movement of the platform." .
+
+<http://epsg.w3id.org/data/axisname/9924>
+        a                       epsg:AxisName ;
+        epsg:changeID           "2016.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9924"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Platform East" ;
+        epsg:remarks            "Not necessarily orientated to geographical east." .
+
+<http://epsg.w3id.org/data/axisname/9905>
+        a                       epsg:AxisName ;
+        epsg:changeID           "2012.068" ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9905"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Depth" ;
+        epsg:remarks            "Generally is a straight line through the reference surface, but there may be engineering applications where depth follows the plumb line; because of the short distances and near parallelism involved the two are considered to be insignificantly different." .
+
+<http://epsg.w3id.org/data/axisname/9914>
+        a                       epsg:AxisName ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9914"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Second local axis" .
+
+<http://epsg.w3id.org/data/axisname/1024>
+        a                       epsg:AxisName ;
+        epsg:changeID           "2016.003" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "1024"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Forward" ;
+        epsg:remarks            "Aligned to the body of the moving platform and independent of the movement of the platform." .
+
+<http://epsg.w3id.org/data/axisname/9923>
+        a                       epsg:AxisName ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9923"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Crossline" ;
+        epsg:remarks            "Crossline is an ambiguous term, varying by usage." .
+
+<http://epsg.w3id.org/data/axisname/9929>
+        a                       epsg:AxisName ;
+        epsg:dataSource         "OGP" ;
+        epsg:hasEPSGcode        "9929"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Topocentric height" ;
+        epsg:remarks            "Used in topocentric coordinate-systems related geometrically to the ellipsoid, as opposed to those that are gravity-related. If the topocentric origin is on the ellipsoid surface, topocentric height = ellipsoidal height." .
+
+<http://epsg.w3id.org/data/axisname/9904>
+        a                       epsg:AxisName ;
+        epsg:changeID           "2016.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:hasEPSGcode        "9904"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "ISO 19111 \"Geographical information - Spatial referencing by coordinates\"." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Gravity-related height" ;
+        epsg:remarks            "Used in a 1D vertical coordinate system." .

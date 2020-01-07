@@ -1,0 +1,21 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix mfe:   <http://crossforest.eu/mfe/ontology/> .
+
+mfe:ForestType-MXAUF843 # modificado x ACO; FormacionArbolada x ForestType
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "Otras mezclas de frondosas macaronésicas"@es ;
+        rdfs:subClassOf  mfe:ForestType-MXAUF843 , mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-MX .
+
+mfe:ForestType-MXAUF842
+        a                    owl:Class , rdfs:Class ;
+        rdfs:label           "Laurisilvas macaronésicas"@es ;
+        rdfs:subClassOf      mfe:ForestType-MXAUF842 , mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-MX ;
+        mfe:hasSetOfSpecies  mfe:SetofSpecies80 .
+
+mfe:ForestType-MXAUF841
+        a                    owl:Class , rdfs:Class ;
+        rdfs:label           "Fayal-brezal"@es ;
+        rdfs:subClassOf      mfe:ForestType-MXAUF841 , mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-MX ;
+        mfe:hasSetOfSpecies  mfe:SetofSpecies83 .

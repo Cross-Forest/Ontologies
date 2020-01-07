@@ -1,0 +1,44 @@
+@prefix ifn:   <http://crossforest.eu/ifn/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+ifn:Class2  a                          ifn:Class , owl:Class , rdfs:Class ;
+        rdfs:subClassOf                ifn:Plantae ;
+        ifn:acceptedNameWithoutAuthor  "Gymnospermae"@la ;
+        ifn:hasAcceptedName            ifn:AcceptedNameClass2 ;
+        ifn:hasScientificSynonym       ifn:ScientificSynonymClass2 ;
+        ifn:hasThePlantListPage        "http://www.theplantlist.org/1.1/browse/G/"^^xsd:anyURI ;
+        ifn:hasWikiSpeciesPage         "https://species.wikimedia.org/wiki/Gymnospermae"^^xsd:anyURI ;
+        ifn:hasWikipediaPage           "https://en.wikipedia.org/wiki/Gymnosperm"^^xsd:anyURI ;
+        ifn:scientificSynonymWithoutAuthor
+                "Acrogymnospermae"@la ;
+        ifn:vulgarName                 "Gymnosperms"@en , "Coníferas"@es .
+
+ifn:ScientificSynonymClass2
+        a         ifn:ScientificSynonym ;
+        ifn:name  "Acrogymnospermae"@la .
+
+ifn:AcceptedNameClass1
+        a         ifn:AcceptedName ;
+        ifn:name  "Angiospermae"@la .
+
+ifn:Class1  a                          ifn:Class , owl:Class , rdfs:Class ;
+        rdfs:subClassOf                ifn:Plantae ;
+        ifn:acceptedNameWithoutAuthor  "Angiospermae"@la ;
+        ifn:hasAcceptedName            ifn:AcceptedNameClass1 ;
+        ifn:hasScientificSynonym       ifn:ScientificSynonymClass1 ;
+        ifn:hasThePlantListPage        "http://www.theplantlist.org/1.1/browse/A/"^^xsd:anyURI ;
+        ifn:hasWikiSpeciesPage         "https://species.wikimedia.org/wiki/Angiospermae"^^xsd:anyURI ;
+        ifn:hasWikipediaPage           "https://en.wikipedia.org/wiki/Flowering_plant"^^xsd:anyURI ;
+        ifn:scientificSynonymWithoutAuthor
+                "Magnoliophyta"@la ;
+        ifn:vulgarName                 "Angiosperms"@en , "Frondosas"@es .
+
+ifn:ScientificSynonymClass1
+        a         ifn:ScientificSynonym ;
+        ifn:name  "Magnoliophyta"@la .
+
+ifn:AcceptedNameClass2
+        a         ifn:AcceptedName ;
+        ifn:name  "Gymnospermae"@la .

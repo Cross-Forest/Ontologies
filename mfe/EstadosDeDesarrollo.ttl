@@ -1,0 +1,28 @@
+@prefix mfe: <http://crossforest.eu/mfe/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+mfe:StandDevelopment1 a mfe:StandDevelopment , owl:Class , rdfs:Class ; # cambiado x ACO: estadoDeDesarrollo x standDevelopment
+  rdfs:subClassOf mfe:StandDevelopment ;
+  rdfs:label "Repoblado"@es ;
+  rdfs:comment "Estado de una población desde su nacimiento (de semilla) o brote (de cepa o raíz) hasta que se tocan las partes aéreas de los pies contiguos"@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:StandDevelopment2 a mfe:StandDevelopment , owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:StandDevelopment ;
+  rdfs:label "Monte bravo"@es ;
+  rdfs:comment "Estado de la masa en su primera juventud, esto es, desde que empiezan a tocarse las copas nuevas de las plantas hasta alcanzar el estado de latizal"@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:StandDevelopment3 a mfe:StandDevelopment , owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:StandDevelopment ;
+  rdfs:label "Latizal"@es ;
+  rdfs:comment "Estado de masa arbórea a partir de los 8 - 10 metros de talla y hasta llegar al estado de fustal"@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:StandDevelopment4 a mfe:StandDevelopment , owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:StandDevelopment ;
+  rdfs:label "Fustal"@es ;
+  rdfs:comment "Estado de superior desarrollo de los montes arbolados"@es ;
+  rdfs:isDefinedBy mfe: .

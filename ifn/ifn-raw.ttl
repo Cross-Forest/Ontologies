@@ -1,0 +1,86 @@
+@prefix ifn3ro: <http://crossforest.eu/ifn3/raw/ontology/> .
+@prefix ifn3o: <http://crossforest.eu/ifn3/ontology/> .
+@prefix fio: <http://crossforest.eu/forinv/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+
+ifn3ro: a owl:Ontology ;
+  rdfs:label "Spanish FNI-3 Raw Data Ontology"@en , "Ontología de los datos en bruto del IFN-3 de España"@es ;
+  rdfs:comment "Ontology to publish raw data of the 3rd Spanish National Forest inventory. Such data helps to relate original data from the Forest Inventory with those of the ontology"@en , "Ontología para publicar datos en bruto del tercer Inventario Forestal Nacional de España. Estos datos ayudan a relacionar los datos originales del Inventario Forestal con los datos de la ontología." ;
+  owl:versionInfo 0.1 ;
+  dc:creator <https://www.gsic.uva.es/members/josgim> , <https://www.gsic.uva.es/members/guiveg> ;
+  dc:date "2019-07-17"^^xsd:date ;
+  vann:preferredNamespacePrefix "ifn3ro" .
+
+#################################################################
+#    Datatype Properties
+#################################################################
+
+ifn3ro:rawDataProperty a owl:DatatypeProperty , rdf:Property ;
+  rdfs:label "raw datum"@en , "dato en bruto"@es ;
+  rdfs:comment "this property is used for raw data from the IFN-3 "@en , "esta propiedad se utiliza para un dato en bruto proveniente del IFN-3"@es ;
+  rdfs:isDefinedBy ifn3ro: .
+
+ifn3ro:provincia a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf fio:rawDataProperty ;
+  rdfs:label "province"@en , "province"@es ;
+  rdfs:comment "Province code, as per INE."@en , "Número de la provincia, según INE."@es ;
+  rdfs:range xsd:string ;
+  owl:withRestrictions ( [ xsd:pattern "[0-9]{2}" ] ) ;
+  rdfs:isDefinedBy ifn3ro: .
+
+ifn3ro:orden a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf fio:rawDataProperty ;
+  rdfs:label "inventory"@en , "orden"@es ;
+  rdfs:comment "Number of the inventory."@en , "Número del estadillo."@es ;
+  rdfs:range xsd:string ;
+  owl:withRestrictions ( [ xsd:pattern "[0-9]" ] ) ;
+  rdfs:isDefinedBy ifn3ro: .
+
+ifn3ro:clase a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf fio:rawDataProperty ;
+  rdfs:label "class"@en , "clase"@es ;
+  rdfs:comment "Code to indicate if the plot was recorder on the IFN2 or if it was recorded for the first time on the IFN3"@en , "Código referente a si la parcela se levantó en el IFN2 o si se levanta por primera vez en el IFN3"@es ;
+  rdfs:range xsd:string ;
+  owl:withRestrictions ( [ xsd:pattern "[AN]" ] ) ;
+  rdfs:isDefinedBy ifn3ro: .
+
+ifn3ro:hoja a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf fio:rawDataProperty ;
+  rdfs:label "sheet"@en , "hoja"@es ;
+  rdfs:comment "Sheet of the Spanish national map 1:50000 where the plot is located"@en , "Hoja del Plano Nacional 1:50000 donde está ubicada la parcela"@es ;
+  rdfs:range xsd:string ;
+  owl:withRestrictions ( [ xsd:pattern ".{5}" ] ) ;
+  rdfs:isDefinedBy ifn3ro: .
+
+ifn3ro:pasada a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf fio:rawDataProperty ;
+  rdfs:label "pass"@en , "pasada"@es ;
+  rdfs:comment "Code of the flight pass of the aereal photography."@en , "Código de la pasada del vuelo de la fotografía aérea."@es ;
+  rdfs:range xsd:string ;
+  owl:withRestrictions ( [ xsd:pattern ".{5}" ] ) ;
+  rdfs:isDefinedBy ifn3ro: .
+
+ifn3ro:foto a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf fio:rawDataProperty ;
+  rdfs:label "photo"@en , "foto"@es ;
+  rdfs:comment "Number of the order of the aereal photography in the pass."@en , "Número de orden de la fotografía aérea dentro de la pasada."@es ;
+  rdfs:range xsd:string ;
+  owl:withRestrictions ( [ xsd:pattern ".{5}" ] ) ;
+  rdfs:isDefinedBy ifn3ro: .
+
+ifn3ro:vuelo a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf fio:rawDataProperty ;
+  rdfs:label "flight"@en , "vuelo"@es ;
+  rdfs:comment "Code of the flight that took the aereal photo"@en , "Código del vuelo en el que se realizó la foto aérea"@es ;
+  rdfs:range xsd:string ;
+  owl:withRestrictions ( [ xsd:pattern ".{5}" ] ) ;
+  rdfs:isDefinedBy ifn3ro: .
+
+  ###>> Estaba escribiendo las restricciones de acuerdo al documento, pero los datos no cuadran...
+  ###>> Me ha comentado Cristóbal que el esquema de las BBDD es inconsistente, porque se llevaba cada una desde una provincia diferente, así que probablemente haya que quitar todas las restricciones.

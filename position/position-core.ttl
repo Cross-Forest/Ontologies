@@ -1,0 +1,286 @@
+@prefix spo: <http://crossforest.eu/position/ontology/> .
+@prefix epsg:  <http://epsg.w3id.org/ontology/> .
+@prefix smo: <http://crossforest.eu/measures/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix patata: <https://no.se.usa> .
+
+spo: a owl:Ontology;
+  rdfs:label "Spatial Position Ontology"@en , "Ontología de Posiciones Espaciales"@es ;
+  rdfs:comment "An ontology to publish data about spatial entities and their positions in various reference systems, including relative positions"@en , "Una ontología para publicar datos sobre entidades espaciales y sus posiciones en múltiples sistemas de referencia, incluyendo posiciones relativas"@es ;
+  owl:versionInfo 0.1 ;
+  dc:creator <https://www.crossforest.eu/members/josgim> , <https://www.crossforest.eu/members/guiveg> ;
+  dc:date "2019-07-17"^^xsd:date ;
+  owl:imports smo: ;
+  vann:preferredNamespacePrefix "spo" .
+
+###>> Nota: Las cosas de esta ontología relacionadas con CRS están en proceso de desaparecer y ser sustituídas por la ontología del EPSG
+
+#################################################################
+#    Classes
+#################################################################
+
+spo:SpatialEntity a owl:Class , rdfs:Class ;
+  rdfs:label "Spatial Entity"@en , "Entidad espacial"@es ;
+  rdfs:comment "Entity with Spatial Position"@en , "Entidad con posición espacial"@es ;
+  owl:disjointWith spo:Position , spo:Coordinate , spo:EPSGentity , spo:Axis ;
+  rdfs:isDefinedBy spo: .
+
+spo:ReferenceEntity a owl:Class , rdfs:Class ;
+  rdfs:subClassOf spo:SpatialEntity ;
+  rdfs:label "Reference Entity"@en , "Entidad de Referencia"@es ;
+  rdfs:comment "Entity taken as reference for the position of other spatial entities"@en , "Entidad tomada como referencia para el posicionamient de otras entidades espaciales"@es ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty smo:hasPosition ;
+    owl:someValuesFrom spo:ReferencePosition ] ;
+  rdfs:isDefinedBy spo: .
+
+spo:Position a owl:Class , rdfs:Class ;
+  rdfs:label "Position"@en , "Posición"@es ;
+  rdfs:comment "Position where a spatial entity can be located"@en , "Posición donde una entidad espacial puede estar situada"@es ;
+  owl:disjointWith spo:SpatialEntity , spo:Coordinate , spo:EPSGentity , spo:Axis ;
+  rdfs:isDefinedBy spo: .
+
+spo:ReferencePosition a owl:Class , rdfs:Class ;
+  rdfs:subClassOf spo:Position ;
+  rdfs:label "Reference Position"@en , "Posición de Referencia"@es ;
+  rdfs:comment "Position taken as reference for the position of other spatial entities"@en , "Posición tomada como referencia para el posicionamient de otras entidades espaciales"@es ;
+  rdfs:isDefinedBy spo: .
+
+spo:GeocentricPosition a owl:Class , rdfs:Class ;
+  rdfs:subClassOf spo:Position ;
+  rdfs:label "Geocentric Position"@en , "Posición geocéntrica"@es ;
+  rdfs:comment "Position that uses a geodetic coordinate reference system" , "Posición que utiliza un sistema geodético de coordenadas de referencia"@es ;
+  owl:disjointWith spo:AllocentricPosition , spo:EgocentricPosition ;
+  rdfs:isDefinedBy spo: .
+
+spo:AllocentricPosition a owl:Class , rdfs:Class ;
+  rdfs:subClassOf spo:Position ;
+  rdfs:label "Allocentric Position" , "Posición Alocéntrica" ;
+  rdfs:comment "Position from a set of points"@en , "Posición desde un conjunto de puntos"@es ;
+  owl:disjointWith spo:GeocentricPosition , spo:EgocentricPosition ;
+  rdfs:isDefinedBy spo: .
+
+spo:EgocentricPosition a owl:Class , rdfs:Class ;
+  rdfs:subClassOf spo:Position ;
+  rdfs:label "Egocentric Position" , "Posición Egocéntrica" ;
+  rdfs:comment "Position from a point of reference"@en , "Posición desde un punto de referencia"@es ;
+  owl:disjointWith spo:GeocentricPosition , spo:AllocentricPosition ;
+  rdfs:isDefinedBy spo: .
+
+spo:Bound a owl:Class , rdfs:Class ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:isDefinedBy spo: .  
+
+spo:UpperBound a owl:Class , rdfs:Class ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:isDefinedBy spo: .
+
+spo:LowerBound a owl:Class , rdfs:Class ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:isDefinedBy spo: .
+
+spo:RightBound a owl:Class , rdfs:Class ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:isDefinedBy spo: .
+
+spo:LeftBound a owl:Class , rdfs:Class ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:isDefinedBy spo: .
+
+spo:Layer a owl:Class , rdfs:Class ;
+  rdfs:label "Layer"@en , "Capa"@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:isDefinedBy spo: .
+
+spo:Polygon a owl:Class , rdfs:Class ;
+  rdfs:subClassOf spo:Position ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:isDefinedBy spo: .
+
+spo:Direction a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:Measure ;
+  rdfs:label "Direction"@en , "Rumbo"@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:isDefinedBy spo: .
+
+spo:Distance a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:Measure ;
+  rdfs:label "Distance"@en , "distancia"@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:isDefinedBy spo: .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+spo:samePosition a owl:ObjectProperty , rdf:Property , owl:SymmetricProperty , owl:ReflexiveProperty ;
+  rdf:label "same position as"@en , "misma posición que"@es ;
+  rdfs:comment "same phisical position, probably in a different coordinate reference system"@en , "misma posición física, probablemente en un sistema de coordenadas de referencia diferente" ;
+  rdfs:domain spo:Position ;
+  rdfs:range spo:Position ;
+  rdfs:isDefinedBy spo: .
+
+spo:hasPosition a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "has location"@en , "situada en"@es ;
+  rdfs:comment "the spatial entity has this location"@en , "la entidad espacial tiene esta posición"@es ;
+  rdfs:domain spo:SpatialEntity ;
+  rdfs:range spo:Position ;
+  rdfs:isDefinedBy spo: .
+
+spo:hasGeocentricPosition a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf spo:hasPosition ;
+  rdfs:label "has geocentric position"@en , "tiene posición geocéntrica"@es ;
+  rdfs:comment "the spacial entity has this position in a geodetic CRS"@en , "la entidad espacial tiene esta posición en un Sistema de Coordenadas de Referencia Geodésico"@es ;
+  rdfs:range spo:GeocentricPosition ;
+  rdfs:isDefinedBy spo: .
+
+spo:hasEgocentricPosition a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf spo:hasPosition ;
+  rdfs:label "has egocentric position"@en , "tiene posición egocéntrica"@es ;
+  rdfs:comment "the spatial entity has this position from a point of reference (which is probably the posicion of another spatial entity)"@en , "la entidad espacial tiene esta posición desde un punto de referencia (que es probablemente la posición de otra entidad espacial)"@es ;
+  rdfs:range spo:EgocentricPosition ;
+  rdfs:isDefinedBy spo: .
+
+spo:hasReference a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "from reference"@en , "desde la referencia"@es;
+  rdfs:comment "the position is w.r.t. this position of reference"@en , "la posición es relativa a esta posición de referencia"@es ;
+  rdfs:domain spo:EgocentricPosition ;
+  rdfs:range spo:ReferencePosition ;
+  rdfs:isDefinedBy spo: .
+
+spo:referenceOf a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "is reference of"@en , "es referencia de"@es ;
+  rdfs:comment "the position for which the entity is used as a reference"@en , "la posición para la cual la entidad se usa como referencia"@es ;
+  rdfs:domain spo:ReferencePosition ;
+  rdfs:range spo:EgocentricPosition ;
+  owl:inverseOf spo:fromReference ;
+  rdfs:isDefinedBy spo: .
+
+spo:egocentricPositionOf a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "egocentric position of"@en , "posición egocéntrica de"@es ;
+  rdfs:comment "target entity of the egocentric position"@en , "entidad objetico de la posición egocéntrica"@es ;
+  rdfs:domain spo:EgocentricPosition ;
+  rdfs:range spo:SpatialEntity ;
+  owl:inverseOf spo:hasEgocentricPosition ;
+  rdfs:isDefinedBy spo: .
+
+spo:hasPolygon a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf spo:hasPosition ;
+  rdfs:label "has polygon"@en , "tiene polígono"@es ;
+  rdfs:comment "the spatial entity is located in this polygon"@en , "la entidad espacial está en este polígono"@es ;
+  rdfs:range spo:Polygon ;
+  rdfs:isDefinedBy spo: .
+
+spo:hasBound a owl:ObjectProperty , rdf:Property ;
+  rdfs:domain spo:Position ;
+  rdfs:range spo:Bound ;
+  rdfs:isDefinedBy spo: .
+
+spo:hasUpperBound a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf spo:hasBound ;
+  rdfs:range spo:UpperBound ;
+  rdfs:isDefinedBy spo: .
+
+spo:hasLowerBound a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf spo:hasBound ;
+  rdfs:range spo:LowerBound ;
+  rdfs:isDefinedBy spo: .
+
+spo:hasRightBound a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf spo:hasBound ;
+  rdfs:range spo:RightBound ;
+  rdfs:isDefinedBy spo: .
+
+spo:hasLeftBound a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf spo:hasBound ;
+  rdfs:range spo:LeftBound ;
+  rdfs:isDefinedBy spo: .
+
+spo:hasDirection a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "direction"@en , "rumbo"@es ;
+  rdfs:comment "direction of the position from the position of reference"@en , "rumbo de la posición respecto a la posición de referencia"@es ;
+  rdfs:domain spo:EgocentricPosition ;
+  rdfs:range spo:Direction ;
+  rdfs:isDefinedBy spo: .
+
+spo:hasDistance a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "distance"@en , "distancia"@es ;
+  rdfs:comment "distance from the position to the position of reference"@en , "distancia de la posición a la posición de referencia"@es ;
+  rdfs:domain spo:EgocentricPosition ;
+  rdfs:target spo:Distance ;
+  rdfs:isDefinedBy spo: .
+
+spo:hasArea a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureIn ;
+  rdfs:label "has area"@en , "tiene area"@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain spo:Position ;
+  rdfs:range smo:MeasureInHectares ;
+  rdfs:isDefinedBy spo: .
+
+spo:hasCoordinateReferenceSystem a owl:ObjectProperty , rdf:Property ;
+  owl:equivalentProperty epsg:hasCoordinateReferenceSystem ;
+  rdfs:label "coordinate reference system"@en , "sistema de coordenadas de referencia"@es ;
+  rdfs:comment "coordinate reference system used for the position"@en , "sistema de coordenadas de referencia usado para la posición"@es ;
+  rdfs:domain spo:GeocentricPosition ;
+  rdfs:isDefinedBy spo: .
+
+spo:hasCoordinate a owl:ObjectProperty , rdf:Property ;
+  owl:equivalentProperty epsg:hasCoordinate ;
+  rdfs:label "coordinate"@en , "coordenada"@es ;
+  rdfs:comment "coordinate of the position"@en , "coordenada de la posición"@es ;
+  rdfs:domain spo:GeocentricPosition ;
+  rdfs:isDefinedBy spo: .
+
+spo:isInLayer a owl:ObjectProperty , rdf:Property ;
+  owl:equivalentProperty epsg:hasCoordinate ;
+  rdfs:label "is in layer"@en , "está en la capa"@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain spo:Position ;
+  rdfs:range spo:Layer ;
+  rdfs:isDefinedBy spo: .
+
+
+#################################################################
+#    Datatype Properties
+#################################################################
+
+spo:hasDirectionInGradians a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureInGradians ;
+  rdfs:label "direction"@en , "rumbo"@es ;
+  rdfs:comment "direction in degress of the position from the position of reference"@en , "rumbo en grados de la posición respecto a la posición de referencia"@es ;
+  rdfs:domain spo:EgocentricPosition ;
+  rdfs:isDefinedBy spo: .
+
+spo:hasDistanceInMeters a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureInMeters ;
+  rdfs:label "distance"@en , "distancia"@es ;
+  rdfs:comment "distance in meters from the position to the position of reference"@en , "distancia en metros de la posición a la posición de referencia"@es ;
+  rdfs:domain spo:EgocentricPosition ;
+  rdfs:isDefinedBy spo: .
+
+spo:hasAreaInHC a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureInHectares ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain mfe:Position ;
+  rdfs:isDefinedBy spo: .
+
+spo:hasAreaInSquareMeters a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureInSquareMeters ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain mfe:Position ;
+  rdfs:isDefinedBy spo: .

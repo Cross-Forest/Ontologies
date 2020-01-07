@@ -1,0 +1,881 @@
+@prefix ifn: <http://crossforest.eu/ifn/ontology/> .
+@prefix smo: <http://crossforest.eu/measures/ontology/> .
+@prefix spo: <http://crossforest.eu/position/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+@prefix province: <http://crossforest.eu/ifn/data/province/> .
+
+ifn: a owl:Ontology ;
+  rdfs:label "Spanish IFN Ontology"@en , "Ontología del IFN de España"@es ;
+  rdfs:comment "Ontology to publish data of the Spanish National Forest inventory"@en , "Ontología para publicar datos del Inventario Forestal Nacional de España" ;
+  owl:versionInfo 0.1 ;
+  dc:creator <https://www.gsic.uva.es/members/josgim> , <https://www.gsic.uva.es/members/guiveg> ;
+  dc:date "2019-07-17"^^xsd:date ;
+  owl:imports ifn: , smo: ;
+  vann:preferredNamespacePrefix "ifn" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+ifn:Province a owl:Class , rdfs:Class ;
+  rdfs:subClassOf spo:SpatialEntity ;
+  rdfs:label "Province"@en , "Provincia"@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Plot a owl:Class , rdfs:Class ;
+  rdfs:subClassOf spo:SpatialEntity ;
+  rdfs:label "Plot"@en , "Parcela"@es ;
+  rdfs:comment ""@en , ""@es ;
+  owl:disjointWith ifn:Tree , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PrimaryPlot a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Plot ;
+  rdfs:label "Plot"@en , "Parcela"@es ;
+  rdfs:comment ""@en , ""@es ;
+  owl:disjointWith ifn:Tree , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:SecondaryPlot a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Plot ;
+  rdfs:label "Plot"@en , "Parcela"@es ;
+  rdfs:comment ""@en , ""@es ;
+  owl:disjointWith ifn:Tree , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Plot-NN a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PrimaryPlot ;
+  rdfs:label "New Plot"@en , "Parcela Nueva"@es ;
+  rdfs:comment ""@en , "Se levantarán por primera vez en el inventario actual y serán utilizadas para el cálculo de existencias actuales"@es ;
+  owl:disjointWith ifn:Tree , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Plot-A a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Plot ;
+  rdfs:label "Existing Plot"@en , "Parcela Existente"@es ;
+  rdfs:comment ""@en , "Parcelas levantadas en el inventario anterior que volverán a ser apeadas en el inventario actual"@es ;
+  owl:disjointWith ifn:Tree , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Plot-A1 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PrimaryPlot ;
+  rdfs:label "Plot in the same position as before"@en , "Parcela en la misma posición que antes"@es ;
+  rdfs:comment ""@en , "Parcelas en las que se localice el rejón y esté bien implantado. Se utilizarán para la comparación de inventarios y para el cálculo de existencias actuales."@es ;
+  owl:disjointWith ifn:Tree , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Plot-A3 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Plot-A ;
+  rdfs:label "Plot in different possition than before"@en , "Parcela en diferente posición que la anterior"@es ;
+  rdfs:comment ""@en , "Parcelas en las que se localice el rejón y esté mal implantado o bien se hayan producido cambios, en los últimos años, en las teselas de vegetación colindantes."@es ;
+  owl:disjointWith ifn:Tree , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Plot-A3C a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:SecondaryPlot ;
+  rdfs:label "Plot for inventory comparison"@en , "Parcela de comparación de inventarios"@es ;
+  rdfs:comment ""@en , "Parcela para la comparación de inventarios. Se levantará en el punto donde se encuentre el rejón del inventario anterior. Incluye datos de identificación y dendrometría, pero no estado fitosanitario."@es ;
+  owl:disjointWith ifn:Tree , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Plot-A3E a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PrimaryPlot ;
+  rdfs:label ""@en , "Parcela para el cálculo de existencias actuales"@es ;
+  rdfs:comment ""@en , "Parcelas para el cálculo de existencias actuales. Se levantarán en el emplazamiento correcto ( Coordenada UTM)"@es ;
+  owl:disjointWith ifn:Tree , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Plot-A4 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PrimaryPlot ;
+  rdfs:label ""@en , ""@es ;
+  rdfs:comment ""@en , "Parcelas en las que no se localice el rejón. Se utilizarán para el cálculo de existencias actuales."@es ;
+  owl:disjointWith ifn:Tree , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Plot-A4C a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PrimaryPlot ;
+  rdfs:label ""@en , ""@es ;
+  rdfs:comment ""@en , "Parcelas en las que no se localice el rejón por cambio totales en la cubierta forestal de la tesela que contiene la parcela (pérdida total de la masa muestreada en el inventario anterior o incorporación de una nueva masa forestal inexistente en el IFN2). Se utilizarán para la comparación de inventarios y para el cálculo de existencias actuales."@es ;
+  owl:disjointWith ifn:Tree , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Plot-A6C a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PrimaryPlot ;
+  rdfs:label ""@en , ""@es ;
+  rdfs:comment ""@en , "Parcelas en las que no se localice el rejón por cambios totales en la cubierta forestal de la tesela que contiene la parcela (pérdida total de la masa muestreada en el inventario anterior e incorporación de una nueva masa forestal). Se utilizarán para la comparación de inventarios y para el cálculo de existencias actuales."@es ;
+  owl:disjointWith ifn:Tree , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Plot-R a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:SecondaryPlot ;
+  rdfs:label ""@en , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  owl:disjointWith ifn:Tree , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Plot-R1 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Plot-R ;
+  rdfs:label ""@en , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  owl:disjointWith ifn:Tree , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Plot-R1R a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Plot-R ;
+  rdfs:label ""@en , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  owl:disjointWith ifn:Tree , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Plot-R2 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Plot-R ;
+  rdfs:label ""@en , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  owl:disjointWith ifn:Tree , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Plot-R2R a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Plot-R ;
+  rdfs:label ""@en , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  owl:disjointWith ifn:Tree , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Plot-R3 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Plot-R ;
+  rdfs:label ""@en , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  owl:disjointWith ifn:Tree , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Plot-R4 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Plot-R ;
+  rdfs:label ""@en , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  owl:disjointWith ifn:Tree , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Plantae a owl:Class , rdfs:Class ;
+  rdfs:label "Plantae"@la ;
+  rdfs:comment "Multicellular living beings with cell walls containing cellulose, and the ability to carry out photosynthesis with primary chloroplasts"@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Plant a owl:Class , rdfs:Class ;
+  rdfs:subClassOf spo:SpatialEntity ;
+  ifn:scientificName "Plantae"@la ;
+  ifn:vulgarName "Planta"@es , "Plant"@en ;
+  rdfs:comment ""@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Tree a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Plant ;
+  rdfs:label "Tree"@en , "Árbol"@es ;
+  rdfs:comment "Woody perennial plant with an elongated stem supporting branches"@en , "Planta vivaz (que vive más de dos años, de tallo leñoso, que se ramifica a cierta altura del suelo"@es ;
+  owl:disjointWith ifn:Plot , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Bush a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Plant ;
+  rdfs:label "Bush"@en , "Arbusto"@es ;
+  rdfs:comment ""@en , ""@es ;
+  owl:disjointWith ifn:Plot , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PlantSpecies a owl:Class , rdfs:Class ;
+  rdfs:label "Plant Species"@en, "Especie vegetal"@es ;
+  rdfs:comment "Plant species, as recorded in the inventory. It is possible that the individuals of this class are not strictly species, but genus, sub-genus, mix of species, etc."@en , "Especie vegetal, tal y como se ha registrado en el inventario. Es posible que los indivíduos de esta clase no sean estrictamente especies. Genus, sub-genus, y mezclas de especies son también indivíduos posibles."@es ;
+  owl:disjointWith ifn:Tree , ifn:Plot , ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:TreeSpecies a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PlantSpecies ;
+  rdfs:label "Tree Species"@en, "Especie arbórea"@en ;
+  rdfs:comment "Tree species, as recorded in the inventory. It is possible that the individuals of this class are not strictly species, but genus, sub-genus, mix of species, etc."@en , "Especie arbórea, tal y como se ha registrado en el inventario. Es posible que los indivíduos de esta clase no sean estrictamente especies. Genus, sub-genus, y mezclas de especies son también indivíduos posibles."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:BushSpecies a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PlantSpecies ;
+  rdfs:label "Bush Species"@en , "Especie arbustiva"@es ;
+  rdfs:comment "Bush species, as recorded in the inventory. It is possible that the individuals of this class are not strictly species, but genus, sub-genus, mix of species, etc."@en , "Especie arbustiva, tal y como se ha registrado en el inventario. Es posible que los indivíduos de esta clase no sean estrictamente especies. Genus, sub-genus, y mezclas de especies son también indivíduos posibles."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PlotMeasure a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:Measure ;
+  rdfs:label "Plot Measure"@en , "Medida de parcela"@es ;
+  rdfs:comment "Measure of a plot"@en , "Medida de una parcela"@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PlotMeasureTotal a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PlotMeasure ;
+  rdfs:label "Total Plot Measure"@en , "Medida de parcela total"@es ;
+  rdfs:comment "Measure of a whole plot (adding all species)"@en , "Medida de una parcela completa (sumando las de todas las especies)"@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PlotMeasureBySpecies a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PlotMeasure ;
+  rdfs:label "Plot Measure"@en , "Medida de parcela"@es ;
+  rdfs:comment "Measure of a plot"@en , "Medida de una parcela"@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PlantMeasure a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:Measure ;
+  rdfs:label "Tree Measure"@en , "Medida del árbol"@es ;
+  rdfs:comment "Measure of a tree"@en , "Medida de un arbol"@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:BasalArea a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PlotMeasure ;
+  rdfs:label "Basal Area"@en , "Área Basimétrica"@es ;
+  rdfs:comment "The area of a cross-section of a tree, including bark, at 1.3 m height. Basal area of a forest stand is the sum of the basal areas of all individual trees in the stand, usually reported as square meter per hectare."@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Volume a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PlotMeasure ;
+  rdfs:label "Volume"@en , "Volume"@es ;
+  rdfs:comment ""@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Diameter a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:TreeMeasure ;
+  # rdfs:label "Diameter at Breast Hight"@en , "Diámetro a la altura del pecho"@es , "Diámetro normal"@es ;
+  # rdfs:comment "Diameter at breast height of a tree"@en , "Diámetro a la altura del pecho de un árbol"@es ;
+  owl:disjointWith ifn:Plot , ifn:Tree, ifn:PlantSpecies ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:DiameterAtBreastHeight a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Diameter ;
+  rdfs:label "Diameter at Breast Hight"@en , "Diámetro a la altura del pecho"@es , "Diámetro normal"@es ;
+  rdfs:comment "Diameter at breast height of a tree"@en , "Diámetro a la altura del pecho de un árbol"@es ;
+  owl:disjointWith ifn:Plot , ifn:Tree, ifn:PlantSpecies ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:DiameterAtRootCollar a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Diameter ;
+  rdfs:label "Diameter At Root Collar"@en , "Diámetro basal"@es  ;
+  # rdfs:comment "Diameter at breast height of a tree"@en , "Diámetro a la altura del pecho de un árbol"@es ;
+  owl:disjointWith ifn:Plot , ifn:Tree, ifn:PlantSpecies ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:DBH1 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:DiameterAtBreastHeight ;
+  rdfs:label "Diameter at breast height of a tree measured with caliper arms pointing at the center of the plot"@en , "Diámetro a la altura del pecho de un árbol medido apuntando la forcípula al centro de la parcela"@es , "Diámetro normal de un árbol medido apuntando la forcípula al centro de la parcela"@es ;
+  rdfs:comment "Generic instance of an observable property representing the diameter of a tree measured at 1.3 meters above the ground with caliper arms pointing at the center of the plot."@en , "Instancia genérica de una propiedad observable representando el diámetro de un arbol a una altura aproximada de 1,3 metros, con la forcípula apuntando al centro de la parcela."@es ;
+  owl:disjointWith ifn:DBH2 ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:DBH2 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:DiameterAtBreastHeight ;
+  rdfs:label "Diameter at breast height of a tree measured with caliper arms perpendicular to the center of the plot"@en , "Diámetro a la altura del pecho de un árbol medido con la forcípula perpendicular al centro de la parcela"@es , "Diámetro normal de un árbol medido con la forcípula perpendicular al centro de la parcela"@es ;
+  rdfs:comment "Generic instance of an observable property representing the diameter of a tree measured at 1.3 meters above the ground with caliper arms perpendicular to the center of the plot."@en , "Instancia genérica de una propiedad observable representando el diámetro de un arbol a una altura aproximada de 1,3 metros, con la forcípula perpendicular al centro de la parcela."@es ;
+  owl:disjointWith ifn:DBH1 ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Height a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:TreeMeasure ;
+  rdfs:label "Height"@en , "Altura"@es ;
+  rdfs:comment "height of measured tree" , "Altura del árbol medido"@es ;
+  owl:disjointWith ifn:DiameterAtBreastHeight ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:TotalHeight a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Height ;
+  rdfs:label "Total Height"@en , "Altura total"@es ;
+  rdfs:comment "Total height of measured tree" , "Altura total del árbol medido"@es ;
+  owl:disjointWith ifn:DiameterAtBreastHeight ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:HeightToCrownBase a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Height ;
+  rdfs:label "Height to Crown Base"@en , "Altura hasta el inicio de la copa"@es ;
+  # rdfs:comment "Total height of measured tree" , "Altura total del árbol medido"@es ;
+  owl:disjointWith ifn:DiameterAtBreastHeight ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:HeightToLargestCrownWidht a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Height ;
+  rdfs:label "Height to Largest Crown Widht"@en , "Altura hasta el máximo ancho de copa"@es ;
+  # rdfs:comment "Total height of measured tree" , "Altura total del árbol medido"@es ;
+  owl:disjointWith ifn:DiameterAtBreastHeight ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:HeightToFirstAliveBranch a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Height ;
+  rdfs:label "Height to First Alive Branch"@en , "Altura hasta la primera rama viva"@es ;
+  # rdfs:comment "Total height of measured tree" , "Altura total del árbol medido"@es ;
+  owl:disjointWith ifn:DiameterAtBreastHeight ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:ScientificName a owl:Class , rdfs:Class ;
+  rdfs:label "Scientific Name"@en , "Nombre científico"@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:AcceptedName a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:ScientificName ;
+  rdfs:label "Accepted Name"@en , "Nombre aceptado"@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:ScientificSynonym a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:ScientificName ;
+  rdfs:label "Synonym"@en , "Sinónimo"@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use a owl:Class , rdfs:Class ;
+  rdfs:label ""@es , ""@en ;
+  rdfs:comment ""@es , ""@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:InfoSpecies a owl:Class , rdfs:Class ;
+  rdfs:label ""@es , ""@en ;
+  rdfs:comment ""@es , ""@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Taxon a owl:Class , rdfs:Class ;
+  rdfs:label "Taxón"@es , "Taxon"@en ;
+  rdfs:comment ""@es , ""@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Class a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Taxon ;
+  rdfs:label "Clase"@es , "Class"@en ;
+  rdfs:comment ""@es , ""@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Family a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Taxon ;
+  rdfs:label "Familia"@es , "Family"@en ;
+  rdfs:comment ""@es , ""@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Genus a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Taxon ;
+  rdfs:label "Género"@es , "Genus"@en ;
+  rdfs:comment ""@es , ""@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Species a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Taxon ;
+  rdfs:label "Especie"@es , "Species"@en ;
+  rdfs:comment ""@es , ""@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:NumberOfTrees a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:MeasureInUnities ;
+  rdfs:label "Número de Árboles"@es , "Number of Trees"@en ;
+  rdfs:comment ""@es , ""@en ;
+  rdfs:isDefinedBy ifn: .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+ifn:isInProvince a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "in province"@en , "en la provincia"@es ;
+  rdfs:comment "Province in which the entity is located"@en , "Provincia en la que la entidad está situada"@es ;
+  rdfs:domain ifn:SpatialEntity ;
+  rdfs:range ifn:Province ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:isInPlot a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "in plot"@en , "en la parcela"@es ;
+  rdfs:comment "Plot in which the tree is located"@en , "Parcela en la que el árbol está situado"@es ;
+  rdfs:domain ifn:Tree ;
+  rdfs:range ifn:Plot ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasHeight a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasure ;
+  rdfs:label "has height"@en , "tiene altura"@es ;
+  rdfs:comment "height of the tree to a point"@en , "altura del árbol hasta un determinado punto"@es ;
+  rdfs:domain ifn:Tree ;
+  rdfs:range ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasTotalHeight a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf ifn:hasHeight ;
+  rdfs:label "has total height"@en , "tiene altura total"@es ;
+  rdfs:comment "height of the tree to its upmost point"@en , "altura del árbol hasta su punto más alto"@es ;
+  rdfs:domain ifn:Tree ;
+  rdfs:range ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasDiameterAtBreastHeight a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasure ;
+  rdfs:label "has DBH"@en , "tiene DN"@es ;
+  rdfs:comment "has diameter at breast hight"@en , "tiene diámetro a la altura del pecho"@es , "tiene diámetro normal"@es ;
+  rdfs:domain ifn:Tree ;
+  rdfs:range ifn:DBH ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasDBH1 a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf ifn:hasDiameterAtBreastHeight ;
+  rdfs:label "has DBH1"@en , "tiene dn1"@es ;
+  rdfs:comment "has diameter at breast hight with the caliper arms pointing at the center of the plot"@en , "tiene diámetro observado a la altura del pecho con la forcípula apuntando al centro de la parcela"@es , "tiene diámetro normal con la forcípula apuntando al centro de la parcela"@es ;
+  rdfs:domain ifn:Tree ;
+  rdfs:range ifn:DBH1 ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasDBH2 a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf ifn:hasDiameterAtBreastHeight ;
+  rdfs:label "has DBH2"@en , "tiene dn2"@es ;
+  rdfs:comment "has diameter at breast hight with the caliper arms perpendicular to the center of the plot"@en , "tiene diámetro observado a la altura del pecho con la forcípula perpendicular al centro de la parcela"@es , "tiene diámetro normal con la forcípula perpendicular al centro de la parcela"@es ;
+  rdfs:domain ifn:Tree ;
+  rdfs:range ifn:DBH2 ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasPlantSpecies a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "has species"@en , "tiene especie"@es ;
+  rdfs:comment "species of a plant"@es , "especie de una planta"@es ;
+  rdfs:domain ifn:Plant ;
+  rdfs:range ifn:PlantSpecies ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasTreeSpecies a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "has species"@en , "tiene especie"@es ;
+  rdfs:comment "species of a tree"@es , "especie de un árbol"@es ;
+  rdfs:domain ifn:Tree ;
+  rdfs:range ifn:TreeSpecies ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasBushSpecies a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "has species"@en , "tiene especie"@es ;
+  rdfs:comment "species of a bush"@es , "especie de un bush"@es ;
+  rdfs:domain ifn:Bush ;
+  rdfs:range ifn:BushSpecies ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasScientificName a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "scientific name"@en ;
+  rdfs:domain ifn:Plant ;
+  rdfs:range ifn:ScientificName ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasAcceptedName a owl:ObjectProperty , rdf:Property ;
+  rdfs:subpropertyOf rdfs:scientificName ;
+  rdfs:label "scientific name"@en ;
+  rdfs:range ifn:AcceptedName ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasScientificSynonym a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "scientific synonym"@en ;
+  rdfs:range ifn:Synonym ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:containsSpecies a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "containsSpecies"@en ;
+  rdfs:range ifn:InfoSpecies ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasBasalArea a owl:ObjectProperty , rdf:Property ;
+  rdfs:subpropertyOf ifn:hasPlantMeasure ;
+  rdfs:label "has basal area"@en ;
+  rdfs:range ifn:BasalArea ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasVolume a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "has volume"@en ;
+  rdfs:range ifn:Volume ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasVolumeWithBark a owl:ObjectProperty , rdf:Property ;
+  rdfs:subpropertyOf ifn:hasVolume ;
+  rdfs:label "has volume with bark"@en , "tiene volumen con corteza"@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasVolumeWithoutBark a owl:ObjectProperty , rdf:Property ;
+  rdfs:subpropertyOf ifn:hasVolume ;
+  rdfs:label "has volume without bark"@en , "tiene volumen sin corteza"@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasNumberOfTrees a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "has number of trees"@en ;
+  rdfs:range ifn:VolumeWithBark ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasSpecies a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "has species"@en ;
+  rdfs:range ifn:Taxon ; # In the data there are species that are not really species, but classes, families, or genus, so we need to put the most generic class
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasForestArea a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf spo:hasArea ;
+  rdfs:label "has forest area"@en ;
+  rdfs:isDefinedBy ifn: .
+
+#################################################################
+#    Datatype Properties
+#################################################################
+
+ifn:hasHeightInMeters a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureInMeters ;
+  rdfs:label "has height in meters"@en , "tiene altura en metros"@es ;
+  rdfs:comment "height of the tree in meters to a point"@en , "altura del árbol en metros hasta un determinado punto"@es ;
+  rdfs:domain ifn:Tree ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasTotalHeightInMeters a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf ifn:hasHeightInMeters ;
+  rdfs:label "has total height in meters"@en , "tiene altura total en metros"@es ;
+  rdfs:comment "height of the tree in meters to its upmost point"@en , "altura del árbol en metros hasta su punto más alto"@es ;
+  rdfs:domain ifn:Tree ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasDBHInMillimeters a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureInMillimeters ;
+  rdfs:label "has DBH in millimeters"@en , "tiene DN en milímetros"@es ;
+  rdfs:comment "has diameter in millimeters at breast hight"@en , "tiene diámetro en milímetros a la altura del pecho"@es , "tiene diámetro normal en milímetros"@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasDBH1InMillimeters a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf ifn:hasDBHInMillimeters ;
+  rdfs:label "has DBH in millimeters"@en , "tiene DN en milímetros"@es ;
+  rdfs:comment "has diameter in millimeters at breast hight with the caliper arms pointing at the center of the plot"@en , "tiene diámetro en milímetros a la altura del pecho con la forcípula apuntando al centro de la parcela"@es , "tiene diámetro normal en milímetros con la forcípula apuntando al centro de la parcela"@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasDBH2InMillimeters a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf ifn:hasDBHInMillimeters ;
+  rdfs:label "has DBH in millimeters"@en , "tiene DN en milímetros"@es ;
+  rdfs:comment "has diameter in millimeters at breast hight with the caliper arms perpendicular to the center of the plot"@en , "tiene diámetro en milímetros a la altura del pecho con la forcípula perpendicular al centro de la parcela"@es , "tiene diámetro normal en milímetros con la forcípula perpendicular al centro de la parcela"@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasBasalAreaInM2 a owl:ObjectProperty , rdf:Property ;
+  rdfs:subpropertyOf smo:hasMeasureInM2 ;
+  rdfs:label "has basal area"@en ;
+  rdfs:range ifn:BasalArea ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasVolumeInM3 a owl:ObjectProperty , rdf:Property ;
+  rdfs:subpropertyOf smo:hasMeasureInM3 ;
+  rdfs:label "has volume in cubic meters"@en , "tiene volumen en metros cúbicos"@es ;
+  rdfs:range ifn:Volume ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasVolumeWithBarkInM3 a owl:ObjectProperty , rdf:Property ;
+  rdfs:subpropertyOf ifn:hasVolumeInM3 ;
+  rdfs:label "has volume with bark in cubic meters"@en , "tiene volumen con corteza en metros cúbicos"@es ;
+  rdfs:range ifn:VolumeWithBark ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasVolumeWithoutBarkInM3 a owl:ObjectProperty , rdf:Property ;
+  rdfs:subpropertyOf ifn:hasVolumeInM3 ;
+  rdfs:label "has volume without bark in cubic meters"@en , "tiene volumen sin corteza en metros cúbicos"@es ;
+  rdfs:range ifn:hasVolumeWithoutBark ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasNumberOfTreesInUnits a owl:ObjectProperty , rdf:Property ;
+  rdfs:subpropertyOf smo:hasMeasureInUnits ;
+  rdfs:label "has number of trees"@en ;
+  rdfs:range ifn:VolumeWithBark ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasBasalAreaInM2byHA a owl:ObjectProperty , rdf:Property ;
+  rdfs:subpropertyOf smo:hasMeasureInM2ByHA ;
+  rdfs:label "has basal area"@en ;
+  rdfs:range ifn:BasalArea ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasVolumeInM3byHA a owl:ObjectProperty , rdf:Property ;
+  rdfs:subpropertyOf smo:hasMeasureInM3ByHA ;
+  rdfs:label "has volume in cubic meters per hectare"@en , "tiene volumen en metros cúbicos por hectárea"@es ;
+  rdfs:range ifn:Volume ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasVolumeWithBarkInM3byHA a owl:ObjectProperty , rdf:Property ;
+  rdfs:subpropertyOf ifn:hasVolumeInM3byHA ;
+  rdfs:label "has volume with bark in cubic meters per hectare"@en , "tiene volumen con corteza en metros cúbicos por hectárea"@es ;
+  rdfs:range ifn:Volume ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasVolumeWithoutBarkInM3byHA a owl:ObjectProperty , rdf:Property ;
+  rdfs:subpropertyOf ifn:hasVolumeInM3byHA ;
+  rdfs:label "has volume with bark in cubic meters per hectare"@en , "tiene volumen con corteza en metros cúbicos por hectárea"@es ;
+  rdfs:range ifn:Volume ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasNumberOfTreesInUnitsByHA a owl:ObjectProperty , rdf:Property ;
+  rdfs:subpropertyOf smo:hasMeasureInUnitsByHA ;
+  rdfs:label "has number of trees"@en ;
+  rdfs:range ifn:VolumeWithBark ;
+  rdfs:isDefinedBy ifn: .
+
+spo:hasForestAreaInHC a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureInHectares ;
+  rdfs:label ""@es , "has forest area in hectares"@en ;
+  rdfs:comment ""@en , ""@en ;
+  rdfs:domain mfe:Position ;
+  rdfs:isDefinedBy spo: .
+
+spo:hasForestAreaInSquareMeters a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureInSquareMeters ;
+  rdfs:label ""@es , "has forest area in square meters"@en ;
+  rdfs:comment ""@en , ""@en ;
+  rdfs:domain mfe:Position ;
+  rdfs:isDefinedBy spo: .
+
+
+#################################################################
+#    Annotation Properties
+#################################################################
+
+ifn:vulgarName a owl:AnnotationProperty , rdf:Property ;
+  rdfs:subpropertyOf rdfs:label ;
+  rdfs:label "vulgar name"@en ;
+  rdfs:domain ifn:Plant ;
+  rdfs:range rdf:langString ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:scientificName a owl:AnnotationProperty , rdf:Property ;
+  rdfs:subpropertyOf rdfs:label ;
+  rdfs:label "scientific name"@en ;
+  rdfs:domain ifn:Plant ;
+  rdfs:range rdf:langString ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:acceptedName a owl:AnnotationProperty , rdf:Property ;
+  rdfs:subpropertyOf rdfs:label ;
+  rdfs:label "scientific name"@en ;
+  rdfs:domain ifn:Plant ;
+  rdfs:range rdf:langString ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:scientificSynonym a owl:AnnotationProperty , rdf:Property ;
+  rdfs:subpropertyOf rdfs:label ;
+  rdfs:label "scientific name"@en ;
+  rdfs:domain ifn:Plant ;
+  rdfs:range rdf:langString ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:name a owl:AnnotationProperty , rdf:Property ;
+  rdfs:subpropertyOf rdfs:label ;
+  rdfs:label "name"@en ;
+  rdfs:domain ifn:ScientificName ;
+  rdfs:range rdf:langString ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:author a owl:AnnotationProperty , rdf:Property ;
+  rdfs:subpropertyOf rdfs:label ;
+  rdfs:label "author"@en ;
+  rdfs:domain ifn:Plant ;
+  rdfs:range rdf:langString ;
+  rdfs:isDefinedBy ifn: .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+province:01 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Álava"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:02 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Albacete"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:03 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Alicante"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:04 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Almería"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:05 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Ávila"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:06 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Badajoz"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:07 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Baleares"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:08 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Barcelona"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:09 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Burgos"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:10 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Cáceres"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:11 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Cádiz"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:12 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Castellón"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:13 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Ciudad real"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:14 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Córdoba"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:15 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "La Coruña"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:16 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Cuenca"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:17 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Gerona"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:18 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Granada"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:19 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Guadalajara"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:20 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Guipúzcoa"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:21 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Huelva"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:22 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Huesca"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:23 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Jaén"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:24 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "León"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:25 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Lérida"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:26 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "La Rioja"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:27 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Lugo"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:28 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Madrid"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:29 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Málaga"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:30 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Murcia"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:31 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Navarra"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:32 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Orense"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:33 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Asturias"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:34 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Palencia"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:35 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Las Palmas"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:36 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Pontevedra"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:37 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Salamanca"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:38 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Santa Cruz de Tenerife"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:39 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Cantabria"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:40 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Segovia"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:41 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Savilla"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:42 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Soria"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:43 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Tarragona"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:44 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Teruel"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:45 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Toledo"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:46 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Valencia"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:47 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Valladolid"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:48 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Vizcaya"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:49 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Zamora"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:50 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Zaragoza"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:51 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Ceuta"@es ;
+  rdfs:isDefinedBy ifn: .
+
+province:52 a owl:NamedIndividual, ifn:Province ;
+  rdfs:label "Melilla"@es ;
+  rdfs:isDefinedBy ifn: .

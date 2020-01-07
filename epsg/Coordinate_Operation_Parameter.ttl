@@ -1,0 +1,1826 @@
+@prefix area:  <http://epsg.w3id.org/data/area/> .
+@prefix datum: <http://epsg.w3id.org/data/datum/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix cop:   <http://epsg.w3id.org/data/cop/> .
+@prefix crs:   <http://epsg.w3id.org/data/crs/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix epsg:  <http://epsg.w3id.org/ontology/> .
+@prefix cs:    <http://epsg.w3id.org/data/cs/> .
+@prefix folder: <file:///home/chemi/Documents/EPSG_v9_6/> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix operation: <http://epsg.w3id.org/data/operation/> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+cop:8733  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The value of the I-axis coordinate at the bin grid defininition point. The I-axis is rotated 90 degrees clockwise from the J-axis."@en ;
+        epsg:hasEPSGcode        "8733"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "UKOOA Data Exchange Format P6/98, Definition of 3D Seismic Binning Grids, revision 3, May 2000." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bin grid origin I"@en .
+
+cop:8712  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8712"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu8v3"@en .
+
+cop:8683  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8683"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu3v2"@en .
+
+cop:8662  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2014.043" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The EPSG name for the coordinate transformation applied at the southern boundary of the interpolation area.  Applies to Norwegian offshore interpolation method."@en ;
+        epsg:hasEPSGcode        "8662"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Coord. op. name for southern boundary"@en .
+
+cop:1044  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.021 2013.037" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Time first derivative of Y-axis rotation."@en ;
+        epsg:hasEPSGcode        "1044"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Rate of change of Y-axis rotation"@en .
+
+cop:8833  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "For polar aspect azimuthal projections, the meridian along which the northing axis increments and also across which parallels of latitude increment towards the north pole."@en ;
+        epsg:hasEPSGcode        "8833"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Longitude of origin"@en .
+
+cop:8641  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in affine (general parametric) and polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8641"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "B2"@en .
+
+cop:8812  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "For an oblique projection, this is the longitude of the point at which the azimuth of the central line is defined."@en ;
+        epsg:hasEPSGcode        "8812"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Longitude of projection centre"@en .
+
+cop:8620  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The value of the second ordinate of the evaluation point expressed in the source coordinate reference system."@en ;
+        epsg:hasEPSGcode        "8620"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Ordinate 2 of evaluation point in source CRS"@en .
+
+cop:8741  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The numerical increment between successive bin nodes on the I-axis."@en ;
+        epsg:hasEPSGcode        "8741"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "UKOOA Data Exchange Format P6/98, Definition of 3D Seismic Binning Grids, revision 3, May 2000." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bin node increment on I-axis"@en .
+
+cop:8720  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8720"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au0v2"@en .
+
+cop:8691  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8691"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu2v4"@en .
+
+cop:8670  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8670"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au3v2"@en .
+
+cop:1052  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2016.060" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "The velocity of a point resolved into the geocentric Cartesian X axis direction."@en ;
+        epsg:hasEPSGcode        "1052"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "IOGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Point motion velocity X"@en .
+
+cop:1031  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2010.071" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "1031"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "C6"@en .
+
+cop:8649  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8649"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu4v0"@en .
+
+cop:8628  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8628"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "A5"@en .
+
+cop:8607  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.021" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The difference between the Z values of a point in the target and source coordinate reference systems."@en ;
+        epsg:hasEPSGcode        "8607"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Z-axis translation"@en .
+
+cop:8728  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The difference between the easting values of a point in the target and source coordinate reference systems."@en ;
+        epsg:hasEPSGcode        "8728"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Easting offset"@en .
+
+cop:8707  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8707"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu7v2"@en .
+
+cop:8699  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8699"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au9v0"@en .
+
+cop:1060  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.040" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "Indicator for application of depth correction factor applied in wellbore local to geographic and projected CRS coordinate transformations: 0 for no depth correction; 2 for a variable depth correction factor calculated throughout  the wellbore path."@en ;
+        epsg:hasEPSGcode        "1060"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "IOGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Wellbore depth correction factor (dcf) flag"@en .
+
+cop:8678  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8678"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au2v4"@en .
+
+cop:1039  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2012.044" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "For Colombia urban grids, the height of the projection plane at its origin."@en ;
+        epsg:hasEPSGcode        "1039"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Projection plane origin height"@en .
+
+cop:8657  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The name of the [path and] file containing latitude differences."@en ;
+        epsg:hasEPSGcode        "8657"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Latitude difference file"@en .
+
+cop:8828  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2009.007" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The latitude of the point from which the values of both the geographical coordinates on the sphere and the grid coordinates on a spherical projection are deemed to increment or decrement for computational purposes."@en ;
+        epsg:hasEPSGcode        "8828"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:name               "Spherical latitude of origin"@en .
+
+cop:8636  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8636"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au1v3"@en .
+
+cop:8807  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2002.510" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Since the natural origin may be at or near the centre of the projection and under normal coordinate circumstances would thus give rise to negative coordinates over parts of the mapped area, this origin is usually given false coordinates which are large enough to avoid this inconvenience. The False Northing, FN, is the value assigned to the ordinate (north or south) axis of the projection grid at the natural origin."@en ;
+        epsg:hasEPSGcode        "8807"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "False northing"@en .
+
+cop:8615  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2019.004" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "Angle (counter-clockwise positive) through which the source coordinate reference system's first axis needs to be rotated to coincide with the corresponding axis of the target coordinate reference system."@en ;
+        epsg:hasEPSGcode        "8615"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Rotation angle of source CRS first axis"@en .
+
+cop:8736  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The value of the map grid Northing at the bin grid defininition point."@en ;
+        epsg:hasEPSGcode        "8736"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "UKOOA Data Exchange Format P6/98, Definition of 3D Seismic Binning Grids, revision 3, May 2000." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bin grid origin Northing"@en .
+
+cop:8715  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8715"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu4v9"@en .
+
+cop:8686  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8686"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu0v5"@en .
+
+cop:1047  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.021 2016.061" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "The reference epoch for the parameters of a time-dependent transformation."@en ;
+        epsg:hasEPSGcode        "1047"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "IOGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Parameter reference epoch"@en .
+
+cop:8665  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coordinate differences at control points"@en ;
+        epsg:hasEPSGcode        "8665"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "Survey of New Brunswick" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Maritime Province residual file"@en .
+
+cop:8836  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "For topocentric CSs, the ellipsoidal height of the topocentric origin."@en ;
+        epsg:hasEPSGcode        "8836"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Ellipsoidal height of topocentric origin"@en .
+
+cop:1026  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2010.071" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "1026"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "C1"@en .
+
+cop:8644  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8644"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu0v2"@en .
+
+cop:8815  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The factor by which the map grid is reduced or enlarged during the projection process, defined by its value at the projection center."@en ;
+        epsg:hasEPSGcode        "8815"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Scale factor on initial line"@en .
+
+cop:8623  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in affine (general parametric) and polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8623"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "A0"@en .
+
+cop:8602  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The difference between the longitude values of a point in the target and source coordinate reference systems."@en ;
+        epsg:hasEPSGcode        "8602"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Longitude offset"@en .
+
+cop:8723  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8723"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au1v2"@en .
+
+cop:8702  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8702"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au3v9"@en .
+
+cop:8694  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Used in general polynomial transformations to normalise coordinate differences to an acceptable numerical range."@en ;
+        epsg:hasEPSGcode        "8694"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Scaling factor for source CRS coord differences"@en .
+
+cop:1055  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2016.060" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "The component in the north direction of a point's velocity."@en ;
+        epsg:hasEPSGcode        "1055"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "IOGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Point motion velocity north"@en .
+
+cop:8673  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8673"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au0v5"@en .
+
+cop:1034  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2010.071" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "1034"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "C9"@en .
+
+cop:8652  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8652"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu1v3"@en .
+
+cop:8823  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2009.004" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "For a conic projection with two standard parallels, this is the latitude of one of the parallels of intersection of the cone with the ellipsoid. It is normally but not necessarily that nearest to the pole. Scale is true along this parallel."@en ;
+        epsg:hasEPSGcode        "8823"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Latitude of 1st standard parallel"@en .
+
+cop:8631  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8631"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "A8"@en .
+
+cop:8802  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2002.390" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The longitude of the point from which the values of both the geographical coordinates on the ellipsoid and the grid coordinates on the projection are deemed to increment or decrement for computational purposes. Alternatively it may be considered as the longitude of the point which in the absence of application of false coordinates has grid coordinates of (0,0).  Sometimes known as \"central meridian (CM)\"."@en ;
+        epsg:hasEPSGcode        "8802"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Longitude of natural origin"@en .
+
+cop:8610  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.021" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The angular difference between the X and Y axes directions of target and source coordinate reference systems. This is a rotation about the Z axis as viewed from the origin looking along that axis. The particular method defines which direction is positive, and what is being rotated (point or axis)."@en ;
+        epsg:hasEPSGcode        "8610"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Z-axis rotation"@en .
+
+cop:8731  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The value of the inclination parameter in the the longitude domain, i.e. perpendicular to the plane of the meridian, derived at a specified evaluation point."@en ;
+        epsg:hasEPSGcode        "8731"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Inclination in longitude"@en .
+
+cop:8710  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8710"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu4v6"@en .
+
+cop:8681  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8681"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu5v0"@en .
+
+cop:1042  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.021 2013.037" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Time first derivative of Z-axis translation."@en ;
+        epsg:hasEPSGcode        "1042"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Rate of change of Z-axis translation"@en .
+
+cop:8660  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2014.043" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The EPSG code for the coordinate transformation applied at the southern boundary of the interpolation area.  Applies to Norwegian offshore interpolation method."@en ;
+        epsg:hasEPSGcode        "8660"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Coord. op. code for southern boundary"@en .
+
+cop:8831  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The longitude width of a zone of a Transverse Mercator zoned grid system."@en ;
+        epsg:hasEPSGcode        "8831"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Zone width"@en .
+
+cop:8639  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in affine (general parametric) and polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8639"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "B0"@en .
+
+cop:8618  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The value of the second ordinate of the evaluation point."@en ;
+        epsg:hasEPSGcode        "8618"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Ordinate 2 of evaluation point"@en .
+
+cop:8739  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The nominal separation of bin nodes on the bin grid J-axis. (Note: the actual bin node separation is the product of the nominal separation and the scale factor of the bin grid)."@en ;
+        epsg:hasEPSGcode        "8739"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "UKOOA Data Exchange Format P6/98, Definition of 3D Seismic Binning Grids, revision 3, May 2000." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bin width on J-axis"@en .
+
+cop:8718  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8718"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au2v0"@en .
+
+cop:8689  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8689"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu4v2"@en .
+
+cop:1050  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2016.060" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "The name of the [path and] grid file containing velocities."@en ;
+        epsg:hasEPSGcode        "1050"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "IOGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Point motion velocity grid file"@en .
+
+cop:8668  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8668"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au5v0"@en .
+
+cop:8839  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "For topocentric CSs, the geocentric Cartesian Z coordinate of the topocentric origin."@en ;
+        epsg:hasEPSGcode        "8839"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Geocentric Z of topocentric origin"@en .
+
+cop:1029  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2010.071" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "1029"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "C4"@en .
+
+cop:8647  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8647"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu1v2"@en .
+
+cop:8818  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Latitude of the parallel on which the conic or cylindrical projection is based.  This latitude is not geographic, but is defined on the conformal sphere AFTER its rotation to obtain the oblique aspect of the projection."@en ;
+        epsg:hasEPSGcode        "8818"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Latitude of pseudo standard parallel"@en .
+
+cop:8626  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8626"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "A3"@en .
+
+cop:8605  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.021" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The difference between the X values of a point in the target and source coordinate reference systems."@en ;
+        epsg:hasEPSGcode        "8605"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "X-axis translation"@en .
+
+cop:8726  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8726"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu2v0"@en .
+
+cop:8705  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8705"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu4v4"@en .
+
+cop:8697  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8697"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au5v2"@en .
+
+cop:8676  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8676"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au4v2"@en .
+
+cop:1058  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2018.017" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "The name of the [path and] file containing ellipsoidal height differences."@en ;
+        epsg:hasEPSGcode        "1058"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Ellipsoidal height difference file"@en .
+
+cop:8655  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The difference between the flattening values of the ellipsoids used in the target and source coordinate reference systems. \r\n\r\nflattening  = 1 / (inverse_flattening)."@en ;
+        epsg:hasEPSGcode        "8655"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Flattening difference"@en .
+
+cop:1037  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2011.108 2016.031" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "The EPSG code for the CRS that should be used to reference horizontal coordinates used as arguments within the method."@en ;
+        epsg:hasEPSGcode        "1037"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Horizontal CRS code"@en .
+
+cop:8826  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The easting value assigned to the false origin."@en ;
+        epsg:hasEPSGcode        "8826"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Easting at false origin"@en .
+
+cop:8634  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8634"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au3v1"@en .
+
+cop:8805  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The factor by which the map grid is reduced or enlarged during the projection process, defined by its value at the natural origin."@en ;
+        epsg:hasEPSGcode        "8805"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Scale factor at natural origin"@en .
+
+cop:8613  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2019.004" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "Multiplication factor applied to coordinates in the second axis of the source coordinate reference system to obtain the correct scale in the corresponding axis in the target coordinate reference system."@en ;
+        epsg:hasEPSGcode        "8613"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Scale factor for source CRS second axis"@en .
+
+cop:8734  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The value of the J-axis coordinate at the bin grid defininition point."@en ;
+        epsg:hasEPSGcode        "8734"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "UKOOA Data Exchange Format P6/98, Definition of 3D Seismic Binning Grids, revision 3, May 2000." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bin grid origin J"@en .
+
+cop:8713  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8713"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu5v7"@en .
+
+cop:8684  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8684"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu2v3"@en .
+
+cop:8663  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The point scale factor in a selected point of the target coordinate reference system. to be used as representative figure of the scale of the target coordinate reference system in a the area to which a coordinate transformation is defined."@en ;
+        epsg:hasEPSGcode        "8663"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7 (June 2000 Revision)" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Point scale factor"@en .
+
+cop:1045  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.021 2013.037" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Time first derivative of Z-axis rotation."@en ;
+        epsg:hasEPSGcode        "1045"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Rate of change of Z-axis rotation"@en .
+
+cop:8834  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "For topocentric CSs, the latitude of the topocentric origin."@en ;
+        epsg:hasEPSGcode        "8834"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Latitude of topocentric origin"@en .
+
+cop:8642  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8642"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "B3"@en .
+
+cop:1024  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2009.071 2010.037" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The name of the programme file containing Cartesian coordinates in both source and target CRSs."@en ;
+        epsg:hasEPSGcode        "1024"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Cartesian coordinate programme file"@en .
+
+cop:8813  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The azimuthal direction (north zero, east of north being positive) of the great circle which is the centre line of an oblique projection. The azimuth is given at the projection centre."@en ;
+        epsg:hasEPSGcode        "8813"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Azimuth of initial line"@en .
+
+cop:8621  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The value of the first ordinate of the evaluation point expressed in the target coordinate reference system.  In the case of an affine transformation the evaluation point is the origin of the source coordinate reference system."@en ;
+        epsg:hasEPSGcode        "8621"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Ordinate 1 of evaluation point in target CRS"@en .
+
+cop:8742  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The numerical increment between successive bin nodes on the J-axis."@en ;
+        epsg:hasEPSGcode        "8742"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "UKOOA Data Exchange Format P6/98, Definition of 3D Seismic Binning Grids, revision 3, May 2000." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bin node increment on J-axis"@en .
+
+cop:8721  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8721"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au3v0"@en .
+
+cop:8700  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8700"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au2v7"@en .
+
+cop:8692  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8692"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu1v5"@en .
+
+cop:1053  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2016.060" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "The velocity of a point resolved into the geocentric Cartesian Y axis direction."@en ;
+        epsg:hasEPSGcode        "1053"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "IOGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Point motion velocity Y"@en .
+
+cop:8671  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8671"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au2v3"@en .
+
+cop:8650  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8650"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu3v1"@en .
+
+cop:1032  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2010.071" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "1032"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "C7"@en .
+
+cop:8821  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The latitude of the point which is not the natural origin and at which grid coordinate values false easting and false northing are defined."@en ;
+        epsg:hasEPSGcode        "8821"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Latitude of false origin"@en .
+
+cop:8629  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8629"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "A6"@en .
+
+cop:8608  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.021" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The angular difference between the Y and Z axes directions of target and source coordinate reference systems. This is a rotation about the X axis as viewed from the origin looking along that axis. The particular method defines which direction is positive, and what is being rotated (point or axis)."@en ;
+        epsg:hasEPSGcode        "8608"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "X-axis rotation"@en .
+
+cop:8729  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The difference between the northing values of a point in the target and source coordinate reference systems."@en ;
+        epsg:hasEPSGcode        "8729"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Northing offset"@en .
+
+cop:8708  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8708"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu2v7"@en .
+
+cop:1061  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2019.004" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "Multiplication factor applied to coordinates in the source coordinate reference system to obtain the correct scale in the target coordinate reference system."@en ;
+        epsg:hasEPSGcode        "1061"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Scale factor for source CRS axes"@en .
+
+cop:8679  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8679"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au1v5"@en .
+
+cop:1040  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.021 2013.037" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Time first derivative of X-axis translation."@en ;
+        epsg:hasEPSGcode        "1040"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Rate of change of X-axis translation"@en .
+
+cop:8658  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The name of the [path and] file containing longitude differences."@en ;
+        epsg:hasEPSGcode        "8658"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Longitude difference file"@en .
+
+cop:8829  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2009.007" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The longitude of the point from which the values of both the geographical coordinates on the sphere and the grid coordinates on a spherical projection are deemed to increment or decrement for computational purposes."@en ;
+        epsg:hasEPSGcode        "8829"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "1"^^xsd:boolean ;
+        epsg:name               "Spherical longitude of origin"@en .
+
+cop:8637  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8637"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au0v4"@en .
+
+cop:8616  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2019.004" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "Angle (counter-clockwise positive) through which the source coordinate reference system's second axis needs to be rotated to coincide with the corresponding axis of the target coordinate reference system."@en ;
+        epsg:hasEPSGcode        "8616"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Rotation angle of source CRS second axis"@en .
+
+cop:8737  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The point scale factor of the map grid coordinate reference system at a point within the bin grid. Generally either the bin grid origin or the centre of the bin grid will be the chosen point."@en ;
+        epsg:hasEPSGcode        "8737"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "UKOOA Data Exchange Format P6/98, Definition of 3D Seismic Binning Grids, revision 3, May 2000." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Scale factor of bin grid"@en .
+
+cop:8716  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8716"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au1v0"@en .
+
+cop:8687  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8687"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu6v0"@en .
+
+cop:1048  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2016.031" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "The EPSG code for the CRS that should be used to interpolate gridded data."@en ;
+        epsg:hasEPSGcode        "1048"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Interpolation CRS code"@en .
+
+cop:8666  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2008.010" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The name of the [path and] file containing height offsets. \"Geoid model\" is used loosely in the parameter name. If the offset is between the ellipsoid and the geoid then the offset will be the geoid separation N. When the offset is between the ellipsoid and a realisation of the geoid through a vertical datum then the offsets C will form a height correction surface. A height correction surface differs from a geoid model by small amounts due to the difference between the geoid and the actual datum surface as well as some other assumptions regarding the gravity field."@en ;
+        epsg:hasEPSGcode        "8666"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Geoid (height correction) model file"@en .
+
+cop:8837  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "For topocentric CSs, the geocentric Cartesian X coordinate of the topocentric origin."@en ;
+        epsg:hasEPSGcode        "8837"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Geocentric X of topocentric origin"@en .
+
+cop:1027  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2010.071" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "1027"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "C2"@en .
+
+cop:8645  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8645"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu3v0"@en .
+
+cop:8816  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The easting value assigned to the projection centre."@en ;
+        epsg:hasEPSGcode        "8816"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Easting at projection centre"@en .
+
+cop:8624  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in affine (general parametric) and polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8624"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "A1"@en .
+
+cop:8603  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The difference between the height or depth values of a point in the target and source coordinate reference systems."@en ;
+        epsg:hasEPSGcode        "8603"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Vertical Offset"@en .
+
+cop:8724  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8724"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu1v0"@en .
+
+cop:8703  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8703"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu7v0"@en .
+
+cop:8695  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Used in general polynomial transformations to normalise coordinate differences to an acceptable numerical range."@en ;
+        epsg:hasEPSGcode        "8695"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Scaling factor for target CRS coord differences"@en .
+
+cop:1056  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2016.060" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "The component in the east direction of a point's velocity."@en ;
+        epsg:hasEPSGcode        "1056"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "IOGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Point motion velocity east"@en .
+
+cop:8674  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8674"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au6v0"@en .
+
+cop:1035  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2010.071" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "1035"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "C10"@en .
+
+cop:8653  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8653"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu0v4"@en .
+
+cop:8824  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2009.004" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "For a conic projection with two standard parallels, this is the latitude of one of the parallels at which the cone intersects with the ellipsoid. It is normally but not necessarily that nearest to the equator. Scale is true along this parallel."@en ;
+        epsg:hasEPSGcode        "8824"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Latitude of 2nd standard parallel"@en .
+
+cop:8632  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8632"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au0v3"@en .
+
+cop:8611  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.021 2019.006" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "Scale factor for source CRS axes minus one, where the scale factor is a multiplication factor to be applied to coordinates in the source CRS to obtain the correct scale in the target CRS. dS = (M � 1). If a distance of 100 km in the source CRS translates into a distance of 100.001 km in the target CRS, the scale difference is 1 ppm (the ratio being 1.000001). When the scale difference dS is expressed in parts per million (ppm), M = (1 + dS*10-6). When the scale difference dS is expressed in parts per billion (ppb), M = (1 + dS*10-9)."@en ;
+        epsg:hasEPSGcode        "8611"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Scale difference"@en .
+
+cop:8732  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2008.010" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The name of the [path and] file containing vertical offsets, the differences in gravity-related height."@en ;
+        epsg:hasEPSGcode        "8732"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Vertical offset file"@en .
+
+cop:8711  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8711"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu9v2"@en .
+
+cop:8682  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8682"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu4v1"@en .
+
+cop:1043  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.021 2013.037" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Time first derivative of X-axis rotation."@en ;
+        epsg:hasEPSGcode        "1043"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Rate of change of X-axis rotation"@en .
+
+cop:8661  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2014.043" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The EPSG name for the coordinate transformation applied at the northern boundary of the interpolation area.  Applies to Norwegian offshore interpolation method."@en ;
+        epsg:hasEPSGcode        "8661"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Coord. op. name for northern boundary"@en .
+
+cop:8832  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "For polar aspect azimuthal projections, the parallel on which the scale factor is defined to be unity."@en ;
+        epsg:hasEPSGcode        "8832"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Latitude of standard parallel"@en .
+
+cop:8640  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in affine (general parametric) and polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8640"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "B1"@en .
+
+cop:8811  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "For an oblique projection, this is the latitude of the point at which the azimuth of the central line is defined."@en ;
+        epsg:hasEPSGcode        "8811"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Latitude of projection centre"@en .
+
+cop:8619  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The value of the first ordinate of the evaluation point expressed in the source coordinate reference system."@en ;
+        epsg:hasEPSGcode        "8619"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Ordinate 1 of evaluation point in source CRS"@en .
+
+cop:8740  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The orientation of the bin grid J-axis measured clockwise from map grid north."@en ;
+        epsg:hasEPSGcode        "8740"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "UKOOA Data Exchange Format P6/98, Definition of 3D Seismic Binning Grids, revision 3, May 2000." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Map grid bearing of bin grid J-axis"@en .
+
+cop:8719  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8719"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au1v1"@en .
+
+cop:8690  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8690"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu3v3"@en .
+
+cop:8840  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "For vertical perspective projections, the height of viewpoint above the topocentric origin."@en ;
+        epsg:hasEPSGcode        "8840"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Viewpoint height"@en .
+
+cop:1051  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2014.027 2018.004" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "Ratio of [(factor b) / (factor c)] from the EPSG Dataset Unit of Measure table, populated with respect to the SI base unit, e.g. ft/m."@en ;
+        epsg:hasEPSGcode        "1051"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "IOGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Unit conversion scalar"@en .
+
+cop:8669  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8669"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au4v1"@en .
+
+cop:1030  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2010.071" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "1030"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "C5"@en .
+
+cop:8648  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8648"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu0v3"@en .
+
+cop:8819  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The factor by which the map grid is reduced or enlarged during the projection process, defined by its value at the pseudo-standard parallel."@en ;
+        epsg:hasEPSGcode        "8819"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Scale factor on pseudo standard parallel"@en .
+
+cop:8627  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8627"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "A4"@en .
+
+cop:8606  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.021" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The difference between the Y values of a point in the target and source coordinate reference systems."@en ;
+        epsg:hasEPSGcode        "8606"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Y-axis translation"@en .
+
+cop:8727  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The name of the [path and] file containing a grid of geocentric translations.."@en ;
+        epsg:hasEPSGcode        "8727"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Geocentric translation file"@en .
+
+cop:8706  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8706"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu8v1"@en .
+
+cop:8698  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8698"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au0v8"@en .
+
+cop:1059  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2017.040" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "Indicator for point scale factor application in wellbore local to projected CRS coordinate transformations: 0 =  no point scale factor; 1 = constant point scale factor calculated at first point in wellbore and applied throughout; 2 = variable point scale factor calculated throughout the wellbore path."@en ;
+        epsg:hasEPSGcode        "1059"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "IOGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Wellbore point scale factor (psf) flag"@en .
+
+cop:8677  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8677"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au3v3"@en .
+
+cop:8656  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The name of the [path and] file containing latitude and longitude differences."@en ;
+        epsg:hasEPSGcode        "8656"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Latitude and longitude difference file"@en .
+
+cop:1038  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.020" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Ratio by which the ellipsoid is enlarged so that survey observations are reduced to a surface above the ellipsoid surface."@en ;
+        epsg:hasEPSGcode        "1038"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2 (May 2013 Revision)" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Ellipsoid scaling factor"@en .
+
+cop:8827  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The northing value assigned to the false origin."@en ;
+        epsg:hasEPSGcode        "8827"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Northing at false origin"@en .
+
+cop:8635  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8635"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au2v2"@en .
+
+cop:8806  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2002.510" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Since the natural origin may be at or near the centre of the projection and under normal coordinate circumstances would thus give rise to negative coordinates over parts of the mapped area, this origin is usually given false coordinates which are large enough to avoid this inconvenience. The False Easting, FE, is the value assigned to the abscissa (east or west) axis of the projection grid at the natural origin."@en ;
+        epsg:hasEPSGcode        "8806"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "False easting"@en .
+
+cop:8614  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2019.004" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "Angle (counter-clockwise positive) through which both of the source coordinate reference system axes need to be rotated to coincide with the corresponding target coordinate reference system axes.  \r\n\r\nAlternatively, the bearing (clockwise positive) of the source coordinate reference system Y-axis measured relative to target coordinate reference system north."@en ;
+        epsg:hasEPSGcode        "8614"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Rotation angle of source CRS axes"@en .
+
+cop:8735  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The value of the map grid Easting at the bin grid defininition point."@en ;
+        epsg:hasEPSGcode        "8735"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "UKOOA Data Exchange Format P6/98, Definition of 3D Seismic Binning Grids, revision 3, May 2000." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bin grid origin Easting"@en .
+
+cop:8714  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8714"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu9v4"@en .
+
+cop:8685  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8685"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu1v4"@en .
+
+cop:1046  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.021 2013.037" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Time first derivative of scale difference."@en ;
+        epsg:hasEPSGcode        "1046"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Rate of change of scale difference"@en .
+
+cop:8664  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The name of the [path and] file containing easting and northing differences."@en ;
+        epsg:hasEPSGcode        "8664"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "Ordnance Survey of Great Britain" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Easting and northing difference file"@en .
+
+cop:8835  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "For topocentric CSs, the longitude of the topocentric origin."@en ;
+        epsg:hasEPSGcode        "8835"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Longitude of topocentric origin"@en .
+
+cop:8643  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8643"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu1v1"@en .
+
+cop:1025  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2010.037" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Identifier for the subset of parameters stored inside the transformation programme."@en ;
+        epsg:hasEPSGcode        "1025"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "GNTRANS transformation identifier"@en .
+
+cop:8814  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The angle at the natural origin of an oblique projection through which the natural coordinate reference system is rotated to make the projection north axis parallel with true north."@en ;
+        epsg:hasEPSGcode        "8814"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Angle from Rectified to Skew Grid"@en .
+
+cop:8622  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The value of the second ordinate of the evaluation point expressed in the target coordinate reference system.  In the case of an affine transformation the evaluation point is the origin of the source coordinate reference system."@en ;
+        epsg:hasEPSGcode        "8622"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Ordinate 2 of evaluation point in target CRS"@en .
+
+cop:8601  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The difference between the latitude values of a point in the target and source coordinate reference systems."@en ;
+        epsg:hasEPSGcode        "8601"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Latitude offset"@en .
+
+cop:8722  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8722"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au2v1"@en .
+
+cop:8701  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8701"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au1v9"@en .
+
+cop:8693  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8693"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu0v6"@en .
+
+cop:1054  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2016.060" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "The velocity of a point resolved into the geocentric Cartesian Z axis direction."@en ;
+        epsg:hasEPSGcode        "1054"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "IOGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Point motion velocity Z"@en .
+
+cop:8672  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8672"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au1v4"@en .
+
+cop:1033  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2010.071" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "1033"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "C8"@en .
+
+cop:8651  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8651"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu2v2"@en .
+
+cop:8822  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The longitude of the point which is not the natural origin and at which grid coordinate values false easting and false northing are defined."@en ;
+        epsg:hasEPSGcode        "8822"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Longitude of false origin"@en .
+
+cop:8630  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8630"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "A7"@en .
+
+cop:8801  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The latitude of the point from which the values of both the geographical coordinates on the ellipsoid and the grid coordinates on the projection are deemed to increment or decrement for computational purposes. Alternatively it may be considered as the latitude of the point which in the absence of application of false coordinates has grid coordinates of (0,0)."@en ;
+        epsg:hasEPSGcode        "8801"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Latitude of natural origin"@en .
+
+cop:8609  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.021" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The angular difference between the X and Z axes directions of target and source coordinate reference systems. This is a rotation about theY axis as viewed from the origin looking along that axis. The particular method defines which direction is positive, and what is being rotated (point or axis)."@en ;
+        epsg:hasEPSGcode        "8609"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Y-axis rotation"@en .
+
+cop:8730  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The value of the inclination parameter in the latitude domain, i.e. in the plane of the meridian, derived at a specified evaluation point."@en ;
+        epsg:hasEPSGcode        "8730"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Inclination in latitude"@en .
+
+cop:8709  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8709"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu0v9"@en .
+
+cop:8680  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8680"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au0v6"@en .
+
+cop:8830  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The longitude of the western limit of the first zone of a Transverse Mercator zoned grid system."@en ;
+        epsg:hasEPSGcode        "8830"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Initial longitude"@en .
+
+cop:1041  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2013.021 2013.037" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Time first derivative of Y-axis translation."@en ;
+        epsg:hasEPSGcode        "1041"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Rate of change of Y-axis translation"@en .
+
+cop:8659  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2014.043" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The EPSG code for the coordinate transformation applied at the northern boundary of the interpolation area.  Applies to Norwegian offshore interpolation method."@en ;
+        epsg:hasEPSGcode        "8659"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Coord. op. code for northern boundary"@en .
+
+cop:8638  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used only in the Madrid to ED50 polynomial transformation method."@en ;
+        epsg:hasEPSGcode        "8638"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "B00"@en .
+
+cop:8617  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The value of the first ordinate value of the evaluation point."@en ;
+        epsg:hasEPSGcode        "8617"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Ordinate 1 of evaluation point"@en .
+
+cop:8738  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The nominal separation of bin nodes on the bin grid I-axis. (Note: the actual bin node separation is the product of the nominal separation and the scale factor of the bin grid)."@en ;
+        epsg:hasEPSGcode        "8738"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "UKOOA Data Exchange Format P6/98, Definition of 3D Seismic Binning Grids, revision 3, May 2000." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bin width on I-axis"@en .
+
+cop:8717  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8717"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au0v1"@en .
+
+cop:8688  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8688"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu5v1"@en .
+
+cop:1049  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2016.061" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "The epoch at which a time-specific transformation is valid."@en ;
+        epsg:hasEPSGcode        "1049"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "IOGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Transformation reference epoch"@en .
+
+cop:8667  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The value of the third ordinate of the evaluation point."@en ;
+        epsg:hasEPSGcode        "8667"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Ordinate 3 of evaluation point"@en .
+
+cop:8838  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "For topocentric CSs, the geocentric Cartesian Y coordinate of the topocentric origin."@en ;
+        epsg:hasEPSGcode        "8838"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Geocentric Y of topocentric origin"@en .
+
+cop:1028  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2010.071" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "1028"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "C3"@en .
+
+cop:8646  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8646"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu2v1"@en .
+
+cop:8817  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The northing value assigned to the projection centre."@en ;
+        epsg:hasEPSGcode        "8817"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Northing at projection centre"@en .
+
+cop:8625  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in affine (general parametric) and polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8625"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "A2"@en .
+
+cop:8604  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2008.010" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The height offset. \"Geoid undulation\" is used loosely in the parameter name. If the offset is between the ellipsoid and the geoid then the offset will be the geoid separation N. When the offset is between the ellipsoid and a realisation of the geoid through a vertical datum then the offsets C will form a height correction surface. A height correction surface differs from a geoid model by small amounts due to the difference between the geoid and the actual datum surface as well as some other assumptions regarding the gravity field."@en ;
+        epsg:hasEPSGcode        "8604"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Geoid undulation"@en .
+
+cop:8725  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8725"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu0v1"@en .
+
+cop:8704  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8704"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Bu6v1"@en .
+
+cop:8696  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Used in reversible polynomial transformations to normalise coordinate differences to an acceptable numerical range. For the reverse transformation the forward target CRS becomes the reverse source CRS and forward source CRS becomes the reverse target CRS."@en ;
+        epsg:hasEPSGcode        "8696"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Scaling factor for coord differences"@en .
+
+cop:1057  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2016.060" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "The component in the up direction of a point's velocity."@en ;
+        epsg:hasEPSGcode        "1057"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "IOGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Point motion velocity up"@en .
+
+cop:8675  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8675"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au5v1"@en .
+
+cop:1036  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2010.100" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The rotation applied to spherical coordinates for the oblique projection, measured on the conformal sphere in the plane of the meridian of origin."@en ;
+        epsg:hasEPSGcode        "1036"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "OGP" ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Co-latitude of cone axis"@en .
+
+cop:8654  a                     epsg:CoordinateOperationMethod ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "The difference between the semi-major axis values of the ellipsoids used in the target and source coordinate reference systems."@en ;
+        epsg:hasEPSGcode        "8654"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Semi-major axis length difference"@en .
+
+cop:8633  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2003.200" ;
+        epsg:dataSource         "OGP" ;
+        epsg:description        "Coefficient used in polynomial transformations."@en ;
+        epsg:hasEPSGcode        "8633"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Au4v0"@en .
+
+cop:8612  a                     epsg:CoordinateOperationMethod ;
+        epsg:changeID           "2019.004" ;
+        epsg:dataSource         "IOGP" ;
+        epsg:description        "Multiplication factor applied to coordinates in first axis of the the source coordinate reference system to obtain the correct scale in the corresponding axis in the target coordinate reference system."@en ;
+        epsg:hasEPSGcode        "8612"^^xsd:nonNegativeInteger ;
+        epsg:informationSource  "EPSG guidance note number 7-2." ;
+        epsg:isDeprecated       "0"^^xsd:boolean ;
+        epsg:name               "Scale factor for source CRS first axis"@en .

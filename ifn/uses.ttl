@@ -1,0 +1,214 @@
+@prefix ifn: <http://crossforest.eu/ifn/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ifn:Use100 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use ;
+  rdfs:label "Forested land"@en , "Monte"@es ;
+  rdfs:comment "Toda superficie en la que vegetan especies arbóreas, arbustivas, de matorral o herbáceas, ya sea espontáneamente o procedan de siembra o plantación, siempre que no sean características de cultivo agrícola o fueran objeto del mismo."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use200 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use ;
+  rdfs:label "Farms"@en , "Cultivos"@es ;
+  rdfs:comment "Territorio o ecosistema poblado con siembras o plantaciones de herbáceas y/o leñosas, anuales o plurianuales que se laborea con una fuerte intervención humana, puede estar poblado por especies forestales de fruto (flor, hojas o en el futuro biomasa) siempre que la intervención humana sea importante. Incluye las dehesas, montes huecos o montes adehesados de base cultivo, siempre que la fracción de cabida cubierta de los árboles sea inferior al 5%."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use300 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use ;
+  rdfs:label "Artificial"@en , "Artificial"@es ;
+  rdfs:comment "Territorio o ecosistemas dominado por edificios, parques urbanos (aunque estén poblados de arboles), viveros fuera de los montes (aunque sean de especies forestales), carreteras (salvo las vías de servicio de los montes) u otras construcciones humanas que tengan superficies continuas."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use400 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use ;
+  rdfs:label "Wetland"@en , "Humedal"@es ;
+  rdfs:comment "Lo constituyen las lagunas, charcas, zonas húmedas, marismas y corrientes discontinuas de agua en las que, al menos durante 6 meses del año, esté presente dicho líquido."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use500 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use ;
+  rdfs:label "Water"@en , "Agua"@es ;
+  rdfs:comment "Es la parte de la tierra constituida por ríos, lagos, embalses, canales o estanques con superficies continuas de más de 0.26 Ha. Y con agua prácticamente todo el año."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use101 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use ;
+  rdfs:label "Forest"@en , "Bosque"@es ;
+  rdfs:comment "Ecosistema dentro del monte constituido por una estructura de árboles, arbustos y otros vegetales en la que domina el estrato arbóreo con unas condiciones microclimáticas en su seno diferentes de las reinantes en el entorno y con una actividad funcional nada, escasa o moderadamente influida por el ser humano. Lo normal es que tenga un origen natural pero cuando lo sea artificial es necesario un lapso de tiempo considerable para que pueda formarse un bosque en el sentido estricto."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use102 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use ;
+  rdfs:label "Plantation forest"@en, "Bosque de plantaciones"@es ;
+  rdfs:comment "Ecosistema dentro del monte constituido por una estructura de árboles bien solos o acompañados de arbustos y otros vegetales pero con predominio absoluto del estrato arbóreo. Su origen es artificial con una actividad funcional bastante influida por el ser humano pero con dominio de las características de bosque."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use103 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use ;
+  rdfs:label "Dehesa"@en, "Bosque adehesado"@es ;
+  rdfs:comment "Ecosistema perteneciente al monte formado por una estructura de árboles y arbustos con cultivos herbáceos y pastizales y un uso agro-silvo-pastoral muy característico de determinadas zonas mediterráneas y de ciertas especies arbóreas y con un funcionamiento bastante influido por el ser humano. La fracción de cabida cubierta por los árboles no suele ser mayor del 20% y su tendencia natural es el evolucionar hacia bosque."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use104 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use ;
+  rdfs:label "Forest trails and firebreaks"@en, "Complementos del bosque"@es ;
+  rdfs:comment "Dentro de los montes  e íntimamente unidos con los ecosistemas citados anteriormente, existen unos terrenos, en general de poca extensión, que no siendo bosques están al servicio de ellos y no tendrían sentido por sí solos (pistas forestales, cortafuegos, parques de madera...). Pueden variar tanto cuantitativamente como cualitativamente en el tiempo y su tendencia natural e a integrarse en el bosque y poblarse de árboles, arbustos y matorrales. Su evaluación es compleja y en muchos casos se incluye en la superficie de bosque al hacer los inventarios."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use110 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use100 ;
+  rdfs:label "Wooded area"@en, "Monte arbolado"@es ;
+  rdfs:comment "Territorio o ecosistema con especies forestales arbóreas como manifestación vegetal de estructura vertical dominante y con una fracción de cabida cubierta igual o superior al 20%; el término incluye las dehesas de base cultivo o pastizal con labores siempre que la fracción de cabida cubierta arbolada sea superior al 20% y excluye los terrenos poblados por especies forestales arbóreas con fuerte intervención humana, para la obtención de frutos, hojas, flores o varas."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use120 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use100 ;
+  rdfs:label "Sparse wooded area"@en, "Monte arbolado ralo"@es ;
+  rdfs:comment "Terreno de uso forestal poblado con especies arbóreas forestales como manifestación botánica dominante y con una fracción de cabida cubierta por ellas comprendida entre el 10 y el 20% (incluido el 10, excluido el 20); también terreno con especies de matorral o pastizal natural como manifestación vegetal dominante, pero con una presencia de árboles forestales importante cuantificada por una fracción de cabida cubierta arbórea similar a la anteriormente descrita incluyéndose aquí las dehesas de base de cultivo."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use130 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use100 ;
+  rdfs:label "Temporarily treeless land"@en, "Monte temporalmente desarbolado"@es ;
+  rdfs:comment "Terreno que en el pasado cercano era monte arbolado y actualmente está desprovisto de árboles opero que, casi con seguridad, en el futuro próximo volverá a estar cubierto de ellos."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use140 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use100 ;
+  rdfs:label "Treeless land"@en, "Monte desarbolado"@es ;
+  rdfs:comment "Terreno poblado con especies de matorral o/y pastizal natural o con débil intervención humana como manifestación vegetal dominante con presencia o no de árboles forestales, pero en todo caso con la fracción de cabida cubierta por éstos inferior al 5%."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use150 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use100 ;
+  rdfs:label "Wooded area without upper montane formations"@en, "Monte sin vegetación superior"@es ;
+  rdfs:comment "Terreno que se encuentra en los mismos parajes de uso forestal que los anteriores y que, teóricamente, podría ser monte arbolado o desarbolado pero que, debido a las circunstancias actuales de suelo, clima o de topografía, no está poblado por vegetales superiores, aunque sí podría estarlo por vegetales inferiores o aparecer sin cubierta vegetal alguna."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use160 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use100 ;
+  rdfs:label "Thicket"@en, "Árboles fuera del monte"@es ;
+  rdfs:comment "Este concepto comprende, dentro del uso forestal, las riberas pobladas de árboles que no sean plantaciones situadas fuera de los montes o sin estar estructuradas con ellos, los bosquetes de menos de 2.500 m 2 de cabida, las alineaciones de especies arbóreas o arbustivas de anchura menor de 25 m y los árboles sueltos situados sobre algún terreno de uso forestal."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use170 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use100 ;
+  rdfs:label "Extremely sparse wooded area"@en, "Monte arbolado disperso"@es ;
+  rdfs:comment "Terreno de uso forestal poblado con especies arbóreas forestales como manifestación botánica dominante y con una fracción de cabida cubierta por ellas comprendida entre el 5 y el 10% (incluido el 5, excluido el 10); también terreno con especies de matorral o pastizal natural como manifestación vegetal dominante, pero con una presencia de árboles forestales importante cuantificada por una fracción de cabida cubierta arbórea similar a la anteriormente descrita incluyéndose aquí las dehesas de base de cultivo."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use111 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use110 , ifn:Use101 ;
+  rdfs:label "Wooded area - forest"@en, "Monte arbolado – bosque"@es ;
+  rdfs:comment "Ecosistema dentro del monte arbolado constituido por una estructura de árboles, arbustos y otros vegetales en la que domina el estrato arbóreo con unas condiciones microclimáticas en su seno diferentes de las reinantes en el entorno y con una actividad funcional nada, escasa o moderadamente influida por el ser humano. Lo normal es que tenga un origen natural pero cuando lo sea artificial es necesario un lapso de tiempo considerable para que pueda formarse un bosque en el sentido estricto."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use112 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use110 , ifn:Use102 ;
+  rdfs:label "Wooded area - plantation forest"@en, "Monte arbolado – bosque de plantaciones"@es ;
+  rdfs:comment "Ecosistema dentro del monte arbolado constituido por una estructura de árboles bien solos o acompañados de arbustos y otros vegetales pero con predominio absoluto del estrato arbóreo. Su origen es artificial con una actividad funcional bastante influida por el ser humano pero con dominio de las características de bosque."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use113 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use110 , ifn:Use103 ;
+  rdfs:label "Wooded area - dehesa"@en, "Monte arbolado – bosque adehesado"@es ;
+  rdfs:comment "Ecosistema perteneciente al monte arbolado formado por una estructura de árboles y arbustos con cultivos herbáceos y pastizales y un uso agro-silvo-pastoral muy característico de determinadas zonas mediterráneas y de ciertas especies arbóreas y con un funcionamiento bastante influido por el ser humano. La fracción de cabida cubierta por los árboles no suele ser mayor del 20% y su tendencia natural es el evolucionar hacia bosque."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use114 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use110 , ifn:Use104 ;
+  rdfs:label "Wooded area - forest trails and firebreaks"@en, "Monte arbolado – complementos del bosque"@es ;
+  rdfs:comment "Dentro de los montes arbolados e íntimamente unidos con los ecosistemas citados anteriormente, existen unos terrenos, en general de poca extensión, que no siendo bosques están al servicio de ellos y no tendrían sentido por sí solos (pistas forestales, cortafuegos, parques de madera...). Pueden variar tanto cuantitativamente como cualitativamente en el tiempo y su tendencia natural e a integrarse en el bosque y poblarse de árboles, arbustos y matorrales. Su evaluación es compleja y en muchos casos se incluye en la superficie de bosque al hacer los inventarios."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use121 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use120 , ifn:Use101 ;
+  rdfs:label "Sparse wooded area - forest"@en, "Monte arbolado ralo – bosque"@es ;
+  rdfs:comment "Ecosistema dentro del monte arbolado ralo constituido por una estructura de árboles, arbustos y otros vegetales en la que domina el estrato arbóreo con unas condiciones microclimáticas en su seno diferentes de las reinantes en el entorno y con una actividad funcional nada, escasa o moderadamente influida por el ser humano. Lo normal es que tenga un origen natural pero cuando lo sea artificial es necesario un lapso de tiempo considerable para que pueda formarse un bosque en el sentido estricto."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use122 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use120 , ifn:Use102 ;
+  rdfs:label "Sparse wooded area - plantation forest"@en, "Monte arbolado ralo – bosque de plantaciones"@es ;
+  rdfs:comment "Ecosistema dentro del monte arbolado ralo constituido por una estructura de árboles bien solos o acompañados de arbustos y otros vegetales pero con predominio absoluto del estrato arbóreo. Su origen es artificial con una actividad funcional bastante influida por el ser humano pero con dominio de las características de bosque."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use123 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use120 , ifn:Use103 ;
+  rdfs:label "Sparse wooded area - dehesa"@en, "Monte arbolado ralo – bosque adehesado"@es ;
+  rdfs:comment "Ecosistema perteneciente al monte ralo arbolado formado por una estructura de árboles y arbustos con cultivos herbáceos y pastizales y un uso agro-silvo-pastoral muy característico de determinadas zonas mediterráneas y de ciertas especies arbóreas y con un funcionamiento bastante influido por el ser humano. La fracción de cabida cubierta por los árboles no suele ser mayor del 20% y su tendencia natural es el evolucionar hacia bosque."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use124 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use120 , ifn:Use104 ;
+  rdfs:label "Sparse wooded area - forest trails and firebreaks"@en, "Monte arbolado ralo – complementos del bosque"@es ;
+  rdfs:comment "Dentro de los montes arbolados ralos e íntimamente unidos con los ecosistemas citados anteriormente, existen unos terrenos, en general de poca extensión, que no siendo bosques están al servicio de ellos y no tendrían sentido por sí solos (pistas forestales, cortafuegos, parques de madera...). Pueden variar tanto cuantitativamente como cualitativamente en el tiempo y su tendencia natural e a integrarse en el bosque y poblarse de árboles, arbustos y matorrales. Su evaluación es compleja y en muchos casos se incluye en la superficie de bosque al hacer los inventarios."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use131 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use130 ;
+  rdfs:label "Temporarily treeless land - fellings"@en, "Monte temporalmente desarbolado – talas"@es ;
+  rdfs:comment "Monte temporalmente desarbolado debido a las cortas efectuadas por el hombre de todos o la mayoría de los árboles preexistentes."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use132 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use130 ;
+  rdfs:label "Temporarily treeless land - fires"@en, "Monte temporalmente desarbolado – incendios"@es ;
+  rdfs:comment "Monte temporalmente desarbolado debido al fuego, tanto si se produjo naturalmente como por intervención humana."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use133 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use130 ;
+  rdfs:label "Temporarily treeless land - natural events"@en, "Monte temporalmente desarbolado – fenómenos naturales"@es ;
+  rdfs:comment "Monte temporalmente desarbolado debido a sucesos naturales (excepto incendios) tales como inundaciones, corrimientos de tierra, aludes de nieve, masas de lava..."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use161 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use160 ;
+  rdfs:label "Thicket - riverside trees"@en, "Árboles fuera del monte – ribera arbolada"@es ;
+  rdfs:comment "Ecosistema considerado como árboles fuera del monte constituido por formaciones vegetales características de las orillas de las corrientes de agua con predominio de los árboles, clara separación de los bosques y poblado con especies autóctonas o asilvestradas de estructura irregular y gran biodiversidad. Está compuesto por muchas teselas, en general de tamaño pequeño y forma alargada, por lo que se recomienda un diseño especial para su inventariación. Su importancia directamente productiva suele ser pequeña, pero en cambio es grande la medioambiental, protectora y paisajística."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use162 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use160 ;
+  rdfs:label "Thicket - small forest"@en, "Árboles fuera del monte – bosques pequeños"@es ;
+  rdfs:comment "Ecosistema de árboles fuera del monte formado por pequeñas (menos de 0,25 has) agrupaciones de árboles forestales, arbustos y matorrales, tanto de origen natural como artificial y de especies autóctonas y alóctonas. Respecto a su interés puede decirse lo mismo que de la ribera arbolada."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use163 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use160 ;
+  rdfs:label "Thicket - tree line"@en, "Árboles fuera del monte – alineaciones estrechas"@es ;
+  rdfs:comment "Ecosistemas de árboles fuera del monte compuesto por filas de pies forestales, de una anchura menor de 25 m pero suficiente para diferenciarse de los terrenos circundantes. Las mismas consideraciones respecto a su utilidad de los dos conceptos anteriores."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use164 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use160 ;
+  rdfs:label "Thicket - sparse trees"@en, "Árboles fuera del monte – árboles sueltos"@es ;
+  rdfs:comment "Ecosistemas de árboles fuera del monte integrado por ejemplares aislados de tallos arbóreos con una zona de influencia alrededor claramente distinta de la que le rodea. Su provecho es similar al de los tres anteriores y como ellos requiere un diseño de inventario especial."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use171 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use170 , ifn:Use101 ;
+  rdfs:label "Extremely sparse wooded area - forest"@en, "Monte arbolado disperso – bosque"@es ;
+  rdfs:comment "Ecosistema dentro del monte arbolado disperso constituido por una estructura de árboles, arbustos y otros vegetales en la que domina el estrato arbóreo con unas condiciones microclimáticas en su seno diferentes de las reinantes en el entorno y con una actividad funcional nada, escasa o moderadamente influida por el ser humano. Lo normal es que tenga un origen natural pero cuando lo sea artificial es necesario un lapso de tiempo considerable para que pueda formarse un bosque en el sentido estricto."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use172 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use170 , ifn:Use102 ;
+  rdfs:label "Extremely sparse wooded area - plantation forest"@en, "Monte arbolado disperso – bosque de plantaciones"@es ;
+  rdfs:comment "Ecosistema dentro del monte arbolado disperso constituido por una estructura de árboles bien solos o acompañados de arbustos y otros vegetales pero con predominio absoluto del estrato arbóreo. Su origen es artificial con una actividad funcional bastante influida por el ser humano pero con dominio de las características de bosque."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use173 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use170 , ifn:Use103 ;
+  rdfs:label "Extremely sparse wooded area - dehesa"@en, "Monte arbolado disperso – bosque adehesado"@es ;
+  rdfs:comment "Ecosistema perteneciente al monte arbolado disperso formado por una estructura de árboles y arbustos con cultivos herbáceos y pastizales y un uso agro-silvo-pastoral muy característico de determinadas zonas mediterráneas y de ciertas especies arbóreas y con un funcionamiento bastante influido por el ser humano. La fracción de cabida cubierta por los árboles no suele ser mayor del 20% y su tendencia natural es el evolucionar hacia bosque."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Use174 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Use170 , ifn:Use104 ;
+  rdfs:label "Extremely sparse wooded area - forest trails and firebreaks"@en, "Monte arbolado disperso – complementos de bosque"@es ;
+  rdfs:comment "Dentro de los montes arbolados dispersos e íntimamente unidos con los ecosistemas citados anteriormente, existen unos terrenos, en general de poca extensión, que no siendo bosques están al servicio de ellos y no tendrían sentido por sí solos (pistas forestales, cortafuegos, parques de madera...). Pueden variar tanto cuantitativamente como cualitativamente en el tiempo y su tendencia natural e a integrarse en el bosque y poblarse de árboles, arbustos y matorrales. Su evaluación es compleja y en muchos casos se incluye en la superficie de bosque al hacer los inventarios."@es ;
+  rdfs:isDefinedBy ifn: .

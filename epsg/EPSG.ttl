@@ -1,0 +1,592 @@
+@prefix epsg: <http://epsg.w3id.org/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+epsg: a owl:Ontology;
+  rdfs:label "EPSG Ontology and Data"@en ;
+  rdfs:comment "Ontology and Data from the IOGP’s EPSG Geodetic Parameter Dataset"@en ;
+  owl:versionInfo 0.1 ;
+  dc:creator <https://www.gsic.uva.es/members/josgim> ;
+  dc:date "2019-07-17"^^xsd:date ;
+  vann:preferredNamespacePrefix "epsg" .
+
+#################################################################
+#    Classes
+#################################################################
+
+#Do the disjoints at the end
+
+epsg:Position a owl:Class , rdfs:Class ;
+  rdfs:label "Position"@en , "Posición"@es ;
+  rdfs:comment "Position on Earth that can be described using EPSG data"@en , "Posición en la Tierra que puede ser descrita usando datos EPSG"@es ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:Coordinate a owl:Class , rdfs:Class ;
+  rdfs:label "Coordinate"@en , "Coordenada"@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:EPSGentity a owl:Class , rdfs:Class ;
+  rdfs:label "EPGS Entity"@en , "Entidad EPGS"@es ;
+  rdfs:comment "Entity that belongs to the EPSG standard maintained by the IOGP (International Association of Oil & Gas Producers)" , "Entidad perteneciente al estándar EPSG mantenido por la IOGP (International Association of Oil & Gas Producers)"@es ;
+  rdfs:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty epsg:hasEPSGcode ;
+    owl:someValuesFrom xsd:nonNegativeInteger ] ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:CoordinateReferenceSystem a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:EPSGentity ;
+  rdfs:label "Coordinate Reference System"@en , "Sistema de Coordenadas de Referencia"@es , "CRS"@en ;
+  rdfs:comment "Coordinate-based system to define locations on Earth"@en , "Sistema basado en coordenadas para definir posiciones en la Tierra"@es ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:CRS2d a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:CoordinateReferenceSystem ;
+  rdfs:label "2D CRS"@en , "CRS 2D"@es ;
+  rdfs:comment "Coordinate Reference System of 2 dimensions"@en , "Sistema de Coordenadas de Referencia de dos dimensiones"@es ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty epsg:hasAxis ;
+    owl:qualifiedCardinality 2 ;
+    owl:onClass epsg:Axis ] ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:CompoundCRS a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:CoordinateReferenceSystem ;
+  rdfs:label "Compound CRS"@en , "Sistema de Cooordenadas Compuesto"@es ;
+  rdfs:comment ""@en , ""@es ;
+  owl:disjointWith epsg:ProjectedCRS ;
+  epsg:isEPSGtype "compound";
+  rdfs:isDefinedBy epsg: .
+
+epsg:GeographicCRS a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:CoordinateReferenceSystem ;
+  rdfs:label "Geodetic CRS"@en , "Geographic CRS"@en , "Sistema de Cooordenadas Geográfico"@es ;
+  rdfs:comment "Coordinate Reference System used define locations on Earth using an ellipsoid that approximates it"@en , "Sistema de Coordenadas de Referencia usado para definir posiciones en la Tierra utilizando un elipsoide como aproximación"@es ;
+  owl:disjointWith epsg:ProjectedCRS ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:Geographic2dCRS a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:2dCRS , epsg:CoordinateReferenceSystem ;
+  rdfs:label "Geodetic 2D CRS"@en , "Geographic 2D CRS"@en , "Sistema de Cooordenadas Geográfico 2D"@es ;
+  rdfs:comment "Coordinate Reference System used define locations on the surface of the Earth using an ellipsoid that approximates it"@en , "Sistema de Coordenadas de Referencia usado para definir posiciones en la superfice de la Tierra utilizando un elipsoide como aproximación"@es ;
+  epsg:isEPSGtype "geographic 2D";
+  rdfs:isDefinedBy epsg: .
+
+epsg:Geographic3dCRS a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:CoordinateReferenceSystem ;
+  rdfs:label "Geodetic 3D CRS"@en , "Geographic 3D CRS"@en , "Sistema de Cooordenadas Geográfico 3D"@es ;
+  rdfs:comment "Coordinate Reference System used define locations in three dimensions on the Earth using an ellipsoid that approximates it"@en , "Sistema de Coordenadas de Referencia usado para definir posiciones en tres dimensiones en la Tierra utilizando un elipsoide como aproximación"@es ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty epsg:hasAxis ;
+    owl:qualifiedCardinality 3 ;
+    owl:onClass epsg:Axis ] ;
+  epsg:isEPSGtype "geographic 3D";
+  rdfs:isDefinedBy epsg: .
+
+epsg:ProjectedCRS a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:2dCRS , epsg:CoordinateReferenceSystem ;
+  rdfs:label "Projected CRS"@en , "Sistema de Coordenadas de Referencia Proyectado"@es ;
+  rdfs:comment "Coordinate-based system to define locations on Earth using a flat, two-dimensional surface"@en , "Sistema basado en coordenadas para definir posiciones en la Tierra utilizando una superfice plana en dos dimensiones"@es ;
+  epsg:isEPSGtype "projected";
+  rdfs:isDefinedBy epsg: .
+
+epsg:VerticalCRS a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:CoordinateReferenceSystem ;
+  rdfs:label "Vertical CRS"@en , "Sistema de Coordenadas de Referencia Vertical"@es ;
+  rdfs:comment "One-dimensional coordinate reference system used for gravity-related height or depth measurements"@en , "Sistema de coordenadas de referencia de una dimensión usado para alturas o profundidades relativas a la gravedad"@es ;
+  epsg:isEPSGtype "vertical";
+  rdfs:isDefinedBy epsg: .
+
+epsg:Datum a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:EPSGentity ;
+  rdfs:label "Datum"@en , "Datum"@es ;
+  rdfs:comment "Set of parameters that determine the location, orientation, and scale of the origin of a CRS"@en , "Conjunto de parámetros que determinan la localización, orientación y escala del origen de un CRS"@es ;
+  owl:disjointWith epsg:CoordinateReferenceSystem , epsg:CoordinateSystem , epsg:Ellipsoid , epsg:AxisName , epsg:Orientation , epsg:PrimeMeridian ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:GeodeticDatum a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:Datum ;
+  rdfs:label "Geodetic Datum"@en , "Datum Geodésico"@es ;
+  rdfs:comment "Datum to relate a ellipsoidal coordinate system to the Earth"@en , "Datum para relacional un sistema de coordenadas elipsoidal"@es ;
+  epsg:isEPSGtype "geodetic" ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:VerticalDatum a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:Datum ;
+  rdfs:label "Vertical Datum"@en , "Datum Vertical"@es ;
+  epsg:isEPSGtype "vertical" ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:EngineeringDatum a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:Datum ;
+  rdfs:label "Engineering Datum"@en , "Datum de Ingeniería"@es ;
+  epsg:isEPSGtype "engineering" ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:AreaOfUse a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:EPSGentity ;
+  rdfs:label "Area of Use"@en , "Área de uso"@es ;
+  rdfs:comment "Area of use of a CRS."@en , "Área de uso de un SCR"@es ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:CoordinateSystem a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:EPSGentity ;
+  rdfs:label "Coordinate System"@en , "Sistema de Coordenadas"@es , "CS"@en ;
+  rdfs:comment "Set of rules that specifies how coordinates are assigned to points"@en , "Conjunto de reglas que especifica cómo se asignan coordenadas a puntos"@es ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:AffineCS a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:CoordinateSystem ;
+  rdfs:label "" ;
+  rdfs:comment "" ;
+  epsg:isEPSGtype "affine" ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:CylindricalCS a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:CoordinateSystem ;
+  rdfs:label "" ;
+  rdfs:comment "" ;
+  epsg:isEPSGtype "cylindrical" ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:EllipsoidalCS a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:CoordinateSystem ;
+  rdfs:label "" ;
+  rdfs:comment "" ;
+  epsg:isEPSGtype "ellipsoidal" ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:LinearCS a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:CoordinateSystem ;
+  rdfs:label "" ;
+  rdfs:comment "" ;
+  epsg:isEPSGtype "linear" ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:PolarCS a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:CoordinateSystem ;
+  rdfs:label "" ;
+  rdfs:comment "" ;
+  epsg:isEPSGtype "polar" ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:SphericalCS a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:CoordinateSystem ;
+  rdfs:label "" ;
+  rdfs:comment "" ;
+  epsg:isEPSGtype "spherical" ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:VerticalCS a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:CoordinateSystem ;
+  rdfs:label "" ;
+  rdfs:comment "" ;
+  epsg:isEPSGtype "vertical" ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:CartesianCS a owl:Class , rdfs:Class ;
+  rdfs:subClassOf spo:CoordinateSystem ;
+  rdfs:label "Cartesian Coordinate System"@en , "Sistema de Coordenadas Cartesiano"@es ;
+  rdfs:comment "Coordinate system that gives the position of points relative to a system of perpendicular axes"@en , "Sistema de coordenadas que da la posición de los puntos en relación a un sistema de ejes perpendiculares"@es ;
+  owl:disjointWith epsg:EllipsoidalCoordinateSystem ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:Axis a owl:Class , rdfs:Class ;
+  rdfs:label "Axis"@en , "Eje"@es ;
+  rdfs:comment "Coordinate axis in a coordinate system. Includes axis name, orientation, and unit."@en , "Eje de coordenadas en un sistema de coordenadas. Inlcuye el nombre del eje, orientación, y unidades."@es ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:Ellipsoid a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:EPSGentity ;
+  rdfs:label "Ellipsoid"@en , "Elipsoide"@es ;
+  rdfs:comment "Ellipsoid that approximates the geoid (surface with equal gravity potential) of the Earth"@en , "Elipsoide que se usa como aproximación del geoide (superficie con la misma gravedad potencial) de la Tierra"@es ;
+  owl:disjointWith epsg:CoordinateReferenceSystem , epsg:Datum , epsg:CoordinateSystem , epsg:AxisName , epsg:Orientation , epsg:PrimeMeridian ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:AxisName a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:EPSGentity ;
+  rdfs:label "Axis Name"@en , "Nombre del Eje"@es ;
+  rdfs:comment "Coordinate axis name in a Coordinate System, including its abbreviation"@en , "Eje de coordenadas en un sistema de coordenadas, incluyendo u abreviación"@es ;
+  owl:disjointWith epsg:CoordinateReferenceSystem , epsg:Datum , epsg:CoordinateSystem , epsg:Ellipsoid , epsg:Orientation , epsg:PrimeMeridian ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:Orientation a owl:Class , rdfs:Class ;
+  rdfs:label "Orientation"@en , "Orientación"@es ;
+  rdfs:comment "Orientation of a Coordinate Axis"@en , "Orientación de un eje de coordenadas"@es ;
+  owl:disjointWith epsg:CoordinateReferenceSystem , epsg:Datum , epsg:CoordinateSystem , epsg:Ellipsoid , epsg:AxisName , epsg:PrimeMeridian ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:PrimeMeridian a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:EPSGentity ;
+  rdfs:label "Prime Meridian"@en , "Meridiano Cero"@es ;
+  rdfs:comment "Meridian at which longitude is defined to be zero"@en , "Meridiano en el que se define la longitud como cero"@es ;
+  owl:disjointWith spo:CoordinateReferenceSystem , spo:Datum , spo:CoordinateSystem , spo:Ellipsoid , spo:AxisName , spo:Orientation ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:CoordinateOperationMethod a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:EPSGentity ;
+  rdfs:label "Coordinate Operation Method"@en , "Método de Operación de Coordenadas"@es ;
+  rdfs:comment "" ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:CoordinateOperation a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:EPSGentity ;
+  rdfs:label "Coordinate Operation"@en , "Operación de Coordenadas"@es ;
+  rdfs:comment "" ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:ConversionOperation a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:CoordinateOperation ;
+  rdfs:label "Conversion Operation"@en , "Conversión de Coordenadas"@es ;
+  rdfs:comment "" ;
+  epsg:isEPSGtype "conversion" ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:TransformationOperation a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:CoordinateOperation ;
+  rdfs:label "Transformation Operation"@en , "Transformación de Coordenadas"@es ;
+  rdfs:comment "" ;
+  epsg:isEPSGtype "transformation" ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:ConcatenatedOperation a owl:Class , rdfs:Class ;
+  rdfs:subClassOf epsg:CoordinateOperation ;
+  rdfs:label "Concatenated Operation"@en , "Operaciones Concatenadas de Coordenadas"@es ;
+  rdfs:comment "" ;
+  epsg:isEPSGtype "concatenated operation" ;
+  rdfs:isDefinedBy epsg: .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+epsg:hasCoordinateReferenceSystem a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "coordinate reference system"@en , "sistema de coordenadas de referencia"@es ;
+  rdfs:comment "coordinate reference system used for the position"@en , "sistema de coordenadas de referencia usado para la posición"@es ;
+  rdfs:range epsg:CoordinateReferenceSystem ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:hasCoordinate a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "coordinate"@en , "coordenada"@es ;
+  rdfs:comment "coordinate of the position"@en , "coordenada de la posición"@es ;
+  rdfs:domain spo:GeocentricPosition ;
+  rdfs:range epsg:Coordinate ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:hasCoordinateSystem a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "coordinate system"@en , "sistema de coordenadas"@es ;
+  rdfs:comment "coordinate system of the CRS"@en , "sistema de coordenadas del CRS"@es ;
+  rdfs:domain epsg:CoordinateReferenceSystem ;
+  rdfs:range epsg:CoordinateSystem ;
+  rdfs:isDefinedBy epsg: .
+
+ epsg:hasAreaOfUse a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "area of use"@en , "área de uso"@es ;
+  rdfs:comment "area of use of the CRS"@en , "área de uso del CRS"@es ;
+  rdfs:domain epsg:CoordinateReferenceSystem ;
+  rdfs:range epsg:AreaOfUse ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:hasSourceGeographicCRS a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "source geographic CRS"@en , "sistema de soordenadas de seferencia base"@es ;
+  rdfs:comment "the Projected CRS has this Geographic CRS as source"@en , "el Sistema de Coordenadas de Referencia Proyectado tiene este Sistema de Coordenadas de Referencia como base"@es ;
+  rdfs:domain epsg:ProjectedCRS ;
+  rdfs:range epsg:GeographicCRS ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:hasProjectionOperation a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "projection operation"@en , "operación de proyección"@es ;
+  rdfs:comment "operation used to convert the Projected CRS from and to the source geographic CRS"@en , "operación usada para convertir a y desde el CRS geográfico base"@es ;
+  rdfs:domain epsg:ProjectedCRS ;
+  rdfs:range epsg:CoordinateOperation ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:hasHorizontalComponent a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "horizontal component"@en , "componente horizontal"@es ;
+  rdfs:comment "For compound CRSs only, the horizontal component of the Compound CRS."@en , "Para CCRRSS solamente, el componente horizontal del CRS compuesto."@es ;
+  rdfs:domain epsg:CompoundCRS ;
+  rdfs:range epsg:2dCRS .
+
+epsg:hasVerticalComponent a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "vertical component"@en , "componente vertical"@es ;
+  rdfs:comment "For compound CRSs only, the vertical component of the Compound CRS."@en , "Para CCRRSS solamente, el componente vertical del CRS compuesto."@es ;
+  rdfs:domain epsg:CompoundCRS ;
+  rdfs:range epsg:VerticalCRS .
+
+epsg:hasAxis a owl:ObjectProperty , rdfs:Property ;
+  rdfs:label "axis"@en , "eje"@es ;
+  rdfs:comment "Coordinate axis in a coordinate system"@es , "eje de coordenadas en un sistema de coordenadas"@es ;
+  rdfs:domain [ owl:disjointUnionOf ( epsg:CoordinateSystem epsg:Coordinate ) ] ;
+  rdfs:range epsg:Axis ;
+  rdfs:isDefinedBy epsg: .
+  
+epsg:hasAxisName a owl:ObjectProperty , rdfs:Property ;
+  rdfs:label "axis name"@en , "nombre del eje"@es ;
+  rdfs:comment "Axis name as it is defined in the EPSG dataset, including its abbreviation"@en , "Nombre del eje tal y como está definido en el dataset EPSG, incluyendo su abreviación"@es ;
+  rdfs:domain epsg:Axis ;
+  rdfs:domain epsg:AxisName ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:hasOrientation a owl:ObjectProperty , rdfs:Property ;
+  rdfs:label "orientation"@en , "orientación"@es ;
+  rdfs:comment "orientation of the coordinate axis"@en , "orientación del eje de coordenadas"@es ;
+  rdfs:domain epsg:Axis ;
+  rdfs:range epsg:Orientation ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:hasUnitOfMeasure a owl:ObjectProperty , rdfs:Property ;
+  rdfs:label "unit of measure"@en , "unit of measure"@es ;
+  rdfs:comment "unit of measure of the coordinate axis"@en , "unidad de medida del eje de coordenadas"@es ;
+  rdfs:domain epsg:Axis ;
+  rdfs:range epsg:Orientation ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:hasDatum a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "datum"@en , "datum"@es ;
+  rdfs:comment "datum of the CRS"@en , "datum del CRS"@es ;
+  rdfs:domain epsg:CoordinateReferenceSystem ;
+  rdfs:range epsg:Datum ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:hasGeodeticDatum a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "geodetic datum"@en , "datum geodésico"@es ;
+  rdfs:comment "geodetic datum of the Geodetic CRS"@en , "datum geodésico del Sistema de Coordenadas de Referencia geodésico"@es ;
+  rdfs:domain epsg:GeodeticCRS ;
+  rdfs:range epsg:GeodeticDatum ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:hasEllipsoid a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "ellipsoid"@en , "elipsoide"@es ;
+  rdfs:comment "ellipsoid of the geodetic datum"@en , "elipsoide del Sistema del datum geodésico"@es ;
+  rdfs:domain epsg:GeodeticDatum ;
+  rdfs:range epsg:Ellipsoid ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:hasPrimeMeridian a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "prime meridian"@en , "meridiano cero"@es ;
+  rdfs:comment "prime meridian of the geodetic datum"@en , "meridiano cero del datum geodésico"@es ;
+  rdfs:domain epsg:GeodeticDatum ;
+  rdfs:range epsg:PrimeMeridian ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:hasSemiMajorAxis a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasure;
+  rdfs:label "semi-major axis"@en , "eje semi-mayor"@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain epsg:Ellipsoid ;
+  rdfs:range epsg:SemiMajorAxis ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:hasInverseFlattening a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasure;
+  rdfs:label "inverse flattening"@en , "aplanamiento inverso"@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain epsg:Ellipsoid ;
+  rdfs:range epsg:InverseFlattening ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:hasUnit a owl:ObjectProperty , rdfs:Property ;
+  rdfs:label "units"@en , "unidades"@es ;
+  rdfs:comment "units of the coordinate axis"@en , "unidades del eje de coordenadas"@es ;
+  rdfs:domain epsg:Axis ;
+  rdfs:range smo:Unit ;
+  rdfs:isDefinedBy epsg: .
+
+
+#################################################################
+#    Datatype Properties
+#################################################################
+
+epsg:hasEPSGcode a owl:DatatypeProperty, owl:FunctionalProperty , rdf:Property ;
+  rdfs:label "EPSG code"@en , "código EPSG"@en ;
+  rdfs:comment "code maintained by the EPSG (European Petroleum Survey Group)"@en , "código mantenido por la EPSG (European Petroleum Survey Group)"@es ;
+  rdfs:domain epsg:EPSGentity ;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:hasAbbreviation a owl:DatatypeProperty , rdf:Property ;
+  rdfs:label "abbreviation"@en , "abreviación"@es ;
+  rdfs:comment "Abbreviation for the coordinate axis."@en , "Abreviación del eje de coordenadas."@es ;
+  rdfs:domain epsg:Axis ;
+  rdfs:range rdf:literal ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:hasOrder a owl:DatatypeProperty , rdf:Property ;
+  rdfs:label "abbreviation"@en , "abreviación"@es ;
+  rdfs:comment "The position of this axis within a Coordinate System: 1, 2, or 3."@en , "Posición del eje en el sistema de coordenadas: 1, 2, o 3."@es ;
+  rdfs:domain epsg:Axis ;
+  rdfs:range [ owl:oneOf ("0"^^xsd:nonNegativeInteger "1"^^xsd:nonNegativeInteger "2"^^xsd:nonNegativeInteger) ] ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:hasRequest a owl:DatatypeProperty , rdf:Property ;
+  rdfs:label "request"@en , "petición"@es ;
+  rdfs:comment "A description of the change request."@en , "Descripción de la petición de cambio"@es ;
+  rdfs:domain epsg:Change ;
+  rdfs:range rdf:langString ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:isReversible a owl:DatatypeProperty , rdf:Property ;
+  rdfs:label "is reversible"@en , "es reversible"@es ;
+  rdfs:comment "Indication of the validity of the transformation parameters for the reverse operation; if not, search for an explicit definition of the reverse transformation."@en ;
+  rdfs:domain epsg:CoordinateOperationMethod ;
+  rdfs:range xsd:boolean ;
+  rdfs:isDefinedBy epsg: .
+
+###
+# spo:hasLatitudeInDegrees a owl:DatatypeProperty , rdf:Property ;
+#   rdfs:subPropertyOf smo:hasMeasureinDegrees ;
+#   rdfs:label "latitude in degrees"@en , "latitud en grados"@es ;
+#   rdfs:comment "value of latitude in degrees"@en , "valor de la latitud en grados"@es ;
+#   rdfs:domain smo:Position ;
+#   rdfs:isDefinedBy spo: .
+
+# spo:hasLongitudeInDegrees a owl:DatatypeProperty , rdf:Property ;
+#   rdfs:subPropertyOf smo:hasMeasureinDegrees ;
+#   rdfs:label "longitude in degrees"@en , "longitud en grados"@es ;
+#   rdfs:comment "value of longitude in degrees"@en , "valor de la longitud en grados"@es ;
+#   rdfs:domain smo:Position ;
+#   rdfs:isDefinedBy spo: .
+
+# spo:hasSemiMajorAxisInMeters a owl:DatatypeProperty , rdf:Property ;
+#   rdfs:label "semi-major axis"@en , "eje semi-mayor"@es ;
+#   rdfs:comment ""@en , ""@es ;
+#   rdfs:domain spo:Ellipsoid ;
+#   rdfs:range xsd:decimal ;
+#   rdfs:isDefinedBy spo: .
+
+# spo:hasInverseFlatteningInUnities a owl:DatatypeProperty , rdf:Property ;
+#   rdfs:label "inverse flattening"@en , "aplanamiento inverso"@es ;
+#   rdfs:comment ""@en , ""@es ;
+#   rdfs:domain spo:Ellipsoid ;
+#   rdfs:range xsd:decimal ;
+#   rdfs:isDefinedBy spo: .
+
+# spo:hasOrder a owl:DatatypeProperty , rdf:Property ;
+#   rdfs:label "order"@en , "orden"@es ;
+#   rdfs:comment "Axis order in the coordinate system. Not needed for the RDF representation but maybe for other applications"@en , "Orden del eje en el sistema de coordenadas. No es necesario en la representación RDF, pero puede serlo para otras aplicaciones"@es ;
+#   rdfs:domain spo:Axis ;
+#   rdfs:range xsd:integer ;
+#   rdfs:isDefinedBy spo: .
+
+# spo:has106ND a owl:DatatypeProperty , rdfs:Property ;
+#   rdfs:label "latitude"@en , "latitud"@es ;
+#   rdfs:comment "latitude north in degrees"@en , "latitud norte en grados"@es ;
+#   rdfs:domain [
+#     a owl:Restriction ;
+#     owl:onProperty smo:hasCoordinate ;
+#     owl:someValuesFrom [
+#       a owl:Restriction ;
+#       owl:onProperty smo:hasAxis ;
+#       owl:someValuesFrom axis:106
+#     ]
+#   ] ;
+#   rdfs:range xsd:decimal ;
+#   rdfs:isDefinedBy spo: .
+
+# spo:has107ED a owl:DatatypeProperty , rdfs:Property ;
+#   rdfs:label "longitude"@en , "longitud"@es ;
+#   rdfs:comment "longitude east in degrees"@en , "longitud este en grados"@es ;
+#   rdfs:domain [
+#     a owl:Restriction ;
+#     owl:onProperty smo:hasCoordinate ;
+#     owl:someValuesFrom [
+#       a owl:Restriction ;
+#       owl:onProperty smo:hasAxis ;
+#       owl:someValuesFrom axis:107
+#     ]
+#   ] ;
+#   rdfs:range xsd:decimal ;
+#   rdfs:isDefinedBy spo: .
+###
+
+#################################################################
+#    Annotation Properties
+#################################################################
+
+epsg:name a owl:AnnotationProperty , rdf:Property ;
+  rdfs:subpropertyOf rdfs:label ;
+  rdfs:label "same"@en ;
+  rdfs:comment "name of the entity"@en ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:description a owl:AnnotationProperty , rdf:Property ;
+  rdfs:subpropertyOf rdfs:comment ;
+  rdfs:label "description"@en ;
+  rdfs:comment "description of the entity"@en ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:scope a owl:AnnotationProperty , rdf:Property ;
+  rdfs:subpropertyOf rdfs:comment ;
+  rdfs:label "scope"@en ;
+  rdfs:comment "scope of the entity"@en ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:remarks a owl:AnnotationProperty , rdf:Property ;
+  rdfs:subpropertyOf rdfs:comment ;
+  rdfs:label "remarks"@en ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:comment a owl:AnnotationProperty , rdf:Property ;
+  rdfs:subpropertyOf rdfs:comment ;
+  rdfs:label "comment"@en ;
+  rdfs:comment "Supplementary remarks about the request or action taken."@en ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:action a owl:AnnotationProperty , rdf:Property ;
+  rdfs:subpropertyOf rdfs:comment ;
+  rdfs:label "action"@en ;
+  rdfs:comment "Description of changes made to data. Limited to 4000 characters."@en ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:deprecated a owl:AnnotationProperty , rdf:Property ;
+  rdfs:subpropertyOf owl:deprecated ; # Should or should not?
+  rdfs:label "is deprecated"@en ;
+  rdfs:comment "the element is deprecated"@en ;
+  rdfs:isDefinedBy epsg: .
+
+
+# Identifiers. I.e., properties that have a literal value that can be parsed to extract entities. To do in a second phase.
+
+epsg:identifier a owl:AnnotationProperty , rdf:Property ;
+  rdfs:label "Identifier"@en ;
+  rdfs:comment "The literal identifies data in someway. It is usally regular or a set of strings. A Datatype property can be probably created in the future with this information."@en ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:informationSource a owl:AnnotationProperty , rdf:Property ;
+  rdfs:subpropertyOf epsg:identifier ;
+  rdfs:label "Information Source"@en ;
+  rdfs:comment "Reference describing the origin of the information to populate this record; e.g. an authoritative publication."@en ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:dataSource a owl:AnnotationProperty , rdf:Property ;
+  rdfs:subpropertyOf epsg:identifier ;
+  rdfs:label "Data Source"@en ;
+  rdfs:comment "The organisation, body or person who populated this record; for EPSG supplied reference data: \"EPSG\"."@en ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:changeID a owl:AnnotationProperty , rdf:Property ;
+  rdfs:subpropertyOf epsg:identifier ;
+  rdfs:label "Change ID"@en ;
+  rdfs:comment "Unlinked reference to change"@en ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:tablesAffected a owl:AnnotationProperty , rdf:Property ;
+  rdfs:subpropertyOf epsg:identifier ;
+  rdfs:label "Tables Affected"@en ;
+  rdfs:comment "A list of tables affected.  GeogCS and ProjCS are subsets of HorizCS."@en ;
+  rdfs:isDefinedBy epsg: .
+
+epsg:codesAffected a owl:AnnotationProperty , rdf:Property ;
+  rdfs:subpropertyOf epsg:identifier ;
+  rdfs:label "Codes Affected"@en ;
+  rdfs:comment "A list of existing codes that are changed.  New codes not here."@en ;
+  rdfs:isDefinedBy epsg: .
