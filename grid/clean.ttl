@@ -1,0 +1,311 @@
+@prefix : <https://crossforest.eu/def/spatial-grid##> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://crossforest.eu/def/spatial-grid#> .
+
+<https://crossforest.eu/def/spatial-grid#> rdf:type owl:Ontology ;
+                                            owl:versionIRI <https://crossforest.eu/def/spatial-grid/1.0> ;
+                                            <http://purl.org/dc/elements/1.1/creator> "Tragsatec"@es ;
+                                            <http://purl.org/dc/elements/1.1/description> "This ontology specifies a geographical grid system available for the provision of spatial information  for multipurposes uses."@en ;
+                                            <http://purl.org/dc/terms/title> "Spatial grid ontology"@en ;
+                                            rdfs:isDefinedBy <https://crossforest.eu/def/spatial-grid> .
+
+
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://crossforest.eu/def/spatial-grid#belongsToCell
+<https://crossforest.eu/def/spatial-grid#belongsToCell> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                                                        rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                        rdfs:range <https://crossforest.eu/def/spatial-grid#cell> .
+
+
+###  https://crossforest.eu/def/spatial-grid#belongsToGrid
+<https://crossforest.eu/def/spatial-grid#belongsToGrid> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                                                        owl:inverseOf <https://crossforest.eu/def/spatial-grid#gridOf> ;
+                                                        rdfs:domain <https://crossforest.eu/def/spatial-grid#cell> ;
+                                                        rdfs:range <https://crossforest.eu/def/spatial-grid#grid> .
+
+
+###  https://crossforest.eu/def/spatial-grid#centroidOf
+<https://crossforest.eu/def/spatial-grid#centroidOf> rdf:type owl:ObjectProperty ;
+                                                     rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                                                     owl:inverseOf <https://crossforest.eu/def/spatial-grid#hasCentroid> ;
+                                                     rdfs:domain <https://crossforest.eu/def/spatial-grid#centroid> ;
+                                                     rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> .
+
+
+###  https://crossforest.eu/def/spatial-grid#gridOf
+<https://crossforest.eu/def/spatial-grid#gridOf> rdf:type owl:ObjectProperty ;
+                                                 rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfContains> ;
+                                                 rdfs:domain <https://crossforest.eu/def/spatial-grid#grid> ;
+                                                 rdfs:range <https://crossforest.eu/def/spatial-grid#cell> .
+
+
+###  https://crossforest.eu/def/spatial-grid#hasCell
+<https://crossforest.eu/def/spatial-grid#hasCell> rdf:type owl:ObjectProperty ;
+                                                  rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfContains> ;
+                                                  rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                  rdfs:range <https://crossforest.eu/def/spatial-grid#cell> .
+
+
+###  https://crossforest.eu/def/spatial-grid#hasCentroid
+<https://crossforest.eu/def/spatial-grid#hasCentroid> rdf:type owl:ObjectProperty ;
+                                                      rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfContains> ;
+                                                      rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                      rdfs:range <https://crossforest.eu/def/spatial-grid#centroid> .
+
+
+###  https://crossforest.eu/def/spatial-grid#hasMeasure
+<https://crossforest.eu/def/spatial-grid#hasMeasure> rdf:type owl:ObjectProperty ;
+                                                     owl:equivalentProperty <http://qudt.org/schema/qudt/hasQuantity> ;
+                                                     rdfs:range <http://qudt.org/schema/qudt/Quantity> ;
+                                                     <http://qudt.org/schema/qudt/description> "a property to relate an observable thing with a quantity (qud:Quantity)"^^xsd:string .
+
+
+###  https://crossforest.eu/def/spatial-grid#spatialReferenceSystem
+<https://crossforest.eu/def/spatial-grid#spatialReferenceSystem> rdf:type owl:ObjectProperty ,
+                                                                          owl:FunctionalProperty ;
+                                                                 rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                                 rdfs:label "Spatial Reference System"@en .
+
+#################################################################
+#    Datatype Properties
+#################################################################
+
+###  https://crossforest.eu/def/spatial-grid#cod
+<https://crossforest.eu/def/spatial-grid#cod> rdf:type owl:DatatypeProperty ;
+                                              rdfs:range xsd:string .
+
+
+###  https://crossforest.eu/def/spatial-grid#column
+<https://crossforest.eu/def/spatial-grid#column> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <https://crossforest.eu/def/spatial-grid#cell> ;
+                                                 rdfs:range xsd:integer ;
+                                                 <http://purl.org/dc/elements/1.1/description> "The number that identifies the column the cell belongs to in the grid. It will allow to obtain the adjacent cells in the horizontal axis."@en .
+
+
+###  https://crossforest.eu/def/spatial-grid#row
+<https://crossforest.eu/def/spatial-grid#row> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <https://crossforest.eu/def/spatial-grid#cell> ;
+                                              rdfs:range xsd:integer ;
+                                              <http://purl.org/dc/elements/1.1/description> "The number that identifies the row the cell belongs to in the grid. It will allow to obtain the adjacent cells in the vertical axis."@en .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://crossforest.eu/def/spatial-grid#cell
+<https://crossforest.eu/def/spatial-grid#cell> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+                                               <http://purl.org/dc/elements/1.1/description> "La clase representa una celda perteneciente a una cuadrícula"@es ,
+                                                                                             "The class represents  the cells belonging to a grid."@en ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Cell"@en .
+
+
+###  https://crossforest.eu/def/spatial-grid#centroid
+<https://crossforest.eu/def/spatial-grid#centroid> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+                                                   <http://purl.org/dc/elements/1.1/description> "La clase representa el centroide de una cuadrícula"@es ,
+                                                                                                 "The class represents the centroid belonging to a cell."@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Centroid"@en .
+
+
+###  https://crossforest.eu/def/spatial-grid#grid
+<https://crossforest.eu/def/spatial-grid#grid> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+                                               <http://purl.org/dc/elements/1.1/description> "La clase representa un sistema espacial de cuadrículas"@es ,
+                                                                                             "The class represents a system of spatial grids"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Grid"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://crossforest.eu/def/spatial-grid#1km2
+<https://crossforest.eu/def/spatial-grid#1km2> rdf:type owl:NamedIndividual ,
+                                                        <http://qudt.org/schema/qudt/QuantityValue> ;
+                                               <http://qudt.org/schema/qudt/unit> <http://qudt.org/vocab/unit/M2> ;
+                                               <http://qudt.org/schema/qudt/height> "1000"^^xsd:string ;
+                                               <http://qudt.org/schema/qudt/numericValue> 1000000 ;
+                                               <http://qudt.org/schema/qudt/width> "1000"^^xsd:string .
+
+
+###  https://crossforest.eu/def/spatial-grid#1x1km
+<https://crossforest.eu/def/spatial-grid#1x1km> rdf:type owl:NamedIndividual ,
+                                                         <http://qudt.org/schema/qudt/Quantity> ;
+                                                <http://qudt.org/schema/qudt/quantityValue> <https://crossforest.eu/def/spatial-grid#1km2> .
+
+
+###  https://crossforest.eu/def/spatial-grid#10km2
+<https://crossforest.eu/def/spatial-grid#10km2> rdf:type owl:NamedIndividual ,
+                                                         <http://qudt.org/schema/qudt/QuantityValue> ;
+                                                <http://qudt.org/schema/qudt/unit> <http://qudt.org/vocab/unit/M2> ;
+                                                <http://qudt.org/schema/qudt/height> "10000"^^xsd:string ;
+                                                <http://qudt.org/schema/qudt/numericValue> 10000000 ;
+                                                <http://qudt.org/schema/qudt/width> "10000"^^xsd:string .
+
+
+###  https://crossforest.eu/def/spatial-grid#10x10km
+<https://crossforest.eu/def/spatial-grid#10x10km> rdf:type owl:NamedIndividual ,
+                                                           <http://qudt.org/schema/qudt/Quantity> ;
+                                                  <http://qudt.org/schema/qudt/quantityValue> <https://crossforest.eu/def/spatial-grid#10km2> .
+
+
+###  https://crossforest.eu/def/spatial-grid/grid/GRID-1-KM
+<https://crossforest.eu/def/spatial-grid/grid/GRID-1-KM> rdf:type owl:NamedIndividual ,
+                                                                  <https://crossforest.eu/def/spatial-grid#grid> ;
+                                                         <https://crossforest.eu/def/spatial-grid#hasMeasure> <https://crossforest.eu/def/spatial-grid#10x10km> ;
+                                                         <https://crossforest.eu/def/spatial-grid#spatialReferenceSystem> <http://www.opengis.net/def/crs/EPSG/0/32630> .
+
+
+###  https://crossforest.eu/def/spatial-grid/grid/GRID-10-KM
+<https://crossforest.eu/def/spatial-grid/grid/GRID-10-KM> rdf:type owl:NamedIndividual ,
+                                                                   <https://crossforest.eu/def/spatial-grid#grid> ;
+                                                          <https://crossforest.eu/def/spatial-grid#hasMeasure> <https://crossforest.eu/def/spatial-grid#10x10km> ;
+                                                          <https://crossforest.eu/def/spatial-grid#spatialReferenceSystem> <http://www.opengis.net/def/crs/EPSG/0/32630> .
+
+
+###  https://crossforest.eu/def/spatial-grid/grid/GRID-25-M
+<https://crossforest.eu/def/spatial-grid/grid/GRID-25-M> rdf:type owl:NamedIndividual ,
+                                                                  <https://crossforest.eu/def/spatial-grid#grid> ;
+                                                         <https://crossforest.eu/def/spatial-grid#hasMeasure> <https://crossforest.eu/resource/spatial-grid/quantity/25x25m> ;
+                                                         <https://crossforest.eu/def/spatial-grid#spatialReferenceSystem> <http://www.opengis.net/def/crs/EPSG/0/32630> .
+
+
+###  https://crossforest.eu/resource/spatial-grid/cell/06-25-M-000001
+<https://crossforest.eu/resource/spatial-grid/cell/06-25-M-000001> rdf:type owl:NamedIndividual ,
+                                                                            <https://crossforest.eu/def/spatial-grid#cell> ;
+                                                                   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia> <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura> ;
+                                                                   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#pais> <https://datos.gob.es/recurso/sector-publico/territorio/Pais/España> ;
+                                                                   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#provincia> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Badajoz> ;
+                                                                   <http://www.opengis.net/ont/geosparql#hasGeometry> <https://crossforest.eu/resource/spatial-grid/cell/geo/06-25-M-000001> ;
+                                                                   <https://crossforest.eu/def/spatial-grid#belongsToGrid> <https://crossforest.eu/def/spatial-grid/grid/GRID-25-M> ;
+                                                                   <https://crossforest.eu/def/spatial-grid#hasMeasure> <https://crossforest.eu/resource/spatial-grid/quantity/25x25m> ;
+                                                                   <https://crossforest.eu/def/spatial-grid#cod> "25mP06N1"^^xsd:string .
+
+
+###  https://crossforest.eu/resource/spatial-grid/cell/geo/06-25-M-000001
+<https://crossforest.eu/resource/spatial-grid/cell/geo/06-25-M-000001> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.opengis.net/ont/sf#Polygon> ;
+                                                                       <http://www.opengis.net/ont/geosparql#asWKT> "sfdfdf"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+
+###  https://crossforest.eu/resource/spatial-grid/quantity-value/25m2
+<https://crossforest.eu/resource/spatial-grid/quantity-value/25m2> rdf:type owl:NamedIndividual ,
+                                                                            <http://qudt.org/schema/qudt/QuantityValue> ;
+                                                                   <http://qudt.org/schema/qudt/unit> <http://qudt.org/vocab/unit/M2> ;
+                                                                   <http://qudt.org/schema/qudt/height> "25"^^xsd:string ;
+                                                                   <http://qudt.org/schema/qudt/numericValue> 25 ;
+                                                                   <http://qudt.org/schema/qudt/width> "25"^^xsd:string .
+
+
+###  https://crossforest.eu/resource/spatial-grid/quantity/25x25m
+<https://crossforest.eu/resource/spatial-grid/quantity/25x25m> rdf:type owl:NamedIndividual ,
+                                                                        <http://qudt.org/schema/qudt/Quantity> ;
+                                                               <http://qudt.org/schema/qudt/quantityValue> <https://crossforest.eu/resource/spatial-grid/quantity-value/25m2> .
+
+
+###  https://datos.gob.es/recurso/sector-publico/territorio/Pais/España
+<https://datos.gob.es/recurso/sector-publico/territorio/Pais/España> rdf:type owl:NamedIndividual ,
+                                                                              <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Pais> .
+
+
+_:genid37 <http://ainf.aau.at/ontodebug#axiom> "cuadricula DisjointWith Geometry"^^xsd:string ;
+          <http://ainf.aau.at/ontodebug#type> "true"^^xsd:boolean .
+
+_:genid38 <http://ainf.aau.at/ontodebug#axiom> "celda SubClassOf asWKT some wktLiteral"^^xsd:string ;
+           <http://ainf.aau.at/ontodebug#type> "false"^^xsd:boolean .
+
+_:genid39 <http://ainf.aau.at/ontodebug#axiom> "celda SubClassOf asWKT some wktLiteral"^^xsd:string ;
+           <http://ainf.aau.at/ontodebug#type> "false"^^xsd:boolean .
+
+_:genid40 <http://ainf.aau.at/ontodebug#axiom> "cuadricula DisjointWith Geometry"^^xsd:string ;
+           <http://ainf.aau.at/ontodebug#type> "true"^^xsd:boolean .
+
+_:genid41 <http://ainf.aau.at/ontodebug#axiom> "celda SubClassOf asWKT some wktLiteral"^^xsd:string ;
+           <http://ainf.aau.at/ontodebug#type> "false"^^xsd:boolean .
+
+_:genid42 <http://ainf.aau.at/ontodebug#axiom> "cuadricula DisjointWith Geometry"^^xsd:string ;
+           <http://ainf.aau.at/ontodebug#type> "true"^^xsd:boolean .
+
+_:genid43 <http://ainf.aau.at/ontodebug#axiom> "celda SubClassOf asWKT some wktLiteral"^^xsd:string ;
+           <http://ainf.aau.at/ontodebug#type> "false"^^xsd:boolean .
+
+_:genid44 <http://ainf.aau.at/ontodebug#axiom> "cuadricula DisjointWith Geometry"^^xsd:string ;
+           <http://ainf.aau.at/ontodebug#type> "true"^^xsd:boolean .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+   owl:members ( <http://www.opengis.net/ont/geosparql#SpatialObject>
+                 <http://www.w3.org/2004/02/skos/core#Concept>
+                 <http://www.w3.org/2004/02/skos/core#ConceptScheme>
+               )
+ ] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.w3.org/2004/02/skos/core#Concept>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme>
+                <https://crossforest.eu/def/spatial-grid#cell>
+                <https://crossforest.eu/def/spatial-grid#centroid>
+                <https://crossforest.eu/def/spatial-grid#grid>
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
