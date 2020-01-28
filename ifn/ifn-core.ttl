@@ -431,27 +431,6 @@ ifn:hasDBH2 a owl:ObjectProperty , rdf:Property ;
   rdfs:range ifn:DBH2 ;
   rdfs:isDefinedBy ifn: .
 
-ifn:hasPlantSpecies a owl:ObjectProperty , rdf:Property ;
-  rdfs:label "has species"@en , "tiene especie"@es ;
-  rdfs:comment "species of a plant"@es , "especie de una planta"@es ;
-  rdfs:domain ifn:Plant ;
-  rdfs:range ifn:PlantSpecies ;
-  rdfs:isDefinedBy ifn: .
-
-ifn:hasTreeSpecies a owl:ObjectProperty , rdf:Property ;
-  rdfs:label "has species"@en , "tiene especie"@es ;
-  rdfs:comment "species of a tree"@es , "especie de un árbol"@es ;
-  rdfs:domain ifn:Tree ;
-  rdfs:range ifn:TreeSpecies ;
-  rdfs:isDefinedBy ifn: .
-
-ifn:hasBushSpecies a owl:ObjectProperty , rdf:Property ;
-  rdfs:label "has species"@en , "tiene especie"@es ;
-  rdfs:comment "species of a bush"@es , "especie de un bush"@es ;
-  rdfs:domain ifn:Bush ;
-  rdfs:range ifn:BushSpecies ;
-  rdfs:isDefinedBy ifn: .
-
 ifn:hasScientificName a owl:ObjectProperty , rdf:Property ;
   rdfs:label "scientific name"@en ;
   rdfs:domain ifn:Plant ;
