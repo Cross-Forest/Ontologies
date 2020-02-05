@@ -229,7 +229,7 @@ epsg:PrimeMeridian a owl:Class , rdfs:Class ;
   rdfs:subClassOf epsg:EPSGentity ;
   rdfs:label "Prime Meridian"@en , "Meridiano Cero"@es ;
   rdfs:comment "Meridian at which longitude is defined to be zero"@en , "Meridiano en el que se define la longitud como cero"@es ;
-  owl:disjointWith spo:CoordinateReferenceSystem , spo:Datum , spo:CoordinateSystem , spo:Ellipsoid , spo:AxisName , spo:Orientation ;
+  owl:disjointWith epsg:CoordinateReferenceSystem , epsg:Datum , epsg:CoordinateSystem , epsg:Ellipsoid , epsg:AxisName , epsg:Orientation ;
   rdfs:isDefinedBy epsg: .
 
 epsg:CoordinateOperationMethod a owl:Class , rdfs:Class ;
@@ -278,7 +278,7 @@ epsg:hasCoordinateReferenceSystem a owl:ObjectProperty , rdf:Property ;
 epsg:hasCoordinate a owl:ObjectProperty , rdf:Property ;
   rdfs:label "coordinate"@en , "coordenada"@es ;
   rdfs:comment "coordinate of the position"@en , "coordenada de la posición"@es ;
-  rdfs:domain spo:GeocentricPosition ;
+  rdfs:domain epsg:GeocentricPosition ;
   rdfs:range epsg:Coordinate ;
   rdfs:isDefinedBy epsg: .
 
