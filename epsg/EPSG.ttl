@@ -194,7 +194,7 @@ epsg:VerticalCS a owl:Class , rdfs:Class ;
   rdfs:isDefinedBy epsg: .
 
 epsg:CartesianCS a owl:Class , rdfs:Class ;
-  rdfs:subClassOf spo:CoordinateSystem ;
+  rdfs:subClassOf epsg:CoordinateSystem ;
   rdfs:label "Cartesian Coordinate System"@en , "Sistema de Coordenadas Cartesiano"@es ;
   rdfs:comment "Coordinate system that gives the position of points relative to a system of perpendicular axes"@en , "Sistema de coordenadas que da la posición de los puntos en relación a un sistema de ejes perpendiculares"@es ;
   owl:disjointWith epsg:EllipsoidalCoordinateSystem ;
