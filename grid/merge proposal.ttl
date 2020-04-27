@@ -1,0 +1,182 @@
+@prefix : <https://crossforest.eu/def/spatial-grid##> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix spo: <http://crossforest.eu/position/ontology/> .
+@prefix unit: <http://crossforest.eu/measures/data/unit/> .
+@prefix crs: <http://epsg.w3id.org/data/crs/> .
+@prefix territorio: <<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+@prefix autonomia: <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/> ;
+@prefix pais: <https://datos.gob.es/recurso/sector-publico/territorio/Pais/> ;
+@prefix provincia: <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/> .
+@prefix grid: <https://crossforest.eu/def/spatial-grid/> .
+@prefix cell: <<https://crossforest.eu/resource/spatial-grid/cell/> .
+
+<https://crossforest.eu/def/spatial-grid#> a owl:Ontology ;
+                                            owl:versionIRI <https://crossforest.eu/def/spatial-grid/1.0> ;
+                                            <http://purl.org/dc/elements/1.1/creator> "Tragsatec"@es ;
+                                            <http://purl.org/dc/elements/1.1/description> "This ontology specifies a geographical grid system available for the provision of spatial information  for multipurposes uses."@en ;
+                                            <http://purl.org/dc/terms/title> "Spatial grid ontology"@en ;
+                                            rdfs:isDefinedBy <https://crossforest.eu/def/spatial-grid> .
+
+
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://crossforest.eu/def/spatial-grid#belongsToCell
+spo:belongsToCell a owl:ObjectProperty , rdf:Property ;
+	rdfs:subPropertyOf spo:within ;
+	rdfs:domain spo:SpatialEntity ;
+    rdfs:range spo:Cell .
+
+###  https://crossforest.eu/def/spatial-grid#hasCell
+spo:containsCell a owl:ObjectProperty , rdf:Property ;
+	rdfs:subPropertyOf spo:contains ;
+	rdfs:domain spo:SpatialEntity ;
+	rdfs:range spo:Cell .
+
+spo:intersectsCell a owl:ObjectProperty , rdf:Property ;
+	rdfs:subPropertyOf spo:intersects ;
+	rdfs:domain spo:SpatialEntity ;
+	rdfs:range spo:Cell .
+
+###  https://crossforest.eu/def/spatial-grid#belongsToGrid
+spo:belongsToGrid a owl:ObjectProperty , rdf:Property ;
+	rdfs:subPropertyOf spo:isInLayer ;
+    owl:inverseOf spo:gridOf ;
+    rdfs:domain spo:Cell ;
+    rdfs:range spo:Grid .
+
+###  https://crossforest.eu/def/spatial-grid#gridOf
+spo:gridOf a owl:ObjectProperty , rdf:Property ;
+	rdfs:subPropertyOf spo:within ;
+    owl:inverseOf spo:belongsToGrid ;
+	rdfs:domain spo:Grid ;
+	rdfs:range spo:Cell .
+
+
+###  https://crossforest.eu/def/spatial-grid#hasCentroid
+spo:hasCentroid a owl:ObjectProperty , rdf:Property ;
+	rdfs:subPropertyOf spo:contains ;
+	rdfs:domain spo:SpatialEntity ;
+	rdfs:range spo:Centroid .
+
+###  https://crossforest.eu/def/spatial-grid#centroidOf
+spo:centroidOf a owl:ObjectProperty , rdf:Property ;
+	rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ; #en el fichero de alignment
+	owl:inverseOf <https://crossforest.eu/def/spatial-grid#hasCentroid> ;
+	rdfs:domain spo:Centroid ;
+	rdfs:range spo:SpatialEntity .
+
+###  https://crossforest.eu/def/spatial-grid#hasMeasure
+usar smo:hasMeasure en vez
+
+###  https://crossforest.eu/def/spatial-grid#spatialReferenceSystem
+usar smo:hasCoordinateReferenceSystem en vez
+
+
+#################################################################
+#    Datatype Properties
+#################################################################
+
+###  https://crossforest.eu/def/spatial-grid#cod
+spo:id  a owl:DatatypeProperty , rdf:Property ; # ¿Es realmente necesario?
+	rdfs:range xsd:string .
+
+
+###  https://crossforest.eu/def/spatial-grid#column
+spo:column a owl:DatatypeProperty , rdf:Property ;
+	rdfs:domain spo:Cell ;
+	rdfs:range xsd:integer ;
+	rdfs:comment "The number that identifies the column the cell belongs to in the grid. It will allow to obtain the adjacent cells in the horizontal axis."@en .
+
+
+###  https://crossforest.eu/def/spatial-grid#row
+spo:row a owl:DatatypeProperty  , rdf:Property ;
+	rdfs:domain <https://crossforest.eu/def/spatial-grid#cell> ;
+	rdfs:range xsd:integer ;
+	rdfs:comment "The number that identifies the row the cell belongs to in the grid. It will allow to obtain the adjacent cells in the vertical axis."@en .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://crossforest.eu/def/spatial-grid#cell
+spo:Cell a owl:Class , rdfs:Class ;
+	# rdfs:subClassOf spo:SpatialEntity #Esto sería equivalente a geo_core:ObjetoGeocrafico, pero yo recomendaría que las celdas fuesen posiciones, no entidades
+	rdfs:subClassOf spo:Position ;
+	rdfs:label "Cell"@en , "Celda"@es ;
+	rdfs:comment "Celda perteneciente a una cuadrícula"@es , "Cell belonging to a grid."@en .
+                                               
+grid:CellBadajoz a owl:Class , rdfs:Class ;
+	rdfs:subClassOf spo:Cell ;
+	rdfs:label "Cell of Badajoz"@en , "Celda de Badajoz"@es ;
+	rdfs:comment "Celda situada en la provincia de Badajoz"@es ;
+	territorio:autonomia autonomia:Extremadura ;
+	territorio:pais pais:España ;
+	territorio:provincia provincia:Badajoz .
+
+grid:Cell25 a owl:Class , rdfs:Class ;
+	rdfs:subClassOf spo:Cell ;
+	rdfs:label "Cell 25m2"@en , "Celda 25m2"@es ;
+	rdfs:comment "Celda de 25x25 metros cuadrados"@es ;
+	smo:hasMeasure grid:125m2 .
+
+###  https://crossforest.eu/def/spatial-grid#centroid
+spo:Centroid a owl:Class , rdfs:Class ;
+	# rdfs:subClassOf spo:SpatialEntity #Esto sería equivalente a geo_core:ObjetoGeocrafico, pero yo recomendaría que las celdas fuesen posiciones, no entidades
+	rdfs:subClassOf spo:Position ;
+    rdfs:comment "La clase representa el centroide de una cuadrícula"@es , "The class represents the centroid belonging to a cell."@en ;
+    rdfs:label "Centroid"@en .
+
+
+###  https://crossforest.eu/def/spatial-grid#grid
+spo:Grid a owl:Class ;
+	# rdfs:subClassOf spo:SpatialEntity #Esto sería equivalente a geo_core:ObjetoGeocrafico, pero yo recomendaría que las celdas fuesen posiciones, no entidades
+	rdfs:subClassOf spo:Layer ;
+	rdfs:label "Grid"@en ;
+    rdfs:comment "La clase representa un sistema espacial de cuadrículas"@es , "The class represents a system of spatial grids"@en .
+    
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://crossforest.eu/def/spatial-grid/grid/GRID-25-M
+grid:32630-25M a owl:NamedIndividual , spo:Grid ;
+	spo:hasCoordinateReferenceSystem epsg:32630 ;
+	# smo:hasMeasure grid:125m2 . #Esto sería lo equivalente a lo que había antes, pero no estoy seguro de que debiera estar aquí.
+	.
+
+###  https://crossforest.eu/def/spatial-grid/grid/GRID-1-KM
+grid:32630-1KM a owl:NamedIndividual , spo:Grid ;
+	spo:hasCoordinateReferenceSystem epsg:32630 ;
+	# smo:hasMeasure grid:1km2 . #Esto sería lo equivalente a lo que había antes, pero no estoy seguro de que debiera estar aquí.
+	.
+
+
+###  https://crossforest.eu/def/spatial-grid/grid/GRID-10-KM
+grid:32630-10KM a owl:NamedIndividual , spo:Grid ;
+	spo:hasCoordinateReferenceSystem epsg:32630 ;
+	# smo:hasMeasure grid:100km2 . #Esto sería lo equivalente a lo que había antes, pero no estoy seguro de que debiera estar aquí.
+	.
+
+
+
+###  https://crossforest.eu/def/spatial-grid#10x10km
+grid:125m2 a owl:NamedIndividual , smo:MeasureInSquareMeters ;
+        smo:hasUnit   unit:SquareMeters ;
+        smo:hasValue  "125"^^xsd:decimal .
+
+###  https://crossforest.eu/resource/spatial-grid/cell/06-25-M-000001
+cell:06-25-M-000001 a owl:NamedIndividual , grid:CellBadajoz , grid:Cell25 ;
+	geosparql:asWKT "sfdfdf"^^geosparql:wktLiteral .
+
+
