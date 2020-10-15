@@ -1,13 +1,17 @@
 @prefix ilu: <http://crossforest.eu/ilu/ontology/> .
 @prefix smo: <http://crossforest.eu/measures/ontology/> .
+@prefix spo: <http://crossforest.eu/position/ontology/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 
 
 ilu: a owl:Ontology ;
   rdfs:label "Iberian Land Usage Ontology"@en , "Ontología ibérica de uso del suelo"@es ;
-  rdfs:comment "Ontology to publish data about land use in the iberian peninsula"@en , "Ontología para publicar datos deuso del suelo en la península ibérica" ;
+  rdfs:comment "Ontology to publish data about land use in the iberian peninsula"@en , "Ontología para publicar datos deuso del suelo en la península ibérica"@es ;
   owl:versionInfo 0.1 ;
   dc:creator <https://www.crossforest.eu/members/josgim> , <https://www.crossforest.eu/members/guiveg> ;
   dc:date "2020-07-17"^^xsd:date ;
@@ -42,7 +46,7 @@ ilu:Area a owl:Class , rdfs:Class ;
   rdfs:isDefinedBy ilu: .
 
 ilu:LandUse a owl:Class , rdfs:Class ;
-  rdfs:label "Uso de la Tierra"@es , "Uso e Ocupação do Solo"@pt "Land Use"@en ;
+  rdfs:label "Uso de la Tierra"@es , "Uso e Ocupação do Solo"@pt , "Land Use"@en ;
   rdfs:comment ""@es , ""@en ;
   rdfs:isDefinedBy ilu: .
 

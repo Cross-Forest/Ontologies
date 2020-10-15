@@ -5,20 +5,19 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 
 
 cos: a owl:Ontology ;
   rdfs:label "Ontologia de Ocupação do Solo de Portugal"@pt , "Portuguese Land Usage Ontology"@en , "Ontología portuguesa de uso del suelo"@es ;
-  rdfs:comment "Ontologia de Uso e Ocupação do Solo de Portugal Continental"@pt "Ontology to publish data about land use in Portugal"@en , "Ontología para publicar datos deuso del suelo en Portugal" ;
+  rdfs:comment "Ontologia de Uso e Ocupação do Solo de Portugal Continental"@pt ,"Ontology to publish data about land use in Portugal"@en , "Ontología para publicar datos deuso del suelo en Portugal" ;
   owl:versionInfo 0.1 ;
   dc:creator <https://www.crossforest.eu/members/josgim> , <https://www.crossforest.eu/members/guiveg> ;
   dc:date "2020-07-17"^^xsd:date ;
 #  owl:imports fio: , spo: ;
   vann:preferredNamespacePrefix "cos" .
-
-properties:{"COS2018_n1":"4.Superfícies agroflorestais","COS2018_n4":"4.1.1.1","COS2018_Lg":"4.1.1.1 SAF de sobreiro","AREA":19.4485312483}},
 
 
 #################################################################
@@ -351,8 +350,7 @@ cos:Use2230 a owl:Class , rdfs:Class ;
 
 cos:Use2310 a owl:Class , rdfs:Class ;
   rdfs:subClassOf cos:Use2300 ;
-  rdfs:label ""@en , "Cultivos temporales y/o pastos asociados a cultivos permanentes"@es , "Culturas temporárias e/ou pastagens melhoradas
-associadas a culturas permanentes"@pt ;
+  rdfs:label ""@en , "Cultivos temporales y/o pastos asociados a cultivos permanentes"@es , "Culturas temporárias e/ou pastagens melhoradas associadas a culturas permanentes"@pt ;
   rdfs:comment ""@en , ""@es , ""@pt ;
   rdfs:isDefinedBy cos: .
 
