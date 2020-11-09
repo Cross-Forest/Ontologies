@@ -4,351 +4,351 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix mfe:   <http://crossforest.eu/mfe/ontology/> .
 
-mfe:ForestType-DOALC190 # modificado x ACO; FormacionArbolada x ForestType
+mfe:ForestTypeDOALC190 # modificado x ACO; FormacionArbolada x ForestType
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Coníferas alóctonas de gestión (Cupressus sp, Cedrus spp. otros pinos, etc.)"@es ;
-        rdfs:subClassOf      mfe:ForestType-C , mfe:ForestType-AL , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeC , mfe:ForestTypeAL , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies19 .
 
-mfe:ForestType-MXAAM883
+mfe:ForestTypeMXAAM883
         a                owl:Class , rdfs:Class ;
         rdfs:label       "Coníferas con frondosas (alóctonas con  autóctonas)"@es ;
-        rdfs:subClassOf  mfe:ForestType-M , mfe:ForestType-AA , mfe:ForestType-MX .
+        rdfs:subClassOf  mfe:ForestTypeM , mfe:ForestTypeAA , mfe:ForestTypeMX .
 
-mfe:ForestType-DOAUF710
+mfe:ForestTypeDOAUF710
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Hayedos (Fagus sylvatica)"@es ;
-        rdfs:subClassOf      mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeF , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies71 .
 
-mfe:ForestType-DOAUC320
+mfe:ForestTypeDOAUC320
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Pinsapares (Abies pinsapo)"@es ;
-        rdfs:subClassOf      mfe:ForestType-C , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeC , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies32 .
 
-mfe:ForestType-DOAUC220
+mfe:ForestTypeDOAUC220
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Pinar de pino negro (Pinus uncinata)"@es ;
-        rdfs:subClassOf      mfe:ForestType-C , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeC , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies22 .
 
-mfe:ForestType-STREC280
+mfe:ForestTypeSTREC280
         a                owl:Class , rdfs:Class ;
         rdfs:label       "Pinar de pino radiata (Pinus radiata)"@es ;
-        rdfs:subClassOf  mfe:ForestType-C , mfe:ForestType-RE , mfe:ForestType-ST .
+        rdfs:subClassOf  mfe:ForestTypeC , mfe:ForestTypeRE , mfe:ForestTypeST .
 
-mfe:ForestType-DOAUC261
+mfe:ForestTypeDOAUC261
         a                owl:Class , rdfs:Class ;
         rdfs:label       "Pinar de pino pinaster en región mediterránea (P.pinaster spp. mesogeensis)"@es ;
-        rdfs:subClassOf  mfe:ForestType-C , mfe:ForestType-AU , mfe:ForestType-DO .
+        rdfs:subClassOf  mfe:ForestTypeC , mfe:ForestTypeAU , mfe:ForestTypeDO .
 
-mfe:ForestType-MXAUC863
+mfe:ForestTypeMXAUC863
         a                    owl:Class , rdfs:Class ;
         rdfs:comment         "Excepto: 28-30, que sería formación 38"@es ;
         rdfs:label           "Mezcla de coníferas autóctonas en la región biogeográfica Mediterránea"@es ;
-        rdfs:subClassOf      mfe:ForestType-C , mfe:ForestType-AU , mfe:ForestType-MX ;
+        rdfs:subClassOf      mfe:ForestTypeC , mfe:ForestTypeAU , mfe:ForestTypeMX ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies14-19-21-22-23-24-25-26-27-28-30-31-32-37-38-39-219-238 .
 
-mfe:ForestType-DOAUF730
+mfe:ForestTypeDOAUF730
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Abedulares (Betula spp.)"@es ;
-        rdfs:subClassOf      mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeF , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies73 .
 
-mfe:ForestType-MXAUF820
+mfe:ForestTypeMXAUF820
         a                owl:Class , rdfs:Class ;
         rdfs:comment     "Frondosas autóctonas en Región Biogeográfica Atlántica"@es ;
         rdfs:label       "Bosque mixto de frondosas en la región biogeográfica Atlántica"@es ;
-        rdfs:subClassOf  mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-MX .
+        rdfs:subClassOf  mfe:ForestTypeF , mfe:ForestTypeAU , mfe:ForestTypeMX .
 
-mfe:ForestType-MXAAF881
+mfe:ForestTypeMXAAF881
         a                    owl:Class , rdfs:Class ;
         rdfs:comment         "Las especies 48 y 60 no se combinan porque irían a la formación 38"@es ;
         rdfs:label           "Frondosas alóctonas con  autóctonas"@es ;
-        rdfs:subClassOf      mfe:ForestType-F , mfe:ForestType-AA , mfe:ForestType-MX ;
+        rdfs:subClassOf      mfe:ForestTypeF , mfe:ForestTypeAA , mfe:ForestTypeMX ;
         mfe:hasSetOfSpecies  <http://crossforest.eu/mfe/ontology/SetofSpecies7-48-60%2F13-40-43-44-45-46-47-48%2A-50-55-56-58-60%2A-65-66-67-68-70-71-72-73-74-80-83-91-93-95-99-243-258-369-495> .
 
-mfe:ForestType-DOAUC240
+mfe:ForestTypeDOAUC240
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Pinar de pino carrasco (Pinus halepensis)"@es ;
-        rdfs:subClassOf      mfe:ForestType-C , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeC , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies24 .
 
-mfe:ForestType-MXAUF840
+mfe:ForestTypeMXAUF840
         a                owl:Class , rdfs:Class ;
         rdfs:comment     "Frondosas autóctonas en Región Biogeográfica Macaronésica"@es ;
         rdfs:label       "Bosque mixto de frondosas en la región biogeográfica Macaronésica"@es ;
-        rdfs:subClassOf  mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-MX .
+        rdfs:subClassOf  mfe:ForestTypeF , mfe:ForestTypeAU , mfe:ForestTypeMX .
 
-mfe:ForestType-DOAUC238
+mfe:ForestTypeDOAUC238
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Sabinares canarios (Juniperus turbinata)"@es ;
-        rdfs:subClassOf      mfe:ForestType-C , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeC , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies238 .
 
-mfe:ForestType-DOAUF430
+mfe:ForestTypeDOAUF430
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Melojares (Quercus pyrenaica)"@es ;
-        rdfs:subClassOf      mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeF , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies43 .
 
-mfe:ForestType-STREF600
+mfe:ForestTypeSTREF600
         a                owl:Class , rdfs:Class ;
         rdfs:label       "Eucaliptal (Eucaliptus spp.)"@es ;
-        rdfs:subClassOf  mfe:ForestType-F , mfe:ForestType-RE , mfe:ForestType-ST .
+        rdfs:subClassOf  mfe:ForestTypeF , mfe:ForestTypeRE , mfe:ForestTypeST .
 
-mfe:ForestType-DOAUF650
+mfe:ForestTypeDOAUF650
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Acebedas (Ilex aquifolium)"@es ;
-        rdfs:subClassOf      mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeF , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies65 .
 
-mfe:ForestType-DOAUC260
+mfe:ForestTypeDOAUC260
         a                owl:Class , rdfs:Class ;
         rdfs:label       "Pinar de pino negral "@es ;
-        rdfs:subClassOf  mfe:ForestType-C , mfe:ForestType-AU , mfe:ForestType-DO .
+        rdfs:subClassOf  mfe:ForestTypeC , mfe:ForestTypeAU , mfe:ForestTypeDO .
 
-mfe:ForestType-DOAUF550
+mfe:ForestTypeDOAUF550
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Fresnedas (Fraxinus spp.)"@es ;
-        rdfs:subClassOf      mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeF , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies55 .
 
-mfe:ForestType-MXAUC862
+mfe:ForestTypeMXAUC862
         a                    owl:Class , rdfs:Class ;
         rdfs:comment         "Excepto: 28-30, que sería formación 38"@es ;
         rdfs:label           "Mezcla de coníferas autóctonas en la región biogeográfica Atlántica"@es ;
-        rdfs:subClassOf      mfe:ForestType-C , mfe:ForestType-AU , mfe:ForestType-MX ;
+        rdfs:subClassOf      mfe:ForestTypeC , mfe:ForestTypeAU , mfe:ForestTypeMX ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies14-19-21-22-23-24-25-26-27-28-30-31-32-37-38-39-219-238 .
 
-mfe:ForestType-MXAAC882
+mfe:ForestTypeMXAAC882
         a                owl:Class , rdfs:Class ;
         rdfs:label       "Coníferas alóctonas con  autóctonas"@es ;
-        rdfs:subClassOf  mfe:ForestType-C , mfe:ForestType-AA , mfe:ForestType-MX .
+        rdfs:subClassOf  mfe:ForestTypeC , mfe:ForestTypeAA , mfe:ForestTypeMX .
 
-mfe:ForestType-DOAUF243
+mfe:ForestTypeDOAUF243
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Robledales de roble pubescente (Q. humilis)"@es ;
-        rdfs:subClassOf      mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeF , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies243 .
 
-mfe:ForestType-DOAUF450
+mfe:ForestTypeDOAUF450
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Encinares (Quercus ilex)"@es ;
-        rdfs:subClassOf      mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeF , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies45 .
 
-mfe:ForestType-DOAUC380
+mfe:ForestTypeDOAUC380
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Sabinares albares (Juniperus thurifera)"@es ;
-        rdfs:subClassOf      mfe:ForestType-C , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeC , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies38 .
 
-mfe:ForestType-DOAUF670
+mfe:ForestTypeDOAUF670
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Algarrobales (Ceratonia siliqua)"@es ;
-        rdfs:subClassOf      mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeF , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies67 .
 
-mfe:ForestType-STDEF920
+mfe:ForestTypeSTDEF920
         a                owl:Class , rdfs:Class ;
         rdfs:comment     "Tipo Estructural 3"@es ;
         rdfs:label       "Dehesas"@es ;
-        rdfs:subClassOf  mfe:ForestType-F , mfe:ForestType-DE , mfe:ForestType-ST .
+        rdfs:subClassOf  mfe:ForestTypeF , mfe:ForestTypeDE , mfe:ForestTypeST .
 
-mfe:ForestType-MXAUM874
+mfe:ForestTypeMXAUM874
         a                owl:Class , rdfs:Class ;
         rdfs:label       "Mezcla de coníferas y frondosas autóctonas en la región biogeográfica Macaronésica"@es ;
-        rdfs:subClassOf  mfe:ForestType-M , mfe:ForestType-AU , mfe:ForestType-MX .
+        rdfs:subClassOf  mfe:ForestTypeM , mfe:ForestTypeAU , mfe:ForestTypeMX .
 
-mfe:ForestType-DOAUF470
+mfe:ForestTypeDOAUF470
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Quejigares de Quercus canariensis"@es ;
-        rdfs:subClassOf      mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeF , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies47 .
 
-mfe:ForestType-MXAUC861
+mfe:ForestTypeMXAUC861
         a                    owl:Class , rdfs:Class ;
         rdfs:comment         "Excepto: 28-30, que sería formación 38"@es ;
         rdfs:label           "Mezcla de coníferas autóctonas en la región biogeográfica Alpina"@es ;
-        rdfs:subClassOf      mfe:ForestType-C , mfe:ForestType-AU , mfe:ForestType-MX ;
+        rdfs:subClassOf      mfe:ForestTypeC , mfe:ForestTypeAU , mfe:ForestTypeMX ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies14-19-21-22-23-24-25-26-27-28-30-31-32-37-38-39-219-238 .
 
-mfe:ForestType-DOAUC310
+mfe:ForestTypeDOAUC310
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Abetales (Abies alba)"@es ;
-        rdfs:subClassOf      mfe:ForestType-C , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeC , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies31 .
 
-mfe:ForestType-DOAUC210
+mfe:ForestTypeDOAUC210
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Pinar de pino albar (Pinus sylvestris)"@es ;
-        rdfs:subClassOf      mfe:ForestType-C , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeC , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies21 .
 
-mfe:ForestType-STDIF931
+mfe:ForestTypeSTDIF931
         a                owl:Class , rdfs:Class ;
         rdfs:label       "Arbolado disperso de frondosas"@es ;
-        rdfs:subClassOf  mfe:ForestType-F , mfe:ForestType-DI , mfe:ForestType-ST .
+        rdfs:subClassOf  mfe:ForestTypeF , mfe:ForestTypeDI , mfe:ForestTypeST .
 
-mfe:ForestType-MXAUM873
+mfe:ForestTypeMXAUM873
         a                owl:Class , rdfs:Class ;
         rdfs:label       "Mezcla de coníferas y frondosas autóctonas en la región biogeográfica Mediterránea"@es ;
-        rdfs:subClassOf  mfe:ForestType-M , mfe:ForestType-AU , mfe:ForestType-MX .
+        rdfs:subClassOf  mfe:ForestTypeM , mfe:ForestTypeAU , mfe:ForestTypeMX .
 
-mfe:ForestType-DOAUF720
+mfe:ForestTypeDOAUF720
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Castañares (Castanea sativa)"@es ;
-        rdfs:subClassOf      mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeF , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies72 .
 
-mfe:ForestType-MXAUF810
+mfe:ForestTypeMXAUF810
         a                owl:Class , rdfs:Class ;
         rdfs:comment     "Frondosas autóctonas en Región Biogeográfica Alpina"@es ;
         rdfs:label       "Bosque mixto de frondosas en la región biogeográfica Alpina"@es ;
-        rdfs:subClassOf  mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-MX .
+        rdfs:subClassOf  mfe:ForestTypeF , mfe:ForestTypeAU , mfe:ForestTypeMX .
 
-mfe:ForestType-DOAUF400
+mfe:ForestTypeDOAUF400
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Robledales de Q. robur y/o Q. petraea"@es ;
-        rdfs:subClassOf      mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeF , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies40 .
 
-mfe:ForestType-DOAUF940
+mfe:ForestTypeDOAUF940
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Avellanedas (Corylus avellana)"@es ;
-        rdfs:subClassOf      mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeF , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies74 .
 
-mfe:ForestType-DOALF070
+mfe:ForestTypeDOALF070
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Frondosas alóctonas invasoras "@es ;
-        rdfs:subClassOf      mfe:ForestType-F , mfe:ForestType-AL , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeF , mfe:ForestTypeAL , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies7 .
 
-mfe:ForestType-DOAUC230
+mfe:ForestTypeDOAUC230
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Pinar de pino piñonero (Pinus pinea)"@es ;
-        rdfs:subClassOf      mfe:ForestType-C , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeC , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies23 .
 
-mfe:ForestType-STREC262
+mfe:ForestTypeSTREC262
         a                owl:Class , rdfs:Class ;
         rdfs:label       "Pinares de pino pinaster en región atlántica (Pinus pinaster spp. atlántica)"@es ;
-        rdfs:subClassOf  mfe:ForestType-C , mfe:ForestType-RE , mfe:ForestType-ST .
+        rdfs:subClassOf  mfe:ForestTypeC , mfe:ForestTypeRE , mfe:ForestTypeST .
 
-mfe:ForestType-MXAUF830
+mfe:ForestTypeMXAUF830
         a                owl:Class , rdfs:Class ;
         rdfs:comment     "Frondosas autóctonas en Región Biogeográfica Mediterránea"@es ;
         rdfs:label       "Bosque mixto de frondosas en la región biogeográfica Mediterránea"@es ;
-        rdfs:subClassOf  mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-MX .
+        rdfs:subClassOf  mfe:ForestTypeF , mfe:ForestTypeAU , mfe:ForestTypeMX .
 
-mfe:ForestType-STREC300
+mfe:ForestTypeSTREC300
         a                owl:Class , rdfs:Class ;
         rdfs:label       "Otras coníferas alóctonas de producción (Larix spp., Pseudotsuga spp., etc)"@es ;
-        rdfs:subClassOf  mfe:ForestType-C , mfe:ForestType-RE , mfe:ForestType-ST .
+        rdfs:subClassOf  mfe:ForestTypeC , mfe:ForestTypeRE , mfe:ForestTypeST .
 
-mfe:ForestType-STDIM933
+mfe:ForestTypeSTDIM933
         a                owl:Class , rdfs:Class ;
         rdfs:label       "Arbolado disperso coníferas y frondosas"@es ;
-        rdfs:subClassOf  mfe:ForestType-M , mfe:ForestType-DI , mfe:ForestType-ST .
+        rdfs:subClassOf  mfe:ForestTypeM , mfe:ForestTypeDI , mfe:ForestTypeST .
 
-mfe:ForestType-STREF480
+mfe:ForestTypeSTREF480
         a                owl:Class , rdfs:Class ;
         rdfs:label       "Repoblación de Quercus rubra"@es ;
-        rdfs:subClassOf  mfe:ForestType-F , mfe:ForestType-RE , mfe:ForestType-ST .
+        rdfs:subClassOf  mfe:ForestTypeF , mfe:ForestTypeRE , mfe:ForestTypeST .
 
-mfe:ForestType-STDIC932
+mfe:ForestTypeSTDIC932
         a                owl:Class , rdfs:Class ;
         rdfs:label       "Arbolado disperso coníferas"@es ;
-        rdfs:subClassOf  mfe:ForestType-C , mfe:ForestType-DI , mfe:ForestType-ST .
+        rdfs:subClassOf  mfe:ForestTypeC , mfe:ForestTypeDI , mfe:ForestTypeST .
 
-mfe:ForestType-STREF258
+mfe:ForestTypeSTREF258
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Choperas y plataneras de producción"@es ;
-        rdfs:subClassOf      mfe:ForestType-F , mfe:ForestType-RE , mfe:ForestType-ST ;
+        rdfs:subClassOf      mfe:ForestTypeF , mfe:ForestTypeRE , mfe:ForestTypeST ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies258 .
 
-mfe:ForestType-DOAUC250
+mfe:ForestTypeDOAUC250
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Pinar de pino salgareño (Pinus nigra)"@es ;
-        rdfs:subClassOf      mfe:ForestType-C , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeC , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies25 .
 
-mfe:ForestType-MXAUM872
+mfe:ForestTypeMXAUM872
         a                owl:Class , rdfs:Class ;
         rdfs:label       "Mezcla de coníferas y frondosas autóctonas en la región biogeográfica Atlántica"@es ;
-        rdfs:subClassOf  mfe:ForestType-M , mfe:ForestType-AU , mfe:ForestType-MX .
+        rdfs:subClassOf  mfe:ForestTypeM , mfe:ForestTypeAU , mfe:ForestTypeMX .
 
-mfe:ForestType-STRIF910
+mfe:ForestTypeSTRIF910
         a                    owl:Class , rdfs:Class ;
         rdfs:comment         "Tipo Estructural 11"@es ;
         rdfs:label           "Bosque ribereño"@es ;
-        rdfs:subClassOf      mfe:ForestType-F , mfe:ForestType-RI , mfe:ForestType-ST ;
+        rdfs:subClassOf      mfe:ForestTypeF , mfe:ForestTypeRI , mfe:ForestTypeST ;
         mfe:hasSetOfSpecies  <http://crossforest.eu/mfe/ontology/SetofSpecies50%3B50%2F55-58%3B13%2F55-50-58%3B55%2F58-258> .
 
-mfe:ForestType-MXAUF850
+mfe:ForestTypeMXAUF850
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Palmerales y mezclas de palmeras con otras especies"@es ;
-        rdfs:subClassOf      mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-MX ;
+        rdfs:subClassOf      mfe:ForestTypeF , mfe:ForestTypeAU , mfe:ForestTypeMX ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies369 .
 
-mfe:ForestType-DOAUF440
+mfe:ForestTypeDOAUF440
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Quejigares (Quercus faginea)"@es ;
-        rdfs:subClassOf      mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeF , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies44 .
 
-mfe:ForestType-DOAUC370
+mfe:ForestTypeDOAUC370
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Enebrales (Juniperus spp.)"@es ;
-        rdfs:subClassOf      mfe:ForestType-C , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeC , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies37 .
 
-mfe:ForestType-DOAUF660
+mfe:ForestTypeDOAUF660
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Acebuchales (Olea europaea var. sylvestris)"@es ;
-        rdfs:subClassOf      mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeF , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies66 .
 
-mfe:ForestType-STREM940
+mfe:ForestTypeSTREM940
         a                owl:Class , rdfs:Class ;
         rdfs:label       "Otras de especies de producción en mezcla"@es ;
-        rdfs:subClassOf  mfe:ForestType-M , mfe:ForestType-RE , mfe:ForestType-ST .
+        rdfs:subClassOf  mfe:ForestTypeM , mfe:ForestTypeRE , mfe:ForestTypeST .
 
-mfe:ForestType-DOAUC270
+mfe:ForestTypeDOAUC270
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Pinar de pino canario (Pinus canariensis)"@es ;
-        rdfs:subClassOf      mfe:ForestType-C , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeC , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies27 .
 
-mfe:ForestType-DOAUF460
+mfe:ForestTypeDOAUF460
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Alcornocales (Quercus suber)"@es ;
-        rdfs:subClassOf      mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeF , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies46 .
 
-mfe:ForestType-DOAUC390
+mfe:ForestTypeDOAUC390
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Sabinares de Juniperus phoenicea"@es ;
-        rdfs:subClassOf      mfe:ForestType-C , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeC , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies39 .
 
-mfe:ForestType-DOAUF680
+mfe:ForestTypeDOAUF680
         a                    owl:Class , rdfs:Class ;
         rdfs:label           "Madroñales (Arbutus unedo)"@es ;
-        rdfs:subClassOf      mfe:ForestType-F , mfe:ForestType-AU , mfe:ForestType-DO ;
+        rdfs:subClassOf      mfe:ForestTypeF , mfe:ForestTypeAU , mfe:ForestTypeDO ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies68 .
 
-mfe:ForestType-MXAUM871
+mfe:ForestTypeMXAUM871
         a                owl:Class , rdfs:Class ;
         rdfs:label       "Mezcla de coníferas y frondosas autóctonas en la región biogeográfica Alpina"@es ;
-        rdfs:subClassOf  mfe:ForestType-M , mfe:ForestType-AU , mfe:ForestType-MX .
+        rdfs:subClassOf  mfe:ForestTypeM , mfe:ForestTypeAU , mfe:ForestTypeMX .
 
-mfe:ForestType-MXAUC864
+mfe:ForestTypeMXAUC864
         a                    owl:Class , rdfs:Class ;
         rdfs:comment         "Excepto: 28-30, que sería formación 38"@es ;
         rdfs:label           "Mezcla de coníferas autóctonas en la región biogeográfica Macaronésica"@es ;
-        rdfs:subClassOf      mfe:ForestType-C , mfe:ForestType-AU , mfe:ForestType-MX ;
+        rdfs:subClassOf      mfe:ForestTypeC , mfe:ForestTypeAU , mfe:ForestTypeMX ;
         mfe:hasSetOfSpecies  mfe:SetofSpecies14-19-21-22-23-24-25-26-27-28-30-31-32-37-38-39-219-238 .
