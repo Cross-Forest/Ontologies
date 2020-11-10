@@ -1,5 +1,5 @@
 @prefix mfe: <http://crossforest.eu/mfe/ontology/> .
-@prefix fio: <http://crossforest.eu/forinv/ontology/> .
+@prefix ilu: <http://crossforest.eu/ilu/ontology/> .
 @prefix smo: <http://crossforest.eu/measures/ontology/> .
 @prefix spo: <http://crossforest.eu/position/ontology/> .
 @prefix ifn: <http://crossforest.eu/ifn/ontology/> .
@@ -25,7 +25,7 @@ mfe: a owl:Ontology ;
   owl:versionInfo 0.1 ;
   dc:creator <https://www.crossforest.eu/members/josgim> , <https://www.crossforest.eu/members/guiveg> ;
   dc:date "2019-07-17"^^xsd:date ;
-  owl:imports fio: , spo: ;
+  owl:imports smo: , spo: ;
   vann:preferredNamespacePrefix "mfe" .
 
 
@@ -132,7 +132,7 @@ mfe:BiogeographicRegion a owl:Class , rdfs:Class ;
 
 mfe:ForestType a owl:Class , rdfs:Class ;
   rdfs:label "Formación Arbolada"@es , "Forest Type"@en ;
-  rdfs:comment "La Formación Arbolada representa la comunidad vegetal arbórea de orden superior con fisiología y biología homogénea y viene determinada por la Ocupación de la especie principal o por la Ocupación formada por las especies presentes."@es ;
+  rdfs:comment "La Formación Arbolada representa la comunidad vegetal arbórea de orden superior con fisiología y biología homogénea y viene determinada por la Ocupación de la especie principal o por la Ocupación formada por las especies presentes."@es .
 
 mfe:Use a owl:Class , rdfs:Class ; # Debería in en una ontología de ordenación de territorio (land use planning)
   rdfs:label "Soil use"@en , "Uso del suelo"@es ;
