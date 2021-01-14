@@ -11,24 +11,28 @@ ifn:Use100 a owl:Class , rdfs:Class ;
 
 ifn:Use200 a owl:Class , rdfs:Class ;
   rdfs:subClassOf ifn:Use ;
+  rdfs:subClassOf ilu:AgriculturalLand ;
   rdfs:label "Farms"@en , "Cultivos"@es ;
   rdfs:comment "Territorio o ecosistema poblado con siembras o plantaciones de herbáceas y/o leñosas, anuales o plurianuales que se laborea con una fuerte intervención humana, puede estar poblado por especies forestales de fruto (flor, hojas o en el futuro biomasa) siempre que la intervención humana sea importante. Incluye las dehesas, montes huecos o montes adehesados de base cultivo, siempre que la fracción de cabida cubierta de los árboles sea inferior al 5%."@es ;
   rdfs:isDefinedBy ifn: .
 
 ifn:Use300 a owl:Class , rdfs:Class ;
   rdfs:subClassOf ifn:Use ;
+  rdfs:subClassOf ilu:ArtificialLand ;
   rdfs:label "Artificial"@en , "Artificial"@es ;
   rdfs:comment "Territorio o ecosistemas dominado por edificios, parques urbanos (aunque estén poblados de arboles), viveros fuera de los montes (aunque sean de especies forestales), carreteras (salvo las vías de servicio de los montes) u otras construcciones humanas que tengan superficies continuas."@es ;
   rdfs:isDefinedBy ifn: .
 
 ifn:Use400 a owl:Class , rdfs:Class ;
   rdfs:subClassOf ifn:Use ;
+  rdfs:subClassOf ilu:WetLand ;
   rdfs:label "Wetland"@en , "Humedal"@es ;
   rdfs:comment "Lo constituyen las lagunas, charcas, zonas húmedas, marismas y corrientes discontinuas de agua en las que, al menos durante 6 meses del año, esté presente dicho líquido."@es ;
   rdfs:isDefinedBy ifn: .
 
 ifn:Use500 a owl:Class , rdfs:Class ;
   rdfs:subClassOf ifn:Use ;
+  rdfs:subClassOf ilu:WetLand ;
   rdfs:label "Water"@en , "Agua"@es ;
   rdfs:comment "Es la parte de la tierra constituida por ríos, lagos, embalses, canales o estanques con superficies continuas de más de 0.26 Ha. Y con agua prácticamente todo el año."@es ;
   rdfs:isDefinedBy ifn: .
@@ -59,42 +63,49 @@ ifn:Use104 a owl:Class , rdfs:Class ;
 
 ifn:Use110 a owl:Class , rdfs:Class ;
   rdfs:subClassOf ifn:Use100 ;
+  rdfs:subClassOf ilu:ForestLand ;
   rdfs:label "Wooded area"@en, "Monte arbolado"@es ;
   rdfs:comment "Territorio o ecosistema con especies forestales arbóreas como manifestación vegetal de estructura vertical dominante y con una fracción de cabida cubierta igual o superior al 20%; el término incluye las dehesas de base cultivo o pastizal con labores siempre que la fracción de cabida cubierta arbolada sea superior al 20% y excluye los terrenos poblados por especies forestales arbóreas con fuerte intervención humana, para la obtención de frutos, hojas, flores o varas."@es ;
   rdfs:isDefinedBy ifn: .
 
 ifn:Use120 a owl:Class , rdfs:Class ;
   rdfs:subClassOf ifn:Use100 ;
+  rdfs:subClassOf ilu:ForestLand ;
   rdfs:label "Sparse wooded area"@en, "Monte arbolado ralo"@es ;
   rdfs:comment "Terreno de uso forestal poblado con especies arbóreas forestales como manifestación botánica dominante y con una fracción de cabida cubierta por ellas comprendida entre el 10 y el 20% (incluido el 10, excluido el 20); también terreno con especies de matorral o pastizal natural como manifestación vegetal dominante, pero con una presencia de árboles forestales importante cuantificada por una fracción de cabida cubierta arbórea similar a la anteriormente descrita incluyéndose aquí las dehesas de base de cultivo."@es ;
   rdfs:isDefinedBy ifn: .
 
 ifn:Use130 a owl:Class , rdfs:Class ;
   rdfs:subClassOf ifn:Use100 ;
+  rdfs:subClassOf ilu:TreelessLand ;
   rdfs:label "Temporarily treeless land"@en, "Monte temporalmente desarbolado"@es ;
   rdfs:comment "Terreno que en el pasado cercano era monte arbolado y actualmente está desprovisto de árboles opero que, casi con seguridad, en el futuro próximo volverá a estar cubierto de ellos."@es ;
   rdfs:isDefinedBy ifn: .
 
 ifn:Use140 a owl:Class , rdfs:Class ;
   rdfs:subClassOf ifn:Use100 ;
+  rdfs:subClassOf ilu:TreelessLand ;
   rdfs:label "Treeless land"@en, "Monte desarbolado"@es ;
   rdfs:comment "Terreno poblado con especies de matorral o/y pastizal natural o con débil intervención humana como manifestación vegetal dominante con presencia o no de árboles forestales, pero en todo caso con la fracción de cabida cubierta por éstos inferior al 5%."@es ;
   rdfs:isDefinedBy ifn: .
 
 ifn:Use150 a owl:Class , rdfs:Class ;
   rdfs:subClassOf ifn:Use100 ;
+  rdfs:subClassOf ilu:ForestLand ;
   rdfs:label "Wooded area without upper montane formations"@en, "Monte sin vegetación superior"@es ;
   rdfs:comment "Terreno que se encuentra en los mismos parajes de uso forestal que los anteriores y que, teóricamente, podría ser monte arbolado o desarbolado pero que, debido a las circunstancias actuales de suelo, clima o de topografía, no está poblado por vegetales superiores, aunque sí podría estarlo por vegetales inferiores o aparecer sin cubierta vegetal alguna."@es ;
   rdfs:isDefinedBy ifn: .
 
 ifn:Use160 a owl:Class , rdfs:Class ;
   rdfs:subClassOf ifn:Use100 ;
+  rdfs:subClassOf ilu:ForestLand ;
   rdfs:label "Thicket"@en, "Árboles fuera del monte"@es ;
   rdfs:comment "Este concepto comprende, dentro del uso forestal, las riberas pobladas de árboles que no sean plantaciones situadas fuera de los montes o sin estar estructuradas con ellos, los bosquetes de menos de 2.500 m 2 de cabida, las alineaciones de especies arbóreas o arbustivas de anchura menor de 25 m y los árboles sueltos situados sobre algún terreno de uso forestal."@es ;
   rdfs:isDefinedBy ifn: .
 
 ifn:Use170 a owl:Class , rdfs:Class ;
   rdfs:subClassOf ifn:Use100 ;
+  rdfs:subClassOf ilu:TreelessLand ;
   rdfs:label "Extremely sparse wooded area"@en, "Monte arbolado disperso"@es ;
   rdfs:comment "Terreno de uso forestal poblado con especies arbóreas forestales como manifestación botánica dominante y con una fracción de cabida cubierta por ellas comprendida entre el 5 y el 10% (incluido el 5, excluido el 10); también terreno con especies de matorral o pastizal natural como manifestación vegetal dominante, pero con una presencia de árboles forestales importante cuantificada por una fracción de cabida cubierta arbórea similar a la anteriormente descrita incluyéndose aquí las dehesas de base de cultivo."@es ;
   rdfs:isDefinedBy ifn: .
