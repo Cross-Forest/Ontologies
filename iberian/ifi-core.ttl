@@ -17,7 +17,7 @@
                                        dc:date "2021-03-01" ;
                                        vann:preferredNamespacePrefix "ifi" ;
                                        rdfs:comment "Ontology to publish data about forestry inventory in the Iberian Peninsula"@en ,
-                                                    "Ontología para publicar datos deuso del suelo en la península ibérica"@es ;
+                                                    "Ontología para publicar datos de inventario foresal en la Península ibérica"@es ;
                                        rdfs:label "Iberian Forestry Inventory Ontology"@en ,
                                                   "Ontología ibérica de inventario forestal"@es ;
                                        owl:versionInfo 0.1 .
@@ -72,9 +72,9 @@ vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 
 ###  http://crossforest.eu/ifi/ontology/containsDominantFormation
 ifi:containsDominantFormation rdf:type owl:ObjectProperty ;
-                              rdfs:domain ifi:ForestryInventory ,
-                                          ifi:NUTS3 ;
+                              rdfs:domain owl:Thing ;
                               rdfs:range ifi:InfoDominantFormation ;
+                              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
                               rdfs:label "contains dominant formation"@en ,
                                          "contiene formación dominante"@es .
 
@@ -92,6 +92,7 @@ ifi:hasBasalArea rdf:type owl:ObjectProperty ;
 ifi:hasDominantFormation rdf:type owl:ObjectProperty ;
                          rdfs:domain ifi:InfoDominantFormation ;
                          rdfs:range ifi:DominantFormation ;
+                         rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
                          rdfs:label "has dominant formation"@en ,
                                     "tiene formación dominante"@es .
 
@@ -121,6 +122,7 @@ ifi:hasVolumeWithBark rdf:type owl:ObjectProperty ;
 ###  http://crossforest.eu/ifi/ontology/hasBasalAreaInM2
 ifi:hasBasalAreaInM2 rdf:type owl:DatatypeProperty ;
                      rdfs:domain ifi:InfoDominantFormation ;
+                     rdfs:range xsd:float ;
                      rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
                      rdfs:label "has basal area in square meters"@en ,
                                 "tiene área basimétrica en metros cuadrados"@es .
@@ -129,6 +131,7 @@ ifi:hasBasalAreaInM2 rdf:type owl:DatatypeProperty ;
 ###  http://crossforest.eu/ifi/ontology/hasBasalAreaInM2ByHA
 ifi:hasBasalAreaInM2ByHA rdf:type owl:DatatypeProperty ;
                          rdfs:domain ifi:InfoDominantFormationByHA ;
+                         rdfs:range xsd:float ;
                          rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
                          rdfs:label "has basal area in square meters by hectare"@en ,
                                     "tiene área basimétrica en metros cuadrados por hectárea"@es .
@@ -137,6 +140,7 @@ ifi:hasBasalAreaInM2ByHA rdf:type owl:DatatypeProperty ;
 ###  http://crossforest.eu/ifi/ontology/hasNumberOfTreesInUnits
 ifi:hasNumberOfTreesInUnits rdf:type owl:DatatypeProperty ;
                             rdfs:domain ifi:InfoDominantFormation ;
+                            rdfs:range xsd:float ;
                             rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
                             rdfs:label "has number of trees in units"@en ,
                                        "tiene número de árboles en unidades"@es .
@@ -145,6 +149,7 @@ ifi:hasNumberOfTreesInUnits rdf:type owl:DatatypeProperty ;
 ###  http://crossforest.eu/ifi/ontology/hasNumberOfTreesInUnitsByHA
 ifi:hasNumberOfTreesInUnitsByHA rdf:type owl:DatatypeProperty ;
                                 rdfs:domain ifi:InfoDominantFormationByHA ;
+                                rdfs:range xsd:float ;
                                 rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
                                 rdfs:label "has number of trees in units per hectare"@en ,
                                            "tiene número de árboles en unidades por hectárea"@es .
@@ -152,12 +157,16 @@ ifi:hasNumberOfTreesInUnitsByHA rdf:type owl:DatatypeProperty ;
 
 ###  http://crossforest.eu/ifi/ontology/hasVersionId
 ifi:hasVersionId rdf:type owl:DatatypeProperty ;
-                 rdfs:domain ifi:ForestryInventory .
+                 rdfs:domain ifi:ForestryInventory ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "has version identifier"@en ,
+                            "tiene identificador de versión"@es .
 
 
 ###  http://crossforest.eu/ifi/ontology/hasVolumeWithBarkInM3
 ifi:hasVolumeWithBarkInM3 rdf:type owl:DatatypeProperty ;
                           rdfs:domain ifi:InfoDominantFormation ;
+                          rdfs:range xsd:float ;
                           rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
                           rdfs:label "has volume with bark in cubic meters"@en ,
                                      "tiene volumen con corteza en metros cúbicos"@es .
@@ -166,6 +175,7 @@ ifi:hasVolumeWithBarkInM3 rdf:type owl:DatatypeProperty ;
 ###  http://crossforest.eu/ifi/ontology/hasVolumeWithBarkInM3ByHA
 ifi:hasVolumeWithBarkInM3ByHA rdf:type owl:DatatypeProperty ;
                               rdfs:domain ifi:InfoDominantFormationByHA ;
+                              rdfs:range xsd:float ;
                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
                               rdfs:label "has volume with bark in cubic meters by hectare"@en ,
                                          "tiene volumen con corteza en metros cúbicos por hectárea"@es .
@@ -187,18 +197,23 @@ ifi:BasalArea rdf:type owl:Class ;
 
 ###  http://crossforest.eu/ifi/ontology/DominantFormation
 ifi:DominantFormation rdf:type owl:Class ;
+                      rdfs:comment "En Portugal es una categorización nacional, la misma para todos los NUTS3 en el caso del invetario portugués en versión 6."@es ,
+                                   "En el Inventario Forestal Nacional se corresponde con el concepto de Estrato, el cual depende de cada provincia y versión de inventario."@es ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
                       rdfs:label "Dominant formation"@en ,
                                  "Formación dominante"@es .
 
 
 ###  http://crossforest.eu/ifi/ontology/ForestryInventory
 ifi:ForestryInventory rdf:type owl:Class ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
                       rdfs:label "Forestry inventory"@en ,
                                  "Inventario forestal"@es .
 
 
 ###  http://crossforest.eu/ifi/ontology/InfoDominantFormation
 ifi:InfoDominantFormation rdf:type owl:Class ;
+                          rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
                           rdfs:label "Info about dominant formation"@en ,
                                      "Información sobre la formación dominante"@es .
 
@@ -206,51 +221,56 @@ ifi:InfoDominantFormation rdf:type owl:Class ;
 ###  http://crossforest.eu/ifi/ontology/InfoDominantFormationByHA
 ifi:InfoDominantFormationByHA rdf:type owl:Class ;
                               rdfs:subClassOf ifi:InfoDominantFormation ;
+                              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
                               rdfs:label "Info about dominant formation by hectare"@en ,
                                          "Información sobre la formación dominante por hectárea"@es .
 
 
 ###  http://crossforest.eu/ifi/ontology/NUTS1
 ifi:NUTS1 rdf:type owl:Class ;
-          rdfs:subClassOf spo:SpatialEntity ;
-          dc:source "Eurostat"@en ;
-          rdfs:comment "Clasificación NUTS (Nomenclatura de las Unidades Territoriales Estadísticas). En España se corresponden con la agrupación de comunidades autónomas"@es ,
-                       "NUTS classification (Nomenclature of territorial units for statistics)"@en ,
-                       "NUTS classificação (Nomenclatura das Unidades Territoriais para Fins Estatísticos). As NUTS I correspondem ao três unidades, correspondentes ao território do continente e de cada uma das Regiões Autónomas dos Açores e da Madeira"@pt ;
+          rdfs:subClassOf ifi:NUTS_Unit ;
+          rdfs:comment "As NUTS I correspondem ao três unidades, correspondentes ao território do continente e de cada uma das Regiões Autónomas dos Açores e da Madeira"@pt ,
+                       "En España se corresponden con la agrupación de comunidades autónomas"@es ;
           rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
           rdfs:label "Gran región socioeconómica"@es ,
                      "Major socio-economic region"@en ,
-                     "Sub-região"@pt ;
-          <https://dbpedia.org/ontology/purpose> "Statistical"@en .
+                     "Sub-região"@pt .
 
 
 ###  http://crossforest.eu/ifi/ontology/NUTS2
 ifi:NUTS2 rdf:type owl:Class ;
-          rdfs:subClassOf spo:SpatialEntity ;
-          dc:source "Eurostat"@en ;
-          rdfs:comment "Clasificación NUTS (Nomenclatura de las Unidades Territoriales Estadísticas). En España se corresponden con Comunidades y ciudades autónomas"@es ,
-                       "NUTS classification (Nomenclature of territorial units for statistics)"@en ,
-                       "NUTS classificação (Nomenclatura das Unidades Territoriais para Fins Estatísticos). As NUTS II correspondem ao sete unidades, as regiões, das quais cinco no continente e os territórios das Regiões Autónomas dos Açores e da Madeira"@pt ;
+          rdfs:subClassOf ifi:NUTS_Unit ;
+          rdfs:comment "As NUTS II correspondem ao sete unidades, as regiões, das quais cinco no continente e os territórios das Regiões Autónomas dos Açores e da Madeira"@pt ,
+                       "En España se corresponden con Comunidades y ciudades autónomas"@es ;
           rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
           rdfs:label "Basic region for the application of regional policies"@en ,
                      "Região"@pt ,
-                     "Región básica para la aplicación de políticas regionales"@es ;
-          <https://dbpedia.org/ontology/purpose> "Statistical"@en .
+                     "Región básica para la aplicación de políticas regionales"@es .
 
 
 ###  http://crossforest.eu/ifi/ontology/NUTS3
 ifi:NUTS3 rdf:type owl:Class ;
-          rdfs:subClassOf spo:SpatialEntity ;
-          dc:source "Eurostat"@en ;
-          rdfs:comment "Clasificación NUTS (Nomenclatura de las Unidades Territoriales Estadísticas). En España se asemejan a las provincias peninsulares, ciudades autónomas e islas"@es ,
-                       "NUTS classification (Nomenclature of territorial units for statistics)"@en ,
-                       "NUTS classificação (Nomenclatura das Unidades Territoriais para Fins Estatísticos). As NUTS III correspondem ao território das Entidades Intermunicipais (Comunidades Intermunicipais e Áreas Metropolitanas, no caso de Lisboa e Porto)"@pt ;
+          rdfs:subClassOf ifi:NUTS_Unit ;
+          rdfs:comment "As NUTS III correspondem ao território das Entidades Intermunicipais (Comunidades Intermunicipais e Áreas Metropolitanas, no caso de Lisboa e Porto)"@pt ,
+                       "En España se corresponden con las provincias peninsulares, ciudades autónomas e islas"@es ;
           rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
           rdfs:label "Small region for specific diagnoses"@en ,
                      "Sub-região"@pt ,
                      "Subregión"@es ;
-          <http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/Province> ;
-          <https://dbpedia.org/ontology/purpose> "Statistical"@en .
+          <http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/Province> .
+
+
+###  http://crossforest.eu/ifi/ontology/NUTS_Unit
+ifi:NUTS_Unit rdf:type owl:Class ;
+              rdfs:subClassOf spo:SpatialEntity ;
+              dc:source "Eurostat"@en ;
+              rdfs:comment "Clasificación NUTS (Nomenclatura de las Unidades Territoriales Estadísticas)."@es ,
+                           "NUTS classification (Nomenclature of territorial units for statistics)"@en ,
+                           "NUTS classificação (Nomenclatura das Unidades Territoriais para Fins Estatísticos)."@pt ;
+              rdfs:label ""@pt ,
+                         "NUTS unit"@en ,
+                         "Unidad NUTS"@es ;
+              <https://dbpedia.org/ontology/purpose> "Statistical"@en .
 
 
 ###  http://crossforest.eu/ifi/ontology/NumberOfTrees
@@ -404,7 +424,7 @@ spo:SpatialEntity rdf:type owl:Class .
 <http://crossforest.eu/ifi/data/nuts1/PT/PT2> rdf:type owl:NamedIndividual ,
                                                        ifi:NUTS1 ;
                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-                                              rdfs:label "REGIÃO AUTÓNOMA DOS AÇORES" ;
+                                              rdfs:label "REGIÃO AUTÓNOMA DOS AÇORES (NUTS 1)" ;
                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifi/data/nuts_geovocab/PT2> ;
                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts2/PT/PT20> .
 
@@ -413,7 +433,7 @@ spo:SpatialEntity rdf:type owl:Class .
 <http://crossforest.eu/ifi/data/nuts1/PT/PT3> rdf:type owl:NamedIndividual ,
                                                        ifi:NUTS1 ;
                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-                                              rdfs:label "REGIÃO AUTÓNOMA DA MADEIRA" ;
+                                              rdfs:label "REGIÃO AUTÓNOMA DA MADEIRA (NUTS 1)" ;
                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifi/data/nuts_geovocab/PT3> ;
                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts2/PT/PT30> .
 
@@ -720,7 +740,7 @@ spo:SpatialEntity rdf:type owl:Class .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT20> rdf:type owl:NamedIndividual ,
                                                         ifi:NUTS2 ;
                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-                                               rdfs:label "REGIÃO AUTÓNOMA DOS AÇORES" ;
+                                               rdfs:label "REGIÃO AUTÓNOMA DOS AÇORES (NUTS 2)" ;
                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/PT/PT2> ;
                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifi/data/nuts_geovocab/PT20> ;
                                                <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/PT/PT200> .
@@ -730,7 +750,7 @@ spo:SpatialEntity rdf:type owl:Class .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT30> rdf:type owl:NamedIndividual ,
                                                         ifi:NUTS2 ;
                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-                                               rdfs:label "REGIÃO AUTÓNOMA DA MADEIRA" ;
+                                               rdfs:label "REGIÃO AUTÓNOMA DA MADEIRA (NUTS 2)" ;
                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/PT/PT3> ;
                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifi/data/nuts_geovocab/PT30> ;
                                                <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/PT/PT300> .
@@ -776,7 +796,7 @@ spo:SpatialEntity rdf:type owl:Class .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES120> rdf:type owl:NamedIndividual ,
                                                          ifi:NUTS3 ;
                                                 rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-                                                rdfs:label "PRINCIPADO DE ASTURIAS" ;
+                                                rdfs:label "PRINCIPADO DE ASTURIAS (NUTS 3)" ;
                                                 <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES12> ;
                                                 <http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifi/data/nuts_geovocab/ES120> .
 
@@ -785,7 +805,7 @@ spo:SpatialEntity rdf:type owl:Class .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES130> rdf:type owl:NamedIndividual ,
                                                          ifi:NUTS3 ;
                                                 rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-                                                rdfs:label "CANTABRIA" ;
+                                                rdfs:label "CANTABRIA (NUTS 3)" ;
                                                 <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES13> ;
                                                 <http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifi/data/nuts_geovocab/ES130> .
 
@@ -821,7 +841,7 @@ spo:SpatialEntity rdf:type owl:Class .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES220> rdf:type owl:NamedIndividual ,
                                                          ifi:NUTS3 ;
                                                 rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-                                                rdfs:label "COMUNIDAD FORAL DE NAVARRA" ;
+                                                rdfs:label "COMUNIDAD FORAL DE NAVARRA (NUTS 3)" ;
                                                 <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES22> ;
                                                 <http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifi/data/nuts_geovocab/ES220> .
 
@@ -830,7 +850,7 @@ spo:SpatialEntity rdf:type owl:Class .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES230> rdf:type owl:NamedIndividual ,
                                                          ifi:NUTS3 ;
                                                 rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-                                                rdfs:label "LA RIOJA" ;
+                                                rdfs:label "LA RIOJA (NUTS 3)" ;
                                                 <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES23> ;
                                                 <http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifi/data/nuts_geovocab/ES230> .
 
@@ -866,7 +886,7 @@ spo:SpatialEntity rdf:type owl:Class .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES300> rdf:type owl:NamedIndividual ,
                                                          ifi:NUTS3 ;
                                                 rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-                                                rdfs:label "COMUNIDAD DE MADRID" ;
+                                                rdfs:label "COMUNIDAD DE MADRID (NUTS 3)" ;
                                                 <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES30> ;
                                                 <http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifi/data/nuts_geovocab/ES300> .
 
@@ -1181,7 +1201,7 @@ spo:SpatialEntity rdf:type owl:Class .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES620> rdf:type owl:NamedIndividual ,
                                                          ifi:NUTS3 ;
                                                 rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-                                                rdfs:label "REGIÓN DE MURCIA" ;
+                                                rdfs:label "REGIÓN DE MURCIA (NUTS 3)" ;
                                                 <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES62> ;
                                                 <http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifi/data/nuts_geovocab/ES620> .
 
@@ -1335,7 +1355,7 @@ spo:SpatialEntity rdf:type owl:Class .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT150> rdf:type owl:NamedIndividual ,
                                                          ifi:NUTS3 ;
                                                 rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-                                                rdfs:label "ALGARVE" ;
+                                                rdfs:label "ALGARVE (NUTS 3)" ;
                                                 <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT15> .
 
 
@@ -1455,7 +1475,7 @@ spo:SpatialEntity rdf:type owl:Class .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT200> rdf:type owl:NamedIndividual ,
                                                          ifi:NUTS3 ;
                                                 rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-                                                rdfs:label "REGIÃO AUTÓNOMA DOS AÇORES" ;
+                                                rdfs:label "REGIÃO AUTÓNOMA DOS AÇORES (NUTS3)" ;
                                                 <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT20> .
 
 
@@ -1463,7 +1483,7 @@ spo:SpatialEntity rdf:type owl:Class .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT300> rdf:type owl:NamedIndividual ,
                                                          ifi:NUTS3 ;
                                                 rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-                                                rdfs:label "REGIÃO AUTÓNOMA DA MADEIRA" ;
+                                                rdfs:label "REGIÃO AUTÓNOMA DA MADEIRA (NUTS3)" ;
                                                 <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT30> .
 
 
