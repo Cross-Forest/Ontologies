@@ -1,0 +1,82 @@
+@prefix ifn: <http://crossforest.eu/ifn/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ifn:FuelModel01 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:FuelModel ;
+  rdfs:label "Pasto fino con leñosas dispersas"@es ;
+  rdfs:comment "Pasto fino, seco y bajo, que recubre completamente el suelo. Pueden aparecer algunas plantas leñosas dispersas ocupando menos de 1/3 de la superficie."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:FuelModel02 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:FuelModel ;
+  rdfs:label "Pasto fino con leñosas"@es ;
+  rdfs:comment "Pasto fino, seco y bajo, que recubre completamente el suelo. Las plantas leñosas dispersas cubren de 1/3 a 2/3 de la superficie, pero la propagación del fuego se realiza por el pasto."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:FuelModel03 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:FuelModel ;
+  rdfs:label "Pasto grueso"@es ;
+  rdfs:comment "Pasto grueso, denso, seco y alto ( > 1m). Puede haber algunas plantas leñosas dispersas. Los campos de cereales son representativos de este modelo."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:FuelModel04 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:FuelModel ;
+  rdfs:label "Matorral Joven"@es ;
+  rdfs:comment "Matorral o plantación joven muy densa; de más de 2m. de altura; con ramas muertas en su interior. Propagación del fuego por las copas de las plantas."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:FuelModel05 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:FuelModel ;
+  rdfs:label "Matorral disperso"@es ;
+  rdfs:comment "Matorral disperso, denso y verde, de menos de 1m. de altura. Propagación del fuego por la hojarasca, el pasto, las ramillas y el matorral"@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:FuelModel06 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:FuelModel ;
+  rdfs:label "Matorral disperso inflamable"@es ;
+  rdfs:comment "Parecido al modelo 5, pero con especies más inflamables, de mayor talla, pudiéndose encontrar ramas gruesas en el suelo. Propagación del fuego con vientos moderados a fuertes."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:FuelModel07 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:FuelModel ;
+  rdfs:label "Matorral muy inflamable"@es ;
+  rdfs:comment "Matorral de especies muy inflamables; de 0,5 a 2m. de altura, situado como sotobosque en masas de coníferas."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:FuelModel08 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:FuelModel ;
+  rdfs:label "Bosque de hojarasca compacta"@es ;
+  rdfs:comment "Bosque denso, sin matorral. Propagación del fuego por la hojarasca muy compacta, formada por acículas cortas (5 cm o menos) o por hojas planas no muy grandes."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:FuelModel09 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:FuelModel ;
+  rdfs:label "Bosque de hojarasca no compacta"@es ;
+  rdfs:comment "Parecido al modelo 8, pero con hojarasca menos compacta, formada por acículas largas y rígidas (P. pinaster) o follaje de frondosas de hojas grandes y rizadas (castaño o robles)."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:FuelModel10 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:FuelModel ;
+  rdfs:label "Bosque con leña y árboles caídos"@es ;
+  rdfs:comment "Bosque con gran cantidad de leña y árboles caídos, como consecuencia de vendavales, plagas intensas, etc."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:FuelModel11 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:FuelModel ;
+  rdfs:label "Bosque claro"@es ;
+  rdfs:comment "Bosque claro y fuertemente aclarado. Restos de poda o aclarado ligeros (diámetro <7,5 cm) Restos de poda o aclareo dispersos, con plantas herbáceas rebrotando. La hojarasca y el matorral presente ayudarán a la propagación del fuego."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:FuelModel12 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:FuelModel ;
+  rdfs:label "Restos sobre el arbolado"@es ;
+  rdfs:comment "Predominio de los restos sobre el arbolado. Restos de poda o aclareo cubriendo todo el suelo,más pesados que los del mod.11"@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:FuelModel13 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:FuelModel ;
+  rdfs:label "Restos gruesos y pesados"@es ;
+  rdfs:comment "Grandes acumulaciones de restos gruesos y pesados,cubriendo todo el suelo."@es ;
+  rdfs:isDefinedBy ifn: .
