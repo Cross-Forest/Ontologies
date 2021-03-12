@@ -1,0 +1,96 @@
+@prefix ifn: <http://crossforest.eu/ifn/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ifn:Altitude1 a owl:Class , rdfs:Class ; # cambiados x ACO FormaDeMasa x Altitude
+  rdfs:subClassOf ifn:Altitude ;
+  rdfs:label "0-200m" ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Altitude2 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Altitude ;
+  rdfs:label "201-400m" ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Altitude3 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Altitude ;
+  rdfs:label "401-600m" ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Altitude4 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Altitude ;
+  rdfs:label "601-800m" ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Altitude5 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Altitude ;
+  rdfs:label "801-1000m" ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Altitude6 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Altitude ;
+  rdfs:label "1001m-1200" ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Altitude7 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Altitude ;
+  rdfs:label "1201m-1400" ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Altitude8 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Altitude ;
+  rdfs:label "1401m-1600" ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Altitude9 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Altitude ;
+  rdfs:label "1601m-1800" ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Altitude10 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Altitude ;
+  rdfs:label "1801m-2000" ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Altitude11 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Altitude ;
+  rdfs:label "2001m-2200" ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Altitude12 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Altitude ;
+  rdfs:label "2201m-2400" ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Altitude13 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Altitude ;
+  rdfs:label "2401m-2600" ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Altitude14 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Altitude ;
+  rdfs:label "2601m-2800" ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Altitude15 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Altitude ;
+  rdfs:label "2801m-3000" ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Altitude16 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Altitude ;
+  rdfs:label "3001m o más"@es , "3001m or more"@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Altitude-9999 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Altitude ;
+  owl:sameAs ifn:Altitude-99 ;
+  rdfs:label "Sin datos"@es, "No data"@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Altitude-99 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Altitude ;
+  owl:sameAs ifn:Altitude-9999 ;
+  rdfs:label "Sin datos"@es , "No data"@en ;
+  rdfs:isDefinedBy ifn: .

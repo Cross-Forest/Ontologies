@@ -1,0 +1,29 @@
+@prefix ifn: <http://crossforest.eu/ifn/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ifn:PlotType0 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PlotType ;
+  rdfs:label "Normalmente levantada"@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PlotType1 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PlotType ;
+  rdfs:label "Inaccesible"@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PlotType2 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PlotType ;
+  rdfs:label "Eliminada"@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PlotType3 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PlotType ;
+  rdfs:label "Desarbolada"@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PlotType4 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PlotType ;
+  rdfs:label "Eliminada"@es ;
+  rdfs:isDefinedBy ifn: .

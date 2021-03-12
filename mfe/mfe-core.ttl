@@ -62,6 +62,12 @@ mfe:CanopyCoverTrees a owl:Class , rdfs:Class ;
   rdfs:comment ""@en , "Representa la proporción del conjunto de las especies del estrato arbóreo como porcentaje de suelo cubierto por la proyección de todas las copas. No influye en su cálculo el hecho de tratarse de masas monoespecíficas o pluriespecíficas, o el de encontrarse en distinto estado de masa las distintas especies."@es ;
   rdfs:isDefinedBy mfe: .
 
+mfe:CanopyCoverBushes a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:CanopyCover ;
+  rdfs:label "Canopy Cover of Bushes"@es , "Fracción de Cabida Cubierta Arbustiva"@es ;
+  rdfs:comment ""@en , "Representa la proporción del conjunto de las especies del estrato arbustivo como porcentaje de suelo cubierto por la proyección de todas las copas. No influye en su cálculo el hecho de tratarse de masas monoespecíficas o pluriespecíficas, o el de encontrarse en distinto estado de masa las distintas especies."@es ;
+  rdfs:isDefinedBy mfe: .
+
 mfe:VegetationStructure a owl:Class , rdfs:Class ; # cambiado x ACO: tipoEstructural x VegetationStructure
   rdfs:label "Tipo Estructural"@es ;
   rdfs:comment "Indica los distintos usos del suelo que pueden aparecer y, dentro del uso forestal, las distintas estructuras de vegetación que lo pueden ocupar, atendiendo más que a la densidad vegetal a la estructura de la vegetación que ocupa." ; # modificado x ACO; eliminado cormótico, palabra inventada y que solo aparece en 6 documentos todos relacionados con el MFE

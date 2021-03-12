@@ -96,6 +96,17 @@ smo:MeasurableEntityInHectares a owl:Class , rdfs:Class ;
     ] ;
   rdfs:isDefinedBy smo: .
 
+smo:MeasurableEntityInYears a owl:Class , rdfs:Class ;
+  rdfs:label "Measurable Entity in Years"@en , "Entidad medible en años"@es ;
+  rdfs:comment "Entity from which a measure in years is taken"@en , "Entidad de la cual se toma una medida en años"@es ;
+  owl:equivalentClass
+    [
+      a owl:Restriction ;
+      owl:onProperty smo:hasMeasure ;
+      owl:someValuesFrom smo:Years
+    ] ;
+  rdfs:isDefinedBy smo: .
+
 # MEASURES
 
 smo:Measure a owl:Class , rdfs:Class ;
@@ -176,6 +187,14 @@ smo:MeasureInHectares a owl:Class , rdfs:Class ;
     owl:hasValue unit:Hectare ] ;
   rdfs:isDefinedBy smo: .
 
+smo:MeasureInYears a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:Measure ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty smo:hasUnit ;
+    owl:hasValue unit:Years ] ;
+  rdfs:isDefinedBy smo: .
+
 smo:MeasureInUnities a owl:Class , rdfs:Class ;
   rdfs:subClassOf smo:Measure ;
   owl:equivalentClass [
@@ -192,6 +211,17 @@ smo:Unit a owl:Class , rdfs:Class ;
   owl:disjointWith smo:MeasurableEntity , smo:Measure ;
   rdfs:isDefinedBy smo: .
 
+# METADATA
+
+smo:Source a owl:Class , rdfs:Class ;
+  rdfs:label "Source"@en , "Fuente"@es ;
+  rdfs:comment "Source of the measure"@en , "Fuente de la medida"@es ;
+  rdfs:isDefinedBy smo: .
+
+smo:Reliability a owl:Class , rdfs:Class ;
+  rdfs:label "Reliability"@en , "Fiabilidad"@es ;
+  rdfs:comment "Reliability of the measure"@en , "Fiabilidad de la medida"@es ;
+  rdfs:isDefinedBy smo: .
 
 #################################################################
 #    Object Properties
@@ -292,6 +322,13 @@ smo:hasMeasureinPercentage a owl:DatatypeProperty , rdf:Property ;
   rdfs:domain smo:MeasurableEntityInSquareMeters ;
   rdfs:isDefinedBy smo: .
 
+smo:hasMeasureinYears a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureLiteral ;
+  rdfs:label "value in years"@en , "valor en años"@es ;
+  rdfs:comment "value of an meausure in years"@en , "valor de una medida en años"@es ;
+  rdfs:domain smo:MeasurableEntityInYears ;
+  rdfs:isDefinedBy smo: .
+
 
 #################################################################
 #    Individuals
@@ -360,5 +397,10 @@ unit:UnitsByHA a owl:NamedIndividual , smo:Unit ;
 
 unit:Hectares a owl:NamedIndividual , smo:Unit ;
   rdfs:label "Hectares"@en , "Hectáreas"@es ;
-  rdfs:comment "Hectared as a unity of measure"@en , "Hectáreas como unidad de medida"@es ;
+  rdfs:comment "Hectares as a unity of measure"@en , "Hectáreas como unidad de medida"@es ;
+  rdfs:isDefinedBy smo: .
+
+unit:Years a owl:NamedIndividual , smo:Unit ;
+  rdfs:label "Years"@en , "Años"@es ;
+  rdfs:comment "Years as a unity of measure"@en , "Años como unidad de medida"@es ;
   rdfs:isDefinedBy smo: .

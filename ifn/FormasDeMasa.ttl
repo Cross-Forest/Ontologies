@@ -1,0 +1,28 @@
+@prefix ifn: <http://crossforest.eu/ifn/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ifn:PlotShape1 a owl:Class , rdfs:Class ; # cambiados x ACO FormaDeMasa x PlotShape
+  rdfs:subClassOf ifn:PlotShape ;
+  rdfs:label "Coetánea"@es ;
+  rdfs:comment "Al menos el 90% de los pies tienen la misma edad individual. Ejemplo típico las repoblaciones."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PlotShape2 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PlotShape ;
+  rdfs:label "Regular"@es ;
+  rdfs:comment "Al menos el 90% de los pies pertenecen a la misma clase artificial de edad o misma clase diamétrica en su defecto."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PlotShape3 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PlotShape ;
+  rdfs:label "Semirregular"@es ;
+  rdfs:comment "Al menos el 90% de los pies pertenecen a dos clases artificiales de edad cíclicamente contiguas o dos clases diamétricas contiguas en su defecto."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PlotShape4 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PlotShape ;
+  rdfs:label "Irregular"@es ;
+  rdfs:comment "En cualquier parte de la masa existen pies más o menos mezclados, de todas las clases de edad que tiene la masa o de varias clases diamétricas en su defecto"@es ;
+  rdfs:isDefinedBy ifn: .

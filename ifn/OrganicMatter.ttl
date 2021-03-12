@@ -1,0 +1,22 @@
+@prefix ifn: <http://crossforest.eu/ifn/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ifn:OrganicMatter1 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:OrganicMatter ;
+  rdfs:label "Suelo muy humífero"@es ;
+  rdfs:comment "Cuando a 15 cm la pureza es menor de 4 ó cuando la capa de broza sea de espesor mayor de 5 cm y a 15 cm de profundidad la pureza sea menor de 6."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:OrganicMatter2 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:OrganicMatter ;
+  rdfs:label "Suelo moderadamente humífero"@es ;
+  rdfs:comment "Cuando a 15 cm la pureza sea menor de 6 con capa de broza nula o de escaso espesor o cuando dicha capa de broza sea de espesor mayor de 5 cm y a 15 cm de profundidad la pureza sea igual o mayor de 6."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:OrganicMatter3 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:OrganicMatter ;
+  rdfs:label "Suelo poco humífero"@es ;
+  rdfs:comment "En los restantes casos."@es ;
+  rdfs:isDefinedBy ifn: .
