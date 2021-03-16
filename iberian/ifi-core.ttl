@@ -15,11 +15,14 @@
                                        dc:creator <https://www.crossforest.eu/members/dportoles> ,
                                                   <https://www.crossforest.eu/members/guiveg> ;
                                        dc:date "2021-03-01" ;
+                                       dc:title "Iberian Forestry Inventory Ontology"@en ,
+                                                "Ontología ibérica de inventario forestal"@es ;
+                                       <http://purl.org/dc/terms/description> "Ontology to publish data about forestry inventory in the Iberian Peninsula"@en ,
+                                                                              "Ontología para publicar datos de inventario forestal en la Península ibérica"@es ;
                                        vann:preferredNamespacePrefix "ifi" ;
                                        rdfs:comment "Ontology to publish data about forestry inventory in the Iberian Peninsula"@en ,
-                                                    "Ontología para publicar datos de inventario foresal en la Península ibérica"@es ;
-                                       rdfs:label "Iberian Forestry Inventory Ontology"@en ,
-                                                  "Ontología ibérica de inventario forestal"@es ;
+                                                    "Ontología para publicar datos de inventario forestal en la Península ibérica"@es ;
+                                       rdfs:label "Ontología ibérica de inventario forestal"@es ;
                                        owl:versionInfo 0.1 .
 
 #################################################################
@@ -40,6 +43,22 @@ dc:identifier rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/elements/1.1/source
 dc:source rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
@@ -188,6 +207,7 @@ ifi:hasVolumeWithBarkInM3ByHA rdf:type owl:DatatypeProperty ;
 ###  http://crossforest.eu/ifi/ontology/BasalArea
 ifi:BasalArea rdf:type owl:Class ;
               rdfs:subClassOf smo:Measure ;
+              rdfs:comment "Soma das áreas seccionais das árvores a 1,30 m do solo."@pt ;
               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
               rdfs:label "Basal Area"@en ,
                          "Área Basimétrica"@es ,
@@ -198,24 +218,29 @@ ifi:BasalArea rdf:type owl:Class ;
 ###  http://crossforest.eu/ifi/ontology/DominantFormation
 ifi:DominantFormation rdf:type owl:Class ;
                       rdfs:comment "En Portugal es una categorización nacional, la misma para todos los NUTS3 en el caso del invetario portugués en versión 6."@es ,
-                                   "En el Inventario Forestal Nacional se corresponde con el concepto de Estrato, el cual depende de cada provincia y versión de inventario."@es ;
+                                   "En el Inventario Forestal Nacional se corresponde con el concepto de Estrato, el cual depende de cada provincia y versión de inventario."@es ,
+                                   "Espécie de árvore existente num povoamento florestal com a maior percentagem de coberto."@pt ;
                       rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
                       rdfs:label "Dominant formation"@en ,
+                                 "Espécie de árvore dominante"@pt ,
                                  "Formación dominante"@es .
 
 
 ###  http://crossforest.eu/ifi/ontology/ForestryInventory
 ifi:ForestryInventory rdf:type owl:Class ;
+                      rdfs:comment "O Inventário Florestal Nacional (IFN) é o processo de produção de estatísticas, e de cartografia-base, sobre a abundância, estado e condição dos recursos florestais nacionais. Baseia-se em recolhas de dados a partir de imagens aéreas e em medições da vegetação no terreno, ao longo de todo o território."@pt ;
                       rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
                       rdfs:label "Forestry inventory"@en ,
-                                 "Inventario forestal"@es .
+                                 "Inventario forestal"@es ,
+                                 "Inventário Florestal Nacional"@pt .
 
 
 ###  http://crossforest.eu/ifi/ontology/InfoDominantFormation
 ifi:InfoDominantFormation rdf:type owl:Class ;
                           rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
                           rdfs:label "Info about dominant formation"@en ,
-                                     "Información sobre la formación dominante"@es .
+                                     "Información sobre la formación dominante"@es ,
+                                     "Informação sobre espécie de árvore dominante"@pt .
 
 
 ###  http://crossforest.eu/ifi/ontology/InfoDominantFormationByHA
@@ -223,12 +248,13 @@ ifi:InfoDominantFormationByHA rdf:type owl:Class ;
                               rdfs:subClassOf ifi:InfoDominantFormation ;
                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
                               rdfs:label "Info about dominant formation by hectare"@en ,
-                                         "Información sobre la formación dominante por hectárea"@es .
+                                         "Información sobre la formación dominante por hectárea"@es ,
+                                         "Informação sobre espécie de árvore dominante por hectare"@pt .
 
 
 ###  http://crossforest.eu/ifi/ontology/NUTS1
 ifi:NUTS1 rdf:type owl:Class ;
-          rdfs:subClassOf ifi:NUTS_Unit ;
+          rdfs:subClassOf ifi:NUTSUnit ;
           rdfs:comment "As NUTS I correspondem ao três unidades, correspondentes ao território do continente e de cada uma das Regiões Autónomas dos Açores e da Madeira"@pt ,
                        "En España se corresponden con la agrupación de comunidades autónomas"@es ;
           rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
@@ -239,7 +265,7 @@ ifi:NUTS1 rdf:type owl:Class ;
 
 ###  http://crossforest.eu/ifi/ontology/NUTS2
 ifi:NUTS2 rdf:type owl:Class ;
-          rdfs:subClassOf ifi:NUTS_Unit ;
+          rdfs:subClassOf ifi:NUTSUnit ;
           rdfs:comment "As NUTS II correspondem ao sete unidades, as regiões, das quais cinco no continente e os territórios das Regiões Autónomas dos Açores e da Madeira"@pt ,
                        "En España se corresponden con Comunidades y ciudades autónomas"@es ;
           rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
@@ -250,7 +276,7 @@ ifi:NUTS2 rdf:type owl:Class ;
 
 ###  http://crossforest.eu/ifi/ontology/NUTS3
 ifi:NUTS3 rdf:type owl:Class ;
-          rdfs:subClassOf ifi:NUTS_Unit ;
+          rdfs:subClassOf ifi:NUTSUnit ;
           rdfs:comment "As NUTS III correspondem ao território das Entidades Intermunicipais (Comunidades Intermunicipais e Áreas Metropolitanas, no caso de Lisboa e Porto)"@pt ,
                        "En España se corresponden con las provincias peninsulares, ciudades autónomas e islas"@es ;
           rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
@@ -260,17 +286,17 @@ ifi:NUTS3 rdf:type owl:Class ;
           <http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/Province> .
 
 
-###  http://crossforest.eu/ifi/ontology/NUTS_Unit
-ifi:NUTS_Unit rdf:type owl:Class ;
-              rdfs:subClassOf spo:SpatialEntity ;
-              dc:source "Eurostat"@en ;
-              rdfs:comment "Clasificación NUTS (Nomenclatura de las Unidades Territoriales Estadísticas)."@es ,
-                           "NUTS classification (Nomenclature of territorial units for statistics)"@en ,
-                           "NUTS classificação (Nomenclatura das Unidades Territoriais para Fins Estatísticos)."@pt ;
-              rdfs:label ""@pt ,
-                         "NUTS unit"@en ,
-                         "Unidad NUTS"@es ;
-              <https://dbpedia.org/ontology/purpose> "Statistical"@en .
+###  http://crossforest.eu/ifi/ontology/NUTSUnit
+ifi:NUTSUnit rdf:type owl:Class ;
+             rdfs:subClassOf spo:SpatialEntity ;
+             <http://purl.org/dc/terms/source> "Eurostat" ;
+             rdfs:comment "Clasificación NUTS (Nomenclatura de las Unidades Territoriales Estadísticas)."@es ,
+                          "NUTS classification (Nomenclature of territorial units for statistics)"@en ,
+                          "NUTS classificação (Nomenclatura das Unidades Territoriais para Fins Estatísticos)."@pt ;
+             rdfs:label "NUTS unit"@en ,
+                        "Unidad NUTS"@es ,
+                        "Unidade territorial NUTS"@pt ;
+             <https://dbpedia.org/ontology/purpose> "Statistical"@en .
 
 
 ###  http://crossforest.eu/ifi/ontology/NumberOfTrees
@@ -287,7 +313,8 @@ ifi:NumberOfTrees rdf:type owl:Class ;
 ifi:VolumeWithBark rdf:type owl:Class ;
                    rdfs:subClassOf smo:Measure ;
                    rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-                   rdfs:label "Volume with bark"@en ,
+                   rdfs:label "Volume com casca"@pt ,
+                              "Volume with bark"@en ,
                               "Volumen con corteza"@es ;
                    <http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifn/ontology/VolumeWithBark> .
 
@@ -329,7 +356,10 @@ spo:SpatialEntity rdf:type owl:Class .
 ###  http://crossforest.eu/ifi/data/forestryInventory/PT/6
 <http://crossforest.eu/ifi/data/forestryInventory/PT/6> rdf:type owl:NamedIndividual ,
                                                                  ifi:ForestryInventory ;
-                                                        ifi:hasVersionId 6 .
+                                                        ifi:hasVersionId 6 ;
+                                                        dc:identifier "IFN6"@pt ;
+                                                        rdfs:comment "6º Inventário Florestal Nacional (IFN6)"@pt ,
+                                                                     "Este Inventário tem 2015 como ano de referência, correspondendo este ao ano em que foi realizada a cobertura nacional aerofotográfica digital que serve de base à avaliação do uso/ocupação do solo, e em que foi efetuado o trabalho de medição e avaliação da vegetação no terreno."@pt .
 
 
 ###  http://crossforest.eu/ifi/data/nuts1/ES/ES1
