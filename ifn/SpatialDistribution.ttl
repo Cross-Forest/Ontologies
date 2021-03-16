@@ -1,0 +1,28 @@
+@prefix ifn: <http://crossforest.eu/ifn/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ifn:SpatialDistribution1 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:SpatialDistribution ;
+  rdfs:label "Uniforme"@es ;
+  rdfs:comment "Cuando el estrato arbóreo presenta continuidad en el espacio."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:SpatialDistribution2 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:SpatialDistribution ;
+  rdfs:label "Diseminada en bosquetes aislados"@es ;
+  rdfs:comment "Cuando la masa arbórea se encuentra dividida en porciones que tienen una superficie inferior a 0,5 ha."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:SpatialDistribution3 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:SpatialDistribution ;
+  rdfs:label "Diseminada en individuos aislados"@es ;
+  rdfs:comment "Cuando se trata de dehesas."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:SpatialDistribution9 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:SpatialDistribution ;
+  rdfs:label "Otras o no se sabe"@es ;
+  rdfs:comment "En caso diferente a los anteriores o desconocer el dato exacto."@es ;
+  rdfs:isDefinedBy ifn: .

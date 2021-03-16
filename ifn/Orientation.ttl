@@ -1,0 +1,41 @@
+@prefix ifn: <http://crossforest.eu/ifn/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ifn:Orientation1 a owl:Class , rdfs:Class ; # cambiados x ACO FormaDeMasa x Orientation
+  rdfs:subClassOf ifn:Orientation ;
+  rdfs:label "292.5-67.5°" ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Orientation2 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Orientation ;
+  rdfs:label "67.5-112.5°" ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Orientation3 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Orientation ;
+  rdfs:label "112.5-247.5°" ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Orientation4 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Orientation ;
+  rdfs:label "247.5-292.5°" ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Orientation-1 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Orientation ;
+  rdfs:label "Todos los vientos"@es , "All winds"@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Orientation-9999 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Orientation ;
+  owl:sameAs ifn:Orientation-99 ;
+  rdfs:label "Sin datos"@es, "No data"@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Orientation-99 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Orientation ;
+  owl:sameAs ifn:Orientation-9999 ;
+  rdfs:label "Sin datos"@es , "No data"@en ;
+  rdfs:isDefinedBy ifn: .

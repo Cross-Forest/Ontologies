@@ -1,0 +1,52 @@
+@prefix ifn: <http://crossforest.eu/ifn/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ifn:PH1 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PH ;
+  rdfs:label "1" ;
+  rdfs:comment "Suelo extremadamente ácido."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PH2 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PH ;
+  rdfs:label "2" ;
+  rdfs:comment "Suelo muy fuertemente ácido."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PH3 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PH ;
+  rdfs:label "3-4"@es ;
+  rdfs:comment "Suelo fuertemente ácido."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PH4 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PH ;
+  rdfs:label "5-6" ;
+  rdfs:comment "Suelo moderadamente ácido."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PH5 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PH ;
+  rdfs:label "7" ;
+  rdfs:comment "Suelo neutro."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PH6 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PH ;
+  rdfs:label "8" ;
+  rdfs:comment "Suelo moderadamente básico."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PH7 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PH ;
+  rdfs:label "9" ;
+  rdfs:comment "Suelo fuertemente básico."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PH8 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:PH ;
+  rdfs:label "10" ;
+  rdfs:comment "Suelo extremadamente básico."@es ;
+  rdfs:isDefinedBy ifn: .

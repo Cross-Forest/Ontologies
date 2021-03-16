@@ -9,6 +9,13 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 
 @prefix province: <http://crossforest.eu/ifn/data/province/> .
+@prefix source: <http://crossforest.eu/ifn/data/source/> .
+@prefix reliability: <http://crossforest.eu/ifn/data/reliability/> .
+@prefix origin: <http://crossforest.eu/ifn/data/origin/> .
+@prefix system: <http://crossforest.eu/ifn/data/system/> .
+@prefix size: <http://crossforest.eu/ifn/data/size/>
+@prefix density: <http://crossforest.eu/ifn/data/density/>
+
 
 ifn: a owl:Ontology ;
   rdfs:label "Spanish IFN Ontology"@en , "Ontología del IFN de España"@es ;
@@ -332,9 +339,73 @@ ifn:Use a owl:Class , rdfs:Class ;
   rdfs:comment ""@es , ""@en ;
   rdfs:isDefinedBy ifn: .
 
-ifn:InfoSpecies a owl:Class , rdfs:Class ;
-  rdfs:label ""@es , ""@en ;
-  rdfs:comment ""@es , ""@en ;
+ifn:TreeShape a owl:Class , rdfs:Class ;
+  rdfs:label "Forma"@es , "Shape"@en ;
+  rdfs:comment "Árbol con forma"@es , "Tree with a Shape"@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Altitude a owl:Class , rdfs:Class ;
+  rdfs:label "Altitud"@es , "Altitude"@en ;
+  rdfs:comment "Posición con altitud"@es , "Position with Altitude"@en ;
+  rdfs:isDefinedBy ifn: .  
+
+ifn:Orientation a owl:Class , rdfs:Class ;
+  rdfs:label "Orientación"@es , "Orientation"@en ;
+  rdfs:comment "Posición con Orientación"@es , "Position with Orientation"@en ;
+  rdfs:isDefinedBy ifn: .  
+
+ifn:Gradient a owl:Class , rdfs:Class ;
+  rdfs:label "Pendiente"@es , "Gradient"@en ;
+  rdfs:comment "Posición con Pendiente"@es , "Position with Gradient"@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:DeadLayer a owl:Class , rdfs:Class ;
+  rdfs:label "Espesor de Capa Muerta"@es , "Thickness of Dead Layer"@en ;
+  rdfs:comment "Posición con espesor de capa muerta"@es , "Position with thickness of dead layer"@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:FuelModel a owl:Class , rdfs:Class ;
+  rdfs:label "Modelo de Combustible"@es , "Fuel Model"@en ;
+  rdfs:comment "Posición con Modelo de Combustible"@es , "Position with Fuel Model"@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Erosion a owl:Class , rdfs:Class ;
+  rdfs:label "Erosión"@es , "Erosion"@en ;
+  rdfs:comment "Posición con Erosión"@es , "Position with Erosion"@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PH a owl:Class , rdfs:Class ;
+  rdfs:label "PH"@es , "PH"@en ;
+  rdfs:comment "Suelo con PH"@es , "Soil with PH"@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:OrganicMatter a owl:Class , rdfs:Class ;
+  rdfs:label "Materia Orgánica"@es , "Organic Matter"@en ;
+  rdfs:comment "Posición con Materia Orgánica"@es , "Position with Organic Matter"@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Texture a owl:Class , rdfs:Class ;
+  rdfs:label "Textura"@es , "Texture"@en ;
+  rdfs:comment "Posición con textura del suelo"@es , "Position with soil texture"@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Rocosity a owl:Class , rdfs:Class ;
+  rdfs:label "Rocosidad"@es , "Rocosity"@en ;
+  rdfs:comment "Posición con rocosidad del suelo"@es , "Position with rocosity of the soil"@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:PlotType a owl:Class , rdfs:Class ;
+  rdfs:label "Tipo de parcela"@es , "Plot Type"@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:SpatialDistribution a owl:Class , rdfs:Class ;
+  rdfs:label "Distribución Espacial"@es , "Spatial Distribution"@en ;
+  rdfs:comment "Posición con disposición de la vegetación en el espacio"@es , "Position with spatial distribution of vegetation"@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Composition a owl:Class , rdfs:Class ;
+  rdfs:label "Composición Específica"@es , "Composition of Vegetation"@en ;
+  rdfs:comment "Posición con composición de vegetación"@es , "Position with composition of vegetation"@en ;
   rdfs:isDefinedBy ifn: .
 
 ifn:Taxon a owl:Class , rdfs:Class ;
@@ -372,6 +443,59 @@ ifn:NumberOfTrees a owl:Class , rdfs:Class ;
   rdfs:comment ""@es , ""@en ;
   rdfs:isDefinedBy ifn: .
 
+ifn:OccupationOfSpecies a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:MeasureInPercentage ;
+  rdfs:label "Ocupación de especie"@es ;
+  rdfs:comment "Indica la ocupación para cada una de las especies descritas. Los valores que adopta informan del grado de presencia en porcentaje de las especies arbóreas existentes, siendo tanto mayor, cuanto mayor representatividad posee la especie en cuestión, en comparación con las otras especies arbóreas presentes en la parcela."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Age a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:MeasureInYears ;
+  rdfs:label "Edad"@es , "Age"@en ;
+  rdfs:comment "Estimación de la edad"@es , "Estimation of Age"@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:AgeSource a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:Source ;
+  rdfs:label "Source"@en , "Fuente"@es ;
+  rdfs:comment "Fuente de la estimación de la edad"@es , "Source of estimation of age"@en ;
+  rdfs:comment ""@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:AgeReliability a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:Reliability ;
+  rdfs:label "Fiabilidad"@es , "Reliability"@en ;
+  rdfs:comment "Fiabilidad de la estimación de la edad"@es , "Reliability of estimation of age"@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Origin a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:Reliability ;
+  rdfs:label "Origen"@es , "Origin"@en ;
+  rdfs:comment "Origen de la masa forestal"@es , "Origin of the stand"@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:SilviculturalSystem a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:Reliability ;
+  rdfs:label "Tratamiento"@es , "Silvicultural System"@en ;
+  rdfs:comment "Tratamiento de la masa forestal desde la perspectiva de la ordenación de montes"@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:ChangeOfSpecies a owl:Class , rdfs:Class ;
+  rdfs:Label "Cambio de Especie"@es , "Change of Species"@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:DominantSpecies a owl:Class , rdfs:Class ;
+  rdfs:Label "Especie Dominante"@es , "Dominant Species"@en ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Stratum a owl:Class , rdfs:Class ;
+  rdfs:Label "Estrato"@es , "Stratum"@en ;
+  rdfs:isDefinedBy ifn: .
+
+
+ifn:DamageStatus a owl:Class , rdfs:Class ;
+  rdfs:Label "Estado del Daño"@es , "Damage Status"@en ;
+  rdfs:isDefinedBy ifn: .
 
 #################################################################
 #    Object Properties
@@ -474,9 +598,19 @@ ifn:hasVolumeWithoutBark a owl:ObjectProperty , rdf:Property ;
   rdfs:label "has volume without bark"@en , "tiene volumen sin corteza"@es ;
   rdfs:isDefinedBy ifn: .
 
+ifn:hasVolumeIncrease a owl:ObjectProperty , rdf:Property ;
+  rdfs:subpropertyOf ifn:hasVolume ;
+  rdfs:label "has volume increase"@en , "tiene incremento de volumen"@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasVolumeFirewood a owl:ObjectProperty , rdf:Property ;
+  rdfs:subpropertyOf ifn:hasVolume ;
+  rdfs:label "has volume of firewood"@en , "tiene volumen de leñas"@es ;
+  rdfs:isDefinedBy ifn: .
+
 ifn:hasNumberOfTrees a owl:ObjectProperty , rdf:Property ;
   rdfs:label "has number of trees"@en ;
-  rdfs:range ifn:VolumeWithBark ;
+  rdfs:range ifn:NumberOfTrees ;
   rdfs:isDefinedBy ifn: .
 
 ifn:hasSpecies a owl:ObjectProperty , rdf:Property ;
@@ -488,6 +622,30 @@ ifn:hasForestArea a owl:ObjectProperty , rdf:Property ;
   rdfs:subPropertyOf spo:hasArea ;
   rdfs:label "has forest area"@en ;
   rdfs:isDefinedBy ifn: .
+
+ifn:hasOccupationOfSpecies a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasure ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain ifn:InfoSpecies ;
+  rdfs:range ifn:OccupationOfSpecies ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasAge a owl:ObjectProperty , rdf:Property ;
+ rdfs:subPropertyOf smo:hasMeasure ;
+  rdfs:label "tiene edad"@es , "has age"@es ;
+  rdfs:comment "Age of trees in a plot"@en , "Edad en años en las formas coetáneas y regulares"@es ;
+  rdfs:domain ifn:InfoSpecies ;
+  rdfs:range ifn:Age ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasOrigin a owl:ObjectProperty , rdf:Property ;
+ rdfs:subPropertyOf smo:hasMeasure ;
+  rdfs:label "tiene origen"@es , "has origin"@es ;
+  rdfs:domain ifn:InfoSpecies ;
+  rdfs:range ifn:Origin ;
+  rdfs:isDefinedBy ifn: .
+
 
 #################################################################
 #    Datatype Properties
@@ -549,8 +707,20 @@ ifn:hasVolumeWithoutBarkInM3 a owl:ObjectProperty , rdf:Property ;
   rdfs:range ifn:hasVolumeWithoutBark ;
   rdfs:isDefinedBy ifn: .
 
+ifn:hasVolumeIncreaseInM3 a owl:ObjectProperty , rdf:Property ;
+  rdfs:subpropertyOf ifn:hasVolumeInM3 ;
+  rdfs:label "has volume increase in cubic meters"@en , "tiene incremento de volumen en metros cúbicos"@es ;
+  rdfs:range ifn:hasVolumeWithoutBark ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasVolumeFirewoodInM3 a owl:ObjectProperty , rdf:Property ;
+  rdfs:subpropertyOf ifn:hasVolumeInM3 ;
+  rdfs:label "has volume of firewood in cubic meters"@en , "tiene volumen de leñas en metros cúbicos"@es ;
+  rdfs:range ifn:hasVolumeWithoutBark ;
+  rdfs:isDefinedBy ifn: .
+
 ifn:hasNumberOfTreesInUnits a owl:ObjectProperty , rdf:Property ;
-  rdfs:subpropertyOf smo:hasMeasureInUnits ;
+  rdfs:subpropertyOf smo:MeasureInUnities ;
   rdfs:label "has number of trees"@en ;
   rdfs:range ifn:VolumeWithBark ;
   rdfs:isDefinedBy ifn: .
@@ -590,15 +760,33 @@ spo:hasForestAreaInHC a owl:DatatypeProperty , rdf:Property ;
   rdfs:label ""@es , "has forest area in hectares"@en ;
   rdfs:comment ""@en , ""@en ;
   rdfs:domain spo:Position ;
-  rdfs:isDefinedBy spo: .
+  rdfs:isDefinedBy ifn: .
 
 spo:hasForestAreaInSquareMeters a owl:DatatypeProperty , rdf:Property ;
   rdfs:subPropertyOf smo:hasMeasureInSquareMeters ;
   rdfs:label ""@es , "has forest area in square meters"@en ;
   rdfs:comment ""@en , ""@en ;
   rdfs:domain spo:Position ;
-  rdfs:isDefinedBy spo: .
+  rdfs:isDefinedBy ifn: .
 
+ifn:hasPercentageOfSpecies a owl:DatatypeProperty , rdf:Property ;
+  rdfs:subPropertyOf smo:hasMeasureinPercentage ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain ifn:InfoSpecies ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasStandDevelopment a owl:ObjectProperty , rdf:Property ;
+  rdfs:label ""@es , ""@es ;
+  rdfs:comment ""@en , ""@es ;
+  rdfs:domain ifn:InfoSpecies ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:hasAgeInYears a owl:ObjectProperty , rdf:Property ;
+  rdfs:label "edad en años"@es , "age in years"@es ;
+  rdfs:comment "Age in years"@en , "Edad en años en las formas coetáneas y regulares"@es ;
+  rdfs:domain ifn:InfoSpecies ;
+  rdfs:isDefinedBy ifn: .
 
 #################################################################
 #    Annotation Properties
@@ -650,6 +838,143 @@ ifn:author a owl:AnnotationProperty , rdf:Property ;
 #################################################################
 #    Individuals
 #################################################################
+
+origin:11 owl:NamedIndividual, ifn:AgeSource ;
+  rdfs:label "Natural"@es ;
+  rdfs:isDefinedBy ifn: .
+
+origin:12 owl:NamedIndividual, ifn:AgeSource ;
+  rdfs:label "Artificial"@es ;
+  rdfs:isDefinedBy ifn: .
+
+origin:13 owl:NamedIndividual, ifn:AgeSource ;
+  rdfs:label "Naturalizado"@es ;
+  rdfs:isDefinedBy ifn: .
+
+origin:21 owl:NamedIndividual, ifn:AgeSource ;
+  rdfs:label "Semilla"@es ;
+  rdfs:isDefinedBy ifn: .
+
+origin:22 owl:NamedIndividual, ifn:AgeSource ;
+  rdfs:label "Plantación"@es ;
+  rdfs:isDefinedBy ifn: .
+
+origin:23 owl:NamedIndividual, ifn:AgeSource ;
+  rdfs:label "Brote de cepa o raíz"@es ;
+  rdfs:isDefinedBy ifn: .
+
+origin:24 owl:NamedIndividual, ifn:AgeSource ;
+  rdfs:label "Mixto semilla y brote de cepa"@es ;
+  rdfs:isDefinedBy ifn: .
+
+origin:25 owl:NamedIndividual, ifn:AgeSource ;
+  rdfs:label "Mixto semilla y plantación"@es ;
+  rdfs:isDefinedBy ifn: .
+
+origin:26 owl:NamedIndividual, ifn:AgeSource ;
+  rdfs:label "Mixto plantación y brote de cepa (eucaliptos)"@es ;
+  rdfs:isDefinedBy ifn: .
+
+source:1 a owl:NamedIndividual, ifn:AgeSource ;
+  rdfs:label "Aspecto"@es ;
+  rdfs:comment "Por el aspecto"@es ;
+  rdfs:isDefinedBy ifn: .
+
+source:2 a owl:NamedIndividual, ifn:AgeSource ;
+  rdfs:label "Agente Forestal"@es ;
+  rdfs:comment "Por consulta al agente forestal de la zona"@es ;
+  rdfs:isDefinedBy ifn: .
+
+source:3 a owl:NamedIndividual, ifn:AgeSource ;
+  rdfs:label "Jefatura Forestal"@es ;
+  rdfs:comment "Por consulta a la jefatura forestal comarcal, provincial o autonómica"@es ;
+  rdfs:isDefinedBy ifn: .
+
+source:4 a owl:NamedIndividual, ifn:AgeSource ;
+  rdfs:label "Habitantes"@es ;
+  rdfs:comment "Por consulta a los habitantes de la zona"@es ;
+  rdfs:isDefinedBy ifn: .
+
+source:5 a owl:NamedIndividual, ifn:AgeSource ;
+  rdfs:label "Verticilos"@es ;
+  rdfs:comment "Por conteo de verticilos"@es ;
+  rdfs:isDefinedBy ifn: .
+
+source:6 a owl:NamedIndividual, ifn:AgeSource ;
+  rdfs:label "Tocones"@es ;
+  rdfs:comment "Por observación de tocones recientes"@es ;
+  rdfs:isDefinedBy ifn: .
+
+source:7 a owl:NamedIndividual, ifn:AgeSource ;
+  rdfs:label "Otras Fuentes"@es ;
+  rdfs:comment "Por otras fuentes"@es ;
+  rdfs:isDefinedBy ifn: .
+
+reliability:1 a owl:NamedIndividual, ifn:AgeSource ;
+  rdfs:label "Dudosa"@es ;
+  rdfs:isDefinedBy ifn: .
+
+reliability:2 a owl:NamedIndividual, ifn:AgeSource ;
+  rdfs:label "Baja"@es ;
+  rdfs:isDefinedBy ifn: .
+
+reliability:3 a owl:NamedIndividual, ifn:AgeSource ;
+  rdfs:label "Media"@es ;
+  rdfs:isDefinedBy ifn: .
+
+reliability:4 a owl:NamedIndividual, ifn:AgeSource ;
+  rdfs:label "Alta"@es ;
+  rdfs:isDefinedBy ifn: .
+
+system:1 a owl:NamedIndividual, ifn:SilviculturalSystem  ;
+  rdfs:label "Monte alto"@es ;
+  rdfs:comment "Cuando todos los pies proceden de semilla"@es ;
+  rdfs:isDefinedBy ifn: .
+
+system:2 a owl:NamedIndividual, ifn:SilviculturalSystem  ;
+  rdfs:label "Monte medio"@es ;
+  rdfs:comment "Cuando coexisten pies de la misma especie, unos procedentes de semilla (brinzales) y otros de brote (chirpiales)"@es ;
+  rdfs:isDefinedBy ifn: .
+
+system:3 a owl:NamedIndividual, ifn:SilviculturalSystem  ;
+  rdfs:label "Monte bajo"@es ;
+  rdfs:comment "Cuando todos los pies proceden de brote de cepa o de raíz"@es ;
+  rdfs:isDefinedBy ifn: .
+
+size:1 a owl:NamedIndividual, ifn:SilviculturalSystem  ;
+  rdfs:label "Categoría 1"@es ;
+  rdfs:comment "Pies con altura inferior a 30 cm."@es ;
+  rdfs:isDefinedBy ifn: .
+
+size:2 a owl:NamedIndividual, ifn:SilviculturalSystem  ;
+  rdfs:label "Categoría 2"@es ;
+  rdfs:comment "Pies con altura comprendida entre 30 y 130 cm."@es ;
+  rdfs:isDefinedBy ifn: .
+
+size:3 a owl:NamedIndividual, ifn:SilviculturalSystem  ;
+  rdfs:label "Categoría 3"@es ;
+  rdfs:comment "Pies con altura superior a 130 cm y diámetro normal menor de 2,5 cm."@es ;
+  rdfs:isDefinedBy ifn: .
+
+size:4 a owl:NamedIndividual, ifn:SilviculturalSystem  ;
+  rdfs:label "Categoría 4"@es ;
+  rdfs:comment "Pies con altura superior a 130 cm y diámetro normal comprendido entre 2,5 y 7,5 cm. Corresponde a los pies menores del IFN-2."@es ;
+  rdfs:isDefinedBy ifn: .
+
+density:1 a owl:NamedIndividual, ifn:SilviculturalSystem  ;
+  rdfs:label "Escasa"@es ;
+  rdfs:comment "De 1 a 4 pies en la parcela."@es ;
+  rdfs:isDefinedBy ifn: .
+
+density:2 a owl:NamedIndividual, ifn:SilviculturalSystem  ;
+  rdfs:label "Normal"@es ;
+  rdfs:comment "De 5 a 15 pies en la parcela."@es ;
+  rdfs:isDefinedBy ifn: .
+
+density:3 a owl:NamedIndividual, ifn:SilviculturalSystem  ;
+  rdfs:label "Abundante"@es ;
+  rdfs:comment "Más de 15 pies en la parcela."@es ;
+  rdfs:isDefinedBy ifn: .
 
 province:01 a owl:NamedIndividual, ifn:Province ;
   rdfs:label "Álava"@es ;

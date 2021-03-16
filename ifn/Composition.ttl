@@ -1,0 +1,28 @@
+@prefix ifn: <http://crossforest.eu/ifn/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ifn:Composition1 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Composition ;
+  rdfs:label "Masas homogéneas ó puras"@es ;
+  rdfs:comment "Masas monoespecíficas con una única especie arbórea. La normativa española precisa que una masa es monoespecífica o pura cuando al menos el 90% de los pies pertenecen a la misma especie."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Composition2 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Composition ;
+  rdfs:label "Masas heterogéneas o mezcladas pie a pie"@es ;
+  rdfs:comment "Masas de diferentes especies que se juntan o bien se entremezclan por golpes o grupos, siempre que tengan una altura similar."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Composition3 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Composition ;
+  rdfs:label "Masa heterogéneas o mezcladas con subpiso"@es ;
+  rdfs:comment "Las dos o más especies mezcladas, cuando alcancen el estado adulto y la estabilidad, presentarán alturas diferentes."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Composition9 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Composition ;
+  rdfs:label "Otras o no se sabe"@es ;
+  rdfs:comment "En caso diferente a los anteriores o desconocer el dato exacto."@es ;
+  rdfs:isDefinedBy ifn: .

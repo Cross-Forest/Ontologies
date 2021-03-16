@@ -1,0 +1,40 @@
+@prefix ifn: <http://crossforest.eu/ifn/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ifn:Erosion1 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Erosion ;
+  rdfs:label "Sin manifestación"@es ;
+  rdfs:comment "No hay ninguna manifestación."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Erosion2 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Erosion ;
+  rdfs:label "Resíduos"@es ;
+  rdfs:comment "Los cuellos de las raíces están al descubierto, con acumulación de residuos aguas arriba de los tallos y obstáculos y abundancia superficial de piedras."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Erosion3 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Erosion ;
+  rdfs:label "Regueros"@es ;
+  rdfs:comment "Presencia de regueros paralelos de un palmo de profundidad (20 cm) como máximo."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Erosion4 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Erosion ;
+  rdfs:label "Cárcavas y barrancos en V."@es ;
+  rdfs:comment "Cárcavas y barrancos en V."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Erosion5 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Erosion ;
+  rdfs:label "Cárcavas y barrancos en U."@es ;
+  rdfs:comment "Cárcavas y barrancos en U."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Erosion6 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Erosion ;
+  rdfs:label "Deslizamientos del terreno."@es ;
+  rdfs:comment "Deslizamientos del terreno."@es ;
+  rdfs:isDefinedBy ifn: .

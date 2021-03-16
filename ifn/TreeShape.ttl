@@ -1,0 +1,40 @@
+@prefix ifn: <http://crossforest.eu/ifn/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ifn:TreeShape1 a owl:Class , rdfs:Class ; # cambiados x ACO FormaDeMasa x TreeShape
+  rdfs:subClassOf ifn:TreeShape ;
+  rdfs:label ""@es ;
+  rdfs:comment "Árboles fusiformes prácticamente en todo su fuste, con troncos maderables, limpios y derechos de más de 6 m, flecha inferior al 1% de su longitud, veta no torcida y diámetro normal mayor de 20 cm."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:TreeShape2 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:TreeShape ;
+  rdfs:label ""@es ;
+  rdfs:comment "Árboles que cumplan las cuatro condiciones siguientes: ser fusiformes, tener troncos maderables de 4 o más metros, ramificarse por la parte superior y no pertenecer a la forma 1."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:TreeShape3 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:TreeShape ;
+  rdfs:label ""@es ;
+  rdfs:comment "Árboles fusiformes pequeños, en los que el diámetro del fuste de 75 mm queda por debajo de los 4 m de altura."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:TreeShape4 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:TreeShape ;
+  rdfs:label ""@es ;
+  rdfs:comment "Árboles cuyo tronco principal se ramifica antes de los 4 m de altura y que pertenezcan a algunas de las siguientes especies 07, 12, 16, 23, 41, 42, 43, 44, 45, 46, 47, 48, 49, 55, 56, 57, 66, 67, 71, 72, 74, 75, 79 y 94."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:TreeShape5 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:TreeShape ;
+  rdfs:label ""@es ;
+  rdfs:comment "Árboles cuyo tronco principal es tortuoso, está dañado o es muy ramoso, por lo que no admite la clasificación en formas 1, 2 o 3. También pies de altura de fuste menor de 4 m si son de especies diferentes a las de los códigos 4 y 6."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:TreeShape6 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:TreeShape ;
+  rdfs:label ""@es ;
+  rdfs:comment "Árboles descabezados o trasmochos a los que se les ha cortado la parte superior del tronco y las ramas en puntos próximos a su inserción en el tronco y que pertenezcan a algunas de las siguientes especies: 41, 42, 43, 55, 56, 71, 72 y 94."@es ;
+  rdfs:isDefinedBy ifn: .
