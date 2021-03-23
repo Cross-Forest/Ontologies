@@ -1,0 +1,5559 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "la", "en", "es", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://crossforest.eu/ifn/ontology", "http://crossforest.eu/measures/ontology", "http://www.w3.org/2000/01/rdf-schema", "http://crossforest.eu/position/ontology", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://crossforest.eu/ifn/ontology/",
+    "version" : "0.1",
+    "author" : [ "https://www.gsic.uva.es/members/guiveg", "https://www.gsic.uva.es/members/josgim" ],
+    "labels" : {
+      "en" : "Spanish IFN Ontology",
+      "es" : "Ontología del IFN de España"
+    },
+    "comments" : {
+      "en" : "Ontology to publish data of the Spanish National Forest inventory",
+      "undefined" : "Ontología para publicar datos del Inventario Forestal Nacional de España"
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2019-07-17",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.gsic.uva.es/members/guiveg",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.gsic.uva.es/members/josgim",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "ifn",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "126",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "owl:Class"
+  }, {
+    "id" : "135",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "140",
+    "type" : "owl:Class"
+  }, {
+    "id" : "153",
+    "type" : "owl:Class"
+  }, {
+    "id" : "123",
+    "type" : "owl:Class"
+  }, {
+    "id" : "154",
+    "type" : "owl:Class"
+  }, {
+    "id" : "155",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "162",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "175",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "125",
+    "type" : "owl:Class"
+  }, {
+    "id" : "128",
+    "type" : "owl:Class"
+  }, {
+    "id" : "152",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "143",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "209",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "220",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "221",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "208",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "159",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "91",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "33",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "116",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "45",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "112",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "157",
+    "type" : "owl:Class"
+  }, {
+    "id" : "149",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "233",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "147",
+    "type" : "owl:Class"
+  }, {
+    "id" : "267",
+    "type" : "owl:Class"
+  }, {
+    "id" : "136",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "236",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "258",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "250",
+    "type" : "rdfs:Literal"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://crossforest.eu/ifn/ontology/Synonym",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Synonym"
+    },
+    "id" : "3"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/DiameterAtBreastHeight",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DiameterAtBreastHeight",
+      "en" : "Diameter at Breast Hight",
+      "es" : "Diámetro a la altura del pecho"
+    },
+    "subClasses" : [ "11", "12" ],
+    "comment" : {
+      "en" : "Diameter at breast height of a tree",
+      "es" : "Diámetro a la altura del pecho de un árbol"
+    },
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/PlotType",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PlotType",
+      "en" : "Plot Type",
+      "es" : "Tipo de parcela"
+    },
+    "id" : "27"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/SecondaryPlot",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SecondaryPlot",
+      "en" : "Plot",
+      "es" : "Parcela"
+    },
+    "subClasses" : [ "30", "31" ],
+    "comment" : { },
+    "id" : "28",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Plot-A4C",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Plot-A4C"
+    },
+    "comment" : {
+      "es" : "Parcelas en las que no se localice el rejón por cambio totales en la cubierta forestal de la tesela que contiene la parcela (pérdida total de la masa muestreada en el inventario anterior o incorporación de una nueva masa forestal inexistente en el IFN2). Se utilizarán para la comparación de inventarios y para el cálculo de existencias actuales."
+    },
+    "id" : "35",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/NumberOfTrees",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NumberOfTrees",
+      "en" : "Number of Trees",
+      "es" : "Número de Árboles"
+    },
+    "comment" : { },
+    "id" : "36",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Stratum",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ],
+      "Label" : [ {
+        "identifier" : "Label",
+        "language" : "es",
+        "value" : "Estrato",
+        "type" : "label"
+      }, {
+        "identifier" : "Label",
+        "language" : "en",
+        "value" : "Stratum",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Stratum"
+    },
+    "id" : "62"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Province",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Province",
+      "en" : "Province",
+      "es" : "Provincia"
+    },
+    "individuals" : [ {
+      "iri" : "http://crossforest.eu/ifn/data/province/33",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "33",
+        "es" : "Asturias"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/34",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "34",
+        "es" : "Palencia"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/35",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "35",
+        "es" : "Las Palmas"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/36",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "36",
+        "es" : "Pontevedra"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/30",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "30",
+        "es" : "Murcia"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/31",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "31",
+        "es" : "Navarra"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/32",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "32",
+        "es" : "Orense"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/37",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "37",
+        "es" : "Salamanca"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/38",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "38",
+        "es" : "Santa Cruz de Tenerife"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/39",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "39",
+        "es" : "Cantabria"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/22",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "22",
+        "es" : "Huesca"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/23",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "23",
+        "es" : "Jaén"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/24",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "24",
+        "es" : "León"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/25",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "25",
+        "es" : "Lérida"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/20",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "20",
+        "es" : "Guipúzcoa"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/21",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "21",
+        "es" : "Huelva"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/26",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "26",
+        "es" : "La Rioja"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/27",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "27",
+        "es" : "Lugo"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/28",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "28",
+        "es" : "Madrid"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/29",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "29",
+        "es" : "Málaga"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/50",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "50",
+        "es" : "Zaragoza"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/11",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "11",
+        "es" : "Cádiz"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/12",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "12",
+        "es" : "Castellón"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/13",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "13",
+        "es" : "Ciudad real"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/14",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "14",
+        "es" : "Córdoba"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/51",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "51",
+        "es" : "Ceuta"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/52",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "52",
+        "es" : "Melilla"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/10",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "10",
+        "es" : "Cáceres"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/19",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "19",
+        "es" : "Guadalajara"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/15",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "15",
+        "es" : "La Coruña"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/16",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "16",
+        "es" : "Cuenca"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/17",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "17",
+        "es" : "Gerona"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/18",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "18",
+        "es" : "Granada"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/44",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "44",
+        "es" : "Teruel"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/01",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "01",
+        "es" : "Álava"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/45",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "45",
+        "es" : "Toledo"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/46",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "46",
+        "es" : "Valencia"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/02",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "02",
+        "es" : "Albacete"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/03",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "03",
+        "es" : "Alicante"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/47",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "47",
+        "es" : "Valladolid"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/40",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "40",
+        "es" : "Segovia"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/41",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "41",
+        "es" : "Savilla"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/42",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "42",
+        "es" : "Soria"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/43",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "43",
+        "es" : "Tarragona"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/08",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "08",
+        "es" : "Barcelona"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/09",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "09",
+        "es" : "Burgos"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/04",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "04",
+        "es" : "Almería"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/48",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "48",
+        "es" : "Vizcaya"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/49",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "49",
+        "es" : "Zamora"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/05",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "05",
+        "es" : "Ávila"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/06",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "06",
+        "es" : "Badajoz"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/province/07",
+      "baseIri" : "http://crossforest.eu/ifn/data/province",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "07",
+        "es" : "Baleares"
+      }
+    } ],
+    "comment" : { },
+    "id" : "65",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/PlotMeasureTotal",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PlotMeasureTotal",
+      "en" : "Total Plot Measure",
+      "es" : "Medida de parcela total"
+    },
+    "comment" : {
+      "en" : "Measure of a whole plot (adding all species)",
+      "es" : "Medida de una parcela completa (sumando las de todas las especies)"
+    },
+    "id" : "69",
+    "superClasses" : [ "70" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Texture",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Texture",
+      "en" : "Texture",
+      "es" : "Textura"
+    },
+    "comment" : {
+      "en" : "Position with soil texture",
+      "es" : "Posición con textura del suelo"
+    },
+    "id" : "71"
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/Position",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Position"
+    },
+    "attributes" : [ "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/InfoSpecies",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InfoSpecies"
+    },
+    "id" : "19"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/FuelModel",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FuelModel",
+      "en" : "Fuel Model",
+      "es" : "Modelo de Combustible"
+    },
+    "comment" : {
+      "en" : "Position with Fuel Model",
+      "es" : "Posición con Modelo de Combustible"
+    },
+    "id" : "82"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/DamageStatus",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ],
+      "Label" : [ {
+        "identifier" : "Label",
+        "language" : "es",
+        "value" : "Estado del Daño",
+        "type" : "label"
+      }, {
+        "identifier" : "Label",
+        "language" : "en",
+        "value" : "Damage Status",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DamageStatus"
+    },
+    "id" : "83"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasureInPercentage",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MeasureInPercentage"
+    },
+    "subClasses" : [ "85" ],
+    "attributes" : [ "external" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/Source",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Source"
+    },
+    "subClasses" : [ "93" ],
+    "attributes" : [ "external" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Height",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Height",
+      "en" : "Height",
+      "es" : "Altura"
+    },
+    "subClasses" : [ "94", "95", "96", "97" ],
+    "comment" : {
+      "es" : "Altura del árbol medido",
+      "undefined" : "height of measured tree"
+    },
+    "id" : "23",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/Measure",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Measure"
+    },
+    "subClasses" : [ "99", "70" ],
+    "attributes" : [ "external" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/SpatialDistribution",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SpatialDistribution",
+      "en" : "Spatial Distribution",
+      "es" : "Distribución Espacial"
+    },
+    "comment" : {
+      "en" : "Position with spatial distribution of vegetation",
+      "es" : "Posición con disposición de la vegetación en el espacio"
+    },
+    "id" : "100"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasureInYears",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MeasureInYears"
+    },
+    "subClasses" : [ "104" ],
+    "attributes" : [ "external" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Plot-A3E",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Plot-A3E",
+      "es" : "Parcela para el cálculo de existencias actuales"
+    },
+    "comment" : {
+      "es" : "Parcelas para el cálculo de existencias actuales. Se levantarán en el emplazamiento correcto ( Coordenada UTM)"
+    },
+    "id" : "59",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Plot-A3C",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Plot-A3C",
+      "en" : "Plot for inventory comparison",
+      "es" : "Parcela de comparación de inventarios"
+    },
+    "comment" : {
+      "es" : "Parcela para la comparación de inventarios. Se levantará en el punto donde se encuentre el rejón del inventario anterior. Incluye datos de identificación y dendrometría, pero no estado fitosanitario."
+    },
+    "id" : "30",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasVolumeWithoutBark",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVolumeWithoutBark",
+      "en" : "has volume without bark",
+      "es" : "tiene volumen sin corteza"
+    },
+    "id" : "105"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Composition",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Composition",
+      "en" : "Composition of Vegetation",
+      "es" : "Composición Específica"
+    },
+    "comment" : {
+      "en" : "Position with composition of vegetation",
+      "es" : "Posición con composición de vegetación"
+    },
+    "id" : "106"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/PlantMeasure",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PlantMeasure",
+      "en" : "Tree Measure",
+      "es" : "Medida del árbol"
+    },
+    "comment" : {
+      "en" : "Measure of a tree",
+      "es" : "Medida de un arbol"
+    },
+    "id" : "99",
+    "superClasses" : [ "98" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/PH",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PH",
+      "en" : "PH",
+      "es" : "PH"
+    },
+    "comment" : {
+      "en" : "Soil with PH",
+      "es" : "Suelo con PH"
+    },
+    "id" : "110"
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/SpatialEntity",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpatialEntity"
+    },
+    "subClasses" : [ "29", "125", "65" ],
+    "attributes" : [ "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Erosion",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Erosion",
+      "en" : "Erosion",
+      "es" : "Erosión"
+    },
+    "comment" : {
+      "en" : "Position with Erosion",
+      "es" : "Posición con Erosión"
+    },
+    "id" : "126"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/TreeShape",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TreeShape",
+      "en" : "Shape",
+      "es" : "Forma"
+    },
+    "comment" : {
+      "en" : "Tree with a Shape",
+      "es" : "Árbol con forma"
+    },
+    "id" : "127"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/HeightToLargestCrownWidht",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HeightToLargestCrownWidht",
+      "en" : "Height to Largest Crown Widht",
+      "es" : "Altura hasta el máximo ancho de copa"
+    },
+    "id" : "94",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/AgeSource",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AgeSource",
+      "en" : "Source",
+      "es" : "Fuente"
+    },
+    "individuals" : [ {
+      "iri" : "http://crossforest.eu/ifn/data/origin/25",
+      "baseIri" : "http://crossforest.eu/ifn/data/origin",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "25",
+        "es" : "Mixto semilla y plantación"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/origin/13",
+      "baseIri" : "http://crossforest.eu/ifn/data/origin",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "13",
+        "es" : "Naturalizado"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/origin/24",
+      "baseIri" : "http://crossforest.eu/ifn/data/origin",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "24",
+        "es" : "Mixto semilla y brote de cepa"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/origin/26",
+      "baseIri" : "http://crossforest.eu/ifn/data/origin",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "26",
+        "es" : "Mixto plantación y brote de cepa (eucaliptos)"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/reliability/4",
+      "baseIri" : "http://crossforest.eu/ifn/data/reliability",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "4",
+        "es" : "Alta"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/reliability/2",
+      "baseIri" : "http://crossforest.eu/ifn/data/reliability",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "2",
+        "es" : "Baja"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/origin/21",
+      "baseIri" : "http://crossforest.eu/ifn/data/origin",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "21",
+        "es" : "Semilla"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/reliability/3",
+      "baseIri" : "http://crossforest.eu/ifn/data/reliability",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "3",
+        "es" : "Media"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/origin/23",
+      "baseIri" : "http://crossforest.eu/ifn/data/origin",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "23",
+        "es" : "Brote de cepa o raíz"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/origin/12",
+      "baseIri" : "http://crossforest.eu/ifn/data/origin",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "12",
+        "es" : "Artificial"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/reliability/1",
+      "baseIri" : "http://crossforest.eu/ifn/data/reliability",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "1",
+        "es" : "Dudosa"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/origin/11",
+      "baseIri" : "http://crossforest.eu/ifn/data/origin",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "11",
+        "es" : "Natural"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/origin/22",
+      "baseIri" : "http://crossforest.eu/ifn/data/origin",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "22",
+        "es" : "Plantación"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/source/7",
+      "baseIri" : "http://crossforest.eu/ifn/data/source",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "es" : "Por otras fuentes"
+      },
+      "labels" : {
+        "IRI-based" : "7",
+        "es" : "Otras Fuentes"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/source/6",
+      "baseIri" : "http://crossforest.eu/ifn/data/source",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "es" : "Por observación de tocones recientes"
+      },
+      "labels" : {
+        "IRI-based" : "6",
+        "es" : "Tocones"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/source/5",
+      "baseIri" : "http://crossforest.eu/ifn/data/source",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "es" : "Por conteo de verticilos"
+      },
+      "labels" : {
+        "IRI-based" : "5",
+        "es" : "Verticilos"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/source/4",
+      "baseIri" : "http://crossforest.eu/ifn/data/source",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "es" : "Por consulta a los habitantes de la zona"
+      },
+      "labels" : {
+        "IRI-based" : "4",
+        "es" : "Habitantes"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/source/3",
+      "baseIri" : "http://crossforest.eu/ifn/data/source",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "es" : "Por consulta a la jefatura forestal comarcal, provincial o autonómica"
+      },
+      "labels" : {
+        "IRI-based" : "3",
+        "es" : "Jefatura Forestal"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/source/2",
+      "baseIri" : "http://crossforest.eu/ifn/data/source",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "es" : "Por consulta al agente forestal de la zona"
+      },
+      "labels" : {
+        "IRI-based" : "2",
+        "es" : "Agente Forestal"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/source/1",
+      "baseIri" : "http://crossforest.eu/ifn/data/source",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "es" : "Por el aspecto"
+      },
+      "labels" : {
+        "IRI-based" : "1",
+        "es" : "Aspecto"
+      }
+    } ],
+    "comment" : {
+      "en" : "Source of estimation of age"
+    },
+    "id" : "93",
+    "superClasses" : [ "92" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Plot",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Plot",
+      "en" : "Plot",
+      "es" : "Parcela"
+    },
+    "subClasses" : [ "28", "128", "2" ],
+    "comment" : { },
+    "id" : "29",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Plot-R",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Plot-R"
+    },
+    "subClasses" : [ "76", "79", "81", "43", "48", "50" ],
+    "comment" : { },
+    "id" : "31",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Orientation",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Orientation",
+      "en" : "Orientation",
+      "es" : "Orientación"
+    },
+    "comment" : {
+      "en" : "Position with Orientation",
+      "es" : "Posición con Orientación"
+    },
+    "id" : "129"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/AcceptedName",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AcceptedName",
+      "en" : "Accepted Name",
+      "es" : "Nombre aceptado"
+    },
+    "id" : "135",
+    "superClasses" : [ "136" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/HeightToCrownBase",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HeightToCrownBase",
+      "en" : "Height to Crown Base",
+      "es" : "Altura hasta el inicio de la copa"
+    },
+    "id" : "96",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/Reliability",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reliability"
+    },
+    "subClasses" : [ "52", "55", "57" ],
+    "attributes" : [ "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/SpatialEntity",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpatialEntity"
+    },
+    "id" : "68"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Plot-A6C",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Plot-A6C"
+    },
+    "comment" : {
+      "es" : "Parcelas en las que no se localice el rejón por cambios totales en la cubierta forestal de la tesela que contiene la parcela (pérdida total de la masa muestreada en el inventario anterior e incorporación de una nueva masa forestal). Se utilizarán para la comparación de inventarios y para el cálculo de existencias actuales."
+    },
+    "id" : "64",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/PrimaryPlot",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PrimaryPlot",
+      "en" : "Plot",
+      "es" : "Parcela"
+    },
+    "subClasses" : [ "59", "35", "64", "39", "41", "1" ],
+    "comment" : { },
+    "id" : "2",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Rocosity",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Rocosity",
+      "en" : "Rocosity",
+      "es" : "Rocosidad"
+    },
+    "comment" : {
+      "en" : "Position with rocosity of the soil",
+      "es" : "Posición con rocosidad del suelo"
+    },
+    "id" : "140"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/OrganicMatter",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OrganicMatter",
+      "en" : "Organic Matter",
+      "es" : "Materia Orgánica"
+    },
+    "comment" : {
+      "en" : "Position with Organic Matter",
+      "es" : "Posición con Materia Orgánica"
+    },
+    "id" : "153"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/DBH",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DBH"
+    },
+    "id" : "123"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/DeadLayer",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DeadLayer",
+      "en" : "Thickness of Dead Layer",
+      "es" : "Espesor de Capa Muerta"
+    },
+    "comment" : {
+      "en" : "Position with thickness of dead layer",
+      "es" : "Posición con espesor de capa muerta"
+    },
+    "id" : "154"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Plantae",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Plantae",
+      "la" : "Plantae"
+    },
+    "comment" : {
+      "en" : "Multicellular living beings with cell walls containing cellulose, and the ability to carry out photosynthesis with primary chloroplasts"
+    },
+    "id" : "155"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Taxon",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Taxon",
+      "en" : "Taxon",
+      "es" : "Taxón"
+    },
+    "subClasses" : [ "5", "8", "14", "16" ],
+    "comment" : { },
+    "id" : "6"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/TreeMeasure",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TreeMeasure"
+    },
+    "subClasses" : [ "10", "23" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/TotalHeight",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TotalHeight",
+      "en" : "Total Height",
+      "es" : "Altura total"
+    },
+    "comment" : {
+      "es" : "Altura total del árbol medido",
+      "undefined" : "Total height of measured tree"
+    },
+    "id" : "95",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Use",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Use"
+    },
+    "comment" : { },
+    "id" : "162"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Plot-NN",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Plot-NN",
+      "en" : "New Plot",
+      "es" : "Parcela Nueva"
+    },
+    "comment" : {
+      "es" : "Se levantarán por primera vez en el inventario actual y serán utilizadas para el cálculo de existencias actuales"
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Species",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Species",
+      "en" : "Species",
+      "es" : "Especie"
+    },
+    "comment" : { },
+    "id" : "14",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/BasalArea",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BasalArea",
+      "en" : "Basal Area",
+      "es" : "Área Basimétrica"
+    },
+    "comment" : {
+      "en" : "The area of a cross-section of a tree, including bark, at 1.3 m height. Basal area of a forest stand is the sum of the basal areas of all individual trees in the stand, usually reported as square meter per hectare."
+    },
+    "id" : "117",
+    "superClasses" : [ "70" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/ChangeOfSpecies",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ],
+      "Label" : [ {
+        "identifier" : "Label",
+        "language" : "en",
+        "value" : "Change of Species",
+        "type" : "label"
+      }, {
+        "identifier" : "Label",
+        "language" : "es",
+        "value" : "Cambio de Especie",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ChangeOfSpecies"
+    },
+    "id" : "175"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/TreeSpecies",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TreeSpecies",
+      "en" : "Especie arbórea"
+    },
+    "comment" : {
+      "en" : "Tree species, as recorded in the inventory. It is possible that the individuals of this class are not strictly species, but genus, sub-genus, mix of species, etc.",
+      "es" : "Especie arbórea, tal y como se ha registrado en el inventario. Es posible que los indivíduos de esta clase no sean estrictamente especies. Genus, sub-genus, y mezclas de especies son también indivíduos posibles."
+    },
+    "id" : "25",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/PlantSpecies",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PlantSpecies",
+      "en" : "Plant Species",
+      "es" : "Especie vegetal"
+    },
+    "subClasses" : [ "25", "157" ],
+    "comment" : {
+      "en" : "Plant species, as recorded in the inventory. It is possible that the individuals of this class are not strictly species, but genus, sub-genus, mix of species, etc.",
+      "es" : "Especie vegetal, tal y como se ha registrado en el inventario. Es posible que los indivíduos de esta clase no sean estrictamente especies. Genus, sub-genus, y mezclas de especies son también indivíduos posibles."
+    },
+    "id" : "26"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Class",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Class",
+      "en" : "Class",
+      "es" : "Clase"
+    },
+    "comment" : { },
+    "id" : "16",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Genus",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Genus",
+      "en" : "Genus",
+      "es" : "Género"
+    },
+    "comment" : { },
+    "id" : "8",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Plant",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ],
+      "vulgarName" : [ {
+        "identifier" : "vulgarName",
+        "language" : "en",
+        "value" : "Plant",
+        "type" : "label"
+      }, {
+        "identifier" : "vulgarName",
+        "language" : "es",
+        "value" : "Planta",
+        "type" : "label"
+      } ],
+      "scientificName" : [ {
+        "identifier" : "scientificName",
+        "language" : "la",
+        "value" : "Plantae",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Plant"
+    },
+    "subClasses" : [ "159", "108" ],
+    "comment" : { },
+    "id" : "125",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Plot-A",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Plot-A",
+      "en" : "Existing Plot",
+      "es" : "Parcela Existente"
+    },
+    "subClasses" : [ "143" ],
+    "comment" : {
+      "es" : "Parcelas levantadas en el inventario anterior que volverán a ser apeadas en el inventario actual"
+    },
+    "id" : "128",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/PlotMeasureBySpecies",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PlotMeasureBySpecies",
+      "en" : "Plot Measure",
+      "es" : "Medida de parcela"
+    },
+    "comment" : {
+      "en" : "Measure of a plot",
+      "es" : "Medida de una parcela"
+    },
+    "id" : "152",
+    "superClasses" : [ "70" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Tree",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Tree",
+      "en" : "Tree",
+      "es" : "Árbol"
+    },
+    "comment" : {
+      "en" : "Woody perennial plant with an elongated stem supporting branches",
+      "es" : "Planta vivaz (que vive más de dos años, de tallo leñoso, que se ramifica a cierta altura del suelo"
+    },
+    "id" : "108",
+    "superClasses" : [ "125" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/AgeReliability",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AgeReliability",
+      "en" : "Reliability",
+      "es" : "Fiabilidad"
+    },
+    "comment" : {
+      "en" : "Reliability of estimation of age",
+      "es" : "Fiabilidad de la estimación de la edad"
+    },
+    "id" : "52",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Plot-A4",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Plot-A4"
+    },
+    "comment" : {
+      "es" : "Parcelas en las que no se localice el rejón. Se utilizarán para el cálculo de existencias actuales."
+    },
+    "id" : "39",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/HeightToFirstAliveBranch",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HeightToFirstAliveBranch",
+      "en" : "Height to First Alive Branch",
+      "es" : "Altura hasta la primera rama viva"
+    },
+    "id" : "97",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Plot-A3",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Plot-A3",
+      "en" : "Plot in different possition than before",
+      "es" : "Parcela en diferente posición que la anterior"
+    },
+    "comment" : {
+      "es" : "Parcelas en las que se localice el rejón y esté mal implantado o bien se hayan producido cambios, en los últimos años, en las teselas de vegetación colindantes."
+    },
+    "id" : "143",
+    "superClasses" : [ "128" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/OccupationOfSpecies",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OccupationOfSpecies",
+      "es" : "Ocupación de especie"
+    },
+    "comment" : {
+      "es" : "Indica la ocupación para cada una de las especies descritas. Los valores que adopta informan del grado de presencia en porcentaje de las especies arbóreas existentes, siendo tanto mayor, cuanto mayor representatividad posee la especie en cuestión, en comparación con las otras especies arbóreas presentes en la parcela."
+    },
+    "id" : "85",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Plot-A1",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Plot-A1",
+      "en" : "Plot in the same position as before",
+      "es" : "Parcela en la misma posición que antes"
+    },
+    "comment" : {
+      "es" : "Parcelas en las que se localice el rejón y esté bien implantado. Se utilizarán para la comparación de inventarios y para el cálculo de existencias actuales."
+    },
+    "id" : "41",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/DBH2",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DBH2",
+      "en" : "Diameter at breast height of a tree measured with caliper arms perpendicular to the center of the plot",
+      "es" : "Diámetro normal de un árbol medido con la forci?pula perpendicular al centro de la parcela"
+    },
+    "comment" : {
+      "en" : "Generic instance of an observable property representing the diameter of a tree measured at 1.3 meters above the ground with caliper arms perpendicular to the center of the plot.",
+      "es" : "Instancia genérica de una propiedad observable representando el diámetro de un arbol a una altura aproximada de 1,3 metros, con la forcípula perpendicular al centro de la parcela."
+    },
+    "id" : "11",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/DBH1",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DBH1",
+      "en" : "Diameter at breast height of a tree measured with caliper arms pointing at the center of the plot",
+      "es" : "Diámetro normal de un árbol medido apuntando la forci?pula al centro de la parcela"
+    },
+    "comment" : {
+      "en" : "Generic instance of an observable property representing the diameter of a tree measured at 1.3 meters above the ground with caliper arms pointing at the center of the plot.",
+      "es" : "Instancia genérica de una propiedad observable representando el diámetro de un arbol a una altura aproximada de 1,3 metros, con la forcípula apuntando al centro de la parcela."
+    },
+    "id" : "12",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Altitude",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Altitude",
+      "en" : "Altitude",
+      "es" : "Altitud"
+    },
+    "comment" : {
+      "en" : "Position with Altitude",
+      "es" : "Posición con altitud"
+    },
+    "id" : "209"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Plot-R4",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Plot-R4"
+    },
+    "comment" : { },
+    "id" : "81",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Plot-R1",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Plot-R1"
+    },
+    "comment" : { },
+    "id" : "43",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Plot-R3",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Plot-R3"
+    },
+    "comment" : { },
+    "id" : "48",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Plot-R2",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Plot-R2"
+    },
+    "comment" : { },
+    "id" : "50",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "131",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "109",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "220",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "221",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "208",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Origin",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Origin",
+      "en" : "Origin",
+      "es" : "Origen"
+    },
+    "comment" : {
+      "en" : "Origin of the stand",
+      "es" : "Origen de la masa forestal"
+    },
+    "id" : "55",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Bush",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Bush",
+      "en" : "Bush",
+      "es" : "Arbusto"
+    },
+    "comment" : { },
+    "id" : "159",
+    "superClasses" : [ "125" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Plot-R1R",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Plot-R1R"
+    },
+    "comment" : { },
+    "id" : "76",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "102",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "199",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Age",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Age",
+      "en" : "Age",
+      "es" : "Edad"
+    },
+    "comment" : {
+      "en" : "Estimation of Age",
+      "es" : "Estimación de la edad"
+    },
+    "id" : "104",
+    "superClasses" : [ "103" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "190",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "91",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "33",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "116",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "45",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "112",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/BushSpecies",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BushSpecies",
+      "en" : "Bush Species",
+      "es" : "Especie arbustiva"
+    },
+    "comment" : {
+      "en" : "Bush species, as recorded in the inventory. It is possible that the individuals of this class are not strictly species, but genus, sub-genus, mix of species, etc.",
+      "es" : "Especie arbustiva, tal y como se ha registrado en el inventario. Es posible que los indivíduos de esta clase no sean estrictamente especies. Genus, sub-genus, y mezclas de especies son también indivíduos posibles."
+    },
+    "id" : "157",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/ScientificSynonym",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ScientificSynonym",
+      "en" : "Synonym",
+      "es" : "Sinónimo"
+    },
+    "id" : "149",
+    "superClasses" : [ "136" ]
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasureInUnities",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MeasureInUnities"
+    },
+    "subClasses" : [ "36" ],
+    "attributes" : [ "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/SilviculturalSystem",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SilviculturalSystem",
+      "en" : "Silvicultural System",
+      "es" : "Tratamiento"
+    },
+    "individuals" : [ {
+      "iri" : "http://crossforest.eu/ifn/data/size/1",
+      "baseIri" : "http://crossforest.eu/ifn/data/size",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "es" : "Pies con altura inferior a 30 cm."
+      },
+      "labels" : {
+        "IRI-based" : "1",
+        "es" : "Categoría 1"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/size/2",
+      "baseIri" : "http://crossforest.eu/ifn/data/size",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "es" : "Pies con altura comprendida entre 30 y 130 cm."
+      },
+      "labels" : {
+        "IRI-based" : "2",
+        "es" : "Categoría 2"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/system/2",
+      "baseIri" : "http://crossforest.eu/ifn/data/system",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "es" : "Cuando coexisten pies de la misma especie, unos procedentes de semilla (brinzales) y otros de brote (chirpiales)"
+      },
+      "labels" : {
+        "IRI-based" : "2",
+        "es" : "Monte medio"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/system/1",
+      "baseIri" : "http://crossforest.eu/ifn/data/system",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "es" : "Cuando todos los pies proceden de semilla"
+      },
+      "labels" : {
+        "IRI-based" : "1",
+        "es" : "Monte alto"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/density/2",
+      "baseIri" : "http://crossforest.eu/ifn/data/density",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "es" : "De 5 a 15 pies en la parcela."
+      },
+      "labels" : {
+        "IRI-based" : "2",
+        "es" : "Normal"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/system/3",
+      "baseIri" : "http://crossforest.eu/ifn/data/system",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "es" : "Cuando todos los pies proceden de brote de cepa o de raíz"
+      },
+      "labels" : {
+        "IRI-based" : "3",
+        "es" : "Monte bajo"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/density/3",
+      "baseIri" : "http://crossforest.eu/ifn/data/density",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "es" : "Más de 15 pies en la parcela."
+      },
+      "labels" : {
+        "IRI-based" : "3",
+        "es" : "Abundante"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/density/1",
+      "baseIri" : "http://crossforest.eu/ifn/data/density",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "es" : "De 1 a 4 pies en la parcela."
+      },
+      "labels" : {
+        "IRI-based" : "1",
+        "es" : "Escasa"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/size/3",
+      "baseIri" : "http://crossforest.eu/ifn/data/size",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "es" : "Pies con altura superior a 130 cm y diámetro normal menor de 2,5 cm."
+      },
+      "labels" : {
+        "IRI-based" : "3",
+        "es" : "Categoría 3"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifn/data/size/4",
+      "baseIri" : "http://crossforest.eu/ifn/data/size",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifn/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "es" : "Pies con altura superior a 130 cm y diámetro normal comprendido entre 2,5 y 7,5 cm. Corresponde a los pies menores del IFN-2."
+      },
+      "labels" : {
+        "IRI-based" : "4",
+        "es" : "Categoría 4"
+      }
+    } ],
+    "comment" : {
+      "es" : "Tratamiento de la masa forestal desde la perspectiva de la ordenación de montes"
+    },
+    "id" : "57",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/VolumeWithBark",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VolumeWithBark"
+    },
+    "id" : "34"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Plot-R2R",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Plot-R2R"
+    },
+    "comment" : { },
+    "id" : "79",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "18",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/DominantSpecies",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ],
+      "Label" : [ {
+        "identifier" : "Label",
+        "language" : "es",
+        "value" : "Especie Dominante",
+        "type" : "label"
+      }, {
+        "identifier" : "Label",
+        "language" : "en",
+        "value" : "Dominant Species",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DominantSpecies"
+    },
+    "id" : "233"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Diameter",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Diameter"
+    },
+    "subClasses" : [ "9", "147" ],
+    "id" : "10",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Volume",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Volume",
+      "en" : "Volume",
+      "es" : "Volume"
+    },
+    "comment" : { },
+    "id" : "113",
+    "superClasses" : [ "70" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/DiameterAtRootCollar",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DiameterAtRootCollar",
+      "en" : "Diameter At Root Collar",
+      "es" : "Diámetro basal"
+    },
+    "id" : "147",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Gradient",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Gradient",
+      "en" : "Gradient",
+      "es" : "Pendiente"
+    },
+    "comment" : {
+      "en" : "Position with Gradient",
+      "es" : "Posición con Pendiente"
+    },
+    "id" : "267"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/ScientificName",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ScientificName",
+      "en" : "Scientific Name",
+      "es" : "Nombre científico"
+    },
+    "subClasses" : [ "149", "135" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/PlotMeasure",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PlotMeasure",
+      "en" : "Plot Measure",
+      "es" : "Medida de parcela"
+    },
+    "subClasses" : [ "152", "117", "69", "113" ],
+    "comment" : {
+      "en" : "Measure of a plot",
+      "es" : "Medida de una parcela"
+    },
+    "id" : "70",
+    "superClasses" : [ "98" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Family",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Family",
+      "en" : "Family",
+      "es" : "Familia"
+    },
+    "comment" : { },
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "236",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "134",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "258",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "250",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "137",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "161",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "163",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "164",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "165",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "166",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "167",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "168",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "169",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "170",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "171",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "172",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "173",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "174",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "176",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "177",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "178",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "179",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "180",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "181",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "182",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "183",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "184",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "185",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "186",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "187",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "188",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "189",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "191",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "192",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "193",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "194",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "195",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "196",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "197",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "198",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "200",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "201",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "202",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "203",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "204",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "205",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "206",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "207",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "210",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "211",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "212",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "213",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "214",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "215",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "216",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "217",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "218",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "219",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "222",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "223",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "224",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "225",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "226",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "227",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "228",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "229",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "230",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "231",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "232",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "124",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "234",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "235",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "237",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "238",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "239",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "240",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "241",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "242",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "243",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "244",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "245",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "246",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "247",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "248",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "249",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "251",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "252",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "253",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "254",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "255",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "256",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "257",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "259",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "260",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "261",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "262",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "263",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "264",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "265",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "119",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "266",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "268",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "269",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "270",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "271",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "4"
+  }, {
+    "range" : "6",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "7"
+  }, {
+    "range" : "6",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
+  }, {
+    "range" : "6",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/containsSpecies",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "containsSpecies",
+      "en" : "containsSpecies"
+    },
+    "domain" : "18",
+    "attributes" : [ "object" ],
+    "id" : "17"
+  }, {
+    "range" : "21",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "21",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "26",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasNumberOfTreesInUnits",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "34",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasNumberOfTreesInUnits",
+      "en" : "has number of trees"
+    },
+    "domain" : "33",
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "range" : "2",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "2",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "range" : "31",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/hasArea",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "hasArea"
+    },
+    "domain" : "45",
+    "subproperty" : [ "46" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "44"
+  }, {
+    "range" : "31",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "31",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "range" : "53",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
+  }, {
+    "range" : "53",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "53",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "2",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "58"
+  }, {
+    "range" : "2",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasNumberOfTreesInUnitsByHA",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "34",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasNumberOfTreesInUnitsByHA",
+      "en" : "has number of trees"
+    },
+    "domain" : "33",
+    "attributes" : [ "object" ],
+    "id" : "61"
+  }, {
+    "range" : "2",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/isInProvince",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "65",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isInProvince",
+      "en" : "in province",
+      "es" : "en la provincia"
+    },
+    "domain" : "68",
+    "comment" : {
+      "en" : "Province in which the entity is located",
+      "es" : "Provincia en la que la entidad está situada"
+    },
+    "attributes" : [ "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureInHectares",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "hasMeasureInHectares"
+    },
+    "domain" : "45",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "72"
+  }, {
+    "range" : "31",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "75"
+  }, {
+    "range" : "29",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
+  }, {
+    "range" : "31",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "range" : "31",
+    "domain" : "81",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasOccupationOfSpecies",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "85",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOccupationOfSpecies"
+    },
+    "superproperty" : [ "86" ],
+    "domain" : "19",
+    "comment" : { },
+    "attributes" : [ "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasDBH1InMillimeters",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "88",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDBH1InMillimeters",
+      "en" : "has DBH in millimeters",
+      "es" : "tiene DN en milímetros"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "has diameter in millimeters at breast hight with the caliper arms pointing at the center of the plot",
+      "es" : "tiene diámetro en milímetros a la altura del pecho con la forcípula apuntando al centro de la parcela"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasNumberOfTrees",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "36",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasNumberOfTrees",
+      "en" : "has number of trees"
+    },
+    "domain" : "91",
+    "attributes" : [ "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/hasForestAreaInSquareMeters",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "range" : "102",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasForestAreaInSquareMeters",
+      "en" : "has forest area in square meters"
+    },
+    "domain" : "74",
+    "comment" : { },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasHeightInMeters",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "109",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasHeightInMeters",
+      "en" : "has height in meters",
+      "es" : "tiene altura en metros"
+    },
+    "domain" : "108",
+    "comment" : {
+      "en" : "height of the tree in meters to a point",
+      "es" : "altura del árbol en metros hasta un determinado punto"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasVolumeWithoutBarkInM3byHA",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "113",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVolumeWithoutBarkInM3byHA",
+      "en" : "has volume with bark in cubic meters per hectare",
+      "es" : "tiene volumen con corteza en metros cúbicos por hectárea"
+    },
+    "domain" : "112",
+    "attributes" : [ "object" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasStandDevelopment",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "18",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasStandDevelopment"
+    },
+    "domain" : "19",
+    "comment" : { },
+    "attributes" : [ "object" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasBasalAreaInM2byHA",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "117",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasBasalAreaInM2byHA",
+      "en" : "has basal area"
+    },
+    "domain" : "116",
+    "attributes" : [ "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasDBH1",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "12",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDBH1",
+      "en" : "has DBH1",
+      "es" : "tiene dn1"
+    },
+    "superproperty" : [ "119" ],
+    "domain" : "108",
+    "comment" : {
+      "en" : "has diameter at breast hight with the caliper arms pointing at the center of the plot",
+      "es" : "tiene diámetro normal con la forcípula apuntando al centro de la parcela"
+    },
+    "attributes" : [ "object" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasAge",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "104",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasAge",
+      "es" : "tiene edad"
+    },
+    "superproperty" : [ "86" ],
+    "domain" : "19",
+    "comment" : {
+      "en" : "Age of trees in a plot",
+      "es" : "Edad en años en las formas coetáneas y regulares"
+    },
+    "attributes" : [ "object" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasDBH2",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "11",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDBH2",
+      "en" : "has DBH2",
+      "es" : "tiene dn2"
+    },
+    "superproperty" : [ "119" ],
+    "domain" : "108",
+    "comment" : {
+      "en" : "has diameter at breast hight with the caliper arms perpendicular to the center of the plot",
+      "es" : "tiene diámetro observado a la altura del pecho con la forcípula perpendicular al centro de la parcela"
+    },
+    "attributes" : [ "object" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasTotalHeight",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "123",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTotalHeight",
+      "en" : "has total height",
+      "es" : "tiene altura total"
+    },
+    "superproperty" : [ "124" ],
+    "domain" : "108",
+    "comment" : {
+      "en" : "height of the tree to its upmost point",
+      "es" : "altura del árbol hasta su punto más alto"
+    },
+    "attributes" : [ "object" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasVolumeIncreaseInM3",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "105",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVolumeIncreaseInM3",
+      "en" : "has volume increase in cubic meters",
+      "es" : "tiene incremento de volumen en metros cúbicos"
+    },
+    "domain" : "131",
+    "attributes" : [ "object" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasBasalArea",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "117",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasBasalArea",
+      "en" : "has basal area"
+    },
+    "domain" : "116",
+    "attributes" : [ "object" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/hasForestAreaInHC",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "range" : "134",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasForestAreaInHC",
+      "en" : "has forest area in hectares"
+    },
+    "domain" : "74",
+    "comment" : { },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasVolumeFirewoodInM3",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "105",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVolumeFirewoodInM3",
+      "en" : "has volume of firewood in cubic meters",
+      "es" : "tiene volumen de leñas en metros cúbicos"
+    },
+    "domain" : "131",
+    "attributes" : [ "object" ],
+    "id" : "137"
+  }, {
+    "range" : "70",
+    "domain" : "117",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "range" : "70",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "139"
+  }, {
+    "range" : "70",
+    "domain" : "113",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "141"
+  }, {
+    "range" : "128",
+    "domain" : "143",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "142"
+  }, {
+    "range" : "37",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "144"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
+  }, {
+    "range" : "10",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "range" : "136",
+    "domain" : "149",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "136",
+    "domain" : "135",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "150"
+  }, {
+    "range" : "70",
+    "domain" : "152",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "151"
+  }, {
+    "range" : "26",
+    "domain" : "157",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "range" : "125",
+    "domain" : "159",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "range" : "125",
+    "domain" : "108",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "160"
+  }, {
+    "range" : "23",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "161"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasBasalAreaInM2",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "117",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasBasalAreaInM2",
+      "en" : "has basal area"
+    },
+    "domain" : "116",
+    "attributes" : [ "object" ],
+    "id" : "163"
+  }, {
+    "range" : "26",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "164"
+  }, {
+    "range" : "96",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "165"
+  }, {
+    "range" : "26",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "166"
+  }, {
+    "range" : "108",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "167"
+  }, {
+    "range" : "108",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "168"
+  }, {
+    "range" : "29",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "169"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasVolumeInM3byHA",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "113",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVolumeInM3byHA",
+      "en" : "has volume in cubic meters per hectare",
+      "es" : "tiene volumen en metros cúbicos por hectárea"
+    },
+    "domain" : "112",
+    "attributes" : [ "object" ],
+    "id" : "170"
+  }, {
+    "range" : "76",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "171"
+  }, {
+    "range" : "43",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "172"
+  }, {
+    "range" : "11",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "173"
+  }, {
+    "range" : "48",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "174"
+  }, {
+    "range" : "50",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "176"
+  }, {
+    "range" : "28",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "177"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasOrigin",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "55",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOrigin",
+      "es" : "tiene origen"
+    },
+    "superproperty" : [ "86" ],
+    "domain" : "19",
+    "attributes" : [ "object" ],
+    "id" : "178"
+  }, {
+    "range" : "30",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "179"
+  }, {
+    "range" : "26",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "180"
+  }, {
+    "range" : "79",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "181"
+  }, {
+    "range" : "41",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "range" : "31",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasVolumeWithBark",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "45",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVolumeWithBark",
+      "en" : "has volume with bark",
+      "es" : "tiene volumen con corteza"
+    },
+    "domain" : "45",
+    "attributes" : [ "object" ],
+    "id" : "184"
+  }, {
+    "range" : "2",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "185"
+  }, {
+    "range" : "29",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "186"
+  }, {
+    "range" : "1",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "187"
+  }, {
+    "range" : "108",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "188"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasDBHInMillimeters",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "190",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDBHInMillimeters",
+      "en" : "has DBH in millimeters",
+      "es" : "tiene DN en milímetros"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "has diameter in millimeters at breast hight",
+      "es" : "tiene diámetro normal en milímetros"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "189"
+  }, {
+    "range" : "108",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "191"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasVolume",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "113",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVolume",
+      "en" : "has volume"
+    },
+    "domain" : "112",
+    "attributes" : [ "object" ],
+    "id" : "192"
+  }, {
+    "range" : "108",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "193"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasVolumeIncrease",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "45",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVolumeIncrease",
+      "en" : "has volume increase",
+      "es" : "tiene incremento de volumen"
+    },
+    "domain" : "45",
+    "attributes" : [ "object" ],
+    "id" : "194"
+  }, {
+    "range" : "108",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "195"
+  }, {
+    "range" : "108",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "196"
+  }, {
+    "range" : "108",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "197"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureinPercentage",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "199",
+    "label" : {
+      "IRI-based" : "hasMeasureinPercentage"
+    },
+    "domain" : "45",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "198"
+  }, {
+    "range" : "108",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "200"
+  }, {
+    "range" : "108",
+    "domain" : "143",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "201"
+  }, {
+    "range" : "108",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "202"
+  }, {
+    "range" : "108",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "203"
+  }, {
+    "range" : "108",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "204"
+  }, {
+    "range" : "108",
+    "domain" : "128",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "205"
+  }, {
+    "range" : "108",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "206"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureInMillimeters",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "208",
+    "label" : {
+      "IRI-based" : "hasMeasureInMillimeters"
+    },
+    "domain" : "45",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "207"
+  }, {
+    "range" : "108",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "210"
+  }, {
+    "range" : "108",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "211"
+  }, {
+    "range" : "29",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "212"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/isInPlot",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "29",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isInPlot",
+      "en" : "in plot",
+      "es" : "en la parcela"
+    },
+    "domain" : "108",
+    "comment" : {
+      "en" : "Plot in which the tree is located",
+      "es" : "Parcela en la que el árbol está situado"
+    },
+    "attributes" : [ "object" ],
+    "id" : "213"
+  }, {
+    "range" : "29",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "214"
+  }, {
+    "range" : "26",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "215"
+  }, {
+    "range" : "29",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "216"
+  }, {
+    "range" : "94",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "217"
+  }, {
+    "range" : "95",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "218"
+  }, {
+    "range" : "97",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "219"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasVolumeWithBarkInM3",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "34",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVolumeWithBarkInM3",
+      "en" : "has volume with bark in cubic meters",
+      "es" : "tiene volumen con corteza en metros cúbicos"
+    },
+    "domain" : "33",
+    "attributes" : [ "object" ],
+    "id" : "222"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasVolumeWithoutBarkInM3",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "105",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVolumeWithoutBarkInM3",
+      "en" : "has volume without bark in cubic meters",
+      "es" : "tiene volumen sin corteza en metros cúbicos"
+    },
+    "domain" : "131",
+    "attributes" : [ "object" ],
+    "id" : "223"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasSpecies",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSpecies",
+      "en" : "has species"
+    },
+    "domain" : "221",
+    "attributes" : [ "object" ],
+    "id" : "224"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasVolumeWithBarkInM3byHA",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "113",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVolumeWithBarkInM3byHA",
+      "en" : "has volume with bark in cubic meters per hectare",
+      "es" : "tiene volumen con corteza en metros cúbicos por hectárea"
+    },
+    "domain" : "112",
+    "attributes" : [ "object" ],
+    "id" : "225"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasScientificSynonym",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "3",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasScientificSynonym",
+      "en" : "scientific synonym"
+    },
+    "domain" : "220",
+    "attributes" : [ "object" ],
+    "id" : "226"
+  }, {
+    "range" : "108",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "227"
+  }, {
+    "range" : "108",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "228"
+  }, {
+    "range" : "108",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "229"
+  }, {
+    "range" : "108",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "230"
+  }, {
+    "range" : "108",
+    "domain" : "81",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "231"
+  }, {
+    "range" : "108",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "232"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasHeight",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "123",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasHeight",
+      "en" : "has height",
+      "es" : "tiene altura"
+    },
+    "superproperty" : [ "86" ],
+    "domain" : "108",
+    "subproperty" : [ "122" ],
+    "comment" : {
+      "en" : "height of the tree to a point",
+      "es" : "altura del árbol hasta un determinado punto"
+    },
+    "attributes" : [ "object" ],
+    "id" : "124"
+  }, {
+    "range" : "66",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "234"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasPercentageOfSpecies",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "236",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPercentageOfSpecies"
+    },
+    "domain" : "19",
+    "comment" : { },
+    "attributes" : [ "datatype" ],
+    "id" : "235"
+  }, {
+    "range" : "66",
+    "domain" : "125",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "237"
+  }, {
+    "range" : "29",
+    "domain" : "128",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "238"
+  }, {
+    "range" : "29",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "239"
+  }, {
+    "range" : "98",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "240"
+  }, {
+    "range" : "66",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "241"
+  }, {
+    "range" : "103",
+    "domain" : "104",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "242"
+  }, {
+    "range" : "128",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "243"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasAgeInYears",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "18",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasAgeInYears",
+      "es" : "edad en años"
+    },
+    "domain" : "19",
+    "comment" : {
+      "en" : "Age in years",
+      "es" : "Edad en años en las formas coetáneas y regulares"
+    },
+    "attributes" : [ "object" ],
+    "id" : "244"
+  }, {
+    "range" : "59",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "245"
+  }, {
+    "range" : "64",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "246"
+  }, {
+    "range" : "81",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "247"
+  }, {
+    "range" : "108",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "248"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasTotalHeightInMeters",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "250",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTotalHeightInMeters",
+      "en" : "has total height in meters",
+      "es" : "tiene altura total en metros"
+    },
+    "domain" : "108",
+    "comment" : {
+      "en" : "height of the tree in meters to its upmost point",
+      "es" : "altura del árbol en metros hasta su punto más alto"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "249"
+  }, {
+    "range" : "39",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "251"
+  }, {
+    "range" : "35",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "252"
+  }, {
+    "range" : "143",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "253"
+  }, {
+    "range" : "123",
+    "domain" : "159",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "254"
+  }, {
+    "range" : "29",
+    "domain" : "159",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "255"
+  }, {
+    "range" : "23",
+    "domain" : "96",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "256"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasAcceptedName",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "135",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasAcceptedName",
+      "en" : "scientific name"
+    },
+    "domain" : "258",
+    "attributes" : [ "object" ],
+    "id" : "257"
+  }, {
+    "range" : "23",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "259"
+  }, {
+    "range" : "98",
+    "domain" : "99",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "260"
+  }, {
+    "range" : "23",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "261"
+  }, {
+    "range" : "89",
+    "domain" : "85",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "262"
+  }, {
+    "range" : "28",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "263"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasVolumeInM3",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "113",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVolumeInM3",
+      "en" : "has volume in cubic meters",
+      "es" : "tiene volumen en metros cúbicos"
+    },
+    "domain" : "112",
+    "attributes" : [ "object" ],
+    "id" : "264"
+  }, {
+    "range" : "23",
+    "domain" : "94",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "265"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasDiameterAtBreastHeight",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "123",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDiameterAtBreastHeight",
+      "en" : "has DBH",
+      "es" : "tiene DN"
+    },
+    "superproperty" : [ "86" ],
+    "domain" : "108",
+    "subproperty" : [ "118", "121" ],
+    "comment" : {
+      "en" : "has diameter at breast hight",
+      "es" : "tiene diámetro normal"
+    },
+    "attributes" : [ "object" ],
+    "id" : "119"
+  }, {
+    "range" : "92",
+    "domain" : "93",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "266"
+  }, {
+    "range" : "28",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "268"
+  }, {
+    "range" : "9",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "269"
+  }, {
+    "range" : "9",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "270"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/hasScientificName",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "range" : "136",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifn/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasScientificName",
+      "en" : "scientific name"
+    },
+    "domain" : "125",
+    "attributes" : [ "object" ],
+    "id" : "271"
+  } ]
+}

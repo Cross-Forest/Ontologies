@@ -1,0 +1,450 @@
+<http://crossforest.eu/mfe/ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://crossforest.eu/mfe/ontology/> <http://www.w3.org/2002/07/owl#imports> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/mfe/ontology/> <http://www.w3.org/2002/07/owl#imports> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/mfe/ontology/> <http://purl.org/dc/elements/1.1/creator> <https://www.crossforest.eu/members/guiveg> .
+<http://crossforest.eu/mfe/ontology/> <http://purl.org/dc/elements/1.1/creator> <https://www.crossforest.eu/members/josgim> .
+<http://crossforest.eu/mfe/ontology/> <http://purl.org/dc/elements/1.1/date> "2019-07-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://crossforest.eu/mfe/ontology/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "mfe" .
+<http://crossforest.eu/mfe/ontology/> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology to publish data of the Spanish Forestry Map"@en .
+<http://crossforest.eu/mfe/ontology/> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontología para publicar datos del Mapa Forestal Nacional de España" .
+<http://crossforest.eu/mfe/ontology/> <http://www.w3.org/2000/01/rdf-schema#label> "Ontología del MFE de España"@es .
+<http://crossforest.eu/mfe/ontology/> <http://www.w3.org/2000/01/rdf-schema#label> "Spanish MFE Ontology"@en .
+<http://crossforest.eu/mfe/ontology/> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://crossforest.eu/measures/ontology/hasMeasure
+<http://crossforest.eu/measures/ontology/hasMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://crossforest.eu/mfe/ontology/containsPatch
+<http://crossforest.eu/mfe/ontology/containsPatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/mfe/ontology/containsPatch> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/mfe/ontology/Patch> .
+<http://crossforest.eu/mfe/ontology/containsPatch> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/mfe/ontology/PatchInPatch> .
+<http://crossforest.eu/mfe/ontology/containsPatch> <http://www.w3.org/2000/01/rdf-schema#comment> "la tesela agregada contiene sub-tesela"@es .
+<http://crossforest.eu/mfe/ontology/containsPatch> <http://www.w3.org/2000/01/rdf-schema#comment> "the merged patch contains sub-patch"@en .
+<http://crossforest.eu/mfe/ontology/containsPatch> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/containsPatch> <http://www.w3.org/2000/01/rdf-schema#label> "contains patch"@en .
+<http://crossforest.eu/mfe/ontology/containsPatch> <http://www.w3.org/2000/01/rdf-schema#label> "contiene tesela"@es .
+# 
+# http://crossforest.eu/mfe/ontology/containsSpecies
+<http://crossforest.eu/mfe/ontology/containsSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/mfe/ontology/containsSpecies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/mfe/ontology/Patch> .
+<http://crossforest.eu/mfe/ontology/containsSpecies> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/mfe/ontology/SpeciesInPatch> .
+<http://crossforest.eu/mfe/ontology/containsSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> "la tesela agregada contiene especie"@es .
+<http://crossforest.eu/mfe/ontology/containsSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> "the patch contains species"@en .
+<http://crossforest.eu/mfe/ontology/containsSpecies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/containsSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "contains species"@en .
+<http://crossforest.eu/mfe/ontology/containsSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "contiene especie"@es .
+# 
+# http://crossforest.eu/mfe/ontology/containsUse
+<http://crossforest.eu/mfe/ontology/containsUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/mfe/ontology/containsUse> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/mfe/ontology/Patch> .
+<http://crossforest.eu/mfe/ontology/containsUse> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/mfe/ontology/UseInPatch> .
+<http://crossforest.eu/mfe/ontology/containsUse> <http://www.w3.org/2000/01/rdf-schema#comment> "la tesela contiene uso"@es .
+<http://crossforest.eu/mfe/ontology/containsUse> <http://www.w3.org/2000/01/rdf-schema#comment> "the patch contains use"@en .
+<http://crossforest.eu/mfe/ontology/containsUse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/containsUse> <http://www.w3.org/2000/01/rdf-schema#label> "contains use"@en .
+<http://crossforest.eu/mfe/ontology/containsUse> <http://www.w3.org/2000/01/rdf-schema#label> "contiene use"@es .
+# 
+# http://crossforest.eu/mfe/ontology/hasCanopyCoverTotal
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTotal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTotal> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasure> .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTotal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/mfe/ontology/Patch> .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTotal> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/mfe/ontology/CanopyCoverTotal> .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTotal> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTotal> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTotal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTotal> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/mfe/ontology/hasCanopyCoverTrees
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTrees> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTrees> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasure> .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTrees> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/mfe/ontology/Patch> .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTrees> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/mfe/ontology/CanopyCoverTrees> .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTrees> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTrees> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTrees> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTrees> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/mfe/ontology/hasClassification
+<http://crossforest.eu/mfe/ontology/hasClassification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/mfe/ontology/hasClassification> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/mfe/ontology/Patch> .
+<http://crossforest.eu/mfe/ontology/hasClassification> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/mfe/ontology/Classification> .
+<http://crossforest.eu/mfe/ontology/hasClassification> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/hasClassification> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/hasClassification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/hasClassification> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/mfe/ontology/hasOccupationOfSpecies
+<http://crossforest.eu/mfe/ontology/hasOccupationOfSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/mfe/ontology/hasOccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/mfe/ontology/SpeciesInPatch> .
+<http://crossforest.eu/mfe/ontology/hasOccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/mfe/ontology/OccupationOfSpecies> .
+<http://crossforest.eu/mfe/ontology/hasOccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/hasOccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/hasOccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/hasOccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/mfe/ontology/hasPatch
+<http://crossforest.eu/mfe/ontology/hasPatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/mfe/ontology/hasPatch> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasure> .
+<http://crossforest.eu/mfe/ontology/hasPatch> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/mfe/ontology/Patch> .
+<http://crossforest.eu/mfe/ontology/hasPatch> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/hasPatch> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/hasPatch> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/hasPatch> <http://www.w3.org/2000/01/rdf-schema#label> "has patch"@en .
+<http://crossforest.eu/mfe/ontology/hasPatch> <http://www.w3.org/2000/01/rdf-schema#label> "tiene tesela"@es .
+# 
+# http://crossforest.eu/mfe/ontology/hasPatchShape
+<http://crossforest.eu/mfe/ontology/hasPatchShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/mfe/ontology/hasPatchShape> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/mfe/ontology/Patch> .
+<http://crossforest.eu/mfe/ontology/hasPatchShape> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/mfe/ontology/PatchShape> .
+<http://crossforest.eu/mfe/ontology/hasPatchShape> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/hasPatchShape> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/hasPatchShape> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/hasPatchShape> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/mfe/ontology/hasRateOfUse
+<http://crossforest.eu/mfe/ontology/hasRateOfUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/mfe/ontology/hasRateOfUse> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/mfe/ontology/UseInPatch> .
+<http://crossforest.eu/mfe/ontology/hasRateOfUse> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/mfe/ontology/RateOfUse> .
+<http://crossforest.eu/mfe/ontology/RateOfUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/hasRateOfUse> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/hasRateOfUse> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/hasRateOfUse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/hasRateOfUse> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/mfe/ontology/hasRateofPatch
+<http://crossforest.eu/mfe/ontology/hasRateofPatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/mfe/ontology/hasRateofPatch> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/mfe/ontology/PatchInPatch> .
+<http://crossforest.eu/mfe/ontology/hasRateofPatch> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/mfe/ontology/RateOfPatch> .
+<http://crossforest.eu/mfe/ontology/hasRateofPatch> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/hasRateofPatch> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/hasRateofPatch> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/hasRateofPatch> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/mfe/ontology/hasSetOfSpecies
+<http://crossforest.eu/mfe/ontology/hasSetOfSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/mfe/ontology/hasSetOfSpecies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasure> .
+<http://crossforest.eu/mfe/ontology/hasSetOfSpecies> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/mfe/ontology/SetOfSpecies> .
+<http://crossforest.eu/mfe/ontology/hasSetOfSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/hasSetOfSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/hasSetOfSpecies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/hasSetOfSpecies> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/mfe/ontology/hasSpatialDistribution
+<http://crossforest.eu/mfe/ontology/hasSpatialDistribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/mfe/ontology/hasSpatialDistribution> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/mfe/ontology/Patch> .
+<http://crossforest.eu/mfe/ontology/hasSpatialDistribution> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/mfe/ontology/SpatialDistribution> .
+<http://crossforest.eu/mfe/ontology/hasSpatialDistribution> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/hasSpatialDistribution> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/hasSpatialDistribution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/hasSpatialDistribution> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/mfe/ontology/hasSpecies
+<http://crossforest.eu/mfe/ontology/hasSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/mfe/ontology/hasSpecies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasure> .
+<http://crossforest.eu/mfe/ontology/hasSpecies> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/Species> .
+<http://crossforest.eu/ifn/ontology/Species> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/hasSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/hasSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/hasSpecies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/hasSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "has species"@en .
+<http://crossforest.eu/mfe/ontology/hasSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "tiene especie"@es .
+# 
+# http://crossforest.eu/mfe/ontology/hasStandDevelopment
+<http://crossforest.eu/mfe/ontology/hasStandDevelopment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/mfe/ontology/hasStandDevelopment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/mfe/ontology/SpeciesInPatch> .
+<http://crossforest.eu/mfe/ontology/hasStandDevelopment> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/mfe/ontology/StandDevelopment> .
+<http://crossforest.eu/mfe/ontology/hasStandDevelopment> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/hasStandDevelopment> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/hasStandDevelopment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/hasStandDevelopment> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/mfe/ontology/hasTypeofForest
+<http://crossforest.eu/mfe/ontology/hasTypeofForest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/mfe/ontology/hasTypeofForest> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/mfe/ontology/Patch> .
+<http://crossforest.eu/mfe/ontology/hasTypeofForest> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/mfe/ontology/TypeOfForest> .
+<http://crossforest.eu/mfe/ontology/hasTypeofForest> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/hasTypeofForest> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la tipología de bosque predominante"@es .
+<http://crossforest.eu/mfe/ontology/hasTypeofForest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/hasTypeofForest> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/mfe/ontology/hasTypeofForest> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de Bosque"@es .
+# 
+# http://crossforest.eu/mfe/ontology/hasUse
+<http://crossforest.eu/mfe/ontology/hasUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/mfe/ontology/hasUse> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasure> .
+<http://crossforest.eu/mfe/ontology/hasUse> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/mfe/ontology/Use> .
+<http://crossforest.eu/mfe/ontology/hasUse> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/hasUse> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/hasUse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/hasUse> <http://www.w3.org/2000/01/rdf-schema#label> "has use"@en .
+<http://crossforest.eu/mfe/ontology/hasUse> <http://www.w3.org/2000/01/rdf-schema#label> "tiene uso"@es .
+# 
+# http://crossforest.eu/mfe/ontology/hasVegetationStructure
+<http://crossforest.eu/mfe/ontology/hasVegetationStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/mfe/ontology/hasVegetationStructure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/mfe/ontology/Patch> .
+<http://crossforest.eu/mfe/ontology/hasVegetationStructure> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/mfe/ontology/VegetationStructure> .
+<http://crossforest.eu/mfe/ontology/hasVegetationStructure> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/hasVegetationStructure> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/hasVegetationStructure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/hasVegetationStructure> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureinPercentage
+<http://crossforest.eu/measures/ontology/hasMeasureinPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://crossforest.eu/mfe/ontology/hasCanopyCoverTotalPercent
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTotalPercent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTotalPercent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureinPercentage> .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTotalPercent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/mfe/ontology/Patch> .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTotalPercent> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTotalPercent> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTotalPercent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTotalPercent> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/mfe/ontology/hasCanopyCoverTreesPercent
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTreesPercent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTreesPercent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureinPercentage> .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTreesPercent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/mfe/ontology/Patch> .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTreesPercent> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTreesPercent> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTreesPercent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/hasCanopyCoverTreesPercent> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/mfe/ontology/hasPercentageOfPatch
+<http://crossforest.eu/mfe/ontology/hasPercentageOfPatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/mfe/ontology/hasPercentageOfPatch> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureinPercentage> .
+<http://crossforest.eu/mfe/ontology/hasPercentageOfPatch> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/mfe/ontology/PatchInPatch> .
+<http://crossforest.eu/mfe/ontology/hasPercentageOfPatch> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/hasPercentageOfPatch> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/hasPercentageOfPatch> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/hasPercentageOfPatch> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/mfe/ontology/hasPercentageOfSpecies
+<http://crossforest.eu/mfe/ontology/hasPercentageOfSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/mfe/ontology/hasPercentageOfSpecies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureinPercentage> .
+<http://crossforest.eu/mfe/ontology/hasPercentageOfSpecies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/mfe/ontology/SpeciesInPatch> .
+<http://crossforest.eu/mfe/ontology/hasPercentageOfSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/hasPercentageOfSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/hasPercentageOfSpecies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/hasPercentageOfSpecies> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/mfe/ontology/hasPercentageOfUse
+<http://crossforest.eu/mfe/ontology/hasPercentageOfUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/mfe/ontology/hasPercentageOfUse> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureinPercentage> .
+<http://crossforest.eu/mfe/ontology/hasPercentageOfUse> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/mfe/ontology/UseInPatch> .
+<http://crossforest.eu/mfe/ontology/hasPercentageOfUse> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/hasPercentageOfUse> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/hasPercentageOfUse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/hasPercentageOfUse> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://crossforest.eu/ifn/ontology/Species
+# 
+# http://crossforest.eu/ilu/ontology/Patch
+<http://crossforest.eu/ilu/ontology/Patch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters
+<http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://crossforest.eu/measures/ontology/MeasureInPercentage
+<http://crossforest.eu/measures/ontology/MeasureInPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://crossforest.eu/mfe/ontology/Area
+<http://crossforest.eu/mfe/ontology/Area> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/Area> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters> .
+<http://crossforest.eu/mfe/ontology/Area> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/Area> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/Area> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/Area> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/mfe/ontology/BiogeographicRegion
+<http://crossforest.eu/mfe/ontology/BiogeographicRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/BiogeographicRegion> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/BiogeographicRegion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/BiogeographicRegion> <http://www.w3.org/2000/01/rdf-schema#label> "Biogeographic Region"@en .
+<http://crossforest.eu/mfe/ontology/BiogeographicRegion> <http://www.w3.org/2000/01/rdf-schema#label> "Región biogeográfica"@es .
+# 
+# http://crossforest.eu/mfe/ontology/CanopyCover
+<http://crossforest.eu/mfe/ontology/CanopyCover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/CanopyCover> <http://www.w3.org/2000/01/rdf-schema#comment> "Canopy Cover of the Vegetation Structure"@en .
+<http://crossforest.eu/mfe/ontology/CanopyCover> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa la proporción total de la vegetación."@es .
+<http://crossforest.eu/mfe/ontology/CanopyCover> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/CanopyCover> <http://www.w3.org/2000/01/rdf-schema#label> "Canopy Cover"@es .
+<http://crossforest.eu/mfe/ontology/CanopyCover> <http://www.w3.org/2000/01/rdf-schema#label> "Fracción de Cabida Cubierta"@es .
+# 
+# http://crossforest.eu/mfe/ontology/CanopyCoverBushes
+<http://crossforest.eu/mfe/ontology/CanopyCoverBushes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/CanopyCoverBushes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/mfe/ontology/CanopyCover> .
+<http://crossforest.eu/mfe/ontology/CanopyCoverBushes> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/CanopyCoverBushes> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa la proporción del conjunto de las especies del estrato arbustivo como porcentaje de suelo cubierto por la proyección de todas las copas. No influye en su cálculo el hecho de tratarse de masas monoespecíficas o pluriespecíficas, o el de encontrarse en distinto estado de masa las distintas especies."@es .
+<http://crossforest.eu/mfe/ontology/CanopyCoverBushes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/CanopyCoverBushes> <http://www.w3.org/2000/01/rdf-schema#label> "Canopy Cover of Bushes"@es .
+<http://crossforest.eu/mfe/ontology/CanopyCoverBushes> <http://www.w3.org/2000/01/rdf-schema#label> "Fracción de Cabida Cubierta Arbustiva"@es .
+# 
+# http://crossforest.eu/mfe/ontology/CanopyCoverTotal
+<http://crossforest.eu/mfe/ontology/CanopyCoverTotal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/CanopyCoverTotal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/mfe/ontology/CanopyCover> .
+<http://crossforest.eu/mfe/ontology/CanopyCoverTotal> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/CanopyCoverTotal> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa la proporción total de la vegetación arbórea y de matorral. Proporciona información sobre la proyección sobre el suelo de los principales pisos de vegetación. En algún caso se incluirán fracciones de cabida cubierta de pastizales o cultivos. Para su cuantificación se tendrá en cuenta todas las especies en conjunto, con independencia de que se presenten por razones de edad o de otro tipo de alturas muy distintas."@es .
+<http://crossforest.eu/mfe/ontology/CanopyCoverTotal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/CanopyCoverTotal> <http://www.w3.org/2000/01/rdf-schema#label> "Fracción de Cabida Cubierta Total"@es .
+<http://crossforest.eu/mfe/ontology/CanopyCoverTotal> <http://www.w3.org/2000/01/rdf-schema#label> "Total Canopy Cover"@es .
+# 
+# http://crossforest.eu/mfe/ontology/CanopyCoverTrees
+<http://crossforest.eu/mfe/ontology/CanopyCoverTrees> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/CanopyCoverTrees> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/mfe/ontology/CanopyCover> .
+<http://crossforest.eu/mfe/ontology/CanopyCoverTrees> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/CanopyCoverTrees> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa la proporción del conjunto de las especies del estrato arbóreo como porcentaje de suelo cubierto por la proyección de todas las copas. No influye en su cálculo el hecho de tratarse de masas monoespecíficas o pluriespecíficas, o el de encontrarse en distinto estado de masa las distintas especies."@es .
+<http://crossforest.eu/mfe/ontology/CanopyCoverTrees> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/CanopyCoverTrees> <http://www.w3.org/2000/01/rdf-schema#label> "Canopy Cover of Trees"@es .
+<http://crossforest.eu/mfe/ontology/CanopyCoverTrees> <http://www.w3.org/2000/01/rdf-schema#label> "Fracción de Cabida Cubierta Arbórea"@es .
+# 
+# http://crossforest.eu/mfe/ontology/Classification
+<http://crossforest.eu/mfe/ontology/Classification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/Classification> <http://www.w3.org/2000/01/rdf-schema#comment> "Pasarela entre el Tipo Estructural y la clasificación por niveles del IFN3"@es .
+<http://crossforest.eu/mfe/ontology/Classification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/Classification> <http://www.w3.org/2000/01/rdf-schema#label> "Clasificación MFE-IFN"@es .
+# 
+# http://crossforest.eu/mfe/ontology/ForestType
+<http://crossforest.eu/mfe/ontology/ForestType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/ForestType> <http://www.w3.org/2000/01/rdf-schema#comment> "La Formación Arbolada representa la comunidad vegetal arbórea de orden superior con fisiología y biología homogénea y viene determinada por la Ocupación de la especie principal o por la Ocupación formada por las especies presentes."@es .
+<http://crossforest.eu/mfe/ontology/ForestType> <http://www.w3.org/2000/01/rdf-schema#label> "Forest Type"@en .
+<http://crossforest.eu/mfe/ontology/ForestType> <http://www.w3.org/2000/01/rdf-schema#label> "Formación Arbolada"@es .
+# 
+# http://crossforest.eu/mfe/ontology/OccupationOfSpecies
+<http://crossforest.eu/mfe/ontology/OccupationOfSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/OccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/MeasureInPercentage> .
+<http://crossforest.eu/mfe/ontology/OccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la ocupación para cada una de las especies descritas. Los valores que adopta informan del grado de presencia en porcentaje de las especies arbóreas existentes, siendo tanto mayor, cuanto mayor representatividad posee la especie en cuestión, en comparación con las otras especies arbóreas presentes en la tesela."@es .
+<http://crossforest.eu/mfe/ontology/OccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/OccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "Ocupación de especie"@es .
+# 
+# http://crossforest.eu/mfe/ontology/Patch
+<http://crossforest.eu/mfe/ontology/Patch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/Patch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ilu/ontology/Patch> .
+<http://crossforest.eu/mfe/ontology/Patch> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/mfe/ontology/Patch> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/Patch> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/Patch> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/mfe/ontology/PatchInPatch
+<http://crossforest.eu/mfe/ontology/PatchInPatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/PatchInPatch> <http://www.w3.org/2000/01/rdf-schema#comment> "Patch contained in the patch"@es .
+<http://crossforest.eu/mfe/ontology/PatchInPatch> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/PatchInPatch> <http://www.w3.org/2000/01/rdf-schema#label> "Patch in the patch"@es .
+# 
+# http://crossforest.eu/mfe/ontology/PatchShape
+<http://crossforest.eu/mfe/ontology/PatchShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/PatchShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Diferenciates the geometric shape of the patch and vegetation asociated"@en .
+<http://crossforest.eu/mfe/ontology/PatchShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la forma geométrica que presenta la tesela"@es .
+<http://crossforest.eu/mfe/ontology/PatchShape> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/PatchShape> <http://www.w3.org/2000/01/rdf-schema#label> "Forma de la tesela"@es .
+<http://crossforest.eu/mfe/ontology/PatchShape> <http://www.w3.org/2000/01/rdf-schema#label> "Shape of the patch"@en .
+# 
+# http://crossforest.eu/mfe/ontology/RateOfPatch
+<http://crossforest.eu/mfe/ontology/RateOfPatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/RateOfPatch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/MeasureInPercentage> .
+<http://crossforest.eu/mfe/ontology/RateOfPatch> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la proporción de la tesela dentro de la agrupación."@es .
+<http://crossforest.eu/mfe/ontology/RateOfPatch> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/RateOfPatch> <http://www.w3.org/2000/01/rdf-schema#label> "Proporción de la tesela"@es .
+# 
+# http://crossforest.eu/mfe/ontology/RateOfUse
+# 
+# http://crossforest.eu/mfe/ontology/RateofUse
+<http://crossforest.eu/mfe/ontology/RateofUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/RateofUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/MeasureInPercentage> .
+<http://crossforest.eu/mfe/ontology/RateofUse> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la proporción para cada una de las usos dentro de la agrupación de teselas."@es .
+<http://crossforest.eu/mfe/ontology/RateofUse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/RateofUse> <http://www.w3.org/2000/01/rdf-schema#label> "Propoción del uso"@es .
+# 
+# http://crossforest.eu/mfe/ontology/SetOfSpecies
+<http://crossforest.eu/mfe/ontology/SetOfSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/SetOfSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/SetOfSpecies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/SetOfSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "Agrupación de Especies"@es .
+<http://crossforest.eu/mfe/ontology/SetOfSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "Set of Species"@en .
+# 
+# http://crossforest.eu/mfe/ontology/SpatialDistribution
+<http://crossforest.eu/mfe/ontology/SpatialDistribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/SpatialDistribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica las distintas formas en las que puede aparecer agrupada la vegetación arbórea. Está más referido a la distribución espacial visual de la mancha vegetal que a su composición específica o la relación entre especies."@es .
+<http://crossforest.eu/mfe/ontology/SpatialDistribution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/SpatialDistribution> <http://www.w3.org/2000/01/rdf-schema#label> "Distribución"@es .
+# 
+# http://crossforest.eu/mfe/ontology/SpeciesInPatch
+<http://crossforest.eu/mfe/ontology/SpeciesInPatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/SpeciesInPatch> <http://www.w3.org/2000/01/rdf-schema#comment> "Species present in the patch"@es .
+<http://crossforest.eu/mfe/ontology/SpeciesInPatch> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/SpeciesInPatch> <http://www.w3.org/2000/01/rdf-schema#label> "Species in the patch"@es .
+# 
+# http://crossforest.eu/mfe/ontology/StandDevelopment
+<http://crossforest.eu/mfe/ontology/StandDevelopment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/StandDevelopment> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la fase de desarrollo en que se encuentran las poblaciones de especies arbóreas presentes en la tesela"@es .
+<http://crossforest.eu/mfe/ontology/StandDevelopment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/StandDevelopment> <http://www.w3.org/2000/01/rdf-schema#label> "Estado de Desarrollo"@es .
+# 
+# http://crossforest.eu/mfe/ontology/TypeOfForest
+<http://crossforest.eu/mfe/ontology/TypeOfForest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/TypeOfForest> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de bosque (coníferas, frondosas o mixtas)"@es .
+<http://crossforest.eu/mfe/ontology/TypeOfForest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/TypeOfForest> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de Bosque"@es .
+# 
+# http://crossforest.eu/mfe/ontology/Use
+<http://crossforest.eu/mfe/ontology/Use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/Use> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/mfe/ontology/Use> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/Use> <http://www.w3.org/2000/01/rdf-schema#label> "Soil use"@en .
+<http://crossforest.eu/mfe/ontology/Use> <http://www.w3.org/2000/01/rdf-schema#label> "Uso del suelo"@es .
+# 
+# http://crossforest.eu/mfe/ontology/UseInPatch
+<http://crossforest.eu/mfe/ontology/UseInPatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/UseInPatch> <http://www.w3.org/2000/01/rdf-schema#comment> "Use present in the patch"@es .
+<http://crossforest.eu/mfe/ontology/UseInPatch> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/UseInPatch> <http://www.w3.org/2000/01/rdf-schema#label> "Use in the patch"@es .
+# 
+# http://crossforest.eu/mfe/ontology/VegetationStructure
+<http://crossforest.eu/mfe/ontology/VegetationStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/mfe/ontology/VegetationStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica los distintos usos del suelo que pueden aparecer y, dentro del uso forestal, las distintas estructuras de vegetación que lo pueden ocupar, atendiendo más que a la densidad vegetal a la estructura de la vegetación que ocupa." .
+<http://crossforest.eu/mfe/ontology/VegetationStructure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/mfe/ontology/> .
+<http://crossforest.eu/mfe/ontology/VegetationStructure> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo Estructural"@es .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

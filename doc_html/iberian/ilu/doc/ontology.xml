@@ -1,0 +1,357 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://crossforest.eu/ilu/ontology/"
+     xml:base="http://crossforest.eu/ilu/ontology/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="http://crossforest.eu/ilu/ontology/">
+        <dc:creator rdf:resource="https://www.crossforest.eu/members/guiveg"/>
+        <dc:creator rdf:resource="https://www.crossforest.eu/members/josgim"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-17</dc:date>
+        <vann:preferredNamespacePrefix>ilu</vann:preferredNamespacePrefix>
+        <rdfs:comment xml:lang="en">Ontology to publish data about land use in the iberian peninsula</rdfs:comment>
+        <rdfs:comment xml:lang="es">Ontología para publicar datos deuso del suelo en la península ibérica</rdfs:comment>
+        <rdfs:label xml:lang="en">Iberian Land Usage Ontology</rdfs:label>
+        <rdfs:label xml:lang="es">Ontología ibérica de uso del suelo</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/containsPatch -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/ilu/ontology/containsPatch">
+        <rdfs:domain rdf:resource="http://crossforest.eu/ilu/ontology/Patch"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/ilu/ontology/PatchInPatch"/>
+        <rdfs:comment xml:lang="es">la tesela agregada contiene sub-tesela</rdfs:comment>
+        <rdfs:comment xml:lang="en">the merged patch contains sub-patch</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="en">contains patch</rdfs:label>
+        <rdfs:label xml:lang="es">contiene tesela</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/containsUse -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/ilu/ontology/containsUse">
+        <rdfs:domain rdf:resource="http://crossforest.eu/ilu/ontology/Patch"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/ilu/ontology/UseInPatch"/>
+        <rdfs:comment xml:lang="es">la tesela contiene uso</rdfs:comment>
+        <rdfs:comment xml:lang="en">the patch contains use</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="en">contains use</rdfs:label>
+        <rdfs:label xml:lang="es">contiene use</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/hasPatch -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/ilu/ontology/hasPatch">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasure"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/ilu/ontology/Patch"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="en">has patch</rdfs:label>
+        <rdfs:label xml:lang="es">tiene tesela</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/hasUse -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/ilu/ontology/hasUse">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasure"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/ilu/ontology/LandUse"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="en">has use</rdfs:label>
+        <rdfs:label xml:lang="es">tiene uso</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/measures/ontology/hasMeasure -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/measures/ontology/hasMeasure"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/hasPercentageOfPatch -->
+
+
+    <owl:DatatypeProperty rdf:about="http://crossforest.eu/ilu/ontology/hasPercentageOfPatch">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasureinPercentage"/>
+        <rdfs:domain rdf:resource="http://crossforest.eu/ilu/ontology/PatchInPatch"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/hasPercentageOfUse -->
+
+
+    <owl:DatatypeProperty rdf:about="http://crossforest.eu/ilu/ontology/hasPercentageOfUse">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasureinPercentage"/>
+        <rdfs:domain rdf:resource="http://crossforest.eu/ilu/ontology/UseInPatch"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://crossforest.eu/measures/ontology/hasMeasureinPercentage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://crossforest.eu/measures/ontology/hasMeasureinPercentage"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/AgriculturalLand -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/AgriculturalLand">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/ilu/ontology/Use"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Agricultura e Pastagens</rdfs:label>
+        <rdfs:label xml:lang="es">Terreno agrícola</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/Area -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/Area">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/ArtificialLand -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/ArtificialLand">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/ilu/ontology/Use"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Territorios Artificiales</rdfs:label>
+        <rdfs:label xml:lang="pt">Territórios artificializado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/ForestLand -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/ForestLand">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/ilu/ontology/Use"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Bosques</rdfs:label>
+        <rdfs:label xml:lang="pt">Superfícies agroflorestais e Florestas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/LandUse -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/LandUse">
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="en">Land Use</rdfs:label>
+        <rdfs:label xml:lang="es">Uso de la Tierra</rdfs:label>
+        <rdfs:label xml:lang="pt">Uso e Ocupação do Solo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/Patch -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/Patch">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/position/ontology/SpatialEntity"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/PatchInPatch -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/PatchInPatch">
+        <rdfs:comment xml:lang="es">Patch contained in the patch</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="es">Patch in the patch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/TreelessLand -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/TreelessLand">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/ilu/ontology/Use"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Espaços descobertos ou com pouca vegetação e matos</rdfs:label>
+        <rdfs:label xml:lang="es">Terreno desarbolado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/Use -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/Use"/>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/UseInPatch -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/UseInPatch">
+        <rdfs:comment xml:lang="es">Use present in the patch</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="es">Use in the patch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/WetLand -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/WetLand">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/ilu/ontology/Use"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Humedales y masas de agua</rdfs:label>
+        <rdfs:label xml:lang="pt">Zonas húmidas e massas de água superficiais</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters"/>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/SpatialEntity -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/position/ontology/SpatialEntity"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

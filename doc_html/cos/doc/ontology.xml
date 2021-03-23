@@ -1,0 +1,2661 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://crossforest.eu/cos/ontology/"
+     xml:base="http://crossforest.eu/cos/ontology/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="http://crossforest.eu/cos/ontology/">
+        <dc:creator rdf:resource="https://www.crossforest.eu/members/guiveg"/>
+        <dc:creator rdf:resource="https://www.crossforest.eu/members/josgim"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-17</dc:date>
+        <vann:preferredNamespacePrefix>cos</vann:preferredNamespacePrefix>
+        <rdfs:comment xml:lang="pt">Ontologia de Uso e Ocupação do Solo de Portugal Continental</rdfs:comment>
+        <rdfs:comment xml:lang="en">Ontology to publish data about land use in Portugal</rdfs:comment>
+        <rdfs:comment>Ontología para publicar datos deuso del suelo en Portugal</rdfs:comment>
+        <rdfs:label xml:lang="pt">Ontologia de Ocupação do Solo de Portugal</rdfs:label>
+        <rdfs:label xml:lang="es">Ontología portuguesa de uso del suelo</rdfs:label>
+        <rdfs:label xml:lang="en">Portuguese Land Usage Ontology</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Patch -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Patch">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/ilu/ontology/Patch"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es"></rdfs:label>
+        <rdfs:label xml:lang="pt"></rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1000 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1000">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/ilu/ontology/ArtificialLand"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Territorios artificializados</rdfs:label>
+        <rdfs:label xml:lang="pt">Territórios artificializados</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1100 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1100">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1000"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Tecido edificado</rdfs:label>
+        <rdfs:label xml:lang="es">Tejido edificado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1110 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1110">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1100"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Tecido edificado contínuo</rdfs:label>
+        <rdfs:label xml:lang="es">Tejido edificado continuo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1111 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1111">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Tecido edificado contínuo predominantemente vertical</rdfs:label>
+        <rdfs:label xml:lang="es">Tejido edificado continuo predominantemente vertical</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1112 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1112">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Tecido edificado contínuo predominantemente horizontal</rdfs:label>
+        <rdfs:label xml:lang="es">Tejido edificado continuo predominantemente horizontal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1120 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1120">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1100"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Tecido edificado descontínuo</rdfs:label>
+        <rdfs:label xml:lang="es">Tejido edificado discontinuo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1121 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1121">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1120"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Tecido edificado descontínuo</rdfs:label>
+        <rdfs:label xml:lang="es">Tejido edificado discontínuo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1122 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1122">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1120"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Tecido edificado descontínuo esparso</rdfs:label>
+        <rdfs:label xml:lang="es">Tejido edificado discontínuo escaso</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1130 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1130">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1100"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt"> Espaços vazios em tecido edificado</rdfs:label>
+        <rdfs:label xml:lang="es">Espacios vacios sin construir</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1131 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1131">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1130"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Áreas de estacionamentos e logradouros</rdfs:label>
+        <rdfs:label xml:lang="es">Áreas de estacionamentos y lugares pùblicos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1132 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1132">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1130"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Espacios vacios sin construir</rdfs:label>
+        <rdfs:label xml:lang="pt">Espaços vazios sem construção</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1200 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1200">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1000"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Industria, comercie, e instalaciones agrícolas</rdfs:label>
+        <rdfs:label xml:lang="pt">Indústria, comércio e instalações agrícolas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1210 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1210">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1200"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Industria</rdfs:label>
+        <rdfs:label xml:lang="pt">Indústria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1211 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1211">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1210"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Industria</rdfs:label>
+        <rdfs:label xml:lang="pt">Indústria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1220 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1220">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1200"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Comercio</rdfs:label>
+        <rdfs:label xml:lang="pt">Comércio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1221 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1221">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1220"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Comercio</rdfs:label>
+        <rdfs:label xml:lang="pt">Comércio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1230 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1230">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1200"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Instalaciones agrícolas</rdfs:label>
+        <rdfs:label xml:lang="pt">Instalações agrícolas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1231 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1231">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1230"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Instalaciones agrícolas</rdfs:label>
+        <rdfs:label xml:lang="pt">nstalações agrícolas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1300 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1300">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1000"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Infraestructuras</rdfs:label>
+        <rdfs:label xml:lang="pt">Infraestruturas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1310 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1310">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1300"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Infraestruturas de producción de energía</rdfs:label>
+        <rdfs:label xml:lang="pt">Infraestruturas de produção de energia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1311 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1311">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1310"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Infraestructuras de producción de energia renovable</rdfs:label>
+        <rdfs:label xml:lang="pt">nfraestruturas de produção de energia renovável</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1312 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1312">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1310"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Infraestructuras de producción de energia no renovable</rdfs:label>
+        <rdfs:label xml:lang="pt">Infraestruturas de produção de energia não renovável</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1320 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1320">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1300"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Infraestruturas de aguas y tratamiento de resíduos</rdfs:label>
+        <rdfs:label xml:lang="pt">Infraestruturas de águas e tratamento de resíduos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1321 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1321">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1320"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Infraestructuras para captación tratamiento y abastecimiento de aguas para el consumo</rdfs:label>
+        <rdfs:label xml:lang="pt">Infraestruturas para captação, tratamento e abastecimento de águas para consumo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1322 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1322">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1320"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Infraestructuras de tratamiento de residuos y aguas residuales</rdfs:label>
+        <rdfs:label xml:lang="pt">Infraestruturas de tratamento de resíduos e águas residuais</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1400 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1400">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1000"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Infraestruturas</rdfs:label>
+        <rdfs:label xml:lang="es">Transportes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1410 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1410">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1400"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">&apos;Redes viarias y ferroviarias y espacios asociados&apos;</rdfs:label>
+        <rdfs:label xml:lang="pt">Redes viárias e ferroviárias e espaços associados</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1411 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1411">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1410"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Red viaria y espacios asociados</rdfs:label>
+        <rdfs:label xml:lang="pt">Rede viária e espaços associados</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1412 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1412">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1410"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Red ferroviaria y espacios asociados</rdfs:label>
+        <rdfs:label xml:lang="pt">Rede ferroviária e espaços associados</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1420 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1420">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1400"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Áreas portuarias</rdfs:label>
+        <rdfs:label xml:lang="pt">Áreas portuárias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1421 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1421">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1420"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Terminais portuários de mar e de rio</rdfs:label>
+        <rdfs:label xml:lang="es">Terminales portuarias de mar y de río</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1422 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1422">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1420"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Astilleros y diques secos</rdfs:label>
+        <rdfs:label xml:lang="pt">Estaleiros navais e docas secas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1423 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1423">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1420"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Marinas e docas pesca</rdfs:label>
+        <rdfs:label xml:lang="es">Marinas y muelles de pesca</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1430 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1430">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1400"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Aeroportos e aeródromos</rdfs:label>
+        <rdfs:label xml:lang="es">Aeropuertos y aeródromos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1431 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1431">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1430"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Aeroportos</rdfs:label>
+        <rdfs:label xml:lang="es">Aeropuertos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1432 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1432">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1430"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Aeródromos</rdfs:label>
+        <rdfs:label xml:lang="pt">Aeródromos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1500 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1500">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1000"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Áreas de extracción inerte o áreas de eliminación de resíduos y obras</rdfs:label>
+        <rdfs:label xml:lang="pt">Áreas de extração de inertes, áreas de deposição de resíduos e estaleiros de construção</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1510 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1510">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1500"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Áreas de extracción de inertes</rdfs:label>
+        <rdfs:label xml:lang="pt">Áreas de extração de inertes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1511 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1511">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1510"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Minas a cielo abierto</rdfs:label>
+        <rdfs:label xml:lang="pt">Minas a céu aberto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1512 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1512">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1510"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Canteras</rdfs:label>
+        <rdfs:label xml:lang="pt">Pedreiras</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1520 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1520">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1500"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Áreas de deposición de resíduos</rdfs:label>
+        <rdfs:label xml:lang="pt">Áreas de deposição de resíduos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1521 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1521">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1520"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Aterros</rdfs:label>
+        <rdfs:label xml:lang="pt">Aterros</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1522 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1522">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1520"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Lixeiras e Sucatas</rdfs:label>
+        <rdfs:label xml:lang="es">Vertederos y desechos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1530 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1530">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1500"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Áreas em construção</rdfs:label>
+        <rdfs:label xml:lang="es">Áreas en construcción</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1531 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1531">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1530"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Áreas de construcción</rdfs:label>
+        <rdfs:label xml:lang="pt">Áreas em construção</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1600 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1600">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1000"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Equipamentos</rdfs:label>
+        <rdfs:label xml:lang="es">Equipamientos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1610 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1610">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1600"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Equipamentos deportivos</rdfs:label>
+        <rdfs:label xml:lang="pt">Equipamentos desportivos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1611 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1611">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1610"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Campos de golf</rdfs:label>
+        <rdfs:label xml:lang="pt">Campos de golfe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1612 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1612">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1610"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Instalaciones deportivas</rdfs:label>
+        <rdfs:label xml:lang="pt">Instalações desportivas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1620 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1620">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1600"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Equipamentos de lazer e parques de campismo</rdfs:label>
+        <rdfs:label xml:lang="es">Instalaciones de ocio y camping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1621 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1621">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1620"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Campings</rdfs:label>
+        <rdfs:label xml:lang="pt">Parques de campismo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1622 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1622">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1620"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Equipamentos de lazer</rdfs:label>
+        <rdfs:label xml:lang="es">Instalaciones de ocio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1630 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1630">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1600"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Equipamentos culturais</rdfs:label>
+        <rdfs:label xml:lang="es">Equipamientos culturales</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1631 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1631">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1630"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Equipamentos culturais</rdfs:label>
+        <rdfs:label xml:lang="es">Equipamientos culturales</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1640 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1640">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1600"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Cementerios</rdfs:label>
+        <rdfs:label xml:lang="pt">Cementerios</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1641 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1641">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1640"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Cementerios</rdfs:label>
+        <rdfs:label xml:lang="pt">Cemitérios</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1650 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1650">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1600"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Otros equipamientos e instalaciones turísticas</rdfs:label>
+        <rdfs:label xml:lang="pt">Outros equipamentos e instalações turísticas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1651 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1651">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1650"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Otros equipamientos e instalaciones turísticas </rdfs:label>
+        <rdfs:label xml:lang="pt">Outros equipamentos e instalações turísticas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1700 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1700">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1000"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Parques e jardins</rdfs:label>
+        <rdfs:label xml:lang="es">Parques y jardines</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1710 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1710">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1700"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Parques e jardins </rdfs:label>
+        <rdfs:label xml:lang="es">Parques y jardines</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use1711 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use1711">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use1710"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Parques e jardins</rdfs:label>
+        <rdfs:label xml:lang="es">Parques y jardines</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2000 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2000">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/ilu/ontology/AgriculturalLand"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Agricultura</rdfs:label>
+        <rdfs:label xml:lang="pt">Agricultura</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2100 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2100">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2000"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Cultivos temporales</rdfs:label>
+        <rdfs:label xml:lang="pt">Culturas temporárias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2110 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2110">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2100"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Cultivos temporales de secano y regadío y arrozales</rdfs:label>
+        <rdfs:label xml:lang="pt">Culturas temporárias de sequeiro e regadio e arrozais</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2111 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2111">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Cultivos temporales de secano y regadío</rdfs:label>
+        <rdfs:label xml:lang="pt">Culturas temporárias de sequeiro e regadio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2112 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2112">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Arrozais</rdfs:label>
+        <rdfs:label xml:lang="es">Arrozales</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2200 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2200">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2000"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Cultivos permanentes</rdfs:label>
+        <rdfs:label xml:lang="pt">Culturas permanentes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2210 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2210">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2100"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Vinhas</rdfs:label>
+        <rdfs:label xml:lang="es">Viñas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2211 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2211">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2210"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Vinhas</rdfs:label>
+        <rdfs:label xml:lang="es">Viñas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2220 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2220">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2200"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Huertos</rdfs:label>
+        <rdfs:label xml:lang="pt">Pomares</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2221 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2221">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2220"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Huertos</rdfs:label>
+        <rdfs:label xml:lang="pt">Pomares</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2230 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2230">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2200"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Olivais</rdfs:label>
+        <rdfs:label xml:lang="es">Olivares</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2231 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2231">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2230"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Olivais</rdfs:label>
+        <rdfs:label xml:lang="es">Olivares</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2300 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2300">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2000"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Áreas agrícolas heterogéneas</rdfs:label>
+        <rdfs:label xml:lang="pt">Áreas agrícolas heterogéneas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2310 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2310">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2300"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Cultivos temporales y/o pastos asociados a cultivos permanentes</rdfs:label>
+        <rdfs:label xml:lang="pt">Culturas temporárias e/ou pastagens melhoradas associadas a culturas permanentes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2311 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2311">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2310"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Cultivos temporales y/o pastos asociados con vides</rdfs:label>
+        <rdfs:label xml:lang="pt">Culturas temporárias e/ou pastagens melhoradas associadas a vinha</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2312 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2312">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2310"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Cultivos temporales y/o pastos asociados con huertos</rdfs:label>
+        <rdfs:label xml:lang="pt">Culturas temporárias e/ou pastagens melhoradas associadas a pomar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2313 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2313">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2310"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Cultivos temporales y/o pastos asociados con olivares</rdfs:label>
+        <rdfs:label xml:lang="pt">Culturas temporárias e/ou pastagens melhoradas associadas a olival</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2320 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2320">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2300"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Mosaicos culturais e parcelares complexos</rdfs:label>
+        <rdfs:label xml:lang="es">Sistemas culturales y parcelas complejas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2321 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2321">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2320"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Mosaicos culturais e parcelares complexos</rdfs:label>
+        <rdfs:label xml:lang="es">Sistemas culturales y parcelas complejas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2330 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2330">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2300"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Agricultura com espaços naturais e seminaturais</rdfs:label>
+        <rdfs:label xml:lang="es">Agricultura con espacios naturales y semi-naturales</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2331 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2331">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2330"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Agricultura com espaços naturais e seminaturais</rdfs:label>
+        <rdfs:label xml:lang="es">Agricultura con espacios naturales y semi-naturales</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2400 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2400">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2000"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Agricultura protegida e viveiros</rdfs:label>
+        <rdfs:label xml:lang="es">Agricultura protegida y viveros</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2410 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2410">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2400"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Agricultura protegida e viveiros</rdfs:label>
+        <rdfs:label xml:lang="es">Agricultura protegida y viveros</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use2411 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use2411">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use2410"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Agricultura protegida e viveiros</rdfs:label>
+        <rdfs:label xml:lang="es">Agricultura protegida y viveros</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use3000 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use3000">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/ilu/ontology/AgriculturalLand"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Pastagens</rdfs:label>
+        <rdfs:label xml:lang="es">Pastos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use3100 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use3100">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use3000"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Pastagens</rdfs:label>
+        <rdfs:label xml:lang="es">Pastos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use3110 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use3110">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use3100"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Pastagens melhoradas</rdfs:label>
+        <rdfs:label xml:lang="es">Pastos mejorados</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use3111 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use3111">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use3110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Pastagens melhoradas</rdfs:label>
+        <rdfs:label xml:lang="es">Pastos mejoraoos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use3120 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use3120">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use3100"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Pastagens espontâneas</rdfs:label>
+        <rdfs:label xml:lang="es">Pastos espontáneos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use3121 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use3121">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use3120"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Pastagens espontâneas</rdfs:label>
+        <rdfs:label xml:lang="es">Pastos espontáneos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use4000 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use4000">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/ilu/ontology/ForestLand"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Superficies agroforestales</rdfs:label>
+        <rdfs:label xml:lang="pt">Superfícies agroflorestais</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use4100 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use4100">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use4000"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Superficies agroforestales</rdfs:label>
+        <rdfs:label xml:lang="pt">Superfícies agroflorestais</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use4110 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use4110">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use4100"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Superficies agroforestales</rdfs:label>
+        <rdfs:label xml:lang="pt">Superfícies agroflorestais</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use4111 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use4111">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use4110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Superficies agroforestales de Quercus suber</rdfs:label>
+        <rdfs:label xml:lang="pt">Superfícies agroflorestais de sobreiro</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use4112 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use4112">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use4110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Superficies agroforestales de Quercus rotundifolia</rdfs:label>
+        <rdfs:label xml:lang="pt">Superfícies agroflorestais de azinheira</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use4113 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use4113">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use4110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Superficies agroforestales de otros Quercus</rdfs:label>
+        <rdfs:label xml:lang="pt">Superfícies agroflorestais de outros carvalhos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use4114 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use4114">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use4110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Superficies agroforestales de Pinus pinea</rdfs:label>
+        <rdfs:label xml:lang="pt">Superfícies agroflorestais de pinheiro manso</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use4115 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use4115">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use4110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Superficies agroforestales de otras especies</rdfs:label>
+        <rdfs:label xml:lang="pt">Superfícies agroflorestais de outras espécies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use4116 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use4116">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use4110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Superficies agroforestales de Querqus suber y Quercus rotundifolia</rdfs:label>
+        <rdfs:label xml:lang="pt">Superfícies agroflorestais de sobreiro com azinheira</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use4117 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use4117">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use4110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Superficies agroforestales de otras mezclas</rdfs:label>
+        <rdfs:label xml:lang="pt">Superfícies agroflorestais de outras misturas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use5000 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use5000">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/ilu/ontology/ForestLand"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Bosques</rdfs:label>
+        <rdfs:label xml:lang="pt">Florestas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use5100 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use5100">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use5000"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Bosques</rdfs:label>
+        <rdfs:label xml:lang="pt">Florestas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use5110 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use5110">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use5100"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Bosques de frondosas</rdfs:label>
+        <rdfs:label xml:lang="pt">Florestas de folhosas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use5111 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use5111">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use5110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Bosques de Quercus suber</rdfs:label>
+        <rdfs:label xml:lang="pt">Florestas de sobreiro</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use5112 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use5112">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use5110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Bosques de Quercus rotundifolia</rdfs:label>
+        <rdfs:label xml:lang="pt">Florestas de azinheira</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use5113 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use5113">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use5110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Bosques de otros Quercus</rdfs:label>
+        <rdfs:label xml:lang="pt">Florestas de outros carvalhos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use5114 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use5114">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use5110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Bosques de castaños</rdfs:label>
+        <rdfs:label xml:lang="pt">Florestas de castanheiro</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use5115 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use5115">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use5110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Bosques de eucaliptos</rdfs:label>
+        <rdfs:label xml:lang="pt">Florestas de eucalipto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use5116 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use5116">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use5110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Bosques de especies invasoras</rdfs:label>
+        <rdfs:label xml:lang="pt">Florestas de espécies invasoras</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use5117 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use5117">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use5110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Bosques de otras frondosas</rdfs:label>
+        <rdfs:label xml:lang="pt">Florestas de outras folhosas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use5120 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use5120">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use5100"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Coníferas</rdfs:label>
+        <rdfs:label xml:lang="pt">Florestas de resinosas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use5121 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use5121">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use5120"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Bosques de Pinus pinaster</rdfs:label>
+        <rdfs:label xml:lang="pt">Florestas de pinheiro bravo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use5122 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use5122">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use5120"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Bosques de Pinus pinea</rdfs:label>
+        <rdfs:label xml:lang="pt">Florestas de pinheiro manso</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use5123 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use5123">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use5120"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Bosques de otras resinosas</rdfs:label>
+        <rdfs:label xml:lang="pt">Florestas de outras resinosas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use6000 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use6000">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/ilu/ontology/TreelessLand"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Matorrales</rdfs:label>
+        <rdfs:label xml:lang="pt">Matos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use6100 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use6100">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use6000"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Matorrales</rdfs:label>
+        <rdfs:label xml:lang="pt">Matos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use6110 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use6110">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use6100"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Matorrales</rdfs:label>
+        <rdfs:label xml:lang="pt">Matos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use6111 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use6111">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use6110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Matorrales</rdfs:label>
+        <rdfs:label xml:lang="pt">Matos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use7000 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use7000">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/ilu/ontology/TreelessLand"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Espaços descobertos ou com pouca vegetação</rdfs:label>
+        <rdfs:label xml:lang="es">Zonas descubiertas con poca vegetación</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use7100 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use7100">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use7000"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Espaços descobertos ou com pouca vegetação</rdfs:label>
+        <rdfs:label xml:lang="es">Zonas descubiertas con poca vegetación</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use7110 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use7110">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use7100"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Playas, dunas y arenales</rdfs:label>
+        <rdfs:label xml:lang="pt">Praias, dunas e areais</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use7111 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use7111">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use7110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Playas, dunas y arenales interiores</rdfs:label>
+        <rdfs:label xml:lang="pt">Praias, dunas e areais interiores</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use7112 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use7112">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use7110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Playas, dunas y arenales costeros</rdfs:label>
+        <rdfs:label xml:lang="pt">Praias, dunas e areais costeiros</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use7120 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use7120">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use7100"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Roca desnuda</rdfs:label>
+        <rdfs:label xml:lang="pt">Rocha nua</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use7121 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use7121">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use7120"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Roca desnuda</rdfs:label>
+        <rdfs:label xml:lang="pt">Rocha nua</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use7130 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use7130">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use7100"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Vegetación escasa</rdfs:label>
+        <rdfs:label xml:lang="pt">Vegetação esparsa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use7131 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use7131">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use7130"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Vegetación escasa</rdfs:label>
+        <rdfs:label xml:lang="pt">Vegetação esparsa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use8000 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use8000">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/ilu/ontology/WetLand"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Zonas húmedas</rdfs:label>
+        <rdfs:label xml:lang="pt">Zonas húmidas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use8100 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use8100">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use8000"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Zonas húmedas</rdfs:label>
+        <rdfs:label xml:lang="pt">Zonas húmidas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use8110 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use8110">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use8100"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Zonas húmedas interiores</rdfs:label>
+        <rdfs:label xml:lang="pt">Zonas húmidas interiores</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use8111 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use8111">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use8110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Pauis</rdfs:label>
+        <rdfs:label xml:lang="es">Turberas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use8120 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use8120">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use8100"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Zonas húmedas litorales</rdfs:label>
+        <rdfs:label xml:lang="pt">Zonas húmidas litorais</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use8121 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use8121">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use8120"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Marismas</rdfs:label>
+        <rdfs:label xml:lang="pt">Sapais</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use8122 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use8122">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use8120"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Zonas entremarés</rdfs:label>
+        <rdfs:label xml:lang="es">Zonas intermareales</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9000 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9000">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/ilu/ontology/WetLand"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Aguas superficiales</rdfs:label>
+        <rdfs:label xml:lang="pt">Massas de água superficiais</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9100 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9100">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9000"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Masas de agua interiores</rdfs:label>
+        <rdfs:label xml:lang="pt">Massas de água interiores</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9110 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9110">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9100"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Cursos de agua</rdfs:label>
+        <rdfs:label xml:lang="pt">Cursos de água</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9111 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9111">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Cursos de agua naturales</rdfs:label>
+        <rdfs:label xml:lang="pt">Cursos de água naturais</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9112 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9112">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9110"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Cursos de agua con alteraciones artificiales</rdfs:label>
+        <rdfs:label xml:lang="pt">Cursos de água modificados ou artificializados</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9120 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9120">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9100"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Planos de agua</rdfs:label>
+        <rdfs:label xml:lang="pt">Planos de água</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9121 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9121">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9120"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Lagos e lagoas interiores artificiais</rdfs:label>
+        <rdfs:label xml:lang="es">Lagos y lagunas artificiales</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9122 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9122">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9120"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Lagos e lagoas interiores naturais</rdfs:label>
+        <rdfs:label xml:lang="es">Lagos y lagunas naturales</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9123 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9123">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9120"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Albufeiras de barragens</rdfs:label>
+        <rdfs:label xml:lang="es">Embalses de presa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9124 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9124">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9120"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Albufeiras de represas ou de açudes</rdfs:label>
+        <rdfs:label xml:lang="es">Depósitos de presa o vertederos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9125 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9125">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9120"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Charcas</rdfs:label>
+        <rdfs:label xml:lang="pt">Charcas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9126 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9126">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9120"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Acuicultura</rdfs:label>
+        <rdfs:label xml:lang="pt">Aquicultura</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9200 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9200">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9000"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Acuicultura</rdfs:label>
+        <rdfs:label xml:lang="pt">Aquicultura</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9210 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9210">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9200"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Acuicultura</rdfs:label>
+        <rdfs:label xml:lang="pt">Aquicultura</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9211 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9211">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9210"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Salinas</rdfs:label>
+        <rdfs:label xml:lang="pt">Salinas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9300 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9300">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9000"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Masas de agua de transición y costeras</rdfs:label>
+        <rdfs:label xml:lang="pt">Massas de água de transição e costeiras</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9310 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9310">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9300"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Salinas</rdfs:label>
+        <rdfs:label xml:lang="pt">Salinas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9311 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9311">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9310"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Lagoas costeiras</rdfs:label>
+        <rdfs:label xml:lang="es">Lagos costeros</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9320 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9320">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9300"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Lagoas costeiras</rdfs:label>
+        <rdfs:label xml:lang="es">Lagos costeros</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9321 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9321">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9320"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Desembocaduras fluviais</rdfs:label>
+        <rdfs:label xml:lang="es">Desembocaduras fluviales</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9330 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9330">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9300"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Desembocaduras fluviais</rdfs:label>
+        <rdfs:label xml:lang="es">Desembocaduras fluviales</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9331 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9331">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9330"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Oceano</rdfs:label>
+        <rdfs:label xml:lang="es">Océano</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/cos/ontology/Use9340 -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/cos/ontology/Use9340">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/cos/ontology/Use9300"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/cos/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="pt">Oceano</rdfs:label>
+        <rdfs:label xml:lang="es">Océano</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/AgriculturalLand -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/AgriculturalLand"/>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/ArtificialLand -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/ArtificialLand"/>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/ForestLand -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/ForestLand"/>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/Patch -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/Patch"/>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/TreelessLand -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/TreelessLand"/>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/WetLand -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/WetLand"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

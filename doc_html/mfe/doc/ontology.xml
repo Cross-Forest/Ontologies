@@ -1,0 +1,744 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://crossforest.eu/mfe/ontology/"
+     xml:base="http://crossforest.eu/mfe/ontology/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="http://crossforest.eu/mfe/ontology/">
+        <owl:imports rdf:resource="http://crossforest.eu/measures/ontology/"/>
+        <owl:imports rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <dc:creator rdf:resource="https://www.crossforest.eu/members/guiveg"/>
+        <dc:creator rdf:resource="https://www.crossforest.eu/members/josgim"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-17</dc:date>
+        <vann:preferredNamespacePrefix>mfe</vann:preferredNamespacePrefix>
+        <rdfs:comment xml:lang="en">Ontology to publish data of the Spanish Forestry Map</rdfs:comment>
+        <rdfs:comment>Ontología para publicar datos del Mapa Forestal Nacional de España</rdfs:comment>
+        <rdfs:label xml:lang="es">Ontología del MFE de España</rdfs:label>
+        <rdfs:label xml:lang="en">Spanish MFE Ontology</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://crossforest.eu/measures/ontology/hasMeasure -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/measures/ontology/hasMeasure"/>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/containsPatch -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/containsPatch">
+        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/PatchInPatch"/>
+        <rdfs:comment xml:lang="es">la tesela agregada contiene sub-tesela</rdfs:comment>
+        <rdfs:comment xml:lang="en">the merged patch contains sub-patch</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="en">contains patch</rdfs:label>
+        <rdfs:label xml:lang="es">contiene tesela</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/containsSpecies -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/containsSpecies">
+        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/SpeciesInPatch"/>
+        <rdfs:comment xml:lang="es">la tesela agregada contiene especie</rdfs:comment>
+        <rdfs:comment xml:lang="en">the patch contains species</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="en">contains species</rdfs:label>
+        <rdfs:label xml:lang="es">contiene especie</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/containsUse -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/containsUse">
+        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/UseInPatch"/>
+        <rdfs:comment xml:lang="es">la tesela contiene uso</rdfs:comment>
+        <rdfs:comment xml:lang="en">the patch contains use</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="en">contains use</rdfs:label>
+        <rdfs:label xml:lang="es">contiene use</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/hasCanopyCoverTotal -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasCanopyCoverTotal">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasure"/>
+        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/CanopyCoverTotal"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/hasCanopyCoverTrees -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasCanopyCoverTrees">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasure"/>
+        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/CanopyCoverTrees"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/hasClassification -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasClassification">
+        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/Classification"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/hasOccupationOfSpecies -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasOccupationOfSpecies">
+        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/SpeciesInPatch"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/OccupationOfSpecies"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/hasPatch -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasPatch">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasure"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="en">has patch</rdfs:label>
+        <rdfs:label xml:lang="es">tiene tesela</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/hasPatchShape -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasPatchShape">
+        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/PatchShape"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/hasRateOfUse -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasRateOfUse">
+        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/UseInPatch"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/RateOfUse"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/hasRateofPatch -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasRateofPatch">
+        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/PatchInPatch"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/RateOfPatch"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/hasSetOfSpecies -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasSetOfSpecies">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasure"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/SetOfSpecies"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/hasSpatialDistribution -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasSpatialDistribution">
+        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/SpatialDistribution"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/hasSpecies -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasSpecies">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasure"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/ifn/ontology/Species"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="en">has species</rdfs:label>
+        <rdfs:label xml:lang="es">tiene especie</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/hasStandDevelopment -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasStandDevelopment">
+        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/SpeciesInPatch"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/StandDevelopment"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/hasTypeofForest -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasTypeofForest">
+        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/TypeOfForest"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es">Indica la tipología de bosque predominante</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="es">Tipo de Bosque</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/hasUse -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasUse">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasure"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/Use"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="en">has use</rdfs:label>
+        <rdfs:label xml:lang="es">tiene uso</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/hasVegetationStructure -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasVegetationStructure">
+        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/VegetationStructure"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://crossforest.eu/measures/ontology/hasMeasureinPercentage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://crossforest.eu/measures/ontology/hasMeasureinPercentage"/>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/hasCanopyCoverTotalPercent -->
+
+
+    <owl:DatatypeProperty rdf:about="http://crossforest.eu/mfe/ontology/hasCanopyCoverTotalPercent">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasureinPercentage"/>
+        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/hasCanopyCoverTreesPercent -->
+
+
+    <owl:DatatypeProperty rdf:about="http://crossforest.eu/mfe/ontology/hasCanopyCoverTreesPercent">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasureinPercentage"/>
+        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/hasPercentageOfPatch -->
+
+
+    <owl:DatatypeProperty rdf:about="http://crossforest.eu/mfe/ontology/hasPercentageOfPatch">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasureinPercentage"/>
+        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/PatchInPatch"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/hasPercentageOfSpecies -->
+
+
+    <owl:DatatypeProperty rdf:about="http://crossforest.eu/mfe/ontology/hasPercentageOfSpecies">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasureinPercentage"/>
+        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/SpeciesInPatch"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/hasPercentageOfUse -->
+
+
+    <owl:DatatypeProperty rdf:about="http://crossforest.eu/mfe/ontology/hasPercentageOfUse">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasureinPercentage"/>
+        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/UseInPatch"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://crossforest.eu/ifn/ontology/Species -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ifn/ontology/Species"/>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/Patch -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/Patch"/>
+    
+
+
+    <!-- http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters"/>
+    
+
+
+    <!-- http://crossforest.eu/measures/ontology/MeasureInPercentage -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/measures/ontology/MeasureInPercentage"/>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/Area -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/Area">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/BiogeographicRegion -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/BiogeographicRegion">
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="en">Biogeographic Region</rdfs:label>
+        <rdfs:label xml:lang="es">Región biogeográfica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/CanopyCover -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/CanopyCover">
+        <rdfs:comment xml:lang="en">Canopy Cover of the Vegetation Structure</rdfs:comment>
+        <rdfs:comment xml:lang="es">Representa la proporción total de la vegetación.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es">Canopy Cover</rdfs:label>
+        <rdfs:label xml:lang="es">Fracción de Cabida Cubierta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/CanopyCoverBushes -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/CanopyCoverBushes">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/mfe/ontology/CanopyCover"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es">Representa la proporción del conjunto de las especies del estrato arbustivo como porcentaje de suelo cubierto por la proyección de todas las copas. No influye en su cálculo el hecho de tratarse de masas monoespecíficas o pluriespecíficas, o el de encontrarse en distinto estado de masa las distintas especies.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es">Canopy Cover of Bushes</rdfs:label>
+        <rdfs:label xml:lang="es">Fracción de Cabida Cubierta Arbustiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/CanopyCoverTotal -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/CanopyCoverTotal">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/mfe/ontology/CanopyCover"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es">Representa la proporción total de la vegetación arbórea y de matorral. Proporciona información sobre la proyección sobre el suelo de los principales pisos de vegetación. En algún caso se incluirán fracciones de cabida cubierta de pastizales o cultivos. Para su cuantificación se tendrá en cuenta todas las especies en conjunto, con independencia de que se presenten por razones de edad o de otro tipo de alturas muy distintas.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es">Fracción de Cabida Cubierta Total</rdfs:label>
+        <rdfs:label xml:lang="es">Total Canopy Cover</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/CanopyCoverTrees -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/CanopyCoverTrees">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/mfe/ontology/CanopyCover"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es">Representa la proporción del conjunto de las especies del estrato arbóreo como porcentaje de suelo cubierto por la proyección de todas las copas. No influye en su cálculo el hecho de tratarse de masas monoespecíficas o pluriespecíficas, o el de encontrarse en distinto estado de masa las distintas especies.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es">Canopy Cover of Trees</rdfs:label>
+        <rdfs:label xml:lang="es">Fracción de Cabida Cubierta Arbórea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/Classification -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/Classification">
+        <rdfs:comment xml:lang="es">Pasarela entre el Tipo Estructural y la clasificación por niveles del IFN3</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es">Clasificación MFE-IFN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/ForestType -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/ForestType">
+        <rdfs:comment xml:lang="es">La Formación Arbolada representa la comunidad vegetal arbórea de orden superior con fisiología y biología homogénea y viene determinada por la Ocupación de la especie principal o por la Ocupación formada por las especies presentes.</rdfs:comment>
+        <rdfs:label xml:lang="en">Forest Type</rdfs:label>
+        <rdfs:label xml:lang="es">Formación Arbolada</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/OccupationOfSpecies -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/OccupationOfSpecies">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/measures/ontology/MeasureInPercentage"/>
+        <rdfs:comment xml:lang="es">Indica la ocupación para cada una de las especies descritas. Los valores que adopta informan del grado de presencia en porcentaje de las especies arbóreas existentes, siendo tanto mayor, cuanto mayor representatividad posee la especie en cuestión, en comparación con las otras especies arbóreas presentes en la tesela.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es">Ocupación de especie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/Patch -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/Patch">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/ilu/ontology/Patch"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/PatchInPatch -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/PatchInPatch">
+        <rdfs:comment xml:lang="es">Patch contained in the patch</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es">Patch in the patch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/PatchShape -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/PatchShape">
+        <rdfs:comment xml:lang="en">Diferenciates the geometric shape of the patch and vegetation asociated</rdfs:comment>
+        <rdfs:comment xml:lang="es">Indica la forma geométrica que presenta la tesela</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es">Forma de la tesela</rdfs:label>
+        <rdfs:label xml:lang="en">Shape of the patch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/RateOfPatch -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/RateOfPatch">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/measures/ontology/MeasureInPercentage"/>
+        <rdfs:comment xml:lang="es">Indica la proporción de la tesela dentro de la agrupación.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es">Proporción de la tesela</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/RateOfUse -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/RateOfUse"/>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/RateofUse -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/RateofUse">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/measures/ontology/MeasureInPercentage"/>
+        <rdfs:comment xml:lang="es">Indica la proporción para cada una de las usos dentro de la agrupación de teselas.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es">Propoción del uso</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/SetOfSpecies -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/SetOfSpecies">
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es">Agrupación de Especies</rdfs:label>
+        <rdfs:label xml:lang="en">Set of Species</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/SpatialDistribution -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/SpatialDistribution">
+        <rdfs:comment xml:lang="es">Indica las distintas formas en las que puede aparecer agrupada la vegetación arbórea. Está más referido a la distribución espacial visual de la mancha vegetal que a su composición específica o la relación entre especies.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es">Distribución</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/SpeciesInPatch -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/SpeciesInPatch">
+        <rdfs:comment xml:lang="es">Species present in the patch</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es">Species in the patch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/StandDevelopment -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/StandDevelopment">
+        <rdfs:comment xml:lang="es">Indica la fase de desarrollo en que se encuentran las poblaciones de especies arbóreas presentes en la tesela</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es">Estado de Desarrollo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/TypeOfForest -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/TypeOfForest">
+        <rdfs:comment xml:lang="es">Tipo de bosque (coníferas, frondosas o mixtas)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es">Tipo de Bosque</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/Use -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/Use">
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="en">Soil use</rdfs:label>
+        <rdfs:label xml:lang="es">Uso del suelo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/UseInPatch -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/UseInPatch">
+        <rdfs:comment xml:lang="es">Use present in the patch</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es">Use in the patch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/mfe/ontology/VegetationStructure -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/VegetationStructure">
+        <rdfs:comment>Indica los distintos usos del suelo que pueden aparecer y, dentro del uso forestal, las distintas estructuras de vegetación que lo pueden ocupar, atendiendo más que a la densidad vegetal a la estructura de la vegetación que ocupa.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:label xml:lang="es">Tipo Estructural</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

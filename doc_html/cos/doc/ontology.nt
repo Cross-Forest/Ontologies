@@ -1,0 +1,1807 @@
+<http://crossforest.eu/cos/ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://crossforest.eu/cos/ontology/> <http://purl.org/dc/elements/1.1/creator> <https://www.crossforest.eu/members/guiveg> .
+<http://crossforest.eu/cos/ontology/> <http://purl.org/dc/elements/1.1/creator> <https://www.crossforest.eu/members/josgim> .
+<http://crossforest.eu/cos/ontology/> <http://purl.org/dc/elements/1.1/date> "2020-07-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://crossforest.eu/cos/ontology/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cos" .
+<http://crossforest.eu/cos/ontology/> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontologia de Uso e Ocupação do Solo de Portugal Continental"@pt .
+<http://crossforest.eu/cos/ontology/> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology to publish data about land use in Portugal"@en .
+<http://crossforest.eu/cos/ontology/> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontología para publicar datos deuso del suelo en Portugal" .
+<http://crossforest.eu/cos/ontology/> <http://www.w3.org/2000/01/rdf-schema#label> "Ontologia de Ocupação do Solo de Portugal"@pt .
+<http://crossforest.eu/cos/ontology/> <http://www.w3.org/2000/01/rdf-schema#label> "Ontología portuguesa de uso del suelo"@es .
+<http://crossforest.eu/cos/ontology/> <http://www.w3.org/2000/01/rdf-schema#label> "Portuguese Land Usage Ontology"@en .
+<http://crossforest.eu/cos/ontology/> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://crossforest.eu/cos/ontology/Patch
+<http://crossforest.eu/cos/ontology/Patch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Patch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ilu/ontology/Patch> .
+<http://crossforest.eu/ilu/ontology/Patch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Patch> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Patch> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Patch> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Patch> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Patch> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Patch> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+<http://crossforest.eu/cos/ontology/Patch> <http://www.w3.org/2000/01/rdf-schema#label> ""@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1000
+<http://crossforest.eu/cos/ontology/Use1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1000> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ilu/ontology/ArtificialLand> .
+<http://crossforest.eu/ilu/ontology/ArtificialLand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1000> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1000> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1000> <http://www.w3.org/2000/01/rdf-schema#label> "Territorios artificializados"@es .
+<http://crossforest.eu/cos/ontology/Use1000> <http://www.w3.org/2000/01/rdf-schema#label> "Territórios artificializados"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1100
+<http://crossforest.eu/cos/ontology/Use1100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1100> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1000> .
+<http://crossforest.eu/cos/ontology/Use1100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1100> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1100> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1100> <http://www.w3.org/2000/01/rdf-schema#label> "Tecido edificado"@pt .
+<http://crossforest.eu/cos/ontology/Use1100> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido edificado"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1110
+<http://crossforest.eu/cos/ontology/Use1110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1100> .
+<http://crossforest.eu/cos/ontology/Use1110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1110> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1110> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1110> <http://www.w3.org/2000/01/rdf-schema#label> "Tecido edificado contínuo"@pt .
+<http://crossforest.eu/cos/ontology/Use1110> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido edificado continuo"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1111
+<http://crossforest.eu/cos/ontology/Use1111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1111> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1110> .
+<http://crossforest.eu/cos/ontology/Use1111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1111> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1111> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1111> <http://www.w3.org/2000/01/rdf-schema#label> "Tecido edificado contínuo predominantemente vertical"@pt .
+<http://crossforest.eu/cos/ontology/Use1111> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido edificado continuo predominantemente vertical"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1112
+<http://crossforest.eu/cos/ontology/Use1112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1112> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1110> .
+<http://crossforest.eu/cos/ontology/Use1112> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1112> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1112> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1112> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1112> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1112> <http://www.w3.org/2000/01/rdf-schema#label> "Tecido edificado contínuo predominantemente horizontal"@pt .
+<http://crossforest.eu/cos/ontology/Use1112> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido edificado continuo predominantemente horizontal"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1120
+<http://crossforest.eu/cos/ontology/Use1120> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1120> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1100> .
+<http://crossforest.eu/cos/ontology/Use1120> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1120> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1120> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1120> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1120> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1120> <http://www.w3.org/2000/01/rdf-schema#label> "Tecido edificado descontínuo"@pt .
+<http://crossforest.eu/cos/ontology/Use1120> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido edificado discontinuo"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1121
+<http://crossforest.eu/cos/ontology/Use1121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1121> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1120> .
+<http://crossforest.eu/cos/ontology/Use1121> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1121> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1121> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1121> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1121> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1121> <http://www.w3.org/2000/01/rdf-schema#label> "Tecido edificado descontínuo"@pt .
+<http://crossforest.eu/cos/ontology/Use1121> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido edificado discontínuo"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1122
+<http://crossforest.eu/cos/ontology/Use1122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1122> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1120> .
+<http://crossforest.eu/cos/ontology/Use1122> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1122> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1122> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1122> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1122> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1122> <http://www.w3.org/2000/01/rdf-schema#label> "Tecido edificado descontínuo esparso"@pt .
+<http://crossforest.eu/cos/ontology/Use1122> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido edificado discontínuo escaso"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1130
+<http://crossforest.eu/cos/ontology/Use1130> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1130> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1100> .
+<http://crossforest.eu/cos/ontology/Use1130> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1130> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1130> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1130> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1130> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1130> <http://www.w3.org/2000/01/rdf-schema#label> " Espaços vazios em tecido edificado"@pt .
+<http://crossforest.eu/cos/ontology/Use1130> <http://www.w3.org/2000/01/rdf-schema#label> "Espacios vacios sin construir"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1131
+<http://crossforest.eu/cos/ontology/Use1131> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1131> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1130> .
+<http://crossforest.eu/cos/ontology/Use1131> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1131> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1131> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1131> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1131> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1131> <http://www.w3.org/2000/01/rdf-schema#label> "Áreas de estacionamentos e logradouros"@pt .
+<http://crossforest.eu/cos/ontology/Use1131> <http://www.w3.org/2000/01/rdf-schema#label> "Áreas de estacionamentos y lugares pùblicos"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1132
+<http://crossforest.eu/cos/ontology/Use1132> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1132> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1130> .
+<http://crossforest.eu/cos/ontology/Use1132> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1132> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1132> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1132> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1132> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1132> <http://www.w3.org/2000/01/rdf-schema#label> "Espacios vacios sin construir"@es .
+<http://crossforest.eu/cos/ontology/Use1132> <http://www.w3.org/2000/01/rdf-schema#label> "Espaços vazios sem construção"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1200
+<http://crossforest.eu/cos/ontology/Use1200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1200> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1000> .
+<http://crossforest.eu/cos/ontology/Use1200> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1200> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1200> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1200> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1200> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1200> <http://www.w3.org/2000/01/rdf-schema#label> "Industria, comercie, e instalaciones agrícolas"@es .
+<http://crossforest.eu/cos/ontology/Use1200> <http://www.w3.org/2000/01/rdf-schema#label> "Indústria, comércio e instalações agrícolas"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1210
+<http://crossforest.eu/cos/ontology/Use1210> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1210> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1200> .
+<http://crossforest.eu/cos/ontology/Use1210> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1210> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1210> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1210> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1210> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1210> <http://www.w3.org/2000/01/rdf-schema#label> "Industria"@es .
+<http://crossforest.eu/cos/ontology/Use1210> <http://www.w3.org/2000/01/rdf-schema#label> "Indústria"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1211
+<http://crossforest.eu/cos/ontology/Use1211> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1211> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1210> .
+<http://crossforest.eu/cos/ontology/Use1211> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1211> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1211> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1211> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1211> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1211> <http://www.w3.org/2000/01/rdf-schema#label> "Industria"@es .
+<http://crossforest.eu/cos/ontology/Use1211> <http://www.w3.org/2000/01/rdf-schema#label> "Indústria"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1220
+<http://crossforest.eu/cos/ontology/Use1220> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1220> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1200> .
+<http://crossforest.eu/cos/ontology/Use1220> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1220> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1220> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1220> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1220> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1220> <http://www.w3.org/2000/01/rdf-schema#label> "Comercio"@es .
+<http://crossforest.eu/cos/ontology/Use1220> <http://www.w3.org/2000/01/rdf-schema#label> "Comércio"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1221
+<http://crossforest.eu/cos/ontology/Use1221> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1221> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1220> .
+<http://crossforest.eu/cos/ontology/Use1221> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1221> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1221> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1221> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1221> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1221> <http://www.w3.org/2000/01/rdf-schema#label> "Comercio"@es .
+<http://crossforest.eu/cos/ontology/Use1221> <http://www.w3.org/2000/01/rdf-schema#label> "Comércio"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1230
+<http://crossforest.eu/cos/ontology/Use1230> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1230> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1200> .
+<http://crossforest.eu/cos/ontology/Use1230> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1230> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1230> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1230> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1230> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1230> <http://www.w3.org/2000/01/rdf-schema#label> "Instalaciones agrícolas"@es .
+<http://crossforest.eu/cos/ontology/Use1230> <http://www.w3.org/2000/01/rdf-schema#label> "Instalações agrícolas"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1231
+<http://crossforest.eu/cos/ontology/Use1231> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1231> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1230> .
+<http://crossforest.eu/cos/ontology/Use1231> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1231> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1231> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1231> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1231> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1231> <http://www.w3.org/2000/01/rdf-schema#label> "Instalaciones agrícolas"@es .
+<http://crossforest.eu/cos/ontology/Use1231> <http://www.w3.org/2000/01/rdf-schema#label> "nstalações agrícolas"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1300
+<http://crossforest.eu/cos/ontology/Use1300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1300> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1000> .
+<http://crossforest.eu/cos/ontology/Use1300> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1300> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1300> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1300> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1300> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1300> <http://www.w3.org/2000/01/rdf-schema#label> "Infraestructuras"@es .
+<http://crossforest.eu/cos/ontology/Use1300> <http://www.w3.org/2000/01/rdf-schema#label> "Infraestruturas"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1310
+<http://crossforest.eu/cos/ontology/Use1310> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1310> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1300> .
+<http://crossforest.eu/cos/ontology/Use1310> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1310> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1310> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1310> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1310> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1310> <http://www.w3.org/2000/01/rdf-schema#label> "Infraestruturas de producción de energía"@es .
+<http://crossforest.eu/cos/ontology/Use1310> <http://www.w3.org/2000/01/rdf-schema#label> "Infraestruturas de produção de energia"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1311
+<http://crossforest.eu/cos/ontology/Use1311> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1311> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1310> .
+<http://crossforest.eu/cos/ontology/Use1311> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1311> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1311> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1311> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1311> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1311> <http://www.w3.org/2000/01/rdf-schema#label> "Infraestructuras de producción de energia renovable"@es .
+<http://crossforest.eu/cos/ontology/Use1311> <http://www.w3.org/2000/01/rdf-schema#label> "nfraestruturas de produção de energia renovável"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1312
+<http://crossforest.eu/cos/ontology/Use1312> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1312> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1310> .
+<http://crossforest.eu/cos/ontology/Use1312> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1312> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1312> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1312> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1312> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1312> <http://www.w3.org/2000/01/rdf-schema#label> "Infraestructuras de producción de energia no renovable"@es .
+<http://crossforest.eu/cos/ontology/Use1312> <http://www.w3.org/2000/01/rdf-schema#label> "Infraestruturas de produção de energia não renovável"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1320
+<http://crossforest.eu/cos/ontology/Use1320> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1320> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1300> .
+<http://crossforest.eu/cos/ontology/Use1320> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1320> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1320> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1320> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1320> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1320> <http://www.w3.org/2000/01/rdf-schema#label> "Infraestruturas de aguas y tratamiento de resíduos"@es .
+<http://crossforest.eu/cos/ontology/Use1320> <http://www.w3.org/2000/01/rdf-schema#label> "Infraestruturas de águas e tratamento de resíduos"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1321
+<http://crossforest.eu/cos/ontology/Use1321> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1321> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1320> .
+<http://crossforest.eu/cos/ontology/Use1321> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1321> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1321> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1321> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1321> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1321> <http://www.w3.org/2000/01/rdf-schema#label> "Infraestructuras para captación tratamiento y abastecimiento de aguas para el consumo"@es .
+<http://crossforest.eu/cos/ontology/Use1321> <http://www.w3.org/2000/01/rdf-schema#label> "Infraestruturas para captação, tratamento e abastecimento de águas para consumo"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1322
+<http://crossforest.eu/cos/ontology/Use1322> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1322> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1320> .
+<http://crossforest.eu/cos/ontology/Use1322> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1322> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1322> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1322> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1322> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1322> <http://www.w3.org/2000/01/rdf-schema#label> "Infraestructuras de tratamiento de residuos y aguas residuales"@es .
+<http://crossforest.eu/cos/ontology/Use1322> <http://www.w3.org/2000/01/rdf-schema#label> "Infraestruturas de tratamento de resíduos e águas residuais"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1400
+<http://crossforest.eu/cos/ontology/Use1400> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1400> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1000> .
+<http://crossforest.eu/cos/ontology/Use1400> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1400> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1400> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1400> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1400> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1400> <http://www.w3.org/2000/01/rdf-schema#label> "Infraestruturas"@pt .
+<http://crossforest.eu/cos/ontology/Use1400> <http://www.w3.org/2000/01/rdf-schema#label> "Transportes"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1410
+<http://crossforest.eu/cos/ontology/Use1410> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1410> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1400> .
+<http://crossforest.eu/cos/ontology/Use1410> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1410> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1410> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1410> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1410> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1410> <http://www.w3.org/2000/01/rdf-schema#label> "'Redes viarias y ferroviarias y espacios asociados'"@es .
+<http://crossforest.eu/cos/ontology/Use1410> <http://www.w3.org/2000/01/rdf-schema#label> "Redes viárias e ferroviárias e espaços associados"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1411
+<http://crossforest.eu/cos/ontology/Use1411> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1411> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1410> .
+<http://crossforest.eu/cos/ontology/Use1411> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1411> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1411> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1411> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1411> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1411> <http://www.w3.org/2000/01/rdf-schema#label> "Red viaria y espacios asociados"@es .
+<http://crossforest.eu/cos/ontology/Use1411> <http://www.w3.org/2000/01/rdf-schema#label> "Rede viária e espaços associados"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1412
+<http://crossforest.eu/cos/ontology/Use1412> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1412> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1410> .
+<http://crossforest.eu/cos/ontology/Use1412> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1412> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1412> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1412> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1412> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1412> <http://www.w3.org/2000/01/rdf-schema#label> "Red ferroviaria y espacios asociados"@es .
+<http://crossforest.eu/cos/ontology/Use1412> <http://www.w3.org/2000/01/rdf-schema#label> "Rede ferroviária e espaços associados"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1420
+<http://crossforest.eu/cos/ontology/Use1420> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1420> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1400> .
+<http://crossforest.eu/cos/ontology/Use1420> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1420> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1420> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1420> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1420> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1420> <http://www.w3.org/2000/01/rdf-schema#label> "Áreas portuarias"@es .
+<http://crossforest.eu/cos/ontology/Use1420> <http://www.w3.org/2000/01/rdf-schema#label> "Áreas portuárias"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1421
+<http://crossforest.eu/cos/ontology/Use1421> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1421> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1420> .
+<http://crossforest.eu/cos/ontology/Use1421> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1421> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1421> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1421> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1421> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1421> <http://www.w3.org/2000/01/rdf-schema#label> "Terminais portuários de mar e de rio"@pt .
+<http://crossforest.eu/cos/ontology/Use1421> <http://www.w3.org/2000/01/rdf-schema#label> "Terminales portuarias de mar y de río"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1422
+<http://crossforest.eu/cos/ontology/Use1422> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1422> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1420> .
+<http://crossforest.eu/cos/ontology/Use1422> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1422> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1422> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1422> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1422> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1422> <http://www.w3.org/2000/01/rdf-schema#label> "Astilleros y diques secos"@es .
+<http://crossforest.eu/cos/ontology/Use1422> <http://www.w3.org/2000/01/rdf-schema#label> "Estaleiros navais e docas secas"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1423
+<http://crossforest.eu/cos/ontology/Use1423> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1423> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1420> .
+<http://crossforest.eu/cos/ontology/Use1423> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1423> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1423> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1423> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1423> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1423> <http://www.w3.org/2000/01/rdf-schema#label> "Marinas e docas pesca"@pt .
+<http://crossforest.eu/cos/ontology/Use1423> <http://www.w3.org/2000/01/rdf-schema#label> "Marinas y muelles de pesca"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1430
+<http://crossforest.eu/cos/ontology/Use1430> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1430> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1400> .
+<http://crossforest.eu/cos/ontology/Use1430> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1430> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1430> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1430> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1430> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1430> <http://www.w3.org/2000/01/rdf-schema#label> "Aeroportos e aeródromos"@pt .
+<http://crossforest.eu/cos/ontology/Use1430> <http://www.w3.org/2000/01/rdf-schema#label> "Aeropuertos y aeródromos"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1431
+<http://crossforest.eu/cos/ontology/Use1431> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1431> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1430> .
+<http://crossforest.eu/cos/ontology/Use1431> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1431> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1431> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1431> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1431> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1431> <http://www.w3.org/2000/01/rdf-schema#label> "Aeroportos"@pt .
+<http://crossforest.eu/cos/ontology/Use1431> <http://www.w3.org/2000/01/rdf-schema#label> "Aeropuertos"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1432
+<http://crossforest.eu/cos/ontology/Use1432> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1432> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1430> .
+<http://crossforest.eu/cos/ontology/Use1432> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1432> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1432> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1432> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1432> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1432> <http://www.w3.org/2000/01/rdf-schema#label> "Aeródromos"@es .
+<http://crossforest.eu/cos/ontology/Use1432> <http://www.w3.org/2000/01/rdf-schema#label> "Aeródromos"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1500
+<http://crossforest.eu/cos/ontology/Use1500> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1500> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1000> .
+<http://crossforest.eu/cos/ontology/Use1500> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1500> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1500> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1500> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1500> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1500> <http://www.w3.org/2000/01/rdf-schema#label> "Áreas de extracción inerte o áreas de eliminación de resíduos y obras"@es .
+<http://crossforest.eu/cos/ontology/Use1500> <http://www.w3.org/2000/01/rdf-schema#label> "Áreas de extração de inertes, áreas de deposição de resíduos e estaleiros de construção"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1510
+<http://crossforest.eu/cos/ontology/Use1510> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1510> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1500> .
+<http://crossforest.eu/cos/ontology/Use1510> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1510> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1510> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1510> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1510> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1510> <http://www.w3.org/2000/01/rdf-schema#label> "Áreas de extracción de inertes"@es .
+<http://crossforest.eu/cos/ontology/Use1510> <http://www.w3.org/2000/01/rdf-schema#label> "Áreas de extração de inertes"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1511
+<http://crossforest.eu/cos/ontology/Use1511> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1511> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1510> .
+<http://crossforest.eu/cos/ontology/Use1511> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1511> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1511> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1511> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1511> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1511> <http://www.w3.org/2000/01/rdf-schema#label> "Minas a cielo abierto"@es .
+<http://crossforest.eu/cos/ontology/Use1511> <http://www.w3.org/2000/01/rdf-schema#label> "Minas a céu aberto"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1512
+<http://crossforest.eu/cos/ontology/Use1512> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1512> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1510> .
+<http://crossforest.eu/cos/ontology/Use1512> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1512> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1512> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1512> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1512> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1512> <http://www.w3.org/2000/01/rdf-schema#label> "Canteras"@es .
+<http://crossforest.eu/cos/ontology/Use1512> <http://www.w3.org/2000/01/rdf-schema#label> "Pedreiras"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1520
+<http://crossforest.eu/cos/ontology/Use1520> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1520> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1500> .
+<http://crossforest.eu/cos/ontology/Use1520> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1520> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1520> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1520> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1520> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1520> <http://www.w3.org/2000/01/rdf-schema#label> "Áreas de deposición de resíduos"@es .
+<http://crossforest.eu/cos/ontology/Use1520> <http://www.w3.org/2000/01/rdf-schema#label> "Áreas de deposição de resíduos"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1521
+<http://crossforest.eu/cos/ontology/Use1521> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1521> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1520> .
+<http://crossforest.eu/cos/ontology/Use1521> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1521> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1521> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1521> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1521> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1521> <http://www.w3.org/2000/01/rdf-schema#label> "Aterros"@es .
+<http://crossforest.eu/cos/ontology/Use1521> <http://www.w3.org/2000/01/rdf-schema#label> "Aterros"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1522
+<http://crossforest.eu/cos/ontology/Use1522> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1522> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1520> .
+<http://crossforest.eu/cos/ontology/Use1522> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1522> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1522> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1522> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1522> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1522> <http://www.w3.org/2000/01/rdf-schema#label> "Lixeiras e Sucatas"@pt .
+<http://crossforest.eu/cos/ontology/Use1522> <http://www.w3.org/2000/01/rdf-schema#label> "Vertederos y desechos"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1530
+<http://crossforest.eu/cos/ontology/Use1530> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1530> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1500> .
+<http://crossforest.eu/cos/ontology/Use1530> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1530> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1530> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1530> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1530> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1530> <http://www.w3.org/2000/01/rdf-schema#label> "Áreas em construção"@pt .
+<http://crossforest.eu/cos/ontology/Use1530> <http://www.w3.org/2000/01/rdf-schema#label> "Áreas en construcción"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1531
+<http://crossforest.eu/cos/ontology/Use1531> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1531> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1530> .
+<http://crossforest.eu/cos/ontology/Use1531> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1531> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1531> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1531> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1531> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1531> <http://www.w3.org/2000/01/rdf-schema#label> "Áreas de construcción"@es .
+<http://crossforest.eu/cos/ontology/Use1531> <http://www.w3.org/2000/01/rdf-schema#label> "Áreas em construção"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1600
+<http://crossforest.eu/cos/ontology/Use1600> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1600> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1000> .
+<http://crossforest.eu/cos/ontology/Use1600> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1600> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1600> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1600> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1600> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1600> <http://www.w3.org/2000/01/rdf-schema#label> "Equipamentos"@pt .
+<http://crossforest.eu/cos/ontology/Use1600> <http://www.w3.org/2000/01/rdf-schema#label> "Equipamientos"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1610
+<http://crossforest.eu/cos/ontology/Use1610> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1610> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1600> .
+<http://crossforest.eu/cos/ontology/Use1610> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1610> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1610> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1610> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1610> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1610> <http://www.w3.org/2000/01/rdf-schema#label> "Equipamentos deportivos"@es .
+<http://crossforest.eu/cos/ontology/Use1610> <http://www.w3.org/2000/01/rdf-schema#label> "Equipamentos desportivos"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1611
+<http://crossforest.eu/cos/ontology/Use1611> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1611> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1610> .
+<http://crossforest.eu/cos/ontology/Use1611> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1611> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1611> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1611> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1611> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1611> <http://www.w3.org/2000/01/rdf-schema#label> "Campos de golf"@es .
+<http://crossforest.eu/cos/ontology/Use1611> <http://www.w3.org/2000/01/rdf-schema#label> "Campos de golfe"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1612
+<http://crossforest.eu/cos/ontology/Use1612> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1612> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1610> .
+<http://crossforest.eu/cos/ontology/Use1612> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1612> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1612> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1612> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1612> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1612> <http://www.w3.org/2000/01/rdf-schema#label> "Instalaciones deportivas"@es .
+<http://crossforest.eu/cos/ontology/Use1612> <http://www.w3.org/2000/01/rdf-schema#label> "Instalações desportivas"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1620
+<http://crossforest.eu/cos/ontology/Use1620> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1620> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1600> .
+<http://crossforest.eu/cos/ontology/Use1620> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1620> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1620> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1620> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1620> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1620> <http://www.w3.org/2000/01/rdf-schema#label> "Equipamentos de lazer e parques de campismo"@pt .
+<http://crossforest.eu/cos/ontology/Use1620> <http://www.w3.org/2000/01/rdf-schema#label> "Instalaciones de ocio y camping"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1621
+<http://crossforest.eu/cos/ontology/Use1621> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1621> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1620> .
+<http://crossforest.eu/cos/ontology/Use1621> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1621> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1621> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1621> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1621> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1621> <http://www.w3.org/2000/01/rdf-schema#label> "Campings"@es .
+<http://crossforest.eu/cos/ontology/Use1621> <http://www.w3.org/2000/01/rdf-schema#label> "Parques de campismo"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1622
+<http://crossforest.eu/cos/ontology/Use1622> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1622> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1620> .
+<http://crossforest.eu/cos/ontology/Use1622> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1622> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1622> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1622> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1622> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1622> <http://www.w3.org/2000/01/rdf-schema#label> "Equipamentos de lazer"@pt .
+<http://crossforest.eu/cos/ontology/Use1622> <http://www.w3.org/2000/01/rdf-schema#label> "Instalaciones de ocio"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1630
+<http://crossforest.eu/cos/ontology/Use1630> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1630> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1600> .
+<http://crossforest.eu/cos/ontology/Use1630> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1630> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1630> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1630> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1630> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1630> <http://www.w3.org/2000/01/rdf-schema#label> "Equipamentos culturais"@pt .
+<http://crossforest.eu/cos/ontology/Use1630> <http://www.w3.org/2000/01/rdf-schema#label> "Equipamientos culturales"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1631
+<http://crossforest.eu/cos/ontology/Use1631> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1631> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1630> .
+<http://crossforest.eu/cos/ontology/Use1631> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1631> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1631> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1631> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1631> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1631> <http://www.w3.org/2000/01/rdf-schema#label> "Equipamentos culturais"@pt .
+<http://crossforest.eu/cos/ontology/Use1631> <http://www.w3.org/2000/01/rdf-schema#label> "Equipamientos culturales"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1640
+<http://crossforest.eu/cos/ontology/Use1640> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1640> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1600> .
+<http://crossforest.eu/cos/ontology/Use1640> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1640> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1640> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1640> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1640> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1640> <http://www.w3.org/2000/01/rdf-schema#label> "Cementerios"@es .
+<http://crossforest.eu/cos/ontology/Use1640> <http://www.w3.org/2000/01/rdf-schema#label> "Cementerios"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1641
+<http://crossforest.eu/cos/ontology/Use1641> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1641> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1640> .
+<http://crossforest.eu/cos/ontology/Use1641> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1641> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1641> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1641> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1641> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1641> <http://www.w3.org/2000/01/rdf-schema#label> "Cementerios"@es .
+<http://crossforest.eu/cos/ontology/Use1641> <http://www.w3.org/2000/01/rdf-schema#label> "Cemitérios"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1650
+<http://crossforest.eu/cos/ontology/Use1650> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1650> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1600> .
+<http://crossforest.eu/cos/ontology/Use1650> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1650> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1650> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1650> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1650> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1650> <http://www.w3.org/2000/01/rdf-schema#label> "Otros equipamientos e instalaciones turísticas"@es .
+<http://crossforest.eu/cos/ontology/Use1650> <http://www.w3.org/2000/01/rdf-schema#label> "Outros equipamentos e instalações turísticas"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1651
+<http://crossforest.eu/cos/ontology/Use1651> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1651> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1650> .
+<http://crossforest.eu/cos/ontology/Use1651> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1651> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1651> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1651> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1651> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1651> <http://www.w3.org/2000/01/rdf-schema#label> "Otros equipamientos e instalaciones turísticas "@es .
+<http://crossforest.eu/cos/ontology/Use1651> <http://www.w3.org/2000/01/rdf-schema#label> "Outros equipamentos e instalações turísticas"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use1700
+<http://crossforest.eu/cos/ontology/Use1700> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1700> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1000> .
+<http://crossforest.eu/cos/ontology/Use1700> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1700> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1700> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1700> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1700> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1700> <http://www.w3.org/2000/01/rdf-schema#label> "Parques e jardins"@pt .
+<http://crossforest.eu/cos/ontology/Use1700> <http://www.w3.org/2000/01/rdf-schema#label> "Parques y jardines"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1710
+<http://crossforest.eu/cos/ontology/Use1710> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1710> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1700> .
+<http://crossforest.eu/cos/ontology/Use1710> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1710> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1710> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1710> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1710> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1710> <http://www.w3.org/2000/01/rdf-schema#label> "Parques e jardins "@pt .
+<http://crossforest.eu/cos/ontology/Use1710> <http://www.w3.org/2000/01/rdf-schema#label> "Parques y jardines"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use1711
+<http://crossforest.eu/cos/ontology/Use1711> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use1711> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use1710> .
+<http://crossforest.eu/cos/ontology/Use1711> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use1711> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use1711> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use1711> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use1711> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use1711> <http://www.w3.org/2000/01/rdf-schema#label> "Parques e jardins"@pt .
+<http://crossforest.eu/cos/ontology/Use1711> <http://www.w3.org/2000/01/rdf-schema#label> "Parques y jardines"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use2000
+<http://crossforest.eu/cos/ontology/Use2000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2000> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ilu/ontology/AgriculturalLand> .
+<http://crossforest.eu/ilu/ontology/AgriculturalLand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2000> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2000> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2000> <http://www.w3.org/2000/01/rdf-schema#label> "Agricultura"@es .
+<http://crossforest.eu/cos/ontology/Use2000> <http://www.w3.org/2000/01/rdf-schema#label> "Agricultura"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use2100
+<http://crossforest.eu/cos/ontology/Use2100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2100> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2000> .
+<http://crossforest.eu/cos/ontology/Use2100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2100> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2100> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2100> <http://www.w3.org/2000/01/rdf-schema#label> "Cultivos temporales"@es .
+<http://crossforest.eu/cos/ontology/Use2100> <http://www.w3.org/2000/01/rdf-schema#label> "Culturas temporárias"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use2110
+<http://crossforest.eu/cos/ontology/Use2110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2100> .
+<http://crossforest.eu/cos/ontology/Use2110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2110> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2110> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2110> <http://www.w3.org/2000/01/rdf-schema#label> "Cultivos temporales de secano y regadío y arrozales"@es .
+<http://crossforest.eu/cos/ontology/Use2110> <http://www.w3.org/2000/01/rdf-schema#label> "Culturas temporárias de sequeiro e regadio e arrozais"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use2111
+<http://crossforest.eu/cos/ontology/Use2111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2111> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2110> .
+<http://crossforest.eu/cos/ontology/Use2111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2111> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2111> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2111> <http://www.w3.org/2000/01/rdf-schema#label> "Cultivos temporales de secano y regadío"@es .
+<http://crossforest.eu/cos/ontology/Use2111> <http://www.w3.org/2000/01/rdf-schema#label> "Culturas temporárias de sequeiro e regadio"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use2112
+<http://crossforest.eu/cos/ontology/Use2112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2112> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2110> .
+<http://crossforest.eu/cos/ontology/Use2112> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2112> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2112> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2112> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2112> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2112> <http://www.w3.org/2000/01/rdf-schema#label> "Arrozais"@pt .
+<http://crossforest.eu/cos/ontology/Use2112> <http://www.w3.org/2000/01/rdf-schema#label> "Arrozales"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use2200
+<http://crossforest.eu/cos/ontology/Use2200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2200> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2000> .
+<http://crossforest.eu/cos/ontology/Use2200> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2200> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2200> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2200> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2200> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2200> <http://www.w3.org/2000/01/rdf-schema#label> "Cultivos permanentes"@es .
+<http://crossforest.eu/cos/ontology/Use2200> <http://www.w3.org/2000/01/rdf-schema#label> "Culturas permanentes"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use2210
+<http://crossforest.eu/cos/ontology/Use2210> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2210> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2100> .
+<http://crossforest.eu/cos/ontology/Use2210> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2210> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2210> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2210> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2210> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2210> <http://www.w3.org/2000/01/rdf-schema#label> "Vinhas"@pt .
+<http://crossforest.eu/cos/ontology/Use2210> <http://www.w3.org/2000/01/rdf-schema#label> "Viñas"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use2211
+<http://crossforest.eu/cos/ontology/Use2211> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2211> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2210> .
+<http://crossforest.eu/cos/ontology/Use2211> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2211> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2211> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2211> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2211> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2211> <http://www.w3.org/2000/01/rdf-schema#label> "Vinhas"@pt .
+<http://crossforest.eu/cos/ontology/Use2211> <http://www.w3.org/2000/01/rdf-schema#label> "Viñas"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use2220
+<http://crossforest.eu/cos/ontology/Use2220> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2220> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2200> .
+<http://crossforest.eu/cos/ontology/Use2220> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2220> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2220> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2220> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2220> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2220> <http://www.w3.org/2000/01/rdf-schema#label> "Huertos"@es .
+<http://crossforest.eu/cos/ontology/Use2220> <http://www.w3.org/2000/01/rdf-schema#label> "Pomares"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use2221
+<http://crossforest.eu/cos/ontology/Use2221> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2221> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2220> .
+<http://crossforest.eu/cos/ontology/Use2221> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2221> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2221> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2221> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2221> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2221> <http://www.w3.org/2000/01/rdf-schema#label> "Huertos"@es .
+<http://crossforest.eu/cos/ontology/Use2221> <http://www.w3.org/2000/01/rdf-schema#label> "Pomares"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use2230
+<http://crossforest.eu/cos/ontology/Use2230> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2230> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2200> .
+<http://crossforest.eu/cos/ontology/Use2230> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2230> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2230> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2230> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2230> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2230> <http://www.w3.org/2000/01/rdf-schema#label> "Olivais"@pt .
+<http://crossforest.eu/cos/ontology/Use2230> <http://www.w3.org/2000/01/rdf-schema#label> "Olivares"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use2231
+<http://crossforest.eu/cos/ontology/Use2231> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2231> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2230> .
+<http://crossforest.eu/cos/ontology/Use2231> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2231> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2231> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2231> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2231> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2231> <http://www.w3.org/2000/01/rdf-schema#label> "Olivais"@pt .
+<http://crossforest.eu/cos/ontology/Use2231> <http://www.w3.org/2000/01/rdf-schema#label> "Olivares"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use2300
+<http://crossforest.eu/cos/ontology/Use2300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2300> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2000> .
+<http://crossforest.eu/cos/ontology/Use2300> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2300> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2300> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2300> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2300> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2300> <http://www.w3.org/2000/01/rdf-schema#label> "Áreas agrícolas heterogéneas"@es .
+<http://crossforest.eu/cos/ontology/Use2300> <http://www.w3.org/2000/01/rdf-schema#label> "Áreas agrícolas heterogéneas"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use2310
+<http://crossforest.eu/cos/ontology/Use2310> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2310> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2300> .
+<http://crossforest.eu/cos/ontology/Use2310> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2310> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2310> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2310> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2310> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2310> <http://www.w3.org/2000/01/rdf-schema#label> "Cultivos temporales y/o pastos asociados a cultivos permanentes"@es .
+<http://crossforest.eu/cos/ontology/Use2310> <http://www.w3.org/2000/01/rdf-schema#label> "Culturas temporárias e/ou pastagens melhoradas associadas a culturas permanentes"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use2311
+<http://crossforest.eu/cos/ontology/Use2311> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2311> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2310> .
+<http://crossforest.eu/cos/ontology/Use2311> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2311> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2311> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2311> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2311> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2311> <http://www.w3.org/2000/01/rdf-schema#label> "Cultivos temporales y/o pastos asociados con vides"@es .
+<http://crossforest.eu/cos/ontology/Use2311> <http://www.w3.org/2000/01/rdf-schema#label> "Culturas temporárias e/ou pastagens melhoradas associadas a vinha"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use2312
+<http://crossforest.eu/cos/ontology/Use2312> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2312> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2310> .
+<http://crossforest.eu/cos/ontology/Use2312> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2312> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2312> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2312> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2312> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2312> <http://www.w3.org/2000/01/rdf-schema#label> "Cultivos temporales y/o pastos asociados con huertos"@es .
+<http://crossforest.eu/cos/ontology/Use2312> <http://www.w3.org/2000/01/rdf-schema#label> "Culturas temporárias e/ou pastagens melhoradas associadas a pomar"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use2313
+<http://crossforest.eu/cos/ontology/Use2313> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2313> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2310> .
+<http://crossforest.eu/cos/ontology/Use2313> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2313> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2313> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2313> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2313> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2313> <http://www.w3.org/2000/01/rdf-schema#label> "Cultivos temporales y/o pastos asociados con olivares"@es .
+<http://crossforest.eu/cos/ontology/Use2313> <http://www.w3.org/2000/01/rdf-schema#label> "Culturas temporárias e/ou pastagens melhoradas associadas a olival"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use2320
+<http://crossforest.eu/cos/ontology/Use2320> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2320> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2300> .
+<http://crossforest.eu/cos/ontology/Use2320> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2320> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2320> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2320> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2320> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2320> <http://www.w3.org/2000/01/rdf-schema#label> "Mosaicos culturais e parcelares complexos"@pt .
+<http://crossforest.eu/cos/ontology/Use2320> <http://www.w3.org/2000/01/rdf-schema#label> "Sistemas culturales y parcelas complejas"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use2321
+<http://crossforest.eu/cos/ontology/Use2321> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2321> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2320> .
+<http://crossforest.eu/cos/ontology/Use2321> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2321> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2321> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2321> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2321> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2321> <http://www.w3.org/2000/01/rdf-schema#label> "Mosaicos culturais e parcelares complexos"@pt .
+<http://crossforest.eu/cos/ontology/Use2321> <http://www.w3.org/2000/01/rdf-schema#label> "Sistemas culturales y parcelas complejas"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use2330
+<http://crossforest.eu/cos/ontology/Use2330> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2330> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2300> .
+<http://crossforest.eu/cos/ontology/Use2330> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2330> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2330> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2330> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2330> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2330> <http://www.w3.org/2000/01/rdf-schema#label> "Agricultura com espaços naturais e seminaturais"@pt .
+<http://crossforest.eu/cos/ontology/Use2330> <http://www.w3.org/2000/01/rdf-schema#label> "Agricultura con espacios naturales y semi-naturales"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use2331
+<http://crossforest.eu/cos/ontology/Use2331> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2331> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2330> .
+<http://crossforest.eu/cos/ontology/Use2331> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2331> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2331> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2331> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2331> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2331> <http://www.w3.org/2000/01/rdf-schema#label> "Agricultura com espaços naturais e seminaturais"@pt .
+<http://crossforest.eu/cos/ontology/Use2331> <http://www.w3.org/2000/01/rdf-schema#label> "Agricultura con espacios naturales y semi-naturales"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use2400
+<http://crossforest.eu/cos/ontology/Use2400> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2400> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2000> .
+<http://crossforest.eu/cos/ontology/Use2400> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2400> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2400> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2400> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2400> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2400> <http://www.w3.org/2000/01/rdf-schema#label> "Agricultura protegida e viveiros"@pt .
+<http://crossforest.eu/cos/ontology/Use2400> <http://www.w3.org/2000/01/rdf-schema#label> "Agricultura protegida y viveros"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use2410
+<http://crossforest.eu/cos/ontology/Use2410> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2410> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2400> .
+<http://crossforest.eu/cos/ontology/Use2410> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2410> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2410> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2410> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2410> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2410> <http://www.w3.org/2000/01/rdf-schema#label> "Agricultura protegida e viveiros"@pt .
+<http://crossforest.eu/cos/ontology/Use2410> <http://www.w3.org/2000/01/rdf-schema#label> "Agricultura protegida y viveros"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use2411
+<http://crossforest.eu/cos/ontology/Use2411> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use2411> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use2410> .
+<http://crossforest.eu/cos/ontology/Use2411> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use2411> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use2411> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use2411> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use2411> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use2411> <http://www.w3.org/2000/01/rdf-schema#label> "Agricultura protegida e viveiros"@pt .
+<http://crossforest.eu/cos/ontology/Use2411> <http://www.w3.org/2000/01/rdf-schema#label> "Agricultura protegida y viveros"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use3000
+<http://crossforest.eu/cos/ontology/Use3000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use3000> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ilu/ontology/AgriculturalLand> .
+<http://crossforest.eu/cos/ontology/Use3000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use3000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use3000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use3000> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use3000> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use3000> <http://www.w3.org/2000/01/rdf-schema#label> "Pastagens"@pt .
+<http://crossforest.eu/cos/ontology/Use3000> <http://www.w3.org/2000/01/rdf-schema#label> "Pastos"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use3100
+<http://crossforest.eu/cos/ontology/Use3100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use3100> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use3000> .
+<http://crossforest.eu/cos/ontology/Use3100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use3100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use3100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use3100> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use3100> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use3100> <http://www.w3.org/2000/01/rdf-schema#label> "Pastagens"@pt .
+<http://crossforest.eu/cos/ontology/Use3100> <http://www.w3.org/2000/01/rdf-schema#label> "Pastos"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use3110
+<http://crossforest.eu/cos/ontology/Use3110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use3110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use3100> .
+<http://crossforest.eu/cos/ontology/Use3110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use3110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use3110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use3110> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use3110> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use3110> <http://www.w3.org/2000/01/rdf-schema#label> "Pastagens melhoradas"@pt .
+<http://crossforest.eu/cos/ontology/Use3110> <http://www.w3.org/2000/01/rdf-schema#label> "Pastos mejorados"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use3111
+<http://crossforest.eu/cos/ontology/Use3111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use3111> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use3110> .
+<http://crossforest.eu/cos/ontology/Use3111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use3111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use3111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use3111> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use3111> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use3111> <http://www.w3.org/2000/01/rdf-schema#label> "Pastagens melhoradas"@pt .
+<http://crossforest.eu/cos/ontology/Use3111> <http://www.w3.org/2000/01/rdf-schema#label> "Pastos mejoraoos"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use3120
+<http://crossforest.eu/cos/ontology/Use3120> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use3120> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use3100> .
+<http://crossforest.eu/cos/ontology/Use3120> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use3120> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use3120> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use3120> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use3120> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use3120> <http://www.w3.org/2000/01/rdf-schema#label> "Pastagens espontâneas"@pt .
+<http://crossforest.eu/cos/ontology/Use3120> <http://www.w3.org/2000/01/rdf-schema#label> "Pastos espontáneos"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use3121
+<http://crossforest.eu/cos/ontology/Use3121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use3121> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use3120> .
+<http://crossforest.eu/cos/ontology/Use3121> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use3121> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use3121> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use3121> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use3121> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use3121> <http://www.w3.org/2000/01/rdf-schema#label> "Pastagens espontâneas"@pt .
+<http://crossforest.eu/cos/ontology/Use3121> <http://www.w3.org/2000/01/rdf-schema#label> "Pastos espontáneos"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use4000
+<http://crossforest.eu/cos/ontology/Use4000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use4000> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ilu/ontology/ForestLand> .
+<http://crossforest.eu/ilu/ontology/ForestLand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use4000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use4000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use4000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use4000> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use4000> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use4000> <http://www.w3.org/2000/01/rdf-schema#label> "Superficies agroforestales"@es .
+<http://crossforest.eu/cos/ontology/Use4000> <http://www.w3.org/2000/01/rdf-schema#label> "Superfícies agroflorestais"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use4100
+<http://crossforest.eu/cos/ontology/Use4100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use4100> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use4000> .
+<http://crossforest.eu/cos/ontology/Use4100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use4100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use4100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use4100> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use4100> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use4100> <http://www.w3.org/2000/01/rdf-schema#label> "Superficies agroforestales"@es .
+<http://crossforest.eu/cos/ontology/Use4100> <http://www.w3.org/2000/01/rdf-schema#label> "Superfícies agroflorestais"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use4110
+<http://crossforest.eu/cos/ontology/Use4110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use4110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use4100> .
+<http://crossforest.eu/cos/ontology/Use4110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use4110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use4110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use4110> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use4110> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use4110> <http://www.w3.org/2000/01/rdf-schema#label> "Superficies agroforestales"@es .
+<http://crossforest.eu/cos/ontology/Use4110> <http://www.w3.org/2000/01/rdf-schema#label> "Superfícies agroflorestais"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use4111
+<http://crossforest.eu/cos/ontology/Use4111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use4111> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use4110> .
+<http://crossforest.eu/cos/ontology/Use4111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use4111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use4111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use4111> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use4111> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use4111> <http://www.w3.org/2000/01/rdf-schema#label> "Superficies agroforestales de Quercus suber"@es .
+<http://crossforest.eu/cos/ontology/Use4111> <http://www.w3.org/2000/01/rdf-schema#label> "Superfícies agroflorestais de sobreiro"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use4112
+<http://crossforest.eu/cos/ontology/Use4112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use4112> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use4110> .
+<http://crossforest.eu/cos/ontology/Use4112> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use4112> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use4112> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use4112> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use4112> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use4112> <http://www.w3.org/2000/01/rdf-schema#label> "Superficies agroforestales de Quercus rotundifolia"@es .
+<http://crossforest.eu/cos/ontology/Use4112> <http://www.w3.org/2000/01/rdf-schema#label> "Superfícies agroflorestais de azinheira"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use4113
+<http://crossforest.eu/cos/ontology/Use4113> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use4113> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use4110> .
+<http://crossforest.eu/cos/ontology/Use4113> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use4113> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use4113> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use4113> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use4113> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use4113> <http://www.w3.org/2000/01/rdf-schema#label> "Superficies agroforestales de otros Quercus"@es .
+<http://crossforest.eu/cos/ontology/Use4113> <http://www.w3.org/2000/01/rdf-schema#label> "Superfícies agroflorestais de outros carvalhos"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use4114
+<http://crossforest.eu/cos/ontology/Use4114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use4114> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use4110> .
+<http://crossforest.eu/cos/ontology/Use4114> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use4114> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use4114> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use4114> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use4114> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use4114> <http://www.w3.org/2000/01/rdf-schema#label> "Superficies agroforestales de Pinus pinea"@es .
+<http://crossforest.eu/cos/ontology/Use4114> <http://www.w3.org/2000/01/rdf-schema#label> "Superfícies agroflorestais de pinheiro manso"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use4115
+<http://crossforest.eu/cos/ontology/Use4115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use4115> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use4110> .
+<http://crossforest.eu/cos/ontology/Use4115> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use4115> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use4115> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use4115> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use4115> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use4115> <http://www.w3.org/2000/01/rdf-schema#label> "Superficies agroforestales de otras especies"@es .
+<http://crossforest.eu/cos/ontology/Use4115> <http://www.w3.org/2000/01/rdf-schema#label> "Superfícies agroflorestais de outras espécies"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use4116
+<http://crossforest.eu/cos/ontology/Use4116> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use4116> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use4110> .
+<http://crossforest.eu/cos/ontology/Use4116> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use4116> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use4116> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use4116> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use4116> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use4116> <http://www.w3.org/2000/01/rdf-schema#label> "Superficies agroforestales de Querqus suber y Quercus rotundifolia"@es .
+<http://crossforest.eu/cos/ontology/Use4116> <http://www.w3.org/2000/01/rdf-schema#label> "Superfícies agroflorestais de sobreiro com azinheira"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use4117
+<http://crossforest.eu/cos/ontology/Use4117> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use4117> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use4110> .
+<http://crossforest.eu/cos/ontology/Use4117> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use4117> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use4117> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use4117> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use4117> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use4117> <http://www.w3.org/2000/01/rdf-schema#label> "Superficies agroforestales de otras mezclas"@es .
+<http://crossforest.eu/cos/ontology/Use4117> <http://www.w3.org/2000/01/rdf-schema#label> "Superfícies agroflorestais de outras misturas"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use5000
+<http://crossforest.eu/cos/ontology/Use5000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use5000> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ilu/ontology/ForestLand> .
+<http://crossforest.eu/cos/ontology/Use5000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use5000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use5000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use5000> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use5000> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use5000> <http://www.w3.org/2000/01/rdf-schema#label> "Bosques"@es .
+<http://crossforest.eu/cos/ontology/Use5000> <http://www.w3.org/2000/01/rdf-schema#label> "Florestas"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use5100
+<http://crossforest.eu/cos/ontology/Use5100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use5100> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use5000> .
+<http://crossforest.eu/cos/ontology/Use5100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use5100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use5100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use5100> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use5100> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use5100> <http://www.w3.org/2000/01/rdf-schema#label> "Bosques"@es .
+<http://crossforest.eu/cos/ontology/Use5100> <http://www.w3.org/2000/01/rdf-schema#label> "Florestas"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use5110
+<http://crossforest.eu/cos/ontology/Use5110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use5110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use5100> .
+<http://crossforest.eu/cos/ontology/Use5110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use5110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use5110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use5110> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use5110> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use5110> <http://www.w3.org/2000/01/rdf-schema#label> "Bosques de frondosas"@es .
+<http://crossforest.eu/cos/ontology/Use5110> <http://www.w3.org/2000/01/rdf-schema#label> "Florestas de folhosas"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use5111
+<http://crossforest.eu/cos/ontology/Use5111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use5111> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use5110> .
+<http://crossforest.eu/cos/ontology/Use5111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use5111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use5111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use5111> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use5111> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use5111> <http://www.w3.org/2000/01/rdf-schema#label> "Bosques de Quercus suber"@es .
+<http://crossforest.eu/cos/ontology/Use5111> <http://www.w3.org/2000/01/rdf-schema#label> "Florestas de sobreiro"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use5112
+<http://crossforest.eu/cos/ontology/Use5112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use5112> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use5110> .
+<http://crossforest.eu/cos/ontology/Use5112> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use5112> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use5112> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use5112> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use5112> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use5112> <http://www.w3.org/2000/01/rdf-schema#label> "Bosques de Quercus rotundifolia"@es .
+<http://crossforest.eu/cos/ontology/Use5112> <http://www.w3.org/2000/01/rdf-schema#label> "Florestas de azinheira"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use5113
+<http://crossforest.eu/cos/ontology/Use5113> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use5113> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use5110> .
+<http://crossforest.eu/cos/ontology/Use5113> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use5113> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use5113> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use5113> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use5113> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use5113> <http://www.w3.org/2000/01/rdf-schema#label> "Bosques de otros Quercus"@es .
+<http://crossforest.eu/cos/ontology/Use5113> <http://www.w3.org/2000/01/rdf-schema#label> "Florestas de outros carvalhos"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use5114
+<http://crossforest.eu/cos/ontology/Use5114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use5114> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use5110> .
+<http://crossforest.eu/cos/ontology/Use5114> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use5114> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use5114> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use5114> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use5114> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use5114> <http://www.w3.org/2000/01/rdf-schema#label> "Bosques de castaños"@es .
+<http://crossforest.eu/cos/ontology/Use5114> <http://www.w3.org/2000/01/rdf-schema#label> "Florestas de castanheiro"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use5115
+<http://crossforest.eu/cos/ontology/Use5115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use5115> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use5110> .
+<http://crossforest.eu/cos/ontology/Use5115> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use5115> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use5115> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use5115> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use5115> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use5115> <http://www.w3.org/2000/01/rdf-schema#label> "Bosques de eucaliptos"@es .
+<http://crossforest.eu/cos/ontology/Use5115> <http://www.w3.org/2000/01/rdf-schema#label> "Florestas de eucalipto"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use5116
+<http://crossforest.eu/cos/ontology/Use5116> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use5116> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use5110> .
+<http://crossforest.eu/cos/ontology/Use5116> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use5116> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use5116> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use5116> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use5116> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use5116> <http://www.w3.org/2000/01/rdf-schema#label> "Bosques de especies invasoras"@es .
+<http://crossforest.eu/cos/ontology/Use5116> <http://www.w3.org/2000/01/rdf-schema#label> "Florestas de espécies invasoras"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use5117
+<http://crossforest.eu/cos/ontology/Use5117> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use5117> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use5110> .
+<http://crossforest.eu/cos/ontology/Use5117> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use5117> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use5117> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use5117> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use5117> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use5117> <http://www.w3.org/2000/01/rdf-schema#label> "Bosques de otras frondosas"@es .
+<http://crossforest.eu/cos/ontology/Use5117> <http://www.w3.org/2000/01/rdf-schema#label> "Florestas de outras folhosas"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use5120
+<http://crossforest.eu/cos/ontology/Use5120> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use5120> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use5100> .
+<http://crossforest.eu/cos/ontology/Use5120> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use5120> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use5120> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use5120> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use5120> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use5120> <http://www.w3.org/2000/01/rdf-schema#label> "Coníferas"@es .
+<http://crossforest.eu/cos/ontology/Use5120> <http://www.w3.org/2000/01/rdf-schema#label> "Florestas de resinosas"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use5121
+<http://crossforest.eu/cos/ontology/Use5121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use5121> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use5120> .
+<http://crossforest.eu/cos/ontology/Use5121> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use5121> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use5121> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use5121> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use5121> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use5121> <http://www.w3.org/2000/01/rdf-schema#label> "Bosques de Pinus pinaster"@es .
+<http://crossforest.eu/cos/ontology/Use5121> <http://www.w3.org/2000/01/rdf-schema#label> "Florestas de pinheiro bravo"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use5122
+<http://crossforest.eu/cos/ontology/Use5122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use5122> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use5120> .
+<http://crossforest.eu/cos/ontology/Use5122> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use5122> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use5122> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use5122> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use5122> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use5122> <http://www.w3.org/2000/01/rdf-schema#label> "Bosques de Pinus pinea"@es .
+<http://crossforest.eu/cos/ontology/Use5122> <http://www.w3.org/2000/01/rdf-schema#label> "Florestas de pinheiro manso"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use5123
+<http://crossforest.eu/cos/ontology/Use5123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use5123> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use5120> .
+<http://crossforest.eu/cos/ontology/Use5123> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use5123> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use5123> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use5123> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use5123> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use5123> <http://www.w3.org/2000/01/rdf-schema#label> "Bosques de otras resinosas"@es .
+<http://crossforest.eu/cos/ontology/Use5123> <http://www.w3.org/2000/01/rdf-schema#label> "Florestas de outras resinosas"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use6000
+<http://crossforest.eu/cos/ontology/Use6000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use6000> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ilu/ontology/TreelessLand> .
+<http://crossforest.eu/ilu/ontology/TreelessLand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use6000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use6000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use6000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use6000> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use6000> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use6000> <http://www.w3.org/2000/01/rdf-schema#label> "Matorrales"@es .
+<http://crossforest.eu/cos/ontology/Use6000> <http://www.w3.org/2000/01/rdf-schema#label> "Matos"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use6100
+<http://crossforest.eu/cos/ontology/Use6100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use6100> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use6000> .
+<http://crossforest.eu/cos/ontology/Use6100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use6100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use6100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use6100> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use6100> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use6100> <http://www.w3.org/2000/01/rdf-schema#label> "Matorrales"@es .
+<http://crossforest.eu/cos/ontology/Use6100> <http://www.w3.org/2000/01/rdf-schema#label> "Matos"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use6110
+<http://crossforest.eu/cos/ontology/Use6110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use6110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use6100> .
+<http://crossforest.eu/cos/ontology/Use6110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use6110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use6110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use6110> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use6110> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use6110> <http://www.w3.org/2000/01/rdf-schema#label> "Matorrales"@es .
+<http://crossforest.eu/cos/ontology/Use6110> <http://www.w3.org/2000/01/rdf-schema#label> "Matos"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use6111
+<http://crossforest.eu/cos/ontology/Use6111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use6111> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use6110> .
+<http://crossforest.eu/cos/ontology/Use6111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use6111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use6111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use6111> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use6111> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use6111> <http://www.w3.org/2000/01/rdf-schema#label> "Matorrales"@es .
+<http://crossforest.eu/cos/ontology/Use6111> <http://www.w3.org/2000/01/rdf-schema#label> "Matos"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use7000
+<http://crossforest.eu/cos/ontology/Use7000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use7000> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ilu/ontology/TreelessLand> .
+<http://crossforest.eu/cos/ontology/Use7000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use7000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use7000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use7000> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use7000> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use7000> <http://www.w3.org/2000/01/rdf-schema#label> "Espaços descobertos ou com pouca vegetação"@pt .
+<http://crossforest.eu/cos/ontology/Use7000> <http://www.w3.org/2000/01/rdf-schema#label> "Zonas descubiertas con poca vegetación"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use7100
+<http://crossforest.eu/cos/ontology/Use7100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use7100> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use7000> .
+<http://crossforest.eu/cos/ontology/Use7100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use7100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use7100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use7100> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use7100> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use7100> <http://www.w3.org/2000/01/rdf-schema#label> "Espaços descobertos ou com pouca vegetação"@pt .
+<http://crossforest.eu/cos/ontology/Use7100> <http://www.w3.org/2000/01/rdf-schema#label> "Zonas descubiertas con poca vegetación"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use7110
+<http://crossforest.eu/cos/ontology/Use7110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use7110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use7100> .
+<http://crossforest.eu/cos/ontology/Use7110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use7110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use7110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use7110> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use7110> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use7110> <http://www.w3.org/2000/01/rdf-schema#label> "Playas, dunas y arenales"@es .
+<http://crossforest.eu/cos/ontology/Use7110> <http://www.w3.org/2000/01/rdf-schema#label> "Praias, dunas e areais"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use7111
+<http://crossforest.eu/cos/ontology/Use7111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use7111> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use7110> .
+<http://crossforest.eu/cos/ontology/Use7111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use7111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use7111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use7111> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use7111> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use7111> <http://www.w3.org/2000/01/rdf-schema#label> "Playas, dunas y arenales interiores"@es .
+<http://crossforest.eu/cos/ontology/Use7111> <http://www.w3.org/2000/01/rdf-schema#label> "Praias, dunas e areais interiores"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use7112
+<http://crossforest.eu/cos/ontology/Use7112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use7112> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use7110> .
+<http://crossforest.eu/cos/ontology/Use7112> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use7112> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use7112> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use7112> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use7112> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use7112> <http://www.w3.org/2000/01/rdf-schema#label> "Playas, dunas y arenales costeros"@es .
+<http://crossforest.eu/cos/ontology/Use7112> <http://www.w3.org/2000/01/rdf-schema#label> "Praias, dunas e areais costeiros"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use7120
+<http://crossforest.eu/cos/ontology/Use7120> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use7120> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use7100> .
+<http://crossforest.eu/cos/ontology/Use7120> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use7120> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use7120> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use7120> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use7120> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use7120> <http://www.w3.org/2000/01/rdf-schema#label> "Roca desnuda"@es .
+<http://crossforest.eu/cos/ontology/Use7120> <http://www.w3.org/2000/01/rdf-schema#label> "Rocha nua"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use7121
+<http://crossforest.eu/cos/ontology/Use7121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use7121> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use7120> .
+<http://crossforest.eu/cos/ontology/Use7121> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use7121> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use7121> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use7121> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use7121> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use7121> <http://www.w3.org/2000/01/rdf-schema#label> "Roca desnuda"@es .
+<http://crossforest.eu/cos/ontology/Use7121> <http://www.w3.org/2000/01/rdf-schema#label> "Rocha nua"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use7130
+<http://crossforest.eu/cos/ontology/Use7130> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use7130> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use7100> .
+<http://crossforest.eu/cos/ontology/Use7130> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use7130> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use7130> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use7130> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use7130> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use7130> <http://www.w3.org/2000/01/rdf-schema#label> "Vegetación escasa"@es .
+<http://crossforest.eu/cos/ontology/Use7130> <http://www.w3.org/2000/01/rdf-schema#label> "Vegetação esparsa"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use7131
+<http://crossforest.eu/cos/ontology/Use7131> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use7131> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use7130> .
+<http://crossforest.eu/cos/ontology/Use7131> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use7131> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use7131> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use7131> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use7131> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use7131> <http://www.w3.org/2000/01/rdf-schema#label> "Vegetación escasa"@es .
+<http://crossforest.eu/cos/ontology/Use7131> <http://www.w3.org/2000/01/rdf-schema#label> "Vegetação esparsa"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use8000
+<http://crossforest.eu/cos/ontology/Use8000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use8000> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ilu/ontology/WetLand> .
+<http://crossforest.eu/ilu/ontology/WetLand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use8000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use8000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use8000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use8000> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use8000> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use8000> <http://www.w3.org/2000/01/rdf-schema#label> "Zonas húmedas"@es .
+<http://crossforest.eu/cos/ontology/Use8000> <http://www.w3.org/2000/01/rdf-schema#label> "Zonas húmidas"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use8100
+<http://crossforest.eu/cos/ontology/Use8100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use8100> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use8000> .
+<http://crossforest.eu/cos/ontology/Use8100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use8100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use8100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use8100> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use8100> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use8100> <http://www.w3.org/2000/01/rdf-schema#label> "Zonas húmedas"@es .
+<http://crossforest.eu/cos/ontology/Use8100> <http://www.w3.org/2000/01/rdf-schema#label> "Zonas húmidas"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use8110
+<http://crossforest.eu/cos/ontology/Use8110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use8110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use8100> .
+<http://crossforest.eu/cos/ontology/Use8110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use8110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use8110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use8110> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use8110> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use8110> <http://www.w3.org/2000/01/rdf-schema#label> "Zonas húmedas interiores"@es .
+<http://crossforest.eu/cos/ontology/Use8110> <http://www.w3.org/2000/01/rdf-schema#label> "Zonas húmidas interiores"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use8111
+<http://crossforest.eu/cos/ontology/Use8111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use8111> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use8110> .
+<http://crossforest.eu/cos/ontology/Use8111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use8111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use8111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use8111> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use8111> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use8111> <http://www.w3.org/2000/01/rdf-schema#label> "Pauis"@pt .
+<http://crossforest.eu/cos/ontology/Use8111> <http://www.w3.org/2000/01/rdf-schema#label> "Turberas"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use8120
+<http://crossforest.eu/cos/ontology/Use8120> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use8120> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use8100> .
+<http://crossforest.eu/cos/ontology/Use8120> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use8120> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use8120> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use8120> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use8120> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use8120> <http://www.w3.org/2000/01/rdf-schema#label> "Zonas húmedas litorales"@es .
+<http://crossforest.eu/cos/ontology/Use8120> <http://www.w3.org/2000/01/rdf-schema#label> "Zonas húmidas litorais"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use8121
+<http://crossforest.eu/cos/ontology/Use8121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use8121> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use8120> .
+<http://crossforest.eu/cos/ontology/Use8121> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use8121> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use8121> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use8121> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use8121> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use8121> <http://www.w3.org/2000/01/rdf-schema#label> "Marismas"@es .
+<http://crossforest.eu/cos/ontology/Use8121> <http://www.w3.org/2000/01/rdf-schema#label> "Sapais"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use8122
+<http://crossforest.eu/cos/ontology/Use8122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use8122> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use8120> .
+<http://crossforest.eu/cos/ontology/Use8122> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use8122> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use8122> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use8122> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use8122> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use8122> <http://www.w3.org/2000/01/rdf-schema#label> "Zonas entremarés"@pt .
+<http://crossforest.eu/cos/ontology/Use8122> <http://www.w3.org/2000/01/rdf-schema#label> "Zonas intermareales"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use9000
+<http://crossforest.eu/cos/ontology/Use9000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9000> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ilu/ontology/WetLand> .
+<http://crossforest.eu/cos/ontology/Use9000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9000> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9000> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9000> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9000> <http://www.w3.org/2000/01/rdf-schema#label> "Aguas superficiales"@es .
+<http://crossforest.eu/cos/ontology/Use9000> <http://www.w3.org/2000/01/rdf-schema#label> "Massas de água superficiais"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use9100
+<http://crossforest.eu/cos/ontology/Use9100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9100> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9000> .
+<http://crossforest.eu/cos/ontology/Use9100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9100> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9100> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9100> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9100> <http://www.w3.org/2000/01/rdf-schema#label> "Masas de agua interiores"@es .
+<http://crossforest.eu/cos/ontology/Use9100> <http://www.w3.org/2000/01/rdf-schema#label> "Massas de água interiores"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use9110
+<http://crossforest.eu/cos/ontology/Use9110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9100> .
+<http://crossforest.eu/cos/ontology/Use9110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9110> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9110> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9110> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9110> <http://www.w3.org/2000/01/rdf-schema#label> "Cursos de agua"@es .
+<http://crossforest.eu/cos/ontology/Use9110> <http://www.w3.org/2000/01/rdf-schema#label> "Cursos de água"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use9111
+<http://crossforest.eu/cos/ontology/Use9111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9111> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9110> .
+<http://crossforest.eu/cos/ontology/Use9111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9111> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9111> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9111> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9111> <http://www.w3.org/2000/01/rdf-schema#label> "Cursos de agua naturales"@es .
+<http://crossforest.eu/cos/ontology/Use9111> <http://www.w3.org/2000/01/rdf-schema#label> "Cursos de água naturais"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use9112
+<http://crossforest.eu/cos/ontology/Use9112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9112> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9110> .
+<http://crossforest.eu/cos/ontology/Use9112> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9112> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9112> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9112> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9112> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9112> <http://www.w3.org/2000/01/rdf-schema#label> "Cursos de agua con alteraciones artificiales"@es .
+<http://crossforest.eu/cos/ontology/Use9112> <http://www.w3.org/2000/01/rdf-schema#label> "Cursos de água modificados ou artificializados"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use9120
+<http://crossforest.eu/cos/ontology/Use9120> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9120> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9100> .
+<http://crossforest.eu/cos/ontology/Use9120> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9120> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9120> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9120> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9120> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9120> <http://www.w3.org/2000/01/rdf-schema#label> "Planos de agua"@es .
+<http://crossforest.eu/cos/ontology/Use9120> <http://www.w3.org/2000/01/rdf-schema#label> "Planos de água"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use9121
+<http://crossforest.eu/cos/ontology/Use9121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9121> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9120> .
+<http://crossforest.eu/cos/ontology/Use9121> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9121> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9121> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9121> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9121> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9121> <http://www.w3.org/2000/01/rdf-schema#label> "Lagos e lagoas interiores artificiais"@pt .
+<http://crossforest.eu/cos/ontology/Use9121> <http://www.w3.org/2000/01/rdf-schema#label> "Lagos y lagunas artificiales"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use9122
+<http://crossforest.eu/cos/ontology/Use9122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9122> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9120> .
+<http://crossforest.eu/cos/ontology/Use9122> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9122> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9122> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9122> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9122> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9122> <http://www.w3.org/2000/01/rdf-schema#label> "Lagos e lagoas interiores naturais"@pt .
+<http://crossforest.eu/cos/ontology/Use9122> <http://www.w3.org/2000/01/rdf-schema#label> "Lagos y lagunas naturales"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use9123
+<http://crossforest.eu/cos/ontology/Use9123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9123> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9120> .
+<http://crossforest.eu/cos/ontology/Use9123> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9123> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9123> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9123> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9123> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9123> <http://www.w3.org/2000/01/rdf-schema#label> "Albufeiras de barragens"@pt .
+<http://crossforest.eu/cos/ontology/Use9123> <http://www.w3.org/2000/01/rdf-schema#label> "Embalses de presa"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use9124
+<http://crossforest.eu/cos/ontology/Use9124> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9124> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9120> .
+<http://crossforest.eu/cos/ontology/Use9124> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9124> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9124> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9124> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9124> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9124> <http://www.w3.org/2000/01/rdf-schema#label> "Albufeiras de represas ou de açudes"@pt .
+<http://crossforest.eu/cos/ontology/Use9124> <http://www.w3.org/2000/01/rdf-schema#label> "Depósitos de presa o vertederos"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use9125
+<http://crossforest.eu/cos/ontology/Use9125> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9125> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9120> .
+<http://crossforest.eu/cos/ontology/Use9125> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9125> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9125> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9125> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9125> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9125> <http://www.w3.org/2000/01/rdf-schema#label> "Charcas"@es .
+<http://crossforest.eu/cos/ontology/Use9125> <http://www.w3.org/2000/01/rdf-schema#label> "Charcas"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use9126
+<http://crossforest.eu/cos/ontology/Use9126> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9126> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9120> .
+<http://crossforest.eu/cos/ontology/Use9126> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9126> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9126> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9126> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9126> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9126> <http://www.w3.org/2000/01/rdf-schema#label> "Acuicultura"@es .
+<http://crossforest.eu/cos/ontology/Use9126> <http://www.w3.org/2000/01/rdf-schema#label> "Aquicultura"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use9200
+<http://crossforest.eu/cos/ontology/Use9200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9200> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9000> .
+<http://crossforest.eu/cos/ontology/Use9200> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9200> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9200> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9200> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9200> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9200> <http://www.w3.org/2000/01/rdf-schema#label> "Acuicultura"@es .
+<http://crossforest.eu/cos/ontology/Use9200> <http://www.w3.org/2000/01/rdf-schema#label> "Aquicultura"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use9210
+<http://crossforest.eu/cos/ontology/Use9210> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9210> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9200> .
+<http://crossforest.eu/cos/ontology/Use9210> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9210> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9210> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9210> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9210> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9210> <http://www.w3.org/2000/01/rdf-schema#label> "Acuicultura"@es .
+<http://crossforest.eu/cos/ontology/Use9210> <http://www.w3.org/2000/01/rdf-schema#label> "Aquicultura"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use9211
+<http://crossforest.eu/cos/ontology/Use9211> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9211> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9210> .
+<http://crossforest.eu/cos/ontology/Use9211> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9211> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9211> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9211> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9211> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9211> <http://www.w3.org/2000/01/rdf-schema#label> "Salinas"@es .
+<http://crossforest.eu/cos/ontology/Use9211> <http://www.w3.org/2000/01/rdf-schema#label> "Salinas"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use9300
+<http://crossforest.eu/cos/ontology/Use9300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9300> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9000> .
+<http://crossforest.eu/cos/ontology/Use9300> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9300> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9300> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9300> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9300> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9300> <http://www.w3.org/2000/01/rdf-schema#label> "Masas de agua de transición y costeras"@es .
+<http://crossforest.eu/cos/ontology/Use9300> <http://www.w3.org/2000/01/rdf-schema#label> "Massas de água de transição e costeiras"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use9310
+<http://crossforest.eu/cos/ontology/Use9310> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9310> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9300> .
+<http://crossforest.eu/cos/ontology/Use9310> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9310> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9310> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9310> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9310> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9310> <http://www.w3.org/2000/01/rdf-schema#label> "Salinas"@es .
+<http://crossforest.eu/cos/ontology/Use9310> <http://www.w3.org/2000/01/rdf-schema#label> "Salinas"@pt .
+# 
+# http://crossforest.eu/cos/ontology/Use9311
+<http://crossforest.eu/cos/ontology/Use9311> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9311> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9310> .
+<http://crossforest.eu/cos/ontology/Use9311> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9311> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9311> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9311> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9311> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9311> <http://www.w3.org/2000/01/rdf-schema#label> "Lagoas costeiras"@pt .
+<http://crossforest.eu/cos/ontology/Use9311> <http://www.w3.org/2000/01/rdf-schema#label> "Lagos costeros"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use9320
+<http://crossforest.eu/cos/ontology/Use9320> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9320> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9300> .
+<http://crossforest.eu/cos/ontology/Use9320> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9320> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9320> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9320> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9320> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9320> <http://www.w3.org/2000/01/rdf-schema#label> "Lagoas costeiras"@pt .
+<http://crossforest.eu/cos/ontology/Use9320> <http://www.w3.org/2000/01/rdf-schema#label> "Lagos costeros"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use9321
+<http://crossforest.eu/cos/ontology/Use9321> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9321> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9320> .
+<http://crossforest.eu/cos/ontology/Use9321> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9321> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9321> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9321> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9321> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9321> <http://www.w3.org/2000/01/rdf-schema#label> "Desembocaduras fluviais"@pt .
+<http://crossforest.eu/cos/ontology/Use9321> <http://www.w3.org/2000/01/rdf-schema#label> "Desembocaduras fluviales"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use9330
+<http://crossforest.eu/cos/ontology/Use9330> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9330> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9300> .
+<http://crossforest.eu/cos/ontology/Use9330> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9330> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9330> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9330> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9330> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9330> <http://www.w3.org/2000/01/rdf-schema#label> "Desembocaduras fluviais"@pt .
+<http://crossforest.eu/cos/ontology/Use9330> <http://www.w3.org/2000/01/rdf-schema#label> "Desembocaduras fluviales"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use9331
+<http://crossforest.eu/cos/ontology/Use9331> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9331> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9330> .
+<http://crossforest.eu/cos/ontology/Use9331> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9331> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9331> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9331> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9331> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9331> <http://www.w3.org/2000/01/rdf-schema#label> "Oceano"@pt .
+<http://crossforest.eu/cos/ontology/Use9331> <http://www.w3.org/2000/01/rdf-schema#label> "Océano"@es .
+# 
+# http://crossforest.eu/cos/ontology/Use9340
+<http://crossforest.eu/cos/ontology/Use9340> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/cos/ontology/Use9340> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/cos/ontology/Use9300> .
+<http://crossforest.eu/cos/ontology/Use9340> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/cos/ontology/Use9340> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/cos/ontology/Use9340> <http://www.w3.org/2000/01/rdf-schema#comment> ""@pt .
+<http://crossforest.eu/cos/ontology/Use9340> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/cos/ontology/> .
+<http://crossforest.eu/cos/ontology/Use9340> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/cos/ontology/Use9340> <http://www.w3.org/2000/01/rdf-schema#label> "Oceano"@pt .
+<http://crossforest.eu/cos/ontology/Use9340> <http://www.w3.org/2000/01/rdf-schema#label> "Océano"@es .
+# 
+# http://crossforest.eu/ilu/ontology/AgriculturalLand
+# 
+# http://crossforest.eu/ilu/ontology/ArtificialLand
+# 
+# http://crossforest.eu/ilu/ontology/ForestLand
+# 
+# http://crossforest.eu/ilu/ontology/Patch
+# 
+# http://crossforest.eu/ilu/ontology/TreelessLand
+# 
+# http://crossforest.eu/ilu/ontology/WetLand
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

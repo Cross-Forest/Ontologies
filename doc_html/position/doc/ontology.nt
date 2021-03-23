@@ -1,0 +1,450 @@
+<http://crossforest.eu/position/ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://crossforest.eu/position/ontology/> <http://www.w3.org/2002/07/owl#imports> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/position/ontology/> <http://purl.org/dc/elements/1.1/creator> <https://www.crossforest.eu/members/guiveg> .
+<http://crossforest.eu/position/ontology/> <http://purl.org/dc/elements/1.1/creator> <https://www.crossforest.eu/members/josgim> .
+<http://crossforest.eu/position/ontology/> <http://purl.org/dc/elements/1.1/date> "2019-07-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://crossforest.eu/position/ontology/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "spo" .
+<http://crossforest.eu/position/ontology/> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology to publish data about spatial entities and their positions in various reference systems, including relative positions"@en .
+<http://crossforest.eu/position/ontology/> <http://www.w3.org/2000/01/rdf-schema#comment> "Una ontología para publicar datos sobre entidades espaciales y sus posiciones en múltiples sistemas de referencia, incluyendo posiciones relativas"@es .
+<http://crossforest.eu/position/ontology/> <http://www.w3.org/2000/01/rdf-schema#label> "Ontología de Posiciones Espaciales"@es .
+<http://crossforest.eu/position/ontology/> <http://www.w3.org/2000/01/rdf-schema#label> "Spatial Position Ontology"@en .
+<http://crossforest.eu/position/ontology/> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#label
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureIn
+<http://crossforest.eu/measures/ontology/hasMeasureIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://crossforest.eu/measures/ontology/hasPosition
+<http://crossforest.eu/measures/ontology/hasPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://crossforest.eu/position/ontology/egocentricPositionOf
+<http://crossforest.eu/position/ontology/egocentricPositionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/position/ontology/egocentricPositionOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://crossforest.eu/position/ontology/hasEgocentricPosition> .
+<http://crossforest.eu/position/ontology/egocentricPositionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/position/ontology/EgocentricPosition> .
+<http://crossforest.eu/position/ontology/egocentricPositionOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/position/ontology/SpatialEntity> .
+<http://crossforest.eu/position/ontology/egocentricPositionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "entidad objetico de la posición egocéntrica"@es .
+<http://crossforest.eu/position/ontology/egocentricPositionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "target entity of the egocentric position"@en .
+<http://crossforest.eu/position/ontology/egocentricPositionOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/egocentricPositionOf> <http://www.w3.org/2000/01/rdf-schema#label> "egocentric position of"@en .
+<http://crossforest.eu/position/ontology/egocentricPositionOf> <http://www.w3.org/2000/01/rdf-schema#label> "posición egocéntrica de"@es .
+# 
+# http://crossforest.eu/position/ontology/fromReference
+<http://crossforest.eu/position/ontology/fromReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://crossforest.eu/position/ontology/hasArea
+<http://crossforest.eu/position/ontology/hasArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/position/ontology/hasArea> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureIn> .
+<http://crossforest.eu/position/ontology/hasArea> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/position/ontology/Position> .
+<http://crossforest.eu/position/ontology/hasArea> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/measures/ontology/MeasureInHectares> .
+<http://crossforest.eu/measures/ontology/MeasureInHectares> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/position/ontology/hasArea> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/position/ontology/hasArea> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/position/ontology/hasArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/hasArea> <http://www.w3.org/2000/01/rdf-schema#label> "has area"@en .
+<http://crossforest.eu/position/ontology/hasArea> <http://www.w3.org/2000/01/rdf-schema#label> "tiene area"@es .
+# 
+# http://crossforest.eu/position/ontology/hasBound
+<http://crossforest.eu/position/ontology/hasBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/position/ontology/hasBound> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/position/ontology/Position> .
+<http://crossforest.eu/position/ontology/hasBound> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/position/ontology/Bound> .
+<http://crossforest.eu/position/ontology/hasBound> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+# 
+# http://crossforest.eu/position/ontology/hasCoordinate
+<http://crossforest.eu/position/ontology/hasCoordinate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/position/ontology/hasCoordinate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/position/ontology/GeocentricPosition> .
+<http://crossforest.eu/position/ontology/hasCoordinate> <http://www.w3.org/2000/01/rdf-schema#comment> "coordenada de la posición"@es .
+<http://crossforest.eu/position/ontology/hasCoordinate> <http://www.w3.org/2000/01/rdf-schema#comment> "coordinate of the position"@en .
+<http://crossforest.eu/position/ontology/hasCoordinate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/hasCoordinate> <http://www.w3.org/2000/01/rdf-schema#label> "coordenada"@es .
+<http://crossforest.eu/position/ontology/hasCoordinate> <http://www.w3.org/2000/01/rdf-schema#label> "coordinate"@en .
+# 
+# http://crossforest.eu/position/ontology/hasCoordinateReferenceSystem
+<http://crossforest.eu/position/ontology/hasCoordinateReferenceSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/position/ontology/hasCoordinateReferenceSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/position/ontology/GeocentricPosition> .
+<http://crossforest.eu/position/ontology/hasCoordinateReferenceSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "coordinate reference system used for the position"@en .
+<http://crossforest.eu/position/ontology/hasCoordinateReferenceSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "sistema de coordenadas de referencia usado para la posición"@es .
+<http://crossforest.eu/position/ontology/hasCoordinateReferenceSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/hasCoordinateReferenceSystem> <http://www.w3.org/2000/01/rdf-schema#label> "coordinate reference system"@en .
+<http://crossforest.eu/position/ontology/hasCoordinateReferenceSystem> <http://www.w3.org/2000/01/rdf-schema#label> "sistema de coordenadas de referencia"@es .
+# 
+# http://crossforest.eu/position/ontology/hasDirection
+<http://crossforest.eu/position/ontology/hasDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/position/ontology/hasDirection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/position/ontology/EgocentricPosition> .
+<http://crossforest.eu/position/ontology/hasDirection> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/position/ontology/Direction> .
+<http://crossforest.eu/position/ontology/hasDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "direction of the position from the position of reference"@en .
+<http://crossforest.eu/position/ontology/hasDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "rumbo de la posición respecto a la posición de referencia"@es .
+<http://crossforest.eu/position/ontology/hasDirection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/hasDirection> <http://www.w3.org/2000/01/rdf-schema#label> "direction"@en .
+<http://crossforest.eu/position/ontology/hasDirection> <http://www.w3.org/2000/01/rdf-schema#label> "rumbo"@es .
+# 
+# http://crossforest.eu/position/ontology/hasDistance
+<http://crossforest.eu/position/ontology/hasDistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/position/ontology/hasDistance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/position/ontology/EgocentricPosition> .
+<http://crossforest.eu/position/ontology/hasDistance> <http://www.w3.org/2000/01/rdf-schema#comment> "distance from the position to the position of reference"@en .
+<http://crossforest.eu/position/ontology/hasDistance> <http://www.w3.org/2000/01/rdf-schema#comment> "distancia de la posición a la posición de referencia"@es .
+<http://crossforest.eu/position/ontology/hasDistance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/hasDistance> <http://www.w3.org/2000/01/rdf-schema#label> "distance"@en .
+<http://crossforest.eu/position/ontology/hasDistance> <http://www.w3.org/2000/01/rdf-schema#label> "distancia"@es .
+# 
+# http://crossforest.eu/position/ontology/hasEgocentricPosition
+<http://crossforest.eu/position/ontology/hasEgocentricPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/position/ontology/hasEgocentricPosition> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/position/ontology/hasPosition> .
+<http://crossforest.eu/position/ontology/hasEgocentricPosition> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/position/ontology/EgocentricPosition> .
+<http://crossforest.eu/position/ontology/hasEgocentricPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "la entidad espacial tiene esta posición desde un punto de referencia (que es probablemente la posición de otra entidad espacial)"@es .
+<http://crossforest.eu/position/ontology/hasEgocentricPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "the spatial entity has this position from a point of reference (which is probably the posicion of another spatial entity)"@en .
+<http://crossforest.eu/position/ontology/hasEgocentricPosition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/hasEgocentricPosition> <http://www.w3.org/2000/01/rdf-schema#label> "has egocentric position"@en .
+<http://crossforest.eu/position/ontology/hasEgocentricPosition> <http://www.w3.org/2000/01/rdf-schema#label> "tiene posición egocéntrica"@es .
+# 
+# http://crossforest.eu/position/ontology/hasGeocentricPosition
+<http://crossforest.eu/position/ontology/hasGeocentricPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/position/ontology/hasGeocentricPosition> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/position/ontology/hasPosition> .
+<http://crossforest.eu/position/ontology/hasGeocentricPosition> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/position/ontology/GeocentricPosition> .
+<http://crossforest.eu/position/ontology/hasGeocentricPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "la entidad espacial tiene esta posición en un Sistema de Coordenadas de Referencia Geodésico"@es .
+<http://crossforest.eu/position/ontology/hasGeocentricPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "the spacial entity has this position in a geodetic CRS"@en .
+<http://crossforest.eu/position/ontology/hasGeocentricPosition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/hasGeocentricPosition> <http://www.w3.org/2000/01/rdf-schema#label> "has geocentric position"@en .
+<http://crossforest.eu/position/ontology/hasGeocentricPosition> <http://www.w3.org/2000/01/rdf-schema#label> "tiene posición geocéntrica"@es .
+# 
+# http://crossforest.eu/position/ontology/hasLeftBound
+<http://crossforest.eu/position/ontology/hasLeftBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/position/ontology/hasLeftBound> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/position/ontology/hasBound> .
+<http://crossforest.eu/position/ontology/hasLeftBound> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/position/ontology/LeftBound> .
+<http://crossforest.eu/position/ontology/hasLeftBound> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+# 
+# http://crossforest.eu/position/ontology/hasLowerBound
+<http://crossforest.eu/position/ontology/hasLowerBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/position/ontology/hasLowerBound> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/position/ontology/hasBound> .
+<http://crossforest.eu/position/ontology/hasLowerBound> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/position/ontology/LowerBound> .
+<http://crossforest.eu/position/ontology/hasLowerBound> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+# 
+# http://crossforest.eu/position/ontology/hasPolygon
+<http://crossforest.eu/position/ontology/hasPolygon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/position/ontology/hasPolygon> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/position/ontology/hasPosition> .
+<http://crossforest.eu/position/ontology/hasPolygon> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/position/ontology/Polygon> .
+<http://crossforest.eu/position/ontology/hasPolygon> <http://www.w3.org/2000/01/rdf-schema#comment> "la entidad espacial está en este polígono"@es .
+<http://crossforest.eu/position/ontology/hasPolygon> <http://www.w3.org/2000/01/rdf-schema#comment> "the spatial entity is located in this polygon"@en .
+<http://crossforest.eu/position/ontology/hasPolygon> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/hasPolygon> <http://www.w3.org/2000/01/rdf-schema#label> "has polygon"@en .
+<http://crossforest.eu/position/ontology/hasPolygon> <http://www.w3.org/2000/01/rdf-schema#label> "tiene polígono"@es .
+# 
+# http://crossforest.eu/position/ontology/hasPosition
+<http://crossforest.eu/position/ontology/hasPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/position/ontology/hasPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/position/ontology/SpatialEntity> .
+<http://crossforest.eu/position/ontology/hasPosition> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/position/ontology/Position> .
+<http://crossforest.eu/position/ontology/hasPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "la entidad espacial tiene esta posición"@es .
+<http://crossforest.eu/position/ontology/hasPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "the spatial entity has this location"@en .
+<http://crossforest.eu/position/ontology/hasPosition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/hasPosition> <http://www.w3.org/2000/01/rdf-schema#label> "has location"@en .
+<http://crossforest.eu/position/ontology/hasPosition> <http://www.w3.org/2000/01/rdf-schema#label> "situada en"@es .
+# 
+# http://crossforest.eu/position/ontology/hasReference
+<http://crossforest.eu/position/ontology/hasReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/position/ontology/hasReference> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/position/ontology/EgocentricPosition> .
+<http://crossforest.eu/position/ontology/hasReference> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/position/ontology/ReferencePosition> .
+<http://crossforest.eu/position/ontology/hasReference> <http://www.w3.org/2000/01/rdf-schema#comment> "la posición es relativa a esta posición de referencia"@es .
+<http://crossforest.eu/position/ontology/hasReference> <http://www.w3.org/2000/01/rdf-schema#comment> "the position is w.r.t. this position of reference"@en .
+<http://crossforest.eu/position/ontology/hasReference> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/hasReference> <http://www.w3.org/2000/01/rdf-schema#label> "desde la referencia"@es .
+<http://crossforest.eu/position/ontology/hasReference> <http://www.w3.org/2000/01/rdf-schema#label> "from reference"@en .
+# 
+# http://crossforest.eu/position/ontology/hasRightBound
+<http://crossforest.eu/position/ontology/hasRightBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/position/ontology/hasRightBound> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/position/ontology/hasBound> .
+<http://crossforest.eu/position/ontology/hasRightBound> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/position/ontology/RightBound> .
+<http://crossforest.eu/position/ontology/hasRightBound> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+# 
+# http://crossforest.eu/position/ontology/hasUpperBound
+<http://crossforest.eu/position/ontology/hasUpperBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/position/ontology/hasUpperBound> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/position/ontology/hasBound> .
+<http://crossforest.eu/position/ontology/hasUpperBound> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/position/ontology/UpperBound> .
+<http://crossforest.eu/position/ontology/hasUpperBound> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+# 
+# http://crossforest.eu/position/ontology/isInLayer
+<http://crossforest.eu/position/ontology/isInLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/position/ontology/isInLayer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/position/ontology/Position> .
+<http://crossforest.eu/position/ontology/isInLayer> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/position/ontology/Layer> .
+<http://crossforest.eu/position/ontology/isInLayer> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/position/ontology/isInLayer> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/position/ontology/isInLayer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/isInLayer> <http://www.w3.org/2000/01/rdf-schema#label> "está en la capa"@es .
+<http://crossforest.eu/position/ontology/isInLayer> <http://www.w3.org/2000/01/rdf-schema#label> "is in layer"@en .
+# 
+# http://crossforest.eu/position/ontology/referenceOf
+<http://crossforest.eu/position/ontology/referenceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/position/ontology/referenceOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://crossforest.eu/position/ontology/fromReference> .
+<http://crossforest.eu/position/ontology/referenceOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/position/ontology/ReferencePosition> .
+<http://crossforest.eu/position/ontology/referenceOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/position/ontology/EgocentricPosition> .
+<http://crossforest.eu/position/ontology/referenceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "la posición para la cual la entidad se usa como referencia"@es .
+<http://crossforest.eu/position/ontology/referenceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "the position for which the entity is used as a reference"@en .
+<http://crossforest.eu/position/ontology/referenceOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/referenceOf> <http://www.w3.org/2000/01/rdf-schema#label> "es referencia de"@es .
+<http://crossforest.eu/position/ontology/referenceOf> <http://www.w3.org/2000/01/rdf-schema#label> "is reference of"@en .
+# 
+# http://crossforest.eu/position/ontology/samePosition
+<http://crossforest.eu/position/ontology/samePosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/position/ontology/samePosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://crossforest.eu/position/ontology/samePosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ReflexiveProperty> .
+<http://crossforest.eu/position/ontology/samePosition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/position/ontology/Position> .
+<http://crossforest.eu/position/ontology/samePosition> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/position/ontology/Position> .
+<http://crossforest.eu/position/ontology/samePosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "misma posición que"@es .
+<http://crossforest.eu/position/ontology/samePosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "same position as"@en .
+<http://crossforest.eu/position/ontology/samePosition> <http://www.w3.org/2000/01/rdf-schema#comment> "same phisical position, probably in a different coordinate reference system"@en .
+<http://crossforest.eu/position/ontology/samePosition> <http://www.w3.org/2000/01/rdf-schema#comment> "misma posición física, probablemente en un sistema de coordenadas de referencia diferente" .
+<http://crossforest.eu/position/ontology/samePosition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureInGradians
+<http://crossforest.eu/measures/ontology/hasMeasureInGradians> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureInHectares
+<http://crossforest.eu/measures/ontology/hasMeasureInHectares> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureInMeters
+<http://crossforest.eu/measures/ontology/hasMeasureInMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureInSquareMeters
+<http://crossforest.eu/measures/ontology/hasMeasureInSquareMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://crossforest.eu/position/ontology/hasAreaInHC
+<http://crossforest.eu/position/ontology/hasAreaInHC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/position/ontology/hasAreaInHC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureInHectares> .
+<http://crossforest.eu/position/ontology/hasAreaInHC> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/position/ontology/Position> .
+<http://crossforest.eu/position/ontology/hasAreaInHC> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/position/ontology/hasAreaInHC> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/position/ontology/hasAreaInHC> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/hasAreaInHC> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/position/ontology/hasAreaInSquareMeters
+<http://crossforest.eu/position/ontology/hasAreaInSquareMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/position/ontology/hasAreaInSquareMeters> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureInSquareMeters> .
+<http://crossforest.eu/position/ontology/hasAreaInSquareMeters> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/position/ontology/Position> .
+<http://crossforest.eu/position/ontology/hasAreaInSquareMeters> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/position/ontology/hasAreaInSquareMeters> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/position/ontology/hasAreaInSquareMeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/hasAreaInSquareMeters> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/position/ontology/hasDirectionInGradians
+<http://crossforest.eu/position/ontology/hasDirectionInGradians> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/position/ontology/hasDirectionInGradians> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureInGradians> .
+<http://crossforest.eu/position/ontology/hasDirectionInGradians> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/position/ontology/EgocentricPosition> .
+<http://crossforest.eu/position/ontology/hasDirectionInGradians> <http://www.w3.org/2000/01/rdf-schema#comment> "direction in degress of the position from the position of reference"@en .
+<http://crossforest.eu/position/ontology/hasDirectionInGradians> <http://www.w3.org/2000/01/rdf-schema#comment> "rumbo en grados de la posición respecto a la posición de referencia"@es .
+<http://crossforest.eu/position/ontology/hasDirectionInGradians> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/hasDirectionInGradians> <http://www.w3.org/2000/01/rdf-schema#label> "direction"@en .
+<http://crossforest.eu/position/ontology/hasDirectionInGradians> <http://www.w3.org/2000/01/rdf-schema#label> "rumbo"@es .
+# 
+# http://crossforest.eu/position/ontology/hasDistanceInMeters
+<http://crossforest.eu/position/ontology/hasDistanceInMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/position/ontology/hasDistanceInMeters> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureInMeters> .
+<http://crossforest.eu/position/ontology/hasDistanceInMeters> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/position/ontology/EgocentricPosition> .
+<http://crossforest.eu/position/ontology/hasDistanceInMeters> <http://www.w3.org/2000/01/rdf-schema#comment> "distance in meters from the position to the position of reference"@en .
+<http://crossforest.eu/position/ontology/hasDistanceInMeters> <http://www.w3.org/2000/01/rdf-schema#comment> "distancia en metros de la posición a la posición de referencia"@es .
+<http://crossforest.eu/position/ontology/hasDistanceInMeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/hasDistanceInMeters> <http://www.w3.org/2000/01/rdf-schema#label> "distance"@en .
+<http://crossforest.eu/position/ontology/hasDistanceInMeters> <http://www.w3.org/2000/01/rdf-schema#label> "distancia"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://crossforest.eu/measures/ontology/Measure
+<http://crossforest.eu/measures/ontology/Measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://crossforest.eu/measures/ontology/MeasureInHectares
+# 
+# http://crossforest.eu/position/ontology/AllocentricPosition
+<http://crossforest.eu/position/ontology/AllocentricPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/position/ontology/AllocentricPosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/position/ontology/Position> .
+<http://crossforest.eu/position/ontology/AllocentricPosition> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/position/ontology/EgocentricPosition> .
+<http://crossforest.eu/position/ontology/AllocentricPosition> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/position/ontology/GeocentricPosition> .
+<http://crossforest.eu/position/ontology/AllocentricPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "Posición desde un conjunto de puntos"@es .
+<http://crossforest.eu/position/ontology/AllocentricPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "Position from a set of points"@en .
+<http://crossforest.eu/position/ontology/AllocentricPosition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/AllocentricPosition> <http://www.w3.org/2000/01/rdf-schema#label> "Allocentric Position" .
+<http://crossforest.eu/position/ontology/AllocentricPosition> <http://www.w3.org/2000/01/rdf-schema#label> "Posición Alocéntrica" .
+# 
+# http://crossforest.eu/position/ontology/Axis
+<http://crossforest.eu/position/ontology/Axis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/position/ontology/Axis> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/position/ontology/Position> .
+<http://crossforest.eu/position/ontology/Axis> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/position/ontology/SpatialEntity> .
+# 
+# http://crossforest.eu/position/ontology/Bound
+<http://crossforest.eu/position/ontology/Bound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/position/ontology/Bound> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/position/ontology/Bound> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/position/ontology/Bound> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/Bound> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/position/ontology/Coordinate
+<http://crossforest.eu/position/ontology/Coordinate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/position/ontology/Coordinate> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/position/ontology/Position> .
+<http://crossforest.eu/position/ontology/Coordinate> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/position/ontology/SpatialEntity> .
+# 
+# http://crossforest.eu/position/ontology/Direction
+<http://crossforest.eu/position/ontology/Direction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/position/ontology/Direction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/Measure> .
+<http://crossforest.eu/position/ontology/Direction> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/position/ontology/Direction> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/position/ontology/Direction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/Direction> <http://www.w3.org/2000/01/rdf-schema#label> "Direction"@en .
+<http://crossforest.eu/position/ontology/Direction> <http://www.w3.org/2000/01/rdf-schema#label> "Rumbo"@es .
+# 
+# http://crossforest.eu/position/ontology/Distance
+<http://crossforest.eu/position/ontology/Distance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/position/ontology/Distance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/Measure> .
+<http://crossforest.eu/position/ontology/Distance> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/position/ontology/Distance> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/position/ontology/Distance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/Distance> <http://www.w3.org/2000/01/rdf-schema#label> "Distance"@en .
+<http://crossforest.eu/position/ontology/Distance> <http://www.w3.org/2000/01/rdf-schema#label> "distancia"@es .
+# 
+# http://crossforest.eu/position/ontology/EPSGentity
+<http://crossforest.eu/position/ontology/EPSGentity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/position/ontology/EPSGentity> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/position/ontology/Position> .
+<http://crossforest.eu/position/ontology/EPSGentity> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/position/ontology/SpatialEntity> .
+# 
+# http://crossforest.eu/position/ontology/EgocentricPosition
+<http://crossforest.eu/position/ontology/EgocentricPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/position/ontology/EgocentricPosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/position/ontology/Position> .
+<http://crossforest.eu/position/ontology/EgocentricPosition> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/position/ontology/GeocentricPosition> .
+<http://crossforest.eu/position/ontology/EgocentricPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "Posición desde un punto de referencia"@es .
+<http://crossforest.eu/position/ontology/EgocentricPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "Position from a point of reference"@en .
+<http://crossforest.eu/position/ontology/EgocentricPosition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/EgocentricPosition> <http://www.w3.org/2000/01/rdf-schema#label> "Egocentric Position" .
+<http://crossforest.eu/position/ontology/EgocentricPosition> <http://www.w3.org/2000/01/rdf-schema#label> "Posición Egocéntrica" .
+# 
+# http://crossforest.eu/position/ontology/GeocentricPosition
+<http://crossforest.eu/position/ontology/GeocentricPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/position/ontology/GeocentricPosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/position/ontology/Position> .
+<http://crossforest.eu/position/ontology/GeocentricPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "Posición que utiliza un sistema geodético de coordenadas de referencia"@es .
+<http://crossforest.eu/position/ontology/GeocentricPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "Position that uses a geodetic coordinate reference system" .
+<http://crossforest.eu/position/ontology/GeocentricPosition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/GeocentricPosition> <http://www.w3.org/2000/01/rdf-schema#label> "Geocentric Position"@en .
+<http://crossforest.eu/position/ontology/GeocentricPosition> <http://www.w3.org/2000/01/rdf-schema#label> "Posición geocéntrica"@es .
+# 
+# http://crossforest.eu/position/ontology/Layer
+<http://crossforest.eu/position/ontology/Layer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/position/ontology/Layer> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/position/ontology/Layer> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/position/ontology/Layer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/Layer> <http://www.w3.org/2000/01/rdf-schema#label> "Capa"@es .
+<http://crossforest.eu/position/ontology/Layer> <http://www.w3.org/2000/01/rdf-schema#label> "Layer"@en .
+# 
+# http://crossforest.eu/position/ontology/LeftBound
+<http://crossforest.eu/position/ontology/LeftBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/position/ontology/LeftBound> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/position/ontology/LeftBound> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/position/ontology/LeftBound> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/LeftBound> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/position/ontology/LowerBound
+<http://crossforest.eu/position/ontology/LowerBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/position/ontology/LowerBound> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/position/ontology/LowerBound> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/position/ontology/LowerBound> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/LowerBound> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/position/ontology/Polygon
+<http://crossforest.eu/position/ontology/Polygon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/position/ontology/Polygon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/position/ontology/Position> .
+<http://crossforest.eu/position/ontology/Polygon> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/position/ontology/Polygon> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/position/ontology/Polygon> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/Polygon> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/position/ontology/Position
+<http://crossforest.eu/position/ontology/Position> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/position/ontology/Position> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/position/ontology/SpatialEntity> .
+<http://crossforest.eu/position/ontology/Position> <http://www.w3.org/2000/01/rdf-schema#comment> "Posición donde una entidad espacial puede estar situada"@es .
+<http://crossforest.eu/position/ontology/Position> <http://www.w3.org/2000/01/rdf-schema#comment> "Position where a spatial entity can be located"@en .
+<http://crossforest.eu/position/ontology/Position> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/Position> <http://www.w3.org/2000/01/rdf-schema#label> "Posición"@es .
+<http://crossforest.eu/position/ontology/Position> <http://www.w3.org/2000/01/rdf-schema#label> "Position"@en .
+# 
+# http://crossforest.eu/position/ontology/ReferenceEntity
+<http://crossforest.eu/position/ontology/ReferenceEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/position/ontology/ReferenceEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://crossforest.eu/measures/ontology/hasPosition> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://crossforest.eu/position/ontology/ReferencePosition> .
+<http://crossforest.eu/position/ontology/ReferenceEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/position/ontology/SpatialEntity> .
+<http://crossforest.eu/position/ontology/ReferenceEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Entidad tomada como referencia para el posicionamient de otras entidades espaciales"@es .
+<http://crossforest.eu/position/ontology/ReferenceEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Entity taken as reference for the position of other spatial entities"@en .
+<http://crossforest.eu/position/ontology/ReferenceEntity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/ReferenceEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad de Referencia"@es .
+<http://crossforest.eu/position/ontology/ReferenceEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Reference Entity"@en .
+# 
+# http://crossforest.eu/position/ontology/ReferencePosition
+<http://crossforest.eu/position/ontology/ReferencePosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/position/ontology/ReferencePosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/position/ontology/Position> .
+<http://crossforest.eu/position/ontology/ReferencePosition> <http://www.w3.org/2000/01/rdf-schema#comment> "Posición tomada como referencia para el posicionamient de otras entidades espaciales"@es .
+<http://crossforest.eu/position/ontology/ReferencePosition> <http://www.w3.org/2000/01/rdf-schema#comment> "Position taken as reference for the position of other spatial entities"@en .
+<http://crossforest.eu/position/ontology/ReferencePosition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/ReferencePosition> <http://www.w3.org/2000/01/rdf-schema#label> "Posición de Referencia"@es .
+<http://crossforest.eu/position/ontology/ReferencePosition> <http://www.w3.org/2000/01/rdf-schema#label> "Reference Position"@en .
+# 
+# http://crossforest.eu/position/ontology/RightBound
+<http://crossforest.eu/position/ontology/RightBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/position/ontology/RightBound> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/position/ontology/RightBound> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/position/ontology/RightBound> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/RightBound> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/position/ontology/SpatialEntity
+<http://crossforest.eu/position/ontology/SpatialEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/position/ontology/SpatialEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Entidad con posición espacial"@es .
+<http://crossforest.eu/position/ontology/SpatialEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Entity with Spatial Position"@en .
+<http://crossforest.eu/position/ontology/SpatialEntity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/SpatialEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad espacial"@es .
+<http://crossforest.eu/position/ontology/SpatialEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Spatial Entity"@en .
+# 
+# http://crossforest.eu/position/ontology/UpperBound
+<http://crossforest.eu/position/ontology/UpperBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/position/ontology/UpperBound> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/position/ontology/UpperBound> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/position/ontology/UpperBound> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
+<http://crossforest.eu/position/ontology/UpperBound> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

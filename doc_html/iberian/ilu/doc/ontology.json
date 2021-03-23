@@ -1,0 +1,429 @@
+[ {
+  "@id" : "http://crossforest.eu/ilu/ontology/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://www.crossforest.eu/members/guiveg"
+  }, {
+    "@id" : "https://www.crossforest.eu/members/josgim"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-07-17"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "ilu"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ontology to publish data about land use in the iberian peninsula"
+  }, {
+    "@language" : "es",
+    "@value" : "Ontología para publicar datos deuso del suelo en la península ibérica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Iberian Land Usage Ontology"
+  }, {
+    "@language" : "es",
+    "@value" : "Ontología ibérica de uso del suelo"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.1"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/AgriculturalLand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Agricultura e Pastagens"
+  }, {
+    "@language" : "es",
+    "@value" : "Terreno agrícola"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/Use"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/Area",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/ArtificialLand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Territorios Artificiales"
+  }, {
+    "@language" : "pt",
+    "@value" : "Territórios artificializado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/Use"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/ForestLand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Bosques"
+  }, {
+    "@language" : "pt",
+    "@value" : "Superfícies agroflorestais e Florestas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/Use"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/LandUse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Land Use"
+  }, {
+    "@language" : "es",
+    "@value" : "Uso de la Tierra"
+  }, {
+    "@language" : "pt",
+    "@value" : "Uso e Ocupação do Solo"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/Patch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/SpatialEntity"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/PatchInPatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Patch contained in the patch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Patch in the patch"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/TreelessLand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Espaços descobertos ou com pouca vegetação e matos"
+  }, {
+    "@language" : "es",
+    "@value" : "Terreno desarbolado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/Use"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/Use",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/UseInPatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Use present in the patch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Use in the patch"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/WetLand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Humedales y masas de agua"
+  }, {
+    "@language" : "pt",
+    "@value" : "Zonas húmidas e massas de água superficiais"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/Use"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/containsPatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "la tesela agregada contiene sub-tesela"
+  }, {
+    "@language" : "en",
+    "@value" : "the merged patch contains sub-patch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/Patch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contains patch"
+  }, {
+    "@language" : "es",
+    "@value" : "contiene tesela"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/PatchInPatch"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/containsUse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "la tesela contiene uso"
+  }, {
+    "@language" : "en",
+    "@value" : "the patch contains use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/Patch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contains use"
+  }, {
+    "@language" : "es",
+    "@value" : "contiene use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/UseInPatch"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/hasPatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has patch"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene tesela"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/Patch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/hasMeasure"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/hasPercentageOfPatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/PatchInPatch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/hasMeasureinPercentage"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/hasPercentageOfUse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/UseInPatch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/hasMeasureinPercentage"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/hasUse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has use"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene uso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/LandUse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/hasMeasure"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://crossforest.eu/measures/ontology/hasMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://crossforest.eu/measures/ontology/hasMeasureinPercentage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/SpatialEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

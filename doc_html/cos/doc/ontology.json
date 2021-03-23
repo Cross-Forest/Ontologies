@@ -1,0 +1,4677 @@
+[ {
+  "@id" : "http://crossforest.eu/cos/ontology/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://www.crossforest.eu/members/guiveg"
+  }, {
+    "@id" : "https://www.crossforest.eu/members/josgim"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-07-17"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "cos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "pt",
+    "@value" : "Ontologia de Uso e Ocupação do Solo de Portugal Continental"
+  }, {
+    "@language" : "en",
+    "@value" : "Ontology to publish data about land use in Portugal"
+  }, {
+    "@value" : "Ontología para publicar datos deuso del suelo en Portugal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt",
+    "@value" : "Ontologia de Ocupação do Solo de Portugal"
+  }, {
+    "@language" : "es",
+    "@value" : "Ontología portuguesa de uso del suelo"
+  }, {
+    "@language" : "en",
+    "@value" : "Portuguese Land Usage Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.1"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Patch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/Patch"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1000",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Territorios artificializados"
+  }, {
+    "@language" : "pt",
+    "@value" : "Territórios artificializados"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/ArtificialLand"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Tecido edificado"
+  }, {
+    "@language" : "es",
+    "@value" : "Tejido edificado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1000"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1110",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Tecido edificado contínuo"
+  }, {
+    "@language" : "es",
+    "@value" : "Tejido edificado continuo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1100"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1111",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Tecido edificado contínuo predominantemente vertical"
+  }, {
+    "@language" : "es",
+    "@value" : "Tejido edificado continuo predominantemente vertical"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1112",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Tecido edificado contínuo predominantemente horizontal"
+  }, {
+    "@language" : "es",
+    "@value" : "Tejido edificado continuo predominantemente horizontal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1120",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Tecido edificado descontínuo"
+  }, {
+    "@language" : "es",
+    "@value" : "Tejido edificado discontinuo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1100"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1121",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Tecido edificado descontínuo"
+  }, {
+    "@language" : "es",
+    "@value" : "Tejido edificado discontínuo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1120"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1122",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Tecido edificado descontínuo esparso"
+  }, {
+    "@language" : "es",
+    "@value" : "Tejido edificado discontínuo escaso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1120"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1130",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : " Espaços vazios em tecido edificado"
+  }, {
+    "@language" : "es",
+    "@value" : "Espacios vacios sin construir"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1100"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1131",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Áreas de estacionamentos e logradouros"
+  }, {
+    "@language" : "es",
+    "@value" : "Áreas de estacionamentos y lugares pùblicos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1130"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1132",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Espacios vacios sin construir"
+  }, {
+    "@language" : "pt",
+    "@value" : "Espaços vazios sem construção"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1130"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1200",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Industria, comercie, e instalaciones agrícolas"
+  }, {
+    "@language" : "pt",
+    "@value" : "Indústria, comércio e instalações agrícolas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1000"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1210",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Industria"
+  }, {
+    "@language" : "pt",
+    "@value" : "Indústria"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1200"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1211",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Industria"
+  }, {
+    "@language" : "pt",
+    "@value" : "Indústria"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1210"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1220",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Comercio"
+  }, {
+    "@language" : "pt",
+    "@value" : "Comércio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1200"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1221",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Comercio"
+  }, {
+    "@language" : "pt",
+    "@value" : "Comércio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1220"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1230",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Instalaciones agrícolas"
+  }, {
+    "@language" : "pt",
+    "@value" : "Instalações agrícolas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1200"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1231",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Instalaciones agrícolas"
+  }, {
+    "@language" : "pt",
+    "@value" : "nstalações agrícolas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1230"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1300",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Infraestructuras"
+  }, {
+    "@language" : "pt",
+    "@value" : "Infraestruturas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1000"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1310",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Infraestruturas de producción de energía"
+  }, {
+    "@language" : "pt",
+    "@value" : "Infraestruturas de produção de energia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1300"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1311",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Infraestructuras de producción de energia renovable"
+  }, {
+    "@language" : "pt",
+    "@value" : "nfraestruturas de produção de energia renovável"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1310"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1312",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Infraestructuras de producción de energia no renovable"
+  }, {
+    "@language" : "pt",
+    "@value" : "Infraestruturas de produção de energia não renovável"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1310"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1320",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Infraestruturas de aguas y tratamiento de resíduos"
+  }, {
+    "@language" : "pt",
+    "@value" : "Infraestruturas de águas e tratamento de resíduos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1300"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1321",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Infraestructuras para captación tratamiento y abastecimiento de aguas para el consumo"
+  }, {
+    "@language" : "pt",
+    "@value" : "Infraestruturas para captação, tratamento e abastecimento de águas para consumo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1320"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1322",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Infraestructuras de tratamiento de residuos y aguas residuales"
+  }, {
+    "@language" : "pt",
+    "@value" : "Infraestruturas de tratamento de resíduos e águas residuais"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1320"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1400",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Infraestruturas"
+  }, {
+    "@language" : "es",
+    "@value" : "Transportes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1000"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1410",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "'Redes viarias y ferroviarias y espacios asociados'"
+  }, {
+    "@language" : "pt",
+    "@value" : "Redes viárias e ferroviárias e espaços associados"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1400"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1411",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Red viaria y espacios asociados"
+  }, {
+    "@language" : "pt",
+    "@value" : "Rede viária e espaços associados"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1410"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1412",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Red ferroviaria y espacios asociados"
+  }, {
+    "@language" : "pt",
+    "@value" : "Rede ferroviária e espaços associados"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1410"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1420",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Áreas portuarias"
+  }, {
+    "@language" : "pt",
+    "@value" : "Áreas portuárias"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1400"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1421",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Terminais portuários de mar e de rio"
+  }, {
+    "@language" : "es",
+    "@value" : "Terminales portuarias de mar y de río"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1420"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1422",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Astilleros y diques secos"
+  }, {
+    "@language" : "pt",
+    "@value" : "Estaleiros navais e docas secas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1420"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1423",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Marinas e docas pesca"
+  }, {
+    "@language" : "es",
+    "@value" : "Marinas y muelles de pesca"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1420"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1430",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Aeroportos e aeródromos"
+  }, {
+    "@language" : "es",
+    "@value" : "Aeropuertos y aeródromos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1400"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1431",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Aeroportos"
+  }, {
+    "@language" : "es",
+    "@value" : "Aeropuertos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1430"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1432",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Aeródromos"
+  }, {
+    "@language" : "pt",
+    "@value" : "Aeródromos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1430"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1500",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Áreas de extracción inerte o áreas de eliminación de resíduos y obras"
+  }, {
+    "@language" : "pt",
+    "@value" : "Áreas de extração de inertes, áreas de deposição de resíduos e estaleiros de construção"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1000"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1510",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Áreas de extracción de inertes"
+  }, {
+    "@language" : "pt",
+    "@value" : "Áreas de extração de inertes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1500"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1511",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Minas a cielo abierto"
+  }, {
+    "@language" : "pt",
+    "@value" : "Minas a céu aberto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1510"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1512",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Canteras"
+  }, {
+    "@language" : "pt",
+    "@value" : "Pedreiras"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1510"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1520",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Áreas de deposición de resíduos"
+  }, {
+    "@language" : "pt",
+    "@value" : "Áreas de deposição de resíduos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1500"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1521",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Aterros"
+  }, {
+    "@language" : "pt",
+    "@value" : "Aterros"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1520"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1522",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Lixeiras e Sucatas"
+  }, {
+    "@language" : "es",
+    "@value" : "Vertederos y desechos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1520"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1530",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Áreas em construção"
+  }, {
+    "@language" : "es",
+    "@value" : "Áreas en construcción"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1500"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1531",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Áreas de construcción"
+  }, {
+    "@language" : "pt",
+    "@value" : "Áreas em construção"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1530"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1600",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Equipamentos"
+  }, {
+    "@language" : "es",
+    "@value" : "Equipamientos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1000"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1610",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Equipamentos deportivos"
+  }, {
+    "@language" : "pt",
+    "@value" : "Equipamentos desportivos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1600"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1611",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Campos de golf"
+  }, {
+    "@language" : "pt",
+    "@value" : "Campos de golfe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1610"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1612",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Instalaciones deportivas"
+  }, {
+    "@language" : "pt",
+    "@value" : "Instalações desportivas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1610"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1620",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Equipamentos de lazer e parques de campismo"
+  }, {
+    "@language" : "es",
+    "@value" : "Instalaciones de ocio y camping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1600"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1621",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Campings"
+  }, {
+    "@language" : "pt",
+    "@value" : "Parques de campismo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1620"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1622",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Equipamentos de lazer"
+  }, {
+    "@language" : "es",
+    "@value" : "Instalaciones de ocio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1620"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1630",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Equipamentos culturais"
+  }, {
+    "@language" : "es",
+    "@value" : "Equipamientos culturales"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1600"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1631",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Equipamentos culturais"
+  }, {
+    "@language" : "es",
+    "@value" : "Equipamientos culturales"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1630"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1640",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Cementerios"
+  }, {
+    "@language" : "pt",
+    "@value" : "Cementerios"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1600"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1641",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Cementerios"
+  }, {
+    "@language" : "pt",
+    "@value" : "Cemitérios"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1640"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1650",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Otros equipamientos e instalaciones turísticas"
+  }, {
+    "@language" : "pt",
+    "@value" : "Outros equipamentos e instalações turísticas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1600"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1651",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Otros equipamientos e instalaciones turísticas "
+  }, {
+    "@language" : "pt",
+    "@value" : "Outros equipamentos e instalações turísticas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1650"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1700",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Parques e jardins"
+  }, {
+    "@language" : "es",
+    "@value" : "Parques y jardines"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1000"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1710",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Parques e jardins "
+  }, {
+    "@language" : "es",
+    "@value" : "Parques y jardines"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1700"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use1711",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Parques e jardins"
+  }, {
+    "@language" : "es",
+    "@value" : "Parques y jardines"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use1710"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2000",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Agricultura"
+  }, {
+    "@language" : "pt",
+    "@value" : "Agricultura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/AgriculturalLand"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Cultivos temporales"
+  }, {
+    "@language" : "pt",
+    "@value" : "Culturas temporárias"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2000"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2110",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Cultivos temporales de secano y regadío y arrozales"
+  }, {
+    "@language" : "pt",
+    "@value" : "Culturas temporárias de sequeiro e regadio e arrozais"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2100"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2111",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Cultivos temporales de secano y regadío"
+  }, {
+    "@language" : "pt",
+    "@value" : "Culturas temporárias de sequeiro e regadio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2112",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Arrozais"
+  }, {
+    "@language" : "es",
+    "@value" : "Arrozales"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2200",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Cultivos permanentes"
+  }, {
+    "@language" : "pt",
+    "@value" : "Culturas permanentes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2000"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2210",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Vinhas"
+  }, {
+    "@language" : "es",
+    "@value" : "Viñas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2100"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2211",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Vinhas"
+  }, {
+    "@language" : "es",
+    "@value" : "Viñas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2210"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2220",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Huertos"
+  }, {
+    "@language" : "pt",
+    "@value" : "Pomares"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2200"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2221",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Huertos"
+  }, {
+    "@language" : "pt",
+    "@value" : "Pomares"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2220"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2230",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Olivais"
+  }, {
+    "@language" : "es",
+    "@value" : "Olivares"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2200"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2231",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Olivais"
+  }, {
+    "@language" : "es",
+    "@value" : "Olivares"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2230"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2300",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Áreas agrícolas heterogéneas"
+  }, {
+    "@language" : "pt",
+    "@value" : "Áreas agrícolas heterogéneas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2000"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2310",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Cultivos temporales y/o pastos asociados a cultivos permanentes"
+  }, {
+    "@language" : "pt",
+    "@value" : "Culturas temporárias e/ou pastagens melhoradas associadas a culturas permanentes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2300"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2311",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Cultivos temporales y/o pastos asociados con vides"
+  }, {
+    "@language" : "pt",
+    "@value" : "Culturas temporárias e/ou pastagens melhoradas associadas a vinha"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2310"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2312",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Cultivos temporales y/o pastos asociados con huertos"
+  }, {
+    "@language" : "pt",
+    "@value" : "Culturas temporárias e/ou pastagens melhoradas associadas a pomar"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2310"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2313",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Cultivos temporales y/o pastos asociados con olivares"
+  }, {
+    "@language" : "pt",
+    "@value" : "Culturas temporárias e/ou pastagens melhoradas associadas a olival"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2310"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2320",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Mosaicos culturais e parcelares complexos"
+  }, {
+    "@language" : "es",
+    "@value" : "Sistemas culturales y parcelas complejas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2300"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2321",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Mosaicos culturais e parcelares complexos"
+  }, {
+    "@language" : "es",
+    "@value" : "Sistemas culturales y parcelas complejas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2320"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2330",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Agricultura com espaços naturais e seminaturais"
+  }, {
+    "@language" : "es",
+    "@value" : "Agricultura con espacios naturales y semi-naturales"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2300"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2331",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Agricultura com espaços naturais e seminaturais"
+  }, {
+    "@language" : "es",
+    "@value" : "Agricultura con espacios naturales y semi-naturales"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2330"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2400",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Agricultura protegida e viveiros"
+  }, {
+    "@language" : "es",
+    "@value" : "Agricultura protegida y viveros"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2000"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2410",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Agricultura protegida e viveiros"
+  }, {
+    "@language" : "es",
+    "@value" : "Agricultura protegida y viveros"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2400"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use2411",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Agricultura protegida e viveiros"
+  }, {
+    "@language" : "es",
+    "@value" : "Agricultura protegida y viveros"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use2410"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use3000",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Pastagens"
+  }, {
+    "@language" : "es",
+    "@value" : "Pastos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/AgriculturalLand"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use3100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Pastagens"
+  }, {
+    "@language" : "es",
+    "@value" : "Pastos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use3000"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use3110",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Pastagens melhoradas"
+  }, {
+    "@language" : "es",
+    "@value" : "Pastos mejorados"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use3100"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use3111",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Pastagens melhoradas"
+  }, {
+    "@language" : "es",
+    "@value" : "Pastos mejoraoos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use3110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use3120",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Pastagens espontâneas"
+  }, {
+    "@language" : "es",
+    "@value" : "Pastos espontáneos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use3100"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use3121",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Pastagens espontâneas"
+  }, {
+    "@language" : "es",
+    "@value" : "Pastos espontáneos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use3120"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use4000",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Superficies agroforestales"
+  }, {
+    "@language" : "pt",
+    "@value" : "Superfícies agroflorestais"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/ForestLand"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use4100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Superficies agroforestales"
+  }, {
+    "@language" : "pt",
+    "@value" : "Superfícies agroflorestais"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use4000"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use4110",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Superficies agroforestales"
+  }, {
+    "@language" : "pt",
+    "@value" : "Superfícies agroflorestais"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use4100"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use4111",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Superficies agroforestales de Quercus suber"
+  }, {
+    "@language" : "pt",
+    "@value" : "Superfícies agroflorestais de sobreiro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use4110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use4112",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Superficies agroforestales de Quercus rotundifolia"
+  }, {
+    "@language" : "pt",
+    "@value" : "Superfícies agroflorestais de azinheira"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use4110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use4113",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Superficies agroforestales de otros Quercus"
+  }, {
+    "@language" : "pt",
+    "@value" : "Superfícies agroflorestais de outros carvalhos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use4110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use4114",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Superficies agroforestales de Pinus pinea"
+  }, {
+    "@language" : "pt",
+    "@value" : "Superfícies agroflorestais de pinheiro manso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use4110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use4115",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Superficies agroforestales de otras especies"
+  }, {
+    "@language" : "pt",
+    "@value" : "Superfícies agroflorestais de outras espécies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use4110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use4116",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Superficies agroforestales de Querqus suber y Quercus rotundifolia"
+  }, {
+    "@language" : "pt",
+    "@value" : "Superfícies agroflorestais de sobreiro com azinheira"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use4110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use4117",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Superficies agroforestales de otras mezclas"
+  }, {
+    "@language" : "pt",
+    "@value" : "Superfícies agroflorestais de outras misturas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use4110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use5000",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Bosques"
+  }, {
+    "@language" : "pt",
+    "@value" : "Florestas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/ForestLand"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use5100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Bosques"
+  }, {
+    "@language" : "pt",
+    "@value" : "Florestas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use5000"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use5110",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Bosques de frondosas"
+  }, {
+    "@language" : "pt",
+    "@value" : "Florestas de folhosas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use5100"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use5111",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Bosques de Quercus suber"
+  }, {
+    "@language" : "pt",
+    "@value" : "Florestas de sobreiro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use5110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use5112",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Bosques de Quercus rotundifolia"
+  }, {
+    "@language" : "pt",
+    "@value" : "Florestas de azinheira"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use5110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use5113",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Bosques de otros Quercus"
+  }, {
+    "@language" : "pt",
+    "@value" : "Florestas de outros carvalhos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use5110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use5114",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Bosques de castaños"
+  }, {
+    "@language" : "pt",
+    "@value" : "Florestas de castanheiro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use5110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use5115",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Bosques de eucaliptos"
+  }, {
+    "@language" : "pt",
+    "@value" : "Florestas de eucalipto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use5110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use5116",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Bosques de especies invasoras"
+  }, {
+    "@language" : "pt",
+    "@value" : "Florestas de espécies invasoras"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use5110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use5117",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Bosques de otras frondosas"
+  }, {
+    "@language" : "pt",
+    "@value" : "Florestas de outras folhosas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use5110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use5120",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Coníferas"
+  }, {
+    "@language" : "pt",
+    "@value" : "Florestas de resinosas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use5100"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use5121",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Bosques de Pinus pinaster"
+  }, {
+    "@language" : "pt",
+    "@value" : "Florestas de pinheiro bravo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use5120"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use5122",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Bosques de Pinus pinea"
+  }, {
+    "@language" : "pt",
+    "@value" : "Florestas de pinheiro manso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use5120"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use5123",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Bosques de otras resinosas"
+  }, {
+    "@language" : "pt",
+    "@value" : "Florestas de outras resinosas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use5120"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use6000",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Matorrales"
+  }, {
+    "@language" : "pt",
+    "@value" : "Matos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/TreelessLand"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use6100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Matorrales"
+  }, {
+    "@language" : "pt",
+    "@value" : "Matos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use6000"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use6110",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Matorrales"
+  }, {
+    "@language" : "pt",
+    "@value" : "Matos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use6100"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use6111",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Matorrales"
+  }, {
+    "@language" : "pt",
+    "@value" : "Matos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use6110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use7000",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Espaços descobertos ou com pouca vegetação"
+  }, {
+    "@language" : "es",
+    "@value" : "Zonas descubiertas con poca vegetación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/TreelessLand"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use7100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Espaços descobertos ou com pouca vegetação"
+  }, {
+    "@language" : "es",
+    "@value" : "Zonas descubiertas con poca vegetación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use7000"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use7110",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Playas, dunas y arenales"
+  }, {
+    "@language" : "pt",
+    "@value" : "Praias, dunas e areais"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use7100"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use7111",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Playas, dunas y arenales interiores"
+  }, {
+    "@language" : "pt",
+    "@value" : "Praias, dunas e areais interiores"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use7110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use7112",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Playas, dunas y arenales costeros"
+  }, {
+    "@language" : "pt",
+    "@value" : "Praias, dunas e areais costeiros"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use7110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use7120",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Roca desnuda"
+  }, {
+    "@language" : "pt",
+    "@value" : "Rocha nua"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use7100"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use7121",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Roca desnuda"
+  }, {
+    "@language" : "pt",
+    "@value" : "Rocha nua"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use7120"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use7130",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Vegetación escasa"
+  }, {
+    "@language" : "pt",
+    "@value" : "Vegetação esparsa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use7100"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use7131",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Vegetación escasa"
+  }, {
+    "@language" : "pt",
+    "@value" : "Vegetação esparsa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use7130"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use8000",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Zonas húmedas"
+  }, {
+    "@language" : "pt",
+    "@value" : "Zonas húmidas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/WetLand"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use8100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Zonas húmedas"
+  }, {
+    "@language" : "pt",
+    "@value" : "Zonas húmidas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use8000"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use8110",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Zonas húmedas interiores"
+  }, {
+    "@language" : "pt",
+    "@value" : "Zonas húmidas interiores"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use8100"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use8111",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Pauis"
+  }, {
+    "@language" : "es",
+    "@value" : "Turberas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use8110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use8120",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Zonas húmedas litorales"
+  }, {
+    "@language" : "pt",
+    "@value" : "Zonas húmidas litorais"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use8100"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use8121",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Marismas"
+  }, {
+    "@language" : "pt",
+    "@value" : "Sapais"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use8120"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use8122",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Zonas entremarés"
+  }, {
+    "@language" : "es",
+    "@value" : "Zonas intermareales"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use8120"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9000",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Aguas superficiales"
+  }, {
+    "@language" : "pt",
+    "@value" : "Massas de água superficiais"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/WetLand"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Masas de agua interiores"
+  }, {
+    "@language" : "pt",
+    "@value" : "Massas de água interiores"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9000"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9110",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Cursos de agua"
+  }, {
+    "@language" : "pt",
+    "@value" : "Cursos de água"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9100"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9111",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Cursos de agua naturales"
+  }, {
+    "@language" : "pt",
+    "@value" : "Cursos de água naturais"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9112",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Cursos de agua con alteraciones artificiales"
+  }, {
+    "@language" : "pt",
+    "@value" : "Cursos de água modificados ou artificializados"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9110"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9120",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Planos de agua"
+  }, {
+    "@language" : "pt",
+    "@value" : "Planos de água"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9100"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9121",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Lagos e lagoas interiores artificiais"
+  }, {
+    "@language" : "es",
+    "@value" : "Lagos y lagunas artificiales"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9120"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9122",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Lagos e lagoas interiores naturais"
+  }, {
+    "@language" : "es",
+    "@value" : "Lagos y lagunas naturales"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9120"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9123",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Albufeiras de barragens"
+  }, {
+    "@language" : "es",
+    "@value" : "Embalses de presa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9120"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9124",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Albufeiras de represas ou de açudes"
+  }, {
+    "@language" : "es",
+    "@value" : "Depósitos de presa o vertederos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9120"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9125",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Charcas"
+  }, {
+    "@language" : "pt",
+    "@value" : "Charcas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9120"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9126",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Acuicultura"
+  }, {
+    "@language" : "pt",
+    "@value" : "Aquicultura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9120"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9200",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Acuicultura"
+  }, {
+    "@language" : "pt",
+    "@value" : "Aquicultura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9000"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9210",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Acuicultura"
+  }, {
+    "@language" : "pt",
+    "@value" : "Aquicultura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9200"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9211",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Salinas"
+  }, {
+    "@language" : "pt",
+    "@value" : "Salinas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9210"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9300",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Masas de agua de transición y costeras"
+  }, {
+    "@language" : "pt",
+    "@value" : "Massas de água de transição e costeiras"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9000"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9310",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : "Salinas"
+  }, {
+    "@language" : "pt",
+    "@value" : "Salinas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9300"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9311",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Lagoas costeiras"
+  }, {
+    "@language" : "es",
+    "@value" : "Lagos costeros"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9310"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9320",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Lagoas costeiras"
+  }, {
+    "@language" : "es",
+    "@value" : "Lagos costeros"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9300"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9321",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Desembocaduras fluviais"
+  }, {
+    "@language" : "es",
+    "@value" : "Desembocaduras fluviales"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9320"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9330",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Desembocaduras fluviais"
+  }, {
+    "@language" : "es",
+    "@value" : "Desembocaduras fluviales"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9300"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9331",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Oceano"
+  }, {
+    "@language" : "es",
+    "@value" : "Océano"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9330"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/cos/ontology/Use9340",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "pt",
+    "@value" : "Oceano"
+  }, {
+    "@language" : "es",
+    "@value" : "Océano"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/cos/ontology/Use9300"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/AgriculturalLand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/ArtificialLand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/ForestLand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/Patch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/TreelessLand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/WetLand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

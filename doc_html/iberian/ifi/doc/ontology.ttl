@@ -1,0 +1,1631 @@
+@prefix : <http://crossforest.eu/ifi/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://crossforest.eu/ifi/ontology/> .
+
+<http://crossforest.eu/ifi/ontology/> rdf:type owl:Ontology ;
+                                       <http://purl.org/dc/elements/1.1/creator> <https://www.crossforest.eu/members/dportoles> ,
+                                                                                 <https://www.crossforest.eu/members/guiveg> ;
+                                       <http://purl.org/dc/elements/1.1/date> "2021-03-01" ;
+                                       <http://purl.org/dc/elements/1.1/title> "Iberian Forestry Inventory Ontology"@en ,
+                                                                               "Ontología ibérica de inventario forestal"@es ;
+                                       <http://purl.org/dc/terms/description> "Ontology to publish data about forestry inventory in the Iberian Peninsula"@en ,
+                                                                              "Ontología para publicar datos de inventario forestal en la Península ibérica"@es ;
+                                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "ifi" ;
+                                       rdfs:comment "Ontology to publish data about forestry inventory in the Iberian Peninsula"@en ,
+                                                    "Ontología para publicar datos de inventario forestal en la Península ibérica"@es ;
+                                       rdfs:label "Ontología ibérica de inventario forestal"@es ;
+                                       owl:versionInfo 0.1 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#closeMatch
+<http://www.w3.org/2004/02/skos/core#closeMatch> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+<http://www.w3.org/2004/02/skos/core#exactMatch> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#narrower
+<http://www.w3.org/2004/02/skos/core#narrower> rdf:type owl:AnnotationProperty .
+
+
+###  https://dbpedia.org/ontology/purpose
+<https://dbpedia.org/ontology/purpose> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://crossforest.eu/ifi/ontology/containsDominantFormation
+:containsDominantFormation rdf:type owl:ObjectProperty ;
+                           rdfs:domain owl:Thing ;
+                           rdfs:range :InfoDominantFormation ;
+                           rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                           rdfs:label "contains dominant formation"@en ,
+                                      "contiene formación dominante"@es .
+
+
+###  http://crossforest.eu/ifi/ontology/hasBasalArea
+:hasBasalArea rdf:type owl:ObjectProperty ;
+              rdfs:domain :InfoDominantFormation ;
+              rdfs:range :BasalArea ;
+              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+              rdfs:label "has basal area"@en ,
+                         "tiene área basimétrica"@es .
+
+
+###  http://crossforest.eu/ifi/ontology/hasDominantFormation
+:hasDominantFormation rdf:type owl:ObjectProperty ;
+                      rdfs:domain :InfoDominantFormation ;
+                      rdfs:range :DominantFormation ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                      rdfs:label "has dominant formation"@en ,
+                                 "tiene formación dominante"@es .
+
+
+###  http://crossforest.eu/ifi/ontology/hasNumberOfTrees
+:hasNumberOfTrees rdf:type owl:ObjectProperty ;
+                  rdfs:domain :InfoDominantFormation ;
+                  rdfs:range :NumberOfTrees ;
+                  rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                  rdfs:label "has number of trees"@en ,
+                             "tiene número de árboles"@es .
+
+
+###  http://crossforest.eu/ifi/ontology/hasVolumeWithBark
+:hasVolumeWithBark rdf:type owl:ObjectProperty ;
+                   rdfs:domain :InfoDominantFormation ;
+                   rdfs:range :VolumeWithBark ;
+                   rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                   rdfs:label "has volume with bark"@en ,
+                              "tiene volumen con corteza"@es .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://crossforest.eu/ifi/ontology/hasBasalAreaInM2
+:hasBasalAreaInM2 rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :InfoDominantFormation ;
+                  rdfs:range xsd:float ;
+                  rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                  rdfs:label "has basal area in square meters"@en ,
+                             "tiene área basimétrica en metros cuadrados"@es .
+
+
+###  http://crossforest.eu/ifi/ontology/hasBasalAreaInM2ByHA
+:hasBasalAreaInM2ByHA rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :InfoDominantFormationByHA ;
+                      rdfs:range xsd:float ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                      rdfs:label "has basal area in square meters by hectare"@en ,
+                                 "tiene área basimétrica en metros cuadrados por hectárea"@es .
+
+
+###  http://crossforest.eu/ifi/ontology/hasNumberOfTreesInUnits
+:hasNumberOfTreesInUnits rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :InfoDominantFormation ;
+                         rdfs:range xsd:float ;
+                         rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                         rdfs:label "has number of trees in units"@en ,
+                                    "tiene número de árboles en unidades"@es .
+
+
+###  http://crossforest.eu/ifi/ontology/hasNumberOfTreesInUnitsByHA
+:hasNumberOfTreesInUnitsByHA rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :InfoDominantFormationByHA ;
+                             rdfs:range xsd:float ;
+                             rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                             rdfs:label "has number of trees in units per hectare"@en ,
+                                        "tiene número de árboles en unidades por hectárea"@es .
+
+
+###  http://crossforest.eu/ifi/ontology/hasVersionId
+:hasVersionId rdf:type owl:DatatypeProperty ;
+              rdfs:domain :ForestryInventory ;
+              rdfs:range xsd:string ;
+              rdfs:label "has version identifier"@en ,
+                         "tiene identificador de versión"@es .
+
+
+###  http://crossforest.eu/ifi/ontology/hasVolumeWithBarkInM3
+:hasVolumeWithBarkInM3 rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :InfoDominantFormation ;
+                       rdfs:range xsd:float ;
+                       rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                       rdfs:label "has volume with bark in cubic meters"@en ,
+                                  "tiene volumen con corteza en metros cúbicos"@es .
+
+
+###  http://crossforest.eu/ifi/ontology/hasVolumeWithBarkInM3ByHA
+:hasVolumeWithBarkInM3ByHA rdf:type owl:DatatypeProperty ;
+                           rdfs:domain :InfoDominantFormationByHA ;
+                           rdfs:range xsd:float ;
+                           rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                           rdfs:label "has volume with bark in cubic meters by hectare"@en ,
+                                      "tiene volumen con corteza en metros cúbicos por hectárea"@es .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://crossforest.eu/ifi/ontology/BasalArea
+:BasalArea rdf:type owl:Class ;
+           rdfs:subClassOf <http://crossforest.eu/measures/ontology/Measure> ;
+           rdfs:comment "Soma das áreas seccionais das árvores a 1,30 m do solo."@pt ;
+           rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+           rdfs:label "Basal Area"@en ,
+                      "Área Basimétrica"@es ,
+                      "Área basal"@pt ;
+           <http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/BasalArea> .
+
+
+###  http://crossforest.eu/ifi/ontology/DominantFormation
+:DominantFormation rdf:type owl:Class ;
+                   rdfs:comment "En Portugal es una categorización nacional, la misma para todos los NUTS3 en el caso del invetario portugués en versión 6."@es ,
+                                "En el Inventario Forestal Nacional se corresponde con el concepto de Estrato, el cual depende de cada provincia y versión de inventario."@es ,
+                                "Espécie de árvore existente num povoamento florestal com a maior percentagem de coberto."@pt ;
+                   rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                   rdfs:label "Dominant formation"@en ,
+                              "Formación dominante"@es ,
+                              "Tipos de povoamentos florestais"@pt .
+
+
+###  http://crossforest.eu/ifi/ontology/DominantFormation_PT_6
+:DominantFormation_PT_6 rdf:type owl:Class ;
+                        rdfs:subClassOf :DominantFormation ;
+                        rdfs:label "Dominant formation in IFN6 (Portugal)"@en ,
+                                   "Formación dominante en IFN6 (Portugal)"@en ,
+                                   "Tipos de povoamentos florestais (IFN6 Portugal)"@pt .
+
+
+###  http://crossforest.eu/ifi/ontology/ForestryInventory
+:ForestryInventory rdf:type owl:Class ;
+                   rdfs:comment "O Inventário Florestal Nacional (IFN) é o processo de produção de estatísticas, e de cartografia-base, sobre a abundância, estado e condição dos recursos florestais nacionais. Baseia-se em recolhas de dados a partir de imagens aéreas e em medições da vegetação no terreno, ao longo de todo o território."@pt ;
+                   rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                   rdfs:label "Forestry inventory"@en ,
+                              "Inventario forestal"@es ,
+                              "Inventário Florestal Nacional"@pt .
+
+
+###  http://crossforest.eu/ifi/ontology/InfoDominantFormation
+:InfoDominantFormation rdf:type owl:Class ;
+                       rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                       rdfs:label "Info about dominant formation"@en ,
+                                  "Información sobre la formación dominante"@es ,
+                                  "Informação sobre espécie de árvore dominante"@pt .
+
+
+###  http://crossforest.eu/ifi/ontology/InfoDominantFormationByHA
+:InfoDominantFormationByHA rdf:type owl:Class ;
+                           rdfs:subClassOf :InfoDominantFormation ;
+                           rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                           rdfs:label "Info about dominant formation by hectare"@en ,
+                                      "Información sobre la formación dominante por hectárea"@es ,
+                                      "Informação sobre espécie de árvore dominante por hectare"@pt .
+
+
+###  http://crossforest.eu/ifi/ontology/NUTS1
+:NUTS1 rdf:type owl:Class ;
+       rdfs:subClassOf :NUTSUnit ;
+       rdfs:comment "As NUTS I correspondem ao três unidades, correspondentes ao território do continente e de cada uma das Regiões Autónomas dos Açores e da Madeira"@pt ,
+                    "En España se corresponden con la agrupación de comunidades autónomas"@es ;
+       rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+       rdfs:label "Gran región socioeconómica"@es ,
+                  "Major socio-economic region"@en ,
+                  "Sub-região"@pt .
+
+
+###  http://crossforest.eu/ifi/ontology/NUTS2
+:NUTS2 rdf:type owl:Class ;
+       rdfs:subClassOf :NUTSUnit ;
+       rdfs:comment "As NUTS II correspondem ao sete unidades, as regiões, das quais cinco no continente e os territórios das Regiões Autónomas dos Açores e da Madeira"@pt ,
+                    "En España se corresponden con Comunidades y ciudades autónomas"@es ;
+       rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+       rdfs:label "Basic region for the application of regional policies"@en ,
+                  "Região"@pt ,
+                  "Región básica para la aplicación de políticas regionales"@es .
+
+
+###  http://crossforest.eu/ifi/ontology/NUTS3
+:NUTS3 rdf:type owl:Class ;
+       rdfs:subClassOf :NUTSUnit ;
+       rdfs:comment "As NUTS III correspondem ao território das Entidades Intermunicipais (Comunidades Intermunicipais e Áreas Metropolitanas, no caso de Lisboa e Porto)"@pt ,
+                    "En España se corresponden con las provincias peninsulares, ciudades autónomas e islas"@es ;
+       rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+       rdfs:label "Small region for specific diagnoses"@en ,
+                  "Sub-região"@pt ,
+                  "Subregión"@es ;
+       <http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/Province> .
+
+
+###  http://crossforest.eu/ifi/ontology/NUTSUnit
+:NUTSUnit rdf:type owl:Class ;
+          rdfs:subClassOf <http://crossforest.eu/position/ontology/SpatialEntity> ;
+          <http://purl.org/dc/terms/source> "Eurostat" ;
+          rdfs:comment "Clasificación NUTS (Nomenclatura de las Unidades Territoriales Estadísticas)."@es ,
+                       "NUTS classification (Nomenclature of territorial units for statistics)"@en ,
+                       "NUTS classificação (Nomenclatura das Unidades Territoriais para Fins Estatísticos)."@pt ;
+          rdfs:label "NUTS unit"@en ,
+                     "Unidad NUTS"@es ,
+                     "Unidade territorial NUTS"@pt ;
+          <https://dbpedia.org/ontology/purpose> "Statistical"@en .
+
+
+###  http://crossforest.eu/ifi/ontology/NumberOfTrees
+:NumberOfTrees rdf:type owl:Class ;
+               rdfs:subClassOf <http://crossforest.eu/measures/ontology/MeasureInUnities> ;
+               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+               rdfs:label "Number of trees"@en ,
+                          "Número de árboles"@es ,
+                          "Número de árvores"@pt ;
+               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifn/ontology/NumberOfTrees> .
+
+
+###  http://crossforest.eu/ifi/ontology/VolumeWithBark
+:VolumeWithBark rdf:type owl:Class ;
+                rdfs:subClassOf <http://crossforest.eu/measures/ontology/Measure> ;
+                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                rdfs:label "Volume com casca"@pt ,
+                           "Volume with bark"@en ,
+                           "Volumen con corteza"@es ;
+                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifn/ontology/VolumeWithBark> .
+
+
+###  http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Acácias
+<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Acácias> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf :DominantFormation_PT_6 ;
+                                                                                                       rdfs:comment "Espécies dominantes presentes: acácia-dealbata, acácia-da-Austrália, outras acácias"@pt ;
+                                                                                                       rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                                                                       rdfs:label "Acácias"@pt .
+
+
+###  http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Alfarrobeira
+<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Alfarrobeira> rdf:type owl:Class ;
+                                                                                                            rdfs:subClassOf :DominantFormation_PT_6 ;
+                                                                                                            rdfs:comment "Espécies dominantes presentes: alfarrobeira"@pt ;
+                                                                                                            rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                                                                            rdfs:label "Alfarrobeira"@pt .
+
+
+###  http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Azinheira
+<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Azinheira> rdf:type owl:Class ;
+                                                                                                         rdfs:subClassOf :DominantFormation_PT_6 ;
+                                                                                                         rdfs:comment "Espécies dominantes presentes: azinheira"@pt ;
+                                                                                                         rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                                                                         rdfs:label "Azinheira"@pt .
+
+
+###  http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Carvalhos
+<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Carvalhos> rdf:type owl:Class ;
+                                                                                                         rdfs:subClassOf :DominantFormation_PT_6 ;
+                                                                                                         rdfs:comment "Espécies dominantes presentes: carvalho-roble, carvalho-cerquinho, carvalho-negral, outros carvalhos"@pt ;
+                                                                                                         rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                                                                         rdfs:label "Carvalhos"@pt .
+
+
+###  http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Castanheiro
+<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Castanheiro> rdf:type owl:Class ;
+                                                                                                           rdfs:subClassOf :DominantFormation_PT_6 ;
+                                                                                                           rdfs:comment "Espécies dominantes presentes: castanheiro-bravo, castanheiro-manso"@pt ;
+                                                                                                           rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                                                                           rdfs:label "Castanheiro"@pt .
+
+
+###  http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Eucaliptos
+<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Eucaliptos> rdf:type owl:Class ;
+                                                                                                          rdfs:subClassOf :DominantFormation_PT_6 ;
+                                                                                                          rdfs:comment "Espécies dominantes presentes: várias espécies do género eucalipto"@pt ;
+                                                                                                          rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                                                                          rdfs:label "Eucaliptos"@pt .
+
+
+###  http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_folhosas
+<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_folhosas> rdf:type owl:Class ;
+                                                                                                               rdfs:subClassOf :DominantFormation_PT_6 ;
+                                                                                                               rdfs:comment "Espécies dominantes presentes: faia, bétula ou bidoeiro, salgueiros, ulmeiros, choupos, alfarrobeira, amieiros, freixos e outras"@pt ;
+                                                                                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                                                                               rdfs:label "Outras folhosas"@pt .
+
+
+###  http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_resinosas
+<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_resinosas> rdf:type owl:Class ;
+                                                                                                                rdfs:subClassOf :DominantFormation_PT_6 ;
+                                                                                                                rdfs:comment "Espécies dominantes presentes: pinheiro-silvestre, pinheiro-de-Alepo, pseudotsuga, ciprestes, cedros e outras"@pt ;
+                                                                                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                                                                                rdfs:label "Outras resinosas"@pt .
+
+
+###  http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-bravo
+<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-bravo> rdf:type owl:Class ;
+                                                                                                              rdfs:subClassOf :DominantFormation_PT_6 ;
+                                                                                                              rdfs:comment "Espécies dominantes presentes: pinheiro-bravo"@pt ;
+                                                                                                              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                                                                              rdfs:label "Pinheiro bravo"@pt .
+
+
+###  http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-manso
+<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-manso> rdf:type owl:Class ;
+                                                                                                              rdfs:subClassOf :DominantFormation_PT_6 ;
+                                                                                                              rdfs:comment "Espécies dominantes presentes: pinheiro-manso"@pt ;
+                                                                                                              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                                                                              rdfs:label "Pinheiro manso"@pt .
+
+
+###  http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Sobreiro
+<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Sobreiro> rdf:type owl:Class ;
+                                                                                                        rdfs:subClassOf :DominantFormation_PT_6 ;
+                                                                                                        rdfs:comment "Espécies dominantes presentes: sobreiro"@pt ;
+                                                                                                        rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                                                                        rdfs:label "Sobreiro"@pt .
+
+
+###  http://crossforest.eu/measures/ontology/Measure
+<http://crossforest.eu/measures/ontology/Measure> rdf:type owl:Class .
+
+
+###  http://crossforest.eu/measures/ontology/MeasureInUnities
+<http://crossforest.eu/measures/ontology/MeasureInUnities> rdf:type owl:Class .
+
+
+###  http://crossforest.eu/position/ontology/SpatialEntity
+<http://crossforest.eu/position/ontology/SpatialEntity> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://crossforest.eu/ifi/data/forestryInventory/ES/3
+<http://crossforest.eu/ifi/data/forestryInventory/ES/3> rdf:type owl:NamedIndividual ,
+                                                                 :ForestryInventory ;
+                                                        :hasVersionId 3 ;
+                                                        <http://purl.org/dc/elements/1.1/identifier> "IFN3" ;
+                                                        rdfs:comment "Proyecto realizado entre los años 1997 a 2007" ;
+                                                        rdfs:label "Tercer Inventario Forestal Nacional (IFN3)"@es ;
+                                                        rdfs:seeAlso <https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/informacion-disponible/ifn3.aspx> .
+
+
+###  http://crossforest.eu/ifi/data/forestryInventory/ES/4
+<http://crossforest.eu/ifi/data/forestryInventory/ES/4> rdf:type owl:NamedIndividual ,
+                                                                 :ForestryInventory ;
+                                                        :hasVersionId 4 ;
+                                                        <http://purl.org/dc/elements/1.1/identifier> "IFN4" ;
+                                                        rdfs:label "Cuarto Inventario Forestal Nacional (IFN4)"@es .
+
+
+###  http://crossforest.eu/ifi/data/forestryInventory/PT/6
+<http://crossforest.eu/ifi/data/forestryInventory/PT/6> rdf:type owl:NamedIndividual ,
+                                                                 :ForestryInventory ;
+                                                        :hasVersionId 6 ;
+                                                        <http://purl.org/dc/elements/1.1/identifier> "IFN6"@pt ;
+                                                        rdfs:comment "6º Inventário Florestal Nacional (IFN6)"@pt ,
+                                                                     "Este Inventário tem 2015 como ano de referência, correspondendo este ao ano em que foi realizada a cobertura nacional aerofotográfica digital que serve de base à avaliação do uso/ocupação do solo, e em que foi efetuado o trabalho de medição e avaliação da vegetação no terreno."@pt .
+
+
+###  http://crossforest.eu/ifi/data/nuts1/ES/ES1
+<http://crossforest.eu/ifi/data/nuts1/ES/ES1> rdf:type owl:NamedIndividual ,
+                                                       :NUTS1 ;
+                                              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                              rdfs:label "NOROESTE" ;
+                                              <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES1> ;
+                                              <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts2/ES/ES11> ,
+                                                                                             <http://crossforest.eu/ifi/data/nuts2/ES/ES12> ,
+                                                                                             <http://crossforest.eu/ifi/data/nuts2/ES/ES13> .
+
+
+###  http://crossforest.eu/ifi/data/nuts1/ES/ES2
+<http://crossforest.eu/ifi/data/nuts1/ES/ES2> rdf:type owl:NamedIndividual ,
+                                                       :NUTS1 ;
+                                              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                              rdfs:label "NORESTE" ;
+                                              <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES2> ;
+                                              <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts2/ES/ES21> ,
+                                                                                             <http://crossforest.eu/ifi/data/nuts2/ES/ES22> ,
+                                                                                             <http://crossforest.eu/ifi/data/nuts2/ES/ES23> ,
+                                                                                             <http://crossforest.eu/ifi/data/nuts2/ES/ES24> .
+
+
+###  http://crossforest.eu/ifi/data/nuts1/ES/ES3
+<http://crossforest.eu/ifi/data/nuts1/ES/ES3> rdf:type owl:NamedIndividual ,
+                                                       :NUTS1 ;
+                                              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                              rdfs:label "COMUNIDAD DE MADRID" ;
+                                              <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES3> ;
+                                              <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts2/ES/ES30> .
+
+
+###  http://crossforest.eu/ifi/data/nuts1/ES/ES4
+<http://crossforest.eu/ifi/data/nuts1/ES/ES4> rdf:type owl:NamedIndividual ,
+                                                       :NUTS1 ;
+                                              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                              rdfs:label "CENTRO" ;
+                                              <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES4> ;
+                                              <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts2/ES/ES41> ,
+                                                                                             <http://crossforest.eu/ifi/data/nuts2/ES/ES42> ,
+                                                                                             <http://crossforest.eu/ifi/data/nuts2/ES/ES43> .
+
+
+###  http://crossforest.eu/ifi/data/nuts1/ES/ES5
+<http://crossforest.eu/ifi/data/nuts1/ES/ES5> rdf:type owl:NamedIndividual ,
+                                                       :NUTS1 ;
+                                              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                              rdfs:label "ESTE" ;
+                                              <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES5> ;
+                                              <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts2/ES/ES51> ,
+                                                                                             <http://crossforest.eu/ifi/data/nuts2/ES/ES52> ,
+                                                                                             <http://crossforest.eu/ifi/data/nuts2/ES/ES53> .
+
+
+###  http://crossforest.eu/ifi/data/nuts1/ES/ES6
+<http://crossforest.eu/ifi/data/nuts1/ES/ES6> rdf:type owl:NamedIndividual ,
+                                                       :NUTS1 ;
+                                              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                              rdfs:label "SUR" ;
+                                              <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES6> ;
+                                              <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts2/ES/ES61> ,
+                                                                                             <http://crossforest.eu/ifi/data/nuts2/ES/ES62> ,
+                                                                                             <http://crossforest.eu/ifi/data/nuts2/ES/ES63> ,
+                                                                                             <http://crossforest.eu/ifi/data/nuts2/ES/ES64> .
+
+
+###  http://crossforest.eu/ifi/data/nuts1/ES/ES7
+<http://crossforest.eu/ifi/data/nuts1/ES/ES7> rdf:type owl:NamedIndividual ,
+                                                       :NUTS1 ;
+                                              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                              rdfs:label "CANARIAS" ;
+                                              <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES7> ;
+                                              <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts2/ES/ES70> .
+
+
+###  http://crossforest.eu/ifi/data/nuts1/PT/PT1
+<http://crossforest.eu/ifi/data/nuts1/PT/PT1> rdf:type owl:NamedIndividual ,
+                                                       :NUTS1 ;
+                                              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                              rdfs:label "CONTINENTE" ;
+                                              <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/PT1> ;
+                                              <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts2/PT/PT11> ,
+                                                                                             <http://crossforest.eu/ifi/data/nuts2/PT/PT15> ,
+                                                                                             <http://crossforest.eu/ifi/data/nuts2/PT/PT16> ,
+                                                                                             <http://crossforest.eu/ifi/data/nuts2/PT/PT17> ,
+                                                                                             <http://crossforest.eu/ifi/data/nuts2/PT/PT18> .
+
+
+###  http://crossforest.eu/ifi/data/nuts1/PT/PT2
+<http://crossforest.eu/ifi/data/nuts1/PT/PT2> rdf:type owl:NamedIndividual ,
+                                                       :NUTS1 ;
+                                              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                              rdfs:label "REGIÃO AUTÓNOMA DOS AÇORES (NUTS 1)" ;
+                                              <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/PT2> ;
+                                              <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts2/PT/PT20> .
+
+
+###  http://crossforest.eu/ifi/data/nuts1/PT/PT3
+<http://crossforest.eu/ifi/data/nuts1/PT/PT3> rdf:type owl:NamedIndividual ,
+                                                       :NUTS1 ;
+                                              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                              rdfs:label "REGIÃO AUTÓNOMA DA MADEIRA (NUTS 1)" ;
+                                              <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/PT3> ;
+                                              <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts2/PT/PT30> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/ES/ES11
+<http://crossforest.eu/ifi/data/nuts2/ES/ES11> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "GALICIA" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES1> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES11> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/ES/ES111> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES112> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES113> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES114> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/ES/ES12
+<http://crossforest.eu/ifi/data/nuts2/ES/ES12> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "PRINCIPADO DE ASTURIAS" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES1> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES12> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/ES/ES120> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/ES/ES13
+<http://crossforest.eu/ifi/data/nuts2/ES/ES13> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "CANTABRIA" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES1> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES13> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/ES/ES130> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/ES/ES21
+<http://crossforest.eu/ifi/data/nuts2/ES/ES21> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "PAÍS VASCO" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES2> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES21> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/ES/ES211> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES212> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES213> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/ES/ES22
+<http://crossforest.eu/ifi/data/nuts2/ES/ES22> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "COMUNIDAD FORAL DE NAVARRA" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES2> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES22> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/ES/ES220> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/ES/ES23
+<http://crossforest.eu/ifi/data/nuts2/ES/ES23> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "LA RIOJA" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES2> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES23> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/ES/ES230> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/ES/ES24
+<http://crossforest.eu/ifi/data/nuts2/ES/ES24> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "ARAGÓN" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES2> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES24> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/ES/ES241> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES242> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES243> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/ES/ES30
+<http://crossforest.eu/ifi/data/nuts2/ES/ES30> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "COMUNIDAD DE MADRID" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES3> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES30> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/ES/ES300> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/ES/ES41
+<http://crossforest.eu/ifi/data/nuts2/ES/ES41> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "CASTILLA Y LEÓN" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES4> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES41> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/ES/ES411> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES412> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES413> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES414> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES415> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES416> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES417> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES418> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES419> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/ES/ES42
+<http://crossforest.eu/ifi/data/nuts2/ES/ES42> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "CASTILLA-LA MANCHA" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES4> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES42> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/ES/ES421> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES422> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES423> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES424> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES425> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/ES/ES43
+<http://crossforest.eu/ifi/data/nuts2/ES/ES43> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "EXTREMADURA" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES4> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES43> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/ES/ES431> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES432> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/ES/ES51
+<http://crossforest.eu/ifi/data/nuts2/ES/ES51> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "CATALUÑA" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES5> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES51> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/ES/ES511> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES512> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES513> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES514> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/ES/ES52
+<http://crossforest.eu/ifi/data/nuts2/ES/ES52> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "COMUNIDAD VALENCIANA" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES5> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES52> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/ES/ES521> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES522> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES523> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/ES/ES53
+<http://crossforest.eu/ifi/data/nuts2/ES/ES53> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "ISLAS BALEARES" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES5> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES53> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/ES/ES531> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES532> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES533> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/ES/ES61
+<http://crossforest.eu/ifi/data/nuts2/ES/ES61> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "ANDALUCÍA" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES6> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES61> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/ES/ES611> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES612> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES613> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES614> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES615> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES616> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES617> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES618> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/ES/ES62
+<http://crossforest.eu/ifi/data/nuts2/ES/ES62> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "REGIÓN DE MURCIA" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES6> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES62> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/ES/ES620> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/ES/ES63
+<http://crossforest.eu/ifi/data/nuts2/ES/ES63> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "CIUDAD AUTÓNOMA DE CEUTA" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES6> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES63> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/ES/ES630> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/ES/ES64
+<http://crossforest.eu/ifi/data/nuts2/ES/ES64> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "CIUDAD AUTÓNOMA DE MELILLA" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES6> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES64> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/ES/ES640> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/ES/ES70
+<http://crossforest.eu/ifi/data/nuts2/ES/ES70> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "CANARIAS" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES7> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES70> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/ES/ES703> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES704> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES705> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES706> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES707> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES708> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/ES/ES709> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/PT/PT11
+<http://crossforest.eu/ifi/data/nuts2/PT/PT11> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "NORTE" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/PT/PT1> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/PT11> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/PT/PT111> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/PT/PT112> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/PT/PT119> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/PT/PT11A> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/PT/PT11B> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/PT/PT11C> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/PT/PT11D> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/PT/PT11E> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/PT/PT15
+<http://crossforest.eu/ifi/data/nuts2/PT/PT15> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "ALGARVE" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/PT/PT1> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/PT15> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/PT/PT150> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/PT/PT16
+<http://crossforest.eu/ifi/data/nuts2/PT/PT16> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "CENTRO" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/PT/PT1> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/PT16> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/PT/PT16B> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/PT/PT16D> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/PT/PT16E> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/PT/PT16F> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/PT/PT16G> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/PT/PT16H> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/PT/PT16I> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/PT/PT16J> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/PT/PT17
+<http://crossforest.eu/ifi/data/nuts2/PT/PT17> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "LISBOA" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/PT/PT1> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/PT17> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/PT/PT170> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/PT/PT18
+<http://crossforest.eu/ifi/data/nuts2/PT/PT18> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "ALENTEJO" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/PT/PT1> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/PT18> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/PT/PT181> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/PT/PT184> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/PT/PT185> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/PT/PT186> ,
+                                                                                              <http://crossforest.eu/ifi/data/nuts3/PT/PT187> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/PT/PT20
+<http://crossforest.eu/ifi/data/nuts2/PT/PT20> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "REGIÃO AUTÓNOMA DOS AÇORES (NUTS 2)" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/PT/PT2> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/PT20> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/PT/PT200> .
+
+
+###  http://crossforest.eu/ifi/data/nuts2/PT/PT30
+<http://crossforest.eu/ifi/data/nuts2/PT/PT30> rdf:type owl:NamedIndividual ,
+                                                        :NUTS2 ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                               rdfs:label "REGIÃO AUTÓNOMA DA MADEIRA (NUTS 2)" ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/PT/PT3> ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/PT30> ;
+                                               <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/PT/PT300> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES111
+<http://crossforest.eu/ifi/data/nuts3/ES/ES111> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "A CORUÑA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES11> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES111> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES112
+<http://crossforest.eu/ifi/data/nuts3/ES/ES112> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "LUGO" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES11> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES112> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES113
+<http://crossforest.eu/ifi/data/nuts3/ES/ES113> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "ORENSE" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES11> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES113> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES114
+<http://crossforest.eu/ifi/data/nuts3/ES/ES114> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "PONTEVEDRA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES11> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES114> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES120
+<http://crossforest.eu/ifi/data/nuts3/ES/ES120> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "PRINCIPADO DE ASTURIAS (NUTS 3)" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES12> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES120> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES130
+<http://crossforest.eu/ifi/data/nuts3/ES/ES130> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "CANTABRIA (NUTS 3)" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES13> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES130> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES211
+<http://crossforest.eu/ifi/data/nuts3/ES/ES211> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "ÁLAVA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES21> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES211> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES212
+<http://crossforest.eu/ifi/data/nuts3/ES/ES212> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "GUIPÚZCOA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES21> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES212> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES213
+<http://crossforest.eu/ifi/data/nuts3/ES/ES213> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "VIZCAYA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES21> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES213> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES220
+<http://crossforest.eu/ifi/data/nuts3/ES/ES220> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "COMUNIDAD FORAL DE NAVARRA (NUTS 3)" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES22> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES220> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES230
+<http://crossforest.eu/ifi/data/nuts3/ES/ES230> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "LA RIOJA (NUTS 3)" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES23> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES230> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES241
+<http://crossforest.eu/ifi/data/nuts3/ES/ES241> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "HUESCA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES24> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES241> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES242
+<http://crossforest.eu/ifi/data/nuts3/ES/ES242> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "TERUEL" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES24> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES242> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES243
+<http://crossforest.eu/ifi/data/nuts3/ES/ES243> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "ZARAGOZA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES24> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES243> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES300
+<http://crossforest.eu/ifi/data/nuts3/ES/ES300> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "COMUNIDAD DE MADRID (NUTS 3)" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES30> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES300> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES411
+<http://crossforest.eu/ifi/data/nuts3/ES/ES411> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "ÁVILA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES41> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES411> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES412
+<http://crossforest.eu/ifi/data/nuts3/ES/ES412> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "BURGOS" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES41> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES412> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES413
+<http://crossforest.eu/ifi/data/nuts3/ES/ES413> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "LEÓN" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES41> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES413> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES414
+<http://crossforest.eu/ifi/data/nuts3/ES/ES414> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "PALENCIA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES41> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES414> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES415
+<http://crossforest.eu/ifi/data/nuts3/ES/ES415> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "SALAMANCA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES41> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES415> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES416
+<http://crossforest.eu/ifi/data/nuts3/ES/ES416> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "SEGOVIA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES41> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES416> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES417
+<http://crossforest.eu/ifi/data/nuts3/ES/ES417> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "SORIA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES41> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES417> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES418
+<http://crossforest.eu/ifi/data/nuts3/ES/ES418> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "VALLADOLID" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES41> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES418> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES419
+<http://crossforest.eu/ifi/data/nuts3/ES/ES419> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "ZAMORA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES41> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES419> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES421
+<http://crossforest.eu/ifi/data/nuts3/ES/ES421> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "ALBACETE" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES42> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES421> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES422
+<http://crossforest.eu/ifi/data/nuts3/ES/ES422> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "CIUDAD REAL" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES42> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES422> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES423
+<http://crossforest.eu/ifi/data/nuts3/ES/ES423> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "CUENCA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES42> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES423> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES424
+<http://crossforest.eu/ifi/data/nuts3/ES/ES424> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "GUADALAJARA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES42> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES424> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES425
+<http://crossforest.eu/ifi/data/nuts3/ES/ES425> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "TOLEDO" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES42> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES425> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES431
+<http://crossforest.eu/ifi/data/nuts3/ES/ES431> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "BADAJOZ" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES43> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES431> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES432
+<http://crossforest.eu/ifi/data/nuts3/ES/ES432> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "CÁCERES" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES43> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES432> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES511
+<http://crossforest.eu/ifi/data/nuts3/ES/ES511> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "BARCELONA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES51> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES511> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES512
+<http://crossforest.eu/ifi/data/nuts3/ES/ES512> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "GERONA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES51> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES512> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES513
+<http://crossforest.eu/ifi/data/nuts3/ES/ES513> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "LÉRIDA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES51> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES513> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES514
+<http://crossforest.eu/ifi/data/nuts3/ES/ES514> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "TARRAGONA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES51> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES514> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES521
+<http://crossforest.eu/ifi/data/nuts3/ES/ES521> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "ALICANTE" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES52> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES521> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES522
+<http://crossforest.eu/ifi/data/nuts3/ES/ES522> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "CASTELLÓN" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES52> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES522> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES523
+<http://crossforest.eu/ifi/data/nuts3/ES/ES523> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "VALENCIA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES52> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES523> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES531
+<http://crossforest.eu/ifi/data/nuts3/ES/ES531> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "IBIZA Y FORMENTERA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES53> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES531> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES532
+<http://crossforest.eu/ifi/data/nuts3/ES/ES532> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "MALLORCA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES53> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES532> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES533
+<http://crossforest.eu/ifi/data/nuts3/ES/ES533> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "MENORCA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES53> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES533> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES611
+<http://crossforest.eu/ifi/data/nuts3/ES/ES611> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "ALMERÍA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES61> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES611> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES612
+<http://crossforest.eu/ifi/data/nuts3/ES/ES612> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "CÁDIZ" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES61> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES612> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES613
+<http://crossforest.eu/ifi/data/nuts3/ES/ES613> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "CÓRDOBA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES61> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES613> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES614
+<http://crossforest.eu/ifi/data/nuts3/ES/ES614> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "GRANADA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES61> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES614> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES615
+<http://crossforest.eu/ifi/data/nuts3/ES/ES615> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "HUELVA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES61> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES615> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES616
+<http://crossforest.eu/ifi/data/nuts3/ES/ES616> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "JAÉN" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES61> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES616> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES617
+<http://crossforest.eu/ifi/data/nuts3/ES/ES617> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "MÁLAGA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES61> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES617> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES618
+<http://crossforest.eu/ifi/data/nuts3/ES/ES618> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "SEVILLA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES61> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES618> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES620
+<http://crossforest.eu/ifi/data/nuts3/ES/ES620> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "REGIÓN DE MURCIA (NUTS 3)" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES62> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES620> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES630
+<http://crossforest.eu/ifi/data/nuts3/ES/ES630> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "CEUTA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES63> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES630> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES640
+<http://crossforest.eu/ifi/data/nuts3/ES/ES640> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "MELILLA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES64> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES640> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES703
+<http://crossforest.eu/ifi/data/nuts3/ES/ES703> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "EL HIERRO" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES70> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES703> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES704
+<http://crossforest.eu/ifi/data/nuts3/ES/ES704> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "FUERTEVENTURA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES70> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES704> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES705
+<http://crossforest.eu/ifi/data/nuts3/ES/ES705> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "GRAN CANARIA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES70> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES705> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES706
+<http://crossforest.eu/ifi/data/nuts3/ES/ES706> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "LA GOMERA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES70> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES706> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES707
+<http://crossforest.eu/ifi/data/nuts3/ES/ES707> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "LA PALMA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES70> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES707> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES708
+<http://crossforest.eu/ifi/data/nuts3/ES/ES708> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "LANZAROTE" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES70> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES708> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/ES/ES709
+<http://crossforest.eu/ifi/data/nuts3/ES/ES709> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "TENERIFE" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES70> ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES709> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT111
+<http://crossforest.eu/ifi/data/nuts3/PT/PT111> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "ALTO MINHO" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT11> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT112
+<http://crossforest.eu/ifi/data/nuts3/PT/PT112> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "CÁVADO" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT11> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT119
+<http://crossforest.eu/ifi/data/nuts3/PT/PT119> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "AVE" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT11> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT11A
+<http://crossforest.eu/ifi/data/nuts3/PT/PT11A> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "ÁREA METROPOLITANA DO PORTO" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT11> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT11B
+<http://crossforest.eu/ifi/data/nuts3/PT/PT11B> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "ALTO TÂMEGA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT11> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT11C
+<http://crossforest.eu/ifi/data/nuts3/PT/PT11C> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "TÂMEGA E SOUSA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT11> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT11D
+<http://crossforest.eu/ifi/data/nuts3/PT/PT11D> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "DOURO" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT11> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT11E
+<http://crossforest.eu/ifi/data/nuts3/PT/PT11E> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "TERRAS DE TRÁS-OS-MONTES" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT11> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT150
+<http://crossforest.eu/ifi/data/nuts3/PT/PT150> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "ALGARVE (NUTS 3)" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT15> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT16B
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16B> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "OESTE" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT16> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT16D
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16D> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "REGIÃO DE AVEIRO" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT16> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT16E
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16E> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "REGIÃO DE COIMBRA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT16> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT16F
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16F> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "REGIÃO DE LEIRIA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT16> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT16G
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16G> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "VISEU DÃO LAFÕES" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT16> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT16H
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16H> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "BEIRA BAIXA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT16> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT16I
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16I> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "MÉDIO TEJO" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT16> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT16J
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16J> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "BEIRAS E SERRA DA ESTRELA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT16> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT170
+<http://crossforest.eu/ifi/data/nuts3/PT/PT170> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "ÁREA METROPOLITANA DE LISBOA" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT17> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT181
+<http://crossforest.eu/ifi/data/nuts3/PT/PT181> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "ALENTEJO LITORAL" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT18> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT184
+<http://crossforest.eu/ifi/data/nuts3/PT/PT184> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "BAIXO ALENTEJO" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT18> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT185
+<http://crossforest.eu/ifi/data/nuts3/PT/PT185> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "LEZÍRIA DO TEJO" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT18> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT186
+<http://crossforest.eu/ifi/data/nuts3/PT/PT186> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "ALTO ALENTEJO" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT18> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT187
+<http://crossforest.eu/ifi/data/nuts3/PT/PT187> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "ALENTEJO CENTRAL" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT18> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT200
+<http://crossforest.eu/ifi/data/nuts3/PT/PT200> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "REGIÃO AUTÓNOMA DOS AÇORES (NUTS3)" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT20> .
+
+
+###  http://crossforest.eu/ifi/data/nuts3/PT/PT300
+<http://crossforest.eu/ifi/data/nuts3/PT/PT300> rdf:type owl:NamedIndividual ,
+                                                         :NUTS3 ;
+                                                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                                                rdfs:label "REGIÃO AUTÓNOMA DA MADEIRA (NUTS3)" ;
+                                                <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT30> .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Acácias>
+                <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Alfarrobeira>
+                <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Azinheira>
+                <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Carvalhos>
+                <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Castanheiro>
+                <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Eucaliptos>
+                <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_folhosas>
+                <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_resinosas>
+                <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-bravo>
+                <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-manso>
+                <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Sobreiro>
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

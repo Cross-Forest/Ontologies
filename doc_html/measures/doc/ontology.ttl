@@ -1,0 +1,619 @@
+@prefix : <http://crossforest.eu/measures/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://crossforest.eu/measures/ontology/> .
+
+<http://crossforest.eu/measures/ontology/> rdf:type owl:Ontology ;
+                                            <http://purl.org/dc/elements/1.1/creator> <https://www.gsic.uva.es/members/guiveg> ,
+                                                                                      <https://www.gsic.uva.es/members/josgim> ;
+                                            <http://purl.org/dc/elements/1.1/date> "2019-07-17"^^xsd:date ;
+                                            <http://purl.org/vocab/vann/preferredNamespacePrefix> "smo" ;
+                                            rdfs:comment "A simple ontology to publish data about measures in different units"@en ,
+                                                         "Una ontología sencilla para publicar datos sobre medidas en diferentes unidades" ;
+                                            rdfs:label "Ontología de Medidas Simples"@es ,
+                                                       "Simple Measures Ontology"@en ;
+                                            owl:versionInfo 0.2 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://crossforest.eu/measures/ontology/hasMeasure
+:hasMeasure rdf:type owl:ObjectProperty ;
+            rdfs:range :Measure ;
+            rdfs:comment "has a measure with a value and expressed using some concrete units"@en ,
+                         "tiene una medida con un valor y expresada en unas unidades concretas"@es ;
+            rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+            rdfs:label "has measure"@en ,
+                       "tiene medida"@es .
+
+
+###  http://crossforest.eu/measures/ontology/hasUnit
+:hasUnit rdf:type owl:ObjectProperty ;
+         rdfs:domain :Measure ;
+         rdfs:range :Unit ;
+         rdfs:comment "unidades de una medida"@es ,
+                      "units of a measure"@en ;
+         rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+         rdfs:label "has unit"@en ,
+                    "tiene unidades"@es .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://crossforest.eu/measures/ontology/hasMeasureInCentimeters
+:hasMeasureInCentimeters rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf :hasMeasureLiteral ;
+                         rdfs:domain :MeasureInCentimeters ;
+                         rdfs:comment "valor de una medida en centímetros"@es ,
+                                      "value of a measure in centimeters"@en ;
+                         rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                         rdfs:label "valor en centímetros"@es ,
+                                    "value in centimeters"@en .
+
+
+###  http://crossforest.eu/measures/ontology/hasMeasureInDecimeters
+:hasMeasureInDecimeters rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :hasMeasureLiteral ;
+                        rdfs:domain :MeasurableEntityInDecimeters ;
+                        rdfs:comment "valor de una medida en decímetros"@es ,
+                                     "value of a measure in decimeters"@en ;
+                        rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                        rdfs:label "valor en decímetros"@es ,
+                                   "value in decimeters"@en .
+
+
+###  http://crossforest.eu/measures/ontology/hasMeasureInMeters
+:hasMeasureInMeters rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :hasMeasureLiteral ;
+                    rdfs:domain :MeasurableEntityInMeters ;
+                    rdfs:comment "valor de una medida en metros"@es ,
+                                 "value of a measure in meters"@en ;
+                    rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                    rdfs:label "valor en metros"@es ,
+                               "value in meters"@en .
+
+
+###  http://crossforest.eu/measures/ontology/hasMeasureInMillimeters
+:hasMeasureInMillimeters rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf :hasMeasureLiteral ;
+                         rdfs:domain :MeasurableEntityInMillimeters ;
+                         rdfs:comment "valor de una medida en milímetros"@es ,
+                                      "value of a measure in millimeters"@en ;
+                         rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                         rdfs:label "valor en milímetros"@es ,
+                                    "value in millimeters"@en .
+
+
+###  http://crossforest.eu/measures/ontology/hasMeasureLiteral
+:hasMeasureLiteral rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :MeasurableEntity ;
+                   rdfs:range xsd:decimal ;
+                   rdfs:comment "measure expressed as a decimal literal"@en ,
+                                "medida expresada directamente en un literal decimal"@es ;
+                   rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                   rdfs:label "measure"@en ,
+                              "medida"@es .
+
+
+###  http://crossforest.eu/measures/ontology/hasMeasureinDegrees
+:hasMeasureinDegrees rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :hasMeasureLiteral ;
+                     rdfs:domain :MeasurableEntityInDegrees ;
+                     rdfs:comment "valor de una medida angular en grados"@es ,
+                                  "value of an angular meausure in degrees"@en ;
+                     rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                     rdfs:label "valor en grados"@es ,
+                                "value in degrees"@en .
+
+
+###  http://crossforest.eu/measures/ontology/hasMeasureinGradians
+:hasMeasureinGradians rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :hasMeasureLiteral ;
+                      rdfs:domain :MeasurableEntityInGradians ;
+                      rdfs:comment "valor de una medida angular en gradianes"@es ,
+                                   "value of an angular meausure in gradians"@en ;
+                      rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                      rdfs:label "valor en gradianes"@es ,
+                                 "value in gradians"@en .
+
+
+###  http://crossforest.eu/measures/ontology/hasMeasureinHectares
+:hasMeasureinHectares rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :hasMeasureLiteral ;
+                      rdfs:domain :MeasurableEntityInHectares ;
+                      rdfs:comment "valor de una medida en hectáreas"@es ,
+                                   "value of an meausure in hectares"@en ;
+                      rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                      rdfs:label "valor en hectáreas"@es ,
+                                 "value in hectares"@en .
+
+
+###  http://crossforest.eu/measures/ontology/hasMeasureinPercentage
+:hasMeasureinPercentage rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :hasMeasureLiteral ;
+                        rdfs:domain :MeasurableEntityInSquareMeters ;
+                        rdfs:comment "valor de una medida en porcentaje"@es ,
+                                     "value of an meausure in percentage"@en ;
+                        rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                        rdfs:label "valor en porcentaje"@es ,
+                                   "value in percentage"@en .
+
+
+###  http://crossforest.eu/measures/ontology/hasMeasureinSquareMeters
+:hasMeasureinSquareMeters rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :hasMeasureLiteral ;
+                          rdfs:domain :MeasurableEntityInSquareMeters ;
+                          rdfs:comment "valor de una medida en square meters"@es ,
+                                       "value of an meausure in square meters"@en ;
+                          rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                          rdfs:label "valor en square meters"@es ,
+                                     "value in square meters"@en .
+
+
+###  http://crossforest.eu/measures/ontology/hasMeasureinYears
+:hasMeasureinYears rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :hasMeasureLiteral ;
+                   rdfs:domain :MeasurableEntityInYears ;
+                   rdfs:comment "valor de una medida en años"@es ,
+                                "value of an meausure in years"@en ;
+                   rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                   rdfs:label "valor en años"@es ,
+                              "value in years"@en .
+
+
+###  http://crossforest.eu/measures/ontology/hasValue
+:hasValue rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Measure ;
+          rdfs:range xsd:decimal ;
+          rdfs:comment "valor de una medida"@es ,
+                       "value of a measure"@en ;
+          rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+          rdfs:label "valor"@es ,
+                     "value"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://crossforest.eu/measures/ontology/Hectares
+:Hectares rdf:type owl:Class .
+
+
+###  http://crossforest.eu/measures/ontology/MeasurableEntity
+:MeasurableEntity rdf:type owl:Class ;
+                  owl:disjointWith :Measure ,
+                                   :Unit ;
+                  rdfs:comment "Entidad de la cual se toma una o varias medidas"@es ,
+                               "Entity from which a measure or a number of measures is taken"@en ;
+                  rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                  rdfs:label "Entidad medible"@es ,
+                             "Measurable Entity"@en .
+
+
+###  http://crossforest.eu/measures/ontology/MeasurableEntityInCentimeters
+:MeasurableEntityInCentimeters rdf:type owl:Class ;
+                               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :hasMeasure ;
+                                                     owl:someValuesFrom :MeasureInCentimeters
+                                                   ] ;
+                               rdfs:comment "Entidad de la cual se toma una medida en centímetros"@es ,
+                                            "Entity from which a measure in centimeters is taken"@en ;
+                               rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                               rdfs:label "Entidad medible en centímetros"@es ,
+                                          "Measurable Entity in Centimeters"@en .
+
+
+###  http://crossforest.eu/measures/ontology/MeasurableEntityInDecimeters
+:MeasurableEntityInDecimeters rdf:type owl:Class ;
+                              owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :hasMeasure ;
+                                                    owl:someValuesFrom :MeasureInDecimeters
+                                                  ] ;
+                              rdfs:comment "Entidad de la cual se toma una medida en decímetros"@es ,
+                                           "Entity from which a measure in decimeters is taken"@en ;
+                              rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                              rdfs:label "Entidad medible en decímetros"@es ,
+                                         "Measurable Entity in Decimeters"@en .
+
+
+###  http://crossforest.eu/measures/ontology/MeasurableEntityInDegrees
+:MeasurableEntityInDegrees rdf:type owl:Class .
+
+
+###  http://crossforest.eu/measures/ontology/MeasurableEntityInGradians
+:MeasurableEntityInGradians rdf:type owl:Class .
+
+
+###  http://crossforest.eu/measures/ontology/MeasurableEntityInHectares
+:MeasurableEntityInHectares rdf:type owl:Class ;
+                            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :hasMeasure ;
+                                                  owl:someValuesFrom :Hectares
+                                                ] ;
+                            rdfs:comment "Entidad de la cual se toma una medida en hectáreas"@es ,
+                                         "Entity from which a measure in hectares is taken"@en ;
+                            rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                            rdfs:label "Entidad medible en hectáreas"@es ,
+                                       "Measurable Entity in Hectares"@en .
+
+
+###  http://crossforest.eu/measures/ontology/MeasurableEntityInMeters
+:MeasurableEntityInMeters rdf:type owl:Class ;
+                          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                owl:onProperty :hasMeasure ;
+                                                owl:someValuesFrom :MeasureInMeters
+                                              ] ;
+                          rdfs:comment "Entidad de la cual se toma una medida en metros"@es ,
+                                       "Entity from which a measure in meters is taken"@en ;
+                          rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                          rdfs:label "Entidad medible en metros"@es ,
+                                     "Measurable Entity in Meters"@en .
+
+
+###  http://crossforest.eu/measures/ontology/MeasurableEntityInMillimeters
+:MeasurableEntityInMillimeters rdf:type owl:Class ;
+                               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :hasMeasure ;
+                                                     owl:someValuesFrom :MeasureInMillimeters
+                                                   ] ;
+                               rdfs:comment "Entidad de la cual se toma una medida en milímetros"@es ,
+                                            "Entity from which a measure in millimeters is taken"@en ;
+                               rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                               rdfs:label "Entidad medible en milímetros"@es ,
+                                          "Measurable Entity in Millimeters"@en .
+
+
+###  http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters
+:MeasurableEntityInSquareMeters rdf:type owl:Class ;
+                                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :hasMeasure ;
+                                                      owl:someValuesFrom :MeasureSquareMeters
+                                                    ] ;
+                                rdfs:comment "Entidad de la cual se toma una medida en metros cuadrados"@es ,
+                                             "Entity from which a measure in square meters is taken"@en ;
+                                rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                                rdfs:label "Entidad medible en metros cuadrados"@es ,
+                                           "Measurable Entity in Square Meters"@en .
+
+
+###  http://crossforest.eu/measures/ontology/MeasurableEntityInYears
+:MeasurableEntityInYears rdf:type owl:Class ;
+                         owl:equivalentClass [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasMeasure ;
+                                               owl:someValuesFrom :Years
+                                             ] ;
+                         rdfs:comment "Entidad de la cual se toma una medida en años"@es ,
+                                      "Entity from which a measure in years is taken"@en ;
+                         rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                         rdfs:label "Entidad medible en años"@es ,
+                                    "Measurable Entity in Years"@en .
+
+
+###  http://crossforest.eu/measures/ontology/Measure
+:Measure rdf:type owl:Class ;
+         owl:disjointWith :Unit ;
+         rdfs:comment "Measure with a value and expressed used some concrete units"@en ,
+                      "Una medida con un valor y expresada en unas unidades concretas"@es ;
+         rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+         rdfs:label "Measure"@en ,
+                    "Medida"@es .
+
+
+###  http://crossforest.eu/measures/ontology/MeasureInCentimeters
+:MeasureInCentimeters rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                            owl:onProperty :hasUnit ;
+                                            owl:hasValue <http://crossforest.eu/measures/data/unit/Centimeters>
+                                          ] ;
+                      rdfs:subClassOf :Measure ;
+                      rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> .
+
+
+###  http://crossforest.eu/measures/ontology/MeasureInDecimeters
+:MeasureInDecimeters rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasUnit ;
+                                           owl:hasValue <http://crossforest.eu/measures/data/unit/Decimeters>
+                                         ] ;
+                     rdfs:subClassOf :Measure ;
+                     rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> .
+
+
+###  http://crossforest.eu/measures/ontology/MeasureInDegrees
+:MeasureInDegrees rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasUnit ;
+                                        owl:hasValue <http://crossforest.eu/measures/data/unit/Degrees>
+                                      ] ;
+                  rdfs:subClassOf :Measure ;
+                  rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> .
+
+
+###  http://crossforest.eu/measures/ontology/MeasureInGradians
+:MeasureInGradians rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasUnit ;
+                                         owl:hasValue <http://crossforest.eu/measures/data/unit/Gradians>
+                                       ] ;
+                   rdfs:subClassOf :Measure ;
+                   rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> .
+
+
+###  http://crossforest.eu/measures/ontology/MeasureInHectares
+:MeasureInHectares rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasUnit ;
+                                         owl:hasValue <http://crossforest.eu/measures/data/unit/Hectare>
+                                       ] ;
+                   rdfs:subClassOf :Measure ;
+                   rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> .
+
+
+###  http://crossforest.eu/measures/ontology/MeasureInMeters
+:MeasureInMeters rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasUnit ;
+                                       owl:hasValue <http://crossforest.eu/measures/data/unit/Meters>
+                                     ] ;
+                 rdfs:subClassOf :Measure ;
+                 rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> .
+
+
+###  http://crossforest.eu/measures/ontology/MeasureInMillimeters
+:MeasureInMillimeters rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                            owl:onProperty :hasUnit ;
+                                            owl:hasValue <http://crossforest.eu/measures/data/unit/Millimeters>
+                                          ] ;
+                      rdfs:subClassOf :Measure ;
+                      rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> .
+
+
+###  http://crossforest.eu/measures/ontology/MeasureInPercentage
+:MeasureInPercentage rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasUnit ;
+                                           owl:hasValue <http://crossforest.eu/measures/data/unit/Percentage>
+                                         ] ;
+                     rdfs:subClassOf :Measure ;
+                     rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> .
+
+
+###  http://crossforest.eu/measures/ontology/MeasureInSquareMeters
+:MeasureInSquareMeters rdf:type owl:Class ;
+                       owl:equivalentClass [ rdf:type owl:Restriction ;
+                                             owl:onProperty :hasUnit ;
+                                             owl:hasValue <http://crossforest.eu/measures/data/unit/SquareMeters>
+                                           ] ;
+                       rdfs:subClassOf :Measure ;
+                       rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> .
+
+
+###  http://crossforest.eu/measures/ontology/MeasureInUnities
+:MeasureInUnities rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasUnit ;
+                                        owl:hasValue <http://crossforest.eu/measures/data/unit/Unities>
+                                      ] ;
+                  rdfs:subClassOf :Measure ;
+                  rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> .
+
+
+###  http://crossforest.eu/measures/ontology/MeasureInYears
+:MeasureInYears rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasUnit ;
+                                      owl:hasValue <http://crossforest.eu/measures/data/unit/Years>
+                                    ] ;
+                rdfs:subClassOf :Measure ;
+                rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> .
+
+
+###  http://crossforest.eu/measures/ontology/MeasureSquareMeters
+:MeasureSquareMeters rdf:type owl:Class .
+
+
+###  http://crossforest.eu/measures/ontology/Reliability
+:Reliability rdf:type owl:Class ;
+             rdfs:comment "Fiabilidad de la medida"@es ,
+                          "Reliability of the measure"@en ;
+             rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+             rdfs:label "Fiabilidad"@es ,
+                        "Reliability"@en .
+
+
+###  http://crossforest.eu/measures/ontology/Source
+:Source rdf:type owl:Class ;
+        rdfs:comment "Fuente de la medida"@es ,
+                     "Source of the measure"@en ;
+        rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+        rdfs:label "Fuente"@es ,
+                   "Source"@en .
+
+
+###  http://crossforest.eu/measures/ontology/Unit
+:Unit rdf:type owl:Class ;
+      rdfs:comment "Unidades en las que se toma una medida"@es ,
+                   "Unit in which a measure is taken"@en ;
+      rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+      rdfs:label "Unidades"@es ,
+                 "Unit"@en .
+
+
+###  http://crossforest.eu/measures/ontology/Years
+:Years rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://crossforest.eu/measures/data/unit/Centimeters
+<http://crossforest.eu/measures/data/unit/Centimeters> rdf:type owl:NamedIndividual ,
+                                                                :Unit ;
+                                                       rdfs:comment "Centimeter as unit for a measure"@en ,
+                                                                    "Centímetro como unidad de una medida"@es ;
+                                                       rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                                                       rdfs:label "Centimeters"@en ,
+                                                                  "Centímetros"@es .
+
+
+###  http://crossforest.eu/measures/data/unit/Decimeters
+<http://crossforest.eu/measures/data/unit/Decimeters> rdf:type owl:NamedIndividual ,
+                                                               :Unit ;
+                                                      rdfs:comment "Decimeter as unit for a measure"@en ,
+                                                                   "Decímetro como unidad de una medida"@es ;
+                                                      rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                                                      rdfs:label "Decimeters"@en ,
+                                                                 "Decímetros"@es .
+
+
+###  http://crossforest.eu/measures/data/unit/Degrees
+<http://crossforest.eu/measures/data/unit/Degrees> rdf:type owl:NamedIndividual ,
+                                                            :Unit ;
+                                                   rdfs:comment "Degree as a unit for angular measure. A degree is equivalent to 0.017453292519943278 radians"@em ,
+                                                                "Grado como unidad de medida angular. Cada grado es equivalente a 0.017453292519943278 radianes"@es ;
+                                                   rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                                                   rdfs:label "Degrees"@en ,
+                                                              "Grados"@es .
+
+
+###  http://crossforest.eu/measures/data/unit/Gradians
+<http://crossforest.eu/measures/data/unit/Gradians> rdf:type owl:NamedIndividual ,
+                                                             :Unit ;
+                                                    rdfs:comment "Gradians as a unit for angular measure. A gradian is equivalent to 0.015707963267948966192 radians"@em ,
+                                                                 "Gradián como unidad de medida angular. Cada gradián es equivalente a 0.015707963267948966192 radianes"@es ;
+                                                    rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                                                    rdfs:label "Gradians"@en ,
+                                                               "Grados Centesimales"@es .
+
+
+###  http://crossforest.eu/measures/data/unit/Hectare
+<http://crossforest.eu/measures/data/unit/Hectare> rdf:type owl:NamedIndividual .
+
+
+###  http://crossforest.eu/measures/data/unit/Hectares
+<http://crossforest.eu/measures/data/unit/Hectares> rdf:type owl:NamedIndividual ,
+                                                             :Unit ;
+                                                    rdfs:comment "Hectares as a unity of measure"@en ,
+                                                                 "Hectáreas como unidad de medida"@es ;
+                                                    rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                                                    rdfs:label "Hectares"@en ,
+                                                               "Hectáreas"@es .
+
+
+###  http://crossforest.eu/measures/data/unit/M2byHA
+<http://crossforest.eu/measures/data/unit/M2byHA> rdf:type owl:NamedIndividual ,
+                                                           :Unit ;
+                                                  rdfs:comment "Metros cuadrados por hectárea como unidad de medida"@es ,
+                                                               "Square Meters by Hectare as a unity of measure"@en ;
+                                                  rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                                                  rdfs:label "Metros cuadrados por hectárea"@es ,
+                                                             "Square Meters by Hectare"@en .
+
+
+###  http://crossforest.eu/measures/data/unit/M3byHA
+<http://crossforest.eu/measures/data/unit/M3byHA> rdf:type owl:NamedIndividual ,
+                                                           :Unit ;
+                                                  rdfs:comment "Cubic Meters by Hectare as a unity of measure"@en ,
+                                                               "Metros cúbicos por hectárea como unidad de medida"@es ;
+                                                  rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                                                  rdfs:label "Cubic Meters by Hectare"@en ,
+                                                             "Metros cúbicos por hectárea"@es .
+
+
+###  http://crossforest.eu/measures/data/unit/Meters
+<http://crossforest.eu/measures/data/unit/Meters> rdf:type owl:NamedIndividual ,
+                                                           :Unit ;
+                                                  rdfs:comment "Meter as unit for a measure"@en ,
+                                                               "Metro como unidad de una medida"@es ;
+                                                  rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                                                  rdfs:label "Meters"@en ,
+                                                             "Metros"@es .
+
+
+###  http://crossforest.eu/measures/data/unit/Millimeters
+<http://crossforest.eu/measures/data/unit/Millimeters> rdf:type owl:NamedIndividual ,
+                                                                :Unit ;
+                                                       rdfs:comment "Millimeter as unit for a measure"@en ,
+                                                                    "Milímetro como unidad de una medida"@es ;
+                                                       rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                                                       rdfs:label "Millimeters"@en ,
+                                                                  "Milímetros"@es .
+
+
+###  http://crossforest.eu/measures/data/unit/Percentage
+<http://crossforest.eu/measures/data/unit/Percentage> rdf:type owl:NamedIndividual ,
+                                                               :Unit ;
+                                                      rdfs:comment "100 as a unity of measure"@en ,
+                                                                   "100 como unidad de medida"@es ;
+                                                      rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                                                      rdfs:label "Percentage"@en ,
+                                                                 "Porcentaje"@es .
+
+
+###  http://crossforest.eu/measures/data/unit/SquareMeters
+<http://crossforest.eu/measures/data/unit/SquareMeters> rdf:type owl:NamedIndividual ,
+                                                                 :Unit ;
+                                                        rdfs:comment "Metros cuadrados como unidad de medida de área."@es ,
+                                                                     "Square meters as a unit for area measure."@em ;
+                                                        rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                                                        rdfs:label "Metros Cuadrados"@es ,
+                                                                   "Square Meters"@en .
+
+
+###  http://crossforest.eu/measures/data/unit/Unities
+<http://crossforest.eu/measures/data/unit/Unities> rdf:type owl:NamedIndividual ,
+                                                            :Unit ;
+                                                   rdfs:comment "Unidad (i.e., el número 1) como unidad de medida"@es ,
+                                                                "Unity (i.e., the number 1) as a unity of measure"@en ;
+                                                   rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                                                   rdfs:label "Unidades"@es ,
+                                                              "Unities"@en ;
+                                                   rdfs:seeAlso <https://iopscience.iop.org/article/10.1088/0026-1394/31/6/013/meta> .
+
+
+###  http://crossforest.eu/measures/data/unit/UnitsByHA
+<http://crossforest.eu/measures/data/unit/UnitsByHA> rdf:type owl:NamedIndividual ,
+                                                              :Unit ;
+                                                     rdfs:comment "Unidades por hectárea como unidad de medida"@es ,
+                                                                  "Units by Hectare as a unity of measure"@en ;
+                                                     rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                                                     rdfs:label "Unidades por hectárea"@es ,
+                                                                "Units by Hectare"@en .
+
+
+###  http://crossforest.eu/measures/data/unit/Years
+<http://crossforest.eu/measures/data/unit/Years> rdf:type owl:NamedIndividual ,
+                                                          :Unit ;
+                                                 rdfs:comment "Años como unidad de medida"@es ,
+                                                              "Years as a unity of measure"@en ;
+                                                 rdfs:isDefinedBy <http://crossforest.eu/measures/ontology/> ;
+                                                 rdfs:label "Años"@es ,
+                                                            "Years"@en .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

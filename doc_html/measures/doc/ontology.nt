@@ -1,0 +1,575 @@
+<http://crossforest.eu/measures/ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://crossforest.eu/measures/ontology/> <http://purl.org/dc/elements/1.1/creator> <https://www.gsic.uva.es/members/guiveg> .
+<http://crossforest.eu/measures/ontology/> <http://purl.org/dc/elements/1.1/creator> <https://www.gsic.uva.es/members/josgim> .
+<http://crossforest.eu/measures/ontology/> <http://purl.org/dc/elements/1.1/date> "2019-07-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://crossforest.eu/measures/ontology/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "smo" .
+<http://crossforest.eu/measures/ontology/> <http://www.w3.org/2000/01/rdf-schema#comment> "A simple ontology to publish data about measures in different units"@en .
+<http://crossforest.eu/measures/ontology/> <http://www.w3.org/2000/01/rdf-schema#comment> "Una ontología sencilla para publicar datos sobre medidas en diferentes unidades" .
+<http://crossforest.eu/measures/ontology/> <http://www.w3.org/2000/01/rdf-schema#label> "Ontología de Medidas Simples"@es .
+<http://crossforest.eu/measures/ontology/> <http://www.w3.org/2000/01/rdf-schema#label> "Simple Measures Ontology"@en .
+<http://crossforest.eu/measures/ontology/> <http://www.w3.org/2002/07/owl#versionInfo> "0.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://crossforest.eu/measures/ontology/hasMeasure
+<http://crossforest.eu/measures/ontology/hasMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/measures/ontology/hasMeasure> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/measures/ontology/Measure> .
+<http://crossforest.eu/measures/ontology/hasMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "has a measure with a value and expressed using some concrete units"@en .
+<http://crossforest.eu/measures/ontology/hasMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "tiene una medida con un valor y expresada en unas unidades concretas"@es .
+<http://crossforest.eu/measures/ontology/hasMeasure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/hasMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "has measure"@en .
+<http://crossforest.eu/measures/ontology/hasMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "tiene medida"@es .
+# 
+# http://crossforest.eu/measures/ontology/hasUnit
+<http://crossforest.eu/measures/ontology/hasUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/measures/ontology/hasUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/measures/ontology/Measure> .
+<http://crossforest.eu/measures/ontology/hasUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/measures/ontology/Unit> .
+<http://crossforest.eu/measures/ontology/hasUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "unidades de una medida"@es .
+<http://crossforest.eu/measures/ontology/hasUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "units of a measure"@en .
+<http://crossforest.eu/measures/ontology/hasUnit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/hasUnit> <http://www.w3.org/2000/01/rdf-schema#label> "has unit"@en .
+<http://crossforest.eu/measures/ontology/hasUnit> <http://www.w3.org/2000/01/rdf-schema#label> "tiene unidades"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureInCentimeters
+<http://crossforest.eu/measures/ontology/hasMeasureInCentimeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/measures/ontology/hasMeasureInCentimeters> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureLiteral> .
+<http://crossforest.eu/measures/ontology/hasMeasureInCentimeters> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/measures/ontology/MeasureInCentimeters> .
+<http://crossforest.eu/measures/ontology/hasMeasureInCentimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "valor de una medida en centímetros"@es .
+<http://crossforest.eu/measures/ontology/hasMeasureInCentimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "value of a measure in centimeters"@en .
+<http://crossforest.eu/measures/ontology/hasMeasureInCentimeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/hasMeasureInCentimeters> <http://www.w3.org/2000/01/rdf-schema#label> "valor en centímetros"@es .
+<http://crossforest.eu/measures/ontology/hasMeasureInCentimeters> <http://www.w3.org/2000/01/rdf-schema#label> "value in centimeters"@en .
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureInDecimeters
+<http://crossforest.eu/measures/ontology/hasMeasureInDecimeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/measures/ontology/hasMeasureInDecimeters> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureLiteral> .
+<http://crossforest.eu/measures/ontology/hasMeasureInDecimeters> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/measures/ontology/MeasurableEntityInDecimeters> .
+<http://crossforest.eu/measures/ontology/hasMeasureInDecimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "valor de una medida en decímetros"@es .
+<http://crossforest.eu/measures/ontology/hasMeasureInDecimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "value of a measure in decimeters"@en .
+<http://crossforest.eu/measures/ontology/hasMeasureInDecimeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/hasMeasureInDecimeters> <http://www.w3.org/2000/01/rdf-schema#label> "valor en decímetros"@es .
+<http://crossforest.eu/measures/ontology/hasMeasureInDecimeters> <http://www.w3.org/2000/01/rdf-schema#label> "value in decimeters"@en .
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureInMeters
+<http://crossforest.eu/measures/ontology/hasMeasureInMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/measures/ontology/hasMeasureInMeters> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureLiteral> .
+<http://crossforest.eu/measures/ontology/hasMeasureInMeters> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/measures/ontology/MeasurableEntityInMeters> .
+<http://crossforest.eu/measures/ontology/hasMeasureInMeters> <http://www.w3.org/2000/01/rdf-schema#comment> "valor de una medida en metros"@es .
+<http://crossforest.eu/measures/ontology/hasMeasureInMeters> <http://www.w3.org/2000/01/rdf-schema#comment> "value of a measure in meters"@en .
+<http://crossforest.eu/measures/ontology/hasMeasureInMeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/hasMeasureInMeters> <http://www.w3.org/2000/01/rdf-schema#label> "valor en metros"@es .
+<http://crossforest.eu/measures/ontology/hasMeasureInMeters> <http://www.w3.org/2000/01/rdf-schema#label> "value in meters"@en .
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureInMillimeters
+<http://crossforest.eu/measures/ontology/hasMeasureInMillimeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/measures/ontology/hasMeasureInMillimeters> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureLiteral> .
+<http://crossforest.eu/measures/ontology/hasMeasureInMillimeters> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/measures/ontology/MeasurableEntityInMillimeters> .
+<http://crossforest.eu/measures/ontology/hasMeasureInMillimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "valor de una medida en milímetros"@es .
+<http://crossforest.eu/measures/ontology/hasMeasureInMillimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "value of a measure in millimeters"@en .
+<http://crossforest.eu/measures/ontology/hasMeasureInMillimeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/hasMeasureInMillimeters> <http://www.w3.org/2000/01/rdf-schema#label> "valor en milímetros"@es .
+<http://crossforest.eu/measures/ontology/hasMeasureInMillimeters> <http://www.w3.org/2000/01/rdf-schema#label> "value in millimeters"@en .
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureLiteral
+<http://crossforest.eu/measures/ontology/hasMeasureLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/measures/ontology/hasMeasureLiteral> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/measures/ontology/MeasurableEntity> .
+<http://crossforest.eu/measures/ontology/hasMeasureLiteral> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://crossforest.eu/measures/ontology/hasMeasureLiteral> <http://www.w3.org/2000/01/rdf-schema#comment> "measure expressed as a decimal literal"@en .
+<http://crossforest.eu/measures/ontology/hasMeasureLiteral> <http://www.w3.org/2000/01/rdf-schema#comment> "medida expresada directamente en un literal decimal"@es .
+<http://crossforest.eu/measures/ontology/hasMeasureLiteral> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/hasMeasureLiteral> <http://www.w3.org/2000/01/rdf-schema#label> "measure"@en .
+<http://crossforest.eu/measures/ontology/hasMeasureLiteral> <http://www.w3.org/2000/01/rdf-schema#label> "medida"@es .
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureinDegrees
+<http://crossforest.eu/measures/ontology/hasMeasureinDegrees> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/measures/ontology/hasMeasureinDegrees> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureLiteral> .
+<http://crossforest.eu/measures/ontology/hasMeasureinDegrees> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/measures/ontology/MeasurableEntityInDegrees> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInDegrees> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/hasMeasureinDegrees> <http://www.w3.org/2000/01/rdf-schema#comment> "valor de una medida angular en grados"@es .
+<http://crossforest.eu/measures/ontology/hasMeasureinDegrees> <http://www.w3.org/2000/01/rdf-schema#comment> "value of an angular meausure in degrees"@en .
+<http://crossforest.eu/measures/ontology/hasMeasureinDegrees> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/hasMeasureinDegrees> <http://www.w3.org/2000/01/rdf-schema#label> "valor en grados"@es .
+<http://crossforest.eu/measures/ontology/hasMeasureinDegrees> <http://www.w3.org/2000/01/rdf-schema#label> "value in degrees"@en .
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureinGradians
+<http://crossforest.eu/measures/ontology/hasMeasureinGradians> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/measures/ontology/hasMeasureinGradians> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureLiteral> .
+<http://crossforest.eu/measures/ontology/hasMeasureinGradians> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/measures/ontology/MeasurableEntityInGradians> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInGradians> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/hasMeasureinGradians> <http://www.w3.org/2000/01/rdf-schema#comment> "valor de una medida angular en gradianes"@es .
+<http://crossforest.eu/measures/ontology/hasMeasureinGradians> <http://www.w3.org/2000/01/rdf-schema#comment> "value of an angular meausure in gradians"@en .
+<http://crossforest.eu/measures/ontology/hasMeasureinGradians> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/hasMeasureinGradians> <http://www.w3.org/2000/01/rdf-schema#label> "valor en gradianes"@es .
+<http://crossforest.eu/measures/ontology/hasMeasureinGradians> <http://www.w3.org/2000/01/rdf-schema#label> "value in gradians"@en .
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureinHectares
+<http://crossforest.eu/measures/ontology/hasMeasureinHectares> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/measures/ontology/hasMeasureinHectares> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureLiteral> .
+<http://crossforest.eu/measures/ontology/hasMeasureinHectares> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/measures/ontology/MeasurableEntityInHectares> .
+<http://crossforest.eu/measures/ontology/hasMeasureinHectares> <http://www.w3.org/2000/01/rdf-schema#comment> "valor de una medida en hectáreas"@es .
+<http://crossforest.eu/measures/ontology/hasMeasureinHectares> <http://www.w3.org/2000/01/rdf-schema#comment> "value of an meausure in hectares"@en .
+<http://crossforest.eu/measures/ontology/hasMeasureinHectares> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/hasMeasureinHectares> <http://www.w3.org/2000/01/rdf-schema#label> "valor en hectáreas"@es .
+<http://crossforest.eu/measures/ontology/hasMeasureinHectares> <http://www.w3.org/2000/01/rdf-schema#label> "value in hectares"@en .
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureinPercentage
+<http://crossforest.eu/measures/ontology/hasMeasureinPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/measures/ontology/hasMeasureinPercentage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureLiteral> .
+<http://crossforest.eu/measures/ontology/hasMeasureinPercentage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters> .
+<http://crossforest.eu/measures/ontology/hasMeasureinPercentage> <http://www.w3.org/2000/01/rdf-schema#comment> "valor de una medida en porcentaje"@es .
+<http://crossforest.eu/measures/ontology/hasMeasureinPercentage> <http://www.w3.org/2000/01/rdf-schema#comment> "value of an meausure in percentage"@en .
+<http://crossforest.eu/measures/ontology/hasMeasureinPercentage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/hasMeasureinPercentage> <http://www.w3.org/2000/01/rdf-schema#label> "valor en porcentaje"@es .
+<http://crossforest.eu/measures/ontology/hasMeasureinPercentage> <http://www.w3.org/2000/01/rdf-schema#label> "value in percentage"@en .
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureinSquareMeters
+<http://crossforest.eu/measures/ontology/hasMeasureinSquareMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/measures/ontology/hasMeasureinSquareMeters> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureLiteral> .
+<http://crossforest.eu/measures/ontology/hasMeasureinSquareMeters> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters> .
+<http://crossforest.eu/measures/ontology/hasMeasureinSquareMeters> <http://www.w3.org/2000/01/rdf-schema#comment> "valor de una medida en square meters"@es .
+<http://crossforest.eu/measures/ontology/hasMeasureinSquareMeters> <http://www.w3.org/2000/01/rdf-schema#comment> "value of an meausure in square meters"@en .
+<http://crossforest.eu/measures/ontology/hasMeasureinSquareMeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/hasMeasureinSquareMeters> <http://www.w3.org/2000/01/rdf-schema#label> "valor en square meters"@es .
+<http://crossforest.eu/measures/ontology/hasMeasureinSquareMeters> <http://www.w3.org/2000/01/rdf-schema#label> "value in square meters"@en .
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureinYears
+<http://crossforest.eu/measures/ontology/hasMeasureinYears> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/measures/ontology/hasMeasureinYears> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureLiteral> .
+<http://crossforest.eu/measures/ontology/hasMeasureinYears> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/measures/ontology/MeasurableEntityInYears> .
+<http://crossforest.eu/measures/ontology/hasMeasureinYears> <http://www.w3.org/2000/01/rdf-schema#comment> "valor de una medida en años"@es .
+<http://crossforest.eu/measures/ontology/hasMeasureinYears> <http://www.w3.org/2000/01/rdf-schema#comment> "value of an meausure in years"@en .
+<http://crossforest.eu/measures/ontology/hasMeasureinYears> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/hasMeasureinYears> <http://www.w3.org/2000/01/rdf-schema#label> "valor en años"@es .
+<http://crossforest.eu/measures/ontology/hasMeasureinYears> <http://www.w3.org/2000/01/rdf-schema#label> "value in years"@en .
+# 
+# http://crossforest.eu/measures/ontology/hasValue
+<http://crossforest.eu/measures/ontology/hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/measures/ontology/hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/measures/ontology/Measure> .
+<http://crossforest.eu/measures/ontology/hasValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://crossforest.eu/measures/ontology/hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "valor de una medida"@es .
+<http://crossforest.eu/measures/ontology/hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "value of a measure"@en .
+<http://crossforest.eu/measures/ontology/hasValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "valor"@es .
+<http://crossforest.eu/measures/ontology/hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "value"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://crossforest.eu/measures/ontology/Hectares
+<http://crossforest.eu/measures/ontology/Hectares> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://crossforest.eu/measures/ontology/MeasurableEntity
+<http://crossforest.eu/measures/ontology/MeasurableEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/MeasurableEntity> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/measures/ontology/Measure> .
+<http://crossforest.eu/measures/ontology/MeasurableEntity> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/measures/ontology/Unit> .
+<http://crossforest.eu/measures/ontology/MeasurableEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Entidad de la cual se toma una o varias medidas"@es .
+<http://crossforest.eu/measures/ontology/MeasurableEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Entity from which a measure or a number of measures is taken"@en .
+<http://crossforest.eu/measures/ontology/MeasurableEntity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/MeasurableEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad medible"@es .
+<http://crossforest.eu/measures/ontology/MeasurableEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Measurable Entity"@en .
+# 
+# http://crossforest.eu/measures/ontology/MeasurableEntityInCentimeters
+<http://crossforest.eu/measures/ontology/MeasurableEntityInCentimeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInCentimeters> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://crossforest.eu/measures/ontology/hasMeasure> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://crossforest.eu/measures/ontology/MeasureInCentimeters> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInCentimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "Entidad de la cual se toma una medida en centímetros"@es .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInCentimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "Entity from which a measure in centimeters is taken"@en .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInCentimeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInCentimeters> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad medible en centímetros"@es .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInCentimeters> <http://www.w3.org/2000/01/rdf-schema#label> "Measurable Entity in Centimeters"@en .
+# 
+# http://crossforest.eu/measures/ontology/MeasurableEntityInDecimeters
+<http://crossforest.eu/measures/ontology/MeasurableEntityInDecimeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInDecimeters> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://crossforest.eu/measures/ontology/hasMeasure> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://crossforest.eu/measures/ontology/MeasureInDecimeters> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInDecimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "Entidad de la cual se toma una medida en decímetros"@es .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInDecimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "Entity from which a measure in decimeters is taken"@en .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInDecimeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInDecimeters> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad medible en decímetros"@es .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInDecimeters> <http://www.w3.org/2000/01/rdf-schema#label> "Measurable Entity in Decimeters"@en .
+# 
+# http://crossforest.eu/measures/ontology/MeasurableEntityInDegrees
+# 
+# http://crossforest.eu/measures/ontology/MeasurableEntityInGradians
+# 
+# http://crossforest.eu/measures/ontology/MeasurableEntityInHectares
+<http://crossforest.eu/measures/ontology/MeasurableEntityInHectares> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInHectares> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://crossforest.eu/measures/ontology/hasMeasure> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://crossforest.eu/measures/ontology/Hectares> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInHectares> <http://www.w3.org/2000/01/rdf-schema#comment> "Entidad de la cual se toma una medida en hectáreas"@es .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInHectares> <http://www.w3.org/2000/01/rdf-schema#comment> "Entity from which a measure in hectares is taken"@en .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInHectares> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInHectares> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad medible en hectáreas"@es .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInHectares> <http://www.w3.org/2000/01/rdf-schema#label> "Measurable Entity in Hectares"@en .
+# 
+# http://crossforest.eu/measures/ontology/MeasurableEntityInMeters
+<http://crossforest.eu/measures/ontology/MeasurableEntityInMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInMeters> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://crossforest.eu/measures/ontology/hasMeasure> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://crossforest.eu/measures/ontology/MeasureInMeters> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInMeters> <http://www.w3.org/2000/01/rdf-schema#comment> "Entidad de la cual se toma una medida en metros"@es .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInMeters> <http://www.w3.org/2000/01/rdf-schema#comment> "Entity from which a measure in meters is taken"@en .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInMeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInMeters> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad medible en metros"@es .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInMeters> <http://www.w3.org/2000/01/rdf-schema#label> "Measurable Entity in Meters"@en .
+# 
+# http://crossforest.eu/measures/ontology/MeasurableEntityInMillimeters
+<http://crossforest.eu/measures/ontology/MeasurableEntityInMillimeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInMillimeters> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://crossforest.eu/measures/ontology/hasMeasure> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://crossforest.eu/measures/ontology/MeasureInMillimeters> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInMillimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "Entidad de la cual se toma una medida en milímetros"@es .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInMillimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "Entity from which a measure in millimeters is taken"@en .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInMillimeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInMillimeters> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad medible en milímetros"@es .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInMillimeters> <http://www.w3.org/2000/01/rdf-schema#label> "Measurable Entity in Millimeters"@en .
+# 
+# http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters
+<http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://crossforest.eu/measures/ontology/hasMeasure> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://crossforest.eu/measures/ontology/MeasureSquareMeters> .
+<http://crossforest.eu/measures/ontology/MeasureSquareMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters> <http://www.w3.org/2000/01/rdf-schema#comment> "Entidad de la cual se toma una medida en metros cuadrados"@es .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters> <http://www.w3.org/2000/01/rdf-schema#comment> "Entity from which a measure in square meters is taken"@en .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad medible en metros cuadrados"@es .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters> <http://www.w3.org/2000/01/rdf-schema#label> "Measurable Entity in Square Meters"@en .
+# 
+# http://crossforest.eu/measures/ontology/MeasurableEntityInYears
+<http://crossforest.eu/measures/ontology/MeasurableEntityInYears> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInYears> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://crossforest.eu/measures/ontology/hasMeasure> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://crossforest.eu/measures/ontology/Years> .
+<http://crossforest.eu/measures/ontology/Years> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInYears> <http://www.w3.org/2000/01/rdf-schema#comment> "Entidad de la cual se toma una medida en años"@es .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInYears> <http://www.w3.org/2000/01/rdf-schema#comment> "Entity from which a measure in years is taken"@en .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInYears> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInYears> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad medible en años"@es .
+<http://crossforest.eu/measures/ontology/MeasurableEntityInYears> <http://www.w3.org/2000/01/rdf-schema#label> "Measurable Entity in Years"@en .
+# 
+# http://crossforest.eu/measures/ontology/Measure
+<http://crossforest.eu/measures/ontology/Measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/Measure> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/measures/ontology/Unit> .
+<http://crossforest.eu/measures/ontology/Measure> <http://www.w3.org/2000/01/rdf-schema#comment> "Measure with a value and expressed used some concrete units"@en .
+<http://crossforest.eu/measures/ontology/Measure> <http://www.w3.org/2000/01/rdf-schema#comment> "Una medida con un valor y expresada en unas unidades concretas"@es .
+<http://crossforest.eu/measures/ontology/Measure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/Measure> <http://www.w3.org/2000/01/rdf-schema#label> "Measure"@en .
+<http://crossforest.eu/measures/ontology/Measure> <http://www.w3.org/2000/01/rdf-schema#label> "Medida"@es .
+# 
+# http://crossforest.eu/measures/ontology/MeasureInCentimeters
+<http://crossforest.eu/measures/ontology/MeasureInCentimeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/MeasureInCentimeters> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://crossforest.eu/measures/ontology/hasUnit> .
+_:genid8 <http://www.w3.org/2002/07/owl#hasValue> <http://crossforest.eu/measures/data/unit/Centimeters> .
+<http://crossforest.eu/measures/ontology/MeasureInCentimeters> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/Measure> .
+<http://crossforest.eu/measures/ontology/MeasureInCentimeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+# 
+# http://crossforest.eu/measures/ontology/MeasureInDecimeters
+<http://crossforest.eu/measures/ontology/MeasureInDecimeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/MeasureInDecimeters> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://crossforest.eu/measures/ontology/hasUnit> .
+_:genid9 <http://www.w3.org/2002/07/owl#hasValue> <http://crossforest.eu/measures/data/unit/Decimeters> .
+<http://crossforest.eu/measures/ontology/MeasureInDecimeters> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/Measure> .
+<http://crossforest.eu/measures/ontology/MeasureInDecimeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+# 
+# http://crossforest.eu/measures/ontology/MeasureInDegrees
+<http://crossforest.eu/measures/ontology/MeasureInDegrees> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/MeasureInDegrees> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://crossforest.eu/measures/ontology/hasUnit> .
+_:genid10 <http://www.w3.org/2002/07/owl#hasValue> <http://crossforest.eu/measures/data/unit/Degrees> .
+<http://crossforest.eu/measures/ontology/MeasureInDegrees> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/Measure> .
+<http://crossforest.eu/measures/ontology/MeasureInDegrees> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+# 
+# http://crossforest.eu/measures/ontology/MeasureInGradians
+<http://crossforest.eu/measures/ontology/MeasureInGradians> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/MeasureInGradians> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://crossforest.eu/measures/ontology/hasUnit> .
+_:genid11 <http://www.w3.org/2002/07/owl#hasValue> <http://crossforest.eu/measures/data/unit/Gradians> .
+<http://crossforest.eu/measures/ontology/MeasureInGradians> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/Measure> .
+<http://crossforest.eu/measures/ontology/MeasureInGradians> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+# 
+# http://crossforest.eu/measures/ontology/MeasureInHectares
+<http://crossforest.eu/measures/ontology/MeasureInHectares> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/MeasureInHectares> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://crossforest.eu/measures/ontology/hasUnit> .
+_:genid12 <http://www.w3.org/2002/07/owl#hasValue> <http://crossforest.eu/measures/data/unit/Hectare> .
+<http://crossforest.eu/measures/data/unit/Hectare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/measures/ontology/MeasureInHectares> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/Measure> .
+<http://crossforest.eu/measures/ontology/MeasureInHectares> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+# 
+# http://crossforest.eu/measures/ontology/MeasureInMeters
+<http://crossforest.eu/measures/ontology/MeasureInMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/MeasureInMeters> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://crossforest.eu/measures/ontology/hasUnit> .
+_:genid13 <http://www.w3.org/2002/07/owl#hasValue> <http://crossforest.eu/measures/data/unit/Meters> .
+<http://crossforest.eu/measures/ontology/MeasureInMeters> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/Measure> .
+<http://crossforest.eu/measures/ontology/MeasureInMeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+# 
+# http://crossforest.eu/measures/ontology/MeasureInMillimeters
+<http://crossforest.eu/measures/ontology/MeasureInMillimeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/MeasureInMillimeters> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://crossforest.eu/measures/ontology/hasUnit> .
+_:genid14 <http://www.w3.org/2002/07/owl#hasValue> <http://crossforest.eu/measures/data/unit/Millimeters> .
+<http://crossforest.eu/measures/ontology/MeasureInMillimeters> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/Measure> .
+<http://crossforest.eu/measures/ontology/MeasureInMillimeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+# 
+# http://crossforest.eu/measures/ontology/MeasureInPercentage
+<http://crossforest.eu/measures/ontology/MeasureInPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/MeasureInPercentage> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://crossforest.eu/measures/ontology/hasUnit> .
+_:genid15 <http://www.w3.org/2002/07/owl#hasValue> <http://crossforest.eu/measures/data/unit/Percentage> .
+<http://crossforest.eu/measures/ontology/MeasureInPercentage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/Measure> .
+<http://crossforest.eu/measures/ontology/MeasureInPercentage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+# 
+# http://crossforest.eu/measures/ontology/MeasureInSquareMeters
+<http://crossforest.eu/measures/ontology/MeasureInSquareMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/MeasureInSquareMeters> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://crossforest.eu/measures/ontology/hasUnit> .
+_:genid16 <http://www.w3.org/2002/07/owl#hasValue> <http://crossforest.eu/measures/data/unit/SquareMeters> .
+<http://crossforest.eu/measures/ontology/MeasureInSquareMeters> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/Measure> .
+<http://crossforest.eu/measures/ontology/MeasureInSquareMeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+# 
+# http://crossforest.eu/measures/ontology/MeasureInUnities
+<http://crossforest.eu/measures/ontology/MeasureInUnities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/MeasureInUnities> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://crossforest.eu/measures/ontology/hasUnit> .
+_:genid17 <http://www.w3.org/2002/07/owl#hasValue> <http://crossforest.eu/measures/data/unit/Unities> .
+<http://crossforest.eu/measures/ontology/MeasureInUnities> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/Measure> .
+<http://crossforest.eu/measures/ontology/MeasureInUnities> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+# 
+# http://crossforest.eu/measures/ontology/MeasureInYears
+<http://crossforest.eu/measures/ontology/MeasureInYears> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/MeasureInYears> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://crossforest.eu/measures/ontology/hasUnit> .
+_:genid18 <http://www.w3.org/2002/07/owl#hasValue> <http://crossforest.eu/measures/data/unit/Years> .
+<http://crossforest.eu/measures/ontology/MeasureInYears> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/Measure> .
+<http://crossforest.eu/measures/ontology/MeasureInYears> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+# 
+# http://crossforest.eu/measures/ontology/MeasureSquareMeters
+# 
+# http://crossforest.eu/measures/ontology/Reliability
+<http://crossforest.eu/measures/ontology/Reliability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/Reliability> <http://www.w3.org/2000/01/rdf-schema#comment> "Fiabilidad de la medida"@es .
+<http://crossforest.eu/measures/ontology/Reliability> <http://www.w3.org/2000/01/rdf-schema#comment> "Reliability of the measure"@en .
+<http://crossforest.eu/measures/ontology/Reliability> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/Reliability> <http://www.w3.org/2000/01/rdf-schema#label> "Fiabilidad"@es .
+<http://crossforest.eu/measures/ontology/Reliability> <http://www.w3.org/2000/01/rdf-schema#label> "Reliability"@en .
+# 
+# http://crossforest.eu/measures/ontology/Source
+<http://crossforest.eu/measures/ontology/Source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/Source> <http://www.w3.org/2000/01/rdf-schema#comment> "Fuente de la medida"@es .
+<http://crossforest.eu/measures/ontology/Source> <http://www.w3.org/2000/01/rdf-schema#comment> "Source of the measure"@en .
+<http://crossforest.eu/measures/ontology/Source> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/Source> <http://www.w3.org/2000/01/rdf-schema#label> "Fuente"@es .
+<http://crossforest.eu/measures/ontology/Source> <http://www.w3.org/2000/01/rdf-schema#label> "Source"@en .
+# 
+# http://crossforest.eu/measures/ontology/Unit
+<http://crossforest.eu/measures/ontology/Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/measures/ontology/Unit> <http://www.w3.org/2000/01/rdf-schema#comment> "Unidades en las que se toma una medida"@es .
+<http://crossforest.eu/measures/ontology/Unit> <http://www.w3.org/2000/01/rdf-schema#comment> "Unit in which a measure is taken"@en .
+<http://crossforest.eu/measures/ontology/Unit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/ontology/Unit> <http://www.w3.org/2000/01/rdf-schema#label> "Unidades"@es .
+<http://crossforest.eu/measures/ontology/Unit> <http://www.w3.org/2000/01/rdf-schema#label> "Unit"@en .
+# 
+# http://crossforest.eu/measures/ontology/Years
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://crossforest.eu/measures/data/unit/Centimeters
+<http://crossforest.eu/measures/data/unit/Centimeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/measures/data/unit/Centimeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/measures/ontology/Unit> .
+<http://crossforest.eu/measures/data/unit/Centimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "Centimeter as unit for a measure"@en .
+<http://crossforest.eu/measures/data/unit/Centimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "Centímetro como unidad de una medida"@es .
+<http://crossforest.eu/measures/data/unit/Centimeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/data/unit/Centimeters> <http://www.w3.org/2000/01/rdf-schema#label> "Centimeters"@en .
+<http://crossforest.eu/measures/data/unit/Centimeters> <http://www.w3.org/2000/01/rdf-schema#label> "Centímetros"@es .
+# 
+# http://crossforest.eu/measures/data/unit/Decimeters
+<http://crossforest.eu/measures/data/unit/Decimeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/measures/data/unit/Decimeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/measures/ontology/Unit> .
+<http://crossforest.eu/measures/data/unit/Decimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "Decimeter as unit for a measure"@en .
+<http://crossforest.eu/measures/data/unit/Decimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "Decímetro como unidad de una medida"@es .
+<http://crossforest.eu/measures/data/unit/Decimeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/data/unit/Decimeters> <http://www.w3.org/2000/01/rdf-schema#label> "Decimeters"@en .
+<http://crossforest.eu/measures/data/unit/Decimeters> <http://www.w3.org/2000/01/rdf-schema#label> "Decímetros"@es .
+# 
+# http://crossforest.eu/measures/data/unit/Degrees
+<http://crossforest.eu/measures/data/unit/Degrees> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/measures/data/unit/Degrees> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/measures/ontology/Unit> .
+<http://crossforest.eu/measures/data/unit/Degrees> <http://www.w3.org/2000/01/rdf-schema#comment> "Degree as a unit for angular measure. A degree is equivalent to 0.017453292519943278 radians"@em .
+<http://crossforest.eu/measures/data/unit/Degrees> <http://www.w3.org/2000/01/rdf-schema#comment> "Grado como unidad de medida angular. Cada grado es equivalente a 0.017453292519943278 radianes"@es .
+<http://crossforest.eu/measures/data/unit/Degrees> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/data/unit/Degrees> <http://www.w3.org/2000/01/rdf-schema#label> "Degrees"@en .
+<http://crossforest.eu/measures/data/unit/Degrees> <http://www.w3.org/2000/01/rdf-schema#label> "Grados"@es .
+# 
+# http://crossforest.eu/measures/data/unit/Gradians
+<http://crossforest.eu/measures/data/unit/Gradians> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/measures/data/unit/Gradians> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/measures/ontology/Unit> .
+<http://crossforest.eu/measures/data/unit/Gradians> <http://www.w3.org/2000/01/rdf-schema#comment> "Gradians as a unit for angular measure. A gradian is equivalent to 0.015707963267948966192 radians"@em .
+<http://crossforest.eu/measures/data/unit/Gradians> <http://www.w3.org/2000/01/rdf-schema#comment> "Gradián como unidad de medida angular. Cada gradián es equivalente a 0.015707963267948966192 radianes"@es .
+<http://crossforest.eu/measures/data/unit/Gradians> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/data/unit/Gradians> <http://www.w3.org/2000/01/rdf-schema#label> "Gradians"@en .
+<http://crossforest.eu/measures/data/unit/Gradians> <http://www.w3.org/2000/01/rdf-schema#label> "Grados Centesimales"@es .
+# 
+# http://crossforest.eu/measures/data/unit/Hectare
+# 
+# http://crossforest.eu/measures/data/unit/Hectares
+<http://crossforest.eu/measures/data/unit/Hectares> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/measures/data/unit/Hectares> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/measures/ontology/Unit> .
+<http://crossforest.eu/measures/data/unit/Hectares> <http://www.w3.org/2000/01/rdf-schema#comment> "Hectares as a unity of measure"@en .
+<http://crossforest.eu/measures/data/unit/Hectares> <http://www.w3.org/2000/01/rdf-schema#comment> "Hectáreas como unidad de medida"@es .
+<http://crossforest.eu/measures/data/unit/Hectares> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/data/unit/Hectares> <http://www.w3.org/2000/01/rdf-schema#label> "Hectares"@en .
+<http://crossforest.eu/measures/data/unit/Hectares> <http://www.w3.org/2000/01/rdf-schema#label> "Hectáreas"@es .
+# 
+# http://crossforest.eu/measures/data/unit/M2byHA
+<http://crossforest.eu/measures/data/unit/M2byHA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/measures/data/unit/M2byHA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/measures/ontology/Unit> .
+<http://crossforest.eu/measures/data/unit/M2byHA> <http://www.w3.org/2000/01/rdf-schema#comment> "Metros cuadrados por hectárea como unidad de medida"@es .
+<http://crossforest.eu/measures/data/unit/M2byHA> <http://www.w3.org/2000/01/rdf-schema#comment> "Square Meters by Hectare as a unity of measure"@en .
+<http://crossforest.eu/measures/data/unit/M2byHA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/data/unit/M2byHA> <http://www.w3.org/2000/01/rdf-schema#label> "Metros cuadrados por hectárea"@es .
+<http://crossforest.eu/measures/data/unit/M2byHA> <http://www.w3.org/2000/01/rdf-schema#label> "Square Meters by Hectare"@en .
+# 
+# http://crossforest.eu/measures/data/unit/M3byHA
+<http://crossforest.eu/measures/data/unit/M3byHA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/measures/data/unit/M3byHA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/measures/ontology/Unit> .
+<http://crossforest.eu/measures/data/unit/M3byHA> <http://www.w3.org/2000/01/rdf-schema#comment> "Cubic Meters by Hectare as a unity of measure"@en .
+<http://crossforest.eu/measures/data/unit/M3byHA> <http://www.w3.org/2000/01/rdf-schema#comment> "Metros cúbicos por hectárea como unidad de medida"@es .
+<http://crossforest.eu/measures/data/unit/M3byHA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/data/unit/M3byHA> <http://www.w3.org/2000/01/rdf-schema#label> "Cubic Meters by Hectare"@en .
+<http://crossforest.eu/measures/data/unit/M3byHA> <http://www.w3.org/2000/01/rdf-schema#label> "Metros cúbicos por hectárea"@es .
+# 
+# http://crossforest.eu/measures/data/unit/Meters
+<http://crossforest.eu/measures/data/unit/Meters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/measures/data/unit/Meters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/measures/ontology/Unit> .
+<http://crossforest.eu/measures/data/unit/Meters> <http://www.w3.org/2000/01/rdf-schema#comment> "Meter as unit for a measure"@en .
+<http://crossforest.eu/measures/data/unit/Meters> <http://www.w3.org/2000/01/rdf-schema#comment> "Metro como unidad de una medida"@es .
+<http://crossforest.eu/measures/data/unit/Meters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/data/unit/Meters> <http://www.w3.org/2000/01/rdf-schema#label> "Meters"@en .
+<http://crossforest.eu/measures/data/unit/Meters> <http://www.w3.org/2000/01/rdf-schema#label> "Metros"@es .
+# 
+# http://crossforest.eu/measures/data/unit/Millimeters
+<http://crossforest.eu/measures/data/unit/Millimeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/measures/data/unit/Millimeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/measures/ontology/Unit> .
+<http://crossforest.eu/measures/data/unit/Millimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "Millimeter as unit for a measure"@en .
+<http://crossforest.eu/measures/data/unit/Millimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "Milímetro como unidad de una medida"@es .
+<http://crossforest.eu/measures/data/unit/Millimeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/data/unit/Millimeters> <http://www.w3.org/2000/01/rdf-schema#label> "Millimeters"@en .
+<http://crossforest.eu/measures/data/unit/Millimeters> <http://www.w3.org/2000/01/rdf-schema#label> "Milímetros"@es .
+# 
+# http://crossforest.eu/measures/data/unit/Percentage
+<http://crossforest.eu/measures/data/unit/Percentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/measures/data/unit/Percentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/measures/ontology/Unit> .
+<http://crossforest.eu/measures/data/unit/Percentage> <http://www.w3.org/2000/01/rdf-schema#comment> "100 as a unity of measure"@en .
+<http://crossforest.eu/measures/data/unit/Percentage> <http://www.w3.org/2000/01/rdf-schema#comment> "100 como unidad de medida"@es .
+<http://crossforest.eu/measures/data/unit/Percentage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/data/unit/Percentage> <http://www.w3.org/2000/01/rdf-schema#label> "Percentage"@en .
+<http://crossforest.eu/measures/data/unit/Percentage> <http://www.w3.org/2000/01/rdf-schema#label> "Porcentaje"@es .
+# 
+# http://crossforest.eu/measures/data/unit/SquareMeters
+<http://crossforest.eu/measures/data/unit/SquareMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/measures/data/unit/SquareMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/measures/ontology/Unit> .
+<http://crossforest.eu/measures/data/unit/SquareMeters> <http://www.w3.org/2000/01/rdf-schema#comment> "Metros cuadrados como unidad de medida de área."@es .
+<http://crossforest.eu/measures/data/unit/SquareMeters> <http://www.w3.org/2000/01/rdf-schema#comment> "Square meters as a unit for area measure."@em .
+<http://crossforest.eu/measures/data/unit/SquareMeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/data/unit/SquareMeters> <http://www.w3.org/2000/01/rdf-schema#label> "Metros Cuadrados"@es .
+<http://crossforest.eu/measures/data/unit/SquareMeters> <http://www.w3.org/2000/01/rdf-schema#label> "Square Meters"@en .
+# 
+# http://crossforest.eu/measures/data/unit/Unities
+<http://crossforest.eu/measures/data/unit/Unities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/measures/data/unit/Unities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/measures/ontology/Unit> .
+<http://crossforest.eu/measures/data/unit/Unities> <http://www.w3.org/2000/01/rdf-schema#comment> "Unidad (i.e., el número 1) como unidad de medida"@es .
+<http://crossforest.eu/measures/data/unit/Unities> <http://www.w3.org/2000/01/rdf-schema#comment> "Unity (i.e., the number 1) as a unity of measure"@en .
+<http://crossforest.eu/measures/data/unit/Unities> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/data/unit/Unities> <http://www.w3.org/2000/01/rdf-schema#label> "Unidades"@es .
+<http://crossforest.eu/measures/data/unit/Unities> <http://www.w3.org/2000/01/rdf-schema#label> "Unities"@en .
+<http://crossforest.eu/measures/data/unit/Unities> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://iopscience.iop.org/article/10.1088/0026-1394/31/6/013/meta> .
+# 
+# http://crossforest.eu/measures/data/unit/UnitsByHA
+<http://crossforest.eu/measures/data/unit/UnitsByHA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/measures/data/unit/UnitsByHA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/measures/ontology/Unit> .
+<http://crossforest.eu/measures/data/unit/UnitsByHA> <http://www.w3.org/2000/01/rdf-schema#comment> "Unidades por hectárea como unidad de medida"@es .
+<http://crossforest.eu/measures/data/unit/UnitsByHA> <http://www.w3.org/2000/01/rdf-schema#comment> "Units by Hectare as a unity of measure"@en .
+<http://crossforest.eu/measures/data/unit/UnitsByHA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/data/unit/UnitsByHA> <http://www.w3.org/2000/01/rdf-schema#label> "Unidades por hectárea"@es .
+<http://crossforest.eu/measures/data/unit/UnitsByHA> <http://www.w3.org/2000/01/rdf-schema#label> "Units by Hectare"@en .
+# 
+# http://crossforest.eu/measures/data/unit/Years
+<http://crossforest.eu/measures/data/unit/Years> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/measures/data/unit/Years> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/measures/ontology/Unit> .
+<http://crossforest.eu/measures/data/unit/Years> <http://www.w3.org/2000/01/rdf-schema#comment> "Años como unidad de medida"@es .
+<http://crossforest.eu/measures/data/unit/Years> <http://www.w3.org/2000/01/rdf-schema#comment> "Years as a unity of measure"@en .
+<http://crossforest.eu/measures/data/unit/Years> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/measures/data/unit/Years> <http://www.w3.org/2000/01/rdf-schema#label> "Años"@es .
+<http://crossforest.eu/measures/data/unit/Years> <http://www.w3.org/2000/01/rdf-schema#label> "Years"@en .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

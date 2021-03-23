@@ -1,0 +1,1756 @@
+<http://crossforest.eu/ifn/ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://crossforest.eu/ifn/ontology/> <http://www.w3.org/2002/07/owl#imports> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/> <http://www.w3.org/2002/07/owl#imports> <http://crossforest.eu/measures/ontology/> .
+<http://crossforest.eu/ifn/ontology/> <http://purl.org/dc/elements/1.1/creator> <https://www.gsic.uva.es/members/guiveg> .
+<http://crossforest.eu/ifn/ontology/> <http://purl.org/dc/elements/1.1/creator> <https://www.gsic.uva.es/members/josgim> .
+<http://crossforest.eu/ifn/ontology/> <http://purl.org/dc/elements/1.1/date> "2019-07-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://crossforest.eu/ifn/ontology/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ifn" .
+<http://crossforest.eu/ifn/ontology/> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology to publish data of the Spanish National Forest inventory"@en .
+<http://crossforest.eu/ifn/ontology/> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontología para publicar datos del Inventario Forestal Nacional de España" .
+<http://crossforest.eu/ifn/ontology/> <http://www.w3.org/2000/01/rdf-schema#label> "Ontología del IFN de España"@es .
+<http://crossforest.eu/ifn/ontology/> <http://www.w3.org/2000/01/rdf-schema#label> "Spanish IFN Ontology"@en .
+<http://crossforest.eu/ifn/ontology/> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://crossforest.eu/ifn/ontology/acceptedName
+<http://crossforest.eu/ifn/ontology/acceptedName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://crossforest.eu/ifn/ontology/acceptedName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/acceptedName> <http://www.w3.org/2000/01/rdf-schema#label> "scientific name"@en .
+<http://crossforest.eu/ifn/ontology/acceptedName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<http://crossforest.eu/ifn/ontology/acceptedName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/Plant> .
+# 
+# http://crossforest.eu/ifn/ontology/author
+<http://crossforest.eu/ifn/ontology/author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://crossforest.eu/ifn/ontology/author> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/author> <http://www.w3.org/2000/01/rdf-schema#label> "author"@en .
+<http://crossforest.eu/ifn/ontology/author> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<http://crossforest.eu/ifn/ontology/author> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/Plant> .
+# 
+# http://crossforest.eu/ifn/ontology/name
+<http://crossforest.eu/ifn/ontology/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://crossforest.eu/ifn/ontology/name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+<http://crossforest.eu/ifn/ontology/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<http://crossforest.eu/ifn/ontology/name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/ScientificName> .
+# 
+# http://crossforest.eu/ifn/ontology/scientificName
+<http://crossforest.eu/ifn/ontology/scientificName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://crossforest.eu/ifn/ontology/scientificName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/scientificName> <http://www.w3.org/2000/01/rdf-schema#label> "scientific name"@en .
+<http://crossforest.eu/ifn/ontology/scientificName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<http://crossforest.eu/ifn/ontology/scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/Plant> .
+# 
+# http://crossforest.eu/ifn/ontology/scientificSynonym
+<http://crossforest.eu/ifn/ontology/scientificSynonym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://crossforest.eu/ifn/ontology/scientificSynonym> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/scientificSynonym> <http://www.w3.org/2000/01/rdf-schema#label> "scientific name"@en .
+<http://crossforest.eu/ifn/ontology/scientificSynonym> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<http://crossforest.eu/ifn/ontology/scientificSynonym> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/Plant> .
+# 
+# http://crossforest.eu/ifn/ontology/vulgarName
+<http://crossforest.eu/ifn/ontology/vulgarName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://crossforest.eu/ifn/ontology/vulgarName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/vulgarName> <http://www.w3.org/2000/01/rdf-schema#label> "vulgar name"@en .
+<http://crossforest.eu/ifn/ontology/vulgarName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<http://crossforest.eu/ifn/ontology/vulgarName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/Plant> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Label
+<http://www.w3.org/2000/01/rdf-schema#Label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://crossforest.eu/ifn/ontology/containsSpecies
+<http://crossforest.eu/ifn/ontology/containsSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/containsSpecies> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/InfoSpecies> .
+<http://crossforest.eu/ifn/ontology/InfoSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/containsSpecies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/containsSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "containsSpecies"@en .
+# 
+# http://crossforest.eu/ifn/ontology/hasAcceptedName
+<http://crossforest.eu/ifn/ontology/hasAcceptedName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasAcceptedName> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/AcceptedName> .
+<http://crossforest.eu/ifn/ontology/hasAcceptedName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasAcceptedName> <http://www.w3.org/2000/01/rdf-schema#label> "scientific name"@en .
+# 
+# http://crossforest.eu/ifn/ontology/hasAge
+<http://crossforest.eu/ifn/ontology/hasAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasAge> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasure> .
+<http://crossforest.eu/measures/ontology/hasMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasAge> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/InfoSpecies> .
+<http://crossforest.eu/ifn/ontology/hasAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/Age> .
+<http://crossforest.eu/ifn/ontology/hasAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Age of trees in a plot"@en .
+<http://crossforest.eu/ifn/ontology/hasAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Edad en años en las formas coetáneas y regulares"@es .
+<http://crossforest.eu/ifn/ontology/hasAge> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasAge> <http://www.w3.org/2000/01/rdf-schema#label> "has age"@es .
+<http://crossforest.eu/ifn/ontology/hasAge> <http://www.w3.org/2000/01/rdf-schema#label> "tiene edad"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasAgeInYears
+<http://crossforest.eu/ifn/ontology/hasAgeInYears> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasAgeInYears> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/InfoSpecies> .
+<http://crossforest.eu/ifn/ontology/hasAgeInYears> <http://www.w3.org/2000/01/rdf-schema#comment> "Age in years"@en .
+<http://crossforest.eu/ifn/ontology/hasAgeInYears> <http://www.w3.org/2000/01/rdf-schema#comment> "Edad en años en las formas coetáneas y regulares"@es .
+<http://crossforest.eu/ifn/ontology/hasAgeInYears> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasAgeInYears> <http://www.w3.org/2000/01/rdf-schema#label> "age in years"@es .
+<http://crossforest.eu/ifn/ontology/hasAgeInYears> <http://www.w3.org/2000/01/rdf-schema#label> "edad en años"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasBasalArea
+<http://crossforest.eu/ifn/ontology/hasBasalArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasBasalArea> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/BasalArea> .
+<http://crossforest.eu/ifn/ontology/hasBasalArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasBasalArea> <http://www.w3.org/2000/01/rdf-schema#label> "has basal area"@en .
+# 
+# http://crossforest.eu/ifn/ontology/hasBasalAreaInM2
+<http://crossforest.eu/ifn/ontology/hasBasalAreaInM2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasBasalAreaInM2> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/BasalArea> .
+<http://crossforest.eu/ifn/ontology/hasBasalAreaInM2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasBasalAreaInM2> <http://www.w3.org/2000/01/rdf-schema#label> "has basal area"@en .
+# 
+# http://crossforest.eu/ifn/ontology/hasBasalAreaInM2byHA
+<http://crossforest.eu/ifn/ontology/hasBasalAreaInM2byHA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasBasalAreaInM2byHA> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/BasalArea> .
+<http://crossforest.eu/ifn/ontology/hasBasalAreaInM2byHA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasBasalAreaInM2byHA> <http://www.w3.org/2000/01/rdf-schema#label> "has basal area"@en .
+# 
+# http://crossforest.eu/ifn/ontology/hasDBH1
+<http://crossforest.eu/ifn/ontology/hasDBH1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasDBH1> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/ifn/ontology/hasDiameterAtBreastHeight> .
+<http://crossforest.eu/ifn/ontology/hasDBH1> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/hasDBH1> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/DBH1> .
+<http://crossforest.eu/ifn/ontology/hasDBH1> <http://www.w3.org/2000/01/rdf-schema#comment> "has diameter at breast hight with the caliper arms pointing at the center of the plot"@en .
+<http://crossforest.eu/ifn/ontology/hasDBH1> <http://www.w3.org/2000/01/rdf-schema#comment> "tiene diámetro normal con la forcípula apuntando al centro de la parcela"@es .
+<http://crossforest.eu/ifn/ontology/hasDBH1> <http://www.w3.org/2000/01/rdf-schema#comment> "tiene diámetro observado a la altura del pecho con la forcípula apuntando al centro de la parcela"@es .
+<http://crossforest.eu/ifn/ontology/hasDBH1> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasDBH1> <http://www.w3.org/2000/01/rdf-schema#label> "has DBH1"@en .
+<http://crossforest.eu/ifn/ontology/hasDBH1> <http://www.w3.org/2000/01/rdf-schema#label> "tiene dn1"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasDBH2
+<http://crossforest.eu/ifn/ontology/hasDBH2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasDBH2> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/ifn/ontology/hasDiameterAtBreastHeight> .
+<http://crossforest.eu/ifn/ontology/hasDBH2> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/hasDBH2> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/DBH2> .
+<http://crossforest.eu/ifn/ontology/hasDBH2> <http://www.w3.org/2000/01/rdf-schema#comment> "has diameter at breast hight with the caliper arms perpendicular to the center of the plot"@en .
+<http://crossforest.eu/ifn/ontology/hasDBH2> <http://www.w3.org/2000/01/rdf-schema#comment> "tiene diámetro normal con la forcípula perpendicular al centro de la parcela"@es .
+<http://crossforest.eu/ifn/ontology/hasDBH2> <http://www.w3.org/2000/01/rdf-schema#comment> "tiene diámetro observado a la altura del pecho con la forcípula perpendicular al centro de la parcela"@es .
+<http://crossforest.eu/ifn/ontology/hasDBH2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasDBH2> <http://www.w3.org/2000/01/rdf-schema#label> "has DBH2"@en .
+<http://crossforest.eu/ifn/ontology/hasDBH2> <http://www.w3.org/2000/01/rdf-schema#label> "tiene dn2"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasDiameterAtBreastHeight
+<http://crossforest.eu/ifn/ontology/hasDiameterAtBreastHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasDiameterAtBreastHeight> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasure> .
+<http://crossforest.eu/ifn/ontology/hasDiameterAtBreastHeight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/hasDiameterAtBreastHeight> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/DBH> .
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/hasDiameterAtBreastHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "has diameter at breast hight"@en .
+<http://crossforest.eu/ifn/ontology/hasDiameterAtBreastHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "tiene diámetro a la altura del pecho"@es .
+<http://crossforest.eu/ifn/ontology/hasDiameterAtBreastHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "tiene diámetro normal"@es .
+<http://crossforest.eu/ifn/ontology/hasDiameterAtBreastHeight> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasDiameterAtBreastHeight> <http://www.w3.org/2000/01/rdf-schema#label> "has DBH"@en .
+<http://crossforest.eu/ifn/ontology/hasDiameterAtBreastHeight> <http://www.w3.org/2000/01/rdf-schema#label> "tiene DN"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasForestArea
+<http://crossforest.eu/ifn/ontology/hasForestArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasForestArea> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/position/ontology/hasArea> .
+<http://crossforest.eu/position/ontology/hasArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasForestArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasForestArea> <http://www.w3.org/2000/01/rdf-schema#label> "has forest area"@en .
+# 
+# http://crossforest.eu/ifn/ontology/hasHeight
+<http://crossforest.eu/ifn/ontology/hasHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasHeight> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasure> .
+<http://crossforest.eu/ifn/ontology/hasHeight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/hasHeight> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/DBH> .
+<http://crossforest.eu/ifn/ontology/hasHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "altura del árbol hasta un determinado punto"@es .
+<http://crossforest.eu/ifn/ontology/hasHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "height of the tree to a point"@en .
+<http://crossforest.eu/ifn/ontology/hasHeight> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasHeight> <http://www.w3.org/2000/01/rdf-schema#label> "has height"@en .
+<http://crossforest.eu/ifn/ontology/hasHeight> <http://www.w3.org/2000/01/rdf-schema#label> "tiene altura"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasNumberOfTrees
+<http://crossforest.eu/ifn/ontology/hasNumberOfTrees> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasNumberOfTrees> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/NumberOfTrees> .
+<http://crossforest.eu/ifn/ontology/hasNumberOfTrees> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasNumberOfTrees> <http://www.w3.org/2000/01/rdf-schema#label> "has number of trees"@en .
+# 
+# http://crossforest.eu/ifn/ontology/hasNumberOfTreesInUnits
+<http://crossforest.eu/ifn/ontology/hasNumberOfTreesInUnits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasNumberOfTreesInUnits> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/VolumeWithBark> .
+<http://crossforest.eu/ifn/ontology/VolumeWithBark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/hasNumberOfTreesInUnits> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasNumberOfTreesInUnits> <http://www.w3.org/2000/01/rdf-schema#label> "has number of trees"@en .
+# 
+# http://crossforest.eu/ifn/ontology/hasNumberOfTreesInUnitsByHA
+<http://crossforest.eu/ifn/ontology/hasNumberOfTreesInUnitsByHA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasNumberOfTreesInUnitsByHA> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/VolumeWithBark> .
+<http://crossforest.eu/ifn/ontology/hasNumberOfTreesInUnitsByHA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasNumberOfTreesInUnitsByHA> <http://www.w3.org/2000/01/rdf-schema#label> "has number of trees"@en .
+# 
+# http://crossforest.eu/ifn/ontology/hasOccupationOfSpecies
+<http://crossforest.eu/ifn/ontology/hasOccupationOfSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasOccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasure> .
+<http://crossforest.eu/ifn/ontology/hasOccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/InfoSpecies> .
+<http://crossforest.eu/ifn/ontology/hasOccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/OccupationOfSpecies> .
+<http://crossforest.eu/ifn/ontology/hasOccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/hasOccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/hasOccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasOccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasOrigin
+<http://crossforest.eu/ifn/ontology/hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasure> .
+<http://crossforest.eu/ifn/ontology/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/InfoSpecies> .
+<http://crossforest.eu/ifn/ontology/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/Origin> .
+<http://crossforest.eu/ifn/ontology/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "has origin"@es .
+<http://crossforest.eu/ifn/ontology/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "tiene origen"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasScientificName
+<http://crossforest.eu/ifn/ontology/hasScientificName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasScientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/Plant> .
+<http://crossforest.eu/ifn/ontology/hasScientificName> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/ScientificName> .
+<http://crossforest.eu/ifn/ontology/hasScientificName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasScientificName> <http://www.w3.org/2000/01/rdf-schema#label> "scientific name"@en .
+# 
+# http://crossforest.eu/ifn/ontology/hasScientificSynonym
+<http://crossforest.eu/ifn/ontology/hasScientificSynonym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasScientificSynonym> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/Synonym> .
+<http://crossforest.eu/ifn/ontology/Synonym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/hasScientificSynonym> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasScientificSynonym> <http://www.w3.org/2000/01/rdf-schema#label> "scientific synonym"@en .
+# 
+# http://crossforest.eu/ifn/ontology/hasSpecies
+<http://crossforest.eu/ifn/ontology/hasSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasSpecies> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/Taxon> .
+<http://crossforest.eu/ifn/ontology/hasSpecies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "has species"@en .
+# 
+# http://crossforest.eu/ifn/ontology/hasStandDevelopment
+<http://crossforest.eu/ifn/ontology/hasStandDevelopment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasStandDevelopment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/InfoSpecies> .
+<http://crossforest.eu/ifn/ontology/hasStandDevelopment> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/hasStandDevelopment> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/hasStandDevelopment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasStandDevelopment> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasTotalHeight
+<http://crossforest.eu/ifn/ontology/hasTotalHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasTotalHeight> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/ifn/ontology/hasHeight> .
+<http://crossforest.eu/ifn/ontology/hasTotalHeight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/hasTotalHeight> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/DBH> .
+<http://crossforest.eu/ifn/ontology/hasTotalHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "altura del árbol hasta su punto más alto"@es .
+<http://crossforest.eu/ifn/ontology/hasTotalHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "height of the tree to its upmost point"@en .
+<http://crossforest.eu/ifn/ontology/hasTotalHeight> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasTotalHeight> <http://www.w3.org/2000/01/rdf-schema#label> "has total height"@en .
+<http://crossforest.eu/ifn/ontology/hasTotalHeight> <http://www.w3.org/2000/01/rdf-schema#label> "tiene altura total"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasVolume
+<http://crossforest.eu/ifn/ontology/hasVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasVolume> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/Volume> .
+<http://crossforest.eu/ifn/ontology/hasVolume> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasVolume> <http://www.w3.org/2000/01/rdf-schema#label> "has volume"@en .
+# 
+# http://crossforest.eu/ifn/ontology/hasVolumeFirewood
+<http://crossforest.eu/ifn/ontology/hasVolumeFirewood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasVolumeFirewood> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasVolumeFirewood> <http://www.w3.org/2000/01/rdf-schema#label> "has volume of firewood"@en .
+<http://crossforest.eu/ifn/ontology/hasVolumeFirewood> <http://www.w3.org/2000/01/rdf-schema#label> "tiene volumen de leñas"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasVolumeFirewoodInM3
+<http://crossforest.eu/ifn/ontology/hasVolumeFirewoodInM3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasVolumeFirewoodInM3> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/hasVolumeWithoutBark> .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithoutBark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/hasVolumeFirewoodInM3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasVolumeFirewoodInM3> <http://www.w3.org/2000/01/rdf-schema#label> "has volume of firewood in cubic meters"@en .
+<http://crossforest.eu/ifn/ontology/hasVolumeFirewoodInM3> <http://www.w3.org/2000/01/rdf-schema#label> "tiene volumen de leñas en metros cúbicos"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasVolumeInM3
+<http://crossforest.eu/ifn/ontology/hasVolumeInM3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasVolumeInM3> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/Volume> .
+<http://crossforest.eu/ifn/ontology/hasVolumeInM3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasVolumeInM3> <http://www.w3.org/2000/01/rdf-schema#label> "has volume in cubic meters"@en .
+<http://crossforest.eu/ifn/ontology/hasVolumeInM3> <http://www.w3.org/2000/01/rdf-schema#label> "tiene volumen en metros cúbicos"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasVolumeInM3byHA
+<http://crossforest.eu/ifn/ontology/hasVolumeInM3byHA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasVolumeInM3byHA> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/Volume> .
+<http://crossforest.eu/ifn/ontology/hasVolumeInM3byHA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasVolumeInM3byHA> <http://www.w3.org/2000/01/rdf-schema#label> "has volume in cubic meters per hectare"@en .
+<http://crossforest.eu/ifn/ontology/hasVolumeInM3byHA> <http://www.w3.org/2000/01/rdf-schema#label> "tiene volumen en metros cúbicos por hectárea"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasVolumeIncrease
+<http://crossforest.eu/ifn/ontology/hasVolumeIncrease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasVolumeIncrease> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasVolumeIncrease> <http://www.w3.org/2000/01/rdf-schema#label> "has volume increase"@en .
+<http://crossforest.eu/ifn/ontology/hasVolumeIncrease> <http://www.w3.org/2000/01/rdf-schema#label> "tiene incremento de volumen"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasVolumeIncreaseInM3
+<http://crossforest.eu/ifn/ontology/hasVolumeIncreaseInM3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasVolumeIncreaseInM3> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/hasVolumeWithoutBark> .
+<http://crossforest.eu/ifn/ontology/hasVolumeIncreaseInM3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasVolumeIncreaseInM3> <http://www.w3.org/2000/01/rdf-schema#label> "has volume increase in cubic meters"@en .
+<http://crossforest.eu/ifn/ontology/hasVolumeIncreaseInM3> <http://www.w3.org/2000/01/rdf-schema#label> "tiene incremento de volumen en metros cúbicos"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasVolumeWithBark
+<http://crossforest.eu/ifn/ontology/hasVolumeWithBark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithBark> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithBark> <http://www.w3.org/2000/01/rdf-schema#label> "has volume with bark"@en .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithBark> <http://www.w3.org/2000/01/rdf-schema#label> "tiene volumen con corteza"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasVolumeWithBarkInM3
+<http://crossforest.eu/ifn/ontology/hasVolumeWithBarkInM3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithBarkInM3> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/VolumeWithBark> .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithBarkInM3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithBarkInM3> <http://www.w3.org/2000/01/rdf-schema#label> "has volume with bark in cubic meters"@en .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithBarkInM3> <http://www.w3.org/2000/01/rdf-schema#label> "tiene volumen con corteza en metros cúbicos"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasVolumeWithBarkInM3byHA
+<http://crossforest.eu/ifn/ontology/hasVolumeWithBarkInM3byHA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithBarkInM3byHA> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/Volume> .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithBarkInM3byHA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithBarkInM3byHA> <http://www.w3.org/2000/01/rdf-schema#label> "has volume with bark in cubic meters per hectare"@en .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithBarkInM3byHA> <http://www.w3.org/2000/01/rdf-schema#label> "tiene volumen con corteza en metros cúbicos por hectárea"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasVolumeWithoutBark
+<http://crossforest.eu/ifn/ontology/hasVolumeWithoutBark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://crossforest.eu/ifn/ontology/hasVolumeWithoutBarkInM3
+<http://crossforest.eu/ifn/ontology/hasVolumeWithoutBarkInM3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithoutBarkInM3> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/hasVolumeWithoutBark> .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithoutBarkInM3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithoutBarkInM3> <http://www.w3.org/2000/01/rdf-schema#label> "has volume without bark in cubic meters"@en .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithoutBarkInM3> <http://www.w3.org/2000/01/rdf-schema#label> "tiene volumen sin corteza en metros cúbicos"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasVolumeWithoutBarkInM3byHA
+<http://crossforest.eu/ifn/ontology/hasVolumeWithoutBarkInM3byHA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithoutBarkInM3byHA> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/Volume> .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithoutBarkInM3byHA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithoutBarkInM3byHA> <http://www.w3.org/2000/01/rdf-schema#label> "has volume with bark in cubic meters per hectare"@en .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithoutBarkInM3byHA> <http://www.w3.org/2000/01/rdf-schema#label> "tiene volumen con corteza en metros cúbicos por hectárea"@es .
+# 
+# http://crossforest.eu/ifn/ontology/isInPlot
+<http://crossforest.eu/ifn/ontology/isInPlot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/isInPlot> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/isInPlot> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/Plot> .
+<http://crossforest.eu/ifn/ontology/isInPlot> <http://www.w3.org/2000/01/rdf-schema#comment> "Parcela en la que el árbol está situado"@es .
+<http://crossforest.eu/ifn/ontology/isInPlot> <http://www.w3.org/2000/01/rdf-schema#comment> "Plot in which the tree is located"@en .
+<http://crossforest.eu/ifn/ontology/isInPlot> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/isInPlot> <http://www.w3.org/2000/01/rdf-schema#label> "en la parcela"@es .
+<http://crossforest.eu/ifn/ontology/isInPlot> <http://www.w3.org/2000/01/rdf-schema#label> "in plot"@en .
+# 
+# http://crossforest.eu/ifn/ontology/isInProvince
+<http://crossforest.eu/ifn/ontology/isInProvince> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifn/ontology/isInProvince> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/SpatialEntity> .
+<http://crossforest.eu/ifn/ontology/SpatialEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/isInProvince> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/ontology/isInProvince> <http://www.w3.org/2000/01/rdf-schema#comment> "Province in which the entity is located"@en .
+<http://crossforest.eu/ifn/ontology/isInProvince> <http://www.w3.org/2000/01/rdf-schema#comment> "Provincia en la que la entidad está situada"@es .
+<http://crossforest.eu/ifn/ontology/isInProvince> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/isInProvince> <http://www.w3.org/2000/01/rdf-schema#label> "en la provincia"@es .
+<http://crossforest.eu/ifn/ontology/isInProvince> <http://www.w3.org/2000/01/rdf-schema#label> "in province"@en .
+# 
+# http://crossforest.eu/measures/ontology/hasMeasure
+# 
+# http://crossforest.eu/position/ontology/hasArea
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://crossforest.eu/ifn/ontology/hasDBH1InMillimeters
+<http://crossforest.eu/ifn/ontology/hasDBH1InMillimeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/ifn/ontology/hasDBH1InMillimeters> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/ifn/ontology/hasDBHInMillimeters> .
+<http://crossforest.eu/ifn/ontology/hasDBH1InMillimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "has diameter in millimeters at breast hight with the caliper arms pointing at the center of the plot"@en .
+<http://crossforest.eu/ifn/ontology/hasDBH1InMillimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "tiene diámetro en milímetros a la altura del pecho con la forcípula apuntando al centro de la parcela"@es .
+<http://crossforest.eu/ifn/ontology/hasDBH1InMillimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "tiene diámetro normal en milímetros con la forcípula apuntando al centro de la parcela"@es .
+<http://crossforest.eu/ifn/ontology/hasDBH1InMillimeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasDBH1InMillimeters> <http://www.w3.org/2000/01/rdf-schema#label> "has DBH in millimeters"@en .
+<http://crossforest.eu/ifn/ontology/hasDBH1InMillimeters> <http://www.w3.org/2000/01/rdf-schema#label> "tiene DN en milímetros"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasDBH2InMillimeters
+<http://crossforest.eu/ifn/ontology/hasDBH2InMillimeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/ifn/ontology/hasDBH2InMillimeters> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/ifn/ontology/hasDBHInMillimeters> .
+<http://crossforest.eu/ifn/ontology/hasDBH2InMillimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "has diameter in millimeters at breast hight with the caliper arms perpendicular to the center of the plot"@en .
+<http://crossforest.eu/ifn/ontology/hasDBH2InMillimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "tiene diámetro en milímetros a la altura del pecho con la forcípula perpendicular al centro de la parcela"@es .
+<http://crossforest.eu/ifn/ontology/hasDBH2InMillimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "tiene diámetro normal en milímetros con la forcípula perpendicular al centro de la parcela"@es .
+<http://crossforest.eu/ifn/ontology/hasDBH2InMillimeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasDBH2InMillimeters> <http://www.w3.org/2000/01/rdf-schema#label> "has DBH in millimeters"@en .
+<http://crossforest.eu/ifn/ontology/hasDBH2InMillimeters> <http://www.w3.org/2000/01/rdf-schema#label> "tiene DN en milímetros"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasDBHInMillimeters
+<http://crossforest.eu/ifn/ontology/hasDBHInMillimeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/ifn/ontology/hasDBHInMillimeters> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureInMillimeters> .
+<http://crossforest.eu/measures/ontology/hasMeasureInMillimeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/ifn/ontology/hasDBHInMillimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "has diameter in millimeters at breast hight"@en .
+<http://crossforest.eu/ifn/ontology/hasDBHInMillimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "tiene diámetro en milímetros a la altura del pecho"@es .
+<http://crossforest.eu/ifn/ontology/hasDBHInMillimeters> <http://www.w3.org/2000/01/rdf-schema#comment> "tiene diámetro normal en milímetros"@es .
+<http://crossforest.eu/ifn/ontology/hasDBHInMillimeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasDBHInMillimeters> <http://www.w3.org/2000/01/rdf-schema#label> "has DBH in millimeters"@en .
+<http://crossforest.eu/ifn/ontology/hasDBHInMillimeters> <http://www.w3.org/2000/01/rdf-schema#label> "tiene DN en milímetros"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasHeightInMeters
+<http://crossforest.eu/ifn/ontology/hasHeightInMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/ifn/ontology/hasHeightInMeters> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureInMeters> .
+<http://crossforest.eu/measures/ontology/hasMeasureInMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/ifn/ontology/hasHeightInMeters> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/hasHeightInMeters> <http://www.w3.org/2000/01/rdf-schema#comment> "altura del árbol en metros hasta un determinado punto"@es .
+<http://crossforest.eu/ifn/ontology/hasHeightInMeters> <http://www.w3.org/2000/01/rdf-schema#comment> "height of the tree in meters to a point"@en .
+<http://crossforest.eu/ifn/ontology/hasHeightInMeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasHeightInMeters> <http://www.w3.org/2000/01/rdf-schema#label> "has height in meters"@en .
+<http://crossforest.eu/ifn/ontology/hasHeightInMeters> <http://www.w3.org/2000/01/rdf-schema#label> "tiene altura en metros"@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasPercentageOfSpecies
+<http://crossforest.eu/ifn/ontology/hasPercentageOfSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/ifn/ontology/hasPercentageOfSpecies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureinPercentage> .
+<http://crossforest.eu/measures/ontology/hasMeasureinPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/ifn/ontology/hasPercentageOfSpecies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/InfoSpecies> .
+<http://crossforest.eu/ifn/ontology/hasPercentageOfSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/hasPercentageOfSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/hasPercentageOfSpecies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasPercentageOfSpecies> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/ifn/ontology/hasTotalHeightInMeters
+<http://crossforest.eu/ifn/ontology/hasTotalHeightInMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/ifn/ontology/hasTotalHeightInMeters> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/ifn/ontology/hasHeightInMeters> .
+<http://crossforest.eu/ifn/ontology/hasTotalHeightInMeters> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/hasTotalHeightInMeters> <http://www.w3.org/2000/01/rdf-schema#comment> "altura del árbol en metros hasta su punto más alto"@es .
+<http://crossforest.eu/ifn/ontology/hasTotalHeightInMeters> <http://www.w3.org/2000/01/rdf-schema#comment> "height of the tree in meters to its upmost point"@en .
+<http://crossforest.eu/ifn/ontology/hasTotalHeightInMeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasTotalHeightInMeters> <http://www.w3.org/2000/01/rdf-schema#label> "has total height in meters"@en .
+<http://crossforest.eu/ifn/ontology/hasTotalHeightInMeters> <http://www.w3.org/2000/01/rdf-schema#label> "tiene altura total en metros"@es .
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureInHectares
+<http://crossforest.eu/measures/ontology/hasMeasureInHectares> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureInMeters
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureInMillimeters
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureInSquareMeters
+<http://crossforest.eu/measures/ontology/hasMeasureInSquareMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://crossforest.eu/measures/ontology/hasMeasureinPercentage
+# 
+# http://crossforest.eu/position/ontology/hasForestAreaInHC
+<http://crossforest.eu/position/ontology/hasForestAreaInHC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/position/ontology/hasForestAreaInHC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureInHectares> .
+<http://crossforest.eu/position/ontology/hasForestAreaInHC> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/position/ontology/Position> .
+<http://crossforest.eu/position/ontology/Position> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/position/ontology/hasForestAreaInHC> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/position/ontology/hasForestAreaInHC> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/position/ontology/hasForestAreaInHC> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+<http://crossforest.eu/position/ontology/hasForestAreaInHC> <http://www.w3.org/2000/01/rdf-schema#label> "has forest area in hectares"@en .
+# 
+# http://crossforest.eu/position/ontology/hasForestAreaInSquareMeters
+<http://crossforest.eu/position/ontology/hasForestAreaInSquareMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://crossforest.eu/position/ontology/hasForestAreaInSquareMeters> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureInSquareMeters> .
+<http://crossforest.eu/position/ontology/hasForestAreaInSquareMeters> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/position/ontology/Position> .
+<http://crossforest.eu/position/ontology/hasForestAreaInSquareMeters> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/position/ontology/hasForestAreaInSquareMeters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/position/ontology/hasForestAreaInSquareMeters> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+<http://crossforest.eu/position/ontology/hasForestAreaInSquareMeters> <http://www.w3.org/2000/01/rdf-schema#label> "has forest area in square meters"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://crossforest.eu/ifn/ontology/AcceptedName
+<http://crossforest.eu/ifn/ontology/AcceptedName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/AcceptedName> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/ScientificName> .
+<http://crossforest.eu/ifn/ontology/AcceptedName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/AcceptedName> <http://www.w3.org/2000/01/rdf-schema#label> "Accepted Name"@en .
+<http://crossforest.eu/ifn/ontology/AcceptedName> <http://www.w3.org/2000/01/rdf-schema#label> "Nombre aceptado"@es .
+# 
+# http://crossforest.eu/ifn/ontology/Age
+<http://crossforest.eu/ifn/ontology/Age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Age> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/MeasureInYears> .
+<http://crossforest.eu/measures/ontology/MeasureInYears> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Age> <http://www.w3.org/2000/01/rdf-schema#comment> "Estimación de la edad"@es .
+<http://crossforest.eu/ifn/ontology/Age> <http://www.w3.org/2000/01/rdf-schema#comment> "Estimation of Age"@en .
+<http://crossforest.eu/ifn/ontology/Age> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Age> <http://www.w3.org/2000/01/rdf-schema#label> "Age"@en .
+<http://crossforest.eu/ifn/ontology/Age> <http://www.w3.org/2000/01/rdf-schema#label> "Edad"@es .
+# 
+# http://crossforest.eu/ifn/ontology/AgeReliability
+<http://crossforest.eu/ifn/ontology/AgeReliability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/AgeReliability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/Reliability> .
+<http://crossforest.eu/measures/ontology/Reliability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/AgeReliability> <http://www.w3.org/2000/01/rdf-schema#comment> "Fiabilidad de la estimación de la edad"@es .
+<http://crossforest.eu/ifn/ontology/AgeReliability> <http://www.w3.org/2000/01/rdf-schema#comment> "Reliability of estimation of age"@en .
+<http://crossforest.eu/ifn/ontology/AgeReliability> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/AgeReliability> <http://www.w3.org/2000/01/rdf-schema#label> "Fiabilidad"@es .
+<http://crossforest.eu/ifn/ontology/AgeReliability> <http://www.w3.org/2000/01/rdf-schema#label> "Reliability"@en .
+# 
+# http://crossforest.eu/ifn/ontology/AgeSource
+<http://crossforest.eu/ifn/ontology/AgeSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/AgeSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/Source> .
+<http://crossforest.eu/measures/ontology/Source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/AgeSource> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/AgeSource> <http://www.w3.org/2000/01/rdf-schema#comment> "Fuente de la estimación de la edad"@es .
+<http://crossforest.eu/ifn/ontology/AgeSource> <http://www.w3.org/2000/01/rdf-schema#comment> "Source of estimation of age"@en .
+<http://crossforest.eu/ifn/ontology/AgeSource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/AgeSource> <http://www.w3.org/2000/01/rdf-schema#label> "Fuente"@es .
+<http://crossforest.eu/ifn/ontology/AgeSource> <http://www.w3.org/2000/01/rdf-schema#label> "Source"@en .
+# 
+# http://crossforest.eu/ifn/ontology/Altitude
+<http://crossforest.eu/ifn/ontology/Altitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Altitude> <http://www.w3.org/2000/01/rdf-schema#comment> "Posición con altitud"@es .
+<http://crossforest.eu/ifn/ontology/Altitude> <http://www.w3.org/2000/01/rdf-schema#comment> "Position with Altitude"@en .
+<http://crossforest.eu/ifn/ontology/Altitude> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Altitude> <http://www.w3.org/2000/01/rdf-schema#label> "Altitud"@es .
+<http://crossforest.eu/ifn/ontology/Altitude> <http://www.w3.org/2000/01/rdf-schema#label> "Altitude"@en .
+# 
+# http://crossforest.eu/ifn/ontology/BasalArea
+<http://crossforest.eu/ifn/ontology/BasalArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/BasalArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/PlotMeasure> .
+<http://crossforest.eu/ifn/ontology/BasalArea> <http://www.w3.org/2000/01/rdf-schema#comment> "The area of a cross-section of a tree, including bark, at 1.3 m height. Basal area of a forest stand is the sum of the basal areas of all individual trees in the stand, usually reported as square meter per hectare."@en .
+<http://crossforest.eu/ifn/ontology/BasalArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/BasalArea> <http://www.w3.org/2000/01/rdf-schema#label> "Basal Area"@en .
+<http://crossforest.eu/ifn/ontology/BasalArea> <http://www.w3.org/2000/01/rdf-schema#label> "Área Basimétrica"@es .
+# 
+# http://crossforest.eu/ifn/ontology/Bush
+<http://crossforest.eu/ifn/ontology/Bush> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Bush> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Plant> .
+<http://crossforest.eu/ifn/ontology/Bush> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/DBH> .
+<http://crossforest.eu/ifn/ontology/Bush> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot> .
+<http://crossforest.eu/ifn/ontology/Bush> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Bush> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/Bush> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Bush> <http://www.w3.org/2000/01/rdf-schema#label> "Arbusto"@es .
+<http://crossforest.eu/ifn/ontology/Bush> <http://www.w3.org/2000/01/rdf-schema#label> "Bush"@en .
+# 
+# http://crossforest.eu/ifn/ontology/BushSpecies
+<http://crossforest.eu/ifn/ontology/BushSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/BushSpecies> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/PlantSpecies> .
+<http://crossforest.eu/ifn/ontology/BushSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> "Bush species, as recorded in the inventory. It is possible that the individuals of this class are not strictly species, but genus, sub-genus, mix of species, etc."@en .
+<http://crossforest.eu/ifn/ontology/BushSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> "Especie arbustiva, tal y como se ha registrado en el inventario. Es posible que los indivíduos de esta clase no sean estrictamente especies. Genus, sub-genus, y mezclas de especies son también indivíduos posibles."@es .
+<http://crossforest.eu/ifn/ontology/BushSpecies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/BushSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "Bush Species"@en .
+<http://crossforest.eu/ifn/ontology/BushSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "Especie arbustiva"@es .
+# 
+# http://crossforest.eu/ifn/ontology/ChangeOfSpecies
+<http://crossforest.eu/ifn/ontology/ChangeOfSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/ChangeOfSpecies> <http://www.w3.org/2000/01/rdf-schema#Label> "Cambio de Especie"@es .
+<http://crossforest.eu/ifn/ontology/ChangeOfSpecies> <http://www.w3.org/2000/01/rdf-schema#Label> "Change of Species"@en .
+<http://crossforest.eu/ifn/ontology/ChangeOfSpecies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+# 
+# http://crossforest.eu/ifn/ontology/Class
+<http://crossforest.eu/ifn/ontology/Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Class> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Taxon> .
+<http://crossforest.eu/ifn/ontology/Class> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Class> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/Class> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Class> <http://www.w3.org/2000/01/rdf-schema#label> "Clase"@es .
+<http://crossforest.eu/ifn/ontology/Class> <http://www.w3.org/2000/01/rdf-schema#label> "Class"@en .
+# 
+# http://crossforest.eu/ifn/ontology/Composition
+<http://crossforest.eu/ifn/ontology/Composition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Composition> <http://www.w3.org/2000/01/rdf-schema#comment> "Posición con composición de vegetación"@es .
+<http://crossforest.eu/ifn/ontology/Composition> <http://www.w3.org/2000/01/rdf-schema#comment> "Position with composition of vegetation"@en .
+<http://crossforest.eu/ifn/ontology/Composition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Composition> <http://www.w3.org/2000/01/rdf-schema#label> "Composición Específica"@es .
+<http://crossforest.eu/ifn/ontology/Composition> <http://www.w3.org/2000/01/rdf-schema#label> "Composition of Vegetation"@en .
+# 
+# http://crossforest.eu/ifn/ontology/DBH
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/PlantSpecies> .
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot> .
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot-A> .
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot-A1> .
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot-A3> .
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot-A3C> .
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot-A3E> .
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot-A4> .
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot-A4C> .
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot-A6C> .
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot-NN> .
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot-R> .
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot-R1> .
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot-R1R> .
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot-R2> .
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot-R2R> .
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot-R3> .
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot-R4> .
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/PrimaryPlot> .
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/SecondaryPlot> .
+<http://crossforest.eu/ifn/ontology/DBH> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+# 
+# http://crossforest.eu/ifn/ontology/DBH1
+<http://crossforest.eu/ifn/ontology/DBH1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/DBH1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/DiameterAtBreastHeight> .
+<http://crossforest.eu/ifn/ontology/DBH1> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/DBH2> .
+<http://crossforest.eu/ifn/ontology/DBH1> <http://www.w3.org/2000/01/rdf-schema#comment> "Generic instance of an observable property representing the diameter of a tree measured at 1.3 meters above the ground with caliper arms pointing at the center of the plot."@en .
+<http://crossforest.eu/ifn/ontology/DBH1> <http://www.w3.org/2000/01/rdf-schema#comment> "Instancia genérica de una propiedad observable representando el diámetro de un arbol a una altura aproximada de 1,3 metros, con la forcípula apuntando al centro de la parcela."@es .
+<http://crossforest.eu/ifn/ontology/DBH1> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/DBH1> <http://www.w3.org/2000/01/rdf-schema#label> "Diameter at breast height of a tree measured with caliper arms pointing at the center of the plot"@en .
+<http://crossforest.eu/ifn/ontology/DBH1> <http://www.w3.org/2000/01/rdf-schema#label> "Diámetro a la altura del pecho de un árbol medido apuntando la forcípula al centro de la parcela"@es .
+<http://crossforest.eu/ifn/ontology/DBH1> <http://www.w3.org/2000/01/rdf-schema#label> "Diámetro normal de un árbol medido apuntando la forcípula al centro de la parcela"@es .
+# 
+# http://crossforest.eu/ifn/ontology/DBH2
+<http://crossforest.eu/ifn/ontology/DBH2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/DBH2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/DiameterAtBreastHeight> .
+<http://crossforest.eu/ifn/ontology/DBH2> <http://www.w3.org/2000/01/rdf-schema#comment> "Generic instance of an observable property representing the diameter of a tree measured at 1.3 meters above the ground with caliper arms perpendicular to the center of the plot."@en .
+<http://crossforest.eu/ifn/ontology/DBH2> <http://www.w3.org/2000/01/rdf-schema#comment> "Instancia genérica de una propiedad observable representando el diámetro de un arbol a una altura aproximada de 1,3 metros, con la forcípula perpendicular al centro de la parcela."@es .
+<http://crossforest.eu/ifn/ontology/DBH2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/DBH2> <http://www.w3.org/2000/01/rdf-schema#label> "Diameter at breast height of a tree measured with caliper arms perpendicular to the center of the plot"@en .
+<http://crossforest.eu/ifn/ontology/DBH2> <http://www.w3.org/2000/01/rdf-schema#label> "Diámetro a la altura del pecho de un árbol medido con la forcípula perpendicular al centro de la parcela"@es .
+<http://crossforest.eu/ifn/ontology/DBH2> <http://www.w3.org/2000/01/rdf-schema#label> "Diámetro normal de un árbol medido con la forcípula perpendicular al centro de la parcela"@es .
+# 
+# http://crossforest.eu/ifn/ontology/DamageStatus
+<http://crossforest.eu/ifn/ontology/DamageStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/DamageStatus> <http://www.w3.org/2000/01/rdf-schema#Label> "Damage Status"@en .
+<http://crossforest.eu/ifn/ontology/DamageStatus> <http://www.w3.org/2000/01/rdf-schema#Label> "Estado del Daño"@es .
+<http://crossforest.eu/ifn/ontology/DamageStatus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+# 
+# http://crossforest.eu/ifn/ontology/DeadLayer
+<http://crossforest.eu/ifn/ontology/DeadLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/DeadLayer> <http://www.w3.org/2000/01/rdf-schema#comment> "Posición con espesor de capa muerta"@es .
+<http://crossforest.eu/ifn/ontology/DeadLayer> <http://www.w3.org/2000/01/rdf-schema#comment> "Position with thickness of dead layer"@en .
+<http://crossforest.eu/ifn/ontology/DeadLayer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/DeadLayer> <http://www.w3.org/2000/01/rdf-schema#label> "Espesor de Capa Muerta"@es .
+<http://crossforest.eu/ifn/ontology/DeadLayer> <http://www.w3.org/2000/01/rdf-schema#label> "Thickness of Dead Layer"@en .
+# 
+# http://crossforest.eu/ifn/ontology/Diameter
+<http://crossforest.eu/ifn/ontology/Diameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Diameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/TreeMeasure> .
+<http://crossforest.eu/ifn/ontology/TreeMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Diameter> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/PlantSpecies> .
+<http://crossforest.eu/ifn/ontology/Diameter> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot> .
+<http://crossforest.eu/ifn/ontology/Diameter> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/Diameter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+# 
+# http://crossforest.eu/ifn/ontology/DiameterAtBreastHeight
+<http://crossforest.eu/ifn/ontology/DiameterAtBreastHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/DiameterAtBreastHeight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Diameter> .
+<http://crossforest.eu/ifn/ontology/DiameterAtBreastHeight> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Height> .
+<http://crossforest.eu/ifn/ontology/DiameterAtBreastHeight> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/HeightToCrownBase> .
+<http://crossforest.eu/ifn/ontology/DiameterAtBreastHeight> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/HeightToFirstAliveBranch> .
+<http://crossforest.eu/ifn/ontology/DiameterAtBreastHeight> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/HeightToLargestCrownWidht> .
+<http://crossforest.eu/ifn/ontology/DiameterAtBreastHeight> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/PlantSpecies> .
+<http://crossforest.eu/ifn/ontology/DiameterAtBreastHeight> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot> .
+<http://crossforest.eu/ifn/ontology/DiameterAtBreastHeight> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/TotalHeight> .
+<http://crossforest.eu/ifn/ontology/DiameterAtBreastHeight> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/DiameterAtBreastHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Diameter at breast height of a tree"@en .
+<http://crossforest.eu/ifn/ontology/DiameterAtBreastHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Diámetro a la altura del pecho de un árbol"@es .
+<http://crossforest.eu/ifn/ontology/DiameterAtBreastHeight> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/DiameterAtBreastHeight> <http://www.w3.org/2000/01/rdf-schema#label> "Diameter at Breast Hight"@en .
+<http://crossforest.eu/ifn/ontology/DiameterAtBreastHeight> <http://www.w3.org/2000/01/rdf-schema#label> "Diámetro a la altura del pecho"@es .
+<http://crossforest.eu/ifn/ontology/DiameterAtBreastHeight> <http://www.w3.org/2000/01/rdf-schema#label> "Diámetro normal"@es .
+# 
+# http://crossforest.eu/ifn/ontology/DiameterAtRootCollar
+<http://crossforest.eu/ifn/ontology/DiameterAtRootCollar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/DiameterAtRootCollar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Diameter> .
+<http://crossforest.eu/ifn/ontology/DiameterAtRootCollar> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/PlantSpecies> .
+<http://crossforest.eu/ifn/ontology/DiameterAtRootCollar> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot> .
+<http://crossforest.eu/ifn/ontology/DiameterAtRootCollar> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/DiameterAtRootCollar> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/DiameterAtRootCollar> <http://www.w3.org/2000/01/rdf-schema#label> "Diameter At Root Collar"@en .
+<http://crossforest.eu/ifn/ontology/DiameterAtRootCollar> <http://www.w3.org/2000/01/rdf-schema#label> "Diámetro basal"@es .
+# 
+# http://crossforest.eu/ifn/ontology/DominantSpecies
+<http://crossforest.eu/ifn/ontology/DominantSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/DominantSpecies> <http://www.w3.org/2000/01/rdf-schema#Label> "Dominant Species"@en .
+<http://crossforest.eu/ifn/ontology/DominantSpecies> <http://www.w3.org/2000/01/rdf-schema#Label> "Especie Dominante"@es .
+<http://crossforest.eu/ifn/ontology/DominantSpecies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+# 
+# http://crossforest.eu/ifn/ontology/Erosion
+<http://crossforest.eu/ifn/ontology/Erosion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Erosion> <http://www.w3.org/2000/01/rdf-schema#comment> "Posición con Erosión"@es .
+<http://crossforest.eu/ifn/ontology/Erosion> <http://www.w3.org/2000/01/rdf-schema#comment> "Position with Erosion"@en .
+<http://crossforest.eu/ifn/ontology/Erosion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Erosion> <http://www.w3.org/2000/01/rdf-schema#label> "Erosion"@en .
+<http://crossforest.eu/ifn/ontology/Erosion> <http://www.w3.org/2000/01/rdf-schema#label> "Erosión"@es .
+# 
+# http://crossforest.eu/ifn/ontology/Family
+<http://crossforest.eu/ifn/ontology/Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Family> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Taxon> .
+<http://crossforest.eu/ifn/ontology/Family> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Family> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/Family> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Family> <http://www.w3.org/2000/01/rdf-schema#label> "Familia"@es .
+<http://crossforest.eu/ifn/ontology/Family> <http://www.w3.org/2000/01/rdf-schema#label> "Family"@en .
+# 
+# http://crossforest.eu/ifn/ontology/FuelModel
+<http://crossforest.eu/ifn/ontology/FuelModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/FuelModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Posición con Modelo de Combustible"@es .
+<http://crossforest.eu/ifn/ontology/FuelModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Position with Fuel Model"@en .
+<http://crossforest.eu/ifn/ontology/FuelModel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/FuelModel> <http://www.w3.org/2000/01/rdf-schema#label> "Fuel Model"@en .
+<http://crossforest.eu/ifn/ontology/FuelModel> <http://www.w3.org/2000/01/rdf-schema#label> "Modelo de Combustible"@es .
+# 
+# http://crossforest.eu/ifn/ontology/Genus
+<http://crossforest.eu/ifn/ontology/Genus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Genus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Taxon> .
+<http://crossforest.eu/ifn/ontology/Genus> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Genus> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/Genus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Genus> <http://www.w3.org/2000/01/rdf-schema#label> "Genus"@en .
+<http://crossforest.eu/ifn/ontology/Genus> <http://www.w3.org/2000/01/rdf-schema#label> "Género"@es .
+# 
+# http://crossforest.eu/ifn/ontology/Gradient
+<http://crossforest.eu/ifn/ontology/Gradient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Gradient> <http://www.w3.org/2000/01/rdf-schema#comment> "Posición con Pendiente"@es .
+<http://crossforest.eu/ifn/ontology/Gradient> <http://www.w3.org/2000/01/rdf-schema#comment> "Position with Gradient"@en .
+<http://crossforest.eu/ifn/ontology/Gradient> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Gradient> <http://www.w3.org/2000/01/rdf-schema#label> "Gradient"@en .
+<http://crossforest.eu/ifn/ontology/Gradient> <http://www.w3.org/2000/01/rdf-schema#label> "Pendiente"@es .
+# 
+# http://crossforest.eu/ifn/ontology/Height
+<http://crossforest.eu/ifn/ontology/Height> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Height> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/TreeMeasure> .
+<http://crossforest.eu/ifn/ontology/Height> <http://www.w3.org/2000/01/rdf-schema#comment> "Altura del árbol medido"@es .
+<http://crossforest.eu/ifn/ontology/Height> <http://www.w3.org/2000/01/rdf-schema#comment> "height of measured tree" .
+<http://crossforest.eu/ifn/ontology/Height> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Height> <http://www.w3.org/2000/01/rdf-schema#label> "Altura"@es .
+<http://crossforest.eu/ifn/ontology/Height> <http://www.w3.org/2000/01/rdf-schema#label> "Height"@en .
+# 
+# http://crossforest.eu/ifn/ontology/HeightToCrownBase
+<http://crossforest.eu/ifn/ontology/HeightToCrownBase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/HeightToCrownBase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Height> .
+<http://crossforest.eu/ifn/ontology/HeightToCrownBase> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/HeightToCrownBase> <http://www.w3.org/2000/01/rdf-schema#label> "Altura hasta el inicio de la copa"@es .
+<http://crossforest.eu/ifn/ontology/HeightToCrownBase> <http://www.w3.org/2000/01/rdf-schema#label> "Height to Crown Base"@en .
+# 
+# http://crossforest.eu/ifn/ontology/HeightToFirstAliveBranch
+<http://crossforest.eu/ifn/ontology/HeightToFirstAliveBranch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/HeightToFirstAliveBranch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Height> .
+<http://crossforest.eu/ifn/ontology/HeightToFirstAliveBranch> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/HeightToFirstAliveBranch> <http://www.w3.org/2000/01/rdf-schema#label> "Altura hasta la primera rama viva"@es .
+<http://crossforest.eu/ifn/ontology/HeightToFirstAliveBranch> <http://www.w3.org/2000/01/rdf-schema#label> "Height to First Alive Branch"@en .
+# 
+# http://crossforest.eu/ifn/ontology/HeightToLargestCrownWidht
+<http://crossforest.eu/ifn/ontology/HeightToLargestCrownWidht> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/HeightToLargestCrownWidht> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Height> .
+<http://crossforest.eu/ifn/ontology/HeightToLargestCrownWidht> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/HeightToLargestCrownWidht> <http://www.w3.org/2000/01/rdf-schema#label> "Altura hasta el máximo ancho de copa"@es .
+<http://crossforest.eu/ifn/ontology/HeightToLargestCrownWidht> <http://www.w3.org/2000/01/rdf-schema#label> "Height to Largest Crown Widht"@en .
+# 
+# http://crossforest.eu/ifn/ontology/InfoSpecies
+# 
+# http://crossforest.eu/ifn/ontology/NumberOfTrees
+<http://crossforest.eu/ifn/ontology/NumberOfTrees> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/NumberOfTrees> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/MeasureInUnities> .
+<http://crossforest.eu/measures/ontology/MeasureInUnities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/NumberOfTrees> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/NumberOfTrees> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/NumberOfTrees> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/NumberOfTrees> <http://www.w3.org/2000/01/rdf-schema#label> "Number of Trees"@en .
+<http://crossforest.eu/ifn/ontology/NumberOfTrees> <http://www.w3.org/2000/01/rdf-schema#label> "Número de Árboles"@es .
+# 
+# http://crossforest.eu/ifn/ontology/OccupationOfSpecies
+<http://crossforest.eu/ifn/ontology/OccupationOfSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/OccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/MeasureInPercentage> .
+<http://crossforest.eu/measures/ontology/MeasureInPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/OccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la ocupación para cada una de las especies descritas. Los valores que adopta informan del grado de presencia en porcentaje de las especies arbóreas existentes, siendo tanto mayor, cuanto mayor representatividad posee la especie en cuestión, en comparación con las otras especies arbóreas presentes en la parcela."@es .
+<http://crossforest.eu/ifn/ontology/OccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/OccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "Ocupación de especie"@es .
+# 
+# http://crossforest.eu/ifn/ontology/OrganicMatter
+<http://crossforest.eu/ifn/ontology/OrganicMatter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/OrganicMatter> <http://www.w3.org/2000/01/rdf-schema#comment> "Posición con Materia Orgánica"@es .
+<http://crossforest.eu/ifn/ontology/OrganicMatter> <http://www.w3.org/2000/01/rdf-schema#comment> "Position with Organic Matter"@en .
+<http://crossforest.eu/ifn/ontology/OrganicMatter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/OrganicMatter> <http://www.w3.org/2000/01/rdf-schema#label> "Materia Orgánica"@es .
+<http://crossforest.eu/ifn/ontology/OrganicMatter> <http://www.w3.org/2000/01/rdf-schema#label> "Organic Matter"@en .
+# 
+# http://crossforest.eu/ifn/ontology/Orientation
+<http://crossforest.eu/ifn/ontology/Orientation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Orientation> <http://www.w3.org/2000/01/rdf-schema#comment> "Posición con Orientación"@es .
+<http://crossforest.eu/ifn/ontology/Orientation> <http://www.w3.org/2000/01/rdf-schema#comment> "Position with Orientation"@en .
+<http://crossforest.eu/ifn/ontology/Orientation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Orientation> <http://www.w3.org/2000/01/rdf-schema#label> "Orientación"@es .
+<http://crossforest.eu/ifn/ontology/Orientation> <http://www.w3.org/2000/01/rdf-schema#label> "Orientation"@en .
+# 
+# http://crossforest.eu/ifn/ontology/Origin
+<http://crossforest.eu/ifn/ontology/Origin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Origin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/Reliability> .
+<http://crossforest.eu/ifn/ontology/Origin> <http://www.w3.org/2000/01/rdf-schema#comment> "Origen de la masa forestal"@es .
+<http://crossforest.eu/ifn/ontology/Origin> <http://www.w3.org/2000/01/rdf-schema#comment> "Origin of the stand"@en .
+<http://crossforest.eu/ifn/ontology/Origin> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Origin> <http://www.w3.org/2000/01/rdf-schema#label> "Origen"@es .
+<http://crossforest.eu/ifn/ontology/Origin> <http://www.w3.org/2000/01/rdf-schema#label> "Origin"@en .
+# 
+# http://crossforest.eu/ifn/ontology/PH
+<http://crossforest.eu/ifn/ontology/PH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/PH> <http://www.w3.org/2000/01/rdf-schema#comment> "Soil with PH"@en .
+<http://crossforest.eu/ifn/ontology/PH> <http://www.w3.org/2000/01/rdf-schema#comment> "Suelo con PH"@es .
+<http://crossforest.eu/ifn/ontology/PH> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/PH> <http://www.w3.org/2000/01/rdf-schema#label> "PH"@en .
+<http://crossforest.eu/ifn/ontology/PH> <http://www.w3.org/2000/01/rdf-schema#label> "PH"@es .
+# 
+# http://crossforest.eu/ifn/ontology/Plant
+<http://crossforest.eu/ifn/ontology/Plant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Plant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/position/ontology/SpatialEntity> .
+<http://crossforest.eu/position/ontology/SpatialEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Plant> <http://crossforest.eu/ifn/ontology/scientificName> "Plantae"@la .
+<http://crossforest.eu/ifn/ontology/Plant> <http://crossforest.eu/ifn/ontology/vulgarName> "Plant"@en .
+<http://crossforest.eu/ifn/ontology/Plant> <http://crossforest.eu/ifn/ontology/vulgarName> "Planta"@es .
+<http://crossforest.eu/ifn/ontology/Plant> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/Plant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+# 
+# http://crossforest.eu/ifn/ontology/PlantMeasure
+<http://crossforest.eu/ifn/ontology/PlantMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/PlantMeasure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/Measure> .
+<http://crossforest.eu/measures/ontology/Measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/PlantMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "Measure of a tree"@en .
+<http://crossforest.eu/ifn/ontology/PlantMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "Medida de un arbol"@es .
+<http://crossforest.eu/ifn/ontology/PlantMeasure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/PlantMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Medida del árbol"@es .
+<http://crossforest.eu/ifn/ontology/PlantMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Tree Measure"@en .
+# 
+# http://crossforest.eu/ifn/ontology/PlantSpecies
+<http://crossforest.eu/ifn/ontology/PlantSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/PlantSpecies> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Plot> .
+<http://crossforest.eu/ifn/ontology/PlantSpecies> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/PlantSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> "Especie vegetal, tal y como se ha registrado en el inventario. Es posible que los indivíduos de esta clase no sean estrictamente especies. Genus, sub-genus, y mezclas de especies son también indivíduos posibles."@es .
+<http://crossforest.eu/ifn/ontology/PlantSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> "Plant species, as recorded in the inventory. It is possible that the individuals of this class are not strictly species, but genus, sub-genus, mix of species, etc."@en .
+<http://crossforest.eu/ifn/ontology/PlantSpecies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/PlantSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "Especie vegetal"@es .
+<http://crossforest.eu/ifn/ontology/PlantSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "Plant Species"@en .
+# 
+# http://crossforest.eu/ifn/ontology/Plantae
+<http://crossforest.eu/ifn/ontology/Plantae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Plantae> <http://www.w3.org/2000/01/rdf-schema#comment> "Multicellular living beings with cell walls containing cellulose, and the ability to carry out photosynthesis with primary chloroplasts"@en .
+<http://crossforest.eu/ifn/ontology/Plantae> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Plantae> <http://www.w3.org/2000/01/rdf-schema#label> "Plantae"@la .
+# 
+# http://crossforest.eu/ifn/ontology/Plot
+<http://crossforest.eu/ifn/ontology/Plot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Plot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/position/ontology/SpatialEntity> .
+<http://crossforest.eu/ifn/ontology/Plot> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/Plot> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/Plot> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Plot> <http://www.w3.org/2000/01/rdf-schema#label> "Parcela"@es .
+<http://crossforest.eu/ifn/ontology/Plot> <http://www.w3.org/2000/01/rdf-schema#label> "Plot"@en .
+# 
+# http://crossforest.eu/ifn/ontology/Plot-A
+<http://crossforest.eu/ifn/ontology/Plot-A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Plot-A> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Plot> .
+<http://crossforest.eu/ifn/ontology/Plot-A> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/Plot-A> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-A> <http://www.w3.org/2000/01/rdf-schema#comment> "Parcelas levantadas en el inventario anterior que volverán a ser apeadas en el inventario actual"@es .
+<http://crossforest.eu/ifn/ontology/Plot-A> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Plot-A> <http://www.w3.org/2000/01/rdf-schema#label> "Existing Plot"@en .
+<http://crossforest.eu/ifn/ontology/Plot-A> <http://www.w3.org/2000/01/rdf-schema#label> "Parcela Existente"@es .
+# 
+# http://crossforest.eu/ifn/ontology/Plot-A1
+<http://crossforest.eu/ifn/ontology/Plot-A1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Plot-A1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/PrimaryPlot> .
+<http://crossforest.eu/ifn/ontology/Plot-A1> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/Plot-A1> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-A1> <http://www.w3.org/2000/01/rdf-schema#comment> "Parcelas en las que se localice el rejón y esté bien implantado. Se utilizarán para la comparación de inventarios y para el cálculo de existencias actuales."@es .
+<http://crossforest.eu/ifn/ontology/Plot-A1> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Plot-A1> <http://www.w3.org/2000/01/rdf-schema#label> "Parcela en la misma posición que antes"@es .
+<http://crossforest.eu/ifn/ontology/Plot-A1> <http://www.w3.org/2000/01/rdf-schema#label> "Plot in the same position as before"@en .
+# 
+# http://crossforest.eu/ifn/ontology/Plot-A3
+<http://crossforest.eu/ifn/ontology/Plot-A3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Plot-A3> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Plot-A> .
+<http://crossforest.eu/ifn/ontology/Plot-A3> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/Plot-A3> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-A3> <http://www.w3.org/2000/01/rdf-schema#comment> "Parcelas en las que se localice el rejón y esté mal implantado o bien se hayan producido cambios, en los últimos años, en las teselas de vegetación colindantes."@es .
+<http://crossforest.eu/ifn/ontology/Plot-A3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Plot-A3> <http://www.w3.org/2000/01/rdf-schema#label> "Parcela en diferente posición que la anterior"@es .
+<http://crossforest.eu/ifn/ontology/Plot-A3> <http://www.w3.org/2000/01/rdf-schema#label> "Plot in different possition than before"@en .
+# 
+# http://crossforest.eu/ifn/ontology/Plot-A3C
+<http://crossforest.eu/ifn/ontology/Plot-A3C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Plot-A3C> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/SecondaryPlot> .
+<http://crossforest.eu/ifn/ontology/Plot-A3C> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/Plot-A3C> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-A3C> <http://www.w3.org/2000/01/rdf-schema#comment> "Parcela para la comparación de inventarios. Se levantará en el punto donde se encuentre el rejón del inventario anterior. Incluye datos de identificación y dendrometría, pero no estado fitosanitario."@es .
+<http://crossforest.eu/ifn/ontology/Plot-A3C> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Plot-A3C> <http://www.w3.org/2000/01/rdf-schema#label> "Parcela de comparación de inventarios"@es .
+<http://crossforest.eu/ifn/ontology/Plot-A3C> <http://www.w3.org/2000/01/rdf-schema#label> "Plot for inventory comparison"@en .
+# 
+# http://crossforest.eu/ifn/ontology/Plot-A3E
+<http://crossforest.eu/ifn/ontology/Plot-A3E> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Plot-A3E> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/PrimaryPlot> .
+<http://crossforest.eu/ifn/ontology/Plot-A3E> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/Plot-A3E> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-A3E> <http://www.w3.org/2000/01/rdf-schema#comment> "Parcelas para el cálculo de existencias actuales. Se levantarán en el emplazamiento correcto ( Coordenada UTM)"@es .
+<http://crossforest.eu/ifn/ontology/Plot-A3E> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Plot-A3E> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-A3E> <http://www.w3.org/2000/01/rdf-schema#label> "Parcela para el cálculo de existencias actuales"@es .
+# 
+# http://crossforest.eu/ifn/ontology/Plot-A4
+<http://crossforest.eu/ifn/ontology/Plot-A4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Plot-A4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/PrimaryPlot> .
+<http://crossforest.eu/ifn/ontology/Plot-A4> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/Plot-A4> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-A4> <http://www.w3.org/2000/01/rdf-schema#comment> "Parcelas en las que no se localice el rejón. Se utilizarán para el cálculo de existencias actuales."@es .
+<http://crossforest.eu/ifn/ontology/Plot-A4> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Plot-A4> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-A4> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/ifn/ontology/Plot-A4C
+<http://crossforest.eu/ifn/ontology/Plot-A4C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Plot-A4C> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/PrimaryPlot> .
+<http://crossforest.eu/ifn/ontology/Plot-A4C> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/Plot-A4C> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-A4C> <http://www.w3.org/2000/01/rdf-schema#comment> "Parcelas en las que no se localice el rejón por cambio totales en la cubierta forestal de la tesela que contiene la parcela (pérdida total de la masa muestreada en el inventario anterior o incorporación de una nueva masa forestal inexistente en el IFN2). Se utilizarán para la comparación de inventarios y para el cálculo de existencias actuales."@es .
+<http://crossforest.eu/ifn/ontology/Plot-A4C> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Plot-A4C> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-A4C> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/ifn/ontology/Plot-A6C
+<http://crossforest.eu/ifn/ontology/Plot-A6C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Plot-A6C> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/PrimaryPlot> .
+<http://crossforest.eu/ifn/ontology/Plot-A6C> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/Plot-A6C> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-A6C> <http://www.w3.org/2000/01/rdf-schema#comment> "Parcelas en las que no se localice el rejón por cambios totales en la cubierta forestal de la tesela que contiene la parcela (pérdida total de la masa muestreada en el inventario anterior e incorporación de una nueva masa forestal). Se utilizarán para la comparación de inventarios y para el cálculo de existencias actuales."@es .
+<http://crossforest.eu/ifn/ontology/Plot-A6C> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Plot-A6C> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-A6C> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/ifn/ontology/Plot-NN
+<http://crossforest.eu/ifn/ontology/Plot-NN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Plot-NN> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/PrimaryPlot> .
+<http://crossforest.eu/ifn/ontology/Plot-NN> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/Plot-NN> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-NN> <http://www.w3.org/2000/01/rdf-schema#comment> "Se levantarán por primera vez en el inventario actual y serán utilizadas para el cálculo de existencias actuales"@es .
+<http://crossforest.eu/ifn/ontology/Plot-NN> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Plot-NN> <http://www.w3.org/2000/01/rdf-schema#label> "New Plot"@en .
+<http://crossforest.eu/ifn/ontology/Plot-NN> <http://www.w3.org/2000/01/rdf-schema#label> "Parcela Nueva"@es .
+# 
+# http://crossforest.eu/ifn/ontology/Plot-R
+<http://crossforest.eu/ifn/ontology/Plot-R> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Plot-R> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/SecondaryPlot> .
+<http://crossforest.eu/ifn/ontology/Plot-R> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/Plot-R> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-R> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/Plot-R> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Plot-R> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-R> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/ifn/ontology/Plot-R1
+<http://crossforest.eu/ifn/ontology/Plot-R1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Plot-R1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Plot-R> .
+<http://crossforest.eu/ifn/ontology/Plot-R1> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/Plot-R1> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-R1> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/Plot-R1> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Plot-R1> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-R1> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/ifn/ontology/Plot-R1R
+<http://crossforest.eu/ifn/ontology/Plot-R1R> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Plot-R1R> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Plot-R> .
+<http://crossforest.eu/ifn/ontology/Plot-R1R> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/Plot-R1R> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-R1R> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/Plot-R1R> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Plot-R1R> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-R1R> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/ifn/ontology/Plot-R2
+<http://crossforest.eu/ifn/ontology/Plot-R2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Plot-R2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Plot-R> .
+<http://crossforest.eu/ifn/ontology/Plot-R2> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/Plot-R2> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-R2> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/Plot-R2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Plot-R2> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-R2> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/ifn/ontology/Plot-R2R
+<http://crossforest.eu/ifn/ontology/Plot-R2R> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Plot-R2R> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Plot-R> .
+<http://crossforest.eu/ifn/ontology/Plot-R2R> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/Plot-R2R> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-R2R> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/Plot-R2R> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Plot-R2R> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-R2R> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/ifn/ontology/Plot-R3
+<http://crossforest.eu/ifn/ontology/Plot-R3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Plot-R3> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Plot-R> .
+<http://crossforest.eu/ifn/ontology/Plot-R3> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/Plot-R3> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-R3> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/Plot-R3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Plot-R3> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-R3> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/ifn/ontology/Plot-R4
+<http://crossforest.eu/ifn/ontology/Plot-R4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Plot-R4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Plot-R> .
+<http://crossforest.eu/ifn/ontology/Plot-R4> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/Plot-R4> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-R4> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/Plot-R4> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Plot-R4> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/ifn/ontology/Plot-R4> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/ifn/ontology/PlotMeasure
+<http://crossforest.eu/ifn/ontology/PlotMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/PlotMeasure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/Measure> .
+<http://crossforest.eu/ifn/ontology/PlotMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "Measure of a plot"@en .
+<http://crossforest.eu/ifn/ontology/PlotMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "Medida de una parcela"@es .
+<http://crossforest.eu/ifn/ontology/PlotMeasure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/PlotMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Medida de parcela"@es .
+<http://crossforest.eu/ifn/ontology/PlotMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Plot Measure"@en .
+# 
+# http://crossforest.eu/ifn/ontology/PlotMeasureBySpecies
+<http://crossforest.eu/ifn/ontology/PlotMeasureBySpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/PlotMeasureBySpecies> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/PlotMeasure> .
+<http://crossforest.eu/ifn/ontology/PlotMeasureBySpecies> <http://www.w3.org/2000/01/rdf-schema#comment> "Measure of a plot"@en .
+<http://crossforest.eu/ifn/ontology/PlotMeasureBySpecies> <http://www.w3.org/2000/01/rdf-schema#comment> "Medida de una parcela"@es .
+<http://crossforest.eu/ifn/ontology/PlotMeasureBySpecies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/PlotMeasureBySpecies> <http://www.w3.org/2000/01/rdf-schema#label> "Medida de parcela"@es .
+<http://crossforest.eu/ifn/ontology/PlotMeasureBySpecies> <http://www.w3.org/2000/01/rdf-schema#label> "Plot Measure"@en .
+# 
+# http://crossforest.eu/ifn/ontology/PlotMeasureTotal
+<http://crossforest.eu/ifn/ontology/PlotMeasureTotal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/PlotMeasureTotal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/PlotMeasure> .
+<http://crossforest.eu/ifn/ontology/PlotMeasureTotal> <http://www.w3.org/2000/01/rdf-schema#comment> "Measure of a whole plot (adding all species)"@en .
+<http://crossforest.eu/ifn/ontology/PlotMeasureTotal> <http://www.w3.org/2000/01/rdf-schema#comment> "Medida de una parcela completa (sumando las de todas las especies)"@es .
+<http://crossforest.eu/ifn/ontology/PlotMeasureTotal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/PlotMeasureTotal> <http://www.w3.org/2000/01/rdf-schema#label> "Medida de parcela total"@es .
+<http://crossforest.eu/ifn/ontology/PlotMeasureTotal> <http://www.w3.org/2000/01/rdf-schema#label> "Total Plot Measure"@en .
+# 
+# http://crossforest.eu/ifn/ontology/PlotType
+<http://crossforest.eu/ifn/ontology/PlotType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/PlotType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/PlotType> <http://www.w3.org/2000/01/rdf-schema#label> "Plot Type"@en .
+<http://crossforest.eu/ifn/ontology/PlotType> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de parcela"@es .
+# 
+# http://crossforest.eu/ifn/ontology/PrimaryPlot
+<http://crossforest.eu/ifn/ontology/PrimaryPlot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/PrimaryPlot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Plot> .
+<http://crossforest.eu/ifn/ontology/PrimaryPlot> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/PrimaryPlot> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/PrimaryPlot> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/PrimaryPlot> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/PrimaryPlot> <http://www.w3.org/2000/01/rdf-schema#label> "Parcela"@es .
+<http://crossforest.eu/ifn/ontology/PrimaryPlot> <http://www.w3.org/2000/01/rdf-schema#label> "Plot"@en .
+# 
+# http://crossforest.eu/ifn/ontology/Province
+<http://crossforest.eu/ifn/ontology/Province> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Province> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/position/ontology/SpatialEntity> .
+<http://crossforest.eu/ifn/ontology/Province> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Province> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/Province> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Province> <http://www.w3.org/2000/01/rdf-schema#label> "Province"@en .
+<http://crossforest.eu/ifn/ontology/Province> <http://www.w3.org/2000/01/rdf-schema#label> "Provincia"@es .
+# 
+# http://crossforest.eu/ifn/ontology/Rocosity
+<http://crossforest.eu/ifn/ontology/Rocosity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Rocosity> <http://www.w3.org/2000/01/rdf-schema#comment> "Posición con rocosidad del suelo"@es .
+<http://crossforest.eu/ifn/ontology/Rocosity> <http://www.w3.org/2000/01/rdf-schema#comment> "Position with rocosity of the soil"@en .
+<http://crossforest.eu/ifn/ontology/Rocosity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Rocosity> <http://www.w3.org/2000/01/rdf-schema#label> "Rocosidad"@es .
+<http://crossforest.eu/ifn/ontology/Rocosity> <http://www.w3.org/2000/01/rdf-schema#label> "Rocosity"@en .
+# 
+# http://crossforest.eu/ifn/ontology/ScientificName
+<http://crossforest.eu/ifn/ontology/ScientificName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/ScientificName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/ScientificName> <http://www.w3.org/2000/01/rdf-schema#label> "Nombre científico"@es .
+<http://crossforest.eu/ifn/ontology/ScientificName> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific Name"@en .
+# 
+# http://crossforest.eu/ifn/ontology/ScientificSynonym
+<http://crossforest.eu/ifn/ontology/ScientificSynonym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/ScientificSynonym> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/ScientificName> .
+<http://crossforest.eu/ifn/ontology/ScientificSynonym> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/ScientificSynonym> <http://www.w3.org/2000/01/rdf-schema#label> "Sinónimo"@es .
+<http://crossforest.eu/ifn/ontology/ScientificSynonym> <http://www.w3.org/2000/01/rdf-schema#label> "Synonym"@en .
+# 
+# http://crossforest.eu/ifn/ontology/SecondaryPlot
+<http://crossforest.eu/ifn/ontology/SecondaryPlot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/SecondaryPlot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Plot> .
+<http://crossforest.eu/ifn/ontology/SecondaryPlot> <http://www.w3.org/2002/07/owl#disjointWith> <http://crossforest.eu/ifn/ontology/Tree> .
+<http://crossforest.eu/ifn/ontology/SecondaryPlot> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/SecondaryPlot> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/SecondaryPlot> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/SecondaryPlot> <http://www.w3.org/2000/01/rdf-schema#label> "Parcela"@es .
+<http://crossforest.eu/ifn/ontology/SecondaryPlot> <http://www.w3.org/2000/01/rdf-schema#label> "Plot"@en .
+# 
+# http://crossforest.eu/ifn/ontology/SilviculturalSystem
+<http://crossforest.eu/ifn/ontology/SilviculturalSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/SilviculturalSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/Reliability> .
+<http://crossforest.eu/ifn/ontology/SilviculturalSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Tratamiento de la masa forestal desde la perspectiva de la ordenación de montes"@es .
+<http://crossforest.eu/ifn/ontology/SilviculturalSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/SilviculturalSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Silvicultural System"@en .
+<http://crossforest.eu/ifn/ontology/SilviculturalSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Tratamiento"@es .
+# 
+# http://crossforest.eu/ifn/ontology/SpatialDistribution
+<http://crossforest.eu/ifn/ontology/SpatialDistribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/SpatialDistribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Posición con disposición de la vegetación en el espacio"@es .
+<http://crossforest.eu/ifn/ontology/SpatialDistribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Position with spatial distribution of vegetation"@en .
+<http://crossforest.eu/ifn/ontology/SpatialDistribution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/SpatialDistribution> <http://www.w3.org/2000/01/rdf-schema#label> "Distribución Espacial"@es .
+<http://crossforest.eu/ifn/ontology/SpatialDistribution> <http://www.w3.org/2000/01/rdf-schema#label> "Spatial Distribution"@en .
+# 
+# http://crossforest.eu/ifn/ontology/SpatialEntity
+# 
+# http://crossforest.eu/ifn/ontology/Species
+<http://crossforest.eu/ifn/ontology/Species> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Species> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Taxon> .
+<http://crossforest.eu/ifn/ontology/Species> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Species> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/Species> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Species> <http://www.w3.org/2000/01/rdf-schema#label> "Especie"@es .
+<http://crossforest.eu/ifn/ontology/Species> <http://www.w3.org/2000/01/rdf-schema#label> "Species"@en .
+# 
+# http://crossforest.eu/ifn/ontology/Stratum
+<http://crossforest.eu/ifn/ontology/Stratum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Stratum> <http://www.w3.org/2000/01/rdf-schema#Label> "Estrato"@es .
+<http://crossforest.eu/ifn/ontology/Stratum> <http://www.w3.org/2000/01/rdf-schema#Label> "Stratum"@en .
+<http://crossforest.eu/ifn/ontology/Stratum> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+# 
+# http://crossforest.eu/ifn/ontology/Synonym
+# 
+# http://crossforest.eu/ifn/ontology/Taxon
+<http://crossforest.eu/ifn/ontology/Taxon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Taxon> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Taxon> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/Taxon> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Taxon> <http://www.w3.org/2000/01/rdf-schema#label> "Taxon"@en .
+<http://crossforest.eu/ifn/ontology/Taxon> <http://www.w3.org/2000/01/rdf-schema#label> "Taxón"@es .
+# 
+# http://crossforest.eu/ifn/ontology/Texture
+<http://crossforest.eu/ifn/ontology/Texture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Texture> <http://www.w3.org/2000/01/rdf-schema#comment> "Posición con textura del suelo"@es .
+<http://crossforest.eu/ifn/ontology/Texture> <http://www.w3.org/2000/01/rdf-schema#comment> "Position with soil texture"@en .
+<http://crossforest.eu/ifn/ontology/Texture> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Texture> <http://www.w3.org/2000/01/rdf-schema#label> "Textura"@es .
+<http://crossforest.eu/ifn/ontology/Texture> <http://www.w3.org/2000/01/rdf-schema#label> "Texture"@en .
+# 
+# http://crossforest.eu/ifn/ontology/TotalHeight
+<http://crossforest.eu/ifn/ontology/TotalHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/TotalHeight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Height> .
+<http://crossforest.eu/ifn/ontology/TotalHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Altura total del árbol medido"@es .
+<http://crossforest.eu/ifn/ontology/TotalHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Total height of measured tree" .
+<http://crossforest.eu/ifn/ontology/TotalHeight> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/TotalHeight> <http://www.w3.org/2000/01/rdf-schema#label> "Altura total"@es .
+<http://crossforest.eu/ifn/ontology/TotalHeight> <http://www.w3.org/2000/01/rdf-schema#label> "Total Height"@en .
+# 
+# http://crossforest.eu/ifn/ontology/Tree
+<http://crossforest.eu/ifn/ontology/Tree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Tree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/Plant> .
+<http://crossforest.eu/ifn/ontology/Tree> <http://www.w3.org/2000/01/rdf-schema#comment> "Planta vivaz (que vive más de dos años, de tallo leñoso, que se ramifica a cierta altura del suelo"@es .
+<http://crossforest.eu/ifn/ontology/Tree> <http://www.w3.org/2000/01/rdf-schema#comment> "Woody perennial plant with an elongated stem supporting branches"@en .
+<http://crossforest.eu/ifn/ontology/Tree> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Tree> <http://www.w3.org/2000/01/rdf-schema#label> "Tree"@en .
+<http://crossforest.eu/ifn/ontology/Tree> <http://www.w3.org/2000/01/rdf-schema#label> "Árbol"@es .
+# 
+# http://crossforest.eu/ifn/ontology/TreeMeasure
+# 
+# http://crossforest.eu/ifn/ontology/TreeShape
+<http://crossforest.eu/ifn/ontology/TreeShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/TreeShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Tree with a Shape"@en .
+<http://crossforest.eu/ifn/ontology/TreeShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Árbol con forma"@es .
+<http://crossforest.eu/ifn/ontology/TreeShape> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/TreeShape> <http://www.w3.org/2000/01/rdf-schema#label> "Forma"@es .
+<http://crossforest.eu/ifn/ontology/TreeShape> <http://www.w3.org/2000/01/rdf-schema#label> "Shape"@en .
+# 
+# http://crossforest.eu/ifn/ontology/TreeSpecies
+<http://crossforest.eu/ifn/ontology/TreeSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/TreeSpecies> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/PlantSpecies> .
+<http://crossforest.eu/ifn/ontology/TreeSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> "Especie arbórea, tal y como se ha registrado en el inventario. Es posible que los indivíduos de esta clase no sean estrictamente especies. Genus, sub-genus, y mezclas de especies son también indivíduos posibles."@es .
+<http://crossforest.eu/ifn/ontology/TreeSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> "Tree species, as recorded in the inventory. It is possible that the individuals of this class are not strictly species, but genus, sub-genus, mix of species, etc."@en .
+<http://crossforest.eu/ifn/ontology/TreeSpecies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/TreeSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "Especie arbórea"@en .
+<http://crossforest.eu/ifn/ontology/TreeSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "Tree Species"@en .
+# 
+# http://crossforest.eu/ifn/ontology/Use
+<http://crossforest.eu/ifn/ontology/Use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Use> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Use> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
+<http://crossforest.eu/ifn/ontology/Use> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Use> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://crossforest.eu/ifn/ontology/Use> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+# 
+# http://crossforest.eu/ifn/ontology/Volume
+<http://crossforest.eu/ifn/ontology/Volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifn/ontology/Volume> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifn/ontology/PlotMeasure> .
+<http://crossforest.eu/ifn/ontology/Volume> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://crossforest.eu/ifn/ontology/Volume> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/Volume> <http://www.w3.org/2000/01/rdf-schema#label> "Volume"@en .
+<http://crossforest.eu/ifn/ontology/Volume> <http://www.w3.org/2000/01/rdf-schema#label> "Volume"@es .
+# 
+# http://crossforest.eu/ifn/ontology/VolumeWithBark
+# 
+# http://crossforest.eu/ifn/ontology/hasVolumeWithoutBark
+# 
+# http://crossforest.eu/measures/ontology/Measure
+# 
+# http://crossforest.eu/measures/ontology/MeasureInPercentage
+# 
+# http://crossforest.eu/measures/ontology/MeasureInUnities
+# 
+# http://crossforest.eu/measures/ontology/MeasureInYears
+# 
+# http://crossforest.eu/measures/ontology/Reliability
+# 
+# http://crossforest.eu/measures/ontology/Source
+# 
+# http://crossforest.eu/position/ontology/Position
+# 
+# http://crossforest.eu/position/ontology/SpatialEntity
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://crossforest.eu/ifn/data/density/1
+<http://crossforest.eu/ifn/data/density/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/density/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/SilviculturalSystem> .
+<http://crossforest.eu/ifn/data/density/1> <http://www.w3.org/2000/01/rdf-schema#comment> "De 1 a 4 pies en la parcela."@es .
+<http://crossforest.eu/ifn/data/density/1> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/density/1> <http://www.w3.org/2000/01/rdf-schema#label> "Escasa"@es .
+# 
+# http://crossforest.eu/ifn/data/density/2
+<http://crossforest.eu/ifn/data/density/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/density/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/SilviculturalSystem> .
+<http://crossforest.eu/ifn/data/density/2> <http://www.w3.org/2000/01/rdf-schema#comment> "De 5 a 15 pies en la parcela."@es .
+<http://crossforest.eu/ifn/data/density/2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/density/2> <http://www.w3.org/2000/01/rdf-schema#label> "Normal"@es .
+# 
+# http://crossforest.eu/ifn/data/density/3
+<http://crossforest.eu/ifn/data/density/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/density/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/SilviculturalSystem> .
+<http://crossforest.eu/ifn/data/density/3> <http://www.w3.org/2000/01/rdf-schema#comment> "Más de 15 pies en la parcela."@es .
+<http://crossforest.eu/ifn/data/density/3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/density/3> <http://www.w3.org/2000/01/rdf-schema#label> "Abundante"@es .
+# 
+# http://crossforest.eu/ifn/data/origin/11
+<http://crossforest.eu/ifn/data/origin/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/origin/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/AgeSource> .
+<http://crossforest.eu/ifn/data/origin/11> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/origin/11> <http://www.w3.org/2000/01/rdf-schema#label> "Natural"@es .
+# 
+# http://crossforest.eu/ifn/data/origin/12
+<http://crossforest.eu/ifn/data/origin/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/origin/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/AgeSource> .
+<http://crossforest.eu/ifn/data/origin/12> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/origin/12> <http://www.w3.org/2000/01/rdf-schema#label> "Artificial"@es .
+# 
+# http://crossforest.eu/ifn/data/origin/13
+<http://crossforest.eu/ifn/data/origin/13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/origin/13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/AgeSource> .
+<http://crossforest.eu/ifn/data/origin/13> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/origin/13> <http://www.w3.org/2000/01/rdf-schema#label> "Naturalizado"@es .
+# 
+# http://crossforest.eu/ifn/data/origin/21
+<http://crossforest.eu/ifn/data/origin/21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/origin/21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/AgeSource> .
+<http://crossforest.eu/ifn/data/origin/21> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/origin/21> <http://www.w3.org/2000/01/rdf-schema#label> "Semilla"@es .
+# 
+# http://crossforest.eu/ifn/data/origin/22
+<http://crossforest.eu/ifn/data/origin/22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/origin/22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/AgeSource> .
+<http://crossforest.eu/ifn/data/origin/22> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/origin/22> <http://www.w3.org/2000/01/rdf-schema#label> "Plantación"@es .
+# 
+# http://crossforest.eu/ifn/data/origin/23
+<http://crossforest.eu/ifn/data/origin/23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/origin/23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/AgeSource> .
+<http://crossforest.eu/ifn/data/origin/23> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/origin/23> <http://www.w3.org/2000/01/rdf-schema#label> "Brote de cepa o raíz"@es .
+# 
+# http://crossforest.eu/ifn/data/origin/24
+<http://crossforest.eu/ifn/data/origin/24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/origin/24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/AgeSource> .
+<http://crossforest.eu/ifn/data/origin/24> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/origin/24> <http://www.w3.org/2000/01/rdf-schema#label> "Mixto semilla y brote de cepa"@es .
+# 
+# http://crossforest.eu/ifn/data/origin/25
+<http://crossforest.eu/ifn/data/origin/25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/origin/25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/AgeSource> .
+<http://crossforest.eu/ifn/data/origin/25> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/origin/25> <http://www.w3.org/2000/01/rdf-schema#label> "Mixto semilla y plantación"@es .
+# 
+# http://crossforest.eu/ifn/data/origin/26
+<http://crossforest.eu/ifn/data/origin/26> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/origin/26> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/AgeSource> .
+<http://crossforest.eu/ifn/data/origin/26> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/origin/26> <http://www.w3.org/2000/01/rdf-schema#label> "Mixto plantación y brote de cepa (eucaliptos)"@es .
+# 
+# http://crossforest.eu/ifn/data/province/01
+<http://crossforest.eu/ifn/data/province/01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/01> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/01> <http://www.w3.org/2000/01/rdf-schema#label> "Álava"@es .
+# 
+# http://crossforest.eu/ifn/data/province/02
+<http://crossforest.eu/ifn/data/province/02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/02> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/02> <http://www.w3.org/2000/01/rdf-schema#label> "Albacete"@es .
+# 
+# http://crossforest.eu/ifn/data/province/03
+<http://crossforest.eu/ifn/data/province/03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/03> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/03> <http://www.w3.org/2000/01/rdf-schema#label> "Alicante"@es .
+# 
+# http://crossforest.eu/ifn/data/province/04
+<http://crossforest.eu/ifn/data/province/04> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/04> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/04> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/04> <http://www.w3.org/2000/01/rdf-schema#label> "Almería"@es .
+# 
+# http://crossforest.eu/ifn/data/province/05
+<http://crossforest.eu/ifn/data/province/05> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/05> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/05> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/05> <http://www.w3.org/2000/01/rdf-schema#label> "Ávila"@es .
+# 
+# http://crossforest.eu/ifn/data/province/06
+<http://crossforest.eu/ifn/data/province/06> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/06> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/06> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/06> <http://www.w3.org/2000/01/rdf-schema#label> "Badajoz"@es .
+# 
+# http://crossforest.eu/ifn/data/province/07
+<http://crossforest.eu/ifn/data/province/07> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/07> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/07> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/07> <http://www.w3.org/2000/01/rdf-schema#label> "Baleares"@es .
+# 
+# http://crossforest.eu/ifn/data/province/08
+<http://crossforest.eu/ifn/data/province/08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/08> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/08> <http://www.w3.org/2000/01/rdf-schema#label> "Barcelona"@es .
+# 
+# http://crossforest.eu/ifn/data/province/09
+<http://crossforest.eu/ifn/data/province/09> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/09> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/09> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/09> <http://www.w3.org/2000/01/rdf-schema#label> "Burgos"@es .
+# 
+# http://crossforest.eu/ifn/data/province/10
+<http://crossforest.eu/ifn/data/province/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/10> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/10> <http://www.w3.org/2000/01/rdf-schema#label> "Cáceres"@es .
+# 
+# http://crossforest.eu/ifn/data/province/11
+<http://crossforest.eu/ifn/data/province/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/11> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/11> <http://www.w3.org/2000/01/rdf-schema#label> "Cádiz"@es .
+# 
+# http://crossforest.eu/ifn/data/province/12
+<http://crossforest.eu/ifn/data/province/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/12> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/12> <http://www.w3.org/2000/01/rdf-schema#label> "Castellón"@es .
+# 
+# http://crossforest.eu/ifn/data/province/13
+<http://crossforest.eu/ifn/data/province/13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/13> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/13> <http://www.w3.org/2000/01/rdf-schema#label> "Ciudad real"@es .
+# 
+# http://crossforest.eu/ifn/data/province/14
+<http://crossforest.eu/ifn/data/province/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/14> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/14> <http://www.w3.org/2000/01/rdf-schema#label> "Córdoba"@es .
+# 
+# http://crossforest.eu/ifn/data/province/15
+<http://crossforest.eu/ifn/data/province/15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/15> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/15> <http://www.w3.org/2000/01/rdf-schema#label> "La Coruña"@es .
+# 
+# http://crossforest.eu/ifn/data/province/16
+<http://crossforest.eu/ifn/data/province/16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/16> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/16> <http://www.w3.org/2000/01/rdf-schema#label> "Cuenca"@es .
+# 
+# http://crossforest.eu/ifn/data/province/17
+<http://crossforest.eu/ifn/data/province/17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/17> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/17> <http://www.w3.org/2000/01/rdf-schema#label> "Gerona"@es .
+# 
+# http://crossforest.eu/ifn/data/province/18
+<http://crossforest.eu/ifn/data/province/18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/18> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/18> <http://www.w3.org/2000/01/rdf-schema#label> "Granada"@es .
+# 
+# http://crossforest.eu/ifn/data/province/19
+<http://crossforest.eu/ifn/data/province/19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/19> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/19> <http://www.w3.org/2000/01/rdf-schema#label> "Guadalajara"@es .
+# 
+# http://crossforest.eu/ifn/data/province/20
+<http://crossforest.eu/ifn/data/province/20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/20> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/20> <http://www.w3.org/2000/01/rdf-schema#label> "Guipúzcoa"@es .
+# 
+# http://crossforest.eu/ifn/data/province/21
+<http://crossforest.eu/ifn/data/province/21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/21> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/21> <http://www.w3.org/2000/01/rdf-schema#label> "Huelva"@es .
+# 
+# http://crossforest.eu/ifn/data/province/22
+<http://crossforest.eu/ifn/data/province/22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/22> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/22> <http://www.w3.org/2000/01/rdf-schema#label> "Huesca"@es .
+# 
+# http://crossforest.eu/ifn/data/province/23
+<http://crossforest.eu/ifn/data/province/23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/23> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/23> <http://www.w3.org/2000/01/rdf-schema#label> "Jaén"@es .
+# 
+# http://crossforest.eu/ifn/data/province/24
+<http://crossforest.eu/ifn/data/province/24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/24> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/24> <http://www.w3.org/2000/01/rdf-schema#label> "León"@es .
+# 
+# http://crossforest.eu/ifn/data/province/25
+<http://crossforest.eu/ifn/data/province/25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/25> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/25> <http://www.w3.org/2000/01/rdf-schema#label> "Lérida"@es .
+# 
+# http://crossforest.eu/ifn/data/province/26
+<http://crossforest.eu/ifn/data/province/26> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/26> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/26> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/26> <http://www.w3.org/2000/01/rdf-schema#label> "La Rioja"@es .
+# 
+# http://crossforest.eu/ifn/data/province/27
+<http://crossforest.eu/ifn/data/province/27> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/27> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/27> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/27> <http://www.w3.org/2000/01/rdf-schema#label> "Lugo"@es .
+# 
+# http://crossforest.eu/ifn/data/province/28
+<http://crossforest.eu/ifn/data/province/28> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/28> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/28> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/28> <http://www.w3.org/2000/01/rdf-schema#label> "Madrid"@es .
+# 
+# http://crossforest.eu/ifn/data/province/29
+<http://crossforest.eu/ifn/data/province/29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/29> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/29> <http://www.w3.org/2000/01/rdf-schema#label> "Málaga"@es .
+# 
+# http://crossforest.eu/ifn/data/province/30
+<http://crossforest.eu/ifn/data/province/30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/30> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/30> <http://www.w3.org/2000/01/rdf-schema#label> "Murcia"@es .
+# 
+# http://crossforest.eu/ifn/data/province/31
+<http://crossforest.eu/ifn/data/province/31> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/31> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/31> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/31> <http://www.w3.org/2000/01/rdf-schema#label> "Navarra"@es .
+# 
+# http://crossforest.eu/ifn/data/province/32
+<http://crossforest.eu/ifn/data/province/32> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/32> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/32> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/32> <http://www.w3.org/2000/01/rdf-schema#label> "Orense"@es .
+# 
+# http://crossforest.eu/ifn/data/province/33
+<http://crossforest.eu/ifn/data/province/33> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/33> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/33> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/33> <http://www.w3.org/2000/01/rdf-schema#label> "Asturias"@es .
+# 
+# http://crossforest.eu/ifn/data/province/34
+<http://crossforest.eu/ifn/data/province/34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/34> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/34> <http://www.w3.org/2000/01/rdf-schema#label> "Palencia"@es .
+# 
+# http://crossforest.eu/ifn/data/province/35
+<http://crossforest.eu/ifn/data/province/35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/35> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/35> <http://www.w3.org/2000/01/rdf-schema#label> "Las Palmas"@es .
+# 
+# http://crossforest.eu/ifn/data/province/36
+<http://crossforest.eu/ifn/data/province/36> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/36> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/36> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/36> <http://www.w3.org/2000/01/rdf-schema#label> "Pontevedra"@es .
+# 
+# http://crossforest.eu/ifn/data/province/37
+<http://crossforest.eu/ifn/data/province/37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/37> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/37> <http://www.w3.org/2000/01/rdf-schema#label> "Salamanca"@es .
+# 
+# http://crossforest.eu/ifn/data/province/38
+<http://crossforest.eu/ifn/data/province/38> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/38> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/38> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/38> <http://www.w3.org/2000/01/rdf-schema#label> "Santa Cruz de Tenerife"@es .
+# 
+# http://crossforest.eu/ifn/data/province/39
+<http://crossforest.eu/ifn/data/province/39> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/39> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/39> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/39> <http://www.w3.org/2000/01/rdf-schema#label> "Cantabria"@es .
+# 
+# http://crossforest.eu/ifn/data/province/40
+<http://crossforest.eu/ifn/data/province/40> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/40> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/40> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/40> <http://www.w3.org/2000/01/rdf-schema#label> "Segovia"@es .
+# 
+# http://crossforest.eu/ifn/data/province/41
+<http://crossforest.eu/ifn/data/province/41> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/41> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/41> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/41> <http://www.w3.org/2000/01/rdf-schema#label> "Savilla"@es .
+# 
+# http://crossforest.eu/ifn/data/province/42
+<http://crossforest.eu/ifn/data/province/42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/42> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/42> <http://www.w3.org/2000/01/rdf-schema#label> "Soria"@es .
+# 
+# http://crossforest.eu/ifn/data/province/43
+<http://crossforest.eu/ifn/data/province/43> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/43> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/43> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/43> <http://www.w3.org/2000/01/rdf-schema#label> "Tarragona"@es .
+# 
+# http://crossforest.eu/ifn/data/province/44
+<http://crossforest.eu/ifn/data/province/44> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/44> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/44> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/44> <http://www.w3.org/2000/01/rdf-schema#label> "Teruel"@es .
+# 
+# http://crossforest.eu/ifn/data/province/45
+<http://crossforest.eu/ifn/data/province/45> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/45> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/45> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/45> <http://www.w3.org/2000/01/rdf-schema#label> "Toledo"@es .
+# 
+# http://crossforest.eu/ifn/data/province/46
+<http://crossforest.eu/ifn/data/province/46> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/46> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/46> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/46> <http://www.w3.org/2000/01/rdf-schema#label> "Valencia"@es .
+# 
+# http://crossforest.eu/ifn/data/province/47
+<http://crossforest.eu/ifn/data/province/47> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/47> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/47> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/47> <http://www.w3.org/2000/01/rdf-schema#label> "Valladolid"@es .
+# 
+# http://crossforest.eu/ifn/data/province/48
+<http://crossforest.eu/ifn/data/province/48> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/48> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/48> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/48> <http://www.w3.org/2000/01/rdf-schema#label> "Vizcaya"@es .
+# 
+# http://crossforest.eu/ifn/data/province/49
+<http://crossforest.eu/ifn/data/province/49> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/49> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/49> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/49> <http://www.w3.org/2000/01/rdf-schema#label> "Zamora"@es .
+# 
+# http://crossforest.eu/ifn/data/province/50
+<http://crossforest.eu/ifn/data/province/50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/50> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/50> <http://www.w3.org/2000/01/rdf-schema#label> "Zaragoza"@es .
+# 
+# http://crossforest.eu/ifn/data/province/51
+<http://crossforest.eu/ifn/data/province/51> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/51> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/51> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/51> <http://www.w3.org/2000/01/rdf-schema#label> "Ceuta"@es .
+# 
+# http://crossforest.eu/ifn/data/province/52
+<http://crossforest.eu/ifn/data/province/52> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/province/52> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifn/data/province/52> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/province/52> <http://www.w3.org/2000/01/rdf-schema#label> "Melilla"@es .
+# 
+# http://crossforest.eu/ifn/data/reliability/1
+<http://crossforest.eu/ifn/data/reliability/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/reliability/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/AgeSource> .
+<http://crossforest.eu/ifn/data/reliability/1> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/reliability/1> <http://www.w3.org/2000/01/rdf-schema#label> "Dudosa"@es .
+# 
+# http://crossforest.eu/ifn/data/reliability/2
+<http://crossforest.eu/ifn/data/reliability/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/reliability/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/AgeSource> .
+<http://crossforest.eu/ifn/data/reliability/2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/reliability/2> <http://www.w3.org/2000/01/rdf-schema#label> "Baja"@es .
+# 
+# http://crossforest.eu/ifn/data/reliability/3
+<http://crossforest.eu/ifn/data/reliability/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/reliability/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/AgeSource> .
+<http://crossforest.eu/ifn/data/reliability/3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/reliability/3> <http://www.w3.org/2000/01/rdf-schema#label> "Media"@es .
+# 
+# http://crossforest.eu/ifn/data/reliability/4
+<http://crossforest.eu/ifn/data/reliability/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/reliability/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/AgeSource> .
+<http://crossforest.eu/ifn/data/reliability/4> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/reliability/4> <http://www.w3.org/2000/01/rdf-schema#label> "Alta"@es .
+# 
+# http://crossforest.eu/ifn/data/size/1
+<http://crossforest.eu/ifn/data/size/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/size/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/SilviculturalSystem> .
+<http://crossforest.eu/ifn/data/size/1> <http://www.w3.org/2000/01/rdf-schema#comment> "Pies con altura inferior a 30 cm."@es .
+<http://crossforest.eu/ifn/data/size/1> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/size/1> <http://www.w3.org/2000/01/rdf-schema#label> "Categoría 1"@es .
+# 
+# http://crossforest.eu/ifn/data/size/2
+<http://crossforest.eu/ifn/data/size/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/size/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/SilviculturalSystem> .
+<http://crossforest.eu/ifn/data/size/2> <http://www.w3.org/2000/01/rdf-schema#comment> "Pies con altura comprendida entre 30 y 130 cm."@es .
+<http://crossforest.eu/ifn/data/size/2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/size/2> <http://www.w3.org/2000/01/rdf-schema#label> "Categoría 2"@es .
+# 
+# http://crossforest.eu/ifn/data/size/3
+<http://crossforest.eu/ifn/data/size/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/size/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/SilviculturalSystem> .
+<http://crossforest.eu/ifn/data/size/3> <http://www.w3.org/2000/01/rdf-schema#comment> "Pies con altura superior a 130 cm y diámetro normal menor de 2,5 cm."@es .
+<http://crossforest.eu/ifn/data/size/3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/size/3> <http://www.w3.org/2000/01/rdf-schema#label> "Categoría 3"@es .
+# 
+# http://crossforest.eu/ifn/data/size/4
+<http://crossforest.eu/ifn/data/size/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/size/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/SilviculturalSystem> .
+<http://crossforest.eu/ifn/data/size/4> <http://www.w3.org/2000/01/rdf-schema#comment> "Pies con altura superior a 130 cm y diámetro normal comprendido entre 2,5 y 7,5 cm. Corresponde a los pies menores del IFN-2."@es .
+<http://crossforest.eu/ifn/data/size/4> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/size/4> <http://www.w3.org/2000/01/rdf-schema#label> "Categoría 4"@es .
+# 
+# http://crossforest.eu/ifn/data/source/1
+<http://crossforest.eu/ifn/data/source/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/source/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/AgeSource> .
+<http://crossforest.eu/ifn/data/source/1> <http://www.w3.org/2000/01/rdf-schema#comment> "Por el aspecto"@es .
+<http://crossforest.eu/ifn/data/source/1> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/source/1> <http://www.w3.org/2000/01/rdf-schema#label> "Aspecto"@es .
+# 
+# http://crossforest.eu/ifn/data/source/2
+<http://crossforest.eu/ifn/data/source/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/source/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/AgeSource> .
+<http://crossforest.eu/ifn/data/source/2> <http://www.w3.org/2000/01/rdf-schema#comment> "Por consulta al agente forestal de la zona"@es .
+<http://crossforest.eu/ifn/data/source/2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/source/2> <http://www.w3.org/2000/01/rdf-schema#label> "Agente Forestal"@es .
+# 
+# http://crossforest.eu/ifn/data/source/3
+<http://crossforest.eu/ifn/data/source/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/source/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/AgeSource> .
+<http://crossforest.eu/ifn/data/source/3> <http://www.w3.org/2000/01/rdf-schema#comment> "Por consulta a la jefatura forestal comarcal, provincial o autonómica"@es .
+<http://crossforest.eu/ifn/data/source/3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/source/3> <http://www.w3.org/2000/01/rdf-schema#label> "Jefatura Forestal"@es .
+# 
+# http://crossforest.eu/ifn/data/source/4
+<http://crossforest.eu/ifn/data/source/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/source/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/AgeSource> .
+<http://crossforest.eu/ifn/data/source/4> <http://www.w3.org/2000/01/rdf-schema#comment> "Por consulta a los habitantes de la zona"@es .
+<http://crossforest.eu/ifn/data/source/4> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/source/4> <http://www.w3.org/2000/01/rdf-schema#label> "Habitantes"@es .
+# 
+# http://crossforest.eu/ifn/data/source/5
+<http://crossforest.eu/ifn/data/source/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/source/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/AgeSource> .
+<http://crossforest.eu/ifn/data/source/5> <http://www.w3.org/2000/01/rdf-schema#comment> "Por conteo de verticilos"@es .
+<http://crossforest.eu/ifn/data/source/5> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/source/5> <http://www.w3.org/2000/01/rdf-schema#label> "Verticilos"@es .
+# 
+# http://crossforest.eu/ifn/data/source/6
+<http://crossforest.eu/ifn/data/source/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/source/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/AgeSource> .
+<http://crossforest.eu/ifn/data/source/6> <http://www.w3.org/2000/01/rdf-schema#comment> "Por observación de tocones recientes"@es .
+<http://crossforest.eu/ifn/data/source/6> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/source/6> <http://www.w3.org/2000/01/rdf-schema#label> "Tocones"@es .
+# 
+# http://crossforest.eu/ifn/data/source/7
+<http://crossforest.eu/ifn/data/source/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/source/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/AgeSource> .
+<http://crossforest.eu/ifn/data/source/7> <http://www.w3.org/2000/01/rdf-schema#comment> "Por otras fuentes"@es .
+<http://crossforest.eu/ifn/data/source/7> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/source/7> <http://www.w3.org/2000/01/rdf-schema#label> "Otras Fuentes"@es .
+# 
+# http://crossforest.eu/ifn/data/system/1
+<http://crossforest.eu/ifn/data/system/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/system/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/SilviculturalSystem> .
+<http://crossforest.eu/ifn/data/system/1> <http://www.w3.org/2000/01/rdf-schema#comment> "Cuando todos los pies proceden de semilla"@es .
+<http://crossforest.eu/ifn/data/system/1> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/system/1> <http://www.w3.org/2000/01/rdf-schema#label> "Monte alto"@es .
+# 
+# http://crossforest.eu/ifn/data/system/2
+<http://crossforest.eu/ifn/data/system/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/system/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/SilviculturalSystem> .
+<http://crossforest.eu/ifn/data/system/2> <http://www.w3.org/2000/01/rdf-schema#comment> "Cuando coexisten pies de la misma especie, unos procedentes de semilla (brinzales) y otros de brote (chirpiales)"@es .
+<http://crossforest.eu/ifn/data/system/2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/system/2> <http://www.w3.org/2000/01/rdf-schema#label> "Monte medio"@es .
+# 
+# http://crossforest.eu/ifn/data/system/3
+<http://crossforest.eu/ifn/data/system/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifn/data/system/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifn/ontology/SilviculturalSystem> .
+<http://crossforest.eu/ifn/data/system/3> <http://www.w3.org/2000/01/rdf-schema#comment> "Cuando todos los pies proceden de brote de cepa o de raíz"@es .
+<http://crossforest.eu/ifn/data/system/3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/data/system/3> <http://www.w3.org/2000/01/rdf-schema#label> "Monte bajo"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://crossforest.eu/ifn/ontology/hasVolumeWithoutBark> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifn/ontology/> .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithoutBark> <http://www.w3.org/2000/01/rdf-schema#label> "has volume without bark"@en .
+<http://crossforest.eu/ifn/ontology/hasVolumeWithoutBark> <http://www.w3.org/2000/01/rdf-schema#label> "tiene volumen sin corteza"@es .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

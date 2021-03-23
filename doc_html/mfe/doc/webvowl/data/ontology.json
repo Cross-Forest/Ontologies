@@ -1,0 +1,1355 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "es", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://crossforest.eu/ifn/ontology", "http://crossforest.eu/measures/ontology", "http://crossforest.eu/mfe/ontology", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://crossforest.eu/ilu/ontology" ],
+    "iri" : "http://crossforest.eu/mfe/ontology/",
+    "version" : "0.1",
+    "author" : [ "https://www.crossforest.eu/members/josgim", "https://www.crossforest.eu/members/guiveg" ],
+    "labels" : {
+      "en" : "Spanish MFE Ontology",
+      "es" : "Ontología del MFE de España"
+    },
+    "comments" : {
+      "en" : "Ontology to publish data of the Spanish Forestry Map",
+      "undefined" : "Ontología para publicar datos del Mapa Forestal Nacional de España"
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2019-07-17",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.crossforest.eu/members/josgim",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.crossforest.eu/members/guiveg",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "mfe",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "30",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "63",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "8",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://crossforest.eu/mfe/ontology/CanopyCover",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CanopyCover",
+      "es" : "Fracción de Cabida Cubierta"
+    },
+    "subClasses" : [ "1", "2", "3" ],
+    "comment" : {
+      "en" : "Canopy Cover of the Vegetation Structure",
+      "es" : "Representa la proporción total de la vegetación."
+    },
+    "id" : "0"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/VegetationStructure",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "VegetationStructure",
+      "es" : "Tipo Estructural"
+    },
+    "comment" : {
+      "undefined" : "Indica los distintos usos del suelo que pueden aparecer y, dentro del uso forestal, las distintas estructuras de vegetación que lo pueden ocupar, atendiendo más que a la densidad vegetal a la estructura de la vegetación que ocupa."
+    },
+    "id" : "20"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/TypeOfForest",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TypeOfForest",
+      "es" : "Tipo de Bosque"
+    },
+    "comment" : {
+      "es" : "Tipo de bosque (coníferas, frondosas o mixtas)"
+    },
+    "id" : "21"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/CanopyCoverBushes",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CanopyCoverBushes",
+      "es" : "Canopy Cover of Bushes"
+    },
+    "comment" : {
+      "es" : "Representa la proporción del conjunto de las especies del estrato arbustivo como porcentaje de suelo cubierto por la proyección de todas las copas. No influye en su cálculo el hecho de tratarse de masas monoespecíficas o pluriespecíficas, o el de encontrarse en distinto estado de masa las distintas especies."
+    },
+    "id" : "1",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/StandDevelopment",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "StandDevelopment",
+      "es" : "Estado de Desarrollo"
+    },
+    "comment" : {
+      "es" : "Indica la fase de desarrollo en que se encuentran las poblaciones de especies arbóreas presentes en la tesela"
+    },
+    "id" : "24"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/UseInPatch",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UseInPatch",
+      "es" : "Use in the patch"
+    },
+    "comment" : {
+      "es" : "Use present in the patch"
+    },
+    "id" : "25"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/SpatialDistribution",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SpatialDistribution",
+      "es" : "Distribución"
+    },
+    "comment" : {
+      "es" : "Indica las distintas formas en las que puede aparecer agrupada la vegetación arbórea. Está más referido a la distribución espacial visual de la mancha vegetal que a su composición específica o la relación entre especies."
+    },
+    "id" : "19"
+  }, {
+    "iri" : "http://crossforest.eu/ifn/ontology/Species",
+    "baseIri" : "http://crossforest.eu/ifn/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Species"
+    },
+    "attributes" : [ "external" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/RateOfUse",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RateOfUse"
+    },
+    "id" : "37"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/BiogeographicRegion",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BiogeographicRegion",
+      "en" : "Biogeographic Region",
+      "es" : "Región biogeográfica"
+    },
+    "comment" : { },
+    "id" : "38"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MeasurableEntityInSquareMeters"
+    },
+    "subClasses" : [ "40" ],
+    "attributes" : [ "external" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/CanopyCoverTrees",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CanopyCoverTrees",
+      "es" : "Fracción de Cabida Cubierta Arbórea"
+    },
+    "comment" : {
+      "es" : "Representa la proporción del conjunto de las especies del estrato arbóreo como porcentaje de suelo cubierto por la proyección de todas las copas. No influye en su cálculo el hecho de tratarse de masas monoespecíficas o pluriespecíficas, o el de encontrarse en distinto estado de masa las distintas especies."
+    },
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/CanopyCoverTotal",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CanopyCoverTotal",
+      "es" : "Total Canopy Cover"
+    },
+    "comment" : {
+      "es" : "Representa la proporción total de la vegetación arbórea y de matorral. Proporciona información sobre la proyección sobre el suelo de los principales pisos de vegetación. En algún caso se incluirán fracciones de cabida cubierta de pastizales o cultivos. Para su cuantificación se tendrá en cuenta todas las especies en conjunto, con independencia de que se presenten por razones de edad o de otro tipo de alturas muy distintas."
+    },
+    "id" : "3",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/Use",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Use",
+      "en" : "Soil use",
+      "es" : "Uso del suelo"
+    },
+    "comment" : { },
+    "id" : "42"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/PatchShape",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PatchShape",
+      "en" : "Shape of the patch",
+      "es" : "Forma de la tesela"
+    },
+    "comment" : {
+      "en" : "Diferenciates the geometric shape of the patch and vegetation asociated",
+      "es" : "Indica la forma geométrica que presenta la tesela"
+    },
+    "id" : "48"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "55",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/RateofUse",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RateofUse",
+      "es" : "Propoción del uso"
+    },
+    "comment" : {
+      "es" : "Indica la proporción para cada una de las usos dentro de la agrupación de teselas."
+    },
+    "id" : "52",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/PatchInPatch",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PatchInPatch",
+      "es" : "Patch in the patch"
+    },
+    "comment" : {
+      "es" : "Patch contained in the patch"
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "60",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/RateOfPatch",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RateOfPatch",
+      "es" : "Proporción de la tesela"
+    },
+    "comment" : {
+      "es" : "Indica la proporción de la tesela dentro de la agrupación."
+    },
+    "id" : "45",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "30",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "61",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "63",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/Patch",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Patch"
+    },
+    "subClasses" : [ "9" ],
+    "attributes" : [ "external" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/SpeciesInPatch",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SpeciesInPatch",
+      "es" : "Species in the patch"
+    },
+    "comment" : {
+      "es" : "Species present in the patch"
+    },
+    "id" : "12"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasureInPercentage",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MeasureInPercentage"
+    },
+    "subClasses" : [ "52", "13", "45" ],
+    "attributes" : [ "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/OccupationOfSpecies",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OccupationOfSpecies",
+      "es" : "Ocupación de especie"
+    },
+    "comment" : {
+      "es" : "Indica la ocupación para cada una de las especies descritas. Los valores que adopta informan del grado de presencia en porcentaje de las especies arbóreas existentes, siendo tanto mayor, cuanto mayor representatividad posee la especie en cuestión, en comparación con las otras especies arbóreas presentes en la tesela."
+    },
+    "id" : "13",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/Classification",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Classification",
+      "es" : "Clasificación MFE-IFN"
+    },
+    "comment" : {
+      "es" : "Pasarela entre el Tipo Estructural y la clasificación por niveles del IFN3"
+    },
+    "id" : "15"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "8",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/Area",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Area"
+    },
+    "comment" : { },
+    "id" : "40",
+    "superClasses" : [ "39" ]
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/SetOfSpecies",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SetOfSpecies",
+      "en" : "Set of Species",
+      "es" : "Agrupación de Especies"
+    },
+    "comment" : { },
+    "id" : "65"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/ForestType",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ForestType",
+      "en" : "Forest Type",
+      "es" : "Formación Arbolada"
+    },
+    "comment" : {
+      "es" : "La Formación Arbolada representa la comunidad vegetal arbórea de orden superior con fisiología y biología homogénea y viene determinada por la Ocupación de la especie principal o por la Ocupación formada por las especies presentes."
+    },
+    "id" : "70"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/Patch",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Patch"
+    },
+    "comment" : { },
+    "id" : "9",
+    "superClasses" : [ "54" ]
+  } ],
+  "property" : [ {
+    "id" : "4",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://crossforest.eu/mfe/ontology/hasPercentageOfPatch",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPercentageOfPatch"
+    },
+    "domain" : "5",
+    "comment" : { },
+    "attributes" : [ "datatype" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/hasPatch",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPatch",
+      "en" : "has patch",
+      "es" : "tiene tesela"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "8",
+    "comment" : { },
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/hasOccupationOfSpecies",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "13",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOccupationOfSpecies"
+    },
+    "domain" : "12",
+    "comment" : { },
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/hasClassification",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "15",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasClassification"
+    },
+    "domain" : "9",
+    "comment" : { },
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/hasPercentageOfSpecies",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "17",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPercentageOfSpecies"
+    },
+    "domain" : "12",
+    "comment" : { },
+    "attributes" : [ "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/hasSpatialDistribution",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSpatialDistribution"
+    },
+    "domain" : "9",
+    "comment" : { },
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/hasCanopyCoverTreesPercent",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "23",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCanopyCoverTreesPercent"
+    },
+    "domain" : "9",
+    "comment" : { },
+    "attributes" : [ "datatype" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/hasCanopyCoverTotalPercent",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "27",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCanopyCoverTotalPercent"
+    },
+    "domain" : "9",
+    "comment" : { },
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/hasPercentageOfUse",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "29",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPercentageOfUse"
+    },
+    "domain" : "25",
+    "comment" : { },
+    "attributes" : [ "datatype" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasure",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasMeasure"
+    },
+    "domain" : "30",
+    "subproperty" : [ "31", "7", "32", "33", "34", "35" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/hasTypeofForest",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "21",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTypeofForest",
+      "es" : "Tipo de Bosque"
+    },
+    "domain" : "9",
+    "comment" : {
+      "es" : "Indica la tipología de bosque predominante"
+    },
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/hasRateOfUse",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "37",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRateOfUse"
+    },
+    "domain" : "25",
+    "comment" : { },
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "range" : "46",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "range" : "46",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "39",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "range" : "0",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "46",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
+  }, {
+    "range" : "54",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/hasCanopyCoverTotal",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "3",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCanopyCoverTotal"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "9",
+    "comment" : { },
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/hasStandDevelopment",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "24",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasStandDevelopment"
+    },
+    "domain" : "12",
+    "comment" : { },
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/hasPatchShape",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "48",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPatchShape"
+    },
+    "domain" : "9",
+    "comment" : { },
+    "attributes" : [ "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/hasUse",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUse",
+      "en" : "has use",
+      "es" : "tiene uso"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "60",
+    "comment" : { },
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/hasCanopyCoverTrees",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCanopyCoverTrees"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "9",
+    "comment" : { },
+    "attributes" : [ "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/containsUse",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "25",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "containsUse",
+      "en" : "contains use",
+      "es" : "contiene use"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "the patch contains use",
+      "es" : "la tesela contiene uso"
+    },
+    "attributes" : [ "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureinPercentage",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "hasMeasureinPercentage"
+    },
+    "domain" : "30",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/hasSetOfSpecies",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "65",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSetOfSpecies"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "63",
+    "comment" : { },
+    "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/hasVegetationStructure",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "20",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVegetationStructure"
+    },
+    "domain" : "9",
+    "comment" : { },
+    "attributes" : [ "object" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/hasRateofPatch",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "45",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRateofPatch"
+    },
+    "domain" : "5",
+    "comment" : { },
+    "attributes" : [ "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/containsPatch",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "containsPatch",
+      "en" : "contains patch",
+      "es" : "contiene tesela"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "the merged patch contains sub-patch",
+      "es" : "la tesela agregada contiene sub-tesela"
+    },
+    "attributes" : [ "object" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/hasSpecies",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "36",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSpecies",
+      "en" : "has species",
+      "es" : "tiene especie"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "55",
+    "comment" : { },
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://crossforest.eu/mfe/ontology/containsSpecies",
+    "baseIri" : "http://crossforest.eu/mfe/ontology",
+    "range" : "12",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/mfe/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "containsSpecies",
+      "en" : "contains species",
+      "es" : "contiene especie"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "the patch contains species",
+      "es" : "la tesela agregada contiene especie"
+    },
+    "attributes" : [ "object" ],
+    "id" : "69"
+  } ]
+}

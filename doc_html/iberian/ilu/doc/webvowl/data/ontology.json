@@ -1,0 +1,609 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "pt", "en", "es", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://crossforest.eu/measures/ontology", "http://www.w3.org/2000/01/rdf-schema", "http://crossforest.eu/position/ontology", "http://www.w3.org/2001/XMLSchema", "http://crossforest.eu/ilu/ontology" ],
+    "iri" : "http://crossforest.eu/ilu/ontology/",
+    "version" : "0.1",
+    "author" : [ "https://www.crossforest.eu/members/josgim", "https://www.crossforest.eu/members/guiveg" ],
+    "labels" : {
+      "en" : "Iberian Land Usage Ontology",
+      "es" : "Ontología ibérica de uso del suelo"
+    },
+    "comments" : {
+      "en" : "Ontology to publish data about land use in the iberian peninsula",
+      "es" : "Ontología para publicar datos deuso del suelo en la península ibérica"
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2020-07-17",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.crossforest.eu/members/josgim",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.crossforest.eu/members/guiveg",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "ilu",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "11",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "12",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "22",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://crossforest.eu/ilu/ontology/Use",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Use"
+    },
+    "subClasses" : [ "4", "5", "6", "7", "8" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/ForestLand",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ForestLand",
+      "pt" : "Superfícies agroflorestais e Florestas",
+      "es" : "Bosques"
+    },
+    "comment" : { },
+    "id" : "4",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/LandUse",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LandUse",
+      "pt" : "Uso e Ocupação do Solo",
+      "en" : "Land Use",
+      "es" : "Uso de la Tierra"
+    },
+    "comment" : { },
+    "id" : "9"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "11",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "12",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/Patch",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Patch"
+    },
+    "comment" : { },
+    "id" : "1",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/UseInPatch",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UseInPatch",
+      "es" : "Use in the patch"
+    },
+    "comment" : {
+      "es" : "Use present in the patch"
+    },
+    "id" : "19"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "22",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/SpatialEntity",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpatialEntity"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/PatchInPatch",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PatchInPatch",
+      "es" : "Patch in the patch"
+    },
+    "comment" : {
+      "es" : "Patch contained in the patch"
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/WetLand",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WetLand",
+      "pt" : "Zonas húmidas e massas de água superficiais",
+      "es" : "Humedales y masas de agua"
+    },
+    "comment" : { },
+    "id" : "8",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MeasurableEntityInSquareMeters"
+    },
+    "subClasses" : [ "30" ],
+    "attributes" : [ "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/TreelessLand",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TreelessLand",
+      "pt" : "Espaços descobertos ou com pouca vegetação e matos",
+      "es" : "Terreno desarbolado"
+    },
+    "comment" : { },
+    "id" : "5",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/AgriculturalLand",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AgriculturalLand",
+      "pt" : "Agricultura e Pastagens",
+      "es" : "Terreno agrícola"
+    },
+    "comment" : { },
+    "id" : "7",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/Area",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Area"
+    },
+    "comment" : { },
+    "id" : "30",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/ArtificialLand",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ArtificialLand",
+      "pt" : "Territórios artificializado",
+      "es" : "Territorios Artificiales"
+    },
+    "comment" : { },
+    "id" : "6",
+    "superClasses" : [ "3" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://crossforest.eu/ilu/ontology/containsPatch",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "containsPatch",
+      "en" : "contains patch",
+      "es" : "contiene tesela"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "the merged patch contains sub-patch",
+      "es" : "la tesela agregada contiene sub-tesela"
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "range" : "3",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "14"
+  }, {
+    "range" : "3",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "3",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  }, {
+    "range" : "3",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/hasPercentageOfUse",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPercentageOfUse"
+    },
+    "domain" : "19",
+    "comment" : { },
+    "attributes" : [ "datatype" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureinPercentage",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasMeasureinPercentage"
+    },
+    "domain" : "22",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/containsUse",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "containsUse",
+      "en" : "contains use",
+      "es" : "contiene use"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "the patch contains use",
+      "es" : "la tesela contiene uso"
+    },
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/hasPercentageOfPatch",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "range" : "21",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPercentageOfPatch"
+    },
+    "domain" : "2",
+    "comment" : { },
+    "attributes" : [ "datatype" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasure",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasMeasure"
+    },
+    "domain" : "22",
+    "subproperty" : [ "27", "28" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/hasPatch",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPatch",
+      "en" : "has patch",
+      "es" : "tiene tesela"
+    },
+    "superproperty" : [ "26" ],
+    "domain" : "11",
+    "comment" : { },
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/hasUse",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUse",
+      "en" : "has use",
+      "es" : "tiene uso"
+    },
+    "superproperty" : [ "26" ],
+    "domain" : "12",
+    "comment" : { },
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "range" : "3",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "29",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "range" : "18",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  } ]
+}

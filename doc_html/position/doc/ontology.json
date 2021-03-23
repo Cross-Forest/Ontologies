@@ -1,0 +1,965 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/hasPosition"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/ReferencePosition"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/measures/ontology/Measure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://crossforest.eu/measures/ontology/MeasureInHectares",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://crossforest.eu/measures/ontology/hasMeasureIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://crossforest.eu/measures/ontology/hasMeasureInGradians",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://crossforest.eu/measures/ontology/hasMeasureInHectares",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://crossforest.eu/measures/ontology/hasMeasureInMeters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://crossforest.eu/measures/ontology/hasMeasureInSquareMeters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://crossforest.eu/measures/ontology/hasPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://www.crossforest.eu/members/guiveg"
+  }, {
+    "@id" : "https://www.crossforest.eu/members/josgim"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-07-17"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "spo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An ontology to publish data about spatial entities and their positions in various reference systems, including relative positions"
+  }, {
+    "@language" : "es",
+    "@value" : "Una ontología para publicar datos sobre entidades espaciales y sus posiciones en múltiples sistemas de referencia, incluyendo posiciones relativas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ontología de Posiciones Espaciales"
+  }, {
+    "@language" : "en",
+    "@value" : "Spatial Position Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.1"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/AllocentricPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Posición desde un conjunto de puntos"
+  }, {
+    "@language" : "en",
+    "@value" : "Position from a set of points"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Allocentric Position"
+  }, {
+    "@value" : "Posición Alocéntrica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/Position"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/EgocentricPosition"
+  }, {
+    "@id" : "http://crossforest.eu/position/ontology/GeocentricPosition"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/Axis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/Position"
+  }, {
+    "@id" : "http://crossforest.eu/position/ontology/SpatialEntity"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/Bound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/Coordinate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/Position"
+  }, {
+    "@id" : "http://crossforest.eu/position/ontology/SpatialEntity"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/Direction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Direction"
+  }, {
+    "@language" : "es",
+    "@value" : "Rumbo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/Measure"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/Distance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Distance"
+  }, {
+    "@language" : "es",
+    "@value" : "distancia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/Measure"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/EPSGentity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/Position"
+  }, {
+    "@id" : "http://crossforest.eu/position/ontology/SpatialEntity"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/EgocentricPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Posición desde un punto de referencia"
+  }, {
+    "@language" : "en",
+    "@value" : "Position from a point of reference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Egocentric Position"
+  }, {
+    "@value" : "Posición Egocéntrica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/Position"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/GeocentricPosition"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/GeocentricPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Posición que utiliza un sistema geodético de coordenadas de referencia"
+  }, {
+    "@value" : "Position that uses a geodetic coordinate reference system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Geocentric Position"
+  }, {
+    "@language" : "es",
+    "@value" : "Posición geocéntrica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/Position"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/Layer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Capa"
+  }, {
+    "@language" : "en",
+    "@value" : "Layer"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/LeftBound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/LowerBound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/Polygon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/Position"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/Position",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Posición donde una entidad espacial puede estar situada"
+  }, {
+    "@language" : "en",
+    "@value" : "Position where a spatial entity can be located"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Posición"
+  }, {
+    "@language" : "en",
+    "@value" : "Position"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/SpatialEntity"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/ReferenceEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Entidad tomada como referencia para el posicionamient de otras entidades espaciales"
+  }, {
+    "@language" : "en",
+    "@value" : "Entity taken as reference for the position of other spatial entities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Entidad de Referencia"
+  }, {
+    "@language" : "en",
+    "@value" : "Reference Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/SpatialEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/ReferencePosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Posición tomada como referencia para el posicionamient de otras entidades espaciales"
+  }, {
+    "@language" : "en",
+    "@value" : "Position taken as reference for the position of other spatial entities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Posición de Referencia"
+  }, {
+    "@language" : "en",
+    "@value" : "Reference Position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/Position"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/RightBound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/SpatialEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Entidad con posición espacial"
+  }, {
+    "@language" : "en",
+    "@value" : "Entity with Spatial Position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Entidad espacial"
+  }, {
+    "@language" : "en",
+    "@value" : "Spatial Entity"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/UpperBound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/egocentricPositionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "entidad objetico de la posición egocéntrica"
+  }, {
+    "@language" : "en",
+    "@value" : "target entity of the egocentric position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/EgocentricPosition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "egocentric position of"
+  }, {
+    "@language" : "es",
+    "@value" : "posición egocéntrica de"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/SpatialEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/hasEgocentricPosition"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/fromReference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/hasArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/Position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has area"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/MeasureInHectares"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/hasMeasureIn"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/hasAreaInHC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/Position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/hasMeasureInHectares"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/hasAreaInSquareMeters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/Position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/hasMeasureInSquareMeters"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/hasBound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/Position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/Bound"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/hasCoordinate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "coordenada de la posición"
+  }, {
+    "@language" : "en",
+    "@value" : "coordinate of the position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/GeocentricPosition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "coordenada"
+  }, {
+    "@language" : "en",
+    "@value" : "coordinate"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/hasCoordinateReferenceSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "coordinate reference system used for the position"
+  }, {
+    "@language" : "es",
+    "@value" : "sistema de coordenadas de referencia usado para la posición"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/GeocentricPosition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "coordinate reference system"
+  }, {
+    "@language" : "es",
+    "@value" : "sistema de coordenadas de referencia"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/hasDirection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "direction of the position from the position of reference"
+  }, {
+    "@language" : "es",
+    "@value" : "rumbo de la posición respecto a la posición de referencia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/EgocentricPosition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "direction"
+  }, {
+    "@language" : "es",
+    "@value" : "rumbo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/Direction"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/hasDirectionInGradians",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "direction in degress of the position from the position of reference"
+  }, {
+    "@language" : "es",
+    "@value" : "rumbo en grados de la posición respecto a la posición de referencia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/EgocentricPosition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "direction"
+  }, {
+    "@language" : "es",
+    "@value" : "rumbo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/hasMeasureInGradians"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/hasDistance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "distance from the position to the position of reference"
+  }, {
+    "@language" : "es",
+    "@value" : "distancia de la posición a la posición de referencia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/EgocentricPosition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "distance"
+  }, {
+    "@language" : "es",
+    "@value" : "distancia"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/hasDistanceInMeters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "distance in meters from the position to the position of reference"
+  }, {
+    "@language" : "es",
+    "@value" : "distancia en metros de la posición a la posición de referencia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/EgocentricPosition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "distance"
+  }, {
+    "@language" : "es",
+    "@value" : "distancia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/hasMeasureInMeters"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/hasEgocentricPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "la entidad espacial tiene esta posición desde un punto de referencia (que es probablemente la posición de otra entidad espacial)"
+  }, {
+    "@language" : "en",
+    "@value" : "the spatial entity has this position from a point of reference (which is probably the posicion of another spatial entity)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has egocentric position"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene posición egocéntrica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/EgocentricPosition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/hasPosition"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/hasGeocentricPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "la entidad espacial tiene esta posición en un Sistema de Coordenadas de Referencia Geodésico"
+  }, {
+    "@language" : "en",
+    "@value" : "the spacial entity has this position in a geodetic CRS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has geocentric position"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene posición geocéntrica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/GeocentricPosition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/hasPosition"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/hasLeftBound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/LeftBound"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/hasBound"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/hasLowerBound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/LowerBound"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/hasBound"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/hasPolygon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "la entidad espacial está en este polígono"
+  }, {
+    "@language" : "en",
+    "@value" : "the spatial entity is located in this polygon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has polygon"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene polígono"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/Polygon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/hasPosition"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/hasPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "la entidad espacial tiene esta posición"
+  }, {
+    "@language" : "en",
+    "@value" : "the spatial entity has this location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/SpatialEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has location"
+  }, {
+    "@language" : "es",
+    "@value" : "situada en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/Position"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/hasReference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "la posición es relativa a esta posición de referencia"
+  }, {
+    "@language" : "en",
+    "@value" : "the position is w.r.t. this position of reference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/EgocentricPosition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "desde la referencia"
+  }, {
+    "@language" : "en",
+    "@value" : "from reference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/ReferencePosition"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/hasRightBound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/RightBound"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/hasBound"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/hasUpperBound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/UpperBound"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/hasBound"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/isInLayer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/Position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "está en la capa"
+  }, {
+    "@language" : "en",
+    "@value" : "is in layer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/Layer"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/referenceOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "la posición para la cual la entidad se usa como referencia"
+  }, {
+    "@language" : "en",
+    "@value" : "the position for which the entity is used as a reference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/ReferencePosition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "es referencia de"
+  }, {
+    "@language" : "en",
+    "@value" : "is reference of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/EgocentricPosition"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/fromReference"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/position/ontology/samePosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#ReflexiveProperty" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
+    "@language" : "es",
+    "@value" : "misma posición que"
+  }, {
+    "@language" : "en",
+    "@value" : "same position as"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "same phisical position, probably in a different coordinate reference system"
+  }, {
+    "@value" : "misma posición física, probablemente en un sistema de coordenadas de referencia diferente"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/Position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/Position"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

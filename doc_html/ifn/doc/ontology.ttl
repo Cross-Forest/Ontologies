@@ -1,0 +1,1972 @@
+@prefix : <http://crossforest.eu/ifn/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://crossforest.eu/ifn/ontology/> .
+
+<http://crossforest.eu/ifn/ontology/> rdf:type owl:Ontology ;
+                                       owl:imports <http://crossforest.eu/ifn/ontology/> ,
+                                                   <http://crossforest.eu/measures/ontology/> ;
+                                       <http://purl.org/dc/elements/1.1/creator> <https://www.gsic.uva.es/members/guiveg> ,
+                                                                                 <https://www.gsic.uva.es/members/josgim> ;
+                                       <http://purl.org/dc/elements/1.1/date> "2019-07-17"^^xsd:date ;
+                                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "ifn" ;
+                                       rdfs:comment "Ontology to publish data of the Spanish National Forest inventory"@en ,
+                                                    "Ontología para publicar datos del Inventario Forestal Nacional de España" ;
+                                       rdfs:label "Ontología del IFN de España"@es ,
+                                                  "Spanish IFN Ontology"@en ;
+                                       owl:versionInfo 0.1 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://crossforest.eu/ifn/ontology/acceptedName
+:acceptedName rdf:type owl:AnnotationProperty ;
+              rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+              rdfs:label "scientific name"@en ;
+              rdfs:range rdf:langString ;
+              rdfs:domain :Plant .
+
+
+###  http://crossforest.eu/ifn/ontology/author
+:author rdf:type owl:AnnotationProperty ;
+        rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+        rdfs:label "author"@en ;
+        rdfs:range rdf:langString ;
+        rdfs:domain :Plant .
+
+
+###  http://crossforest.eu/ifn/ontology/name
+:name rdf:type owl:AnnotationProperty ;
+      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+      rdfs:label "name"@en ;
+      rdfs:range rdf:langString ;
+      rdfs:domain :ScientificName .
+
+
+###  http://crossforest.eu/ifn/ontology/scientificName
+:scientificName rdf:type owl:AnnotationProperty ;
+                rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                rdfs:label "scientific name"@en ;
+                rdfs:range rdf:langString ;
+                rdfs:domain :Plant .
+
+
+###  http://crossforest.eu/ifn/ontology/scientificSynonym
+:scientificSynonym rdf:type owl:AnnotationProperty ;
+                   rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                   rdfs:label "scientific name"@en ;
+                   rdfs:range rdf:langString ;
+                   rdfs:domain :Plant .
+
+
+###  http://crossforest.eu/ifn/ontology/vulgarName
+:vulgarName rdf:type owl:AnnotationProperty ;
+            rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+            rdfs:label "vulgar name"@en ;
+            rdfs:range rdf:langString ;
+            rdfs:domain :Plant .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#Label
+rdfs:Label rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://crossforest.eu/ifn/ontology/containsSpecies
+:containsSpecies rdf:type owl:ObjectProperty ;
+                 rdfs:range :InfoSpecies ;
+                 rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                 rdfs:label "containsSpecies"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/hasAcceptedName
+:hasAcceptedName rdf:type owl:ObjectProperty ;
+                 rdfs:range :AcceptedName ;
+                 rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                 rdfs:label "scientific name"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/hasAge
+:hasAge rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf <http://crossforest.eu/measures/ontology/hasMeasure> ;
+        rdfs:domain :InfoSpecies ;
+        rdfs:range :Age ;
+        rdfs:comment "Age of trees in a plot"@en ,
+                     "Edad en años en las formas coetáneas y regulares"@es ;
+        rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+        rdfs:label "has age"@es ,
+                   "tiene edad"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasAgeInYears
+:hasAgeInYears rdf:type owl:ObjectProperty ;
+               rdfs:domain :InfoSpecies ;
+               rdfs:comment "Age in years"@en ,
+                            "Edad en años en las formas coetáneas y regulares"@es ;
+               rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+               rdfs:label "age in years"@es ,
+                          "edad en años"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasBasalArea
+:hasBasalArea rdf:type owl:ObjectProperty ;
+              rdfs:range :BasalArea ;
+              rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+              rdfs:label "has basal area"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/hasBasalAreaInM2
+:hasBasalAreaInM2 rdf:type owl:ObjectProperty ;
+                  rdfs:range :BasalArea ;
+                  rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                  rdfs:label "has basal area"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/hasBasalAreaInM2byHA
+:hasBasalAreaInM2byHA rdf:type owl:ObjectProperty ;
+                      rdfs:range :BasalArea ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                      rdfs:label "has basal area"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/hasDBH1
+:hasDBH1 rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :hasDiameterAtBreastHeight ;
+         rdfs:domain :Tree ;
+         rdfs:range :DBH1 ;
+         rdfs:comment "has diameter at breast hight with the caliper arms pointing at the center of the plot"@en ,
+                      "tiene diámetro normal con la forcípula apuntando al centro de la parcela"@es ,
+                      "tiene diámetro observado a la altura del pecho con la forcípula apuntando al centro de la parcela"@es ;
+         rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+         rdfs:label "has DBH1"@en ,
+                    "tiene dn1"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasDBH2
+:hasDBH2 rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :hasDiameterAtBreastHeight ;
+         rdfs:domain :Tree ;
+         rdfs:range :DBH2 ;
+         rdfs:comment "has diameter at breast hight with the caliper arms perpendicular to the center of the plot"@en ,
+                      "tiene diámetro normal con la forcípula perpendicular al centro de la parcela"@es ,
+                      "tiene diámetro observado a la altura del pecho con la forcípula perpendicular al centro de la parcela"@es ;
+         rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+         rdfs:label "has DBH2"@en ,
+                    "tiene dn2"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasDiameterAtBreastHeight
+:hasDiameterAtBreastHeight rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf <http://crossforest.eu/measures/ontology/hasMeasure> ;
+                           rdfs:domain :Tree ;
+                           rdfs:range :DBH ;
+                           rdfs:comment "has diameter at breast hight"@en ,
+                                        "tiene diámetro a la altura del pecho"@es ,
+                                        "tiene diámetro normal"@es ;
+                           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                           rdfs:label "has DBH"@en ,
+                                      "tiene DN"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasForestArea
+:hasForestArea rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://crossforest.eu/position/ontology/hasArea> ;
+               rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+               rdfs:label "has forest area"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/hasHeight
+:hasHeight rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <http://crossforest.eu/measures/ontology/hasMeasure> ;
+           rdfs:domain :Tree ;
+           rdfs:range :DBH ;
+           rdfs:comment "altura del árbol hasta un determinado punto"@es ,
+                        "height of the tree to a point"@en ;
+           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+           rdfs:label "has height"@en ,
+                      "tiene altura"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasNumberOfTrees
+:hasNumberOfTrees rdf:type owl:ObjectProperty ;
+                  rdfs:range :NumberOfTrees ;
+                  rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                  rdfs:label "has number of trees"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/hasNumberOfTreesInUnits
+:hasNumberOfTreesInUnits rdf:type owl:ObjectProperty ;
+                         rdfs:range :VolumeWithBark ;
+                         rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                         rdfs:label "has number of trees"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/hasNumberOfTreesInUnitsByHA
+:hasNumberOfTreesInUnitsByHA rdf:type owl:ObjectProperty ;
+                             rdfs:range :VolumeWithBark ;
+                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                             rdfs:label "has number of trees"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/hasOccupationOfSpecies
+:hasOccupationOfSpecies rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf <http://crossforest.eu/measures/ontology/hasMeasure> ;
+                        rdfs:domain :InfoSpecies ;
+                        rdfs:range :OccupationOfSpecies ;
+                        rdfs:comment ""@en ,
+                                     ""@es ;
+                        rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                        rdfs:label ""@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasOrigin
+:hasOrigin rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <http://crossforest.eu/measures/ontology/hasMeasure> ;
+           rdfs:domain :InfoSpecies ;
+           rdfs:range :Origin ;
+           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+           rdfs:label "has origin"@es ,
+                      "tiene origen"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasScientificName
+:hasScientificName rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Plant ;
+                   rdfs:range :ScientificName ;
+                   rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                   rdfs:label "scientific name"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/hasScientificSynonym
+:hasScientificSynonym rdf:type owl:ObjectProperty ;
+                      rdfs:range :Synonym ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                      rdfs:label "scientific synonym"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/hasSpecies
+:hasSpecies rdf:type owl:ObjectProperty ;
+            rdfs:range :Taxon ;
+            rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+            rdfs:label "has species"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/hasStandDevelopment
+:hasStandDevelopment rdf:type owl:ObjectProperty ;
+                     rdfs:domain :InfoSpecies ;
+                     rdfs:comment ""@en ,
+                                  ""@es ;
+                     rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                     rdfs:label ""@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasTotalHeight
+:hasTotalHeight rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :hasHeight ;
+                rdfs:domain :Tree ;
+                rdfs:range :DBH ;
+                rdfs:comment "altura del árbol hasta su punto más alto"@es ,
+                             "height of the tree to its upmost point"@en ;
+                rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                rdfs:label "has total height"@en ,
+                           "tiene altura total"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasVolume
+:hasVolume rdf:type owl:ObjectProperty ;
+           rdfs:range :Volume ;
+           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+           rdfs:label "has volume"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/hasVolumeFirewood
+:hasVolumeFirewood rdf:type owl:ObjectProperty ;
+                   rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                   rdfs:label "has volume of firewood"@en ,
+                              "tiene volumen de leñas"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasVolumeFirewoodInM3
+:hasVolumeFirewoodInM3 rdf:type owl:ObjectProperty ;
+                       rdfs:range :hasVolumeWithoutBark ;
+                       rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                       rdfs:label "has volume of firewood in cubic meters"@en ,
+                                  "tiene volumen de leñas en metros cúbicos"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasVolumeInM3
+:hasVolumeInM3 rdf:type owl:ObjectProperty ;
+               rdfs:range :Volume ;
+               rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+               rdfs:label "has volume in cubic meters"@en ,
+                          "tiene volumen en metros cúbicos"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasVolumeInM3byHA
+:hasVolumeInM3byHA rdf:type owl:ObjectProperty ;
+                   rdfs:range :Volume ;
+                   rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                   rdfs:label "has volume in cubic meters per hectare"@en ,
+                              "tiene volumen en metros cúbicos por hectárea"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasVolumeIncrease
+:hasVolumeIncrease rdf:type owl:ObjectProperty ;
+                   rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                   rdfs:label "has volume increase"@en ,
+                              "tiene incremento de volumen"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasVolumeIncreaseInM3
+:hasVolumeIncreaseInM3 rdf:type owl:ObjectProperty ;
+                       rdfs:range :hasVolumeWithoutBark ;
+                       rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                       rdfs:label "has volume increase in cubic meters"@en ,
+                                  "tiene incremento de volumen en metros cúbicos"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasVolumeWithBark
+:hasVolumeWithBark rdf:type owl:ObjectProperty ;
+                   rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                   rdfs:label "has volume with bark"@en ,
+                              "tiene volumen con corteza"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasVolumeWithBarkInM3
+:hasVolumeWithBarkInM3 rdf:type owl:ObjectProperty ;
+                       rdfs:range :VolumeWithBark ;
+                       rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                       rdfs:label "has volume with bark in cubic meters"@en ,
+                                  "tiene volumen con corteza en metros cúbicos"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasVolumeWithBarkInM3byHA
+:hasVolumeWithBarkInM3byHA rdf:type owl:ObjectProperty ;
+                           rdfs:range :Volume ;
+                           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                           rdfs:label "has volume with bark in cubic meters per hectare"@en ,
+                                      "tiene volumen con corteza en metros cúbicos por hectárea"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasVolumeWithoutBark
+:hasVolumeWithoutBark rdf:type owl:ObjectProperty .
+
+
+###  http://crossforest.eu/ifn/ontology/hasVolumeWithoutBarkInM3
+:hasVolumeWithoutBarkInM3 rdf:type owl:ObjectProperty ;
+                          rdfs:range :hasVolumeWithoutBark ;
+                          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                          rdfs:label "has volume without bark in cubic meters"@en ,
+                                     "tiene volumen sin corteza en metros cúbicos"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasVolumeWithoutBarkInM3byHA
+:hasVolumeWithoutBarkInM3byHA rdf:type owl:ObjectProperty ;
+                              rdfs:range :Volume ;
+                              rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                              rdfs:label "has volume with bark in cubic meters per hectare"@en ,
+                                         "tiene volumen con corteza en metros cúbicos por hectárea"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/isInPlot
+:isInPlot rdf:type owl:ObjectProperty ;
+          rdfs:domain :Tree ;
+          rdfs:range :Plot ;
+          rdfs:comment "Parcela en la que el árbol está situado"@es ,
+                       "Plot in which the tree is located"@en ;
+          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+          rdfs:label "en la parcela"@es ,
+                     "in plot"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/isInProvince
+:isInProvince rdf:type owl:ObjectProperty ;
+              rdfs:domain :SpatialEntity ;
+              rdfs:range :Province ;
+              rdfs:comment "Province in which the entity is located"@en ,
+                           "Provincia en la que la entidad está situada"@es ;
+              rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+              rdfs:label "en la provincia"@es ,
+                         "in province"@en .
+
+
+###  http://crossforest.eu/measures/ontology/hasMeasure
+<http://crossforest.eu/measures/ontology/hasMeasure> rdf:type owl:ObjectProperty .
+
+
+###  http://crossforest.eu/position/ontology/hasArea
+<http://crossforest.eu/position/ontology/hasArea> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://crossforest.eu/ifn/ontology/hasDBH1InMillimeters
+:hasDBH1InMillimeters rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :hasDBHInMillimeters ;
+                      rdfs:comment "has diameter in millimeters at breast hight with the caliper arms pointing at the center of the plot"@en ,
+                                   "tiene diámetro en milímetros a la altura del pecho con la forcípula apuntando al centro de la parcela"@es ,
+                                   "tiene diámetro normal en milímetros con la forcípula apuntando al centro de la parcela"@es ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                      rdfs:label "has DBH in millimeters"@en ,
+                                 "tiene DN en milímetros"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasDBH2InMillimeters
+:hasDBH2InMillimeters rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :hasDBHInMillimeters ;
+                      rdfs:comment "has diameter in millimeters at breast hight with the caliper arms perpendicular to the center of the plot"@en ,
+                                   "tiene diámetro en milímetros a la altura del pecho con la forcípula perpendicular al centro de la parcela"@es ,
+                                   "tiene diámetro normal en milímetros con la forcípula perpendicular al centro de la parcela"@es ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                      rdfs:label "has DBH in millimeters"@en ,
+                                 "tiene DN en milímetros"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasDBHInMillimeters
+:hasDBHInMillimeters rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf <http://crossforest.eu/measures/ontology/hasMeasureInMillimeters> ;
+                     rdfs:comment "has diameter in millimeters at breast hight"@en ,
+                                  "tiene diámetro en milímetros a la altura del pecho"@es ,
+                                  "tiene diámetro normal en milímetros"@es ;
+                     rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                     rdfs:label "has DBH in millimeters"@en ,
+                                "tiene DN en milímetros"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasHeightInMeters
+:hasHeightInMeters rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf <http://crossforest.eu/measures/ontology/hasMeasureInMeters> ;
+                   rdfs:domain :Tree ;
+                   rdfs:comment "altura del árbol en metros hasta un determinado punto"@es ,
+                                "height of the tree in meters to a point"@en ;
+                   rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                   rdfs:label "has height in meters"@en ,
+                              "tiene altura en metros"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasPercentageOfSpecies
+:hasPercentageOfSpecies rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf <http://crossforest.eu/measures/ontology/hasMeasureinPercentage> ;
+                        rdfs:domain :InfoSpecies ;
+                        rdfs:comment ""@en ,
+                                     ""@es ;
+                        rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                        rdfs:label ""@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasTotalHeightInMeters
+:hasTotalHeightInMeters rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :hasHeightInMeters ;
+                        rdfs:domain :Tree ;
+                        rdfs:comment "altura del árbol en metros hasta su punto más alto"@es ,
+                                     "height of the tree in meters to its upmost point"@en ;
+                        rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                        rdfs:label "has total height in meters"@en ,
+                                   "tiene altura total en metros"@es .
+
+
+###  http://crossforest.eu/measures/ontology/hasMeasureInHectares
+<http://crossforest.eu/measures/ontology/hasMeasureInHectares> rdf:type owl:DatatypeProperty .
+
+
+###  http://crossforest.eu/measures/ontology/hasMeasureInMeters
+<http://crossforest.eu/measures/ontology/hasMeasureInMeters> rdf:type owl:DatatypeProperty .
+
+
+###  http://crossforest.eu/measures/ontology/hasMeasureInMillimeters
+<http://crossforest.eu/measures/ontology/hasMeasureInMillimeters> rdf:type owl:DatatypeProperty .
+
+
+###  http://crossforest.eu/measures/ontology/hasMeasureInSquareMeters
+<http://crossforest.eu/measures/ontology/hasMeasureInSquareMeters> rdf:type owl:DatatypeProperty .
+
+
+###  http://crossforest.eu/measures/ontology/hasMeasureinPercentage
+<http://crossforest.eu/measures/ontology/hasMeasureinPercentage> rdf:type owl:DatatypeProperty .
+
+
+###  http://crossforest.eu/position/ontology/hasForestAreaInHC
+<http://crossforest.eu/position/ontology/hasForestAreaInHC> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:subPropertyOf <http://crossforest.eu/measures/ontology/hasMeasureInHectares> ;
+                                                            rdfs:domain <http://crossforest.eu/position/ontology/Position> ;
+                                                            rdfs:comment ""@en ;
+                                                            rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                                            rdfs:label ""@es ,
+                                                                       "has forest area in hectares"@en .
+
+
+###  http://crossforest.eu/position/ontology/hasForestAreaInSquareMeters
+<http://crossforest.eu/position/ontology/hasForestAreaInSquareMeters> rdf:type owl:DatatypeProperty ;
+                                                                      rdfs:subPropertyOf <http://crossforest.eu/measures/ontology/hasMeasureInSquareMeters> ;
+                                                                      rdfs:domain <http://crossforest.eu/position/ontology/Position> ;
+                                                                      rdfs:comment ""@en ;
+                                                                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                                                      rdfs:label ""@es ,
+                                                                                 "has forest area in square meters"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://crossforest.eu/ifn/ontology/AcceptedName
+:AcceptedName rdf:type owl:Class ;
+              rdfs:subClassOf :ScientificName ;
+              rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+              rdfs:label "Accepted Name"@en ,
+                         "Nombre aceptado"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Age
+:Age rdf:type owl:Class ;
+     rdfs:subClassOf <http://crossforest.eu/measures/ontology/MeasureInYears> ;
+     rdfs:comment "Estimación de la edad"@es ,
+                  "Estimation of Age"@en ;
+     rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+     rdfs:label "Age"@en ,
+                "Edad"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/AgeReliability
+:AgeReliability rdf:type owl:Class ;
+                rdfs:subClassOf <http://crossforest.eu/measures/ontology/Reliability> ;
+                rdfs:comment "Fiabilidad de la estimación de la edad"@es ,
+                             "Reliability of estimation of age"@en ;
+                rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                rdfs:label "Fiabilidad"@es ,
+                           "Reliability"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/AgeSource
+:AgeSource rdf:type owl:Class ;
+           rdfs:subClassOf <http://crossforest.eu/measures/ontology/Source> ;
+           rdfs:comment ""@es ,
+                        "Fuente de la estimación de la edad"@es ,
+                        "Source of estimation of age"@en ;
+           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+           rdfs:label "Fuente"@es ,
+                      "Source"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/Altitude
+:Altitude rdf:type owl:Class ;
+          rdfs:comment "Posición con altitud"@es ,
+                       "Position with Altitude"@en ;
+          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+          rdfs:label "Altitud"@es ,
+                     "Altitude"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/BasalArea
+:BasalArea rdf:type owl:Class ;
+           rdfs:subClassOf :PlotMeasure ;
+           rdfs:comment "The area of a cross-section of a tree, including bark, at 1.3 m height. Basal area of a forest stand is the sum of the basal areas of all individual trees in the stand, usually reported as square meter per hectare."@en ;
+           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+           rdfs:label "Basal Area"@en ,
+                      "Área Basimétrica"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Bush
+:Bush rdf:type owl:Class ;
+      rdfs:subClassOf :Plant ;
+      owl:disjointWith :DBH ,
+                       :Plot ;
+      rdfs:comment ""@en ,
+                   ""@es ;
+      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+      rdfs:label "Arbusto"@es ,
+                 "Bush"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/BushSpecies
+:BushSpecies rdf:type owl:Class ;
+             rdfs:subClassOf :PlantSpecies ;
+             rdfs:comment "Bush species, as recorded in the inventory. It is possible that the individuals of this class are not strictly species, but genus, sub-genus, mix of species, etc."@en ,
+                          "Especie arbustiva, tal y como se ha registrado en el inventario. Es posible que los indivíduos de esta clase no sean estrictamente especies. Genus, sub-genus, y mezclas de especies son también indivíduos posibles."@es ;
+             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+             rdfs:label "Bush Species"@en ,
+                        "Especie arbustiva"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/ChangeOfSpecies
+:ChangeOfSpecies rdf:type owl:Class ;
+                 rdfs:Label "Cambio de Especie"@es ,
+                            "Change of Species"@en ;
+                 rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> .
+
+
+###  http://crossforest.eu/ifn/ontology/Class
+:Class rdf:type owl:Class ;
+       rdfs:subClassOf :Taxon ;
+       rdfs:comment ""@en ,
+                    ""@es ;
+       rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+       rdfs:label "Clase"@es ,
+                  "Class"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/Composition
+:Composition rdf:type owl:Class ;
+             rdfs:comment "Posición con composición de vegetación"@es ,
+                          "Position with composition of vegetation"@en ;
+             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+             rdfs:label "Composición Específica"@es ,
+                        "Composition of Vegetation"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/DBH
+:DBH rdf:type owl:Class ;
+     owl:disjointWith :PlantSpecies ,
+                      :Plot ,
+                      :Plot-A ,
+                      :Plot-A1 ,
+                      :Plot-A3 ,
+                      :Plot-A3C ,
+                      :Plot-A3E ,
+                      :Plot-A4 ,
+                      :Plot-A4C ,
+                      :Plot-A6C ,
+                      :Plot-NN ,
+                      :Plot-R ,
+                      :Plot-R1 ,
+                      :Plot-R1R ,
+                      :Plot-R2 ,
+                      :Plot-R2R ,
+                      :Plot-R3 ,
+                      :Plot-R4 ,
+                      :PrimaryPlot ,
+                      :SecondaryPlot ,
+                      :Tree .
+
+
+###  http://crossforest.eu/ifn/ontology/DBH1
+:DBH1 rdf:type owl:Class ;
+      rdfs:subClassOf :DiameterAtBreastHeight ;
+      owl:disjointWith :DBH2 ;
+      rdfs:comment "Generic instance of an observable property representing the diameter of a tree measured at 1.3 meters above the ground with caliper arms pointing at the center of the plot."@en ,
+                   "Instancia genérica de una propiedad observable representando el diámetro de un arbol a una altura aproximada de 1,3 metros, con la forcípula apuntando al centro de la parcela."@es ;
+      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+      rdfs:label "Diameter at breast height of a tree measured with caliper arms pointing at the center of the plot"@en ,
+                 "Diámetro a la altura del pecho de un árbol medido apuntando la forcípula al centro de la parcela"@es ,
+                 "Diámetro normal de un árbol medido apuntando la forcípula al centro de la parcela"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/DBH2
+:DBH2 rdf:type owl:Class ;
+      rdfs:subClassOf :DiameterAtBreastHeight ;
+      rdfs:comment "Generic instance of an observable property representing the diameter of a tree measured at 1.3 meters above the ground with caliper arms perpendicular to the center of the plot."@en ,
+                   "Instancia genérica de una propiedad observable representando el diámetro de un arbol a una altura aproximada de 1,3 metros, con la forcípula perpendicular al centro de la parcela."@es ;
+      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+      rdfs:label "Diameter at breast height of a tree measured with caliper arms perpendicular to the center of the plot"@en ,
+                 "Diámetro a la altura del pecho de un árbol medido con la forcípula perpendicular al centro de la parcela"@es ,
+                 "Diámetro normal de un árbol medido con la forcípula perpendicular al centro de la parcela"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/DamageStatus
+:DamageStatus rdf:type owl:Class ;
+              rdfs:Label "Damage Status"@en ,
+                         "Estado del Daño"@es ;
+              rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> .
+
+
+###  http://crossforest.eu/ifn/ontology/DeadLayer
+:DeadLayer rdf:type owl:Class ;
+           rdfs:comment "Posición con espesor de capa muerta"@es ,
+                        "Position with thickness of dead layer"@en ;
+           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+           rdfs:label "Espesor de Capa Muerta"@es ,
+                      "Thickness of Dead Layer"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/Diameter
+:Diameter rdf:type owl:Class ;
+          rdfs:subClassOf :TreeMeasure ;
+          owl:disjointWith :PlantSpecies ,
+                           :Plot ,
+                           :Tree ;
+          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> .
+
+
+###  http://crossforest.eu/ifn/ontology/DiameterAtBreastHeight
+:DiameterAtBreastHeight rdf:type owl:Class ;
+                        rdfs:subClassOf :Diameter ;
+                        owl:disjointWith :Height ,
+                                         :HeightToCrownBase ,
+                                         :HeightToFirstAliveBranch ,
+                                         :HeightToLargestCrownWidht ,
+                                         :PlantSpecies ,
+                                         :Plot ,
+                                         :TotalHeight ,
+                                         :Tree ;
+                        rdfs:comment "Diameter at breast height of a tree"@en ,
+                                     "Diámetro a la altura del pecho de un árbol"@es ;
+                        rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                        rdfs:label "Diameter at Breast Hight"@en ,
+                                   "Diámetro a la altura del pecho"@es ,
+                                   "Diámetro normal"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/DiameterAtRootCollar
+:DiameterAtRootCollar rdf:type owl:Class ;
+                      rdfs:subClassOf :Diameter ;
+                      owl:disjointWith :PlantSpecies ,
+                                       :Plot ,
+                                       :Tree ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                      rdfs:label "Diameter At Root Collar"@en ,
+                                 "Diámetro basal"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/DominantSpecies
+:DominantSpecies rdf:type owl:Class ;
+                 rdfs:Label "Dominant Species"@en ,
+                            "Especie Dominante"@es ;
+                 rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> .
+
+
+###  http://crossforest.eu/ifn/ontology/Erosion
+:Erosion rdf:type owl:Class ;
+         rdfs:comment "Posición con Erosión"@es ,
+                      "Position with Erosion"@en ;
+         rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+         rdfs:label "Erosion"@en ,
+                    "Erosión"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Family
+:Family rdf:type owl:Class ;
+        rdfs:subClassOf :Taxon ;
+        rdfs:comment ""@en ,
+                     ""@es ;
+        rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+        rdfs:label "Familia"@es ,
+                   "Family"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/FuelModel
+:FuelModel rdf:type owl:Class ;
+           rdfs:comment "Posición con Modelo de Combustible"@es ,
+                        "Position with Fuel Model"@en ;
+           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+           rdfs:label "Fuel Model"@en ,
+                      "Modelo de Combustible"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Genus
+:Genus rdf:type owl:Class ;
+       rdfs:subClassOf :Taxon ;
+       rdfs:comment ""@en ,
+                    ""@es ;
+       rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+       rdfs:label "Genus"@en ,
+                  "Género"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Gradient
+:Gradient rdf:type owl:Class ;
+          rdfs:comment "Posición con Pendiente"@es ,
+                       "Position with Gradient"@en ;
+          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+          rdfs:label "Gradient"@en ,
+                     "Pendiente"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Height
+:Height rdf:type owl:Class ;
+        rdfs:subClassOf :TreeMeasure ;
+        rdfs:comment "Altura del árbol medido"@es ,
+                     "height of measured tree" ;
+        rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+        rdfs:label "Altura"@es ,
+                   "Height"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/HeightToCrownBase
+:HeightToCrownBase rdf:type owl:Class ;
+                   rdfs:subClassOf :Height ;
+                   rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                   rdfs:label "Altura hasta el inicio de la copa"@es ,
+                              "Height to Crown Base"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/HeightToFirstAliveBranch
+:HeightToFirstAliveBranch rdf:type owl:Class ;
+                          rdfs:subClassOf :Height ;
+                          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                          rdfs:label "Altura hasta la primera rama viva"@es ,
+                                     "Height to First Alive Branch"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/HeightToLargestCrownWidht
+:HeightToLargestCrownWidht rdf:type owl:Class ;
+                           rdfs:subClassOf :Height ;
+                           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                           rdfs:label "Altura hasta el máximo ancho de copa"@es ,
+                                      "Height to Largest Crown Widht"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/InfoSpecies
+:InfoSpecies rdf:type owl:Class .
+
+
+###  http://crossforest.eu/ifn/ontology/NumberOfTrees
+:NumberOfTrees rdf:type owl:Class ;
+               rdfs:subClassOf <http://crossforest.eu/measures/ontology/MeasureInUnities> ;
+               rdfs:comment ""@en ,
+                            ""@es ;
+               rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+               rdfs:label "Number of Trees"@en ,
+                          "Número de Árboles"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/OccupationOfSpecies
+:OccupationOfSpecies rdf:type owl:Class ;
+                     rdfs:subClassOf <http://crossforest.eu/measures/ontology/MeasureInPercentage> ;
+                     rdfs:comment "Indica la ocupación para cada una de las especies descritas. Los valores que adopta informan del grado de presencia en porcentaje de las especies arbóreas existentes, siendo tanto mayor, cuanto mayor representatividad posee la especie en cuestión, en comparación con las otras especies arbóreas presentes en la parcela."@es ;
+                     rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                     rdfs:label "Ocupación de especie"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/OrganicMatter
+:OrganicMatter rdf:type owl:Class ;
+               rdfs:comment "Posición con Materia Orgánica"@es ,
+                            "Position with Organic Matter"@en ;
+               rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+               rdfs:label "Materia Orgánica"@es ,
+                          "Organic Matter"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/Orientation
+:Orientation rdf:type owl:Class ;
+             rdfs:comment "Posición con Orientación"@es ,
+                          "Position with Orientation"@en ;
+             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+             rdfs:label "Orientación"@es ,
+                        "Orientation"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/Origin
+:Origin rdf:type owl:Class ;
+        rdfs:subClassOf <http://crossforest.eu/measures/ontology/Reliability> ;
+        rdfs:comment "Origen de la masa forestal"@es ,
+                     "Origin of the stand"@en ;
+        rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+        rdfs:label "Origen"@es ,
+                   "Origin"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/PH
+:PH rdf:type owl:Class ;
+    rdfs:comment "Soil with PH"@en ,
+                 "Suelo con PH"@es ;
+    rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+    rdfs:label "PH"@en ,
+               "PH"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Plant
+:Plant rdf:type owl:Class ;
+       rdfs:subClassOf <http://crossforest.eu/position/ontology/SpatialEntity> ;
+       :scientificName "Plantae"@la ;
+       :vulgarName "Plant"@en ,
+                   "Planta"@es ;
+       rdfs:comment ""@es ;
+       rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> .
+
+
+###  http://crossforest.eu/ifn/ontology/PlantMeasure
+:PlantMeasure rdf:type owl:Class ;
+              rdfs:subClassOf <http://crossforest.eu/measures/ontology/Measure> ;
+              rdfs:comment "Measure of a tree"@en ,
+                           "Medida de un arbol"@es ;
+              rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+              rdfs:label "Medida del árbol"@es ,
+                         "Tree Measure"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/PlantSpecies
+:PlantSpecies rdf:type owl:Class ;
+              owl:disjointWith :Plot ,
+                               :Tree ;
+              rdfs:comment "Especie vegetal, tal y como se ha registrado en el inventario. Es posible que los indivíduos de esta clase no sean estrictamente especies. Genus, sub-genus, y mezclas de especies son también indivíduos posibles."@es ,
+                           "Plant species, as recorded in the inventory. It is possible that the individuals of this class are not strictly species, but genus, sub-genus, mix of species, etc."@en ;
+              rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+              rdfs:label "Especie vegetal"@es ,
+                         "Plant Species"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/Plantae
+:Plantae rdf:type owl:Class ;
+         rdfs:comment "Multicellular living beings with cell walls containing cellulose, and the ability to carry out photosynthesis with primary chloroplasts"@en ;
+         rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+         rdfs:label "Plantae"@la .
+
+
+###  http://crossforest.eu/ifn/ontology/Plot
+:Plot rdf:type owl:Class ;
+      rdfs:subClassOf <http://crossforest.eu/position/ontology/SpatialEntity> ;
+      owl:disjointWith :Tree ;
+      rdfs:comment ""@en ,
+                   ""@es ;
+      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+      rdfs:label "Parcela"@es ,
+                 "Plot"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/Plot-A
+:Plot-A rdf:type owl:Class ;
+        rdfs:subClassOf :Plot ;
+        owl:disjointWith :Tree ;
+        rdfs:comment ""@en ,
+                     "Parcelas levantadas en el inventario anterior que volverán a ser apeadas en el inventario actual"@es ;
+        rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+        rdfs:label "Existing Plot"@en ,
+                   "Parcela Existente"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Plot-A1
+:Plot-A1 rdf:type owl:Class ;
+         rdfs:subClassOf :PrimaryPlot ;
+         owl:disjointWith :Tree ;
+         rdfs:comment ""@en ,
+                      "Parcelas en las que se localice el rejón y esté bien implantado. Se utilizarán para la comparación de inventarios y para el cálculo de existencias actuales."@es ;
+         rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+         rdfs:label "Parcela en la misma posición que antes"@es ,
+                    "Plot in the same position as before"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/Plot-A3
+:Plot-A3 rdf:type owl:Class ;
+         rdfs:subClassOf :Plot-A ;
+         owl:disjointWith :Tree ;
+         rdfs:comment ""@en ,
+                      "Parcelas en las que se localice el rejón y esté mal implantado o bien se hayan producido cambios, en los últimos años, en las teselas de vegetación colindantes."@es ;
+         rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+         rdfs:label "Parcela en diferente posición que la anterior"@es ,
+                    "Plot in different possition than before"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/Plot-A3C
+:Plot-A3C rdf:type owl:Class ;
+          rdfs:subClassOf :SecondaryPlot ;
+          owl:disjointWith :Tree ;
+          rdfs:comment ""@en ,
+                       "Parcela para la comparación de inventarios. Se levantará en el punto donde se encuentre el rejón del inventario anterior. Incluye datos de identificación y dendrometría, pero no estado fitosanitario."@es ;
+          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+          rdfs:label "Parcela de comparación de inventarios"@es ,
+                     "Plot for inventory comparison"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/Plot-A3E
+:Plot-A3E rdf:type owl:Class ;
+          rdfs:subClassOf :PrimaryPlot ;
+          owl:disjointWith :Tree ;
+          rdfs:comment ""@en ,
+                       "Parcelas para el cálculo de existencias actuales. Se levantarán en el emplazamiento correcto ( Coordenada UTM)"@es ;
+          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+          rdfs:label ""@en ,
+                     "Parcela para el cálculo de existencias actuales"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Plot-A4
+:Plot-A4 rdf:type owl:Class ;
+         rdfs:subClassOf :PrimaryPlot ;
+         owl:disjointWith :Tree ;
+         rdfs:comment ""@en ,
+                      "Parcelas en las que no se localice el rejón. Se utilizarán para el cálculo de existencias actuales."@es ;
+         rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+         rdfs:label ""@en ,
+                    ""@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Plot-A4C
+:Plot-A4C rdf:type owl:Class ;
+          rdfs:subClassOf :PrimaryPlot ;
+          owl:disjointWith :Tree ;
+          rdfs:comment ""@en ,
+                       "Parcelas en las que no se localice el rejón por cambio totales en la cubierta forestal de la tesela que contiene la parcela (pérdida total de la masa muestreada en el inventario anterior o incorporación de una nueva masa forestal inexistente en el IFN2). Se utilizarán para la comparación de inventarios y para el cálculo de existencias actuales."@es ;
+          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+          rdfs:label ""@en ,
+                     ""@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Plot-A6C
+:Plot-A6C rdf:type owl:Class ;
+          rdfs:subClassOf :PrimaryPlot ;
+          owl:disjointWith :Tree ;
+          rdfs:comment ""@en ,
+                       "Parcelas en las que no se localice el rejón por cambios totales en la cubierta forestal de la tesela que contiene la parcela (pérdida total de la masa muestreada en el inventario anterior e incorporación de una nueva masa forestal). Se utilizarán para la comparación de inventarios y para el cálculo de existencias actuales."@es ;
+          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+          rdfs:label ""@en ,
+                     ""@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Plot-NN
+:Plot-NN rdf:type owl:Class ;
+         rdfs:subClassOf :PrimaryPlot ;
+         owl:disjointWith :Tree ;
+         rdfs:comment ""@en ,
+                      "Se levantarán por primera vez en el inventario actual y serán utilizadas para el cálculo de existencias actuales"@es ;
+         rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+         rdfs:label "New Plot"@en ,
+                    "Parcela Nueva"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Plot-R
+:Plot-R rdf:type owl:Class ;
+        rdfs:subClassOf :SecondaryPlot ;
+        owl:disjointWith :Tree ;
+        rdfs:comment ""@en ,
+                     ""@es ;
+        rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+        rdfs:label ""@en ,
+                   ""@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Plot-R1
+:Plot-R1 rdf:type owl:Class ;
+         rdfs:subClassOf :Plot-R ;
+         owl:disjointWith :Tree ;
+         rdfs:comment ""@en ,
+                      ""@es ;
+         rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+         rdfs:label ""@en ,
+                    ""@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Plot-R1R
+:Plot-R1R rdf:type owl:Class ;
+          rdfs:subClassOf :Plot-R ;
+          owl:disjointWith :Tree ;
+          rdfs:comment ""@en ,
+                       ""@es ;
+          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+          rdfs:label ""@en ,
+                     ""@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Plot-R2
+:Plot-R2 rdf:type owl:Class ;
+         rdfs:subClassOf :Plot-R ;
+         owl:disjointWith :Tree ;
+         rdfs:comment ""@en ,
+                      ""@es ;
+         rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+         rdfs:label ""@en ,
+                    ""@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Plot-R2R
+:Plot-R2R rdf:type owl:Class ;
+          rdfs:subClassOf :Plot-R ;
+          owl:disjointWith :Tree ;
+          rdfs:comment ""@en ,
+                       ""@es ;
+          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+          rdfs:label ""@en ,
+                     ""@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Plot-R3
+:Plot-R3 rdf:type owl:Class ;
+         rdfs:subClassOf :Plot-R ;
+         owl:disjointWith :Tree ;
+         rdfs:comment ""@en ,
+                      ""@es ;
+         rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+         rdfs:label ""@en ,
+                    ""@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Plot-R4
+:Plot-R4 rdf:type owl:Class ;
+         rdfs:subClassOf :Plot-R ;
+         owl:disjointWith :Tree ;
+         rdfs:comment ""@en ,
+                      ""@es ;
+         rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+         rdfs:label ""@en ,
+                    ""@es .
+
+
+###  http://crossforest.eu/ifn/ontology/PlotMeasure
+:PlotMeasure rdf:type owl:Class ;
+             rdfs:subClassOf <http://crossforest.eu/measures/ontology/Measure> ;
+             rdfs:comment "Measure of a plot"@en ,
+                          "Medida de una parcela"@es ;
+             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+             rdfs:label "Medida de parcela"@es ,
+                        "Plot Measure"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/PlotMeasureBySpecies
+:PlotMeasureBySpecies rdf:type owl:Class ;
+                      rdfs:subClassOf :PlotMeasure ;
+                      rdfs:comment "Measure of a plot"@en ,
+                                   "Medida de una parcela"@es ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                      rdfs:label "Medida de parcela"@es ,
+                                 "Plot Measure"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/PlotMeasureTotal
+:PlotMeasureTotal rdf:type owl:Class ;
+                  rdfs:subClassOf :PlotMeasure ;
+                  rdfs:comment "Measure of a whole plot (adding all species)"@en ,
+                               "Medida de una parcela completa (sumando las de todas las especies)"@es ;
+                  rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                  rdfs:label "Medida de parcela total"@es ,
+                             "Total Plot Measure"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/PlotType
+:PlotType rdf:type owl:Class ;
+          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+          rdfs:label "Plot Type"@en ,
+                     "Tipo de parcela"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/PrimaryPlot
+:PrimaryPlot rdf:type owl:Class ;
+             rdfs:subClassOf :Plot ;
+             owl:disjointWith :Tree ;
+             rdfs:comment ""@en ,
+                          ""@es ;
+             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+             rdfs:label "Parcela"@es ,
+                        "Plot"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/Province
+:Province rdf:type owl:Class ;
+          rdfs:subClassOf <http://crossforest.eu/position/ontology/SpatialEntity> ;
+          rdfs:comment ""@en ,
+                       ""@es ;
+          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+          rdfs:label "Province"@en ,
+                     "Provincia"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Rocosity
+:Rocosity rdf:type owl:Class ;
+          rdfs:comment "Posición con rocosidad del suelo"@es ,
+                       "Position with rocosity of the soil"@en ;
+          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+          rdfs:label "Rocosidad"@es ,
+                     "Rocosity"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/ScientificName
+:ScientificName rdf:type owl:Class ;
+                rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                rdfs:label "Nombre científico"@es ,
+                           "Scientific Name"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/ScientificSynonym
+:ScientificSynonym rdf:type owl:Class ;
+                   rdfs:subClassOf :ScientificName ;
+                   rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                   rdfs:label "Sinónimo"@es ,
+                              "Synonym"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/SecondaryPlot
+:SecondaryPlot rdf:type owl:Class ;
+               rdfs:subClassOf :Plot ;
+               owl:disjointWith :Tree ;
+               rdfs:comment ""@en ,
+                            ""@es ;
+               rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+               rdfs:label "Parcela"@es ,
+                          "Plot"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/SilviculturalSystem
+:SilviculturalSystem rdf:type owl:Class ;
+                     rdfs:subClassOf <http://crossforest.eu/measures/ontology/Reliability> ;
+                     rdfs:comment "Tratamiento de la masa forestal desde la perspectiva de la ordenación de montes"@es ;
+                     rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                     rdfs:label "Silvicultural System"@en ,
+                                "Tratamiento"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/SpatialDistribution
+:SpatialDistribution rdf:type owl:Class ;
+                     rdfs:comment "Posición con disposición de la vegetación en el espacio"@es ,
+                                  "Position with spatial distribution of vegetation"@en ;
+                     rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                     rdfs:label "Distribución Espacial"@es ,
+                                "Spatial Distribution"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/SpatialEntity
+:SpatialEntity rdf:type owl:Class .
+
+
+###  http://crossforest.eu/ifn/ontology/Species
+:Species rdf:type owl:Class ;
+         rdfs:subClassOf :Taxon ;
+         rdfs:comment ""@en ,
+                      ""@es ;
+         rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+         rdfs:label "Especie"@es ,
+                    "Species"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/Stratum
+:Stratum rdf:type owl:Class ;
+         rdfs:Label "Estrato"@es ,
+                    "Stratum"@en ;
+         rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> .
+
+
+###  http://crossforest.eu/ifn/ontology/Synonym
+:Synonym rdf:type owl:Class .
+
+
+###  http://crossforest.eu/ifn/ontology/Taxon
+:Taxon rdf:type owl:Class ;
+       rdfs:comment ""@en ,
+                    ""@es ;
+       rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+       rdfs:label "Taxon"@en ,
+                  "Taxón"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Texture
+:Texture rdf:type owl:Class ;
+         rdfs:comment "Posición con textura del suelo"@es ,
+                      "Position with soil texture"@en ;
+         rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+         rdfs:label "Textura"@es ,
+                    "Texture"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/TotalHeight
+:TotalHeight rdf:type owl:Class ;
+             rdfs:subClassOf :Height ;
+             rdfs:comment "Altura total del árbol medido"@es ,
+                          "Total height of measured tree" ;
+             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+             rdfs:label "Altura total"@es ,
+                        "Total Height"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/Tree
+:Tree rdf:type owl:Class ;
+      rdfs:subClassOf :Plant ;
+      rdfs:comment "Planta vivaz (que vive más de dos años, de tallo leñoso, que se ramifica a cierta altura del suelo"@es ,
+                   "Woody perennial plant with an elongated stem supporting branches"@en ;
+      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+      rdfs:label "Tree"@en ,
+                 "Árbol"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/TreeMeasure
+:TreeMeasure rdf:type owl:Class .
+
+
+###  http://crossforest.eu/ifn/ontology/TreeShape
+:TreeShape rdf:type owl:Class ;
+           rdfs:comment "Tree with a Shape"@en ,
+                        "Árbol con forma"@es ;
+           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+           rdfs:label "Forma"@es ,
+                      "Shape"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/TreeSpecies
+:TreeSpecies rdf:type owl:Class ;
+             rdfs:subClassOf :PlantSpecies ;
+             rdfs:comment "Especie arbórea, tal y como se ha registrado en el inventario. Es posible que los indivíduos de esta clase no sean estrictamente especies. Genus, sub-genus, y mezclas de especies son también indivíduos posibles."@es ,
+                          "Tree species, as recorded in the inventory. It is possible that the individuals of this class are not strictly species, but genus, sub-genus, mix of species, etc."@en ;
+             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+             rdfs:label "Especie arbórea"@en ,
+                        "Tree Species"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/Use
+:Use rdf:type owl:Class ;
+     rdfs:comment ""@en ,
+                  ""@es ;
+     rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+     rdfs:label ""@en ,
+                ""@es .
+
+
+###  http://crossforest.eu/ifn/ontology/Volume
+:Volume rdf:type owl:Class ;
+        rdfs:subClassOf :PlotMeasure ;
+        rdfs:comment ""@en ;
+        rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+        rdfs:label "Volume"@en ,
+                   "Volume"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/VolumeWithBark
+:VolumeWithBark rdf:type owl:Class .
+
+
+###  http://crossforest.eu/ifn/ontology/hasVolumeWithoutBark
+:hasVolumeWithoutBark rdf:type owl:Class .
+
+
+###  http://crossforest.eu/measures/ontology/Measure
+<http://crossforest.eu/measures/ontology/Measure> rdf:type owl:Class .
+
+
+###  http://crossforest.eu/measures/ontology/MeasureInPercentage
+<http://crossforest.eu/measures/ontology/MeasureInPercentage> rdf:type owl:Class .
+
+
+###  http://crossforest.eu/measures/ontology/MeasureInUnities
+<http://crossforest.eu/measures/ontology/MeasureInUnities> rdf:type owl:Class .
+
+
+###  http://crossforest.eu/measures/ontology/MeasureInYears
+<http://crossforest.eu/measures/ontology/MeasureInYears> rdf:type owl:Class .
+
+
+###  http://crossforest.eu/measures/ontology/Reliability
+<http://crossforest.eu/measures/ontology/Reliability> rdf:type owl:Class .
+
+
+###  http://crossforest.eu/measures/ontology/Source
+<http://crossforest.eu/measures/ontology/Source> rdf:type owl:Class .
+
+
+###  http://crossforest.eu/position/ontology/Position
+<http://crossforest.eu/position/ontology/Position> rdf:type owl:Class .
+
+
+###  http://crossforest.eu/position/ontology/SpatialEntity
+<http://crossforest.eu/position/ontology/SpatialEntity> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://crossforest.eu/ifn/data/density/1
+<http://crossforest.eu/ifn/data/density/1> rdf:type owl:NamedIndividual ,
+                                                    :SilviculturalSystem ;
+                                           rdfs:comment "De 1 a 4 pies en la parcela."@es ;
+                                           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                           rdfs:label "Escasa"@es .
+
+
+###  http://crossforest.eu/ifn/data/density/2
+<http://crossforest.eu/ifn/data/density/2> rdf:type owl:NamedIndividual ,
+                                                    :SilviculturalSystem ;
+                                           rdfs:comment "De 5 a 15 pies en la parcela."@es ;
+                                           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                           rdfs:label "Normal"@es .
+
+
+###  http://crossforest.eu/ifn/data/density/3
+<http://crossforest.eu/ifn/data/density/3> rdf:type owl:NamedIndividual ,
+                                                    :SilviculturalSystem ;
+                                           rdfs:comment "Más de 15 pies en la parcela."@es ;
+                                           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                           rdfs:label "Abundante"@es .
+
+
+###  http://crossforest.eu/ifn/data/origin/11
+<http://crossforest.eu/ifn/data/origin/11> rdf:type owl:NamedIndividual ,
+                                                    :AgeSource ;
+                                           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                           rdfs:label "Natural"@es .
+
+
+###  http://crossforest.eu/ifn/data/origin/12
+<http://crossforest.eu/ifn/data/origin/12> rdf:type owl:NamedIndividual ,
+                                                    :AgeSource ;
+                                           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                           rdfs:label "Artificial"@es .
+
+
+###  http://crossforest.eu/ifn/data/origin/13
+<http://crossforest.eu/ifn/data/origin/13> rdf:type owl:NamedIndividual ,
+                                                    :AgeSource ;
+                                           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                           rdfs:label "Naturalizado"@es .
+
+
+###  http://crossforest.eu/ifn/data/origin/21
+<http://crossforest.eu/ifn/data/origin/21> rdf:type owl:NamedIndividual ,
+                                                    :AgeSource ;
+                                           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                           rdfs:label "Semilla"@es .
+
+
+###  http://crossforest.eu/ifn/data/origin/22
+<http://crossforest.eu/ifn/data/origin/22> rdf:type owl:NamedIndividual ,
+                                                    :AgeSource ;
+                                           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                           rdfs:label "Plantación"@es .
+
+
+###  http://crossforest.eu/ifn/data/origin/23
+<http://crossforest.eu/ifn/data/origin/23> rdf:type owl:NamedIndividual ,
+                                                    :AgeSource ;
+                                           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                           rdfs:label "Brote de cepa o raíz"@es .
+
+
+###  http://crossforest.eu/ifn/data/origin/24
+<http://crossforest.eu/ifn/data/origin/24> rdf:type owl:NamedIndividual ,
+                                                    :AgeSource ;
+                                           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                           rdfs:label "Mixto semilla y brote de cepa"@es .
+
+
+###  http://crossforest.eu/ifn/data/origin/25
+<http://crossforest.eu/ifn/data/origin/25> rdf:type owl:NamedIndividual ,
+                                                    :AgeSource ;
+                                           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                           rdfs:label "Mixto semilla y plantación"@es .
+
+
+###  http://crossforest.eu/ifn/data/origin/26
+<http://crossforest.eu/ifn/data/origin/26> rdf:type owl:NamedIndividual ,
+                                                    :AgeSource ;
+                                           rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                           rdfs:label "Mixto plantación y brote de cepa (eucaliptos)"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/01
+<http://crossforest.eu/ifn/data/province/01> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Álava"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/02
+<http://crossforest.eu/ifn/data/province/02> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Albacete"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/03
+<http://crossforest.eu/ifn/data/province/03> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Alicante"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/04
+<http://crossforest.eu/ifn/data/province/04> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Almería"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/05
+<http://crossforest.eu/ifn/data/province/05> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Ávila"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/06
+<http://crossforest.eu/ifn/data/province/06> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Badajoz"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/07
+<http://crossforest.eu/ifn/data/province/07> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Baleares"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/08
+<http://crossforest.eu/ifn/data/province/08> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Barcelona"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/09
+<http://crossforest.eu/ifn/data/province/09> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Burgos"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/10
+<http://crossforest.eu/ifn/data/province/10> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Cáceres"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/11
+<http://crossforest.eu/ifn/data/province/11> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Cádiz"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/12
+<http://crossforest.eu/ifn/data/province/12> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Castellón"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/13
+<http://crossforest.eu/ifn/data/province/13> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Ciudad real"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/14
+<http://crossforest.eu/ifn/data/province/14> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Córdoba"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/15
+<http://crossforest.eu/ifn/data/province/15> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "La Coruña"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/16
+<http://crossforest.eu/ifn/data/province/16> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Cuenca"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/17
+<http://crossforest.eu/ifn/data/province/17> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Gerona"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/18
+<http://crossforest.eu/ifn/data/province/18> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Granada"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/19
+<http://crossforest.eu/ifn/data/province/19> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Guadalajara"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/20
+<http://crossforest.eu/ifn/data/province/20> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Guipúzcoa"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/21
+<http://crossforest.eu/ifn/data/province/21> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Huelva"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/22
+<http://crossforest.eu/ifn/data/province/22> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Huesca"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/23
+<http://crossforest.eu/ifn/data/province/23> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Jaén"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/24
+<http://crossforest.eu/ifn/data/province/24> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "León"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/25
+<http://crossforest.eu/ifn/data/province/25> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Lérida"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/26
+<http://crossforest.eu/ifn/data/province/26> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "La Rioja"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/27
+<http://crossforest.eu/ifn/data/province/27> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Lugo"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/28
+<http://crossforest.eu/ifn/data/province/28> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Madrid"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/29
+<http://crossforest.eu/ifn/data/province/29> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Málaga"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/30
+<http://crossforest.eu/ifn/data/province/30> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Murcia"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/31
+<http://crossforest.eu/ifn/data/province/31> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Navarra"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/32
+<http://crossforest.eu/ifn/data/province/32> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Orense"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/33
+<http://crossforest.eu/ifn/data/province/33> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Asturias"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/34
+<http://crossforest.eu/ifn/data/province/34> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Palencia"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/35
+<http://crossforest.eu/ifn/data/province/35> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Las Palmas"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/36
+<http://crossforest.eu/ifn/data/province/36> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Pontevedra"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/37
+<http://crossforest.eu/ifn/data/province/37> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Salamanca"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/38
+<http://crossforest.eu/ifn/data/province/38> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Santa Cruz de Tenerife"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/39
+<http://crossforest.eu/ifn/data/province/39> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Cantabria"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/40
+<http://crossforest.eu/ifn/data/province/40> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Segovia"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/41
+<http://crossforest.eu/ifn/data/province/41> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Savilla"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/42
+<http://crossforest.eu/ifn/data/province/42> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Soria"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/43
+<http://crossforest.eu/ifn/data/province/43> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Tarragona"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/44
+<http://crossforest.eu/ifn/data/province/44> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Teruel"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/45
+<http://crossforest.eu/ifn/data/province/45> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Toledo"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/46
+<http://crossforest.eu/ifn/data/province/46> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Valencia"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/47
+<http://crossforest.eu/ifn/data/province/47> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Valladolid"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/48
+<http://crossforest.eu/ifn/data/province/48> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Vizcaya"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/49
+<http://crossforest.eu/ifn/data/province/49> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Zamora"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/50
+<http://crossforest.eu/ifn/data/province/50> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Zaragoza"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/51
+<http://crossforest.eu/ifn/data/province/51> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Ceuta"@es .
+
+
+###  http://crossforest.eu/ifn/data/province/52
+<http://crossforest.eu/ifn/data/province/52> rdf:type owl:NamedIndividual ,
+                                                      :Province ;
+                                             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                             rdfs:label "Melilla"@es .
+
+
+###  http://crossforest.eu/ifn/data/reliability/1
+<http://crossforest.eu/ifn/data/reliability/1> rdf:type owl:NamedIndividual ,
+                                                        :AgeSource ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                               rdfs:label "Dudosa"@es .
+
+
+###  http://crossforest.eu/ifn/data/reliability/2
+<http://crossforest.eu/ifn/data/reliability/2> rdf:type owl:NamedIndividual ,
+                                                        :AgeSource ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                               rdfs:label "Baja"@es .
+
+
+###  http://crossforest.eu/ifn/data/reliability/3
+<http://crossforest.eu/ifn/data/reliability/3> rdf:type owl:NamedIndividual ,
+                                                        :AgeSource ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                               rdfs:label "Media"@es .
+
+
+###  http://crossforest.eu/ifn/data/reliability/4
+<http://crossforest.eu/ifn/data/reliability/4> rdf:type owl:NamedIndividual ,
+                                                        :AgeSource ;
+                                               rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                               rdfs:label "Alta"@es .
+
+
+###  http://crossforest.eu/ifn/data/size/1
+<http://crossforest.eu/ifn/data/size/1> rdf:type owl:NamedIndividual ,
+                                                 :SilviculturalSystem ;
+                                        rdfs:comment "Pies con altura inferior a 30 cm."@es ;
+                                        rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                        rdfs:label "Categoría 1"@es .
+
+
+###  http://crossforest.eu/ifn/data/size/2
+<http://crossforest.eu/ifn/data/size/2> rdf:type owl:NamedIndividual ,
+                                                 :SilviculturalSystem ;
+                                        rdfs:comment "Pies con altura comprendida entre 30 y 130 cm."@es ;
+                                        rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                        rdfs:label "Categoría 2"@es .
+
+
+###  http://crossforest.eu/ifn/data/size/3
+<http://crossforest.eu/ifn/data/size/3> rdf:type owl:NamedIndividual ,
+                                                 :SilviculturalSystem ;
+                                        rdfs:comment "Pies con altura superior a 130 cm y diámetro normal menor de 2,5 cm."@es ;
+                                        rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                        rdfs:label "Categoría 3"@es .
+
+
+###  http://crossforest.eu/ifn/data/size/4
+<http://crossforest.eu/ifn/data/size/4> rdf:type owl:NamedIndividual ,
+                                                 :SilviculturalSystem ;
+                                        rdfs:comment "Pies con altura superior a 130 cm y diámetro normal comprendido entre 2,5 y 7,5 cm. Corresponde a los pies menores del IFN-2."@es ;
+                                        rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                        rdfs:label "Categoría 4"@es .
+
+
+###  http://crossforest.eu/ifn/data/source/1
+<http://crossforest.eu/ifn/data/source/1> rdf:type owl:NamedIndividual ,
+                                                   :AgeSource ;
+                                          rdfs:comment "Por el aspecto"@es ;
+                                          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                          rdfs:label "Aspecto"@es .
+
+
+###  http://crossforest.eu/ifn/data/source/2
+<http://crossforest.eu/ifn/data/source/2> rdf:type owl:NamedIndividual ,
+                                                   :AgeSource ;
+                                          rdfs:comment "Por consulta al agente forestal de la zona"@es ;
+                                          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                          rdfs:label "Agente Forestal"@es .
+
+
+###  http://crossforest.eu/ifn/data/source/3
+<http://crossforest.eu/ifn/data/source/3> rdf:type owl:NamedIndividual ,
+                                                   :AgeSource ;
+                                          rdfs:comment "Por consulta a la jefatura forestal comarcal, provincial o autonómica"@es ;
+                                          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                          rdfs:label "Jefatura Forestal"@es .
+
+
+###  http://crossforest.eu/ifn/data/source/4
+<http://crossforest.eu/ifn/data/source/4> rdf:type owl:NamedIndividual ,
+                                                   :AgeSource ;
+                                          rdfs:comment "Por consulta a los habitantes de la zona"@es ;
+                                          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                          rdfs:label "Habitantes"@es .
+
+
+###  http://crossforest.eu/ifn/data/source/5
+<http://crossforest.eu/ifn/data/source/5> rdf:type owl:NamedIndividual ,
+                                                   :AgeSource ;
+                                          rdfs:comment "Por conteo de verticilos"@es ;
+                                          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                          rdfs:label "Verticilos"@es .
+
+
+###  http://crossforest.eu/ifn/data/source/6
+<http://crossforest.eu/ifn/data/source/6> rdf:type owl:NamedIndividual ,
+                                                   :AgeSource ;
+                                          rdfs:comment "Por observación de tocones recientes"@es ;
+                                          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                          rdfs:label "Tocones"@es .
+
+
+###  http://crossforest.eu/ifn/data/source/7
+<http://crossforest.eu/ifn/data/source/7> rdf:type owl:NamedIndividual ,
+                                                   :AgeSource ;
+                                          rdfs:comment "Por otras fuentes"@es ;
+                                          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                          rdfs:label "Otras Fuentes"@es .
+
+
+###  http://crossforest.eu/ifn/data/system/1
+<http://crossforest.eu/ifn/data/system/1> rdf:type owl:NamedIndividual ,
+                                                   :SilviculturalSystem ;
+                                          rdfs:comment "Cuando todos los pies proceden de semilla"@es ;
+                                          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                          rdfs:label "Monte alto"@es .
+
+
+###  http://crossforest.eu/ifn/data/system/2
+<http://crossforest.eu/ifn/data/system/2> rdf:type owl:NamedIndividual ,
+                                                   :SilviculturalSystem ;
+                                          rdfs:comment "Cuando coexisten pies de la misma especie, unos procedentes de semilla (brinzales) y otros de brote (chirpiales)"@es ;
+                                          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                          rdfs:label "Monte medio"@es .
+
+
+###  http://crossforest.eu/ifn/data/system/3
+<http://crossforest.eu/ifn/data/system/3> rdf:type owl:NamedIndividual ,
+                                                   :SilviculturalSystem ;
+                                          rdfs:comment "Cuando todos los pies proceden de brote de cepa o de raíz"@es ;
+                                          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                                          rdfs:label "Monte bajo"@es .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:hasVolumeWithoutBark rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                      rdfs:label "has volume without bark"@en ,
+                                 "tiene volumen sin corteza"@es .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

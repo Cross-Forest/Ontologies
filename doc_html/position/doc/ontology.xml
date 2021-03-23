@@ -1,0 +1,743 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://crossforest.eu/position/ontology/"
+     xml:base="http://crossforest.eu/position/ontology/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="http://crossforest.eu/position/ontology/">
+        <owl:imports rdf:resource="http://crossforest.eu/measures/ontology/"/>
+        <dc:creator rdf:resource="https://www.crossforest.eu/members/guiveg"/>
+        <dc:creator rdf:resource="https://www.crossforest.eu/members/josgim"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-17</dc:date>
+        <vann:preferredNamespacePrefix>spo</vann:preferredNamespacePrefix>
+        <rdfs:comment xml:lang="en">An ontology to publish data about spatial entities and their positions in various reference systems, including relative positions</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una ontología para publicar datos sobre entidades espaciales y sus posiciones en múltiples sistemas de referencia, incluyendo posiciones relativas</rdfs:comment>
+        <rdfs:label xml:lang="es">Ontología de Posiciones Espaciales</rdfs:label>
+        <rdfs:label xml:lang="en">Spatial Position Ontology</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://crossforest.eu/measures/ontology/hasMeasureIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/measures/ontology/hasMeasureIn"/>
+    
+
+
+    <!-- http://crossforest.eu/measures/ontology/hasPosition -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/measures/ontology/hasPosition"/>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/egocentricPositionOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/position/ontology/egocentricPositionOf">
+        <owl:inverseOf rdf:resource="http://crossforest.eu/position/ontology/hasEgocentricPosition"/>
+        <rdfs:domain rdf:resource="http://crossforest.eu/position/ontology/EgocentricPosition"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/position/ontology/SpatialEntity"/>
+        <rdfs:comment xml:lang="es">entidad objetico de la posición egocéntrica</rdfs:comment>
+        <rdfs:comment xml:lang="en">target entity of the egocentric position</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="en">egocentric position of</rdfs:label>
+        <rdfs:label xml:lang="es">posición egocéntrica de</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/fromReference -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/position/ontology/fromReference"/>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/hasArea -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/position/ontology/hasArea">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasureIn"/>
+        <rdfs:domain rdf:resource="http://crossforest.eu/position/ontology/Position"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/measures/ontology/MeasureInHectares"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="en">has area</rdfs:label>
+        <rdfs:label xml:lang="es">tiene area</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/hasBound -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/position/ontology/hasBound">
+        <rdfs:domain rdf:resource="http://crossforest.eu/position/ontology/Position"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/position/ontology/Bound"/>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/hasCoordinate -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/position/ontology/hasCoordinate">
+        <rdfs:domain rdf:resource="http://crossforest.eu/position/ontology/GeocentricPosition"/>
+        <rdfs:comment xml:lang="es">coordenada de la posición</rdfs:comment>
+        <rdfs:comment xml:lang="en">coordinate of the position</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="es">coordenada</rdfs:label>
+        <rdfs:label xml:lang="en">coordinate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/hasCoordinateReferenceSystem -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/position/ontology/hasCoordinateReferenceSystem">
+        <rdfs:domain rdf:resource="http://crossforest.eu/position/ontology/GeocentricPosition"/>
+        <rdfs:comment xml:lang="en">coordinate reference system used for the position</rdfs:comment>
+        <rdfs:comment xml:lang="es">sistema de coordenadas de referencia usado para la posición</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="en">coordinate reference system</rdfs:label>
+        <rdfs:label xml:lang="es">sistema de coordenadas de referencia</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/hasDirection -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/position/ontology/hasDirection">
+        <rdfs:domain rdf:resource="http://crossforest.eu/position/ontology/EgocentricPosition"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/position/ontology/Direction"/>
+        <rdfs:comment xml:lang="en">direction of the position from the position of reference</rdfs:comment>
+        <rdfs:comment xml:lang="es">rumbo de la posición respecto a la posición de referencia</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="en">direction</rdfs:label>
+        <rdfs:label xml:lang="es">rumbo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/hasDistance -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/position/ontology/hasDistance">
+        <rdfs:domain rdf:resource="http://crossforest.eu/position/ontology/EgocentricPosition"/>
+        <rdfs:comment xml:lang="en">distance from the position to the position of reference</rdfs:comment>
+        <rdfs:comment xml:lang="es">distancia de la posición a la posición de referencia</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="en">distance</rdfs:label>
+        <rdfs:label xml:lang="es">distancia</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/hasEgocentricPosition -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/position/ontology/hasEgocentricPosition">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/position/ontology/hasPosition"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/position/ontology/EgocentricPosition"/>
+        <rdfs:comment xml:lang="es">la entidad espacial tiene esta posición desde un punto de referencia (que es probablemente la posición de otra entidad espacial)</rdfs:comment>
+        <rdfs:comment xml:lang="en">the spatial entity has this position from a point of reference (which is probably the posicion of another spatial entity)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="en">has egocentric position</rdfs:label>
+        <rdfs:label xml:lang="es">tiene posición egocéntrica</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/hasGeocentricPosition -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/position/ontology/hasGeocentricPosition">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/position/ontology/hasPosition"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/position/ontology/GeocentricPosition"/>
+        <rdfs:comment xml:lang="es">la entidad espacial tiene esta posición en un Sistema de Coordenadas de Referencia Geodésico</rdfs:comment>
+        <rdfs:comment xml:lang="en">the spacial entity has this position in a geodetic CRS</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="en">has geocentric position</rdfs:label>
+        <rdfs:label xml:lang="es">tiene posición geocéntrica</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/hasLeftBound -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/position/ontology/hasLeftBound">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/position/ontology/hasBound"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/position/ontology/LeftBound"/>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/hasLowerBound -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/position/ontology/hasLowerBound">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/position/ontology/hasBound"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/position/ontology/LowerBound"/>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/hasPolygon -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/position/ontology/hasPolygon">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/position/ontology/hasPosition"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/position/ontology/Polygon"/>
+        <rdfs:comment xml:lang="es">la entidad espacial está en este polígono</rdfs:comment>
+        <rdfs:comment xml:lang="en">the spatial entity is located in this polygon</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="en">has polygon</rdfs:label>
+        <rdfs:label xml:lang="es">tiene polígono</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/hasPosition -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/position/ontology/hasPosition">
+        <rdfs:domain rdf:resource="http://crossforest.eu/position/ontology/SpatialEntity"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/position/ontology/Position"/>
+        <rdfs:comment xml:lang="es">la entidad espacial tiene esta posición</rdfs:comment>
+        <rdfs:comment xml:lang="en">the spatial entity has this location</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="en">has location</rdfs:label>
+        <rdfs:label xml:lang="es">situada en</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/hasReference -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/position/ontology/hasReference">
+        <rdfs:domain rdf:resource="http://crossforest.eu/position/ontology/EgocentricPosition"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/position/ontology/ReferencePosition"/>
+        <rdfs:comment xml:lang="es">la posición es relativa a esta posición de referencia</rdfs:comment>
+        <rdfs:comment xml:lang="en">the position is w.r.t. this position of reference</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="es">desde la referencia</rdfs:label>
+        <rdfs:label xml:lang="en">from reference</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/hasRightBound -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/position/ontology/hasRightBound">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/position/ontology/hasBound"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/position/ontology/RightBound"/>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/hasUpperBound -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/position/ontology/hasUpperBound">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/position/ontology/hasBound"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/position/ontology/UpperBound"/>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/isInLayer -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/position/ontology/isInLayer">
+        <rdfs:domain rdf:resource="http://crossforest.eu/position/ontology/Position"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/position/ontology/Layer"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="es">está en la capa</rdfs:label>
+        <rdfs:label xml:lang="en">is in layer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/referenceOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/position/ontology/referenceOf">
+        <owl:inverseOf rdf:resource="http://crossforest.eu/position/ontology/fromReference"/>
+        <rdfs:domain rdf:resource="http://crossforest.eu/position/ontology/ReferencePosition"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/position/ontology/EgocentricPosition"/>
+        <rdfs:comment xml:lang="es">la posición para la cual la entidad se usa como referencia</rdfs:comment>
+        <rdfs:comment xml:lang="en">the position for which the entity is used as a reference</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="es">es referencia de</rdfs:label>
+        <rdfs:label xml:lang="en">is reference of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/samePosition -->
+
+
+    <owl:ObjectProperty rdf:about="http://crossforest.eu/position/ontology/samePosition">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://crossforest.eu/position/ontology/Position"/>
+        <rdfs:range rdf:resource="http://crossforest.eu/position/ontology/Position"/>
+        <rdf:label xml:lang="es">misma posición que</rdf:label>
+        <rdf:label xml:lang="en">same position as</rdf:label>
+        <rdfs:comment xml:lang="en">same phisical position, probably in a different coordinate reference system</rdfs:comment>
+        <rdfs:comment>misma posición física, probablemente en un sistema de coordenadas de referencia diferente</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://crossforest.eu/measures/ontology/hasMeasureInGradians -->
+
+
+    <owl:DatatypeProperty rdf:about="http://crossforest.eu/measures/ontology/hasMeasureInGradians"/>
+    
+
+
+    <!-- http://crossforest.eu/measures/ontology/hasMeasureInHectares -->
+
+
+    <owl:DatatypeProperty rdf:about="http://crossforest.eu/measures/ontology/hasMeasureInHectares"/>
+    
+
+
+    <!-- http://crossforest.eu/measures/ontology/hasMeasureInMeters -->
+
+
+    <owl:DatatypeProperty rdf:about="http://crossforest.eu/measures/ontology/hasMeasureInMeters"/>
+    
+
+
+    <!-- http://crossforest.eu/measures/ontology/hasMeasureInSquareMeters -->
+
+
+    <owl:DatatypeProperty rdf:about="http://crossforest.eu/measures/ontology/hasMeasureInSquareMeters"/>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/hasAreaInHC -->
+
+
+    <owl:DatatypeProperty rdf:about="http://crossforest.eu/position/ontology/hasAreaInHC">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasureInHectares"/>
+        <rdfs:domain rdf:resource="http://crossforest.eu/position/ontology/Position"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/hasAreaInSquareMeters -->
+
+
+    <owl:DatatypeProperty rdf:about="http://crossforest.eu/position/ontology/hasAreaInSquareMeters">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasureInSquareMeters"/>
+        <rdfs:domain rdf:resource="http://crossforest.eu/position/ontology/Position"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/hasDirectionInGradians -->
+
+
+    <owl:DatatypeProperty rdf:about="http://crossforest.eu/position/ontology/hasDirectionInGradians">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasureInGradians"/>
+        <rdfs:domain rdf:resource="http://crossforest.eu/position/ontology/EgocentricPosition"/>
+        <rdfs:comment xml:lang="en">direction in degress of the position from the position of reference</rdfs:comment>
+        <rdfs:comment xml:lang="es">rumbo en grados de la posición respecto a la posición de referencia</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="en">direction</rdfs:label>
+        <rdfs:label xml:lang="es">rumbo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/hasDistanceInMeters -->
+
+
+    <owl:DatatypeProperty rdf:about="http://crossforest.eu/position/ontology/hasDistanceInMeters">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasureInMeters"/>
+        <rdfs:domain rdf:resource="http://crossforest.eu/position/ontology/EgocentricPosition"/>
+        <rdfs:comment xml:lang="en">distance in meters from the position to the position of reference</rdfs:comment>
+        <rdfs:comment xml:lang="es">distancia en metros de la posición a la posición de referencia</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="en">distance</rdfs:label>
+        <rdfs:label xml:lang="es">distancia</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://crossforest.eu/measures/ontology/Measure -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/measures/ontology/Measure"/>
+    
+
+
+    <!-- http://crossforest.eu/measures/ontology/MeasureInHectares -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/measures/ontology/MeasureInHectares"/>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/AllocentricPosition -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/position/ontology/AllocentricPosition">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/position/ontology/Position"/>
+        <owl:disjointWith rdf:resource="http://crossforest.eu/position/ontology/EgocentricPosition"/>
+        <owl:disjointWith rdf:resource="http://crossforest.eu/position/ontology/GeocentricPosition"/>
+        <rdfs:comment xml:lang="es">Posición desde un conjunto de puntos</rdfs:comment>
+        <rdfs:comment xml:lang="en">Position from a set of points</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label>Allocentric Position</rdfs:label>
+        <rdfs:label>Posición Alocéntrica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/Axis -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/position/ontology/Axis">
+        <owl:disjointWith rdf:resource="http://crossforest.eu/position/ontology/Position"/>
+        <owl:disjointWith rdf:resource="http://crossforest.eu/position/ontology/SpatialEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/Bound -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/position/ontology/Bound">
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/Coordinate -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/position/ontology/Coordinate">
+        <owl:disjointWith rdf:resource="http://crossforest.eu/position/ontology/Position"/>
+        <owl:disjointWith rdf:resource="http://crossforest.eu/position/ontology/SpatialEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/Direction -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/position/ontology/Direction">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/measures/ontology/Measure"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="en">Direction</rdfs:label>
+        <rdfs:label xml:lang="es">Rumbo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/Distance -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/position/ontology/Distance">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/measures/ontology/Measure"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="en">Distance</rdfs:label>
+        <rdfs:label xml:lang="es">distancia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/EPSGentity -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/position/ontology/EPSGentity">
+        <owl:disjointWith rdf:resource="http://crossforest.eu/position/ontology/Position"/>
+        <owl:disjointWith rdf:resource="http://crossforest.eu/position/ontology/SpatialEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/EgocentricPosition -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/position/ontology/EgocentricPosition">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/position/ontology/Position"/>
+        <owl:disjointWith rdf:resource="http://crossforest.eu/position/ontology/GeocentricPosition"/>
+        <rdfs:comment xml:lang="es">Posición desde un punto de referencia</rdfs:comment>
+        <rdfs:comment xml:lang="en">Position from a point of reference</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label>Egocentric Position</rdfs:label>
+        <rdfs:label>Posición Egocéntrica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/GeocentricPosition -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/position/ontology/GeocentricPosition">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/position/ontology/Position"/>
+        <rdfs:comment xml:lang="es">Posición que utiliza un sistema geodético de coordenadas de referencia</rdfs:comment>
+        <rdfs:comment>Position that uses a geodetic coordinate reference system</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="en">Geocentric Position</rdfs:label>
+        <rdfs:label xml:lang="es">Posición geocéntrica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/Layer -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/position/ontology/Layer">
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="es">Capa</rdfs:label>
+        <rdfs:label xml:lang="en">Layer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/LeftBound -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/position/ontology/LeftBound">
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/LowerBound -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/position/ontology/LowerBound">
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/Polygon -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/position/ontology/Polygon">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/position/ontology/Position"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/Position -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/position/ontology/Position">
+        <owl:disjointWith rdf:resource="http://crossforest.eu/position/ontology/SpatialEntity"/>
+        <rdfs:comment xml:lang="es">Posición donde una entidad espacial puede estar situada</rdfs:comment>
+        <rdfs:comment xml:lang="en">Position where a spatial entity can be located</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="es">Posición</rdfs:label>
+        <rdfs:label xml:lang="en">Position</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/ReferenceEntity -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/position/ontology/ReferenceEntity">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://crossforest.eu/measures/ontology/hasPosition"/>
+                <owl:someValuesFrom rdf:resource="http://crossforest.eu/position/ontology/ReferencePosition"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/position/ontology/SpatialEntity"/>
+        <rdfs:comment xml:lang="es">Entidad tomada como referencia para el posicionamient de otras entidades espaciales</rdfs:comment>
+        <rdfs:comment xml:lang="en">Entity taken as reference for the position of other spatial entities</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="es">Entidad de Referencia</rdfs:label>
+        <rdfs:label xml:lang="en">Reference Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/ReferencePosition -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/position/ontology/ReferencePosition">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/position/ontology/Position"/>
+        <rdfs:comment xml:lang="es">Posición tomada como referencia para el posicionamient de otras entidades espaciales</rdfs:comment>
+        <rdfs:comment xml:lang="en">Position taken as reference for the position of other spatial entities</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="es">Posición de Referencia</rdfs:label>
+        <rdfs:label xml:lang="en">Reference Position</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/RightBound -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/position/ontology/RightBound">
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/SpatialEntity -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/position/ontology/SpatialEntity">
+        <rdfs:comment xml:lang="es">Entidad con posición espacial</rdfs:comment>
+        <rdfs:comment xml:lang="en">Entity with Spatial Position</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="es">Entidad espacial</rdfs:label>
+        <rdfs:label xml:lang="en">Spatial Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/position/ontology/UpperBound -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/position/ontology/UpperBound">
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/position/ontology/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+
