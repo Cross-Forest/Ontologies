@@ -460,7 +460,7 @@ ifn:isInPlot rdf:type owl:ObjectProperty ;
 
 ###  http://crossforest.eu/ifn/ontology/isInProvince
 ifn:isInProvince rdf:type owl:ObjectProperty ;
-                 rdfs:domain ifn:SpatialEntity ;
+                 rdfs:domain spo:SpatialEntity ;
                  rdfs:range ifn:Province ;
                  rdfs:comment "Province in which the entity is located"@en ,
                               "Provincia en la que la entidad está situada"@es ;
@@ -1280,9 +1280,6 @@ ifn:SpatialDistribution rdf:type owl:Class ;
                         rdfs:label "Distribución Espacial"@es ,
                                    "Spatial Distribution"@en .
 
-
-###  http://crossforest.eu/ifn/ontology/SpatialEntity
-ifn:SpatialEntity rdf:type owl:Class .
 
 
 ###  http://crossforest.eu/ifn/ontology/Species
