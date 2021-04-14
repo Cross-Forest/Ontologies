@@ -241,6 +241,10 @@ ifn:TarifaClaseEcuacion rdf:type owl:Class ;
                         owl:disjointWith ifn:TarifaClaseSupertarifa ;
                         rdfs:label "Ecuación"@es .
 
+###  http://crossforest.eu/ifn/ontology/TarifaClaseEcuacion-Supertarifa
+ifn:TarifaClaseEcuacion-Supertarifa rdf:type owl:Class ;
+                        rdfs:subClassOf ifn:TarifaClase ;
+                        rdfs:label "Ecuación-Supertarifa"@es .
 
 ###  http://crossforest.eu/ifn/ontology/TarifaClaseSupertarifa
 ifn:TarifaClaseSupertarifa rdf:type owl:Class ;
