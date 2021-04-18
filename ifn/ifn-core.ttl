@@ -66,7 +66,7 @@
                                        owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/species/nombres.ttl> ;
                                        owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/species/sinonimos.ttl> ;
 									   
-                                       owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/iberian/ifi-core.ttl> ;
+                                       owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/iberian/ilu-core.ttl> ;
                                        dc:creator <https://www.gsic.uva.es/members/guiveg> ,
                                                   <https://www.gsic.uva.es/members/josgim> ;
 										dc:contributor <https://www.crossforest.eu/members/dportoles>;
@@ -759,6 +759,7 @@ ifn:DamageStatus rdf:type owl:Class ;
 
 ###  http://crossforest.eu/ifn/ontology/EspesorDeCapaMuerta
 ifn:EspesorDeCapaMuerta rdf:type owl:Class ;
+             rdfs:subClassOf skos:ConceptScheme;
               rdfs:comment "Posición con espesor de capa muerta. Si en la parcela hay zonas con diferentes espesores de capa muerta se apunta el
 valor medio estimado."@es ;
               rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
@@ -1403,13 +1404,14 @@ ifn:Tree rdf:type owl:Class ;
 ifn:TreeMeasure rdf:type owl:Class .
 
 
-###  http://crossforest.eu/ifn/ontology/TreeShape
-ifn:TreeShape rdf:type owl:Class ;
-              rdfs:comment "Tree with a Shape"@en ,
+###  http://crossforest.eu/ifn/ontology/FormaDeCubicacion
+ifn:FormaDeCubicacion rdf:type owl:Class ;
+			rdfs:subClassOf skos:ConceptScheme ;
+              rdfs:comment "El operador observará cada pie y le asignará el número que más se ajuste."@en ,
                            "Árbol con forma"@es ;
               rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
-              rdfs:label "Forma"@es ,
-                         "Shape"@en .
+			 <http://purl.org/dc/terms/source> "Anexo 15 (Documentador ifn)".
+              rdfs:label "Forma de cubicación"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/TreeSpecies
