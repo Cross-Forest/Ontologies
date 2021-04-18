@@ -16,6 +16,7 @@
 @prefix density: <http://crossforest.eu/ifn/data/density/> .
 @prefix province: <http://crossforest.eu/ifn/data/province/> .
 @prefix reliability: <http://crossforest.eu/ifn/data/reliability/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @base <http://crossforest.eu/ifn/ontology/> .
 
 <http://crossforest.eu/ifn/ontology/> rdf:type owl:Ontology ;
@@ -138,6 +139,8 @@ dc:creator rdf:type owl:AnnotationProperty .
 ###  http://purl.org/dc/elements/1.1/date
 dc:date rdf:type owl:AnnotationProperty .
 
+###  http://purl.org/dc/elements/1.1/source
+dc:source rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
 vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
@@ -629,11 +632,13 @@ ifn:AgeSource rdf:type owl:Class ;
                          "Source"@en .
 
 
-###  http://crossforest.eu/ifn/ontology/Altitude
-ifn:Altitude rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/Altitud
+ifn:Altitud rdf:type owl:Class;
+             rdfs:subClassOf skos:ConceptScheme;
              rdfs:comment "Posición con altitud"@es ,
-                          "Position with Altitude"@en ;
+                          "Position with altitude"@en ;
              rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+			 <http://purl.org/dc/terms/source> "Anexo 14 (Documentador Sig)";
              rdfs:label "Altitud"@es ,
                         "Altitude"@en .
 
@@ -686,11 +691,13 @@ ifn:Class rdf:type owl:Class ;
                      "Class"@en .
 
 
-###  http://crossforest.eu/ifn/ontology/Composition
-ifn:Composition rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/ComposicionEspecifica
+ifn:ComposicionEspecifica rdf:type owl:Class ;
+             rdfs:subClassOf skos:ConceptScheme;
                 rdfs:comment "Posición con composición de vegetación"@es ,
                              "Position with composition of vegetation"@en ;
                 rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+				<http://purl.org/dc/terms/source> "Anexo 5 (Documentador Ifn)";
                 rdfs:label "Composición Específica"@es ,
                            "Composition of Vegetation"@en .
 
@@ -805,13 +812,14 @@ ifn:DominantSpecies rdf:type owl:Class ;
                     rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> .
 
 
-###  http://crossforest.eu/ifn/ontology/Erosion
-ifn:Erosion rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/ManifestacionesErosivas
+ifn:ManifestacionesErosivas rdf:type owl:Class ;
+             rdfs:subClassOf skos:ConceptScheme;
             rdfs:comment "Posición con Erosión"@es ,
                          "Position with Erosion"@en ;
             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
-            rdfs:label "Erosion"@en ,
-                       "Erosión"@es .
+			<http://purl.org/dc/terms/source> "Anexo 27 (Documentador Ifn)";
+            rdfs:label "Manifestaciones Erosivas"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/Family
@@ -823,12 +831,21 @@ ifn:Family rdf:type owl:Class ;
            rdfs:label "Familia"@es ,
                       "Family"@en .
 
+###  http://crossforest.eu/ifn/ontology/FormaCubicacion
+ifn:FormaCubicacion rdf:type owl:Class ;
+             rdfs:subClassOf skos:ConceptScheme;
+                    rdfs:comment "El operador observará cada pie y le asignará el número que más se ajuste"@es ;
+					<http://purl.org/dc/terms/source> "Anexo 6 (Documentador sig)";
+                    rdfs:label "Forma de cubicación"@es .
 
-###  http://crossforest.eu/ifn/ontology/FuelModel
-ifn:FuelModel rdf:type owl:Class ;
-              rdfs:comment "Posición con Modelo de Combustible"@es ,
+
+###  http://crossforest.eu/ifn/ontology/ModeloCombustible
+ifn:ModeloCombustible rdf:type owl:Class ;
+             rdfs:subClassOf skos:ConceptScheme;
+              rdfs:comment "Posición con Modelo de Combustible. Para el caso de que hubiese un incendio en la zona."@es ,
                            "Position with Fuel Model"@en ;
               rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+			  <http://purl.org/dc/terms/source> "Anexo 28 (Documentador Ifn)";
               rdfs:label "Fuel Model"@en ,
                          "Modelo de Combustible"@es .
 
@@ -843,11 +860,13 @@ ifn:Genus rdf:type owl:Class ;
                      "Género"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/Gradient
-ifn:Gradient rdf:type owl:Class ;
-             rdfs:comment "Posición con Pendiente"@es ,
-                          "Position with Gradient"@en ;
+###  http://crossforest.eu/ifn/ontology/Pendiente
+ifn:Pendiente rdf:type owl:Class ;
+             rdfs:subClassOf skos:ConceptScheme;
+             rdfs:comment "Posición con pendiente"@es ,
+                          "Position with gradient"@en ;
              rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+			 <http://purl.org/dc/terms/source> "Anexo 16 (Documentador sig)";
              rdfs:label "Gradient"@en ,
                         "Pendiente"@es .
 
@@ -908,20 +927,23 @@ ifn:OccupationOfSpecies rdf:type owl:Class ;
                         rdfs:label "Ocupación de especie"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/OrganicMatter
-ifn:OrganicMatter rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/ContenidoEnMateriaOrganica
+ifn:ContenidoEnMateriaOrganica rdf:type owl:Class ;
+             rdfs:subClassOf skos:ConceptScheme;
                   rdfs:comment "Posición con Materia Orgánica"@es ,
                                "Position with Organic Matter"@en ;
                   rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
-                  rdfs:label "Materia Orgánica"@es ,
-                             "Organic Matter"@en .
+				  <http://purl.org/dc/terms/source> "Anexo 24 (Documentador ifn)";
+                  rdfs:label "Contenido en materia orgánica"@es.
 
 
 ###  http://crossforest.eu/ifn/ontology/Orientation
 ifn:Orientation rdf:type owl:Class ;
-                rdfs:comment "Posición con Orientación"@es ,
+             rdfs:subClassOf skos:ConceptScheme;
+                rdfs:comment "Posición con Orientación. Valores en grados sexagesimales."@es ,
                              "Position with Orientation"@en ;
                 rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+				<http://purl.org/dc/terms/source> "Anexo 15 (Documentador sig)";
                 rdfs:label "Orientación"@es ,
                            "Orientation"@en .
 
@@ -936,13 +958,18 @@ ifn:Origin rdf:type owl:Class ;
                       "Origin"@en .
 
 
-###  http://crossforest.eu/ifn/ontology/PH
-ifn:PH rdf:type owl:Class ;
-       rdfs:comment "Soil with PH"@en ,
-                    "Suelo con PH"@es ;
+###  http://crossforest.eu/ifn/ontology/ParametroSelvicola
+ifn:ParametroSelvicola rdf:type owl:Class ;
+             rdfs:subClassOf skos:ConceptScheme.
+
+
+###  http://crossforest.eu/ifn/ontology/ReaccionDelSueloPH
+ifn:ReaccionDelSueloPH rdf:type owl:Class ;
+             rdfs:subClassOf skos:ConceptScheme;
+       rdfs:comment "Clasificación del suelo en función del pH."@es ;
        rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
-       rdfs:label "PH"@en ,
-                  "PH"@es .
+				<http://purl.org/dc/terms/source> "Anexo 25 (Documentador ifn)";
+       rdfs:label "Reacción del suelo (PH)"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/Plant
@@ -1228,11 +1255,13 @@ ifn:Province rdf:type owl:Class ;
                         "Provincia"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/Rocosity
-ifn:Rocosity rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/Rocosidad
+ifn:Rocosidad rdf:type owl:Class ;
+             rdfs:subClassOf skos:ConceptScheme;
              rdfs:comment "Posición con rocosidad del suelo"@es ,
                           "Position with rocosity of the soil"@en ;
              rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+			 <http://purl.org/dc/terms/source> "Anexo 22 (Documentador ifn)";
              rdfs:label "Rocosidad"@es ,
                         "Rocosity"@en .
 
@@ -1302,6 +1331,19 @@ ifn:Stratum rdf:type owl:Class ;
 ###  http://crossforest.eu/ifn/ontology/Synonym
 ifn:Synonym rdf:type owl:Class .
 
+
+###  http://crossforest.eu/ifn/ontology/TarifaClase
+ifn:TarifaClase rdf:type owl:Class ;
+             rdfs:subClassOf skos:ConceptScheme.
+
+###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacion
+ifn:TarifaModeloCubicacion rdf:type owl:Class ;
+             rdfs:subClassOf skos:ConceptScheme;
+			 rdfs:label "Modelo estadístico de cubicación"@es .
+
+###  http://crossforest.eu/ifn/ontology/TarifaTipoAplic
+ifn:TarifaTipoAplic rdf:type owl:Class ;
+             rdfs:subClassOf skos:ConceptScheme.
 
 ###  http://crossforest.eu/ifn/ontology/Taxon
 ifn:Taxon rdf:type owl:Class ;
@@ -1383,11 +1425,13 @@ ifn:Volume rdf:type owl:Class ;
 
 
 ###  http://crossforest.eu/ifn/ontology/VolumeWithBark
-ifn:VolumeWithBark rdf:type owl:Class .
+ifn:VolumeWithBark rdf:type owl:Class ;
+rdfs:subClassOf ifn:Volume .
 
+###  http://crossforest.eu/ifn/ontology/VolumeWithoutBark
+ifn:VolumeWithoutBark rdf:type owl:Class ;
+           rdfs:subClassOf ifn:Volume .
 
-###  http://crossforest.eu/ifn/ontology/hasVolumeWithoutBark
-ifn:hasVolumeWithoutBark rdf:type owl:Class .
 
 
 ###  http://crossforest.eu/measures/ontology/Measure

@@ -154,11 +154,6 @@ ifn:hasTarifaCoefEstad rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
-###  http://crossforest.eu/ifn/ontology/FormaCubicacion
-ifn:FormaCubicacion rdf:type owl:Class ;
-                    rdfs:comment "El operador observará cada pie y le asignará el número que más se ajuste"@es ;
-                    rdfs:label "Forma de cubicación"@es .
-
 
 ###  http://crossforest.eu/ifn/ontology/FormaCubicacion1
 ifn:FormaCubicacion1 rdf:type owl:Class ;
@@ -207,10 +202,6 @@ ifn:FormaCubicacion6 rdf:type owl:Class ;
 ifn:InfoTarifa rdf:type owl:Class .
 
 
-###  http://crossforest.eu/ifn/ontology/ParametroSelvicola
-ifn:ParametroSelvicola rdf:type owl:Class .
-
-
 ###  http://crossforest.eu/ifn/ontology/ParametroSelvicolaIAVC
 ifn:ParametroSelvicolaIAVC rdf:type owl:Class ;
                            rdfs:subClassOf ifn:ParametroSelvicola .
@@ -231,30 +222,23 @@ ifn:ParametroSelvicolaVSC rdf:type owl:Class ;
                           rdfs:subClassOf ifn:ParametroSelvicola .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaClase
-ifn:TarifaClase rdf:type owl:Class .
-
-
 ###  http://crossforest.eu/ifn/ontology/TarifaClaseEcuacion
 ifn:TarifaClaseEcuacion rdf:type owl:Class ;
                         rdfs:subClassOf ifn:TarifaClase ;
                         owl:disjointWith ifn:TarifaClaseSupertarifa ;
                         rdfs:label "Ecuación"@es .
 
+
 ###  http://crossforest.eu/ifn/ontology/TarifaClaseEcuacion-Supertarifa
 ifn:TarifaClaseEcuacion-Supertarifa rdf:type owl:Class ;
                         rdfs:subClassOf ifn:TarifaClase ;
                         rdfs:label "Ecuación-Supertarifa"@es .
 
+
 ###  http://crossforest.eu/ifn/ontology/TarifaClaseSupertarifa
 ifn:TarifaClaseSupertarifa rdf:type owl:Class ;
                            rdfs:subClassOf ifn:TarifaClase ;
                            rdfs:label "Supertarifa"@es .
-
-
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacion
-ifn:TarifaModeloCubicacion rdf:type owl:Class ;
-                           rdfs:label "Modelo estadístico de cubicación"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacion1
@@ -393,10 +377,6 @@ ifn:TarifaModeloCubicacionVLE rdf:type owl:Class ;
 ifn:TarifaModeloCubicacionVSC rdf:type owl:Class ;
                               rdfs:subClassOf ifn:TarifaModeloCubicacion ;
                               rdfs:label "Modelo estadístico de cubicación para VSC"@es .
-
-
-###  http://crossforest.eu/ifn/ontology/TarifaTipoAplic
-ifn:TarifaTipoAplic rdf:type owl:Class .
 
 
 ###  http://crossforest.eu/ifn/ontology/TarifaTipoAplicAT

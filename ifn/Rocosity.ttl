@@ -3,32 +3,32 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-ifn:Rocosity1 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:Rocosity ;
-  rdfs:label "Sin pedregosidad"@es ;
+ifn:Rocosidad1 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Rocosidad ;
+  rdfs:label "Rocosidad: Sin pedregosidad"@es ;
   rdfs:comment "La superficie de la parcela está completamente cubierta de vegetación."@es ;
   rdfs:isDefinedBy ifn: .
 
-ifn:Rocosity2 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:Rocosity ;
-  rdfs:label "Poco pedregoso"@es ;
+ifn:Rocosidad2 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Rocosidad ;
+  rdfs:label "Rocosidad: Poco pedregoso"@es ;
   rdfs:comment "Cuando la superficie de la parcela cubierta por rocas coherentes es menor del 25 %."@es ;
   rdfs:isDefinedBy ifn: .
 
-ifn:Rocosity3 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:Rocosity ;
-  rdfs:label "Pedregoso"@es ;
+ifn:Rocosidad3 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Rocosidad ;
+  rdfs:label "Rocosidad: Pedregoso"@es ;
   rdfs:comment "Cuando la superficie rocosa está comprendida entre el 25 % y el 50 %."@es ;
   rdfs:isDefinedBy ifn: .
 
-ifn:Rocosity4 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:Rocosity ;
-  rdfs:label "Muy pedregoso"@es ;
+ifn:Rocosidad4 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Rocosidad ;
+  rdfs:label "Rocosidad: Muy pedregoso"@es ;
   rdfs:comment "SCuando la superficie rocosa se sitúa entre el 50 % y el 75%."@es ;
   rdfs:isDefinedBy ifn: .
 
-ifn:Rocosity5 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:Rocosity ;
-  rdfs:label "Roquedo"@es ;
+ifn:Rocosidad5 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Rocosidad ;
+  rdfs:label "Rocosidad: Roquedo"@es ;
   rdfs:comment "Cuando la superficie de rocas es mayor del 75 %. En este caso no se tomará ningún dato más correspondiente a suelos."@es ;
   rdfs:isDefinedBy ifn: .

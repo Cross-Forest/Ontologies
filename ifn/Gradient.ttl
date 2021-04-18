@@ -3,39 +3,39 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-ifn:Gradient1 a owl:Class , rdfs:Class ; # cambiados x ACO FormaDeMasa x Gradient
-  rdfs:subClassOf ifn:Gradient ;
-  rdfs:label "0-3%" ;
+ifn:Pendiente1 a owl:Class , rdfs:Class ; # cambiados x ACO FormaDeMasa x Pendiente
+  rdfs:subClassOf ifn:Pendiente ;
+  rdfs:label "Pendiente 0-3%" ;
   rdfs:isDefinedBy ifn: .
 
-ifn:Gradient2 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:Gradient ;
-  rdfs:label "3.01-12%" ;
+ifn:Pendiente2 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Pendiente ;
+  rdfs:label "Pendiente 3.01-12%" ;
   rdfs:isDefinedBy ifn: .
 
-ifn:Gradient3 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:Gradient ;
-  rdfs:label "12.01-20%" ;
+ifn:Pendiente3 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Pendiente ;
+  rdfs:label "Pendiente 12.01-20%" ;
   rdfs:isDefinedBy ifn: .
 
-ifn:Gradient4 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:Gradient ;
-  rdfs:label "20.01-35%" ;
+ifn:Pendiente4 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Pendiente ;
+  rdfs:label "Pendiente 20.01-35%" ;
   rdfs:isDefinedBy ifn: .
 
-ifn:Gradient5 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:Gradient ;
-  rdfs:label "Más de 35%"@es , "More than 35%"@en ;
+ifn:Pendiente5 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Pendiente ;
+  rdfs:label "Pendiente más de 35%"@es , "Gradient more than 35%"@en ;
   rdfs:isDefinedBy ifn: .
 
-ifn:Gradient-9999 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:Gradient ;
-  owl:sameAs ifn:Gradient-99 ;
-  rdfs:label "Sin datos"@es, "No data"@en ;
+ifn:Pendiente-9999 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Pendiente ;
+  owl:sameAs ifn:Pendiente-99 ;
+  rdfs:label "Pendiente (Sin datos)"@es, "Gradient (No data)"@en ;
   rdfs:isDefinedBy ifn: .
 
-ifn:Gradient-99 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:Gradient ;
-  owl:sameAs ifn:Gradient-9999 ;
-  rdfs:label "Sin datos"@es , "No data"@en ;
+ifn:Pendiente-99 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Pendiente ;
+  owl:sameAs ifn:Pendiente-9999 ;
+  rdfs:label "Pendiente [Sin datos]"@es , "Gradient [No data]"@en ;
   rdfs:isDefinedBy ifn: .

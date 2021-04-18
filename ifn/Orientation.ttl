@@ -3,39 +3,37 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-ifn:Orientation1 a owl:Class , rdfs:Class ; # cambiados x ACO FormaDeMasa x Orientation
-  rdfs:subClassOf ifn:Orientation ;
-  rdfs:label "292.5-67.5°" ;
+ifn:Orientacion1 a owl:Class , rdfs:Class ; # cambiados x ACO FormaDeMasa x Orientacion
+  rdfs:subClassOf ifn:Orientacion ;
+  rdfs:label "Orientación 292.5°-67.5°" ;
   rdfs:isDefinedBy ifn: .
 
-ifn:Orientation2 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:Orientation ;
-  rdfs:label "67.5-112.5°" ;
+ifn:Orientacion2 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Orientacion ;
+  rdfs:label "Orientación 67.5°-112.5°" ;
   rdfs:isDefinedBy ifn: .
 
-ifn:Orientation3 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:Orientation ;
-  rdfs:label "112.5-247.5°" ;
+ifn:Orientacion3 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Orientacion ;
+  rdfs:label "Orientación 112.5°-247.5°" ;
   rdfs:isDefinedBy ifn: .
 
-ifn:Orientation4 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:Orientation ;
-  rdfs:label "247.5-292.5°" ;
+ifn:Orientacion4 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Orientacion ;
+  rdfs:label "Orientación 247.5°-292.5°" ;
   rdfs:isDefinedBy ifn: .
 
-ifn:Orientation-1 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:Orientation ;
-  rdfs:label "Todos los vientos"@es , "All winds"@en ;
+ifn:Orientacion-1 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Orientacion ;
+  rdfs:label "Orientación Todos los vientos"@es , "Orientation All winds"@en ;
   rdfs:isDefinedBy ifn: .
 
-ifn:Orientation-9999 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:Orientation ;
-  owl:sameAs ifn:Orientation-99 ;
-  rdfs:label "Sin datos"@es, "No data"@en ;
+ifn:Orientacion-9999 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Orientacion ;  
+  rdfs:label "Orientación (Sin datos en el modelo digital de terreno)"@es, "Orientation (No data in the Digital Terrain Model)"@en ;
   rdfs:isDefinedBy ifn: .
 
-ifn:Orientation-99 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:Orientation ;
-  owl:sameAs ifn:Orientation-9999 ;
-  rdfs:label "Sin datos"@es , "No data"@en ;
+ifn:Orientacion-99 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Orientacion ;
+  rdfs:label "Orientación (Sin datos en el cruce de cobertura de vegetación-Modelo Digital de Terreno)"@es , "Orientation (No data from intersection between vegetation and Digital Terrain Model)"@en ;
   rdfs:isDefinedBy ifn: .
