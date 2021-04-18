@@ -3,20 +3,20 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-ifn:Texture1 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:Texture ;
+ifn:Textura1 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Textura ;
   rdfs:label "Suelo arenoso"@es ;
   rdfs:comment "Si los cilindros se deshacen sin apenas formarse."@es ;
   rdfs:isDefinedBy ifn: .
 
-ifn:Texture2 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:Texture ;
+ifn:Textura2 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Textura ;
   rdfs:label "Suelo franco"@es ;
   rdfs:comment "Es posible hacer cilindros gruesos pero no delgados."@es ;
   rdfs:isDefinedBy ifn: .
 
-ifn:Texture3 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:Texture ;
+ifn:Textura3 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Textura ;
   rdfs:label "Suelo arcilloso"@es ;
   rdfs:comment "Se consiguen cilindros de unos 5 mm de diámetro."@es ;
   rdfs:isDefinedBy ifn: .

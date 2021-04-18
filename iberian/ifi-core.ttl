@@ -273,6 +273,21 @@ ifi:Rocosity rdf:type owl:Class ;
                         "Rocosity"@en
 				<http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifn/ontology/Rocosidad> .
 
+###  http://crossforest.eu/ifi/ontology/DeadLayer
+ifi:DeadLayer rdf:type owl:Class ;
+              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+              rdfs:label "Espesor de Capa Muerta"@es ,
+                         "Thickness of Dead Layer"@en ;
+		 				<http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/EspesorDeCapaMuerta> .
+
+###  http://crossforest.eu/ifi/ontology/Texture
+ifi:Texture rdf:type owl:Class ;
+            rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+            rdfs:label "Textura"@es ,
+                       "Texture"@en ;
+			<http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifn/ontology/Textura> .
+
+
 
 ###  http://crossforest.eu/ifi/ontology/BasalArea
 ifi:BasalArea rdf:type owl:Class ;

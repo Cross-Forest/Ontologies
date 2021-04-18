@@ -66,7 +66,7 @@
                                        owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/species/nombres.ttl> ;
                                        owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/species/sinonimos.ttl> ;
 									   
-                                       owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/iberian/ilu-core.ttl> ;
+                                       owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/iberian/ifi-core.ttl> ;
                                        dc:creator <https://www.gsic.uva.es/members/guiveg> ,
                                                   <https://www.gsic.uva.es/members/josgim> ;
 										dc:contributor <https://www.crossforest.eu/members/dportoles>;
@@ -757,13 +757,13 @@ ifn:DamageStatus rdf:type owl:Class ;
                  rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> .
 
 
-###  http://crossforest.eu/ifn/ontology/DeadLayer
-ifn:DeadLayer rdf:type owl:Class ;
-              rdfs:comment "Posición con espesor de capa muerta"@es ,
-                           "Position with thickness of dead layer"@en ;
+###  http://crossforest.eu/ifn/ontology/EspesorDeCapaMuerta
+ifn:EspesorDeCapaMuerta rdf:type owl:Class ;
+              rdfs:comment "Posición con espesor de capa muerta. Si en la parcela hay zonas con diferentes espesores de capa muerta se apunta el
+valor medio estimado."@es ;
               rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
-              rdfs:label "Espesor de Capa Muerta"@es ,
-                         "Thickness of Dead Layer"@en .
+	  			<http://purl.org/dc/terms/source> "Anexo 29 (Documentador Ifn)";
+              rdfs:label "Espesor de Capa Muerta, césped, musgo y líquenes"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/Diameter
@@ -937,8 +937,8 @@ ifn:ContenidoEnMateriaOrganica rdf:type owl:Class ;
                   rdfs:label "Contenido en materia orgánica"@es.
 
 
-###  http://crossforest.eu/ifn/ontology/Orientation
-ifn:Orientation rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/Orientacion
+ifn:Orientacion rdf:type owl:Class ;
              rdfs:subClassOf skos:ConceptScheme;
                 rdfs:comment "Posición con Orientación. Valores en grados sexagesimales."@es ,
                              "Position with Orientation"@en ;
@@ -958,8 +958,8 @@ ifn:Origin rdf:type owl:Class ;
                       "Origin"@en .
 
 
-###  http://crossforest.eu/ifn/ontology/ParametroSelvicola
-ifn:ParametroSelvicola rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/ParametroDeExistencia
+ifn:ParametroDeExistencia rdf:type owl:Class ;
              rdfs:subClassOf skos:ConceptScheme.
 
 
@@ -1354,7 +1354,7 @@ ifn:TarifaClase rdf:type owl:Class ;
 ifn:ModeloCubicacion rdf:type owl:Class ;
              rdfs:subClassOf skos:ConceptScheme;
 			 rdfs:label "Modelo estadístico de cubicación"@es ;
-			 <http://purl.org/dc/terms/source> "Anexo 19 (Documentador sig)";
+			 <http://purl.org/dc/terms/source> "Anexo 19 (Documentador sig)".
 
 ###  http://crossforest.eu/ifn/ontology/TarifaAplic
 ifn:TarifaAplic rdf:type owl:Class ;
@@ -1369,13 +1369,14 @@ ifn:Taxon rdf:type owl:Class ;
                      "Taxón"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/Texture
-ifn:Texture rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/Textura
+ifn:Textura rdf:type owl:Class ;
             rdfs:comment "Posición con textura del suelo"@es ,
                          "Position with soil texture"@en ;
             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
             rdfs:label "Textura"@es ,
-                       "Texture"@en .
+                       "Texture"@en ;
+			 <http://purl.org/dc/terms/source> "Anexo 23 (Documentador ifn)".
 
 
 ###  http://crossforest.eu/ifn/ontology/TotalHeight
