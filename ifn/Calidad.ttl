@@ -1,0 +1,40 @@
+@prefix ifn: <http://crossforest.eu/ifn/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ifn:Calidad1 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Calidad ;
+  rdfs:label "Calidad 1"@es ;
+  rdfs:comment "Árbol sano, vigoroso, óptimamente conformado, sin señales de vejez, capaz de proporcionar muchos y valiosos productos, no dominado y con excelentes perspectivas de futuro."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Calidad2 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Calidad ;
+  rdfs:label "Calidad 2"@es ;
+  rdfs:comment "Árbol sano, vigoroso, no dominado, sin señales de vejez, con algún defecto de conformación y capaz de proporcionar bastantes productos valiosos."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Calidad3 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Calidad ;
+  rdfs:label "Calidad 3"@es ;
+  rdfs:comment "Árbol no totalmente sano y vigoroso, o algo viejo o dominado, con bastantes defectos de conformación, pero capaz de proporcionar algunos productos valiosos."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Calidad4 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Calidad ;
+  rdfs:label "Calidad 4"@es ;
+  rdfs:comment "Árbol enfermo y débil o viejo, con muchos defectos de conformación, solamente capaz de proporcionar productos de valor secundario."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Calidad5 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Calidad ;
+  rdfs:label "Calidad 5"@es ;
+  rdfs:comment "Árbol muy enfermo, débil o viejo, con pésima conformación y aprovechamientos escasos y de poco valor."@es ;
+  rdfs:isDefinedBy ifn: .
+
+ifn:Calidad6 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:Calidad ;
+  rdfs:label "Calidad 6"@es ;
+  rdfs:comment "Árbol muerto pero sin pudrir aún y capaz todavía de proporcionar algún bien aprovechable."@es ;
+  rdfs:isDefinedBy ifn: .

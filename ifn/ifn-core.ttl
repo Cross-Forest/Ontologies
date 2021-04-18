@@ -21,6 +21,7 @@
 
 <http://crossforest.eu/ifn/ontology/> rdf:type owl:Ontology ;
                                        owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/ifn/Altitude.ttl> ;
+#                                       owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/ifn/Calidad.ttl> ;
                                        owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/ifn/Composition.ttl> ;
                                        owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/ifn/DeadLayer.ttl> ;
                                        owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/ifn/Erosion.ttl> ;
@@ -760,8 +761,7 @@ ifn:DamageStatus rdf:type owl:Class ;
 ###  http://crossforest.eu/ifn/ontology/EspesorDeCapaMuerta
 ifn:EspesorDeCapaMuerta rdf:type owl:Class ;
              rdfs:subClassOf skos:ConceptScheme;
-              rdfs:comment "Posición con espesor de capa muerta. Si en la parcela hay zonas con diferentes espesores de capa muerta se apunta el
-valor medio estimado."@es ;
+              rdfs:comment "Posición con espesor de capa muerta. Si en la parcela hay zonas con diferentes espesores de capa muerta se apunta el valor medio estimado."@es ;
               rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
 	  			<http://purl.org/dc/terms/source> "Anexo 29 (Documentador Ifn)";
               rdfs:label "Espesor de Capa Muerta, césped, musgo y líquenes"@es .
@@ -1407,11 +1407,18 @@ ifn:TreeMeasure rdf:type owl:Class .
 ###  http://crossforest.eu/ifn/ontology/FormaDeCubicacion
 ifn:FormaDeCubicacion rdf:type owl:Class ;
 			rdfs:subClassOf skos:ConceptScheme ;
-              rdfs:comment "El operador observará cada pie y le asignará el número que más se ajuste."@en ,
-                           "Árbol con forma"@es ;
+              rdfs:comment "El operador observará cada pie y le asignará el número que más se ajuste."@es;
               rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
 			 <http://purl.org/dc/terms/source> "Anexo 15 (Documentador ifn)";
               rdfs:label "Forma de cubicación"@es .
+
+###  http://crossforest.eu/ifn/ontology/Calidad
+ifn:Calidad rdf:type owl:Class ;
+			rdfs:subClassOf skos:ConceptScheme ;
+              rdfs:comment "Se tendrá en cuenta el estado sanitario, la conformación con respecto al ideal de la especie de que se trate, la posibilidad de suministrar más o menos bienes de superior condición, el rebasamiento de la edad madura y la situación del ecosistema. Todos estos factores se compararán, dentro de cada especie, con el teórico mejor ejemplar que se pueda hallar en nuestro país. Se asignará el número del apartado al que más se ajuste de entre los disponibles"@es ;
+              rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+			 <http://purl.org/dc/terms/source> "Anexo 14 (Documentador ifn)";
+              rdfs:label "Calidad"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/TreeSpecies
