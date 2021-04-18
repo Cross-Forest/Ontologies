@@ -30,23 +30,23 @@ ifn:hasTarifaClase rdf:type owl:ObjectProperty ;
 ifn:hasTarifaModeloCubicacion rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf owl:topObjectProperty ;
                     rdfs:domain ifn:InfoTarifa ;
-                    rdfs:range ifn:TarifaModeloCubicacion ;
+                    rdfs:range ifn:ModeloCubicacion ;
                     rdfs:label "tiene modelo de cubicación de tarifa"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/hasTarifaParamSelvicola
-ifn:hasTarifaParamSelvicola rdf:type owl:ObjectProperty ;
+###  http://crossforest.eu/ifn/ontology/hasTarifaParametroDeExistencia
+ifn:hasTarifaParametroDeExistencia rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf owl:topObjectProperty ;
                             rdfs:domain ifn:InfoTarifa ;
-                            rdfs:range ifn:ParametroSelvicola ;
+                            rdfs:range ifn:ParametroDeExistencia ;
                             rdfs:label "tiene parámetro selvícola de tarifa"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/hasTarifaTipoAplic
-ifn:hasTarifaTipoAplic rdf:type owl:ObjectProperty ;
+###  http://crossforest.eu/ifn/ontology/hasTarifaAplic
+ifn:hasTarifaAplic rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf owl:topObjectProperty ;
                        rdfs:domain ifn:InfoTarifa ;
-                       rdfs:range ifn:TarifaTipoAplic ;
+                       rdfs:range ifn:TarifaAplic ;
                        rdfs:label "tiene tipo de aplicación de tarifa"@es .
 
 
@@ -202,24 +202,28 @@ ifn:FormaCubicacion6 rdf:type owl:Class ;
 ifn:InfoTarifa rdf:type owl:Class .
 
 
-###  http://crossforest.eu/ifn/ontology/ParametroSelvicolaIAVC
-ifn:ParametroSelvicolaIAVC rdf:type owl:Class ;
-                           rdfs:subClassOf ifn:ParametroSelvicola .
+###  http://crossforest.eu/ifn/ontology/ParametroDeExistenciaIAVC
+ifn:ParametroDeExistenciaIAVC rdf:type owl:Class ;
+                           rdfs:subClassOf ifn:ParametroDeExistencia ;
+						   rdfs:label "Parámetro de existencia 'Incremento anual de volumen con corteza'"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/ParametroSelvicolaVCC
-ifn:ParametroSelvicolaVCC rdf:type owl:Class ;
-                          rdfs:subClassOf ifn:ParametroSelvicola .
+###  http://crossforest.eu/ifn/ontology/ParametroDeExistenciaVCC
+ifn:ParametroDeExistenciaVCC rdf:type owl:Class ;
+                          rdfs:subClassOf ifn:ParametroDeExistencia ;
+						  rdfs:label "Parámetro de existencia 'Volumen con corteza'"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/ParametroSelvicolaVLE
-ifn:ParametroSelvicolaVLE rdf:type owl:Class ;
-                          rdfs:subClassOf ifn:ParametroSelvicola .
+###  http://crossforest.eu/ifn/ontology/ParametroDeExistenciaVLE
+ifn:ParametroDeExistenciaVLE rdf:type owl:Class ;
+                          rdfs:subClassOf ifn:ParametroDeExistencia ;
+						  rdfs:label "Parámetro de existencia 'Volumen de leñas'"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/ParametroSelvicolaVSC
-ifn:ParametroSelvicolaVSC rdf:type owl:Class ;
-                          rdfs:subClassOf ifn:ParametroSelvicola .
+###  http://crossforest.eu/ifn/ontology/ParametroDeExistenciaVSC
+ifn:ParametroDeExistenciaVSC rdf:type owl:Class ;
+                          rdfs:subClassOf ifn:ParametroDeExistencia ;
+						  rdfs:label "Parámetro de existencia 'Volumen sin corteza'"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/TarifaClaseEcuacion
@@ -241,153 +245,154 @@ ifn:TarifaClaseSupertarifa rdf:type owl:Class ;
                            rdfs:label "Supertarifa"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacion1
-ifn:TarifaModeloCubicacion1 rdf:type owl:Class ;
-                            rdfs:subClassOf ifn:TarifaModeloCubicacionVCC ;
+###  http://crossforest.eu/ifn/ontology/ModeloCubicacion1
+ifn:ModeloCubicacion1 rdf:type owl:Class ;
+                            rdfs:subClassOf ifn:ModeloCubicacionVCC ;
 							rdfs:comment "VCC = a + b (D.n.)^2 H.t." ;
-                            owl:disjointWith ifn:TarifaModeloCubicacion11 ;
+                            owl:disjointWith ifn:ModeloCubicacion11 ;
                             rdfs:label "Modelo estadístico 1 de cubicación"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacion10
-ifn:TarifaModeloCubicacion10 rdf:type owl:Class ;
-                             rdfs:subClassOf ifn:TarifaModeloCubicacionVLE ;
+###  http://crossforest.eu/ifn/ontology/ModeloCubicacion10
+ifn:ModeloCubicacion10 rdf:type owl:Class ;
+                             rdfs:subClassOf ifn:ModeloCubicacionVLE ;
 							rdfs:comment "VLE = a + b VCC + c VCC^2" ;
-                             owl:disjointWith ifn:TarifaModeloCubicacion12 ;
+                             owl:disjointWith ifn:ModeloCubicacion12 ;
                              rdfs:label "Modelo estadístico 10 de cubicación"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacion11
-ifn:TarifaModeloCubicacion11 rdf:type owl:Class ;
-                             rdfs:subClassOf ifn:TarifaModeloCubicacionVCC ;
+###  http://crossforest.eu/ifn/ontology/ModeloCubicacion11
+ifn:ModeloCubicacion11 rdf:type owl:Class ;
+                             rdfs:subClassOf ifn:ModeloCubicacionVCC ;
 							rdfs:comment "VCC = p (D.n.) (H.t.)^q" ;
                              rdfs:label "Modelo estadístico 11 de cubicación"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacion12
-ifn:TarifaModeloCubicacion12 rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/ModeloCubicacion12
+ifn:ModeloCubicacion12 rdf:type owl:Class ;
 							rdfs:comment "VLE = p (D.n.)^q" ;
-                             rdfs:subClassOf ifn:TarifaModeloCubicacionVLE ;
+                             rdfs:subClassOf ifn:ModeloCubicacionVLE ;
                              rdfs:label "Modelo estadístico 12 de cubicación"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacion13
-ifn:TarifaModeloCubicacion13 rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/ModeloCubicacion13
+ifn:ModeloCubicacion13 rdf:type owl:Class ;
 							rdfs:comment "IAVC = a + b (D.n. - D.n.m.)" ;
-                             rdfs:subClassOf ifn:TarifaModeloCubicacionIAVC ;
+                             rdfs:subClassOf ifn:ModeloCubicacionIAVC ;
                              rdfs:label "Modelo estadístico 13 de cubicación"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacion14
-ifn:TarifaModeloCubicacion14 rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/ModeloCubicacion14
+ifn:ModeloCubicacion14 rdf:type owl:Class ;
 							rdfs:comment "IAVC = p (D.n.)^q" ;
-                             rdfs:subClassOf ifn:TarifaModeloCubicacionIAVC ;
+                             rdfs:subClassOf ifn:ModeloCubicacionIAVC ;
                              rdfs:label "Modelo estadístico 14 de cubicación"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacion15
-ifn:TarifaModeloCubicacion15 rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/ModeloCubicacion15
+ifn:ModeloCubicacion15 rdf:type owl:Class ;
 							rdfs:comment "IAVC = a + b (C.D. - C.D.m)" ;
-                             rdfs:subClassOf ifn:TarifaModeloCubicacionIAVC ;
+                             rdfs:subClassOf ifn:ModeloCubicacionIAVC ;
                              rdfs:label "Modelo estadístico 15 de cubicación"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacion16
-ifn:TarifaModeloCubicacion16 rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/ModeloCubicacion16
+ifn:ModeloCubicacion16 rdf:type owl:Class ;
 							rdfs:comment "IAVC = a + b D.n.^2" ;
-                             rdfs:subClassOf ifn:TarifaModeloCubicacionIAVC ;
+                             rdfs:subClassOf ifn:ModeloCubicacionIAVC ;
                              rdfs:label "Modelo estadístico 16 de cubicación"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacion17
-ifn:TarifaModeloCubicacion17 rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/ModeloCubicacion17
+ifn:ModeloCubicacion17 rdf:type owl:Class ;
 							rdfs:comment "IAVC = a + b D.n. + c D.n.^2" ;
-                             rdfs:subClassOf ifn:TarifaModeloCubicacionIAVC ;
+                             rdfs:subClassOf ifn:ModeloCubicacionIAVC ;
                              rdfs:label "Modelo estadístico 17 de cubicación"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacion18
-ifn:TarifaModeloCubicacion18 rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/ModeloCubicacion18
+ifn:ModeloCubicacion18 rdf:type owl:Class ;
 							rdfs:comment "IAVC = p e^(q D.n.)" ;
-                             rdfs:subClassOf ifn:TarifaModeloCubicacionIAVC ;
+                             rdfs:subClassOf ifn:ModeloCubicacionIAVC ;
                              rdfs:label "Modelo estadístico 18 de cubicación"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacion19
-ifn:TarifaModeloCubicacion19 rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/ModeloCubicacion19
+ifn:ModeloCubicacion19 rdf:type owl:Class ;
 							rdfs:comment "IAVC = a + b D.n. + c D.n.^2 + d D.n.^3" ;
-                             rdfs:subClassOf ifn:TarifaModeloCubicacionIAVC ;
+                             rdfs:subClassOf ifn:ModeloCubicacionIAVC ;
                              rdfs:label "Modelo estadístico 19 de cubicación"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacion20
-ifn:TarifaModeloCubicacion20 rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/ModeloCubicacion20
+ifn:ModeloCubicacion20 rdf:type owl:Class ;
 							rdfs:comment "IAVC = a + b D.n. + d D.n.^3" ;
-                             rdfs:subClassOf ifn:TarifaModeloCubicacionIAVC ;
+                             rdfs:subClassOf ifn:ModeloCubicacionIAVC ;
                              rdfs:label "Modelo estadístico 20 de cubicación"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacion21
-ifn:TarifaModeloCubicacion21 rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/ModeloCubicacion21
+ifn:ModeloCubicacion21 rdf:type owl:Class ;
 							rdfs:comment "IAVC = c D.n.^2 + d D.n.^3" ;
-                             rdfs:subClassOf ifn:TarifaModeloCubicacionIAVC ;
+                             rdfs:subClassOf ifn:ModeloCubicacionIAVC ;
                              rdfs:label "Modelo estadístico 21 de cubicación"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacion25
-ifn:TarifaModeloCubicacion25 rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/ModeloCubicacion25
+ifn:ModeloCubicacion25 rdf:type owl:Class ;
 							rdfs:comment "IAVC = p (D.n.)q (H.t.)r" ;
-                             rdfs:subClassOf ifn:TarifaModeloCubicacionIAVC ;
+                             rdfs:subClassOf ifn:ModeloCubicacionIAVC ;
                              rdfs:label "Modelo estadístico 25 de cubicación"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacion7
-ifn:TarifaModeloCubicacion7 rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/ModeloCubicacion7
+ifn:ModeloCubicacion7 rdf:type owl:Class ;
 							rdfs:comment "VSC = a + b VCC + c VCC^2" ;
-                            rdfs:subClassOf ifn:TarifaModeloCubicacionVSC ;
+                            rdfs:subClassOf ifn:ModeloCubicacionVSC ;
                             rdfs:label "Modelo estadístico 7 de cubicación"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacion8
-ifn:TarifaModeloCubicacion8 rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/ModeloCubicacion8
+ifn:ModeloCubicacion8 rdf:type owl:Class ;
 							rdfs:comment "IAVC = a + b VCC + c VCC^2" ;
-                            rdfs:subClassOf ifn:TarifaModeloCubicacionIAVC ;
+                            rdfs:subClassOf ifn:ModeloCubicacionIAVC ;
                             rdfs:label "Modelo estadístico 8 de cubicación"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacionIAVC
-ifn:TarifaModeloCubicacionIAVC rdf:type owl:Class ;
-                               rdfs:subClassOf ifn:TarifaModeloCubicacion ;
+###  http://crossforest.eu/ifn/ontology/ModeloCubicacionIAVC
+ifn:ModeloCubicacionIAVC rdf:type owl:Class ;
+                               rdfs:subClassOf ifn:ModeloCubicacion ;
                                rdfs:label "Modelo estadístico de cubicación para IAVC"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacionVCC
-ifn:TarifaModeloCubicacionVCC rdf:type owl:Class ;
-                              rdfs:subClassOf ifn:TarifaModeloCubicacion ;
+###  http://crossforest.eu/ifn/ontology/ModeloCubicacionVCC
+ifn:ModeloCubicacionVCC rdf:type owl:Class ;
+                              rdfs:subClassOf ifn:ModeloCubicacion ;
                               rdfs:label "Modelo estadístico de cubicación para VCC"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacionVLE
-ifn:TarifaModeloCubicacionVLE rdf:type owl:Class ;
-                              rdfs:subClassOf ifn:TarifaModeloCubicacion ;
+###  http://crossforest.eu/ifn/ontology/ModeloCubicacionVLE
+ifn:ModeloCubicacionVLE rdf:type owl:Class ;
+                              rdfs:subClassOf ifn:ModeloCubicacion ;
                               rdfs:label "Modelo estadístico de cubicación para VLE"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacionVSC
-ifn:TarifaModeloCubicacionVSC rdf:type owl:Class ;
-                              rdfs:subClassOf ifn:TarifaModeloCubicacion ;
+###  http://crossforest.eu/ifn/ontology/ModeloCubicacionVSC
+ifn:ModeloCubicacionVSC rdf:type owl:Class ;
+                              rdfs:subClassOf ifn:ModeloCubicacion ;
                               rdfs:label "Modelo estadístico de cubicación para VSC"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaTipoAplicAT
-ifn:TarifaTipoAplicAT rdf:type owl:Class ;
-                      rdfs:subClassOf ifn:TarifaTipoAplic ;
-                      owl:disjointWith ifn:TarifaTipoAplicPM .
+###  http://crossforest.eu/ifn/ontology/TarifaAplicAT
+ifn:TarifaAplicAT rdf:type owl:Class ;
+                      rdfs:subClassOf ifn:TarifaAplic ;
+					  rdfs:label "Árbol tipo"@es ;
+                      owl:disjointWith ifn:TarifaAplicPM .
 
 
-###  http://crossforest.eu/ifn/ontology/TarifaTipoAplicPM
-ifn:TarifaTipoAplicPM rdf:type owl:Class ;
-                      rdfs:subClassOf ifn:TarifaTipoAplic ;
+###  http://crossforest.eu/ifn/ontology/TarifaAplicPM
+ifn:TarifaAplicPM rdf:type owl:Class ;
+                      rdfs:subClassOf ifn:TarifaAplic ;
                       rdfs:label "Pies mayores"@es .
 
 
@@ -398,7 +403,7 @@ ifn:TarifaTipoAplicPM rdf:type owl:Class ;
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( ifn:FormaCubicacion
                 ifn:InfoTarifa
-                ifn:ParametroSelvicola
+                ifn:ParametroDeExistencia
               )
 ] .
 
@@ -406,7 +411,7 @@ ifn:TarifaTipoAplicPM rdf:type owl:Class ;
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( ifn:FormaCubicacion
                 ifn:InfoTarifa
-                ifn:ParametroSelvicola
+                ifn:ParametroDeExistencia
                 ifn:TarifaClase
               )
 ] .
@@ -415,10 +420,10 @@ ifn:TarifaTipoAplicPM rdf:type owl:Class ;
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( ifn:FormaCubicacion
                 ifn:InfoTarifa
-                ifn:ParametroSelvicola
+                ifn:ParametroDeExistencia
                 ifn:TarifaClase
-                ifn:TarifaModeloCubicacion
-                ifn:TarifaTipoAplic
+                ifn:ModeloCubicacion
+                ifn:TarifaAplic
               )
 ] .
 
@@ -426,9 +431,9 @@ ifn:TarifaTipoAplicPM rdf:type owl:Class ;
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( ifn:FormaCubicacion
                 ifn:InfoTarifa
-                ifn:ParametroSelvicola
+                ifn:ParametroDeExistencia
                 ifn:TarifaClase
-                ifn:TarifaTipoAplic
+                ifn:TarifaAplic
               )
 ] .
 
@@ -454,26 +459,26 @@ ifn:TarifaTipoAplicPM rdf:type owl:Class ;
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( ifn:TarifaModeloCubicacion13
-                ifn:TarifaModeloCubicacion14
-                ifn:TarifaModeloCubicacion15
-                ifn:TarifaModeloCubicacion16
-                ifn:TarifaModeloCubicacion17
-                ifn:TarifaModeloCubicacion18
-                ifn:TarifaModeloCubicacion19
-                ifn:TarifaModeloCubicacion20
-                ifn:TarifaModeloCubicacion21
-                ifn:TarifaModeloCubicacion25
-                ifn:TarifaModeloCubicacion8
+  owl:members ( ifn:ModeloCubicacion13
+                ifn:ModeloCubicacion14
+                ifn:ModeloCubicacion15
+                ifn:ModeloCubicacion16
+                ifn:ModeloCubicacion17
+                ifn:ModeloCubicacion18
+                ifn:ModeloCubicacion19
+                ifn:ModeloCubicacion20
+                ifn:ModeloCubicacion21
+                ifn:ModeloCubicacion25
+                ifn:ModeloCubicacion8
               )
 ] .
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( ifn:TarifaModeloCubicacionIAVC
-                ifn:TarifaModeloCubicacionVCC
-                ifn:TarifaModeloCubicacionVLE
-                ifn:TarifaModeloCubicacionVSC
+  owl:members ( ifn:ModeloCubicacionIAVC
+                ifn:ModeloCubicacionVCC
+                ifn:ModeloCubicacionVLE
+                ifn:ModeloCubicacionVSC
               )
 ] .
 

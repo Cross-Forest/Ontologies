@@ -971,6 +971,20 @@ ifn:ReaccionDelSueloPH rdf:type owl:Class ;
 				<http://purl.org/dc/terms/source> "Anexo 25 (Documentador ifn)";
        rdfs:label "Reacción del suelo (PH)"@es .
 
+###  http://crossforest.eu/ifn/ontology/SistGeog
+ifn:SistGeog rdf:type owl:Class ;
+             rdfs:subClassOf skos:ConceptScheme;
+                    rdfs:comment "Únicamente aplicable para Pinus pinaster y Quercus suber, en el resto de casos su valor será nulo."@es ;
+					<http://purl.org/dc/terms/source> "Anexo 20 (Documentador ifn)";
+                    rdfs:label "Forma de cubicación"@es .
+
+###  http://crossforest.eu/ifn/ontology/ParametrosEspeciales
+ifn:ParametrosEspeciales rdf:type owl:Class ;
+             rdfs:subClassOf skos:ConceptScheme;
+                    rdfs:comment "Se anotan en cinco supuestos."@es ;
+					<http://purl.org/dc/terms/source> "Anexo 7 (Documentador ifn)";
+                    rdfs:label "Parámetros especiales"@es .
+
 
 ###  http://crossforest.eu/ifn/ontology/Plant
 ifn:Plant rdf:type owl:Class ;
@@ -1336,13 +1350,14 @@ ifn:Synonym rdf:type owl:Class .
 ifn:TarifaClase rdf:type owl:Class ;
              rdfs:subClassOf skos:ConceptScheme.
 
-###  http://crossforest.eu/ifn/ontology/TarifaModeloCubicacion
-ifn:TarifaModeloCubicacion rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/ModeloCubicacion
+ifn:ModeloCubicacion rdf:type owl:Class ;
              rdfs:subClassOf skos:ConceptScheme;
-			 rdfs:label "Modelo estadístico de cubicación"@es .
+			 rdfs:label "Modelo estadístico de cubicación"@es ;
+			 <http://purl.org/dc/terms/source> "Anexo 19 (Documentador sig)";
 
-###  http://crossforest.eu/ifn/ontology/TarifaTipoAplic
-ifn:TarifaTipoAplic rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/TarifaAplic
+ifn:TarifaAplic rdf:type owl:Class ;
              rdfs:subClassOf skos:ConceptScheme.
 
 ###  http://crossforest.eu/ifn/ontology/Taxon
