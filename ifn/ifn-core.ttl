@@ -21,7 +21,7 @@
 
 <http://crossforest.eu/ifn/ontology/> rdf:type owl:Ontology ;
                                        owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/ifn/Altitude.ttl> ;
-#                                       owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/ifn/Calidad.ttl> ;
+                                       owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/ifn/Calidad.ttl> ;
                                        owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/ifn/Composition.ttl> ;
                                        owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/ifn/DeadLayer.ttl> ;
                                        owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/ifn/Erosion.ttl> ;
@@ -1372,6 +1372,7 @@ ifn:Taxon rdf:type owl:Class ;
 
 ###  http://crossforest.eu/ifn/ontology/Textura
 ifn:Textura rdf:type owl:Class ;
+             rdfs:subClassOf skos:ConceptScheme;
             rdfs:comment "Posición con textura del suelo"@es ,
                          "Position with soil texture"@en ;
             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
