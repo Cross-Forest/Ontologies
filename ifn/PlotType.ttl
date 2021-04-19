@@ -3,27 +3,32 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-ifn:PlotType0 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:PlotType ;
-  rdfs:label "Normalmente levantada"@es ;
+ifn:TipoDeParcela0 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:TipoDeParcela ;
+  rdfs:comment "Parcela arbolada."@es ;
+  rdfs:label "Tipo de parcela normal"@es ;
   rdfs:isDefinedBy ifn: .
 
-ifn:PlotType1 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:PlotType ;
-  rdfs:label "Inaccesible"@es ;
+ifn:TipoDeParcela1 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:TipoDeParcela ;
+  rdfs:comment "Parcelas que por su peligrosidad, extrema dificultad, carestía o exceso de tiempo que entraña su alcance o apeo no deben levantarse."@es ;
+  rdfs:label "Tipo de parcela inaccesible"@es ;
   rdfs:isDefinedBy ifn: .
 
-ifn:PlotType2 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:PlotType ;
-  rdfs:label "Eliminada"@es ;
+ifn:TipoDeParcela2 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:TipoDeParcela ;
+  rdfs:comment "Parcelas anuladas en gabinete. Aparecerán señaladas en las fotografías con un doble círculo."@es ;
+  rdfs:label "Tipo de parcela anulada"@es ;
   rdfs:isDefinedBy ifn: .
 
-ifn:PlotType3 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:PlotType ;
-  rdfs:label "Desarbolada"@es ;
+ifn:TipoDeParcela3 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:TipoDeParcela ;
+  rdfs:comment "Parcelas con fracción de cabida cubierta menor al 5%."@es ;
+  rdfs:label "Tipo de parcela no arbolada"@es ;
   rdfs:isDefinedBy ifn: .
 
-ifn:PlotType4 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf ifn:PlotType ;
-  rdfs:label "Eliminada"@es ;
+ifn:TipoDeParcela4 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf ifn:TipoDeParcela ;
+  rdfs:comment "Parcelas eliminadas en gabinete. Aparecerán señaladas en las fotografías con un doble círculo."@es ;
+  rdfs:label "Tipo de parcela eliminada"@es ;
   rdfs:isDefinedBy ifn: .

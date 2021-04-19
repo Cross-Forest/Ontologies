@@ -280,6 +280,23 @@ ifi:DeadLayer rdf:type owl:Class ;
                          "Thickness of Dead Layer"@en ;
 		 				<http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/EspesorDeCapaMuerta> .
 
+
+###  http://crossforest.eu/ifi/ontology/PlotShape
+ifi:PlotShape rdf:type owl:Class ;
+             rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+             rdfs:label "Plot shape"@en ,
+                        "Forma de parcela"@es ;
+			<http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/FormaPrincipalDeMasa> .
+
+
+###  http://crossforest.eu/ifi/ontology/PlotType
+ifi:PlotType rdf:type owl:Class ;
+             rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+             rdfs:label "Plot Type"@en ,
+                        "Tipo de parcela"@es ;
+			<http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/TipoDeParcela> .
+
+
 ###  http://crossforest.eu/ifi/ontology/Texture
 ifi:Texture rdf:type owl:Class ;
             rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;

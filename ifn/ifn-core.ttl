@@ -1241,10 +1241,20 @@ ifn:PlotMeasureTotal rdf:type owl:Class ;
                      rdfs:label "Medida de parcela total"@es ,
                                 "Total Plot Measure"@en .
 
-
-###  http://crossforest.eu/ifn/ontology/PlotType
-ifn:PlotType rdf:type owl:Class ;
+###  http://crossforest.eu/ifn/ontology/FormaPrincipalDeMasa
+ifn:FormaPrincipalDeMasa rdf:type owl:Class ;
+			 rdfs:subClassOf skos:ConceptScheme ;
              rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+			<http://purl.org/dc/terms/source> "Anexo 7 (Documentador ifn)";
+             rdfs:label "Forma principal de masa"@es .
+
+
+
+###  http://crossforest.eu/ifn/ontology/TipoDeParcela
+ifn:TipoDeParcela rdf:type owl:Class ;
+			 rdfs:subClassOf skos:ConceptScheme ;
+             rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+			<http://purl.org/dc/terms/source> "Anexo 2 (Documentador ifn)";
              rdfs:label "Plot Type"@en ,
                         "Tipo de parcela"@es .
 
