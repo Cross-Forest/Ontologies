@@ -1326,14 +1326,15 @@ ifn:SilviculturalSystem rdf:type owl:Class ;
                                    "Tratamiento"@es .
 
 
-###  http://crossforest.eu/ifn/ontology/SpatialDistribution
-ifn:SpatialDistribution rdf:type owl:Class ;
-                        rdfs:comment "Posición con disposición de la vegetación en el espacio"@es ,
-                                     "Position with spatial distribution of vegetation"@en ;
+###  http://crossforest.eu/ifn/ontology/DistribucionEspacialDeVegetacion
+ifn:DistribucionEspacialDeVegetacion rdf:type owl:Class ;
+						rdfs:subClassOf skos:ConceptScheme ;
+						<http://purl.org/dc/terms/source> "Anexo 4 (Documentador ifn)";
+                        rdfs:comment "Disposición de la vegetación en el espacio"@es ,
+                                     "Spatial distribution of vegetation"@en ;
                         rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
-                        rdfs:label "Distribución Espacial"@es ,
-                                   "Spatial Distribution"@en .
-
+                        rdfs:label "Distribución espacial de la vegetación"@es ,
+                                   "Spatial distribution of vegetation"@en .
 
 
 ###  http://crossforest.eu/ifn/ontology/Species

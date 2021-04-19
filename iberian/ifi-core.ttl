@@ -311,6 +311,13 @@ ifi:TreeShape rdf:type owl:Class ;
                          "Shape"@en ;
 			<http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/FormaDeCubicacion> .
 
+###  http://crossforest.eu/ifi/ontology/SpatialDistribution
+ifi:SpatialDistribution rdf:type owl:Class ;
+                        rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                        rdfs:label "Distribución Espacial"@es ,
+                                   "Spatial Distribution"@en ;
+					<http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/DistribucionEspacialDeVegetacion> .
+
 
 ###  http://crossforest.eu/ifi/ontology/BasalArea
 ifi:BasalArea rdf:type owl:Class ;
