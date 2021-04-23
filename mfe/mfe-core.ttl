@@ -150,6 +150,17 @@ mfe:SetOfSpecies a owl:Class , rdfs:Class ;
   rdfs:comment ""@es ;
   rdfs:isDefinedBy mfe: .
 
+mfe:MeasureMFE50 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:Measure ;
+  rdfs:label "Measure according to MFE50 criteria"@en , "Medida tomada de acuerdo con criterios del MFE50"@es ;
+  rdfs:isDefinedBy mfe: .
+
+mfe:MeasureMFE25 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf smo:Measure ;
+  rdfs:label "Measure according to MFE25 criteria"@en , "Medida tomada de acuerdo con criterios del MFE25"@es ;
+  rdfs:isDefinedBy mfe: .
+
+
 #################################################################
 #    Object Properties
 #################################################################
