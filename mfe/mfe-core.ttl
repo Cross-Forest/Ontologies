@@ -270,6 +270,15 @@ mfe:hasUse a owl:ObjectProperty , rdf:Property ;
   rdfs:range mfe:Use ;
   rdfs:isDefinedBy mfe: .
 
+mfe:hasUse_IFN rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf mfe:hasUse ;
+               rdfs:domain mfe:Patch .
+
+
+mfe:hasUse_MFE rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf mfe:hasUse ;
+               rdfs:domain mfe:Patch .
+
 mfe:hasCanopyCoverTotal a owl:ObjectProperty , rdf:Property ;
   rdfs:subPropertyOf smo:hasMeasure ;
   rdfs:label ""@es , ""@es ;
