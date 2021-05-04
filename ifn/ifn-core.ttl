@@ -145,7 +145,6 @@ vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 <http://schema.org/sameAs> rdf:type owl:AnnotationProperty .
 
 
-
 #################################################################
 #    Object Properties
 #################################################################
@@ -1009,9 +1008,9 @@ ifn:Calidad6 rdf:type owl:Class ;
 
 ###  http://crossforest.eu/ifn/ontology/ChangeOfSpecies
 ifn:ChangeOfSpecies rdf:type owl:Class ;
+                    rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
                     rdfs:label "Cambio de Especie"@es ,
-                               "Change of Species"@en ;
-                    rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> .
+                               "Change of Species"@en .
 
 
 ###  http://crossforest.eu/ifn/ontology/ClaseDiametrica
@@ -1168,9 +1167,9 @@ ifn:DBH2 rdf:type owl:Class ;
 
 ###  http://crossforest.eu/ifn/ontology/DamageStatus
 ifn:DamageStatus rdf:type owl:Class ;
+                 rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
                  rdfs:label "Damage Status"@en ,
-                            "Estado del Daño"@es ;
-                 rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> .
+                            "Estado del Daño"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/Diameter
@@ -1257,9 +1256,9 @@ ifn:DistribucionEspacialDeVegetacion9 rdf:type owl:Class ;
 
 ###  http://crossforest.eu/ifn/ontology/DominantSpecies
 ifn:DominantSpecies rdf:type owl:Class ;
+                    rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
                     rdfs:label "Dominant Species"@en ,
-                               "Especie Dominante"@es ;
-                    rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> .
+                               "Especie Dominante"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/EspesorDeCapaMuerta
@@ -2217,6 +2216,13 @@ ifn:HeightToLargestCrownWidht rdf:type owl:Class ;
 
 ###  http://crossforest.eu/ifn/ontology/InfoSpecies
 ifn:InfoSpecies rdf:type owl:Class .
+
+
+###  http://crossforest.eu/ifn/ontology/InfoSpeciesDetail
+ifn:InfoSpeciesDetail rdf:type owl:Class ;
+                      rdfs:subClassOf ifn:InfoSpecies ;
+                      rdfs:comment "Incluye detalle sobre clase diamétrica"@es ;
+                      rdfs:label "Información sobre especies sin agrupar"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/InfoTarifa
@@ -4130,9 +4136,9 @@ ifn:Species997 rdf:type owl:Class ;
 
 ###  http://crossforest.eu/ifn/ontology/Stratum
 ifn:Stratum rdf:type owl:Class ;
+            rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
             rdfs:label "Estrato"@es ,
-                       "Stratum"@en ;
-            rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> .
+                       "Stratum"@en .
 
 
 ###  http://crossforest.eu/ifn/ontology/Synonym
