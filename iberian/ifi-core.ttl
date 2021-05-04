@@ -205,118 +205,11 @@ ifi:hasVolumeWithBarkInM3ByHA rdf:type owl:DatatypeProperty ;
 #################################################################
 
 ###  http://crossforest.eu/ifi/ontology/Altitude
-ifi:Altitude rdf:type owl:Class;
+ifi:Altitude rdf:type owl:Class ;
              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
              rdfs:label "Altitud"@es ,
                         "Altitude"@en ;
-			<http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifn/ontology/Altitud> .
-
-###  http://crossforest.eu/ifi/ontology/Composition
-ifi:Composition rdf:type owl:Class ;
-                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-				rdfs:label "Composición Específica"@es ,
-                           "Composition of Vegetation"@en ;
-				<http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/ComposicionEspecifica> .
-
-###  http://crossforest.eu/ifi/ontology/Erosion
-ifi:Erosion rdf:type owl:Class ;
-            rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-            rdfs:label "Erosion"@en ,
-                       "Erosión"@es ;
-				<http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/ManifestacionesErosivas> .
-
-
-###  http://crossforest.eu/ifi/ontology/FuelModel
-ifi:FuelModel rdf:type owl:Class ;
-              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-              rdfs:label "Fuel Model"@en ,
-                         "Modelo de Combustible"@es ;
-				<http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/ModeloCombustible> .
-
-
-###  http://crossforest.eu/ifi/ontology/Gradient
-ifi:Gradient rdf:type owl:Class ;
-             rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-             rdfs:label "Gradient"@en ,
-                        "Pendiente"@es ;
-				<http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/Pendiente> .
-
-
-
-###  http://crossforest.eu/ifi/ontology/OrganicMatter
-ifi:OrganicMatter rdf:type owl:Class ;
-                  rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-                  rdfs:label "Materia Orgánica"@es ,
-                             "Organic Matter"@en ;
-				<http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/ContenidoEnMateriaOrganica> .
-
-
-###  http://crossforest.eu/ifi/ontology/Orientation
-ifi:Orientation rdf:type owl:Class ;
-                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-                rdfs:label "Orientación"@es ,
-                           "Orientation"@en ;
-				<http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifn/ontology/Orientacion> .
-
-###  http://crossforest.eu/ifi/ontology/PH
-ifi:PH rdf:type owl:Class ;
-       rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-       rdfs:label "PH"@en ,
-                  "PH"@es ;
-				<http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/ReaccionDelSueloPH> .
-
-
-###  http://crossforest.eu/ifi/ontology/Rocosity
-ifi:Rocosity rdf:type owl:Class ;
-             rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-             rdfs:label "Rocosidad"@es ,
-                        "Rocosity"@en;
-				<http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifn/ontology/Rocosidad> .
-
-###  http://crossforest.eu/ifi/ontology/DeadLayer
-ifi:DeadLayer rdf:type owl:Class ;
-              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-              rdfs:label "Espesor de Capa Muerta"@es ,
-                         "Thickness of Dead Layer"@en ;
-		 				<http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/EspesorDeCapaMuerta> .
-
-
-###  http://crossforest.eu/ifi/ontology/PlotShape
-ifi:PlotShape rdf:type owl:Class ;
-             rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-             rdfs:label "Plot shape"@en ,
-                        "Forma de parcela"@es ;
-			<http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/FormaPrincipalDeMasa> .
-
-
-###  http://crossforest.eu/ifi/ontology/PlotType
-ifi:PlotType rdf:type owl:Class ;
-             rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-             rdfs:label "Plot Type"@en ,
-                        "Tipo de parcela"@es ;
-			<http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/TipoDeParcela> .
-
-
-###  http://crossforest.eu/ifi/ontology/Texture
-ifi:Texture rdf:type owl:Class ;
-            rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-            rdfs:label "Textura"@es ,
-                       "Texture"@en ;
-			<http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifn/ontology/Textura> .
-
-###  http://crossforest.eu/ifi/ontology/TreeShape
-ifi:TreeShape rdf:type owl:Class ;
-              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-              rdfs:label "Forma"@es ,
-                         "Shape"@en ;
-			<http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/FormaDeCubicacion> .
-
-###  http://crossforest.eu/ifi/ontology/SpatialDistribution
-ifi:SpatialDistribution rdf:type owl:Class ;
-                        rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
-                        rdfs:label "Distribución Espacial"@es ,
-                                   "Spatial Distribution"@en ;
-					<http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/DistribucionEspacialDeVegetacion> .
+             <http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifn/ontology/Altitud> .
 
 
 ###  http://crossforest.eu/ifi/ontology/BasalArea
@@ -328,6 +221,30 @@ ifi:BasalArea rdf:type owl:Class ;
                          "Área Basimétrica"@es ,
                          "Área basal"@pt ;
               <http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/BasalArea> .
+
+
+###  http://crossforest.eu/ifi/ontology/Composition
+ifi:Composition rdf:type owl:Class ;
+                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                rdfs:label "Composición Específica"@es ,
+                           "Composition of Vegetation"@en ;
+                <http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/ComposicionEspecifica> .
+
+
+###  http://crossforest.eu/ifi/ontology/DeadLayer
+ifi:DeadLayer rdf:type owl:Class ;
+              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+              rdfs:label "Espesor de Capa Muerta"@es ,
+                         "Thickness of Dead Layer"@en ;
+              <http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/EspesorDeCapaMuerta> .
+
+
+###  http://crossforest.eu/ifi/ontology/DiametricClass
+ifi:DiametricClass rdf:type owl:Class ;
+                   rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                   rdfs:label "Clase diamétrica"@es ,
+                              "Diametric class"@en ;
+                   <http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifn/ontology/ClaseDiametrica> .
 
 
 ###  http://crossforest.eu/ifi/ontology/DominantFormation
@@ -350,6 +267,14 @@ ifi:DominantFormation_PT_6 rdf:type owl:Class ;
                                       "Tipos de povoamentos florestais (IFN6 Portugal)"@pt .
 
 
+###  http://crossforest.eu/ifi/ontology/Erosion
+ifi:Erosion rdf:type owl:Class ;
+            rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+            rdfs:label "Erosion"@en ,
+                       "Erosión"@es ;
+            <http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/ManifestacionesErosivas> .
+
+
 ###  http://crossforest.eu/ifi/ontology/ForestryInventory
 ifi:ForestryInventory rdf:type owl:Class ;
                       rdfs:comment "O Inventário Florestal Nacional (IFN) é o processo de produção de estatísticas, e de cartografia-base, sobre a abundância, estado e condição dos recursos florestais nacionais. Baseia-se em recolhas de dados a partir de imagens aéreas e em medições da vegetação no terreno, ao longo de todo o território."@pt ;
@@ -357,6 +282,22 @@ ifi:ForestryInventory rdf:type owl:Class ;
                       rdfs:label "Forestry inventory"@en ,
                                  "Inventario forestal"@es ,
                                  "Inventário Florestal Nacional"@pt .
+
+
+###  http://crossforest.eu/ifi/ontology/FuelModel
+ifi:FuelModel rdf:type owl:Class ;
+              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+              rdfs:label "Fuel Model"@en ,
+                         "Modelo de Combustible"@es ;
+              <http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/ModeloCombustible> .
+
+
+###  http://crossforest.eu/ifi/ontology/Gradient
+ifi:Gradient rdf:type owl:Class ;
+             rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+             rdfs:label "Gradient"@en ,
+                        "Pendiente"@es ;
+             <http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/Pendiente> .
 
 
 ###  http://crossforest.eu/ifi/ontology/InfoDominantFormation
@@ -431,6 +372,78 @@ ifi:NumberOfTrees rdf:type owl:Class ;
                              "Número de árboles"@es ,
                              "Número de árvores"@pt ;
                   <http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifn/ontology/NumberOfTrees> .
+
+
+###  http://crossforest.eu/ifi/ontology/OrganicMatter
+ifi:OrganicMatter rdf:type owl:Class ;
+                  rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                  rdfs:label "Materia Orgánica"@es ,
+                             "Organic Matter"@en ;
+                  <http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/ContenidoEnMateriaOrganica> .
+
+
+###  http://crossforest.eu/ifi/ontology/Orientation
+ifi:Orientation rdf:type owl:Class ;
+                rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                rdfs:label "Orientación"@es ,
+                           "Orientation"@en ;
+                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifn/ontology/Orientacion> .
+
+
+###  http://crossforest.eu/ifi/ontology/PH
+ifi:PH rdf:type owl:Class ;
+       rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+       rdfs:label "PH"@en ,
+                  "PH"@es ;
+       <http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/ReaccionDelSueloPH> .
+
+
+###  http://crossforest.eu/ifi/ontology/PlotShape
+ifi:PlotShape rdf:type owl:Class ;
+              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+              rdfs:label "Forma de parcela"@es ,
+                         "Plot shape"@en ;
+              <http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/FormaPrincipalDeMasa> .
+
+
+###  http://crossforest.eu/ifi/ontology/PlotType
+ifi:PlotType rdf:type owl:Class ;
+             rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+             rdfs:label "Plot Type"@en ,
+                        "Tipo de parcela"@es ;
+             <http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/TipoDeParcela> .
+
+
+###  http://crossforest.eu/ifi/ontology/Rocosity
+ifi:Rocosity rdf:type owl:Class ;
+             rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+             rdfs:label "Rocosidad"@es ,
+                        "Rocosity"@en ;
+             <http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifn/ontology/Rocosidad> .
+
+
+###  http://crossforest.eu/ifi/ontology/SpatialDistribution
+ifi:SpatialDistribution rdf:type owl:Class ;
+                        rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+                        rdfs:label "Distribución Espacial"@es ,
+                                   "Spatial Distribution"@en ;
+                        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/DistribucionEspacialDeVegetacion> .
+
+
+###  http://crossforest.eu/ifi/ontology/Texture
+ifi:Texture rdf:type owl:Class ;
+            rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+            rdfs:label "Textura"@es ,
+                       "Texture"@en ;
+            <http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifn/ontology/Textura> .
+
+
+###  http://crossforest.eu/ifi/ontology/TreeShape
+ifi:TreeShape rdf:type owl:Class ;
+              rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+              rdfs:label "Forma"@es ,
+                         "Shape"@en ;
+              <http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/FormaDeCubicacion> .
 
 
 ###  http://crossforest.eu/ifi/ontology/VolumeWithBark
