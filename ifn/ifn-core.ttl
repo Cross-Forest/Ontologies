@@ -156,6 +156,27 @@ ifn:containsSpecies rdf:type owl:ObjectProperty ;
                     rdfs:label "containsSpecies"@en .
 
 
+###  http://crossforest.eu/ifn/ontology/containsSpeciesPcEspParc
+ifn:containsSpeciesPcEspParc rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf ifn:containsSpecies ;
+                             rdfs:range ifn:InfoSpeciesPcEspParc ;
+                             rdfs:label "contiene información sobre especies de la tabla PcEspParc"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/containsSpeciesPcMatorral
+ifn:containsSpeciesPcMatorral rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf ifn:containsSpecies ;
+                              rdfs:range ifn:InfoSpeciesPcMatorral ;
+                              rdfs:label "contiene información sobre especies de la tabla PcMatorral"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/containsSpeciesPcRegenera
+ifn:containsSpeciesPcRegenera rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf ifn:containsSpecies ;
+                              rdfs:range ifn:InfoSpeciesPcRegenera ;
+                              rdfs:label "contiene información sobre especies de la tabla PcRegenera"@es .
+
+
 ###  http://crossforest.eu/ifn/ontology/hasAcceptedName
 ifn:hasAcceptedName rdf:type owl:ObjectProperty ;
                     rdfs:range ifn:AcceptedName ;
@@ -2218,11 +2239,29 @@ ifn:HeightToLargestCrownWidht rdf:type owl:Class ;
 ifn:InfoSpecies rdf:type owl:Class .
 
 
-###  http://crossforest.eu/ifn/ontology/InfoSpeciesDetail
-ifn:InfoSpeciesDetail rdf:type owl:Class ;
-                      rdfs:subClassOf ifn:InfoSpecies ;
-                      rdfs:comment "Incluye detalle sobre clase diamétrica"@es ;
-                      rdfs:label "Información sobre especies sin agrupar"@es .
+###  http://crossforest.eu/ifn/ontology/InfoSpeciesDetalle
+ifn:InfoSpeciesDetalle rdf:type owl:Class ;
+                       rdfs:subClassOf ifn:InfoSpecies ;
+                       rdfs:comment "Incluye detalle sobre clase diamétrica"@es ;
+                       rdfs:label "Información sobre especies sin agrupar"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/InfoSpeciesPcEspParc
+ifn:InfoSpeciesPcEspParc rdf:type owl:Class ;
+                         rdfs:subClassOf ifn:InfoSpecies ;
+                         rdfs:label "Información sobre especies en la tabla PcEspParc"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/InfoSpeciesPcMatorral
+ifn:InfoSpeciesPcMatorral rdf:type owl:Class ;
+                          rdfs:subClassOf ifn:InfoSpecies ;
+                          rdfs:label "Información sobre especies en la tabla PcMatorral"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/InfoSpeciesPcRegenera
+ifn:InfoSpeciesPcRegenera rdf:type owl:Class ;
+                          rdfs:subClassOf ifn:InfoSpecies ;
+                          rdfs:label "Información sobre especies en la tabla PcRegenera"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/InfoTarifa
@@ -14297,6 +14336,14 @@ ifn:hasVolumeWithoutBark rdfs:label "has volume without bark"@en ,
                 ifn:ParametroDeExistenciaVCC
                 ifn:ParametroDeExistenciaVLE
                 ifn:ParametroDeExistenciaVSC
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( ifn:containsSpeciesPcEspParc
+                ifn:containsSpeciesPcMatorral
+                ifn:containsSpeciesPcRegenera
               )
 ] .
 
