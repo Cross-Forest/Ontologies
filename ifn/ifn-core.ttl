@@ -534,6 +534,15 @@ ifn:isInProvince rdf:type owl:ObjectProperty ;
                             "in province"@en .
 
 
+###  http://crossforest.eu/ifn/ontology/sameTreeAs
+ifn:sameTreeAs rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain ifn:Tree ;
+               rdfs:range ifn:Tree ;
+               rdfs:comment "Identificación del mismo elemento en otro inventario forestal. En el caso de IFN3 se genera esta relación con el IFN2, siempre que no sea en alguno de estos supuestos: parcela remedida (clase A, subclase 1, 2C, 3C, 4C, 6C, si OrdenIfn2 es igual a 000), parcelas nuevas (clases N y R), en las antiguas  que no se localizan (clase A, resto de subclases no citadas antes), y en las cuatro comunidades que fueron levantadas con parcelas permanentes por primera vez en el IFN3 (07, 31, 33, 39)."@es ;
+               rdfs:label "es el mismo elemento que"@es .
+
+
 ###  http://crossforest.eu/measures/ontology/hasMeasure
 smo:hasMeasure rdf:type owl:ObjectProperty .
 
