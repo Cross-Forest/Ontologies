@@ -7,10 +7,12 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 
 
 cos: a owl:Ontology ;
+  owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/iberian/ilu-core.ttl> ;
   rdfs:label "Ontologia de Ocupação do Solo de Portugal"@pt , "Portuguese Land Usage Ontology"@en , "Ontología portuguesa de uso del suelo"@es ;
   rdfs:comment "Ontologia de Uso e Ocupação do Solo de Portugal Continental"@pt ,"Ontology to publish data about land use in Portugal"@en , "Ontología para publicar datos deuso del suelo en Portugal" ;
   owl:versionInfo 0.1 ;
@@ -18,6 +20,19 @@ cos: a owl:Ontology ;
   dc:date "2020-07-17"^^xsd:date ;
 #  owl:imports fio: , spo: ;
   vann:preferredNamespacePrefix "cos" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+
+
+###  http://www.w3.org/2004/02/skos/core#closeMatch
+<http://www.w3.org/2004/02/skos/core#closeMatch> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+<http://www.w3.org/2004/02/skos/core#exactMatch> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -846,3 +861,22 @@ cos:Use5120 rdfs:comment "Forests of other oaks (COS2018); Open forests of cork 
 cos:Use7110 rdfs:comment "Coastal beaches, dunes and sand plains;  Inland beaches, dunes and sand plains (COS2010)"@en.
 cos:Use8120 rdfs:comment "Coastal aquaculture (COS2010)"@en.
 cos:Use9110 rdfs:comment "Natural water courses (COS2018)"@en.
+
+#################################################################
+#    Object Properties
+#################################################################
+
+
+###  http://crossforest.eu/cos/ontology/containsPatch
+cos:containsPatch rdf:type owl:ObjectProperty ;
+                  rdfs:domain cos:Patch ;
+                  rdfs:isDefinedBy <http://crossforest.eu/cos/ontology/> ;
+				  skos:exactMatch ilu:containsPatch.
+
+
+###  http://crossforest.eu/cos/ontology/hasPatch
+cos:hasPatch rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf smo:hasMeasure ;
+             rdfs:range cos:Patch ;
+             rdfs:isDefinedBy <http://crossforest.eu/cos/ontology/> ;
+			 skos:exactMatch ilu:hasPatch.
