@@ -371,8 +371,8 @@ ifn:hasStandDevelopment rdf:type owl:ObjectProperty ;
                         rdfs:label ""@es .
 
 
-###  http://crossforest.eu/ifn/ontology/hasTarifaAplic
-ifn:hasTarifaAplic rdf:type owl:ObjectProperty ;
+###  http://crossforest.eu/ifn/ontology/hasTarifaTipoAplic
+ifn:hasTarifaTipoAplic rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf owl:topObjectProperty ;
                    rdfs:domain ifn:InfoTarifa ;
                    rdfs:range ifn:TarifaAplic ;
@@ -735,8 +735,8 @@ smo:hasMeasureInSquareMeters rdf:type owl:DatatypeProperty .
 smo:hasMeasureinPercentage rdf:type owl:DatatypeProperty .
 
 
-###  http://crossforest.eu/position/ontology/hasForestAreaInHC
-spo:hasForestAreaInHC rdf:type owl:DatatypeProperty ;
+###  http://crossforest.eu/ifn/ontology/hasForestAreaInHC
+ifn:hasForestAreaInHC rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf smo:hasMeasureInHectares ;
                       rdfs:domain spo:Position ;
                       rdfs:comment ""@en ;
