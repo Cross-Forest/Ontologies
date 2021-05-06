@@ -22,6 +22,7 @@
 @base <http://crossforest.eu/mfe/ontology/> .
 
 <http://crossforest.eu/mfe/ontology/> rdf:type owl:Ontology ;
+                                       owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/iberian/ilu-core.ttl> ;
                                        owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/mfe/Clasificacion_MFE_IFN.ttl> ;
                                        owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/mfe/Distribuciones.ttl> ;
                                        owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/mfe/EstadosDeDesarrollo.ttl> ;
@@ -60,6 +61,12 @@ dc:date rdf:type owl:AnnotationProperty .
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
 vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 
+###  http://www.w3.org/2004/02/skos/core#closeMatch
+<http://www.w3.org/2004/02/skos/core#closeMatch> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+<http://www.w3.org/2004/02/skos/core#exactMatch> rdf:type owl:AnnotationProperty .
 
 #################################################################
 #    Object Properties
@@ -76,6 +83,7 @@ mfe:containsPatch rdf:type owl:ObjectProperty ;
                   rdfs:comment "la tesela agregada contiene sub-tesela"@es ,
                                "the merged patch contains sub-patch"@en ;
                   rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
+				  skos:exactMatch ilu:containsPatch;
                   rdfs:label "contains patch"@en ,
                              "contiene tesela"@es .
 
@@ -101,6 +109,16 @@ mfe:containsUse rdf:type owl:ObjectProperty ;
                 rdfs:label "contains use"@en ,
                            "contiene use"@es .
 
+
+###  http://crossforest.eu/mfe/ontology/hasCanopyCoverBushes
+mfe:hasCanopyCoverBushes rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf smo:hasMeasure ;
+                        rdfs:domain mfe:Patch ;
+                        rdfs:range mfe:CanopyCoverBushes ;
+                        rdfs:comment ""@en ,
+                                     ""@es ;
+                        rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
+                        rdfs:label ""@es .
 
 ###  http://crossforest.eu/mfe/ontology/hasCanopyCoverTotal
 mfe:hasCanopyCoverTotal rdf:type owl:ObjectProperty ;
@@ -152,7 +170,8 @@ mfe:hasPatch rdf:type owl:ObjectProperty ;
              rdfs:comment ""@en ,
                           ""@es ;
              rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
-             rdfs:label "has patch"@en ,
+			 skos:exactMatch ilu:hasPatch;
+			 rdfs:label "has patch"@en ,
                         "tiene tesela"@es .
 
 
@@ -245,7 +264,8 @@ mfe:hasUse rdf:type owl:ObjectProperty ;
            rdfs:comment ""@en ,
                         ""@es ;
            rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
-           rdfs:label "has use"@en ,
+		   skos:exactMatch ilu:hasUse;
+		   rdfs:label "has use"@en ,
                       "tiene uso"@es .
 
 
@@ -265,6 +285,16 @@ mfe:hasVegetationStructure rdf:type owl:ObjectProperty ;
 
 ###  http://crossforest.eu/measures/ontology/hasMeasureinPercentage
 smo:hasMeasureinPercentage rdf:type owl:DatatypeProperty .
+
+
+###  http://crossforest.eu/mfe/ontology/hasCanopyCoverBushesPercent
+mfe:hasCanopyCoverBushesPercent rdf:type owl:DatatypeProperty ;
+                               rdfs:subPropertyOf smo:hasMeasureinPercentage ;
+                               rdfs:domain mfe:Patch ;
+                               rdfs:comment ""@en ,
+                                            ""@es ;
+                               rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
+                               rdfs:label ""@es .
 
 
 ###  http://crossforest.eu/mfe/ontology/hasCanopyCoverTotalPercent
@@ -294,6 +324,7 @@ mfe:hasPercentageOfPatch rdf:type owl:DatatypeProperty ;
                          rdfs:comment ""@en ,
                                       ""@es ;
                          rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
+						 skos:exactMatch ilu:hasPercentageOfPatch ;
                          rdfs:label ""@es .
 
 
@@ -314,6 +345,7 @@ mfe:hasPercentageOfUse rdf:type owl:DatatypeProperty ;
                        rdfs:comment ""@en ,
                                     ""@es ;
                        rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
+					   skos:exactMatch ilu:hasPercentageOfUse;
                        rdfs:label ""@es .
 
 
