@@ -148,25 +148,25 @@ vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-ifn:codigo rdf:type owl:ObjectProperty ;
-ifn:hasAverageHeight rdf:type owl:ObjectProperty ;
-ifn:hasAverageHeightInDecimeters rdf:type owl:ObjectProperty ;
-ifn:hasChangeOfSpecies rdf:type owl:ObjectProperty ;
-ifn:hasDensity rdf:type owl:ObjectProperty ;
-ifn:hasDominantSpecies rdf:type owl:ObjectProperty ;
-ifn:hasFlightPass rdf:type owl:ObjectProperty ;
-ifn:hasNewSpecies rdf:type owl:ObjectProperty ;
-ifn:hasNumberOfPlotsInUnities rdf:type owl:ObjectProperty ;
-ifn:hasOccupationOrder rdf:type owl:ObjectProperty ;
-ifn:hasOriginalSpecies rdf:type owl:ObjectProperty ;
-ifn:hasPhotograph rdf:type owl:ObjectProperty ;
-ifn:hasPlotShape rdf:type owl:ObjectProperty ;
-ifn:hasSizeCategory rdf:type owl:ObjectProperty ;
-ifn:hasSystem rdf:type owl:ObjectProperty ;
-ifn:inPatch rdf:type owl:ObjectProperty ;
-ifn:numberOfPlots rdf:type owl:ObjectProperty ;
-ifn:takenInFlight rdf:type owl:ObjectProperty ;
-ifn:takenInPass rdf:type owl:ObjectProperty ;
+ifn:codigo rdf:type owl:ObjectProperty .
+ifn:hasAverageHeight rdf:type owl:ObjectProperty .
+ifn:hasAverageHeightInDecimeters rdf:type owl:ObjectProperty .
+ifn:hasChangeOfSpecies rdf:type owl:ObjectProperty .
+ifn:hasDensity rdf:type owl:ObjectProperty .
+ifn:hasDominantSpecies rdf:type owl:ObjectProperty .
+ifn:hasFlightPass rdf:type owl:ObjectProperty .
+ifn:hasNewSpecies rdf:type owl:ObjectProperty .
+ifn:hasNumberOfPlotsInUnities rdf:type owl:ObjectProperty .
+ifn:hasOccupationOrder rdf:type owl:ObjectProperty .
+ifn:hasOriginalSpecies rdf:type owl:ObjectProperty .
+ifn:hasPhotograph rdf:type owl:ObjectProperty .
+ifn:hasPlotShape rdf:type owl:ObjectProperty .
+ifn:hasSizeCategory rdf:type owl:ObjectProperty .
+ifn:hasSystem rdf:type owl:ObjectProperty .
+ifn:inPatch rdf:type owl:ObjectProperty .
+ifn:numberOfPlots rdf:type owl:ObjectProperty .
+ifn:takenInFlight rdf:type owl:ObjectProperty .
+ifn:takenInPass rdf:type owl:ObjectProperty .
 
 
 ###  http://crossforest.eu/ifn/ontology/containsSpecies
@@ -174,6 +174,13 @@ ifn:containsSpecies rdf:type owl:ObjectProperty ;
                     rdfs:range ifn:InfoSpecies ;
                     rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
                     rdfs:label "containsSpecies"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/containsSpeciesDetail
+ifn:containsSpeciesDetail rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf ifn:containsSpecies ;
+                             rdfs:range ifn:InfoSpeciesDetalle ;
+                             rdfs:label "contiene información detallada sobre especies"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/containsSpeciesPcEspParc
@@ -14755,6 +14762,7 @@ ifn:hasVolumeWithoutBark rdfs:label "has volume without bark"@en ,
   owl:members ( ifn:containsSpeciesPcEspParc
                 ifn:containsSpeciesPcMatorral
                 ifn:containsSpeciesPcRegenera
+                ifn:containsSpeciesDetail
               )
 ] .
 
