@@ -4,206 +4,206 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 
-mfe:VegetationStructure1 a owl:Class , rdfs:Class ; # cambiado x ACO: TipoEstructural x VegetationStructure
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural1 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Bosque"@es ;
   rdfs:comment "Agrupación de árboles o especies potencialmente arbóreas, en espesura con una fracción de cabida cubierta superior al 5% y uso netamente forestal. El origen del mismo es natural  o de repoblación totalmente integrada"@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure2 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural2 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Bosque de Plantación"@es ;
   rdfs:comment "Agrupación de árboles en espesura con una fracción de cabida cubierta superior al 5% y uso netamente forestal, cuyo origen es el de plantación. Para decidir que una plantación ha dejado de serlo, adquiriendo una naturalidad fruto del paso del tiempo y de la propia dinámica de la vegetación, deberán aparecer diluidos los marcos de plantación u otros elementos que delaten su origen artificial.  Esta idea se verá reforzada si, además: los árboles tienen al menos un diámetro normal de 25 cm, o hay regeneración natural de la masa, así como árboles de diferentes dimensiones y tallas, o existe una invasión más que incipiente de matorral bajo las copas, o de otros árboles naturales de la zona"@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure3 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural3 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Bosque Adehesado"@es ;
   rdfs:comment "Dehesa es aquella formación arbolada (fcc > 5%), poblada habitualmente de árboles con aptitudes ganaderas de sus frutos o ramones, y en la que aunque el uso principal sea el ganadero  aparece un doble uso agrícola y forestal"@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure4 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural4 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Complementos del Bosque"@es ;
   rdfs:comment "Corresponde a teselas dentro del bosque que, sin ser arboladas, están íntimamente unidas al aprovechamiento forestal del mismo. (Ej.: parques de madera, cortafuegos, …). Se pondrá como TFCCARB la del bosque que las rodea."@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure5 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural5 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Temporalmente Desarbolado (talas)"@es ;
   rdfs:comment "Teselas en terreno forestal que normalmente deberían estar arboladas pero se encuentran temporalmente desarboladas por la realización de talas recientes. Se identifica por tratarse de claros en el bosque con formas geométricas."@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure6 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural6 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Temporalmente Desarbolado (incendios)"@es ;
   rdfs:comment "Teselas en terreno forestal que normalmente deberían estar arboladas pero se encuentran temporalmente desarboladas por un reciente incendio."@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure7 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural7 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Temporalmente Desarbolado (f. naturales)"@es ;
   rdfs:comment "Teselas en terreno forestal que normalmente deberían estar arboladas pero se encuentran temporalmente desarboladas por causa de algún fenómeno natural (vientos, aludes..)."@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure8 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural8 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Matorral"@es ;
   rdfs:comment "Agrupación vegetal definida por su estructura o por su aspecto, conferidos por el hecho de que su estrato superior o el más alto con espesura están caracterizados por el predominio de matas (especies leñosas relativamente bajas y ramificadas desde su base)."@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure9 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural9 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Herbazal"@es ;
   rdfs:comment "Teselas cubiertas por hierbas de origen natural. Se definen como agrupaciones o cubiertas caracterizadas por la abundancia, densidad y predominio de herbáceas"@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure10 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural10 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Monte sin Vegetación Superior"@es ;
   rdfs:comment "Teselas que por circunstancias de composición edáfica, de pendiente, o cualquiera otra, presentan la mayor parte de su superficie desnuda de vegetación incluso herbácea. Serán los desiertos y semidesiertos de los diversos tipos."@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure11 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural11 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "A.F.M. (riberas)"@es ;
   rdfs:comment "Teselas forestales arboladas que se encuentran junto a los cauces de los ríos, pobladas de especies ripícolas"@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure12 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural12 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "A.F.M. (bosquetes)"@es ;
   rdfs:comment "Teselas que presentan arbolado fuera del monte, es decir, rodeado de otras teselas no forestales, distribuido en bosquetes individualizables y/o suficientemente próximos como para ser agrupados dentro de una misma tesela. Su superficie no excederá de 20 ha."@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure13 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural13 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "A.F.M. (alineaciones)"@es ;
   rdfs:comment "Teselas que presentan arbolado fuera del monte, cuya distribución espacial corresponde a una alineación de varios árboles de anchura."@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure14 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural14 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "A.F.M. (a. sueltos)"@es ;
   rdfs:comment "Teselas que, teniendo un uso fundamentalmente no forestal, incluyen árboles sueltos dispersos por ellas."@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure15 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural15 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Agrícola"@es ;
   rdfs:comment "Teselas de uso agrícola."@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure16 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural16 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Artificial"@es ;
   rdfs:comment "Contendrá las teselas en las que la influencia antrópica ha determinado que su uso no sea ya más ni agrícola ni forestal. Se exceptúan los casos 21 a 23"@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure17 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural17 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Humedal"@es ;
   rdfs:comment "Teselas que sufren una inundación temporal pero repetitiva año tras año con carácter frecuentemente estacional, lo que condiciona la vegetación presente en ella. "@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure18 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural18 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Agua"@es ;
   rdfs:comment "Incluye las teselas ocupadas por el agua permanentemente,  o sólo temporalmente en el caso de cursos de agua."@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure19 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural19 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Mar"@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure20 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural20 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Fuera de Límites"@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure21 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural21 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Autopistas y Autovías"@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure22 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural22 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Infraestructuras de Conducción"@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure23 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural23 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Minería, Escombreras y Vertederos"@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure24 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural24 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Prado con Setos"@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure25 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural25 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Mosaico Arbolado sobre Cultivo y/o Prado"@es ;
   rdfs:comment "Comprende aquellos mosaicos en que los bosquetes arbolados no tienen una continuidad que haga que por su superficie se pueda clasificar como forestal arbolado. Los bosquetes arbolados están en mosaico con los cultivos y/o los prados. Cuando una tesela se clasifique con esta distribucción específica, en el campo especie aparecerá, dentro de las dos primeras, las dos especies forestales más importantes presentes (si sólo hubiese una, aparecerá sólamente una), quedando la tercera (o la segunda), para consignar el código del cultivo o del prado (1500 y 3400  respectivamente). En el campo ocupación se consignará la proporción relativa en que aparece el cultivo o prado respecto a las otras especies forestales y por último el campo estado, quedará vacío cuando se trate de cultivos o prados."@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure26 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural26 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Mosaico Arbolado sobre Forestal Desarbolado"@es ;
   rdfs:comment "Comprende aquellos mosaicos en que los bosquetes arbolados no tienen una continuidad que haga que por su superficie se pueda clasificar como forestal arbolado. Los bosquetes arbolados están en mosaico con coberturas forestales no arboladas, que podrán ser de matorral, herbazal o pastizal-matorral . Cuando una tesela se clasifique con esta distribucción específica, en el campo especie aparecerá, dentro de las dos primeras, las dos especies forestales más importantes presentes (si sólo hubiese una, aparecerá sólamente una), quedando la tercera (o la segunda), para consignar el código del matorral, herbazal o pastizal-matorral (8000, 9000 o 3500 respectivamente). En el campo ocupación se consignará la proporción relativa en que aparece el forestal no arbolado respecto a las otras especies forestales y por último, el campo estado quedará vacío cuando se trate de forestal no arbolado."@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure27 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural27 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Mosaico Desarbolado sobre Cultivo y/o Prado"@es ;
   rdfs:comment "Comprende aquellos mosaicos formados por cultivos y/o prados en mezcla con coberturas forestales no arboladas (matorral, pastizal-matorral o herbazal). Cuando una tesela se clasifique con esta distribucción específica, en el campo especie se consignará en primer lugar la cobertura de mayor extensión superficial con su ocupación  hasta tres posibles valores. En todos los casos el campo estado quedará vacío. Los posibles valores para el campo especie serán: 1500,3400,3500,8000 y 9000 correspondiendo a agrícola, prados, pastizal-matorral, matorral y herbazal respectivamente."@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure28 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural28 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Cultivo con Arbolado Disperso"@es ;
   rdfs:comment "Espacios dedicados exclusivamente a cultivos de secano, con un arbolado disperso, que puede superar el 5% de fcc, derivado de antiguos usos de dehesa o de bosque. Para clasificarlo como tal, el arbolado tiene que ser representativo de uso forestal (no los frutales) e intuir antiguos usos forestales (especialmente dehesas)."@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure29 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural29 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Parque Periurbano"@es ;
   rdfs:comment "Espacio de gran extensión con características y uso de Parque, en las proximidades de los grandes núcleos urbanos. En él se separarán las infraestructuras de uso público y de características de uso artificial como Parques de Atracciones, Auditorios, etc.. de superficie superior a las 2,5 ha."@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure30 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural30 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Área Recreativa"@es ;
   rdfs:comment "Superficie forestal de fuerte actividad recreativa, incluso pistas de sky."@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure31 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural31 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Laguna de Alta Montaña"@es ;
   rdfs:comment "Lago natural de alta montaña."@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure32 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural32 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Monte Bajo"@es ;
   rdfs:comment "Teselas pobladas por especies potencialmente arbóreas, pero que en la actualidad presentan tallas arbustivas probablemente como consecuencia del tipo de aprovechamiento."@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure33 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural33 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Mancha"@es ;
   rdfs:comment "Formaciones de porte arbustivo en un solo estrato, correspondientes a mezclas de especies arbóreas y de matorral que en la actualidad presentan tallas arbustivas, especialmente esclerófilas y laurifolias. Se presentan casi exclusivamente sobre suelos silíceos (mitad oeste peninsular). Normalmente son manchas de mezclas de encina con madroño, durillo, etc.."@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure34 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural34 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Prado"@es ;
   rdfs:comment "Incluye aquella superficie poblada por pastos, con aprovechamiento ganadero patente que por sus características puede considerarse no forestal y en la que puede aparecer arbolado disperso incluso con fracción de cabida cubierta algo superior al 5%."@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:VegetationStructure35 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:VegetationStructure ;
+mfe:TipoEstructural35 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:TipoEstructural ;
   rdfs:label "Pastizal-Matorral"@es ;
   rdfs:comment "Superficie poblada con matorral bajo (tomillos o similares) en mezcla con herbáceas y aprovechamiento extensivo de ganado. Las zonas de erial quedarán aquí asignadas."@es ;
   rdfs:isDefinedBy mfe: .

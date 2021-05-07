@@ -3,26 +3,26 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-mfe:PatchShape1 a owl:Class , rdfs:Class ; # cambiados x ACO FormaDeMasa x PatchShape
-  rdfs:subClassOf mfe:PatchShape ;
+mfe:FormaDeMasa1 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:FormaDeMasa ;
   rdfs:label "Irregular"@es ;
   rdfs:comment "El contorno de la tesela no presenta una de sus dimensiones (largo o ancho) prácticamente despreciable con respecto a la otra ni adopta una forma más o menos geométrica"@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:PatchShape2 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:PatchShape ;
+mfe:FormaDeMasa2 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:FormaDeMasa ;
   rdfs:label "Regular"@es ;
   rdfs:comment "El contorno de la tesela adopta una forma más o menos geométrica"@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:PatchShape3 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:PatchShape ;
+mfe:FormaDeMasa3 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:FormaDeMasa ;
   rdfs:label "Galeria"@es ;
   rdfs:comment "El contorno de la tesela arbolada o arbustiva presenta una de sus dimensiones (largo o ancho) prácticamente despreciable con respecto a la otra y además sigue el curso de una corriente de agua"@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:PatchShape4 a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:PatchShape ;
+mfe:FormaDeMasa4 a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:FormaDeMasa ;
   rdfs:label "Alineación"@es ;
   rdfs:comment "El contorno de la tesela arbolada o arbustiva presenta una de sus dimensiones (largo o ancho) prácticamente despreciable con respecto a la otra y además no sigue el curso de una corriente de agua"@es ;
   rdfs:isDefinedBy mfe: .

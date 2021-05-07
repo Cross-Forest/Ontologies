@@ -3,26 +3,26 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-mfe:BiogeographicRegionATL a owl:Class , rdfs:Class ; # cambiado x ACO: Realm x BiogeographicRegion
-  rdfs:subClassOf mfe:BiogeographicRegion ; #"atlantic region" "macharonesian region" "alpine region" "mediterranean region"
-  rdfs:label "Atlántica"@es ;
+mfe:RegionBiogeograficaATL a owl:Class , rdfs:Class ; # cambiado x ACO: Realm x BiogeographicRegion
+  rdfs:subClassOf mfe:RegionBiogeografica ; #"atlantic region" "macharonesian region" "alpine region" "mediterranean region"
+  rdfs:label "Región biogeográfica Atlántica"@es ;
   rdfs:comment ""@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:BiogeographicRegionMAC a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:BiogeographicRegion ;
-  rdfs:label "Macaronésica"@es ;
+mfe:RegionBiogeograficaMAC a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:RegionBiogeografica ;
+  rdfs:label "Región biogeográfica Macaronésica"@es ;
   rdfs:comment ""@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:BiogeographicRegionALP a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:BiogeographicRegion ;
-  rdfs:label "Alpina"@es ;
+mfe:RegionBiogeograficaALP a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:RegionBiogeografica ;
+  rdfs:label "Región biogeográfica Alpina"@es ;
   rdfs:comment ""@es ;
   rdfs:isDefinedBy mfe: .
 
-mfe:BiogeographicRegionMED a owl:Class , rdfs:Class ;
-  rdfs:subClassOf mfe:BiogeographicRegion ;
-  rdfs:label "Mediterránea"@es ;
+mfe:RegionBiogeograficaMED a owl:Class , rdfs:Class ;
+  rdfs:subClassOf mfe:RegionBiogeografica ;
+  rdfs:label "Región biogeográfica Mediterránea"@es ;
   rdfs:comment ""@es ;
   rdfs:isDefinedBy mfe: .

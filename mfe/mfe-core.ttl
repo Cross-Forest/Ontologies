@@ -38,6 +38,7 @@
                                        owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/mfe/TypesOfForest.ttl> ;
                                        dc:creator <https://www.crossforest.eu/members/guiveg> ,
                                                   <https://www.crossforest.eu/members/josgim> ;
+									   dc:contributor <https://github.com/dportoles> ;
                                        dc:date "2019-07-17"^^xsd:date ;
                                        vann:preferredNamespacePrefix "mfe" ;
                                        rdfs:comment "Ontology to publish data of the Spanish Forestry Map"@en ,
@@ -56,6 +57,9 @@ dc:creator rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/elements/1.1/date
 dc:date rdf:type owl:AnnotationProperty .
+
+###  http://purl.org/dc/elements/1.1/contributor
+dc:contributor rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
@@ -114,7 +118,7 @@ mfe:containsUse rdf:type owl:ObjectProperty ;
 mfe:hasCanopyCoverBushes rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf smo:hasMeasure ;
                         rdfs:domain mfe:Patch ;
-                        rdfs:range mfe:CanopyCoverBushes ;
+                        rdfs:range mfe:FraccionDeCabidaCubiertaArbustiva ;
                         rdfs:comment ""@en ,
                                      ""@es ;
                         rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
@@ -124,7 +128,7 @@ mfe:hasCanopyCoverBushes rdf:type owl:ObjectProperty ;
 mfe:hasCanopyCoverTotal rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf smo:hasMeasure ;
                         rdfs:domain mfe:Patch ;
-                        rdfs:range mfe:CanopyCoverTotal ;
+                        rdfs:range mfe:FraccionDeCabidaCubiertaTotal ;
                         rdfs:comment ""@en ,
                                      ""@es ;
                         rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
@@ -135,7 +139,7 @@ mfe:hasCanopyCoverTotal rdf:type owl:ObjectProperty ;
 mfe:hasCanopyCoverTrees rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf smo:hasMeasure ;
                         rdfs:domain mfe:Patch ;
-                        rdfs:range mfe:CanopyCoverTrees ;
+                        rdfs:range mfe:FraccionDeCabidaCubiertaArborea ;
                         rdfs:comment ""@en ,
                                      ""@es ;
                         rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
@@ -146,7 +150,7 @@ mfe:hasCanopyCoverTrees rdf:type owl:ObjectProperty ;
 ###  http://crossforest.eu/mfe/ontology/hasClassification
 mfe:hasClassification rdf:type owl:ObjectProperty ;
                       rdfs:domain mfe:Patch ;
-                      rdfs:range mfe:Classification ;
+                      rdfs:range mfe:Clasificacion_MFE_IFN ;
                       rdfs:comment ""@en ,
                                    ""@es ;
                       rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
@@ -178,7 +182,7 @@ mfe:hasPatch rdf:type owl:ObjectProperty ;
 ###  http://crossforest.eu/mfe/ontology/hasPatchShape
 mfe:hasPatchShape rdf:type owl:ObjectProperty ;
                   rdfs:domain mfe:Patch ;
-                  rdfs:range mfe:PatchShape ;
+                  rdfs:range mfe:FormaDeMasa ;
                   rdfs:comment ""@en ,
                                ""@es ;
                   rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
@@ -239,7 +243,7 @@ mfe:hasSpecies rdf:type owl:ObjectProperty ;
 ###  http://crossforest.eu/mfe/ontology/hasStandDevelopment
 mfe:hasStandDevelopment rdf:type owl:ObjectProperty ;
                         rdfs:domain mfe:SpeciesInPatch ;
-                        rdfs:range mfe:StandDevelopment ;
+                        rdfs:range mfe:EstadoDeDesarrollo ;
                         rdfs:comment ""@en ,
                                      ""@es ;
                         rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
@@ -249,7 +253,7 @@ mfe:hasStandDevelopment rdf:type owl:ObjectProperty ;
 ###  http://crossforest.eu/mfe/ontology/hasTypeofForest
 mfe:hasTypeofForest rdf:type owl:ObjectProperty ;
                     rdfs:domain mfe:Patch ;
-                    rdfs:range mfe:TypeOfForest ;
+                    rdfs:range mfe:TipoDeBosque ;
                     rdfs:comment ""@en ,
                                  "Indica la tipología de bosque predominante"@es ;
                     rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
@@ -272,7 +276,7 @@ mfe:hasUse rdf:type owl:ObjectProperty ;
 ###  http://crossforest.eu/mfe/ontology/hasVegetationStructure
 mfe:hasVegetationStructure rdf:type owl:ObjectProperty ;
                            rdfs:domain mfe:Patch ;
-                           rdfs:range mfe:VegetationStructure ;
+                           rdfs:range mfe:TipoEstructural ;
                            rdfs:comment ""@en ,
                                         ""@es ;
                            rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
@@ -382,17 +386,16 @@ mfe:Area rdf:type owl:Class ;
          rdfs:label ""@es .
 
 
-###  http://crossforest.eu/mfe/ontology/BiogeographicRegion
-mfe:BiogeographicRegion rdf:type owl:Class ;
-                          rdfs:subClassOf skos:ConceptScheme ;
-                        rdfs:comment ""@es ;
+###  http://crossforest.eu/mfe/ontology/RegionBiogeografica
+mfe:RegionBiogeografica rdf:type owl:Class ;
+						rdfs:subClassOf skos:ConceptScheme ;
                         rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
                         rdfs:label "Biogeographic Region"@en ,
                                    "Región biogeográfica"@es .
 
 
-###  http://crossforest.eu/mfe/ontology/CanopyCover
-mfe:CanopyCover rdf:type owl:Class ;
+###  http://crossforest.eu/mfe/ontology/FraccionDeCabidaCubierta
+mfe:FraccionDeCabidaCubierta rdf:type owl:Class ;
                           rdfs:subClassOf skos:ConceptScheme ;
                 rdfs:comment "Canopy Cover of the Vegetation Structure"@en ,
                              "Representa la proporción total de la vegetación."@es ;
@@ -401,50 +404,50 @@ mfe:CanopyCover rdf:type owl:Class ;
                            "Fracción de Cabida Cubierta"@es .
 
 
-###  http://crossforest.eu/mfe/ontology/CanopyCoverBushes
-mfe:CanopyCoverBushes rdf:type owl:Class ;
-                      rdfs:subClassOf mfe:CanopyCover ;
-                      rdfs:comment ""@en ,
-                                   "Representa la proporción del conjunto de las especies del estrato arbustivo como porcentaje de suelo cubierto por la proyección de todas las copas. No influye en su cálculo el hecho de tratarse de masas monoespecíficas o pluriespecíficas, o el de encontrarse en distinto estado de masa las distintas especies."@es ;
+###  http://crossforest.eu/mfe/ontology/FraccionDeCabidaCubiertaArbustiva
+mfe:FraccionDeCabidaCubiertaArbustiva rdf:type owl:Class ;
+                      rdfs:subClassOf mfe:FraccionDeCabidaCubierta ;
+                      rdfs:comment "Representa la proporción del conjunto de las especies del estrato arbustivo como porcentaje de suelo cubierto por la proyección de todas las copas. No influye en su cálculo el hecho de tratarse de masas monoespecíficas o pluriespecíficas, o el de encontrarse en distinto estado de masa las distintas especies."@es ;
                       rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
                       rdfs:label "Canopy Cover of Bushes"@es ,
                                  "Fracción de Cabida Cubierta Arbustiva"@es .
 
 
-###  http://crossforest.eu/mfe/ontology/CanopyCoverTotal
-mfe:CanopyCoverTotal rdf:type owl:Class ;
-                     rdfs:subClassOf mfe:CanopyCover ;
-                     rdfs:comment ""@en ,
+###  http://crossforest.eu/mfe/ontology/FraccionDeCabidaCubiertaTotal
+mfe:FraccionDeCabidaCubiertaTotal rdf:type owl:Class ;
+                     rdfs:subClassOf mfe:FraccionDeCabidaCubierta ;
+                     rdfs:comment "Corresponde al campo TFCCTOT"@es ,
                                   "Representa la proporción total de la vegetación arbórea y de matorral. Proporciona información sobre la proyección sobre el suelo de los principales pisos de vegetación. En algún caso se incluirán fracciones de cabida cubierta de pastizales o cultivos. Para su cuantificación se tendrá en cuenta todas las especies en conjunto, con independencia de que se presenten por razones de edad o de otro tipo de alturas muy distintas."@es ;
                      rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
                      rdfs:label "Fracción de Cabida Cubierta Total"@es ,
                                 "Total Canopy Cover"@es .
 
 
-###  http://crossforest.eu/mfe/ontology/CanopyCoverTrees
-mfe:CanopyCoverTrees rdf:type owl:Class ;
-                     rdfs:subClassOf mfe:CanopyCover ;
-                     rdfs:comment ""@en ,
+###  http://crossforest.eu/mfe/ontology/FraccionDeCabidaCubiertaArborea
+mfe:FraccionDeCabidaCubiertaArborea rdf:type owl:Class ;
+                     rdfs:subClassOf mfe:FraccionDeCabidaCubierta ;
+                     rdfs:comment "Corresponde al campo TFCCARB"@es ,
                                   "Representa la proporción del conjunto de las especies del estrato arbóreo como porcentaje de suelo cubierto por la proyección de todas las copas. No influye en su cálculo el hecho de tratarse de masas monoespecíficas o pluriespecíficas, o el de encontrarse en distinto estado de masa las distintas especies."@es ;
                      rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
                      rdfs:label "Canopy Cover of Trees"@es ,
                                 "Fracción de Cabida Cubierta Arbórea"@es .
 
 
-###  http://crossforest.eu/mfe/ontology/Classification
-mfe:Classification rdf:type owl:Class ;
+###  http://crossforest.eu/mfe/ontology/Clasificacion_MFE_IFN
+mfe:Clasificacion_MFE_IFN rdf:type owl:Class ;
                           rdfs:subClassOf skos:ConceptScheme ;
                    rdfs:comment "Pasarela entre el Tipo Estructural y la clasificación por niveles del IFN3"@es ;
                    rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
                    rdfs:label "Clasificación MFE-IFN"@es .
 
 
-###  http://crossforest.eu/mfe/ontology/ForestType
-mfe:ForestType rdf:type owl:Class ;
+###  http://crossforest.eu/mfe/ontology/FormacionArbolada
+mfe:FormacionArbolada rdf:type owl:Class ;
                           rdfs:subClassOf skos:ConceptScheme ;
                rdfs:comment "La Formación Arbolada representa la comunidad vegetal arbórea de orden superior con fisiología y biología homogénea y viene determinada por la Ocupación de la especie principal o por la Ocupación formada por las especies presentes."@es ;
                rdfs:label "Forest Type"@en ,
                           "Formación Arbolada"@es .
+
 
 
 ###  http://crossforest.eu/mfe/ontology/MeasureMFE25
@@ -487,11 +490,11 @@ mfe:PatchInPatch rdf:type owl:Class ;
                  rdfs:label "Patch in the patch"@es .
 
 
-###  http://crossforest.eu/mfe/ontology/PatchShape
-mfe:PatchShape rdf:type owl:Class ;
+###  http://crossforest.eu/mfe/ontology/FormaDeMasa
+mfe:FormaDeMasa rdf:type owl:Class ;
                           rdfs:subClassOf skos:ConceptScheme ;
                rdfs:comment "Diferenciates the geometric shape of the patch and vegetation asociated"@en ,
-                            "Indica la forma geométrica que presenta la tesela"@es ;
+                            "Indica la forma geométrica que presenta la tesela"@es, "Corresponde al campo FOR_MAN"@es;
                rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
                rdfs:label "Forma de la tesela"@es ,
                           "Shape of the patch"@en .
@@ -506,13 +509,12 @@ mfe:RateOfPatch rdf:type owl:Class ;
 
 
 ###  http://crossforest.eu/mfe/ontology/RateOfUse
-mfe:RateOfUse rdf:type owl:Class ;
-              rdfs:subClassOf skos:ConceptScheme .
+mfe:RateOfUse rdf:type owl:Class .
 
 
 ###  http://crossforest.eu/mfe/ontology/RateofUse
 mfe:RateofUse rdf:type owl:Class ;
-              rdfs:subClassOf smo:MeasureInPercentage, skos:ConceptScheme ;
+              rdfs:subClassOf smo:MeasureInPercentage;
               rdfs:comment "Indica la proporción para cada una de las usos dentro de la agrupación de teselas."@es ;
               rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
               rdfs:label "Propoción del uso"@es .
@@ -520,7 +522,6 @@ mfe:RateofUse rdf:type owl:Class ;
 
 ###  http://crossforest.eu/mfe/ontology/SetOfSpecies
 mfe:SetOfSpecies rdf:type owl:Class ;
-                          rdfs:subClassOf skos:ConceptScheme ;
                  rdfs:comment ""@es ;
                  rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
                  rdfs:label "Agrupación de Especies"@es ,
@@ -542,18 +543,18 @@ mfe:SpeciesInPatch rdf:type owl:Class ;
                    rdfs:label "Species in the patch"@es .
 
 
-###  http://crossforest.eu/mfe/ontology/StandDevelopment
-mfe:StandDevelopment rdf:type owl:Class ;
+###  http://crossforest.eu/mfe/ontology/EstadoDeDesarrollo
+mfe:EstadoDeDesarrollo rdf:type owl:Class ;
                           rdfs:subClassOf skos:ConceptScheme ;
-                     rdfs:comment "Indica la fase de desarrollo en que se encuentran las poblaciones de especies arbóreas presentes en la tesela"@es ;
+                     rdfs:comment "Indica la fase de desarrollo en que se encuentran las poblaciones de especies arbóreas presentes en la tesela."@es, "Corresponde a los campos E1, E2 y E3."@es ;
                      rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
                      rdfs:label "Estado de Desarrollo"@es .
 
 
-###  http://crossforest.eu/mfe/ontology/TypeOfForest
-mfe:TypeOfForest rdf:type owl:Class ;
+###  http://crossforest.eu/mfe/ontology/TipoDeBosque
+mfe:TipoDeBosque rdf:type owl:Class ;
                           rdfs:subClassOf skos:ConceptScheme ;
-                 rdfs:comment "Tipo de bosque (coníferas, frondosas o mixtas)"@es ;
+                 rdfs:comment "Tipo de bosque (coníferas, frondosas o mixtas)"@es, "Corresponde al campo TIPO_BOSQU."@es  ;
                  rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
                  rdfs:label "Tipo de Bosque"@es .
 
@@ -573,10 +574,10 @@ mfe:UseInPatch rdf:type owl:Class ;
                rdfs:label "Use in the patch"@es .
 
 
-###  http://crossforest.eu/mfe/ontology/VegetationStructure
-mfe:VegetationStructure rdf:type owl:Class ;
+###  http://crossforest.eu/mfe/ontology/TipoEstructural
+mfe:TipoEstructural rdf:type owl:Class ;
                           rdfs:subClassOf skos:ConceptScheme ;
-                        rdfs:comment "Indica los distintos usos del suelo que pueden aparecer y, dentro del uso forestal, las distintas estructuras de vegetación que lo pueden ocupar, atendiendo más que a la densidad vegetal a la estructura de la vegetación que ocupa." ;
+                        rdfs:comment "Indica los distintos usos del suelo que pueden aparecer y, dentro del uso forestal, las distintas estructuras de vegetación que lo pueden ocupar, atendiendo más que a la densidad vegetal a la estructura de la vegetación que ocupa."@es, "Corresponde al campo TIPESTR."@es;
                         rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
                         rdfs:label "Tipo Estructural"@es .
 

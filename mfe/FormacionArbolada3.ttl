@@ -3,17 +3,17 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix mfe:   <http://crossforest.eu/mfe/ontology/> .
 
-mfe:ForestTypeM # modificado x ACO; FormacionArbolada x ForestType
+mfe:FormacionArboladaM
         a           owl:Class , rdfs:Class ;
-        rdfs:subClassOf mfe:ForestType ;
+        rdfs:subClassOf mfe:FormacionArbolada ;
         rdfs:label  "Mezcla de coníferas y frondosas"@es .
 
-mfe:ForestTypeC
+mfe:FormacionArboladaC
         a           owl:Class , rdfs:Class ;
-        rdfs:subClassOf mfe:ForestType ;
+        rdfs:subClassOf mfe:FormacionArbolada ;
         rdfs:label  "Conifer Stand"@en , "Bosque de coníferas"@es .
 
-mfe:ForestTypeF
+mfe:FormacionArboladaF
         a           owl:Class , rdfs:Class ;
-        rdfs:subClassOf mfe:ForestType ;
+        rdfs:subClassOf mfe:FormacionArbolada ;
         rdfs:label  "Frondosas"@es , "Bosques de frondosas"@es .

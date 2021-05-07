@@ -1,4 +1,5 @@
 @prefix ilu: <http://crossforest.eu/ilu/ontology/> .
+@prefix mfe: <http://crossforest.eu/mfe/ontology/> .
 @prefix smo: <http://crossforest.eu/measures/ontology/> .
 @prefix spo: <http://crossforest.eu/position/ontology/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,6 +8,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 
 ilu: a owl:Ontology ;
@@ -14,14 +16,85 @@ ilu: a owl:Ontology ;
   rdfs:comment "Ontology to publish data about land use in the iberian peninsula"@en , "Ontología para publicar datos deuso del suelo en la península ibérica"@es ;
   owl:versionInfo 0.1 ;
   dc:creator <https://www.crossforest.eu/members/josgim> , <https://www.crossforest.eu/members/guiveg> ;
+  dc:contributor <https://github.com/dportoles> ;
   dc:date "2020-07-17"^^xsd:date ;
 #  owl:imports fio: , spo: ;
   vann:preferredNamespacePrefix "ilu" .
 
 
+###  http://purl.org/dc/elements/1.1/contributor
+dc:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#closeMatch
+skos:closeMatch rdf:type owl:AnnotationProperty .
+
+
 #################################################################
 #    Classes
 #################################################################
+
+###  http://crossforest.eu/ilu/ontology/BiogeographicRegion
+ilu:BiogeographicRegion rdf:type owl:Class ;
+                        rdfs:isDefinedBy ilu: ;
+						skos:closeMatch mfe:RegionBiogeografica ;
+                        rdfs:label "Biogeographic Region"@en ,
+                                   "Región biogeográfica"@es .
+
+
+###  http://crossforest.eu/ilu/ontology/CanopyCover
+ilu:CanopyCover rdf:type owl:Class ;
+                rdfs:comment "Canopy Cover of the Vegetation Structure"@en ,
+                             "Representa la proporción total de la vegetación."@es ;
+                rdfs:isDefinedBy ilu: ;
+				skos:closeMatch mfe:FraccionDeCabidaCubierta ;
+                rdfs:label "Canopy Cover"@es ,
+                           "Fracción de Cabida Cubierta"@es .
+
+
+###  http://crossforest.eu/ilu/ontology/Classification
+ilu:Classification rdf:type owl:Class ;
+                   rdfs:isDefinedBy ilu: ;
+				   skos:closeMatch mfe:Clasificacion_MFE_IFN ;
+                   rdfs:label "Clasificación"@es, "Classification"@en .
+
+###  http://crossforest.eu/ilu/ontology/ForestType
+ilu:ForestType rdf:type owl:Class ;
+               rdfs:isDefinedBy ilu: ;
+			   skos:closeMatch mfe:FormacionArbolada ;
+               rdfs:label "Forest Type"@en ,
+                          "Formación Arbolada"@es .
+
+
+
+###  http://crossforest.eu/ilu/ontology/StandDevelopment
+ilu:StandDevelopment rdf:type owl:Class ;
+                     rdfs:isDefinedBy ilu: ;
+					 skos:closeMatch mfe:EstadoDeDesarrollo ;
+                     rdfs:label "Estado de Desarrollo"@es, "Stand development"@en .
+
+
+###  http://crossforest.eu/ilu/ontology/TypeOfForest
+ilu:TypeOfForest rdf:type owl:Class ;
+                 rdfs:isDefinedBy ilu: ;
+				 skos:closeMatch mfe:TipoDeBosque ;
+                 rdfs:label "Tipo de Bosque"@es .
+
+###  http://crossforest.eu/ilu/ontology/VegetationStructure
+ilu:VegetationStructure rdf:type owl:Class ;
+                        rdfs:isDefinedBy ilu: ;
+				        skos:closeMatch mfe:TipoEstructural ;
+                        rdfs:label "Tipo Estructural"@es, "Vegetation structure"@en .
+
+
+###  http://crossforest.eu/ilu/ontology/PatchShape
+ilu:PatchShape rdf:type owl:Class ;
+               rdfs:isDefinedBy ilu: ;
+               skos:closeMatch mfe:FormaDeMasa ;
+               rdfs:label "Forma de la tesela"@es ,
+                          "Shape of the patch"@en .
+
+
 
 ilu:Patch a owl:Class , rdfs:Class ;
   rdfs:subClassOf spo:SpatialEntity ;
