@@ -223,7 +223,7 @@ mfe:hasSetOfSpecies rdf:type owl:ObjectProperty ;
 ###  http://crossforest.eu/mfe/ontology/hasSpatialDistribution
 mfe:hasSpatialDistribution rdf:type owl:ObjectProperty ;
                            rdfs:domain mfe:Patch ;
-                           rdfs:range mfe:SpatialDistribution ;
+                           rdfs:range mfe:DistribucionEspacial ;
                            rdfs:comment ""@en ,
                                         ""@es ;
                            rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
@@ -535,10 +535,10 @@ mfe:SetOfSpecies rdf:type owl:Class ;
                             "Set of Species"@en .
 
 
-###  http://crossforest.eu/mfe/ontology/SpatialDistribution
-mfe:SpatialDistribution rdf:type owl:Class ;
+###  http://crossforest.eu/mfe/ontology/DistribucionEspacial
+mfe:DistribucionEspacial rdf:type owl:Class ;
                           rdfs:subClassOf skos:ConceptScheme ;
-                        rdfs:comment "Indica las distintas formas en las que puede aparecer agrupada la vegetación arbórea. Está más referido a la distribución espacial visual de la mancha vegetal que a su composición específica o la relación entre especies."@es ;
+                        rdfs:comment "Indica las distintas formas en las que puede aparecer agrupada la vegetación arbórea. Está más referido a la distribución espacial visual de la mancha vegetal que a su composición específica o la relación entre especies."@es, "Corresponde con el campo DISTRIB"@es ;
                         rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
                         rdfs:label "Distribución"@es .
 

@@ -87,6 +87,13 @@ ilu:VegetationStructure rdf:type owl:Class ;
                         rdfs:label "Tipo Estructural"@es, "Vegetation structure"@en .
 
 
+###  http://crossforest.eu/ilu/ontology/SpatialDistribution
+ilu:SpatialDistribution rdf:type owl:Class ;
+                        rdfs:isDefinedBy ilu: ;
+				        skos:closeMatch mfe:DistribucionEspacial;
+                        rdfs:label "Distribución"@es .
+
+
 ###  http://crossforest.eu/ilu/ontology/PatchShape
 ilu:PatchShape rdf:type owl:Class ;
                rdfs:isDefinedBy ilu: ;
