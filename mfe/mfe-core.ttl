@@ -45,6 +45,7 @@
                                                     "Ontología para publicar datos del Mapa Forestal Nacional de España" ;
                                        rdfs:label "Ontología del MFE de España"@es ,
                                                   "Spanish MFE Ontology"@en ;
+									   rdfs:seeAlso <https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/informacion-disponible/mfe50_descargas_ccaa.aspx>;
                                        owl:versionInfo 0.1 .
 
 #################################################################
@@ -290,6 +291,12 @@ mfe:hasVegetationStructure rdf:type owl:ObjectProperty ;
 ###  http://crossforest.eu/measures/ontology/hasMeasureinPercentage
 smo:hasMeasureinPercentage rdf:type owl:DatatypeProperty .
 
+###  http://crossforest.eu/mfe/ontology/hasPolygonValue
+mfe:hasPolygonValue rdf:type owl:DatatypeProperty ;
+                    rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
+                    rdfs:label "tiene valor de campo poligon"@es .
+
+
 
 ###  http://crossforest.eu/mfe/ontology/hasCanopyCoverBushesPercent
 mfe:hasCanopyCoverBushesPercent rdf:type owl:DatatypeProperty ;
@@ -436,7 +443,7 @@ mfe:FraccionDeCabidaCubiertaArborea rdf:type owl:Class ;
 ###  http://crossforest.eu/mfe/ontology/Clasificacion_MFE_IFN
 mfe:Clasificacion_MFE_IFN rdf:type owl:Class ;
                           rdfs:subClassOf skos:ConceptScheme ;
-                   rdfs:comment "Pasarela entre el Tipo Estructural y la clasificación por niveles del IFN3"@es ;
+                   rdfs:comment "Pasarela entre el Tipo Estructural y la clasificación por niveles del IFN3"@es, "Corresponde al campo CLASMFE_IF"@es ;
                    rdfs:isDefinedBy <http://crossforest.eu/mfe/ontology/> ;
                    rdfs:label "Clasificación MFE-IFN"@es .
 
