@@ -30,7 +30,8 @@
                                                     "Ontología para publicar datos del Inventario Forestal Nacional de España" ;
                                        rdfs:label "Ontología del IFN de España"@es ,
                                                   "Spanish IFN Ontology"@en ;
-									   rdfs:seeAlso <https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/documentador_bdcampo_ifn3_tcm30-282240.pdf>, <https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/documentador_bdsig_ifn3_tcm30-293905.pdf> ;
+                                       rdfs:seeAlso <https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/documentador_bdcampo_ifn3_tcm30-282240.pdf> ,
+                                                    <https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/documentador_bdsig_ifn3_tcm30-293905.pdf> ;
                                        owl:versionInfo 0.1 .
 
 #################################################################
@@ -117,6 +118,10 @@ ifn:vulgarName rdf:type owl:AnnotationProperty ;
                rdfs:domain ifn:Plant .
 
 
+###  http://crossforest.eu/measures/ontology/hasValue
+smo:hasValue rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/elements/1.1/contributor
 dc:contributor rdf:type owl:AnnotationProperty .
 
@@ -149,25 +154,8 @@ vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
+###  http://crossforest.eu/ifn/ontology/codigo
 ifn:codigo rdf:type owl:ObjectProperty .
-ifn:hasAverageHeight rdf:type owl:ObjectProperty .
-ifn:hasAverageHeightInDecimeters rdf:type owl:ObjectProperty .
-ifn:hasChangeOfSpecies rdf:type owl:ObjectProperty .
-ifn:hasDensity rdf:type owl:ObjectProperty .
-ifn:hasDominantSpecies rdf:type owl:ObjectProperty .
-ifn:hasFlightPass rdf:type owl:ObjectProperty .
-ifn:hasNewSpecies rdf:type owl:ObjectProperty .
-ifn:hasNumberOfPlotsInUnities rdf:type owl:ObjectProperty .
-ifn:hasOccupationOrder rdf:type owl:ObjectProperty .
-ifn:hasOriginalSpecies rdf:type owl:ObjectProperty .
-ifn:hasPhotograph rdf:type owl:ObjectProperty .
-ifn:hasPlotShape rdf:type owl:ObjectProperty .
-ifn:hasSizeCategory rdf:type owl:ObjectProperty .
-ifn:hasSystem rdf:type owl:ObjectProperty .
-ifn:inPatch rdf:type owl:ObjectProperty .
-ifn:numberOfPlots rdf:type owl:ObjectProperty .
-ifn:takenInFlight rdf:type owl:ObjectProperty .
-ifn:takenInPass rdf:type owl:ObjectProperty .
 
 
 ###  http://crossforest.eu/ifn/ontology/containsSpecies
@@ -179,9 +167,9 @@ ifn:containsSpecies rdf:type owl:ObjectProperty ;
 
 ###  http://crossforest.eu/ifn/ontology/containsSpeciesDetail
 ifn:containsSpeciesDetail rdf:type owl:ObjectProperty ;
-                             rdfs:subPropertyOf ifn:containsSpecies ;
-                             rdfs:range ifn:InfoSpeciesDetalle ;
-                             rdfs:label "contiene información detallada sobre especies"@es .
+                          rdfs:subPropertyOf ifn:containsSpecies ;
+                          rdfs:range ifn:InfoSpeciesDetalle ;
+                          rdfs:label "contiene información detallada sobre especies"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/containsSpeciesPcEspParc
@@ -234,6 +222,14 @@ ifn:hasAgeInYears rdf:type owl:ObjectProperty ;
                              "edad en años"@es .
 
 
+###  http://crossforest.eu/ifn/ontology/hasAverageHeight
+ifn:hasAverageHeight rdf:type owl:ObjectProperty .
+
+
+###  http://crossforest.eu/ifn/ontology/hasAverageHeightInDecimeters
+ifn:hasAverageHeightInDecimeters rdf:type owl:ObjectProperty .
+
+
 ###  http://crossforest.eu/ifn/ontology/hasBasalArea
 ifn:hasBasalArea rdf:type owl:ObjectProperty ;
                  rdfs:range ifn:BasalArea ;
@@ -253,6 +249,10 @@ ifn:hasBasalAreaInM2byHA rdf:type owl:ObjectProperty ;
                          rdfs:range ifn:BasalArea ;
                          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
                          rdfs:label "has basal area"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/hasChangeOfSpecies
+ifn:hasChangeOfSpecies rdf:type owl:ObjectProperty .
 
 
 ###  http://crossforest.eu/ifn/ontology/hasDBH1
@@ -281,6 +281,10 @@ ifn:hasDBH2 rdf:type owl:ObjectProperty ;
                        "tiene dn2"@es .
 
 
+###  http://crossforest.eu/ifn/ontology/hasDensity
+ifn:hasDensity rdf:type owl:ObjectProperty .
+
+
 ###  http://crossforest.eu/ifn/ontology/hasDiameterAtBreastHeight
 ifn:hasDiameterAtBreastHeight rdf:type owl:ObjectProperty ;
                               rdfs:subPropertyOf smo:hasMeasure ;
@@ -298,6 +302,14 @@ ifn:hasDiameterAtBreastHeight rdf:type owl:ObjectProperty ;
 ifn:hasDiametricClass rdf:type owl:ObjectProperty ;
                       rdfs:range ifn:ClaseDiametrica ;
                       rdfs:label "tiene clase diamétrica" .
+
+
+###  http://crossforest.eu/ifn/ontology/hasDominantSpecies
+ifn:hasDominantSpecies rdf:type owl:ObjectProperty .
+
+
+###  http://crossforest.eu/ifn/ontology/hasFlightPass
+ifn:hasFlightPass rdf:type owl:ObjectProperty .
 
 
 ###  http://crossforest.eu/ifn/ontology/hasForestArea
@@ -325,6 +337,14 @@ ifn:hasHeight rdf:type owl:ObjectProperty ;
               rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
               rdfs:label "has height"@en ,
                          "tiene altura"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasNewSpecies
+ifn:hasNewSpecies rdf:type owl:ObjectProperty .
+
+
+###  http://crossforest.eu/ifn/ontology/hasNumberOfPlotsInUnities
+ifn:hasNumberOfPlotsInUnities rdf:type owl:ObjectProperty .
 
 
 ###  http://crossforest.eu/ifn/ontology/hasNumberOfTrees
@@ -359,6 +379,10 @@ ifn:hasOccupationOfSpecies rdf:type owl:ObjectProperty ;
                            rdfs:label ""@es .
 
 
+###  http://crossforest.eu/ifn/ontology/hasOccupationOrder
+ifn:hasOccupationOrder rdf:type owl:ObjectProperty .
+
+
 ###  http://crossforest.eu/ifn/ontology/hasOrigin
 ifn:hasOrigin rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf smo:hasMeasure ;
@@ -367,6 +391,18 @@ ifn:hasOrigin rdf:type owl:ObjectProperty ;
               rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
               rdfs:label "has origin"@es ,
                          "tiene origen"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasOriginalSpecies
+ifn:hasOriginalSpecies rdf:type owl:ObjectProperty .
+
+
+###  http://crossforest.eu/ifn/ontology/hasPhotograph
+ifn:hasPhotograph rdf:type owl:ObjectProperty .
+
+
+###  http://crossforest.eu/ifn/ontology/hasPlotShape
+ifn:hasPlotShape rdf:type owl:ObjectProperty .
 
 
 ###  http://crossforest.eu/ifn/ontology/hasScientificName
@@ -382,6 +418,10 @@ ifn:hasScientificSynonym rdf:type owl:ObjectProperty ;
                          rdfs:range ifn:Synonym ;
                          rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
                          rdfs:label "scientific synonym"@en .
+
+
+###  http://crossforest.eu/ifn/ontology/hasSizeCategory
+ifn:hasSizeCategory rdf:type owl:ObjectProperty .
 
 
 ###  http://crossforest.eu/ifn/ontology/hasSpecies
@@ -400,12 +440,8 @@ ifn:hasStandDevelopment rdf:type owl:ObjectProperty ;
                         rdfs:label ""@es .
 
 
-###  http://crossforest.eu/ifn/ontology/hasTarifaTipoAplic
-ifn:hasTarifaTipoAplic rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf owl:topObjectProperty ;
-                   rdfs:domain ifn:InfoTarifa ;
-                   rdfs:range ifn:TarifaAplic ;
-                   rdfs:label "tiene tipo de aplicación de tarifa"@es .
+###  http://crossforest.eu/ifn/ontology/hasSystem
+ifn:hasSystem rdf:type owl:ObjectProperty .
 
 
 ###  http://crossforest.eu/ifn/ontology/hasTarifaClase
@@ -430,6 +466,14 @@ ifn:hasTarifaParametroDeExistencia rdf:type owl:ObjectProperty ;
                                    rdfs:domain ifn:InfoTarifa ;
                                    rdfs:range ifn:ParametroDeExistencia ;
                                    rdfs:label "tiene parámetro selvícola de tarifa"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/hasTarifaTipoAplic
+ifn:hasTarifaTipoAplic rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:domain ifn:InfoTarifa ;
+                       rdfs:range ifn:TarifaAplic ;
+                       rdfs:label "tiene tipo de aplicación de tarifa"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/hasTotalHeight
@@ -540,6 +584,10 @@ ifn:hasVolumeWithoutBarkInM3byHA rdf:type owl:ObjectProperty ;
                                             "tiene volumen con corteza en metros cúbicos por hectárea"@es .
 
 
+###  http://crossforest.eu/ifn/ontology/inPatch
+ifn:inPatch rdf:type owl:ObjectProperty .
+
+
 ###  http://crossforest.eu/ifn/ontology/isInPlot
 ifn:isInPlot rdf:type owl:ObjectProperty ;
              rdfs:domain ifn:Tree ;
@@ -562,6 +610,10 @@ ifn:isInProvince rdf:type owl:ObjectProperty ;
                             "in province"@en .
 
 
+###  http://crossforest.eu/ifn/ontology/numberOfPlots
+ifn:numberOfPlots rdf:type owl:ObjectProperty .
+
+
 ###  http://crossforest.eu/ifn/ontology/sameTreeAs
 ifn:sameTreeAs rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf owl:topObjectProperty ;
@@ -569,6 +621,14 @@ ifn:sameTreeAs rdf:type owl:ObjectProperty ;
                rdfs:range ifn:Tree ;
                rdfs:comment "Identificación del mismo elemento en otro inventario forestal. En el caso de IFN3 se genera esta relación con el IFN2, siempre que no sea en alguno de estos supuestos: parcela remedida (clase A, subclase 1, 2C, 3C, 4C, 6C, si OrdenIfn2 es igual a 000), parcelas nuevas (clases N y R), en las antiguas  que no se localizan (clase A, resto de subclases no citadas antes), y en las cuatro comunidades que fueron levantadas con parcelas permanentes por primera vez en el IFN3 (07, 31, 33, 39)."@es ;
                rdfs:label "es el mismo elemento que"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/takenInFlight
+ifn:takenInFlight rdf:type owl:ObjectProperty .
+
+
+###  http://crossforest.eu/ifn/ontology/takenInPass
+ifn:takenInPass rdf:type owl:ObjectProperty .
 
 
 ###  http://crossforest.eu/measures/ontology/hasMeasure
@@ -696,6 +756,16 @@ ifn:hasDBHInMillimeters rdf:type owl:DatatypeProperty ;
                                    "tiene DN en milímetros"@es .
 
 
+###  http://crossforest.eu/ifn/ontology/hasForestAreaInHC
+ifn:hasForestAreaInHC rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf smo:hasMeasureInHectares ;
+                      rdfs:domain spo:Position ;
+                      rdfs:comment ""@en ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                      rdfs:label ""@es ,
+                                 "has forest area in hectares"@en .
+
+
 ###  http://crossforest.eu/ifn/ontology/hasHeightInMeters
 ifn:hasHeightInMeters rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf smo:hasMeasureInMeters ;
@@ -762,16 +832,6 @@ smo:hasMeasureInSquareMeters rdf:type owl:DatatypeProperty .
 
 ###  http://crossforest.eu/measures/ontology/hasMeasureinPercentage
 smo:hasMeasureinPercentage rdf:type owl:DatatypeProperty .
-
-
-###  http://crossforest.eu/ifn/ontology/hasForestAreaInHC
-ifn:hasForestAreaInHC rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf smo:hasMeasureInHectares ;
-                      rdfs:domain spo:Position ;
-                      rdfs:comment ""@en ;
-                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
-                      rdfs:label ""@es ,
-                                 "has forest area in hectares"@en .
 
 
 ###  http://crossforest.eu/position/ontology/hasForestAreaInSquareMeters
@@ -1079,107 +1139,107 @@ ifn:ClaseDiametrica rdf:type owl:Class ;
 
 
 ###  http://crossforest.eu/ifn/ontology/ClaseDiametrica10
-ifn:ClaseDiametrica10 rdf:type owl:Class , rdfs:Class;
-                      rdfs:label "Clase Diamétrica 10"@es ;
-                      rdfs:isDefinedBy ifn: ;
-					  smo:hasValue  "10"^^xsd:decimal ;
-                      rdfs:subClassOf ifn:ClaseDiametrica .
+ifn:ClaseDiametrica10 rdf:type owl:Class ;
+                      rdfs:subClassOf ifn:ClaseDiametrica ;
+                      smo:hasValue 10 ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                      rdfs:label "Clase Diamétrica 10"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/ClaseDiametrica15
-ifn:ClaseDiametrica15 rdf:type owl:Class , rdfs:Class;
-                      rdfs:label "Clase Diamétrica 15"@es ;
-                      rdfs:isDefinedBy ifn: ;
-					  smo:hasValue  "15"^^xsd:decimal ;
-                      rdfs:subClassOf ifn:ClaseDiametrica .
+ifn:ClaseDiametrica15 rdf:type owl:Class ;
+                      rdfs:subClassOf ifn:ClaseDiametrica ;
+                      smo:hasValue 15 ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                      rdfs:label "Clase Diamétrica 15"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/ClaseDiametrica20
-ifn:ClaseDiametrica20 rdf:type owl:Class , rdfs:Class;
-                      rdfs:label "Clase Diamétrica 20"@es ;
-                      rdfs:isDefinedBy ifn: ;
-					  smo:hasValue  "20"^^xsd:decimal ;
-                      rdfs:subClassOf ifn:ClaseDiametrica .
+ifn:ClaseDiametrica20 rdf:type owl:Class ;
+                      rdfs:subClassOf ifn:ClaseDiametrica ;
+                      smo:hasValue 20 ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                      rdfs:label "Clase Diamétrica 20"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/ClaseDiametrica25
-ifn:ClaseDiametrica25 rdf:type owl:Class , rdfs:Class;
-                      rdfs:label "Clase Diamétrica 25"@es ;
-                      rdfs:isDefinedBy ifn: ;
-					  smo:hasValue  "25"^^xsd:decimal ;
-                      rdfs:subClassOf ifn:ClaseDiametrica .
+ifn:ClaseDiametrica25 rdf:type owl:Class ;
+                      rdfs:subClassOf ifn:ClaseDiametrica ;
+                      smo:hasValue 25 ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                      rdfs:label "Clase Diamétrica 25"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/ClaseDiametrica30
-ifn:ClaseDiametrica30 rdf:type owl:Class , rdfs:Class;
-                      rdfs:label "Clase Diamétrica 30"@es ;
-                      rdfs:isDefinedBy ifn: ;
-					  smo:hasValue  "30"^^xsd:decimal ;
-                      rdfs:subClassOf ifn:ClaseDiametrica .
+ifn:ClaseDiametrica30 rdf:type owl:Class ;
+                      rdfs:subClassOf ifn:ClaseDiametrica ;
+                      smo:hasValue 30 ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                      rdfs:label "Clase Diamétrica 30"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/ClaseDiametrica35
-ifn:ClaseDiametrica35 rdf:type owl:Class , rdfs:Class;
-                      rdfs:label "Clase Diamétrica 35"@es ;
-                      rdfs:isDefinedBy ifn: ;
-					  smo:hasValue  "35"^^xsd:decimal ;
-                      rdfs:subClassOf ifn:ClaseDiametrica .
+ifn:ClaseDiametrica35 rdf:type owl:Class ;
+                      rdfs:subClassOf ifn:ClaseDiametrica ;
+                      smo:hasValue 35 ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                      rdfs:label "Clase Diamétrica 35"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/ClaseDiametrica40
-ifn:ClaseDiametrica40 rdf:type owl:Class , rdfs:Class;
-                      rdfs:label "Clase Diamétrica 40"@es ;
-                      rdfs:isDefinedBy ifn: ;
-					  smo:hasValue  "40"^^xsd:decimal ;
-                      rdfs:subClassOf ifn:ClaseDiametrica .
+ifn:ClaseDiametrica40 rdf:type owl:Class ;
+                      rdfs:subClassOf ifn:ClaseDiametrica ;
+                      smo:hasValue 40 ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                      rdfs:label "Clase Diamétrica 40"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/ClaseDiametrica45
-ifn:ClaseDiametrica45 rdf:type owl:Class , rdfs:Class;
-                      rdfs:label "Clase Diamétrica 45"@es ;
-                      rdfs:isDefinedBy ifn: ;
-					  smo:hasValue  "45"^^xsd:decimal ;
-                      rdfs:subClassOf ifn:ClaseDiametrica .
+ifn:ClaseDiametrica45 rdf:type owl:Class ;
+                      rdfs:subClassOf ifn:ClaseDiametrica ;
+                      smo:hasValue 45 ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                      rdfs:label "Clase Diamétrica 45"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/ClaseDiametrica50
-ifn:ClaseDiametrica50 rdf:type owl:Class , rdfs:Class;
-                      rdfs:label "Clase Diamétrica 50"@es ;
-                      rdfs:isDefinedBy ifn: ;
-					  smo:hasValue  "50"^^xsd:decimal ;
-                      rdfs:subClassOf ifn:ClaseDiametrica .
+ifn:ClaseDiametrica50 rdf:type owl:Class ;
+                      rdfs:subClassOf ifn:ClaseDiametrica ;
+                      smo:hasValue 50 ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                      rdfs:label "Clase Diamétrica 50"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/ClaseDiametrica55
-ifn:ClaseDiametrica55 rdf:type owl:Class , rdfs:Class;
-                      rdfs:label "Clase Diamétrica 55"@es ;
-                      rdfs:isDefinedBy ifn: ;
-					  smo:hasValue  "55"^^xsd:decimal ;
-                      rdfs:subClassOf ifn:ClaseDiametrica .
+ifn:ClaseDiametrica55 rdf:type owl:Class ;
+                      rdfs:subClassOf ifn:ClaseDiametrica ;
+                      smo:hasValue 55 ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                      rdfs:label "Clase Diamétrica 55"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/ClaseDiametrica60
-ifn:ClaseDiametrica60 rdf:type owl:Class , rdfs:Class;
-                      rdfs:label "Clase Diamétrica 60"@es ;
-                      rdfs:isDefinedBy ifn: ;
-					  smo:hasValue  "60"^^xsd:decimal ;
-                      rdfs:subClassOf ifn:ClaseDiametrica .
+ifn:ClaseDiametrica60 rdf:type owl:Class ;
+                      rdfs:subClassOf ifn:ClaseDiametrica ;
+                      smo:hasValue 60 ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                      rdfs:label "Clase Diamétrica 60"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/ClaseDiametrica65
-ifn:ClaseDiametrica65 rdf:type owl:Class , rdfs:Class;
-                      rdfs:label "Clase Diamétrica 65"@es ;
-                      rdfs:isDefinedBy ifn: ;
-					  smo:hasValue  "65"^^xsd:decimal ;
-                      rdfs:subClassOf ifn:ClaseDiametrica .
+ifn:ClaseDiametrica65 rdf:type owl:Class ;
+                      rdfs:subClassOf ifn:ClaseDiametrica ;
+                      smo:hasValue 65 ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                      rdfs:label "Clase Diamétrica 65"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/ClaseDiametrica70
-ifn:ClaseDiametrica70 rdf:type owl:Class , rdfs:Class;
-                      rdfs:label "Clase Diamétrica 70"@es ;
-                      rdfs:isDefinedBy ifn: ;
-					  smo:hasValue  "70"^^xsd:decimal ;
-                      rdfs:subClassOf ifn:ClaseDiametrica .
+ifn:ClaseDiametrica70 rdf:type owl:Class ;
+                      rdfs:subClassOf ifn:ClaseDiametrica ;
+                      smo:hasValue 70 ;
+                      rdfs:isDefinedBy <http://crossforest.eu/ifn/ontology/> ;
+                      rdfs:label "Clase Diamétrica 70"@es .
 
 
 ###  http://crossforest.eu/ifn/ontology/Class
@@ -2867,6 +2927,155 @@ ifn:ParametroDeExistenciaVSC rdf:type owl:Class ;
                              rdfs:label "Parámetro de existencia 'Volumen sin corteza'"@es .
 
 
+###  http://crossforest.eu/ifn/ontology/ParametroEspecial-PinusPinaster
+ifn:ParametroEspecial-PinusPinaster rdf:type owl:Class ;
+                                    rdfs:subClassOf ifn:ParametrosEspeciales ;
+                                    rdfs:comment """La primera casilla se cumplimentará con la siguiente codificación:
+  * Resinado actualmente por el método Hughes: 21
+  * Resinado actualmente por el método de pica de corteza: 22
+  * Resinado actualmente por otros métodos: 23
+  * Resinado actualmente por más de un método: 24
+  * Resinación por el método Hughes abandonada: 25
+  * Resinación por el método pica de corteza abandonada: 26
+  * Resinación por otros métodos abandonada: 27
+  * Resinación por más de un método abandonada: 28
+
+Las dos casillas siguientes son para el número de años, equivalente al de entalladuras, en que se ha resinado el árbol, sabiendo que la longitud de una entalladura con el método Hughes es de 70 cm, aproximadamente, con el de pica de corteza de 50, y que una cara tiene como máximo cinco entalladuras."""@es ;
+                                    rdfs:label "Parámetro especial: 2. Pinos resinados (Pinus pinaster)"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/ParametroEspecial-PinusPinaster-21
+ifn:ParametroEspecial-PinusPinaster-21 rdf:type owl:Class ;
+                                       rdfs:subClassOf ifn:ParametroEspecial-PinusPinaster ;
+                                       rdfs:label "Parámetro especial: 2. Pinos resinados (Pinus pinaster). 21 Resinado actualmente por el método Hughes."@es .
+
+
+###  http://crossforest.eu/ifn/ontology/ParametroEspecial-PinusPinaster-22
+ifn:ParametroEspecial-PinusPinaster-22 rdf:type owl:Class ;
+                                       rdfs:subClassOf ifn:ParametroEspecial-PinusPinaster ;
+                                       rdfs:label "Parámetro especial: 2. Pinos resinados (Pinus pinaster). 22 Resinado actualmente por el método de pica de corteza."@es .
+
+
+###  http://crossforest.eu/ifn/ontology/ParametroEspecial-PinusPinaster-23
+ifn:ParametroEspecial-PinusPinaster-23 rdf:type owl:Class ;
+                                       rdfs:subClassOf ifn:ParametroEspecial-PinusPinaster ;
+                                       rdfs:label "Parámetro especial: 2. Pinos resinados (Pinus pinaster). 23 Resinado actualmente por otros métodos."@es .
+
+
+###  http://crossforest.eu/ifn/ontology/ParametroEspecial-PinusPinaster-24
+ifn:ParametroEspecial-PinusPinaster-24 rdf:type owl:Class ;
+                                       rdfs:subClassOf ifn:ParametroEspecial-PinusPinaster ;
+                                       rdfs:label "Parámetro especial: 2. Pinos resinados (Pinus pinaster). 24 Resinado actualmente por más de un método."@es .
+
+
+###  http://crossforest.eu/ifn/ontology/ParametroEspecial-PinusPinaster-25
+ifn:ParametroEspecial-PinusPinaster-25 rdf:type owl:Class ;
+                                       rdfs:subClassOf ifn:ParametroEspecial-PinusPinaster ;
+                                       rdfs:label "Parámetro especial: 2. Pinos resinados (Pinus pinaster). 25 Resinación por el método Hughes abandonada."@es .
+
+
+###  http://crossforest.eu/ifn/ontology/ParametroEspecial-PinusPinaster-26
+ifn:ParametroEspecial-PinusPinaster-26 rdf:type owl:Class ;
+                                       rdfs:subClassOf ifn:ParametroEspecial-PinusPinaster ;
+                                       rdfs:label "Parámetro especial: 2. Pinos resinados (Pinus pinaster). 26 Resinación por el método pica de corteza abandonada."@es .
+
+
+###  http://crossforest.eu/ifn/ontology/ParametroEspecial-PinusPinaster-27
+ifn:ParametroEspecial-PinusPinaster-27 rdf:type owl:Class ;
+                                       rdfs:subClassOf ifn:ParametroEspecial-PinusPinaster ;
+                                       rdfs:label "Parámetro especial: 2. Pinos resinados (Pinus pinaster). 27 Resinación por otros métodos abandonada."@es .
+
+
+###  http://crossforest.eu/ifn/ontology/ParametroEspecial-PinusPinaster-28
+ifn:ParametroEspecial-PinusPinaster-28 rdf:type owl:Class ;
+                                       rdfs:subClassOf ifn:ParametroEspecial-PinusPinaster ;
+                                       rdfs:label "Parámetro especial: 2. Pinos resinados (Pinus pinaster). 28 Resinación por más de un método abandonada."@es .
+
+
+###  http://crossforest.eu/ifn/ontology/ParametroEspecial-QuercusSuber
+ifn:ParametroEspecial-QuercusSuber rdf:type owl:Class ;
+                                   rdfs:subClassOf ifn:ParametrosEspeciales ;
+                                   rdfs:comment """La primera casilla se rellenará según la siguiente codificación:
+  * Con corcho bornizo en todo el árbol: 10
+  * Se descorcha actualmente solo en el tronco: 11
+  * Se descorcha actualmente en troncos y ramas: 12
+  * Descorchado anteriormente, pero no ahora: 13
+
+Las siguientes casillas se rellenarán con la longitud de descorche en decímetros, sumando la del tronco y la de las ramas. Si la suma es de 9,9 m se escribirá 99.
+En el caso de no existir aún descorche, es decir, que todavía está el bornizo, se rellenarán las casillas con ceros. Si la superficie capaz de ser descorchada lo esta sólo en parte se aplicará a la longitud estimada un coeficiente de reducción proporcional.
+En los alcornoques descorchados antes, pero no ahora en los que sea imposible apreciar la superficie de descorche, se rellenarán las casillas con ceros."""@es ;
+                                   rdfs:label "Parámetro especial: 1. Alcornoques (Quercus suber)"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/ParametroEspecial-QuercusSuber-10
+ifn:ParametroEspecial-QuercusSuber-10 rdf:type owl:Class ;
+                                      rdfs:subClassOf ifn:ParametroEspecial-QuercusSuber ;
+                                      rdfs:label "Parámetro especial: 1. Alcornoques (Quercus suber). 10 Con corcho bornizo en todo el árbol."@es .
+
+
+###  http://crossforest.eu/ifn/ontology/ParametroEspecial-QuercusSuber-11
+ifn:ParametroEspecial-QuercusSuber-11 rdf:type owl:Class ;
+                                      rdfs:subClassOf ifn:ParametroEspecial-QuercusSuber ;
+                                      rdfs:label "Parámetro especial: 1. Alcornoques (Quercus suber). 11 Se descorcha actualmente solo en el tronco."@es .
+
+
+###  http://crossforest.eu/ifn/ontology/ParametroEspecial-QuercusSuber-12
+ifn:ParametroEspecial-QuercusSuber-12 rdf:type owl:Class ;
+                                      rdfs:subClassOf ifn:ParametroEspecial-QuercusSuber ;
+                                      rdfs:label "Parámetro especial: 1. Alcornoques (Quercus suber). 12 Se descorcha actualmente en troncos y ramas."@es .
+
+
+###  http://crossforest.eu/ifn/ontology/ParametroEspecial-QuercusSuber-13
+ifn:ParametroEspecial-QuercusSuber-13 rdf:type owl:Class ;
+                                      rdfs:subClassOf ifn:ParametroEspecial-QuercusSuber ;
+                                      rdfs:label "Parámetro especial: 1. Alcornoques (Quercus suber). 13 Descorchado anteriormente, pero no ahora."@es .
+
+
+###  http://crossforest.eu/ifn/ontology/ParametroEspecial-RestoDeArboles
+ifn:ParametroEspecial-RestoDeArboles rdf:type owl:Class ;
+                                     rdfs:subClassOf ifn:ParametrosEspeciales ;
+                                     rdfs:comment """La casilla más a la izquierda se rellenará con un 4 y el resto de casillas según la siguiente codificación:
+  * Pies bifurcados por encima de 1,30 (sin rebasar los 6 m): 1
+  * Pies bifurcados por debajo de 1,30: 2
+  * Pies bifurcados por encima y por debajo de 1,30: 5
+  * Árboles que brotan de cepa: 9
+Cuando el mismo árbol brota de cepa y está bifurcado se anota un 4 en la casilla más a la izquierda y en las siguientes casillas se escriben los códigos de los parámetros correspondientes.
+En árboles que brotan de cepa el diámetro normal se medirá a 1,30 m de altura sobre la cepa en vez de sobre el suelo.
+Los árboles con forma 4, 5 o 6 no se consideran nunca como bifurcados por encima de 1,30 m.
+En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo pie."""@es ;
+                                     rdfs:label "Parámetro especial: 4. Resto de árboles con parámetros especiales."@es .
+
+
+###  http://crossforest.eu/ifn/ontology/ParametroEspecial-RestoDeArboles-1
+ifn:ParametroEspecial-RestoDeArboles-1 rdf:type owl:Class ;
+                                       rdfs:subClassOf ifn:ParametroEspecial-RestoDeArboles ;
+                                       rdfs:label "Parámetro especial: 4. Resto de árboles con parámetros especiales. 1 Pies bifurcados por encima de 1,30."@es .
+
+
+###  http://crossforest.eu/ifn/ontology/ParametroEspecial-RestoDeArboles-2
+ifn:ParametroEspecial-RestoDeArboles-2 rdf:type owl:Class ;
+                                       rdfs:subClassOf ifn:ParametroEspecial-RestoDeArboles ;
+                                       rdfs:label "Parámetro especial: 4. Resto de árboles con parámetros especiales. 2 Pies bifurcados por debajo de 1,30."@es .
+
+
+###  http://crossforest.eu/ifn/ontology/ParametroEspecial-RestoDeArboles-5
+ifn:ParametroEspecial-RestoDeArboles-5 rdf:type owl:Class ;
+                                       rdfs:subClassOf ifn:ParametroEspecial-RestoDeArboles ;
+                                       rdfs:label "Parámetro especial: 4. Resto de árboles con parámetros especiales. 5 Pies bifurcados por encima y por debajo de 1,30."@es .
+
+
+###  http://crossforest.eu/ifn/ontology/ParametroEspecial-RestoDeArboles-9
+ifn:ParametroEspecial-RestoDeArboles-9 rdf:type owl:Class ;
+                                       rdfs:subClassOf ifn:ParametroEspecial-RestoDeArboles ;
+                                       rdfs:label "Parámetro especial: 4. Resto de árboles con parámetros especiales. 9 Árboles que brotan de cepa."@es .
+
+
+###  http://crossforest.eu/ifn/ontology/ParametroEspecial-TroncoInclinado
+ifn:ParametroEspecial-TroncoInclinado rdf:type owl:Class ;
+                                      rdfs:subClassOf ifn:ParametrosEspeciales ;
+                                      rdfs:label "Parámetro especial: 3. Troncos inclinados."@es .
+
+
 ###  http://crossforest.eu/ifn/ontology/ParametrosEspeciales
 ifn:ParametrosEspeciales rdf:type owl:Class ;
                          rdfs:subClassOf skos:ConceptScheme ;
@@ -3373,6 +3582,97 @@ ifn:SistGeog rdf:type owl:Class ;
              <http://purl.org/dc/terms/source> "Anexo 20 (Documentador ifn)" ;
              rdfs:comment "Únicamente aplicable para Pinus pinaster y Quercus suber, en el resto de casos su valor será nulo."@es ;
              rdfs:label "Sistgeog"@es .
+
+
+###  http://crossforest.eu/ifn/ontology/SistGeog-PinusPinaster
+ifn:SistGeog-PinusPinaster rdf:type owl:Class ;
+rdfs:label "Sist Geog Pinus pinaster"@es;
+                           rdfs:subClassOf ifn:SistGeog ;
+                           owl:disjointWith ifn:SistGeog-QuercusSuber .
+
+
+###  http://crossforest.eu/ifn/ontology/SistGeog-PinusPinaster-0
+ifn:SistGeog-PinusPinaster-0 rdf:type owl:Class ;
+rdfs:label "Sist Geog 0 Pinus pinaster sin resinar"@es;
+                             rdfs:subClassOf ifn:SistGeog-PinusPinaster .
+
+
+###  http://crossforest.eu/ifn/ontology/SistGeog-PinusPinaster-1
+ifn:SistGeog-PinusPinaster-1 rdf:type owl:Class ;
+rdfs:label "Sist Geog 1 Pinus pinaster resinado actualmente por el método Hughes"@es;
+                             rdfs:subClassOf ifn:SistGeog-PinusPinaster .
+
+
+###  http://crossforest.eu/ifn/ontology/SistGeog-PinusPinaster-2
+ifn:SistGeog-PinusPinaster-2 rdf:type owl:Class ;
+rdfs:label "Sist Geog 2 Pinus pinaster resinado actualmente por el método pica corteza"@es;
+                             rdfs:subClassOf ifn:SistGeog-PinusPinaster .
+
+
+###  http://crossforest.eu/ifn/ontology/SistGeog-PinusPinaster-3
+ifn:SistGeog-PinusPinaster-3 rdf:type owl:Class ;
+rdfs:label "Sist Geog 3 Pinus pinaster actualmente resinado por otros métodos"@es;
+                             rdfs:subClassOf ifn:SistGeog-PinusPinaster .
+
+
+###  http://crossforest.eu/ifn/ontology/SistGeog-PinusPinaster-4
+ifn:SistGeog-PinusPinaster-4 rdf:type owl:Class ;
+rdfs:label "Sist Geog 4 Pinus pinaster resinado actualmente por más de un método"@es;
+                             rdfs:subClassOf ifn:SistGeog-PinusPinaster .
+
+
+###  http://crossforest.eu/ifn/ontology/SistGeog-PinusPinaster-5
+ifn:SistGeog-PinusPinaster-5 rdf:type owl:Class ;
+rdfs:label "Sist Geog 5 Pinus pinaster resinado por el método Hughes abandonada "@es;
+                             rdfs:subClassOf ifn:SistGeog-PinusPinaster .
+
+
+###  http://crossforest.eu/ifn/ontology/SistGeog-PinusPinaster-6
+ifn:SistGeog-PinusPinaster-6 rdf:type owl:Class ;
+rdfs:label "Sist Geog 6 Pinus pinaster resinado por el método pica de corteza abandonada"@es;
+                             rdfs:subClassOf ifn:SistGeog-PinusPinaster .
+
+
+###  http://crossforest.eu/ifn/ontology/SistGeog-PinusPinaster-7
+ifn:SistGeog-PinusPinaster-7 rdf:type owl:Class ;
+rdfs:label "Sist Geog 7 Pinus pinaster actualmente resinado por otros métodos abandonada"@es;
+                             rdfs:subClassOf ifn:SistGeog-PinusPinaster .
+
+
+###  http://crossforest.eu/ifn/ontology/SistGeog-PinusPinaster-8
+ifn:SistGeog-PinusPinaster-8 rdf:type owl:Class ;
+rdfs:label "Sist Geog 8 Pinus pinaster resinado por más de un método abandonada"@es;
+                             rdfs:subClassOf ifn:SistGeog-PinusPinaster .
+
+
+###  http://crossforest.eu/ifn/ontology/SistGeog-QuercusSuber
+ifn:SistGeog-QuercusSuber rdf:type owl:Class ;
+rdfs:label "Sist Geog Quercus suber"@es;
+                          rdfs:subClassOf ifn:SistGeog .
+
+
+###  http://crossforest.eu/ifn/ontology/SistGeog-QuercusSuber-0
+ifn:SistGeog-QuercusSuber-0 rdf:type owl:Class ;
+rdfs:label "Sist Geog 0 Quercus suber con corcho bornizo en todo el árbol"@es;
+                            rdfs:subClassOf ifn:SistGeog-QuercusSuber .
+
+
+###  http://crossforest.eu/ifn/ontology/SistGeog-QuercusSuber-1
+ifn:SistGeog-QuercusSuber-1 rdf:type owl:Class ;
+rdfs:label "Sist Geog 1 Quercus suber descorchado actualmente solo en tronco"@es;
+                            rdfs:subClassOf ifn:SistGeog-QuercusSuber .
+
+
+###  http://crossforest.eu/ifn/ontology/SistGeog-QuercusSuber-2
+ifn:SistGeog-QuercusSuber-2 rdf:type owl:Class ;
+rdfs:label "Sist Geog 2 Quercus suber descorchado actualmente"@es;
+                            rdfs:subClassOf ifn:SistGeog-QuercusSuber .
+
+
+###  http://crossforest.eu/ifn/ontology/SistGeog-QuercusSuber-3
+ifn:SistGeog-QuercusSuber-3 rdf:type owl:Class ;
+rdfs:label "Sist Geog 2 Quercus suber Descorchado anteriormente, ahora no"@es;
+                            rdfs:subClassOf ifn:SistGeog-QuercusSuber .
 
 
 ###  http://crossforest.eu/ifn/ontology/Species
@@ -11538,8 +11838,8 @@ ifn:Altitud-9999 rdfs:label "Altitude (no data in Digital Terrain Model)"@en ;
 ifn:Class1 ifn:vulgarName "Frondosas"@es ;
            ifn:acceptedNameWithoutAuthor "Angiospermae"@la ;
            ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Flowering_plant"^^xsd:anyURI ;
-           <http://schema.org/sameAs> <http://dbpedia.org/resource/Flowering_plant> ;
            ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Angiospermae"^^xsd:anyURI ;
+           <http://schema.org/sameAs> <http://dbpedia.org/resource/Flowering_plant> ;
            ifn:vulgarName "Angiosperms"@en ;
            ifn:scientificSynonymWithoutAuthor "Magnoliophyta"@la ;
            ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/"^^xsd:anyURI .
@@ -11547,10 +11847,10 @@ ifn:Class1 ifn:vulgarName "Frondosas"@es ;
 
 ifn:Class2 ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/G/"^^xsd:anyURI ;
            ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Gymnospermae"^^xsd:anyURI ;
-           ifn:scientificSynonymWithoutAuthor "Acrogymnospermae"@la ;
+           ifn:vulgarName "Gymnosperms"@en ;
            <http://schema.org/sameAs> <http://dbpedia.org/resource/Gymnosperm> ;
-           ifn:vulgarName "Gymnosperms"@en ,
-                          "Coníferas"@es ;
+           ifn:scientificSynonymWithoutAuthor "Acrogymnospermae"@la ;
+           ifn:vulgarName "Coníferas"@es ;
            ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Gymnosperm"^^xsd:anyURI ;
            ifn:acceptedNameWithoutAuthor "Gymnospermae"@la .
 
@@ -11568,16 +11868,16 @@ ifn:Family12 ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Fagaceae
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Fagaceae"^^xsd:anyURI ;
              ifn:vulgarName "Fagáceas"@es ;
              ifn:acceptedNameWithoutAuthor "Fagaceae"@la ;
-             <http://schema.org/sameAs> <http://dbpedia.org/resource/Fagaceae> ;
              ifn:vulgarName "Beech family"@en ;
+             <http://schema.org/sameAs> <http://dbpedia.org/resource/Fagaceae> ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Fagaceae/"^^xsd:anyURI .
 
 
 ifn:Family13 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Salicaceae"^^xsd:anyURI ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Salicaceae> ;
+             ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Salicaceae/"^^xsd:anyURI ;
              ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Salicaceae"^^xsd:anyURI ;
              ifn:vulgarName "Willow family"@en ;
-             ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Salicaceae/"^^xsd:anyURI ;
              ifn:acceptedNameWithoutAuthor "Salicaceae"@la ;
              ifn:vulgarName "Salicáceas"@es .
 
@@ -11593,8 +11893,8 @@ ifn:Family14 ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/L
 
 ifn:Family15 ifn:acceptedNameWithoutAuthor "Ericaceae"@la ;
              ifn:vulgarName "Heath family"@en ;
-             ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Ericaceae"^^xsd:anyURI ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Ericaceae/"^^xsd:anyURI ;
+             ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Ericaceae"^^xsd:anyURI ;
              ifn:vulgarName "Ericáceas"@es ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Ericaceae> ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Ericaceae"^^xsd:anyURI .
@@ -11603,8 +11903,8 @@ ifn:Family15 ifn:acceptedNameWithoutAuthor "Ericaceae"@la ;
 ifn:Family16 ifn:vulgarName "Myrtle family"@en ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Myrtaceae"^^xsd:anyURI ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Myrtaceae/"^^xsd:anyURI ;
-             ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Myrtaceae"^^xsd:anyURI ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Myrtaceae> ;
+             ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Myrtaceae"^^xsd:anyURI ;
              ifn:vulgarName "Mirtáceas"@es ;
              ifn:acceptedNameWithoutAuthor "Myrtaceae"@la .
 
@@ -11614,16 +11914,16 @@ ifn:Family17 ifn:vulgarName "Soapberry family"@en ,
              ifn:acceptedNameWithoutAuthor "Sapindaceae"@la ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Sapindaceae"^^xsd:anyURI ;
              ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Sapindaceae"^^xsd:anyURI ;
-             <http://schema.org/sameAs> <http://dbpedia.org/resource/Sapindaceae> ;
-             ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Sapindaceae/"^^xsd:anyURI .
+             ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Sapindaceae/"^^xsd:anyURI ;
+             <http://schema.org/sameAs> <http://dbpedia.org/resource/Sapindaceae> .
 
 
 ifn:Family18 ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Anacardiaceae"^^xsd:anyURI ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Anacardiaceae/"^^xsd:anyURI ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Anacardiaceae> ;
-             ifn:vulgarName "Anacardiáceas"@es ;
+             ifn:vulgarName "Anacardiáceas"@es ,
+                            "Sumac family"@en ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Anacardiaceae"^^xsd:anyURI ;
-             ifn:vulgarName "Sumac family"@en ;
              ifn:acceptedNameWithoutAuthor "Anacardiaceae"@la .
 
 
@@ -11638,8 +11938,8 @@ ifn:Family19 ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/B
 
 ifn:Family21 ifn:acceptedNameWithoutAuthor "Pinaceae"@la ;
              ifn:vulgarName "Pine family"@en ;
-             ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Pinaceae"^^xsd:anyURI ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/G/Pinaceae/"^^xsd:anyURI ;
+             ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Pinaceae"^^xsd:anyURI ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Pinaceae> ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Pinaceae"^^xsd:anyURI ;
              ifn:vulgarName "Pináceas"@es .
@@ -11666,28 +11966,28 @@ ifn:Family23 ifn:acceptedNameWithoutAuthor "Taxaceae"@la ;
 ifn:Family31 ifn:acceptedNameWithoutAuthor "Adoxaceae"@la ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Adoxaceae> ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Adoxaceae"^^xsd:anyURI ;
-             ifn:vulgarName "Adoxáceas"@es ;
+             ifn:vulgarName "Adoxáceas"@es ,
+                            "Moschatel family"@en ;
              ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Adoxaceae"^^xsd:anyURI ;
-             ifn:vulgarName "Moschatel family"@en ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Adoxaceae/"^^xsd:anyURI .
 
 
 ifn:Family32 ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Aquifoliaceae/"^^xsd:anyURI ;
-             ifn:vulgarName "Aquifoliáceas"@es ;
+             ifn:vulgarName "Aquifoliáceas"@es ,
+                            "Holly family"@en ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Aquifoliaceae> ;
-             ifn:vulgarName "Holly family"@en ;
              ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Aquifoliaceae"^^xsd:anyURI ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Aquifoliaceae"^^xsd:anyURI ;
              ifn:acceptedNameWithoutAuthor "Aquifoliaceae"@la .
 
 
-ifn:Family33 ifn:vulgarName "Palmeras"@es ;
-             <http://schema.org/sameAs> <http://dbpedia.org/resource/Arecaceae> ;
+ifn:Family33 <http://schema.org/sameAs> <http://dbpedia.org/resource/Arecaceae> ;
              ifn:acceptedNameWithoutAuthor "Arecaceae"@la ;
+             ifn:vulgarName "Palmeras"@es ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Arecaceae"^^xsd:anyURI ;
              ifn:vulgarName "Palm family"@en ;
-             ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Arecaceae"^^xsd:anyURI ;
-             ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Arecaceae/"^^xsd:anyURI .
+             ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Arecaceae/"^^xsd:anyURI ;
+             ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Arecaceae"^^xsd:anyURI .
 
 
 ifn:Family34 <http://schema.org/sameAs> <http://dbpedia.org/resource/Asparagaceae> ;
@@ -11695,8 +11995,8 @@ ifn:Family34 <http://schema.org/sameAs> <http://dbpedia.org/resource/Asparagacea
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Asparagaceae/"^^xsd:anyURI ;
              ifn:vulgarName "Asparagáceas"@es ;
              ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Asparagaceae"^^xsd:anyURI ;
-             ifn:vulgarName "Asparagus family"@en ;
-             ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Asparagaceae"^^xsd:anyURI .
+             ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Asparagaceae"^^xsd:anyURI ;
+             ifn:vulgarName "Asparagus family"@en .
 
 
 ifn:Family35 ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Buxaceae/"^^xsd:anyURI ;
@@ -11708,8 +12008,8 @@ ifn:Family35 ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/B
              ifn:vulgarName "Buxáceas"@es .
 
 
-ifn:Family36 ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Cannabaceae/"^^xsd:anyURI ;
-             ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Cannabaceae"^^xsd:anyURI ;
+ifn:Family36 ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Cannabaceae"^^xsd:anyURI ;
+             ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Cannabaceae/"^^xsd:anyURI ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Cannabaceae"^^xsd:anyURI ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Cannabaceae> ;
              ifn:acceptedNameWithoutAuthor "Cannabaceae"@la ;
@@ -11730,8 +12030,8 @@ ifn:Family38 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Cornaceae"^^xsd
              ifn:vulgarName "Dogwood family"@en ;
              ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Cornaceae"^^xsd:anyURI ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Cornaceae> ;
-             ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Cornaceae/"^^xsd:anyURI ;
              ifn:vulgarName "Cornáceas"@es ;
+             ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Cornaceae/"^^xsd:anyURI ;
              ifn:acceptedNameWithoutAuthor "Cornaceae"@la .
 
 
@@ -11744,8 +12044,8 @@ ifn:Family39 ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/J
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Juglandaceae> .
 
 
-ifn:Family40 ifn:vulgarName "Lauráceas"@es ;
-             ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Lauraceae/"^^xsd:anyURI ;
+ifn:Family40 ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Lauraceae/"^^xsd:anyURI ;
+             ifn:vulgarName "Lauráceas"@es ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Lauraceae"^^xsd:anyURI ;
              ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Lauraceae"^^xsd:anyURI ;
              ifn:acceptedNameWithoutAuthor "Lauraceae"@la ;
@@ -11765,10 +12065,10 @@ ifn:Family41 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Malvaceae"^^xsd
 ifn:Family42 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Moraceae"^^xsd:anyURI ;
              ifn:vulgarName "Moráceas"@es ;
              ifn:acceptedNameWithoutAuthor "Moraceae"@la ;
-             ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Moraceae"^^xsd:anyURI ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Moraceae/"^^xsd:anyURI ;
-             <http://schema.org/sameAs> <http://dbpedia.org/resource/Moraceae> ;
-             ifn:vulgarName "Mulberry family"@en .
+             ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Moraceae"^^xsd:anyURI ;
+             ifn:vulgarName "Mulberry family"@en ;
+             <http://schema.org/sameAs> <http://dbpedia.org/resource/Moraceae> .
 
 
 ifn:Family43 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Myricaceae"^^xsd:anyURI ;
@@ -11780,9 +12080,9 @@ ifn:Family43 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Myricaceae"^^xs
              ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Myricaceae"^^xsd:anyURI .
 
 
-ifn:Family44 ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Oleaceae/"^^xsd:anyURI ;
-             ifn:vulgarName "Olive famly"@en ;
+ifn:Family44 ifn:vulgarName "Olive famly"@en ;
              ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Oleaceae"^^xsd:anyURI ;
+             ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Oleaceae/"^^xsd:anyURI ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Oleaceae> ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Oleaceae"^^xsd:anyURI ;
              ifn:acceptedNameWithoutAuthor "Oleaceae"@la ;
@@ -11810,15 +12110,15 @@ ifn:Family46 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Platanaceae"^^x
 ifn:Family47 <http://schema.org/sameAs> <http://dbpedia.org/resource/Primulaceae> ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Primulaceae"^^xsd:anyURI ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Primulaceae/"^^xsd:anyURI ;
-             ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Primulaceae"^^xsd:anyURI ;
+             ifn:vulgarName "Primuláceas"@es ;
              ifn:acceptedNameWithoutAuthor "Primulaceae"@la ;
-             ifn:vulgarName "Primrose family"@en ,
-                            "Primuláceas"@es .
+             ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Primulaceae"^^xsd:anyURI ;
+             ifn:vulgarName "Primrose family"@en .
 
 
-ifn:Family48 ifn:vulgarName "Buckthorn family"@en ,
-                            "Ramnáceas"@es ;
+ifn:Family48 ifn:vulgarName "Buckthorn family"@en ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Rhamnaceae> ;
+             ifn:vulgarName "Ramnáceas"@es ;
              ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Rhamnaceae"^^xsd:anyURI ;
              ifn:acceptedNameWithoutAuthor "Rhamnaceae"@la ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Rhamnaceae"^^xsd:anyURI ;
@@ -11827,20 +12127,20 @@ ifn:Family48 ifn:vulgarName "Buckthorn family"@en ,
 
 ifn:Family49 ifn:vulgarName "Rose family"@en ,
                             "Rosáceas"@es ;
-             ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Rosaceae"^^xsd:anyURI ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Rosaceae> ;
+             ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Rosaceae"^^xsd:anyURI ;
              ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Rosaceae"^^xsd:anyURI ;
              ifn:acceptedNameWithoutAuthor "Rosaceae"@la ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Rosaceae/"^^xsd:anyURI .
 
 
 ifn:Family50 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Sapotaceae"^^xsd:anyURI ;
-             ifn:vulgarName "Sapodilla family"@en ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Sapotaceae> ;
+             ifn:vulgarName "Sapodilla family"@en ;
              ifn:acceptedNameWithoutAuthor "Sapotaceae"@la ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Sapotaceae/"^^xsd:anyURI ;
-             ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Sapotaceae"^^xsd:anyURI ;
-             ifn:vulgarName "Sapotáceas"@es .
+             ifn:vulgarName "Sapotáceas"@es ;
+             ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Sapotaceae"^^xsd:anyURI .
 
 
 ifn:Family51 ifn:acceptedNameWithoutAuthor "Simaroubaceae"@la ;
@@ -11852,13 +12152,13 @@ ifn:Family51 ifn:acceptedNameWithoutAuthor "Simaroubaceae"@la ;
              ifn:vulgarName "Simarubáceas"@es .
 
 
-ifn:Family52 <http://schema.org/sameAs> <http://dbpedia.org/resource/Tamaricaceae> ;
-             ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Tamaricaceae"^^xsd:anyURI ;
+ifn:Family52 ifn:hasWikiSpeciesPage "https://species.wikimedia.org/wiki/Tamaricaceae"^^xsd:anyURI ;
+             <http://schema.org/sameAs> <http://dbpedia.org/resource/Tamaricaceae> ;
              ifn:vulgarName "Tamarix family"@en ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Tamaricaceae"^^xsd:anyURI ;
-             ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Tamaricaceae/"^^xsd:anyURI ;
              ifn:vulgarName "Tamaricáceas"@es ;
-             ifn:acceptedNameWithoutAuthor "Tamaricaceae"@la .
+             ifn:acceptedNameWithoutAuthor "Tamaricaceae"@la ;
+             ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Tamaricaceae/"^^xsd:anyURI .
 
 
 ifn:Genus111 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Ulmus"^^xsd:anyURI ;
@@ -11872,10 +12172,10 @@ ifn:Genus111 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Ulmus"^^
 
 ifn:Genus121 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Quercus"^^xsd:anyURI ;
              ifn:acceptedNameWithoutAuthor "Quercus"@la ;
+             ifn:vulgarName "Robles"@es ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Fagaceae/Quercus"^^xsd:anyURI ;
-             ifn:vulgarName "Robles"@es ,
-                            "Oaks"@en ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Quercus> ;
+             ifn:vulgarName "Oaks"@en ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Quercus"^^xsd:anyURI .
 
 
@@ -11909,9 +12209,9 @@ ifn:Genus131 ifn:acceptedNameWithoutAuthor "Populus"@la ;
 ifn:Genus132 ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Salicaceae/Salix"^^xsd:anyURI ;
              ifn:vulgarName "Sauces"@es ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Salix> ;
+             ifn:acceptedNameWithoutAuthor "Salix"@la ;
              ifn:vulgarName "Willows"@en ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Salix"^^xsd:anyURI ;
-             ifn:acceptedNameWithoutAuthor "Salix"@la ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Salix"^^xsd:anyURI .
 
 
@@ -11928,8 +12228,8 @@ ifn:Genus142 <http://schema.org/sameAs> <http://dbpedia.org/resource/Ceratonia> 
              ifn:vulgarName "Algarrobos"@es ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Leguminosae/Ceratonia"^^xsd:anyURI ;
              ifn:vulgarName "Carobs"@en ;
-             ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Ceratonia"^^xsd:anyURI ;
              ifn:acceptedNameWithoutAuthor "Ceratonia"@la ;
+             ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Ceratonia"^^xsd:anyURI ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Ceratonia"^^xsd:anyURI .
 
 
@@ -11955,24 +12255,24 @@ ifn:Genus145 ifn:vulgarName "Sophora"@es ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Leguminosae/Sophora"^^xsd:anyURI ;
              ifn:acceptedNameWithoutAuthor "Sophora"@la ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Sophora"^^xsd:anyURI ;
-             <http://schema.org/sameAs> <http://dbpedia.org/resource/Sophora> ;
+             ifn:vulgarName "Sophora"@en ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Sophora"^^xsd:anyURI ;
-             ifn:vulgarName "Sophora"@en .
+             <http://schema.org/sameAs> <http://dbpedia.org/resource/Sophora> .
 
 
 ifn:Genus151 ifn:vulgarName "Madroños"@es ,
                             "Madrones"@en ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Arbutus> ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Ericaceae/Arbutus"^^xsd:anyURI ;
-             ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Arbutus"^^xsd:anyURI ;
              ifn:acceptedNameWithoutAuthor "Arbutus"@la ;
+             ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Arbutus"^^xsd:anyURI ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Arbutus"^^xsd:anyURI .
 
 
 ifn:Genus152 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Erica"^^xsd:anyURI ;
              ifn:vulgarName "Heathers"@en ;
-             ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Ericaceae/Erica"^^xsd:anyURI ;
              ifn:acceptedNameWithoutAuthor "Erica"@la ;
+             ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Ericaceae/Erica"^^xsd:anyURI ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Erica> ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Erica"^^xsd:anyURI ;
              ifn:vulgarName "Brezos"@es .
@@ -11981,8 +12281,8 @@ ifn:Genus152 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Erica"^^
 ifn:Genus161 ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Myrtaceae/Myrtus"^^xsd:anyURI ;
              ifn:acceptedNameWithoutAuthor "Myrtus"@la ;
              ifn:vulgarName "Myrtles"@en ;
-             ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Myrtus"^^xsd:anyURI ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Myrtus> ;
+             ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Myrtus"^^xsd:anyURI ;
              ifn:vulgarName "Mirtos"@es ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Myrtus"^^xsd:anyURI .
 
@@ -12005,8 +12305,8 @@ ifn:Genus171 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Maple"^^xsd:any
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Acer"^^xsd:anyURI .
 
 
-ifn:Genus181 ifn:vulgarName "Pistachos"@es ;
-             ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Pistacia"^^xsd:anyURI ;
+ifn:Genus181 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Pistacia"^^xsd:anyURI ;
+             ifn:vulgarName "Pistachos"@es ;
              ifn:acceptedNameWithoutAuthor "Pistacia"@la ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Pistacia> ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Pistacia"^^xsd:anyURI ;
@@ -12041,11 +12341,11 @@ ifn:Genus192 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Alnus"^^xsd:any
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Alnus"^^xsd:anyURI .
 
 
-ifn:Genus193 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Carpinus"^^xsd:anyURI ;
-             ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Betulaceae/Carpinus"^^xsd:anyURI ;
+ifn:Genus193 ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Betulaceae/Carpinus"^^xsd:anyURI ;
+             ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Carpinus"^^xsd:anyURI ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Carpinus"^^xsd:anyURI ;
-             ifn:vulgarName "Hornbeams"@en ,
-                            "Carpes"@es ;
+             ifn:vulgarName "Carpes"@es ,
+                            "Hornbeams"@en ;
              ifn:acceptedNameWithoutAuthor "Carpinus"@la ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Carpinus> .
 
@@ -12070,9 +12370,9 @@ ifn:Genus211 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Pinus"^^
 
 ifn:Genus212 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Cedrus"^^xsd:anyURI ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Cedrus"^^xsd:anyURI ;
+             ifn:acceptedNameWithoutAuthor "Cedrus"@la ;
              ifn:vulgarName "Cedros"@es ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/G/Pinaceae/Cedrus"^^xsd:anyURI ;
-             ifn:acceptedNameWithoutAuthor "Cedrus"@la ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Cedrus> ;
              ifn:vulgarName "Cedars"@en .
 
@@ -12080,8 +12380,8 @@ ifn:Genus212 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Cedrus"^^xsd:an
 ifn:Genus213 <http://schema.org/sameAs> <http://dbpedia.org/resource/Abies> ;
              ifn:vulgarName "Firs"@en ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/G/Pinaceae/Abies"^^xsd:anyURI ;
-             ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Abies"^^xsd:anyURI ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Abies"^^xsd:anyURI ;
+             ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Abies"^^xsd:anyURI ;
              ifn:acceptedNameWithoutAuthor "Abies"@la ;
              ifn:vulgarName "Abetos"@es .
 
@@ -12098,15 +12398,15 @@ ifn:Genus214 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Larix"^^
 ifn:Genus215 ifn:vulgarName "Piceas"@es ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Picea"^^xsd:anyURI ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Picea"^^xsd:anyURI ;
-             ifn:vulgarName "Spruces"@en ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/G/Pinaceae/Picea"^^xsd:anyURI ;
+             ifn:vulgarName "Spruces"@en ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Picea> ;
              ifn:acceptedNameWithoutAuthor "Picea"@la .
 
 
 ifn:Genus216 ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/G/Pinaceae/Pseudotsuga"^^xsd:anyURI ;
-             ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Pseudotsuga"^^xsd:anyURI ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Pseudotsuga"^^xsd:anyURI ;
+             ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Pseudotsuga"^^xsd:anyURI ;
              ifn:vulgarName "Douglas-firs"@en ;
              ifn:acceptedNameWithoutAuthor "Pseudotsuga"@la ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Pseudotsuga> ;
@@ -12127,17 +12427,17 @@ ifn:Genus222 ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/G/C
              ifn:acceptedNameWithoutAuthor "Juniperus"@la ;
              ifn:vulgarName "Junipers"@en ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Juniperus"^^xsd:anyURI ;
-             <http://schema.org/sameAs> <http://dbpedia.org/resource/Juniperus> ;
-             ifn:vulgarName "Sabinas y enebros"@es .
+             ifn:vulgarName "Sabinas y enebros"@es ;
+             <http://schema.org/sameAs> <http://dbpedia.org/resource/Juniperus> .
 
 
-ifn:Genus223 ifn:vulgarName "Arars"@en ;
-             ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Tetraclinis"^^xsd:anyURI ;
+ifn:Genus223 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Tetraclinis"^^xsd:anyURI ;
+             ifn:vulgarName "Arars"@en ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/G/Cupressaceae/Tetraclinis"^^xsd:anyURI ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Tetraclinis"^^xsd:anyURI ;
              ifn:vulgarName "Araares"@es ;
-             <http://schema.org/sameAs> <http://dbpedia.org/resource/Tetraclinis> ;
-             ifn:acceptedNameWithoutAuthor "Tetraclinis"@la .
+             ifn:acceptedNameWithoutAuthor "Tetraclinis"@la ;
+             <http://schema.org/sameAs> <http://dbpedia.org/resource/Tetraclinis> .
 
 
 ifn:Genus224 ifn:vulgarName "Thujas"@en ;
@@ -12151,8 +12451,8 @@ ifn:Genus224 ifn:vulgarName "Thujas"@en ;
 
 ifn:Genus228 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Chamaecyparis"^^xsd:anyURI ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/G/Cupressaceae/Chamaecyparis"^^xsd:anyURI ;
-             ifn:acceptedNameWithoutAuthor "Chamaecyparis"@la ;
              ifn:vulgarName "Falsos cipreses"@es ;
+             ifn:acceptedNameWithoutAuthor "Chamaecyparis"@la ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Chamaecyparis> ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Chamaecyparis"^^xsd:anyURI ;
              ifn:vulgarName "False cypresses"@en .
@@ -12213,8 +12513,8 @@ ifn:Genus341 ifn:vulgarName "Dragos"@es ;
 
 
 ifn:Genus351 <http://schema.org/sameAs> <http://dbpedia.org/resource/Buxus> ;
-             ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Buxus"^^xsd:anyURI ;
              ifn:vulgarName "Bojs"@es ;
+             ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Buxus"^^xsd:anyURI ;
              ifn:acceptedNameWithoutAuthor "Buxus"@la ;
              ifn:vulgarName "Boxwoods"@en ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Buxaceae/Buxus"^^xsd:anyURI ;
@@ -12224,10 +12524,10 @@ ifn:Genus351 <http://schema.org/sameAs> <http://dbpedia.org/resource/Buxus> ;
 ifn:Genus361 ifn:acceptedNameWithoutAuthor "Celtis"@la ;
              ifn:vulgarName "Hackberries"@en ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Celtis"^^xsd:anyURI ;
-             ifn:vulgarName "Almeces"@es ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Cannabaceae/Celtis"^^xsd:anyURI ;
-             ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Celtis"^^xsd:anyURI ;
-             <http://schema.org/sameAs> <http://dbpedia.org/resource/Celtis> .
+             ifn:vulgarName "Almeces"@es ;
+             <http://schema.org/sameAs> <http://dbpedia.org/resource/Celtis> ;
+             ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Celtis"^^xsd:anyURI .
 
 
 ifn:Genus371 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Euonymus"^^xsd:anyURI ;
@@ -12253,13 +12553,13 @@ ifn:Genus391 ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/J
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Juglans"^^xsd:anyURI ;
              ifn:vulgarName "Nogales"@es ,
                             "Walnuts"@en ;
-             ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Juglans"^^xsd:anyURI ;
-             ifn:acceptedNameWithoutAuthor "Juglans"@la .
+             ifn:acceptedNameWithoutAuthor "Juglans"@la ;
+             ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Juglans"^^xsd:anyURI .
 
 
-ifn:Genus401 ifn:acceptedNameWithoutAuthor "Apollonias"@la ;
-             ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Lauraceae/Apollonias"^^xsd:anyURI ;
+ifn:Genus401 ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Lauraceae/Apollonias"^^xsd:anyURI ;
              ifn:vulgarName "Barbuzanos"@es ;
+             ifn:acceptedNameWithoutAuthor "Apollonias"@la ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Apollonias"^^xsd:anyURI ;
              ifn:vulgarName "Apollonias"@en ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Apollonias> ;
@@ -12271,8 +12571,8 @@ ifn:Genus402 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Laurus"^^xsd:an
              ifn:acceptedNameWithoutAuthor "Laurus"@la ;
              ifn:vulgarName "Laureles"@es ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Laurus"^^xsd:anyURI ;
-             <http://schema.org/sameAs> <http://dbpedia.org/resource/Laurus> ;
-             ifn:vulgarName "Laurels"@en .
+             ifn:vulgarName "Laurels"@en ;
+             <http://schema.org/sameAs> <http://dbpedia.org/resource/Laurus> .
 
 
 ifn:Genus403 ifn:vulgarName "Ocoteas"@en ;
@@ -12285,17 +12585,17 @@ ifn:Genus403 ifn:vulgarName "Ocoteas"@en ;
 
 
 ifn:Genus404 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Persea"^^xsd:anyURI ;
-             ifn:vulgarName "Perseas"@en ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Lauraceae/Persea"^^xsd:anyURI ;
-             ifn:vulgarName "Perseas"@es ;
+             ifn:vulgarName "Perseas"@en ,
+                            "Perseas"@es ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Persea"^^xsd:anyURI ;
              ifn:acceptedNameWithoutAuthor "Persea"@la ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Persea> .
 
 
 ifn:Genus411 ifn:vulgarName "Tilos"@es ;
-             ifn:acceptedNameWithoutAuthor "Tilia"@la ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Tilia> ;
+             ifn:acceptedNameWithoutAuthor "Tilia"@la ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Malvaceae/Tilia"^^xsd:anyURI ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Tilia"^^xsd:anyURI ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Tilia"^^xsd:anyURI ;
@@ -12306,8 +12606,8 @@ ifn:Genus421 ifn:acceptedNameWithoutAuthor "Ficus"@la ;
              ifn:vulgarName "Fig trees"@en ,
                             "Higueras"@es ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Moraceae/Ficus"^^xsd:anyURI ;
-             <http://schema.org/sameAs> <http://dbpedia.org/resource/Ficus> ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Ficus"^^xsd:anyURI ;
+             <http://schema.org/sameAs> <http://dbpedia.org/resource/Ficus> ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Ficus"^^xsd:anyURI .
 
 
@@ -12330,9 +12630,9 @@ ifn:Genus431 ifn:vulgarName "Arrayanes"@es ;
 
 
 ifn:Genus441 ifn:acceptedNameWithoutAuthor "Fraxinus"@la ;
+             ifn:vulgarName "Ash trees"@en ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Fraxinus"^^xsd:anyURI ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Oleaceae/Fraxinus"^^xsd:anyURI ;
-             ifn:vulgarName "Ash trees"@en ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Fraxinus> ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Fraxinus"^^xsd:anyURI ;
              ifn:vulgarName "Fresnos"@es .
@@ -12357,8 +12657,8 @@ ifn:Genus443 ifn:acceptedNameWithoutAuthor "Phillyrea"@la ;
 
 
 ifn:Genus444 ifn:vulgarName "White woods"@en ;
-             ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Oleaceae/Picconia"^^xsd:anyURI ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Picconia"^^xsd:anyURI ;
+             ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Oleaceae/Picconia"^^xsd:anyURI ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Picconia> ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Picconia"^^xsd:anyURI ;
              ifn:vulgarName "Palos blancos"@es ;
@@ -12377,8 +12677,8 @@ ifn:Genus451 ifn:vulgarName "Mocanes"@es ;
 ifn:Genus461 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Platanus"^^xsd:anyURI ;
              ifn:vulgarName "Sycamores"@en ;
              ifn:acceptedNameWithoutAuthor "Platanus"@la ;
-             <http://schema.org/sameAs> <http://dbpedia.org/resource/Platanus> ;
              ifn:vulgarName "Plátanos"@es ;
+             <http://schema.org/sameAs> <http://dbpedia.org/resource/Platanus> ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Platanaceae/Platanus"^^xsd:anyURI ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Platanus"^^xsd:anyURI .
 
@@ -12404,8 +12704,8 @@ ifn:Genus472 ifn:acceptedNameWithoutAuthor "Pleiomeris"@la ;
 ifn:Genus481 ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Rhamnaceae/Frangula"^^xsd:anyURI ;
              ifn:vulgarName "Arraclán"@es ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Frangula> ;
-             ifn:vulgarName "Alder buckthorns"@en ;
              ifn:acceptedNameWithoutAuthor "Frangula"@la ;
+             ifn:vulgarName "Alder buckthorns"@en ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Frangula"^^xsd:anyURI ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Frangula"^^xsd:anyURI .
 
@@ -12415,15 +12715,15 @@ ifn:Genus482 <http://schema.org/sameAs> <http://dbpedia.org/resource/Rhamnus_(ge
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Rhamnus"^^xsd:anyURI ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Rhamnus_(genus)"^^xsd:anyURI ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Rhamnaceae/Rhamnus"^^xsd:anyURI ;
-             ifn:acceptedNameWithoutAuthor "Rhamnus"@la ;
-             ifn:vulgarName "Espinos"@es .
+             ifn:vulgarName "Espinos"@es ;
+             ifn:acceptedNameWithoutAuthor "Rhamnus"@la .
 
 
 ifn:Genus491 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Amelanchier"^^xsd:anyURI ;
              ifn:acceptedNameWithoutAuthor "Amelanchier"@la ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Amelanchier"^^xsd:anyURI ;
-             <http://schema.org/sameAs> <http://dbpedia.org/resource/Amelanchier> ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Rosaceae/Amelanchier"^^xsd:anyURI ;
+             <http://schema.org/sameAs> <http://dbpedia.org/resource/Amelanchier> ;
              ifn:vulgarName "Shadbush"@en ,
                             "Cornijuelos"@es .
 
@@ -12440,8 +12740,8 @@ ifn:Genus492 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Crataegu
 ifn:Genus493 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Malus"^^xsd:anyURI ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Malus> ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Malus"^^xsd:anyURI ;
-             ifn:vulgarName "Apple trees"@en ;
              ifn:acceptedNameWithoutAuthor "Malus"@la ;
+             ifn:vulgarName "Apple trees"@en ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Rosaceae/Malus"^^xsd:anyURI ;
              ifn:vulgarName "Manzanos"@es .
 
@@ -12457,9 +12757,9 @@ ifn:Genus494 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Prunus"^^xsd:an
 
 ifn:Genus495 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Pyrus"^^xsd:anyURI ;
              ifn:acceptedNameWithoutAuthor "Pyrus"@la ;
-             ifn:vulgarName "Perales"@es ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Rosaceae/Pyrus"^^xsd:anyURI ;
-             ifn:vulgarName "Pear trees"@en ;
+             ifn:vulgarName "Perales"@es ,
+                            "Pear trees"@en ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Pyrus> ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Pyrus"^^xsd:anyURI .
 
@@ -12473,8 +12773,8 @@ ifn:Genus496 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Sorbus"^^xsd:an
              ifn:vulgarName "Whitebeams"@en .
 
 
-ifn:Genus501 <http://schema.org/sameAs> <http://dbpedia.org/resource/Sideroxylon> ;
-             ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Sideroxylon"^^xsd:anyURI ;
+ifn:Genus501 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Sideroxylon"^^xsd:anyURI ;
+             <http://schema.org/sameAs> <http://dbpedia.org/resource/Sideroxylon> ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Sideroxylon"^^xsd:anyURI ;
              ifn:vulgarName "Marmulanos"@es ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/1.1/browse/A/Sapotaceae/Sideroxylon"^^xsd:anyURI ;
@@ -12513,8 +12813,8 @@ ifn:Pendiente-9999 rdfs:label "Pendiente (Sin datos)"@es ,
 ifn:Species1 ifn:acceptedNameWithAuthor "Heberdenia bahamensis (Gaertn.) Sprague"@la ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/tro-22001575"^^xsd:anyURI ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Heberdenia_bahamensis"^^xsd:anyURI ;
-             ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Heberdenia_excelsa"^^xsd:anyURI ;
              ifn:scientificSynonymWithAuthor "Heberdenia excelsa Banks ex Schult."@la ;
+             ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Heberdenia_excelsa"^^xsd:anyURI ;
              ifn:acceptedNameWithoutAuthor "Heberdenia bahamensis" ;
              ifn:scientificSynonymWithoutAuthor "Heberdenia excelsa"@la ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Heberdenia_excelsa> ,
@@ -12531,16 +12831,16 @@ ifn:Species11 ifn:acceptedNameWithAuthor "Ailanthus altissima (Mill.) Swingle"@l
               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/1807> ;
               ifn:scientificSynonymWithAuthor "Ailanthus glandulosa Desf."@la ;
               ifn:acceptedNameWithoutAuthor "Ailanthus altissima" ;
-              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Ailanthus_altissima"^^xsd:anyURI ;
-              ifn:vulgarName "Ailanto"@es .
+              ifn:vulgarName "Ailanto"@es ;
+              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Ailanthus_altissima"^^xsd:anyURI .
 
 
 ifn:Species12 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Malus_sylvestris"^^xsd:anyURI ;
               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/6190> ,
                                          <http://dbpedia.org/resource/Malus_sylvestris> ;
-              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/rjp-71"^^xsd:anyURI ;
               ifn:vulgarName "Manzano silvestre"@es ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Malus_sylvestris"^^xsd:anyURI ;
+              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/rjp-71"^^xsd:anyURI ;
               ifn:acceptedNameWithoutAuthor "Malus sylvestris" ;
               ifn:vulgarName "Crab apple"@en ;
               ifn:acceptedNameWithAuthor "Malus sylvestris (L.) Mill."@la .
@@ -12549,17 +12849,17 @@ ifn:Species12 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Malus_s
 ifn:Species13 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Celtis_australis"^^xsd:anyURI ;
               ifn:vulgarName "Hackberry"@en ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Celtis_australis"^^xsd:anyURI ;
+              ifn:acceptedNameWithAuthor "Celtis australis L."@la ;
               ifn:vulgarName "Almez"@es ;
               ifn:acceptedNameWithoutAuthor "Celtis australis" ;
-              ifn:acceptedNameWithAuthor "Celtis australis L."@la ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Celtis_australis> ,
                                          <http://crossnature.eu/resource/Taxon/3200> ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2708167"^^xsd:anyURI .
 
 
 ifn:Species14 ifn:acceptedNameWithAuthor "Taxus baccata L."@la ;
-              <http://schema.org/sameAs> <http://dbpedia.org/resource/Taxus_baccata> ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2434158"^^xsd:anyURI ;
+              <http://schema.org/sameAs> <http://dbpedia.org/resource/Taxus_baccata> ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Taxus_baccata"^^xsd:anyURI ;
               ifn:vulgarName "Yew"@en ;
               ifn:acceptedNameWithoutAuthor "Taxus baccata" ;
@@ -12578,8 +12878,8 @@ ifn:Species15 ifn:acceptedNameWithoutAuthor "Crataegus" ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Crataegus"^^xsd:anyURI .
 
 
-ifn:Species16 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Pyrus"^^xsd:anyURI ;
-              <http://schema.org/sameAs> <http://dbpedia.org/resource/Pear> ;
+ifn:Species16 <http://schema.org/sameAs> <http://dbpedia.org/resource/Pear> ;
+              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Pyrus"^^xsd:anyURI ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search?q=Pyrus"^^xsd:anyURI ;
               ifn:vulgarName "Peral silvestre"@es ,
                              "Pear tree"@en ;
@@ -12601,13 +12901,13 @@ ifn:Species17 <http://schema.org/sameAs> <http://dbpedia.org/resource/Cedrus_atl
 ifn:Species18 ifn:acceptedNameWithAuthor "Chamaecyparis lawsoniana (A.Murray) Parl."@la ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Chamaecyparis_lawsoniana> ;
               ifn:vulgarName "Port Orford cedar"@en ,
-                             "Falso ciprés de Lawson"@es ,
-                             "Lawson cypress"@en ;
-              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2715286"^^xsd:anyURI ;
+                             "Lawson cypress"@en ,
+                             "Falso ciprés de Lawson"@es ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Chamaecyparis_lawsoniana"^^xsd:anyURI ;
+              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2715286"^^xsd:anyURI ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Chamaecyparis_lawsoniana"^^xsd:anyURI ;
-              ifn:acceptedNameWithoutAuthor "Chamaecyparis lawsoniana" ;
-              <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/3481> .
+              <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/3481> ;
+              ifn:acceptedNameWithoutAuthor "Chamaecyparis lawsoniana" .
 
 
 ifn:Species19 ifn:vulgarName "Otras coníferas"@es ;
@@ -12618,10 +12918,10 @@ ifn:Species19 ifn:vulgarName "Otras coníferas"@es ;
               ifn:acceptedNameWithoutAuthor "Gymnospermae" .
 
 
-ifn:Species2 ifn:acceptedNameWithAuthor "Amelanchier ovalis Medik."@la ;
-             <http://schema.org/sameAs> <http://dbpedia.org/resource/Amelanchier_ovalis> ,
-                                        <http://crossnature.eu/resource/Taxon/2114> ;
+ifn:Species2 <http://schema.org/sameAs> <http://dbpedia.org/resource/Amelanchier_ovalis> ;
+             ifn:acceptedNameWithAuthor "Amelanchier ovalis Medik."@la ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Amelanchier_ovalis"^^xsd:anyURI ;
+             <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/2114> ;
              ifn:vulgarName "Guillomo"@es ,
                             "Snowy mespilus"@en ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Amelanchier_ovalis"^^xsd:anyURI ;
@@ -12666,8 +12966,8 @@ ifn:Species215 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Crataegus_mon
                               "Majuelo"@es ;
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Crataegus_monogyna> ;
                ifn:acceptedNameWithAuthor "Crataegus monogyna Jacq."@la ;
-               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Crataegus_monogyna"^^xsd:anyURI ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/3857> ;
+               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Crataegus_monogyna"^^xsd:anyURI ;
                ifn:acceptedNameWithoutAuthor "Crataegus monogyna" .
 
 
@@ -12678,8 +12978,8 @@ ifn:Species217 ifn:vulgarName "Cedro del Himalaya"@es ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/3197> ;
                ifn:acceptedNameWithAuthor "Cedrus deodara (Roxb. ex D.Don) G.Don"@la ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2707322"^^xsd:anyURI ;
-               ifn:vulgarName "Himalayan cedar"@en ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Cedrus_deodara"^^xsd:anyURI ;
+               ifn:vulgarName "Himalayan cedar"@en ;
                ifn:acceptedNameWithoutAuthor "Cedrus deodara" .
 
 
@@ -12696,14 +12996,14 @@ ifn:Species219 ifn:vulgarName "Barbary thuja"@en ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2516538"^^xsd:anyURI .
 
 
-ifn:Species22 <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7127> ;
-              ifn:scientificSynonymWithAuthor "Pinus montana Mill."@la ;
+ifn:Species22 ifn:scientificSynonymWithAuthor "Pinus montana Mill."@la ;
+              <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7127> ;
               ifn:acceptedNameWithoutAuthor "Pinus uncinata" ;
-              ifn:vulgarName "Pino uncinata"@es ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2562206"^^xsd:anyURI ;
+              ifn:vulgarName "Pino uncinata"@es ;
               ifn:scientificSynonymWithoutAuthor "Pinus montana"@la ;
-              <http://schema.org/sameAs> <http://dbpedia.org/resource/Pinus_mugo> ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Pinus_uncinata"^^xsd:anyURI ;
+              <http://schema.org/sameAs> <http://dbpedia.org/resource/Pinus_mugo> ;
               ifn:scientificSynonymWithoutAuthor "Pinus mugo subsp. uncinata"@la ;
               ifn:scientificSynonymWithAuthor "Pinus mugo subsp. uncinata (Ramond ex DC.) Domin"@la ,
                                               "Pinus mugo subsp. Uncinata.  (Ramond ex DC.) Domin"@la ;
@@ -12720,8 +13020,8 @@ ifn:Species23 <http://schema.org/sameAs> <http://dbpedia.org/resource/Stone_pine
               ifn:vulgarName "Stone pine"@en ;
               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7124> ;
               ifn:acceptedNameWithAuthor "Pinus pinea L."@la ;
-              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2562556"^^xsd:anyURI ;
-              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Stone_pine"^^xsd:anyURI .
+              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Stone_pine"^^xsd:anyURI ;
+              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2562556"^^xsd:anyURI .
 
 
 ifn:Species235 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Larix_decidua"^^xsd:anyURI ;
@@ -12730,16 +13030,16 @@ ifn:Species235 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Larix_decidua
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2493921"^^xsd:anyURI ;
                ifn:vulgarName "Alerce común"@es ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/5660> ;
-               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Larix_decidua"^^xsd:anyURI ;
                ifn:acceptedNameWithoutAuthor "Larix decidua" ;
+               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Larix_decidua"^^xsd:anyURI ;
                ifn:vulgarName "European larch"@en .
 
 
 ifn:Species236 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Cupressus_arizonica"^^xsd:anyURI ;
                ifn:acceptedNameWithAuthor "Cupressus arizonica Greene"@la ;
-               ifn:vulgarName "Arizona cypress"@en ;
+               ifn:vulgarName "Arizona cypress"@en ,
+                              "Ciprés arizónica"@es ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2748585"^^xsd:anyURI ;
-               ifn:vulgarName "Ciprés arizónica"@es ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/3883> ;
                ifn:acceptedNameWithoutAuthor "Cupressus arizonica" ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Cupressus_arizonica"^^xsd:anyURI ;
@@ -12755,9 +13055,9 @@ ifn:Species237 ifn:vulgarName "Cade juniper"@en ;
                               "Prickly juniper"@en ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Juniperus_oxycedrus"^^xsd:anyURI ;
                ifn:vulgarName "Enebro oxicedro"@es ;
-               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/5505> ;
+               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/5505> ,
+                                          <http://dbpedia.org/resource/Juniperus_oxycedrus> ;
                ifn:vulgarName "Cade"@en ;
-               <http://schema.org/sameAs> <http://dbpedia.org/resource/Juniperus_oxycedrus> ;
                ifn:acceptedNameWithAuthor "Juniperus oxycedrus L."@la .
 
 
@@ -12765,8 +13065,8 @@ ifn:Species238 ifn:vulgarName "Sabina canaria"@es ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Juniperus_phoenicea var. turbinata"^^xsd:anyURI ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/24329> ,
                                           <http://dbpedia.org/resource/Juniperus_turbinata> ;
-               ifn:acceptedNameWithAuthor "Juniperus turbinata (Guss.) Parl."@la ;
                ifn:acceptedNameWithoutAuthor "Juniperus turbinata" ;
+               ifn:acceptedNameWithAuthor "Juniperus turbinata (Guss.) Parl."@la ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2329452"^^xsd:anyURI ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Juniperus_turbinata"^^xsd:anyURI .
 
@@ -12779,12 +13079,12 @@ ifn:Species239 ifn:vulgarName "Savin"@en ;
                ifn:acceptedNameWithoutAuthor "Juniperus sabina" ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2331683"^^xsd:anyURI ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/5512> ;
-               ifn:acceptedNameWithAuthor "Juniperus sabina L."@la ;
-               ifn:vulgarName "Sabina rastrera"@es .
+               ifn:vulgarName "Sabina rastrera"@es ;
+               ifn:acceptedNameWithAuthor "Juniperus sabina L."@la .
 
 
-ifn:Species24 ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2561998"^^xsd:anyURI ;
-              <http://schema.org/sameAs> <http://dbpedia.org/resource/Pinus_halepensis> ;
+ifn:Species24 <http://schema.org/sameAs> <http://dbpedia.org/resource/Pinus_halepensis> ;
+              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2561998"^^xsd:anyURI ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Pinus_halepensis"^^xsd:anyURI ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Pinus_halepensis"^^xsd:anyURI ;
               ifn:vulgarName "Aleppo pine"@en ;
@@ -12838,29 +13138,29 @@ ifn:Species25 ifn:vulgarName "Pino laricio"@es ;
 
 ifn:Species253 ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2520099"^^xsd:anyURI ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Tamarix_canariensis"^^xsd:anyURI ;
+               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/8549> ;
                ifn:vulgarName "Tarajal"@es ;
-               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/8549> ,
-                                          <http://dbpedia.org/resource/Tamarix_canariensis> ;
-               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Tamarix_canariensis"^^xsd:anyURI ;
+               <http://schema.org/sameAs> <http://dbpedia.org/resource/Tamarix_canariensis> ;
                ifn:acceptedNameWithAuthor "Tamarix canariensis Willd."@la ;
-               ifn:acceptedNameWithoutAuthor "Tamarix canariensis" .
+               ifn:acceptedNameWithoutAuthor "Tamarix canariensis" ;
+               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Tamarix_canariensis"^^xsd:anyURI .
 
 
 ifn:Species255 ifn:vulgarName "Common ash"@en ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Fraxinus_excelsior"^^xsd:anyURI ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-369664"^^xsd:anyURI ;
-               ifn:vulgarName "Fresno excelsior"@es ;
+               ifn:vulgarName "Fresno excelsior"@es ,
+                              "Ash"@en ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Fraxinus_excelsior"^^xsd:anyURI ;
-               ifn:vulgarName "Ash"@en ;
-               <http://schema.org/sameAs> <http://dbpedia.org/resource/Fraxinus_excelsior> ;
+               <http://schema.org/sameAs> <http://dbpedia.org/resource/Fraxinus_excelsior> ,
+                                          <http://crossnature.eu/resource/Taxon/4625> ;
                ifn:vulgarName "European ash"@en ;
-               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/4625> ;
                ifn:acceptedNameWithoutAuthor "Fraxinus excelsior" ;
                ifn:acceptedNameWithAuthor "Fraxinus excelsior L."@la .
 
 
-ifn:Species256 ifn:vulgarName "Olmo montano"@es ;
-               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Ulmus_glabra"^^xsd:anyURI ;
+ifn:Species256 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Ulmus_glabra"^^xsd:anyURI ;
+               ifn:vulgarName "Olmo montano"@es ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2448690"^^xsd:anyURI ;
                ifn:vulgarName "Scotch elm"@en ,
                               "Wych elm"@en ;
@@ -12884,26 +13184,26 @@ ifn:Species257 <http://schema.org/sameAs> <http://dbpedia.org/resource/Salix_alb
 
 
 ifn:Species258 ifn:acceptedNameWithAuthor "Populus x canadensis Moench"@la ;
+               ifn:vulgarName "Hybrid poplar"@en ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-5004301"^^xsd:anyURI ;
-               ifn:vulgarName "Hybrid poplar"@en ,
-                              "Canadian poplar"@en ;
                ifn:scientificSynonymWithoutAuthor "Populus x euroamericana"@la ;
-               ifn:vulgarName "Chopo híbrido"@es ;
+               ifn:vulgarName "Canadian poplar"@en ,
+                              "Chopo híbrido"@es ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Populus_x canadensis"^^xsd:anyURI ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/26363> ;
                ifn:vulgarName "Carolina poplar"@en ;
+               ifn:acceptedNameWithoutAuthor "Populus x canadensis" ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Populus_x_canadensis"^^xsd:anyURI ;
-               <http://schema.org/sameAs> <http://dbpedia.org/resource/Populus_x_canadensis> ;
-               ifn:acceptedNameWithoutAuthor "Populus x canadensis" .
+               <http://schema.org/sameAs> <http://dbpedia.org/resource/Populus_x_canadensis> .
 
 
-ifn:Species26 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Pinus_pinaster"^^xsd:anyURI ;
-              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2562572"^^xsd:anyURI ;
+ifn:Species26 ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2562572"^^xsd:anyURI ;
+              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Pinus_pinaster"^^xsd:anyURI ;
               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7123> ;
               ifn:vulgarName "Pino pináster"@es ;
               ifn:acceptedNameWithAuthor "Pinus pinaster Aiton"@la ;
-              ifn:acceptedNameWithoutAuthor "Pinus pinaster" ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Pinus_pinaster> ;
+              ifn:acceptedNameWithoutAuthor "Pinus pinaster" ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Pinus_pinaster"^^xsd:anyURI ;
               ifn:vulgarName "Cluster pine"@en .
 
@@ -12911,8 +13211,8 @@ ifn:Species26 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Pinus_p
 ifn:Species264 <http://schema.org/sameAs> <http://dbpedia.org/resource/Eucalyptus_viminalis> ;
                ifn:vulgarName "Viminalis"@en ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Eucalyptus_viminalis"^^xsd:anyURI ;
-               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/26351> ;
                ifn:acceptedNameWithoutAuthor "Eucalyptus viminalis" ;
+               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/26351> ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Eucalyptus_viminalis"^^xsd:anyURI ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-74103"^^xsd:anyURI ;
                ifn:vulgarName "Ribbon gum"@en ,
@@ -12923,8 +13223,8 @@ ifn:Species264 <http://schema.org/sameAs> <http://dbpedia.org/resource/Eucalyptu
 
 
 ifn:Species268 <http://schema.org/sameAs> <http://dbpedia.org/resource/Arbutus_canariensis> ;
-               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Arbutus_canariensis"^^xsd:anyURI ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2646659"^^xsd:anyURI ;
+               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Arbutus_canariensis"^^xsd:anyURI ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/1176> ;
                ifn:acceptedNameWithoutAuthor "Arbutus canariensis" ;
                ifn:vulgarName "Madroño canario"@es ;
@@ -12936,8 +13236,8 @@ ifn:Species268 <http://schema.org/sameAs> <http://dbpedia.org/resource/Arbutus_c
 ifn:Species27 ifn:vulgarName "Pino canario"@es ,
                              "Canary Island pine"@en ;
               ifn:acceptedNameWithoutAuthor "Pinus canariensis" ;
-              <http://schema.org/sameAs> <http://dbpedia.org/resource/Pinus_canariensis> ;
               ifn:acceptedNameWithAuthor "Pinus canariensis C.Sm."@la ;
+              <http://schema.org/sameAs> <http://dbpedia.org/resource/Pinus_canariensis> ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2563095"^^xsd:anyURI ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Pinus_canariensis"^^xsd:anyURI ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Pinus_canariensis"^^xsd:anyURI ;
@@ -12946,12 +13246,12 @@ ifn:Species27 ifn:vulgarName "Pino canario"@es ,
 
 ifn:Species273 ifn:vulgarName "White birch"@en ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Betula_pubescens"^^xsd:anyURI ;
-               ifn:vulgarName "Abedul pubescente"@es ;
+               ifn:vulgarName "Abedul pubescente"@es ,
+                              "Downy birch"@en ,
+                              "Hairy birch"@en ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Betula_pubescens"^^xsd:anyURI ;
-               ifn:vulgarName "Hairy birch"@en ,
-                              "Downy birch"@en ;
-               ifn:scientificSynonymWithAuthor "Betula alba L."@la ;
                ifn:acceptedNameWithoutAuthor "Betula alba" ;
+               ifn:scientificSynonymWithAuthor "Betula alba L."@la ;
                ifn:vulgarName "Moor birch"@en ,
                               "European white birch"@en ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/2767> ;
@@ -12983,10 +13283,10 @@ ifn:Species276 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Acer_monspess
                                           <http://dbpedia.org/resource/Acer_monspessulanum> .
 
 
-ifn:Species277 <http://schema.org/sameAs> <http://dbpedia.org/resource/Tilia_cordata> ,
-                                          <http://crossnature.eu/resource/Taxon/8960> ;
-               ifn:vulgarName "Tilo norteño"@es ;
+ifn:Species277 <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/8960> ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2518181"^^xsd:anyURI ;
+               <http://schema.org/sameAs> <http://dbpedia.org/resource/Tilia_cordata> ;
+               ifn:vulgarName "Tilo norteño"@es ;
                ifn:acceptedNameWithoutAuthor "Tilia cordata" ;
                ifn:acceptedNameWithAuthor "Tilia cordata Mill."@la ;
                ifn:vulgarName "Small-leaved linden"@en ,
@@ -13002,8 +13302,8 @@ ifn:Species278 ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/recor
                ifn:vulgarName "Common whitebeam"@en ;
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Sorbus_aria> ;
                ifn:acceptedNameWithoutAuthor "Sorbus aria" ;
-               ifn:acceptedNameWithAuthor "Sorbus aria (L.) Crantz"@la ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Sorbus_aria"^^xsd:anyURI ;
+               ifn:acceptedNameWithAuthor "Sorbus aria (L.) Crantz"@la ;
                ifn:vulgarName "Mostajo"@es .
 
 
@@ -13019,14 +13319,14 @@ ifn:Species279 ifn:acceptedNameWithAuthor "Platanus orientalis L."@la ;
                                           <http://dbpedia.org/resource/Platanus_orientalis> .
 
 
-ifn:Species28 ifn:vulgarName "Monterey pine"@en ;
-              <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7125> ;
+ifn:Species28 <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7125> ;
+              ifn:vulgarName "Monterey pine"@en ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2562495"^^xsd:anyURI ;
               ifn:scientificSynonymWithoutAuthor "Pinus insignis"@la ;
-              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Pinus_radiata"^^xsd:anyURI ;
               ifn:scientificSynonymWithAuthor "Pinus insignis Douglas ex Loudon"@la ;
-              ifn:acceptedNameWithAuthor "Pinus radiata D.Don"@la ;
+              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Pinus_radiata"^^xsd:anyURI ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Pinus_radiata"^^xsd:anyURI ;
+              ifn:acceptedNameWithAuthor "Pinus radiata D.Don"@la ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Pinus_radiata> ;
               ifn:vulgarName "Pino radiata"@es ;
               ifn:acceptedNameWithoutAuthor "Pinus radiata" .
@@ -13035,8 +13335,8 @@ ifn:Species28 ifn:vulgarName "Monterey pine"@en ;
 ifn:Species282 ifn:hasWikipediaPage "http://www.laurisilva.org/index.php?c=Ilex-perado%20spp%20platyphylla"^^xsd:anyURI ;
                ifn:acceptedNameWithAuthor "Ilex platyphylla (Webb & Berthel.) Tutin"@la ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/tro-50279570"^^xsd:anyURI ;
-               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Ilex_perado subsp. platyphylla"^^xsd:anyURI ;
                ifn:acceptedNameWithoutAuthor "Ilex platyphylla" ;
+               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Ilex_perado subsp. platyphylla"^^xsd:anyURI ;
                ifn:vulgarName "Naranjero"@es ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/26354> .
 
@@ -13048,18 +13348,18 @@ ifn:Species283 ifn:vulgarName "Tejo"@es ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2794397"^^xsd:anyURI ;
                ifn:vulgarName "Brezo arbóreo escopario"@es ;
                ifn:acceptedNameWithoutAuthor "Erica scoparia" ;
-               <http://schema.org/sameAs> <http://dbpedia.org/resource/Erica_scoparia> ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Erica_scoparia"^^xsd:anyURI ;
+               <http://schema.org/sameAs> <http://dbpedia.org/resource/Erica_scoparia> ;
                ifn:acceptedNameWithAuthor "Erica scoparia L."@la .
 
 
 ifn:Species289 ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/tro-50228889"^^xsd:anyURI ;
                ifn:acceptedNameWithAuthor "Pleiomeris canariensis (Willd.) A.DC."@la ;
-               <http://schema.org/sameAs> <http://dbpedia.org/resource/Pleiomeris_canariensis> ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Pleiomeris_canariensis"^^xsd:anyURI ;
-               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Pleiomeris_canariensis"^^xsd:anyURI ;
-               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/977> ;
+               <http://schema.org/sameAs> <http://dbpedia.org/resource/Pleiomeris_canariensis> ;
                ifn:vulgarName "Delfino"@es ;
+               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/977> ;
+               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Pleiomeris_canariensis"^^xsd:anyURI ;
                ifn:acceptedNameWithoutAuthor "Pleiomeris canariensis" .
 
 
@@ -13069,18 +13369,18 @@ ifn:Species29 ifn:acceptedNameWithoutAuthor "Pinus" ;
               rdfs:comment "Otros pinos"@es ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Pine"^^xsd:anyURI ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Pinus"^^xsd:anyURI ;
-              ifn:vulgarName "Other pines"@en ,
-                             "Otros pinos"@es .
+              ifn:vulgarName "Otros pinos"@es ,
+                             "Other pines"@en .
 
 
 ifn:Species291 ifn:acceptedNameWithoutAuthor "Buxus balearica" ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2687848"^^xsd:anyURI ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Buxus_balearica"^^xsd:anyURI ;
-               <http://schema.org/sameAs> <http://dbpedia.org/resource/Buxus_balearica> ;
+               <http://schema.org/sameAs> <http://dbpedia.org/resource/Buxus_balearica> ,
+                                          <http://crossnature.eu/resource/Taxon/2858> ;
                ifn:vulgarName "Boj de Baleares"@es ;
-               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/2858> ;
-               ifn:acceptedNameWithAuthor "Buxus balearica Lam."@la ;
-               ifn:hasWikipediaPage "https://es.wikipedia.org/wiki/Buxus_balearica"^^xsd:anyURI .
+               ifn:hasWikipediaPage "https://es.wikipedia.org/wiki/Buxus_balearica"^^xsd:anyURI ;
+               ifn:acceptedNameWithAuthor "Buxus balearica Lam."@la .
 
 
 ifn:Species292 ifn:acceptedNameWithoutAuthor "Sophora japonica" ;
@@ -13090,12 +13390,12 @@ ifn:Species292 ifn:acceptedNameWithoutAuthor "Sophora japonica" ;
                               "Japanese pagoda tree"@en ;
                ifn:acceptedNameWithAuthor "Sophora japonica (L.) Schott"@la ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/ild-33214"^^xsd:anyURI ;
-               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Styphnolobium_japonicum"^^xsd:anyURI ;
-               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Sophora_japonicum"^^xsd:anyURI .
+               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Sophora_japonicum"^^xsd:anyURI ;
+               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Styphnolobium_japonicum"^^xsd:anyURI .
 
 
-ifn:Species293 <http://schema.org/sameAs> <http://dbpedia.org/resource/Pistacia_atlantica> ,
-                                          <http://crossnature.eu/resource/Taxon/1408> ;
+ifn:Species293 <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/1408> ,
+                                          <http://dbpedia.org/resource/Pistacia_atlantica> ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2408140"^^xsd:anyURI ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Pistacia_atlantica"^^xsd:anyURI ;
                ifn:vulgarName "Cornicabra canaria"@es ;
@@ -13110,8 +13410,8 @@ ifn:Species294 <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Laurus_azorica"^^xsd:anyURI ;
                ifn:vulgarName "Azores laurel"@en ;
                ifn:acceptedNameWithoutAuthor "Laurus azorica" ;
-               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2349402"^^xsd:anyURI ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Laurus_azorica"^^xsd:anyURI ;
+               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2349402"^^xsd:anyURI ;
                ifn:vulgarName "Macaronesian laurel"@en ;
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Laurus_azorica> ;
                ifn:vulgarName "Laurel canario"@es ;
@@ -13124,8 +13424,8 @@ ifn:Species295 ifn:vulgarName "Sloe"@en ;
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Prunus_spinosa> ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Prunus_spinosa"^^xsd:anyURI ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Prunus_spinosa"^^xsd:anyURI ;
-               ifn:vulgarName "Espino negro"@es ;
                ifn:acceptedNameWithAuthor "Prunus spinosa L."@la ;
+               ifn:vulgarName "Espino negro"@es ;
                ifn:acceptedNameWithoutAuthor "Prunus spinosa" ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7397> .
 
@@ -13143,8 +13443,8 @@ ifn:Species297 ifn:acceptedNameWithAuthor "Sambucus racemosa L."@la ;
 
 
 ifn:Species299 ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2809827"^^xsd:anyURI ;
-               ifn:acceptedNameWithAuthor "Ficus carica L."@la ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/4592> ;
+               ifn:acceptedNameWithAuthor "Ficus carica L."@la ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Ficus_carica"^^xsd:anyURI ;
                ifn:acceptedNameWithoutAuthor "Ficus carica" ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Common_fig"^^xsd:anyURI ;
@@ -13155,9 +13455,9 @@ ifn:Species299 ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/recor
 
 ifn:Species3 ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2814031"^^xsd:anyURI ;
              <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/4610> ;
-             ifn:vulgarName "Arraclán"@es ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Frangula_alnus"^^xsd:anyURI ;
-             ifn:vulgarName "Alder buckthorn"@en ;
+             ifn:vulgarName "Arraclán"@es ,
+                            "Alder buckthorn"@en ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Frangula_alnus"^^xsd:anyURI ;
              ifn:acceptedNameWithoutAuthor "Frangula alnus" ;
              ifn:scientificSynonymWithoutAuthor "Rhamnus frangula"@la ;
@@ -13177,21 +13477,21 @@ ifn:Species307 ifn:acceptedNameWithoutAuthor "Acacia dealbata" ;
                ifn:vulgarName "Blue wattle"@en ,
                               "Mimosa"@en ;
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Acacia_dealbata> ;
-               ifn:vulgarName "Acacia dealbata"@es ;
                ifn:acceptedNameWithAuthor "Acacia dealbata Link"@la ;
-               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/1906> ;
-               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Acacia_dealbata"^^xsd:anyURI ;
+               ifn:vulgarName "Acacia dealbata"@es ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Acacia_dealbata"^^xsd:anyURI ;
-               ifn:vulgarName "Silver wattle"@en ;
-               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/ild-389"^^xsd:anyURI .
+               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Acacia_dealbata"^^xsd:anyURI ;
+               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/1906> ;
+               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/ild-389"^^xsd:anyURI ;
+               ifn:vulgarName "Silver wattle"@en .
 
 
 ifn:Species31 ifn:acceptedNameWithoutAuthor "Abies alba" ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Abies_alba> ,
                                          <http://crossnature.eu/resource/Taxon/1899> ;
-              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Abies_alba"^^xsd:anyURI ;
-              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Abies_alba"^^xsd:anyURI ;
               ifn:vulgarName "Pinabete"@es ;
+              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Abies_alba"^^xsd:anyURI ;
+              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Abies_alba"^^xsd:anyURI ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2609691"^^xsd:anyURI ;
               ifn:acceptedNameWithAuthor "Abies alba Mill."@la ;
               ifn:vulgarName "Silver fir"@en ,
@@ -13204,8 +13504,8 @@ ifn:Species315 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Cratae
                ifn:vulgarName "Woodland hawthorn"@en ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/rjp-477"^^xsd:anyURI ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/3856> ;
-               ifn:vulgarName "Espino majuelo"@es ,
-                              "Mayflower"@en ;
+               ifn:vulgarName "Mayflower"@en ,
+                              "Espino majuelo"@es ;
                ifn:acceptedNameWithAuthor "Crataegus laevigata (Poir.) DC."@la ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Crataegus_laevigata"^^xsd:anyURI ;
                ifn:vulgarName "English hawthorn"@en ,
@@ -13215,8 +13515,8 @@ ifn:Species315 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Cratae
 ifn:Species317 ifn:acceptedNameWithoutAuthor "Cedrus libani" ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/26348> ;
                ifn:vulgarName "Cedrus libani"@es ;
-               <http://schema.org/sameAs> <http://dbpedia.org/resource/Cedrus_libani> ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2707327"^^xsd:anyURI ;
+               <http://schema.org/sameAs> <http://dbpedia.org/resource/Cedrus_libani> ;
                ifn:vulgarName "Lebanon cedar"@en ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Cedrus_libani"^^xsd:anyURI ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Cedrus_libani"^^xsd:anyURI ;
@@ -13229,15 +13529,15 @@ ifn:Species319 <http://schema.org/sameAs> <http://dbpedia.org/resource/Thuja> ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search?q=Thuja"^^xsd:anyURI ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Thuja"^^xsd:anyURI ;
                ifn:vulgarName "Thuja"@en ;
-               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Thuja"^^xsd:anyURI ;
                ifn:acceptedNameWithoutAuthor "Thuja" ;
+               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Thuja"^^xsd:anyURI ;
                ifn:vulgarName "Thuja"@es .
 
 
 ifn:Species32 <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/1901> ;
               ifn:acceptedNameWithoutAuthor "Abies pinsapo" ;
-              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2610038"^^xsd:anyURI ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Abies_pinsapo"^^xsd:anyURI ;
+              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2610038"^^xsd:anyURI ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Abies_pinsapo> ;
               ifn:vulgarName "Spanish fir"@en ;
               ifn:acceptedNameWithAuthor "Abies pinsapo Boiss."@la ;
@@ -13245,24 +13545,24 @@ ifn:Species32 <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/1
               ifn:vulgarName "Pinsapo"@es .
 
 
-ifn:Species33 ifn:scientificSynonymWithoutAuthor "Picea excelsa"@la ;
-              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Picea_abies"^^xsd:anyURI ;
+ifn:Species33 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Picea_abies"^^xsd:anyURI ;
+              ifn:scientificSynonymWithoutAuthor "Picea excelsa"@la ;
               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/6999> ;
               ifn:vulgarName "Norway spruce"@en ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Picea_abies"^^xsd:anyURI ;
-              ifn:acceptedNameWithAuthor "Picea abies (L.) H.Karst."@la ;
               ifn:scientificSynonymWithAuthor "Picea excelsa (Lam.) Link"@la ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2562738"^^xsd:anyURI ;
-              ifn:vulgarName "Pícea"@es ;
+              ifn:acceptedNameWithAuthor "Picea abies (L.) H.Karst."@la ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Picea_abies> ;
+              ifn:vulgarName "Pícea"@es ;
               ifn:acceptedNameWithoutAuthor "Picea abies" .
 
 
 ifn:Species335 ifn:vulgarName "Karamatsu"@en ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2493964"^^xsd:anyURI ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/26355> ;
-               ifn:acceptedNameWithoutAuthor "Larix leptolepis" ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Larix_kaempferi"^^xsd:anyURI ;
+               ifn:acceptedNameWithoutAuthor "Larix leptolepis" ;
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Larix_kaempferi> ;
                ifn:vulgarName "Alerce del Japón"@es ;
                ifn:acceptedNameWithAuthor "Larix leptolepis (Lamb.) Carrière"@la ;
@@ -13270,8 +13570,8 @@ ifn:Species335 ifn:vulgarName "Karamatsu"@en ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Larix_kaempferi"^^xsd:anyURI .
 
 
-ifn:Species336 <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/3885> ;
-               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Cupressus_lusitanica"^^xsd:anyURI ;
+ifn:Species336 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Cupressus_lusitanica"^^xsd:anyURI ;
+               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/3885> ;
                ifn:vulgarName "Cedar-of-Goa"@en ;
                ifn:acceptedNameWithoutAuthor "Cupressus lusitanica" ;
                ifn:acceptedNameWithAuthor "Cupressus lusitanica Mill."@la ;
@@ -13282,8 +13582,8 @@ ifn:Species336 <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2748717"^^xsd:anyURI .
 
 
-ifn:Species337 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Juniperus_cedrus"^^xsd:anyURI ;
-               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2332652"^^xsd:anyURI ;
+ifn:Species337 ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2332652"^^xsd:anyURI ;
+               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Juniperus_cedrus"^^xsd:anyURI ;
                ifn:vulgarName "Canary Islands juniper"@en ;
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Juniperus_cedrus> ;
                ifn:vulgarName "Enebro canario"@es ;
@@ -13296,9 +13596,9 @@ ifn:Species337 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Junipe
 ifn:Species34 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Douglas_fir"^^xsd:anyURI ;
               ifn:scientificSynonymWithAuthor "Pseudotsuga douglasii (Sabine ex D.Don) Carrière"@la ;
               ifn:acceptedNameWithoutAuthor "Pseudotsuga menziesii" ;
-              <http://schema.org/sameAs> <http://dbpedia.org/resource/Douglas_fir> ;
+              <http://schema.org/sameAs> <http://dbpedia.org/resource/Douglas_fir> ,
+                                         <http://crossnature.eu/resource/Taxon/7410> ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Pseudotsuga_menziesii"^^xsd:anyURI ;
-              <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7410> ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2556763"^^xsd:anyURI ;
               ifn:scientificSynonymWithoutAuthor "Pseudotsuga douglasii"@la ;
               ifn:acceptedNameWithAuthor "Pseudotsuga menziesii (Mirb.) Franco"@la ;
@@ -13339,9 +13639,9 @@ ifn:Species356 ifn:acceptedNameWithAuthor "Ulmus pumila L."@la ;
 
 ifn:Species357 ifn:acceptedNameWithoutAuthor "Salix atrocinerea" ;
                ifn:acceptedNameWithAuthor "Salix atrocinerea Brot."@la ;
-               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7883> ,
-                                          <http://dbpedia.org/resource/Salix_atrocinerea> ;
+               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7883> ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Salix_atrocinerea"^^xsd:anyURI ;
+               <http://schema.org/sameAs> <http://dbpedia.org/resource/Salix_atrocinerea> ;
                ifn:vulgarName "Bardaguera"@es ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-5001348"^^xsd:anyURI ;
                ifn:vulgarName "Grey willow"@en ;
@@ -13360,20 +13660,20 @@ ifn:Species36 ifn:acceptedNameWithoutAuthor "Cupressus sempervirens" ;
 
 
 ifn:Species364 ifn:acceptedNameWithoutAuthor "Eucalyptus gomphocephala" ;
-               ifn:vulgarName "Eucalipto gonfo"@es ;
                ifn:acceptedNameWithAuthor "Eucalyptus gomphocephala A.Cunn. ex DC."@la ;
+               ifn:vulgarName "Eucalipto gonfo"@es ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-73019"^^xsd:anyURI ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Eucalyptus_gomphocephala"^^xsd:anyURI ;
-               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/4448> ,
-                                          <http://dbpedia.org/resource/Eucalyptus_gomphocephala> ;
+               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/4448> ;
                ifn:vulgarName "Tuart"@en ;
-               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Eucalyptus_gomphocephala"^^xsd:anyURI .
+               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Eucalyptus_gomphocephala"^^xsd:anyURI ;
+               <http://schema.org/sameAs> <http://dbpedia.org/resource/Eucalyptus_gomphocephala> .
 
 
 ifn:Species369 ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-37792"^^xsd:anyURI ;
-               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Chamaerops_humilis"^^xsd:anyURI ;
-               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/3518> ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Chamaerops"^^xsd:anyURI ;
+               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/3518> ;
+               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Chamaerops_humilis"^^xsd:anyURI ;
                ifn:acceptedNameWithAuthor "Chamaerops humilis L."@la ;
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Chamaerops> ;
                ifn:vulgarName "Palmito"@es ,
@@ -13386,17 +13686,17 @@ ifn:Species37 <http://schema.org/sameAs> <http://dbpedia.org/resource/Juniperus_
               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/5499> ;
               ifn:acceptedNameWithAuthor "Juniperus communis L."@la ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Juniperus_communis"^^xsd:anyURI ;
-              ifn:vulgarName "Enebro común"@es ;
+              ifn:vulgarName "Enebro común"@es ,
+                             "Common juniper"@en ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2332579"^^xsd:anyURI ;
-              ifn:vulgarName "Common juniper"@en ;
               ifn:acceptedNameWithoutAuthor "Juniperus communis" .
 
 
 ifn:Species373 ifn:vulgarName "Abedul péndula"@es ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Betula_pendula"^^xsd:anyURI ;
+               ifn:vulgarName "Silver birch"@en ,
+                              "Warty birch"@en ;
                ifn:scientificSynonymWithAuthor "Betula verrucosa Ehrh."@la ;
-               ifn:vulgarName "Warty birch"@en ,
-                              "Silver birch"@en ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Betula_pendula"^^xsd:anyURI ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-21582"^^xsd:anyURI ;
                ifn:scientificSynonymWithoutAuthor "Betula verrucosa"@la ;
@@ -13418,8 +13718,8 @@ ifn:Species376 ifn:vulgarName "Maple ash"@en ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/1926> ;
                ifn:acceptedNameWithAuthor "Acer negundo L."@la ;
                ifn:vulgarName "Boxelder maple"@en ;
-               <http://schema.org/sameAs> <http://dbpedia.org/resource/Acer_negundo> ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Acer_negundo"^^xsd:anyURI ;
+               <http://schema.org/sameAs> <http://dbpedia.org/resource/Acer_negundo> ;
                ifn:scientificSynonymWithAuthor "Negundo fraxinifolium var. violaceum Booth ex Loudon"@la ;
                ifn:vulgarName "Arce negundo"@es ,
                               "Box elder"@en .
@@ -13429,8 +13729,8 @@ ifn:Species377 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Tilia_
                ifn:acceptedNameWithoutAuthor "Tilia platyphyllos" ;
                ifn:vulgarName "Largeleaf linden"@en ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Tilia_platyphyllos"^^xsd:anyURI ;
-               <http://schema.org/sameAs> <http://dbpedia.org/resource/Tilia_platyphyllos> ,
-                                          <http://crossnature.eu/resource/Taxon/8962> ;
+               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/8962> ,
+                                          <http://dbpedia.org/resource/Tilia_platyphyllos> ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2517523"^^xsd:anyURI ;
                ifn:vulgarName "Tilo común"@es ;
                ifn:acceptedNameWithAuthor "Tilia platyphyllos Scop."@la .
@@ -13439,11 +13739,11 @@ ifn:Species377 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Tilia_
 ifn:Species378 ifn:acceptedNameWithoutAuthor "Sorbus aucuparia" ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Sorbus_aucuparia"^^xsd:anyURI ;
                ifn:vulgarName "Rowan"@en ;
-               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Sorbus_aucuparia"^^xsd:anyURI ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/8558> ;
+               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Sorbus_aucuparia"^^xsd:anyURI ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/rjp-68"^^xsd:anyURI ;
-               ifn:vulgarName "Serbal de cazadores"@es ;
                ifn:acceptedNameWithAuthor "Sorbus aucuparia L."@la ;
+               ifn:vulgarName "Serbal de cazadores"@es ;
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Sorbus_aucuparia> .
 
 
@@ -13471,20 +13771,20 @@ ifn:Species389 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Rhamnu
 ifn:Species39 <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/5509> ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2332707"^^xsd:anyURI ;
               ifn:acceptedNameWithAuthor "Juniperus phoenicea L."@la ;
-              ifn:vulgarName "Sabina negral"@es ,
-                             "Arâr"@en ;
+              ifn:vulgarName "Sabina negral"@es ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Juniperus_phoenicea"^^xsd:anyURI ;
+              ifn:vulgarName "Arâr"@en ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Juniperus_phoenicea> ;
               ifn:acceptedNameWithoutAuthor "Juniperus phoenicea" ;
-              ifn:vulgarName "Phoenicean juniper"@en ;
-              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Juniperus_phoenicea"^^xsd:anyURI .
+              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Juniperus_phoenicea"^^xsd:anyURI ;
+              ifn:vulgarName "Phoenicean juniper"@en .
 
 
 ifn:Species392 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Gleditsia_triacanthos"^^xsd:anyURI ;
-               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/ild-1446"^^xsd:anyURI ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/4849> ;
-               ifn:acceptedNameWithoutAuthor "Gleditsia triacanthos" ;
+               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/ild-1446"^^xsd:anyURI ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Honey_locust"^^xsd:anyURI ;
+               ifn:acceptedNameWithoutAuthor "Gleditsia triacanthos" ;
                ifn:acceptedNameWithAuthor "Gleditsia triacanthos L."@la ;
                ifn:vulgarName "Acacia gleditsia"@es ,
                               "Honey locust"@en ;
@@ -13494,17 +13794,17 @@ ifn:Species392 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Gledit
 ifn:Species395 <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7237> ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Prunus_avium"^^xsd:anyURI ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/rjp-383"^^xsd:anyURI ;
-               ifn:vulgarName "Cerezo silvestre"@es ;
+               ifn:vulgarName "Cerezo silvestre"@es ,
+                              "Wild cherry"@en ;
                ifn:acceptedNameWithAuthor "Prunus avium (L.) L."@la ;
-               ifn:vulgarName "Wild cherry"@en ;
-               <http://schema.org/sameAs> <http://dbpedia.org/resource/Prunus_avium> ;
                ifn:acceptedNameWithoutAuthor "Prunus avium" ;
+               <http://schema.org/sameAs> <http://dbpedia.org/resource/Prunus_avium> ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Prunus_avium"^^xsd:anyURI .
 
 
-ifn:Species399 ifn:vulgarName "Mulberry"@en ;
+ifn:Species399 ifn:hasThePlantListPage "www.theplantlist.org/tpl1.1/search?q=Morus"^^xsd:anyURI ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Morus"^^xsd:anyURI ;
-               ifn:hasThePlantListPage "www.theplantlist.org/tpl1.1/search?q=Morus"^^xsd:anyURI ;
+               ifn:vulgarName "Mulberry"@en ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Morus_(plant)"^^xsd:anyURI ;
                ifn:acceptedNameWithoutAuthor "Morus" ;
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Morus_(plant)> ;
@@ -13532,11 +13832,11 @@ ifn:Species40 ifn:acceptedNameWithoutAuthor "Quercus" ;
 
 ifn:Species41 ifn:acceptedNameWithoutAuthor "Quercus robur" ;
               ifn:vulgarName "European oak"@en ;
-              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Quercus_robur"^^xsd:anyURI ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-174750"^^xsd:anyURI ;
+              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Quercus_robur"^^xsd:anyURI ;
               ifn:scientificSynonymWithAuthor "Quercus pedunculata Hoffm."@la ;
-              ifn:scientificSynonymWithoutAuthor "Quercus pedunculata"@la ;
               ifn:acceptedNameWithAuthor "Quercus robur L."@la ;
+              ifn:scientificSynonymWithoutAuthor "Quercus pedunculata"@la ;
               ifn:vulgarName "Pedunculate oak"@en ,
                              "Roble pedunculado"@es ,
                              "Common oak"@en ;
@@ -13552,38 +13852,38 @@ ifn:Species415 ifn:scientificSynonymWithAuthor "Crataegus odorantisima Donn"@la 
                ifn:vulgarName "Majoleto"@es ;
                ifn:acceptedNameWithoutAuthor "Crataegus laciniata" ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Crataegus_orientalis"^^xsd:anyURI ;
-               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/rjp-637"^^xsd:anyURI ;
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Crataegus_orientalis> ;
-               ifn:scientificSynonymWithoutAuthor "Crataegus laciniata"@la ;
+               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/rjp-637"^^xsd:anyURI ;
                ifn:acceptedNameWithAuthor "Crataegus laciniata Pall. ex M.Bieb."@la ;
+               ifn:scientificSynonymWithoutAuthor "Crataegus laciniata"@la ;
                ifn:vulgarName "Espino negro"@es ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Crataegus_orientalis"^^xsd:anyURI .
 
 
-ifn:Species42 ifn:acceptedNameWithAuthor "Quercus petraea (Matt.) Liebl."@la ;
-              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Quercus_petraea"^^xsd:anyURI ;
+ifn:Species42 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Quercus_petraea"^^xsd:anyURI ;
+              ifn:acceptedNameWithAuthor "Quercus petraea (Matt.) Liebl."@la ;
               ifn:scientificSynonymWithoutAuthor "Quercus sessiliflora"@la ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Quercus_petraea> ;
               ifn:vulgarName "Roble"@es ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-174374"^^xsd:anyURI ;
               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7222> ;
               ifn:scientificSynonymWithAuthor "Quercus sessiliflora Salisb."@la ;
-              ifn:acceptedNameWithoutAuthor "Quercus petraea" ;
               ifn:vulgarName "Cornish oak"@en ,
                              "Durmast oak"@en ;
+              ifn:acceptedNameWithoutAuthor "Quercus petraea" ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Quercus_petraea"^^xsd:anyURI ;
               ifn:vulgarName "Sessile oak"@en .
 
 
 ifn:Species43 ifn:vulgarName "Rebollo"@es ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Quercus_pyrenaica> ;
-              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Quercus_pyrenaica"^^xsd:anyURI ;
-              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Quercus_pyrenaica"^^xsd:anyURI ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-174637"^^xsd:anyURI ;
+              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Quercus_pyrenaica"^^xsd:anyURI ;
+              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Quercus_pyrenaica"^^xsd:anyURI ;
               ifn:scientificSynonymWithAuthor "Quercus toza Bastard"@la ;
-              ifn:acceptedNameWithAuthor "Quercus pyrenaica Willd."@la ;
-              ifn:acceptedNameWithoutAuthor "Quercus pyrenaica" ;
               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7225> ;
+              ifn:acceptedNameWithoutAuthor "Quercus pyrenaica" ;
+              ifn:acceptedNameWithAuthor "Quercus pyrenaica Willd."@la ;
               ifn:scientificSynonymWithoutAuthor "Quercus toza"@la ;
               ifn:vulgarName "Pyrenean oak"@en .
 
@@ -13593,16 +13893,16 @@ ifn:Species435 ifn:vulgarName "Alerce híbrido"@es ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Larch"^^xsd:anyURI ;
                ifn:acceptedNameWithAuthor "Larix x eurolepis A.Henry"@la ;
                ifn:acceptedNameWithoutAuthor "Larix x eurolepis" ;
-               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/26357> ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Larix_x eurolepis"^^xsd:anyURI ;
-               <http://schema.org/sameAs> <http://dbpedia.org/resource/Larch> .
+               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/26357> ,
+                                          <http://dbpedia.org/resource/Larch> .
 
 
-ifn:Species436 ifn:acceptedNameWithoutAuthor "Cupressus macrocarpa" ;
-               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Cupressus_macrocarpa"^^xsd:anyURI ;
+ifn:Species436 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Cupressus_macrocarpa"^^xsd:anyURI ;
+               ifn:acceptedNameWithoutAuthor "Cupressus macrocarpa" ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2748734"^^xsd:anyURI ;
-               ifn:vulgarName "Ciprés americano"@es ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Cupressus_macrocarpa"^^xsd:anyURI ;
+               ifn:vulgarName "Ciprés americano"@es ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/3886> ;
                ifn:acceptedNameWithAuthor "Cupressus macrocarpa Hartw."@la ;
                ifn:vulgarName "Monterey cypress"@en ;
@@ -13611,14 +13911,14 @@ ifn:Species436 ifn:acceptedNameWithoutAuthor "Cupressus macrocarpa" ;
 
 ifn:Species44 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Quercus_faginea"^^xsd:anyURI ;
               ifn:vulgarName "Portuguese oak"@en ;
-              ifn:acceptedNameWithAuthor "Quercus faginea Lam."@la ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Quercus_faginea> ;
+              ifn:acceptedNameWithAuthor "Quercus faginea Lam."@la ;
               ifn:scientificSynonymWithAuthor "Quecus lusitanica subsp. faginea (Lam.) A.DC."@la ;
               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7479> ;
               ifn:scientificSynonymWithoutAuthor "Quecus lusitanica subsp. faginea"@la ;
+              ifn:vulgarName "Quejigo fagínea"@es ;
               ifn:acceptedNameWithoutAuthor "Quercus faginea" ;
-              ifn:vulgarName "Quejigo fagínea"@es ,
-                             "Valencian oak"@en ;
+              ifn:vulgarName "Valencian oak"@en ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Quercus_faginea"^^xsd:anyURI ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-172690"^^xsd:anyURI .
 
@@ -13629,16 +13929,16 @@ ifn:Species45 ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record
               ifn:vulgarName "Holmoak"@en ;
               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7483> ,
                                          <http://dbpedia.org/resource/Quercus_ilex> ;
-              ifn:scientificSynonymWithAuthor "Quercus rotundifolia Lam."@la ;
               ifn:scientificSynonymWithoutAuthor "Quercus rotundifolia"@la ;
+              ifn:scientificSynonymWithAuthor "Quercus rotundifolia Lam."@la ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Quercus_ilex"^^xsd:anyURI ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Quercus_ilex"^^xsd:anyURI ;
               ifn:vulgarName "Encina"@es .
 
 
 ifn:Species457 ifn:vulgarName "Weeping willow"@en ;
-               <http://schema.org/sameAs> <http://dbpedia.org/resource/Salix_babylonica> ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-5004552"^^xsd:anyURI ;
+               <http://schema.org/sameAs> <http://dbpedia.org/resource/Salix_babylonica> ;
                ifn:vulgarName "Babylon willow"@en ;
                ifn:acceptedNameWithoutAuthor "Salix babylonica" ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Salix_babylonica"^^xsd:anyURI ;
@@ -13649,18 +13949,18 @@ ifn:Species457 ifn:vulgarName "Weeping willow"@en ;
 
 
 ifn:Species46 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Quercus_suber"^^xsd:anyURI ;
-              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-175312"^^xsd:anyURI ;
               ifn:acceptedNameWithAuthor "Quercus suber L."@la ;
-              ifn:vulgarName "Cork-oak"@en ;
+              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-175312"^^xsd:anyURI ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Quercus_suber"^^xsd:anyURI ;
-              ifn:vulgarName "Alcornoque"@es ;
+              ifn:vulgarName "Cork-oak"@en ,
+                             "Alcornoque"@es ;
               ifn:acceptedNameWithoutAuthor "Quercus suber" ;
               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7228> ,
                                          <http://dbpedia.org/resource/Quercus_suber> .
 
 
-ifn:Species469 ifn:vulgarName "Palmera"@es ,
-                              "Canary Island date palm"@en ;
+ifn:Species469 ifn:vulgarName "Canary Island date palm"@en ,
+                              "Palmera"@es ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-152655"^^xsd:anyURI ;
                ifn:acceptedNameWithAuthor "Phoenix canariensis Chabaud"@la ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7088> ;
@@ -13670,18 +13970,18 @@ ifn:Species469 ifn:vulgarName "Palmera"@es ,
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Phoenix_canariensis"^^xsd:anyURI .
 
 
-ifn:Species47 ifn:vulgarName "Algerian oak"@en ;
-              ifn:acceptedNameWithoutAuthor "Quercus canariensis" ;
-              ifn:vulgarName "Mirbeck's oak"@en ;
+ifn:Species47 ifn:acceptedNameWithoutAuthor "Quercus canariensis" ;
+              ifn:vulgarName "Mirbeck's oak"@en ,
+                             "Algerian oak"@en ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Quercus_canariensis"^^xsd:anyURI ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-171953"^^xsd:anyURI ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Quercus_canariensis> ,
                                          <http://crossnature.eu/resource/Taxon/7476> ;
               ifn:vulgarName "Quejigo bética"@es ;
-              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Quercus_canariensis"^^xsd:anyURI ;
               ifn:scientificSynonymWithAuthor "Quercus lusitanica var. baetica Webb"@la ;
-              ifn:scientificSynonymWithoutAuthor "Quercus lusitanica var. baetica"@la ;
-              ifn:acceptedNameWithAuthor "Quercus canariensis Willd."@la .
+              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Quercus_canariensis"^^xsd:anyURI ;
+              ifn:acceptedNameWithAuthor "Quercus canariensis Willd."@la ;
+              ifn:scientificSynonymWithoutAuthor "Quercus lusitanica var. baetica"@la .
 
 
 ifn:Species476 ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2616113"^^xsd:anyURI ;
@@ -13691,8 +13991,8 @@ ifn:Species476 ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/recor
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/1927> ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Acer_opalus"^^xsd:anyURI ;
                ifn:vulgarName "Italian maple"@en ;
-               ifn:acceptedNameWithoutAuthor "Acer opalus" ;
-               ifn:acceptedNameWithAuthor "Acer opalus Mill."@la .
+               ifn:acceptedNameWithAuthor "Acer opalus Mill."@la ;
+               ifn:acceptedNameWithoutAuthor "Acer opalus" .
 
 
 ifn:Species478 ifn:acceptedNameWithoutAuthor "Sorbus domestica" ;
@@ -13700,15 +14000,15 @@ ifn:Species478 ifn:acceptedNameWithoutAuthor "Sorbus domestica" ;
                ifn:acceptedNameWithAuthor "Sorbus domestica L."@la ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Sorbus_domestica"^^xsd:anyURI ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/8560> ;
+               ifn:vulgarName "Serbal común"@es ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Sorbus_domestica"^^xsd:anyURI ;
-               ifn:vulgarName "Serbal común"@es ,
-                              "Service tree"@en ,
+               ifn:vulgarName "Service tree"@en ,
                               "Sorb tree"@en ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/rjp-989"^^xsd:anyURI .
 
 
-ifn:Species48 ifn:acceptedNameWithoutAuthor "Quercus rubra" ;
-              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Quercus_rubra"^^xsd:anyURI ;
+ifn:Species48 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Quercus_rubra"^^xsd:anyURI ;
+              ifn:acceptedNameWithoutAuthor "Quercus rubra" ;
               ifn:scientificSynonymWithoutAuthor "Quercus borealis"@la ;
               ifn:vulgarName "Northern red oak"@en ,
                              "Roble americano"@es ;
@@ -13717,14 +14017,14 @@ ifn:Species48 ifn:acceptedNameWithoutAuthor "Quercus rubra" ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Quercus_rubra> ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Quercus_rubra"^^xsd:anyURI ;
               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7227> ;
-              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-174902"^^xsd:anyURI ;
-              ifn:vulgarName "Champion oak"@en .
+              ifn:vulgarName "Champion oak"@en ;
+              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-174902"^^xsd:anyURI .
 
 
 ifn:Species489 <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/1512> ;
                ifn:acceptedNameWithoutAuthor "Visnea mocanera" ;
-               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Visnea_mocanera"^^xsd:anyURI ;
                ifn:acceptedNameWithAuthor "Visnea mocanera L.f."@la ;
+               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Visnea_mocanera"^^xsd:anyURI ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Visnea_mocanera"^^xsd:anyURI ;
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Visnea_mocanera> ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2462423"^^xsd:anyURI ;
@@ -13734,9 +14034,9 @@ ifn:Species489 <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/
 ifn:Species49 <http://schema.org/sameAs> <http://dbpedia.org/resource/Oak> ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Oak"^^xsd:anyURI ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Quercus"^^xsd:anyURI ;
+              ifn:acceptedNameWithoutAuthor "Quercus" ;
               ifn:vulgarName "Other oaks"@en ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search?q=Quercus"^^xsd:anyURI ;
-              ifn:acceptedNameWithoutAuthor "Quercus" ;
               rdfs:comment "Otros quercus"@es ;
               ifn:vulgarName "Otros quercus"@es .
 
@@ -13755,8 +14055,8 @@ ifn:Species495 ifn:vulgarName "Portugal laurel"@en ;
 
 ifn:Species499 ifn:acceptedNameWithAuthor "Morus alba L."@la ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2501381"^^xsd:anyURI ;
-               ifn:acceptedNameWithoutAuthor "Morus alba" ;
                ifn:vulgarName "White mulberry"@en ;
+               ifn:acceptedNameWithoutAuthor "Morus alba" ;
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Morus_alba> ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Morus_alba"^^xsd:anyURI ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Morus_alba"^^xsd:anyURI ;
@@ -13767,9 +14067,9 @@ ifn:Species499 ifn:acceptedNameWithAuthor "Morus alba L."@la ;
 ifn:Species5 <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/4453> ;
              ifn:acceptedNameWithAuthor "Euonymus europaeus L."@la ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Euonymus_europaeus> ;
+             ifn:vulgarName "Common spindle"@en ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Euonymus_europaeus"^^xsd:anyURI ;
-             ifn:vulgarName "Common spindle"@en ,
-                            "Bonetero"@es ,
+             ifn:vulgarName "Bonetero"@es ,
                             "European spindle"@en ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Euonymus_europaeus"^^xsd:anyURI ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2803293"^^xsd:anyURI ;
@@ -13787,8 +14087,8 @@ ifn:Species50 <http://schema.org/sameAs> <http://dbpedia.org/resource/River_ecos
 ifn:Species51 ifn:vulgarName "White poplar"@en ,
                              "Abele"@en ;
               ifn:acceptedNameWithAuthor "Populus alba L."@la ;
-              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-5000549"^^xsd:anyURI ;
               ifn:acceptedNameWithoutAuthor "Populus alba" ;
+              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-5000549"^^xsd:anyURI ;
               ifn:vulgarName "Silverleaf poplar"@en ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Populus_alba"^^xsd:anyURI ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Populus_alba> ;
@@ -13798,26 +14098,26 @@ ifn:Species51 ifn:vulgarName "White poplar"@en ,
               ifn:vulgarName "Álamo"@es .
 
 
-ifn:Species515 ifn:vulgarName "Espino"@es ;
-               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/3852> ;
-               ifn:vulgarName "Mediterranean medlar"@en ;
+ifn:Species515 <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/3852> ;
+               ifn:vulgarName "Espino"@es ,
+                              "Mediterranean medlar"@en ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/rjp-1605"^^xsd:anyURI ;
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Crataegus_azarolus> ;
                ifn:vulgarName "Azerole"@en ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Crataegus_azarolus"^^xsd:anyURI ;
                ifn:acceptedNameWithoutAuthor "Crataegus azarolus" ;
                ifn:acceptedNameWithAuthor "Crataegus azarolus L."@la ;
-               ifn:vulgarName "Azarole"@en ;
-               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Crataegus_azarolus"^^xsd:anyURI .
+               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Crataegus_azarolus"^^xsd:anyURI ;
+               ifn:vulgarName "Azarole"@en .
 
 
-ifn:Species52 ifn:vulgarName "Chopo temblón"@es ;
-              ifn:acceptedNameWithAuthor "Populus tremula L."@la ;
+ifn:Species52 ifn:acceptedNameWithAuthor "Populus tremula L."@la ;
+              ifn:vulgarName "Chopo temblón"@es ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Populus_tremula"^^xsd:anyURI ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-5000217"^^xsd:anyURI ;
               ifn:vulgarName "Common Aspen"@en ;
-              <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7293> ,
-                                         <http://dbpedia.org/resource/Populus_tremula> ;
+              <http://schema.org/sameAs> <http://dbpedia.org/resource/Populus_tremula> ,
+                                         <http://crossnature.eu/resource/Taxon/7293> ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Populus_tremula"^^xsd:anyURI ;
               ifn:acceptedNameWithoutAuthor "Populus tremula" .
 
@@ -13834,26 +14134,26 @@ ifn:Species53 <http://schema.org/sameAs> <http://dbpedia.org/resource/Tamarix> ;
 
 ifn:Species54 ifn:vulgarName "Common alder"@en ;
               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/2038> ;
-              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Alnus_glutinosa"^^xsd:anyURI ;
               ifn:acceptedNameWithoutAuthor "Alnus glutinosa" ;
+              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Alnus_glutinosa"^^xsd:anyURI ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-6364"^^xsd:anyURI ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Alnus_glutinosa> ;
               ifn:vulgarName "Alder"@en ,
                              "Aliso"@es ;
               ifn:acceptedNameWithAuthor "Alnus glutinosa (L.) Gaertn."@la ;
-              ifn:vulgarName "European alder"@en ,
-                             "Black alder"@en ;
-              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Alnus_glutinosa"^^xsd:anyURI .
+              ifn:vulgarName "European alder"@en ;
+              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Alnus_glutinosa"^^xsd:anyURI ;
+              ifn:vulgarName "Black alder"@en .
 
 
-ifn:Species55 <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/4623> ;
-              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Fraxinus_angustifolia"^^xsd:anyURI ;
-              <http://schema.org/sameAs> <http://dbpedia.org/resource/Fraxinus_angustifolia> ;
+ifn:Species55 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Fraxinus_angustifolia"^^xsd:anyURI ;
+              <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/4623> ,
+                                         <http://dbpedia.org/resource/Fraxinus_angustifolia> ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Fraxinus_angustifolia"^^xsd:anyURI ;
               ifn:acceptedNameWithAuthor "Fraxinus angustifolia Vahl"@la ;
-              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-369513"^^xsd:anyURI ;
               ifn:vulgarName "Fresno"@es ;
               ifn:acceptedNameWithoutAuthor "Fraxinus angustifolia" ;
+              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-369513"^^xsd:anyURI ;
               ifn:vulgarName "Narrow-leafed ash"@en .
 
 
@@ -13864,8 +14164,8 @@ ifn:Species557 ifn:hasWikipediaPage "https://es.wikipedia.org/wiki/Salix_cantabr
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Salix_bicolor"^^xsd:anyURI ;
                ifn:scientificSynonymWithoutAuthor "Salix cantabrica"@la ;
                ifn:vulgarName "Cantabrian willow"@en ;
-               ifn:acceptedNameWithoutAuthor "Salix cantabrica" ;
                ifn:scientificSynonymWithAuthor "Salix cantabrica Rech.f."@la ;
+               ifn:acceptedNameWithoutAuthor "Salix cantabrica" ;
                ifn:vulgarName "Sauce cantábrico"@es ;
                ifn:acceptedNameWithAuthor "Salix cantabrica Ehrh. ex Willd."@la .
 
@@ -13877,9 +14177,9 @@ ifn:Species56 ifn:vulgarName "Olmo"@es ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Ulmus_minor> ;
               ifn:vulgarName "Field elm"@en ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2448634"^^xsd:anyURI ;
+              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Ulmus_minor"^^xsd:anyURI ;
               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/9147> ;
-              ifn:acceptedNameWithoutAuthor "Ulmus minor" ;
-              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Ulmus_minor"^^xsd:anyURI .
+              ifn:acceptedNameWithoutAuthor "Ulmus minor" .
 
 
 ifn:Species569 ifn:acceptedNameWithAuthor "Dracaena draco (L.) L."@la ;
@@ -13897,8 +14197,8 @@ ifn:Species569 ifn:acceptedNameWithAuthor "Dracaena draco (L.) L."@la ;
 ifn:Species57 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Salix"^^xsd:anyURI ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search?q=Salix"^^xsd:anyURI ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Willow> ;
-              ifn:vulgarName "Sauce"@es ,
-                             "Willow"@en ;
+              ifn:vulgarName "Willow"@en ,
+                             "Sauce"@es ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Willow"^^xsd:anyURI ;
               ifn:acceptedNameWithoutAuthor "Salix" .
 
@@ -13908,20 +14208,20 @@ ifn:Species576 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Acer_p
                ifn:acceptedNameWithAuthor "Acer pseudoplatanus L."@la ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2616276"^^xsd:anyURI ;
                ifn:acceptedNameWithoutAuthor "Acer pseudoplatanus" ;
-               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/1801> ;
                ifn:vulgarName "Sycamore"@en ;
+               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/1801> ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Acer_pseudoplatanus"^^xsd:anyURI ;
                ifn:vulgarName "Arce seudoplátano"@es .
 
 
-ifn:Species578 ifn:vulgarName "Serbal torminal"@es ,
-                              "Chequers"@en ;
+ifn:Species578 ifn:vulgarName "Serbal torminal"@es ;
                ifn:acceptedNameWithAuthor "Sorbus torminalis (L.) Crantz"@la ;
-               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/8566> ;
+               ifn:vulgarName "Chequers"@en ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Sorbus_torminalis"^^xsd:anyURI ;
+               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/8566> ;
                ifn:acceptedNameWithoutAuthor "Sorbus torminalis" ;
-               <http://schema.org/sameAs> <http://dbpedia.org/resource/Sorbus_torminalis> ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Sorbus_torminalis"^^xsd:anyURI ;
+               <http://schema.org/sameAs> <http://dbpedia.org/resource/Sorbus_torminalis> ;
                ifn:vulgarName "Checker tree"@en ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/rjp-595"^^xsd:anyURI ;
                ifn:vulgarName "Wild service tree"@en .
@@ -13933,8 +14233,8 @@ ifn:Species58 <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-5000337"^^xsd:anyURI ;
               ifn:vulgarName "Chopo"@es ,
                              "Black poplar"@en ;
-              ifn:acceptedNameWithoutAuthor "Populus nigra" ;
               ifn:acceptedNameWithAuthor "Populus nigra L."@la ;
+              ifn:acceptedNameWithoutAuthor "Populus nigra" ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Populus_nigra"^^xsd:anyURI .
 
 
@@ -13946,8 +14246,8 @@ ifn:Species59 <http://schema.org/sameAs> <http://dbpedia.org/resource/River_ecos
 
 
 ifn:Species595 ifn:vulgarName "Cerezo de racimos"@es ;
-               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/rjp-45"^^xsd:anyURI ;
                ifn:acceptedNameWithoutAuthor "Prunus padus" ;
+               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/rjp-45"^^xsd:anyURI ;
                ifn:vulgarName "Hagberry"@en ,
                               "Hackberry"@en ;
                ifn:acceptedNameWithAuthor "Prunus padus L."@la ;
@@ -13965,14 +14265,14 @@ ifn:Species599 ifn:vulgarName "Blackberry"@en ;
                ifn:acceptedNameWithoutAuthor "Morus nigra" ;
                ifn:acceptedNameWithAuthor "Morus nigra L."@la ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Morus_nigra"^^xsd:anyURI ;
-               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2501426"^^xsd:anyURI ;
-               <http://schema.org/sameAs> <http://dbpedia.org/resource/Morus_nigra> ;
                ifn:vulgarName "Black mulberry"@en ;
-               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/6291> .
+               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2501426"^^xsd:anyURI ;
+               <http://schema.org/sameAs> <http://dbpedia.org/resource/Morus_nigra> ,
+                                          <http://crossnature.eu/resource/Taxon/6291> .
 
 
-ifn:Species6 ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-132410"^^xsd:anyURI ;
-             ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Myrtus_communis"^^xsd:anyURI ;
+ifn:Species6 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Myrtus_communis"^^xsd:anyURI ;
+             ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-132410"^^xsd:anyURI ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Myrtus_communis"^^xsd:anyURI ;
              ifn:vulgarName "Mirto"@es ,
                             "Myrtle"@en ;
@@ -13995,16 +14295,16 @@ ifn:Species61 <http://schema.org/sameAs> <http://dbpedia.org/resource/Eucalyptus
               ifn:vulgarName "Eucalipto globulus"@es ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Eucalyptus_globulus"^^xsd:anyURI ;
               ifn:acceptedNameWithoutAuthor "Eucalyptus globulus" ;
-              <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/4445> ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Eucalyptus_globulus"^^xsd:anyURI ;
+              <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/4445> ;
               ifn:acceptedNameWithAuthor "Eucalyptus globulus Labill."@la ;
               ifn:vulgarName "Tasmanian blue gum"@en ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-73008"^^xsd:anyURI ;
               ifn:vulgarName "Southern blue gum"@en .
 
 
-ifn:Species62 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Eucalyptus_camaldulensis"^^xsd:anyURI ;
-              ifn:acceptedNameWithAuthor "Eucalyptus camaldulensis Dehnh."@la ;
+ifn:Species62 ifn:acceptedNameWithAuthor "Eucalyptus camaldulensis Dehnh."@la ;
+              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Eucalyptus_camaldulensis"^^xsd:anyURI ;
               ifn:vulgarName "Eucalipto rostrata"@es ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-72616"^^xsd:anyURI ;
               ifn:acceptedNameWithoutAuthor "Eucalyptus camaldulensis" ;
@@ -14019,20 +14319,20 @@ ifn:Species63 ifn:acceptedNameWithoutAuthor "Eucalyptus" ;
               ifn:vulgarName "Other eucalypts"@en ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Eucalyptus> ;
               rdfs:comment "Otros eucaliptos"@es ;
-              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Eucalyptus"^^xsd:anyURI ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search?q=eucalyptus"^^xsd:anyURI ;
+              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Eucalyptus"^^xsd:anyURI ;
               ifn:vulgarName "Otros eucaliptos"@es .
 
 
 ifn:Species64 <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/26350> ;
-              ifn:acceptedNameWithoutAuthor "Eucalyptus nitens" ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-73436"^^xsd:anyURI ;
+              ifn:acceptedNameWithoutAuthor "Eucalyptus nitens" ;
               ifn:vulgarName "Shining gum"@en ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Eucalyptus_nitens"^^xsd:anyURI ;
               ifn:acceptedNameWithAuthor "Eucalyptus nitens (H.Deane & Maiden) Maiden"@la ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Eucalyptus_nitens> ;
-              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Eucalyptus_nitens"^^xsd:anyURI ;
-              ifn:vulgarName "Eucalipto nitens"@es .
+              ifn:vulgarName "Eucalipto nitens"@es ;
+              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Eucalyptus_nitens"^^xsd:anyURI .
 
 
 ifn:Species65 <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/5361> ,
@@ -14060,13 +14360,13 @@ ifn:Species657 ifn:acceptedNameWithoutAuthor "Salix caprea" ;
 
 
 ifn:Species66 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Olive"^^xsd:anyURI ;
-              ifn:acceptedNameWithoutAuthor "Olea europaea" ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Olive> ;
               ifn:acceptedNameWithAuthor "Olea europaea L."@la ;
+              ifn:acceptedNameWithoutAuthor "Olea europaea" ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Olea_europaea"^^xsd:anyURI ;
+              ifn:vulgarName "Acebuche"@es ;
               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/6644> ;
-              ifn:vulgarName "Acebuche"@es ,
-                             "Wild olive tree"@en ;
+              ifn:vulgarName "Wild olive tree"@en ;
               ifn:scientificSynonymWithoutAuthor "Olea oleaster"@la ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-355112"^^xsd:anyURI ;
               ifn:scientificSynonymWithAuthor "Olea oleaster Hoffmanns. & Link"@la .
@@ -14088,9 +14388,9 @@ ifn:Species676 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Acer_p
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Acer_platanoides> ;
                ifn:acceptedNameWithoutAuthor "Acer platanoides" ;
                ifn:acceptedNameWithAuthor "Acer platanoides L."@la ;
+               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Acer_platanoides"^^xsd:anyURI ;
                ifn:vulgarName "Arce platanoide"@es ,
                               "Norway maple"@en ;
-               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Acer_platanoides"^^xsd:anyURI ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/1800> .
 
 
@@ -14099,8 +14399,8 @@ ifn:Species678 ifn:acceptedNameWithoutAuthor "Sorbus latifolia" ;
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Sorbus_latifolia> ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Sorbus_latifolia"^^xsd:anyURI ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/8564> ;
-               ifn:vulgarName "Broad-leaved whitebeam"@en ,
-                              "Serbal de hoja ancha"@es ;
+               ifn:vulgarName "Serbal de hoja ancha"@es ,
+                              "Broad-leaved whitebeam"@en ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/rjp-487"^^xsd:anyURI ;
                ifn:acceptedNameWithAuthor "Sorbus latifolia (Lam.) Pers."@la .
 
@@ -14108,17 +14408,17 @@ ifn:Species678 ifn:acceptedNameWithoutAuthor "Sorbus latifolia" ;
 ifn:Species68 ifn:acceptedNameWithoutAuthor "Arbutus unedo" ;
               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/2284> ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2646748"^^xsd:anyURI ;
-              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Arbutus_unedo"^^xsd:anyURI ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Arbutus_unedo> ;
+              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Arbutus_unedo"^^xsd:anyURI ;
               ifn:vulgarName "Madroño"@es ;
               ifn:acceptedNameWithAuthor "Arbutus unedo L."@la ;
               ifn:vulgarName "Strawberry tree"@en ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Arbutus_unedo"^^xsd:anyURI .
 
 
-ifn:Species69 ifn:vulgarName "Palm tree"@en ;
+ifn:Species69 ifn:vulgarName "Palm tree"@en ,
+                             "Palmera"@es ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search?q=Phoenix"^^xsd:anyURI ;
-              ifn:vulgarName "Palmera"@es ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Phoenix"^^xsd:anyURI ;
               ifn:acceptedNameWithoutAuthor "Phoenix" ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Phoenix_(plant)"^^xsd:anyURI ;
@@ -14129,9 +14429,9 @@ ifn:Species7 ifn:acceptedNameWithoutAuthor "Acacia" ;
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Acacia> ;
              ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Acacia"^^xsd:anyURI ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search?q=acacia"^^xsd:anyURI ;
-             ifn:vulgarName "Acacia"@en ;
-             ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Acacia"^^xsd:anyURI ;
-             ifn:vulgarName "Acacia"@es .
+             ifn:vulgarName "Acacia"@en ,
+                            "Acacia"@es ;
+             ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Acacia"^^xsd:anyURI .
 
 
 ifn:Species70 rdfs:comment "Mezcla de frondosas de gran porte"@es ;
@@ -14146,19 +14446,19 @@ ifn:Species71 ifn:vulgarName "Common beech"@en ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Fagus_sylvatica"^^xsd:anyURI ;
               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/4566> ,
                                          <http://dbpedia.org/resource/Fagus_sylvatica> ;
-              ifn:acceptedNameWithoutAuthor "Fagus sylvatica" ;
               ifn:acceptedNameWithAuthor "Fagus sylvatica L."@la ;
-              ifn:vulgarName "European beech"@en ,
-                             "Haya"@es ;
-              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-83891"^^xsd:anyURI .
+              ifn:acceptedNameWithoutAuthor "Fagus sylvatica" ;
+              ifn:vulgarName "European beech"@en ;
+              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-83891"^^xsd:anyURI ;
+              ifn:vulgarName "Haya"@es .
 
 
 ifn:Species72 ifn:vulgarName "Sweet chestnut"@en ,
                              "Castaño"@es ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Castanea_sativa"^^xsd:anyURI ;
               ifn:acceptedNameWithAuthor "Castanea sativa Mill."@la ;
-              <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/3189> ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-35042"^^xsd:anyURI ;
+              <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/3189> ;
               ifn:scientificSynonymWithAuthor "Castanea vesca Gaertn."@la ;
               ifn:scientificSynonymWithoutAuthor "Castanea vesca"@la ;
               ifn:acceptedNameWithoutAuthor "Castanea sativa" ;
@@ -14166,9 +14466,9 @@ ifn:Species72 ifn:vulgarName "Sweet chestnut"@en ,
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Castanea_sativa> .
 
 
-ifn:Species73 ifn:vulgarName "Abedul"@es ,
-                             "Birch"@en ;
+ifn:Species73 ifn:vulgarName "Abedul"@es ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search?q=Betula spp."^^xsd:anyURI ;
+              ifn:vulgarName "Birch"@en ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Birch"^^xsd:anyURI ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Birch> ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Betula"^^xsd:anyURI ;
@@ -14187,8 +14487,8 @@ ifn:Species74 ifn:vulgarName "Common hazel"@en ;
 
 
 ifn:Species75 ifn:vulgarName "Nogal"@es ;
-              ifn:acceptedNameWithAuthor "Juglans regia L."@la ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Juglans_regia> ;
+              ifn:acceptedNameWithAuthor "Juglans regia L."@la ;
               ifn:acceptedNameWithoutAuthor "Juglans regia" ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2331747"^^xsd:anyURI ;
               ifn:vulgarName "Madeira walnut"@en ,
@@ -14202,32 +14502,32 @@ ifn:Species75 ifn:vulgarName "Nogal"@es ;
 
 
 ifn:Species757 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Salix_eleagnos"^^xsd:anyURI ;
-               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-5000796"^^xsd:anyURI ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Salix_elaeagnos"^^xsd:anyURI ;
+               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-5000796"^^xsd:anyURI ;
+               ifn:vulgarName "Rosemary willow"@en ;
                ifn:acceptedNameWithAuthor "Salix elaeagnos Scop."@la ;
-               ifn:vulgarName "Rosemary willow"@en ,
-                              "Bitter willow"@en ;
+               ifn:vulgarName "Bitter willow"@en ;
                ifn:acceptedNameWithoutAuthor "Salix elaeagnos" ;
                ifn:vulgarName "Hoary willow"@en ,
-                              "Sarga"@es ,
+                              "Elaeagnus willow"@en ,
                               "Olive willow"@en ,
-                              "Elaeagnus willow"@en ;
+                              "Sarga"@es ;
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Salix_eleagnos> .
 
 
 ifn:Species76 ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2615447"^^xsd:anyURI ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Acer_campestre"^^xsd:anyURI ;
               ifn:acceptedNameWithAuthor "Acer campestre L."@la ;
-              ifn:vulgarName "Field maple"@en ;
+              ifn:vulgarName "Field maple"@en ,
+                             "Arce"@es ;
               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/1922> ;
-              ifn:vulgarName "Arce"@es ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Acer_campestre"^^xsd:anyURI ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Acer_campestre> ;
               ifn:acceptedNameWithoutAuthor "Acer campestre" .
 
 
-ifn:Species77 ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search?q=Tilia"^^xsd:anyURI ;
-              ifn:acceptedNameWithoutAuthor "Tilia" ;
+ifn:Species77 ifn:acceptedNameWithoutAuthor "Tilia" ;
+              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search?q=Tilia"^^xsd:anyURI ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Tilia"^^xsd:anyURI ;
               ifn:vulgarName "Lime tree"@en ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Tilia> ;
@@ -14235,9 +14535,9 @@ ifn:Species77 ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search
               ifn:vulgarName "Til"@es .
 
 
-ifn:Species778 ifn:vulgarName "Dwarf whitebeam"@en ;
-               ifn:acceptedNameWithAuthor "Sorbus chamaemespilus (L.) Crantz"@la ;
-               ifn:vulgarName "Serbal chame"@es ;
+ifn:Species778 ifn:acceptedNameWithAuthor "Sorbus chamaemespilus (L.) Crantz"@la ;
+               ifn:vulgarName "Dwarf whitebeam"@en ,
+                              "Serbal chame"@es ;
                ifn:acceptedNameWithoutAuthor "Sorbus chamaemespilus" ;
                <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/8559> ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/rjp-9734"^^xsd:anyURI ;
@@ -14247,8 +14547,8 @@ ifn:Species778 ifn:vulgarName "Dwarf whitebeam"@en ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Sorbus_chamaemespilus"^^xsd:anyURI .
 
 
-ifn:Species78 ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search?q=Sorbus"^^xsd:anyURI ;
-              ifn:vulgarName "Rowan"@en ;
+ifn:Species78 ifn:vulgarName "Rowan"@en ;
+              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search?q=Sorbus"^^xsd:anyURI ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Sorbus"^^xsd:anyURI ;
               ifn:vulgarName "Mountain-ash"@en ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Sorbus"^^xsd:anyURI ;
@@ -14274,9 +14574,9 @@ ifn:Species79 <http://schema.org/sameAs> <http://dbpedia.org/resource/Platanus_x
               ifn:scientificSynonymWithoutAuthor "Platanus x hybrida"@la .
 
 
-ifn:Species8 <http://schema.org/sameAs> <http://dbpedia.org/resource/Phillyrea_latifolia> ;
+ifn:Species8 ifn:vulgarName "Green olive tree"@en ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Phillyrea_latifolia"^^xsd:anyURI ;
-             ifn:vulgarName "Green olive tree"@en ;
+             <http://schema.org/sameAs> <http://dbpedia.org/resource/Phillyrea_latifolia> ;
              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-355786"^^xsd:anyURI ;
              ifn:acceptedNameWithoutAuthor "Phillyrea latifolia" ;
              <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7079> ;
@@ -14294,10 +14594,10 @@ ifn:Species80 ifn:acceptedNameWithoutAuthor "Lauraceae" ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Laurel_forest"^^xsd:anyURI .
 
 
-ifn:Species81 <http://schema.org/sameAs> <http://dbpedia.org/resource/Myrica_faya> ,
-                                         <http://crossnature.eu/resource/Taxon/6481> ;
+ifn:Species81 <http://schema.org/sameAs> <http://dbpedia.org/resource/Myrica_faya> ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2500713"^^xsd:anyURI ;
               ifn:vulgarName "Haya"@en ;
+              <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/6481> ;
               ifn:acceptedNameWithoutAuthor "Myrica faya" ;
               ifn:vulgarName "Firetree"@en ,
                              "Faya"@es ;
@@ -14308,31 +14608,31 @@ ifn:Species81 <http://schema.org/sameAs> <http://dbpedia.org/resource/Myrica_fay
 
 
 ifn:Species82 ifn:vulgarName "Small-leaved holly"@en ;
-              <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/1011> ;
               ifn:acceptedNameWithAuthor "Ilex canariensis Poir."@la ;
               ifn:acceptedNameWithoutAuthor "Ilex canariensis" ;
-              <http://schema.org/sameAs> <http://dbpedia.org/resource/Ilex_canariensis> ;
+              <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/1011> ,
+                                         <http://dbpedia.org/resource/Ilex_canariensis> ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Ilex_canariensis"^^xsd:anyURI ;
               ifn:vulgarName "Acebiño"@es ;
-              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Ilex_canariensis"^^xsd:anyURI ;
-              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2860488"^^xsd:anyURI .
+              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2860488"^^xsd:anyURI ;
+              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Ilex_canariensis"^^xsd:anyURI .
 
 
 ifn:Species83 ifn:acceptedNameWithoutAuthor "Erica arborea" ;
-              ifn:vulgarName "Tree heath"@en ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2792636"^^xsd:anyURI ;
+              ifn:vulgarName "Tree heath"@en ;
               ifn:acceptedNameWithAuthor "Erica arborea L."@la ;
-              <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/4364> ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Erica_arborea"^^xsd:anyURI ;
+              <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/4364> ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Erica_arborea"^^xsd:anyURI ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Erica_arborea> ;
               ifn:vulgarName "Brezo arbóreo"@es .
 
 
-ifn:Species84 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Persea_indica"^^xsd:anyURI ;
-              ifn:vulgarName "Viñátigo"@es ;
-              <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/1401> ;
+ifn:Species84 ifn:vulgarName "Viñátigo"@es ;
+              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Persea_indica"^^xsd:anyURI ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2529655"^^xsd:anyURI ;
+              <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/1401> ;
               ifn:acceptedNameWithAuthor "Persea indica (L.) Spreng."@la ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Persea_indica"^^xsd:anyURI ;
               ifn:acceptedNameWithoutAuthor "Persea indica" ;
@@ -14352,8 +14652,8 @@ ifn:Species857 ifn:acceptedNameWithAuthor "Salix fragilis L."@la ;
                ifn:vulgarName "Mimbre"@es ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Salix_fragilis"^^xsd:anyURI ;
                ifn:vulgarName "Brittle willow"@en ;
-               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7893> ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Salix_fragilis"^^xsd:anyURI ;
+               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7893> ;
                ifn:acceptedNameWithoutAuthor "Salix fragilis" ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-5000691"^^xsd:anyURI ;
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Salix_fragilis> ;
@@ -14380,42 +14680,42 @@ ifn:Species86 ifn:acceptedNameWithAuthor "Picconia excelsa (Aiton) DC."@la ;
               ifn:vulgarName "Palo blanco"@es ;
               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/1386> ;
               ifn:acceptedNameWithoutAuthor "Picconia excelsa" ;
-              ifn:scientificSynonymWithAuthor "Notelaea excelsa (Aiton) Webb & Berthel."@la ;
               ifn:vulgarName "White wood"@en ;
+              ifn:scientificSynonymWithAuthor "Notelaea excelsa (Aiton) Webb & Berthel."@la ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Picconia_excelsa> ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Picconia_excelsa"^^xsd:anyURI .
 
 
 ifn:Species87 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Ocotea_foetens"^^xsd:anyURI ;
-              ifn:vulgarName "Rain tree of Hierro island"@en ,
-                             "Til"@en ,
-                             "Tilo"@es ;
+              ifn:vulgarName "Til"@en ,
+                             "Rain tree of Hierro island"@en ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Ocotea_foetens> ;
+              ifn:vulgarName "Tilo"@es ;
               ifn:acceptedNameWithAuthor "Ocotea foetens (Aiton) Baill."@la ;
+              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2385993"^^xsd:anyURI ;
               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/9640> ;
               ifn:vulgarName "Tilo"@en ;
-              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2385993"^^xsd:anyURI ;
               ifn:acceptedNameWithoutAuthor "Ocotea foetens" ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Ocotea_foetens"^^xsd:anyURI ;
               ifn:vulgarName "Stinkwood"@en .
 
 
 ifn:Species88 ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2644321"^^xsd:anyURI ;
-              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Apollonias_barbujana"^^xsd:anyURI ;
               ifn:acceptedNameWithAuthor "Apollonias barbujana (Cav.) Bornm."@la ;
+              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Apollonias_barbujana"^^xsd:anyURI ;
               ifn:acceptedNameWithoutAuthor "Apollonias barbujana" ;
-              ifn:vulgarName "Barbusano"@es ;
+              <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/1175> ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Apollonias_barbujana"^^xsd:anyURI ;
-              <http://schema.org/sameAs> <http://dbpedia.org/resource/Apollonias_barbujana> ,
-                                         <http://crossnature.eu/resource/Taxon/1175> ;
-              ifn:vulgarName "Barbusano"@en ;
+              <http://schema.org/sameAs> <http://dbpedia.org/resource/Apollonias_barbujana> ;
+              ifn:vulgarName "Barbusano"@es ,
+                             "Barbusano"@en ;
               ifn:scientificSynonymWithoutAuthor "Apollonias canariensis"@la ;
               ifn:vulgarName "Canary laurel"@en ;
               ifn:scientificSynonymWithAuthor "Apollonias canariensis (Willd.) Nees"@la .
 
 
-ifn:Species89 ifn:vulgarName "Otras laurisilvas"@es ;
-              <http://schema.org/sameAs> <http://dbpedia.org/resource/Laurel_forest> ;
+ifn:Species89 <http://schema.org/sameAs> <http://dbpedia.org/resource/Laurel_forest> ;
+              ifn:vulgarName "Otras laurisilvas"@es ;
               rdfs:comment "Otras laurisilvas"@es ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Laurel_forest"^^xsd:anyURI ;
               ifn:acceptedNameWithoutAuthor "Lauraceae" ;
@@ -14427,22 +14727,22 @@ ifn:Species9 ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/
              <http://schema.org/sameAs> <http://dbpedia.org/resource/Cornus_sanguinea> ;
              ifn:vulgarName "Dogwood"@en ;
              ifn:acceptedNameWithAuthor "Cornus sanguinea L."@la ;
-             <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/3728> ;
              ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Cornus_sanguinea"^^xsd:anyURI ;
+             <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/3728> ;
              ifn:acceptedNameWithoutAuthor "Cornus sanguinea" ;
              ifn:vulgarName "Cornejo"@es .
 
 
 ifn:Species90 rdfs:comment "Mezcla de pequeñas frondosas"@es ;
-              ifn:acceptedNameWithoutAuthor "Angiospermae" ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Flowering_plant"^^xsd:anyURI ;
-              ifn:vulgarName "Frondosas de pequeño porte (H.t. < 10 m)"@es ;
-              <http://schema.org/sameAs> <http://dbpedia.org/resource/Flowering_plant> .
+              ifn:acceptedNameWithoutAuthor "Angiospermae" ;
+              <http://schema.org/sameAs> <http://dbpedia.org/resource/Flowering_plant> ;
+              ifn:vulgarName "Frondosas de pequeño porte (H.t. < 10 m)"@es .
 
 
 ifn:Species91 <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/2860> ;
-              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2688005"^^xsd:anyURI ;
               ifn:acceptedNameWithAuthor "Buxus sempervirens L."@la ;
+              ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2688005"^^xsd:anyURI ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Buxus_sempervirens"^^xsd:anyURI ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Buxus_sempervirens> ;
               ifn:vulgarName "European box"@en ,
@@ -14466,8 +14766,8 @@ ifn:Species92 ifn:vulgarName "Black locust"@en ;
               ifn:acceptedNameWithoutAuthor "Robinia pseudacacia" ;
               ifn:acceptedNameWithAuthor "Robinia pseudacacia L."@la ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Robinia_pseudoacacia"^^xsd:anyURI ;
-              ifn:vulgarName "Acacia robinia"@es ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/ild-8996"^^xsd:anyURI ;
+              ifn:vulgarName "Acacia robinia"@es ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Robinia_pseudoacacia> ;
               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Robinia_pseudoacacia"^^xsd:anyURI .
 
@@ -14488,16 +14788,16 @@ ifn:Species936 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Cupressus"^^x
                ifn:vulgarName "Ciprés"@es ;
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Cupressus> ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Cupressus"^^xsd:anyURI ;
-               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search?q=Cupressus"^^xsd:anyURI ;
                ifn:acceptedNameWithoutAuthor "Cupressus" ;
+               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search?q=Cupressus"^^xsd:anyURI ;
                ifn:vulgarName "Cypress"@en .
 
 
 ifn:Species937 <http://schema.org/sameAs> <http://dbpedia.org/resource/Juniper> ;
                ifn:acceptedNameWithoutAuthor "Juniperus" ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search?q=Juniperus spp."^^xsd:anyURI ;
-               ifn:vulgarName "Enebros y sabinas"@es ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Juniperus"^^xsd:anyURI ;
+               ifn:vulgarName "Enebros y sabinas"@es ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Juniper"^^xsd:anyURI ;
                ifn:vulgarName "Juniper"@en .
 
@@ -14524,15 +14824,15 @@ ifn:Species95 ifn:acceptedNameWithoutAuthor "Prunus" ;
 ifn:Species955 <http://schema.org/sameAs> <http://dbpedia.org/resource/Fraxinus> ;
                ifn:vulgarName "Ash"@en ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search?q=Fraxinus spp."^^xsd:anyURI ;
-               ifn:vulgarName "Fresno"@es ;
                ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Fraxinus"^^xsd:anyURI ;
+               ifn:vulgarName "Fresno"@es ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Fraxinus"^^xsd:anyURI ;
                ifn:acceptedNameWithoutAuthor "Fraxinus" .
 
 
 ifn:Species956 ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Ulmus"^^xsd:anyURI ;
-               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Elm"^^xsd:anyURI ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search?q=Ulmus"^^xsd:anyURI ;
+               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Elm"^^xsd:anyURI ;
                ifn:vulgarName "Elm"@en ;
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Elm> ;
                ifn:acceptedNameWithoutAuthor "Ulmus" ;
@@ -14548,16 +14848,16 @@ ifn:Species957 ifn:vulgarName "Purpleosier willow"@en ,
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-5003498"^^xsd:anyURI ;
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Salix_purpurea> ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Salix_purpurea"^^xsd:anyURI ;
-               ifn:acceptedNameWithoutAuthor "Salix purpurea" ;
-               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Salix_purpurea"^^xsd:anyURI .
+               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Salix_purpurea"^^xsd:anyURI ;
+               ifn:acceptedNameWithoutAuthor "Salix purpurea" .
 
 
 ifn:Species96 <http://schema.org/sameAs> <http://dbpedia.org/resource/Rhus_coriaria> ;
               ifn:acceptedNameWithoutAuthor "Rhus coriaria" ;
               ifn:acceptedNameWithAuthor "Rhus coriaria L."@la ;
+              ifn:vulgarName "Sicilian sumac"@en ,
+                             "Zumaque"@es ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Rhus_coriaria"^^xsd:anyURI ;
-              ifn:vulgarName "Zumaque"@es ,
-                             "Sicilian sumac"@en ;
               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/record/kew-2422872"^^xsd:anyURI ;
               ifn:vulgarName "Elm-leaved sumach"@en ;
               <http://schema.org/sameAs> <http://crossnature.eu/resource/Taxon/7774> ;
@@ -14582,16 +14882,16 @@ ifn:Species97 ifn:vulgarName "Black elder"@en ,
 
 
 ifn:Species975 <http://schema.org/sameAs> <http://dbpedia.org/resource/Juglans> ;
+               ifn:acceptedNameWithoutAuthor "Juglans" ;
                ifn:vulgarName "Walnut"@en ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search?q=Juglans spp."^^xsd:anyURI ;
-               ifn:acceptedNameWithoutAuthor "Juglans" ;
-               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Juglans"^^xsd:anyURI ;
                ifn:vulgarName "Nogal"@es ;
+               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Juglans"^^xsd:anyURI ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Juglans"^^xsd:anyURI .
 
 
-ifn:Species976 ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search?q=Acer spp."^^xsd:anyURI ;
-               <http://schema.org/sameAs> <http://dbpedia.org/resource/Maple> ;
+ifn:Species976 <http://schema.org/sameAs> <http://dbpedia.org/resource/Maple> ;
+               ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search?q=Acer spp."^^xsd:anyURI ;
                ifn:vulgarName "Arce"@es ,
                               "Maple"@en ;
                ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Maple"^^xsd:anyURI ;
@@ -14612,8 +14912,8 @@ ifn:Species98 ifn:acceptedNameWithAuthor "Carpinus betulus L."@la ;
 
 ifn:Species99 ifn:vulgarName "Otras frondosas"@es ;
               ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Flowering_plant"^^xsd:anyURI ;
-              rdfs:comment "Otras frondosas"@es ;
               <http://schema.org/sameAs> <http://dbpedia.org/resource/Flowering_plant> ;
+              rdfs:comment "Otras frondosas"@es ;
               ifn:acceptedNameWithoutAuthor "Angiospermae" .
 
 
@@ -14621,8 +14921,8 @@ ifn:Species997 ifn:hasWikipediaPage "https://en.wikipedia.org/wiki/Sambucus"^^xs
                ifn:vulgarName "Elder"@en ;
                <http://schema.org/sameAs> <http://dbpedia.org/resource/Sambucus> ;
                ifn:hasThePlantListPage "http://www.theplantlist.org/tpl1.1/search?q=Sambucus"^^xsd:anyURI ;
-               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Sambucus"^^xsd:anyURI ;
                ifn:acceptedNameWithoutAuthor "Sambucus" ;
+               ifn:hasWikispeciesPage "https://species.wikimedia.org/wiki/Sambucus"^^xsd:anyURI ;
                ifn:vulgarName "Elderberry"@en ,
                               "Saúco"@es .
 
@@ -14759,14 +15059,67 @@ ifn:hasVolumeWithoutBark rdfs:label "has volume without bark"@en ,
 ] .
 
 
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( ifn:ParametroEspecial-PinusPinaster
+                ifn:ParametroEspecial-QuercusSuber
+                ifn:ParametroEspecial-RestoDeArboles
+                ifn:ParametroEspecial-TroncoInclinado
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( ifn:ParametroEspecial-PinusPinaster-21
+                ifn:ParametroEspecial-PinusPinaster-22
+                ifn:ParametroEspecial-PinusPinaster-23
+                ifn:ParametroEspecial-PinusPinaster-24
+                ifn:ParametroEspecial-PinusPinaster-25
+                ifn:ParametroEspecial-PinusPinaster-26
+                ifn:ParametroEspecial-PinusPinaster-27
+                ifn:ParametroEspecial-PinusPinaster-28
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( ifn:ParametroEspecial-QuercusSuber-10
+                ifn:ParametroEspecial-QuercusSuber-11
+                ifn:ParametroEspecial-QuercusSuber-12
+                ifn:ParametroEspecial-QuercusSuber-13
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( ifn:SistGeog-PinusPinaster-0
+                ifn:SistGeog-PinusPinaster-1
+                ifn:SistGeog-PinusPinaster-2
+                ifn:SistGeog-PinusPinaster-3
+                ifn:SistGeog-PinusPinaster-4
+                ifn:SistGeog-PinusPinaster-5
+                ifn:SistGeog-PinusPinaster-6
+                ifn:SistGeog-PinusPinaster-7
+                ifn:SistGeog-PinusPinaster-8
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( ifn:SistGeog-QuercusSuber-0
+                ifn:SistGeog-QuercusSuber-1
+                ifn:SistGeog-QuercusSuber-2
+                ifn:SistGeog-QuercusSuber-3
+              )
+] .
+
+
 [ rdf:type owl:AllDisjointProperties ;
-  owl:members ( ifn:containsSpeciesPcEspParc
+  owl:members ( ifn:containsSpeciesDetail
+                ifn:containsSpeciesPcEspParc
                 ifn:containsSpeciesPcMatorral
                 ifn:containsSpeciesPcRegenera
-                ifn:containsSpeciesDetail
               )
 ] .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
-
