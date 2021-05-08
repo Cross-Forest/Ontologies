@@ -1,7 +1,7 @@
-@prefix : <http://crossforest.eu/ifi-pt/ontology/> .
+@prefix : <http://crossforest.eu/ifn-pt-df6/ontology/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix ifi: <http://crossforest.eu/ifi/ontology/> .
-@prefix ifi-pt: <http://crossforest.eu/ifi-pt/ontology/> .
+@prefix ifn-pt-df6: <http://crossforest.eu/ifn-pt-df6/ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix smo: <http://crossforest.eu/measures/ontology/> .
@@ -9,10 +9,13 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@base <http://crossforest.eu/ifi-pt/ontology/> .
+@prefix ifi-pt-df6: <http://crossforest.eu/ifi/data/dominantFormation/PT/6/DominantFormation> .
+@prefix ifn-pt-df6: <http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/> .
+@base <http://crossforest.eu/ifn-pt-df6/ontology/> .
 
-<http://crossforest.eu/ifi-pt/ontology/> rdf:type owl:Ontology ;
+<http://crossforest.eu/ifn-pt-df6/ontology/> rdf:type owl:Ontology ;
                                        dc:creator <https://www.crossforest.eu/members/dportoles> ,
                                                   <https://www.crossforest.eu/members/guiveg> ;
                                        dc:date "2021-03-01" ;
@@ -21,7 +24,7 @@
                                                 "Ontología de inventario forestal nacional de Portugal"@es ;
                                        <http://purl.org/dc/terms/description> "Ontology to publish data about national forestry inventory in Portugal"@en ,
                                                                               "Ontología para publicar datos de Inventario Forestal Nacional en Portugal"@es ;
-                                       vann:preferredNamespacePrefix "ifi-pt" ;
+                                       vann:preferredNamespacePrefix "ifn-pt-df6" ;
                                        rdfs:comment "Ontology to publish data about national forestry inventory in Portugal"@en ,
                                                     "Ontología para publicar datos de Inventario Forestal Nacional en Portugal"@es ;
                                        rdfs:label "Ontología de inventario forestal nacional de Portugal"@es, "Ontologia de Inventário Florestal Nacional"@pt ;
@@ -57,106 +60,134 @@ vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 
 
 
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+<http://www.w3.org/2004/02/skos/core#exactMatch> rdf:type owl:AnnotationProperty .
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://crossforest.eu/ifi-pt/ontology/DominantFormation_PT_6
-ifi-pt:DominantFormation_PT_6 rdf:type owl:Class ;
+###  http://crossforest.eu/ifn-pt-df6/ontology/DominantFormation_PT_6
+ifn-pt-df6:DominantFormation_PT_6 rdf:type owl:Class ;
                            rdfs:subClassOf ifi:DominantFormation ;
                            rdfs:label "Dominant formation in IFN6 (Portugal)"@en ,
                                       "Formación dominante en IFN6 (Portugal)"@en ,
                                       "Tipos de povoamentos florestais (IFN6 Portugal)"@pt .
 
 
+
+
 ###  http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Acácias
 <http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Acácias> rdf:type owl:Class ;
-                                                                                                       rdfs:subClassOf ifi-pt:DominantFormation_PT_6 ;
+                                                                                                       rdfs:subClassOf ifn-pt-df6:DominantFormation_PT_6 ;
                                                                                                        rdfs:comment "Espécies dominantes presentes: acácia-dealbata, acácia-da-Austrália, outras acácias"@pt ;
-                                                                                                       rdfs:isDefinedBy <http://crossforest.eu/ifi-pt/ontology/> ;
+                                                                                                       rdfs:isDefinedBy <http://crossforest.eu/ifn-pt-df6/ontology/> ;
                                                                                                        rdfs:label "Acácias"@pt .
 
 
 ###  http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Alfarrobeira
 <http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Alfarrobeira> rdf:type owl:Class ;
-                                                                                                            rdfs:subClassOf ifi-pt:DominantFormation_PT_6 ;
+                                                                                                            rdfs:subClassOf ifn-pt-df6:DominantFormation_PT_6 ;
                                                                                                             rdfs:comment "Espécies dominantes presentes: alfarrobeira"@pt ;
-                                                                                                            rdfs:isDefinedBy <http://crossforest.eu/ifi-pt/ontology/> ;
+                                                                                                            rdfs:isDefinedBy <http://crossforest.eu/ifn-pt-df6/ontology/> ;
                                                                                                             rdfs:label "Alfarrobeira"@pt .
 
 
 ###  http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Azinheira
 <http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Azinheira> rdf:type owl:Class ;
-                                                                                                         rdfs:subClassOf ifi-pt:DominantFormation_PT_6 ;
+                                                                                                         rdfs:subClassOf ifn-pt-df6:DominantFormation_PT_6 ;
                                                                                                          rdfs:comment "Espécies dominantes presentes: azinheira"@pt ;
-                                                                                                         rdfs:isDefinedBy <http://crossforest.eu/ifi-pt/ontology/> ;
+                                                                                                         rdfs:isDefinedBy <http://crossforest.eu/ifn-pt-df6/ontology/> ;
                                                                                                          rdfs:label "Azinheira"@pt .
 
 
 ###  http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Carvalhos
 <http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Carvalhos> rdf:type owl:Class ;
-                                                                                                         rdfs:subClassOf ifi-pt:DominantFormation_PT_6 ;
+                                                                                                         rdfs:subClassOf ifn-pt-df6:DominantFormation_PT_6 ;
                                                                                                          rdfs:comment "Espécies dominantes presentes: carvalho-roble, carvalho-cerquinho, carvalho-negral, outros carvalhos"@pt ;
-                                                                                                         rdfs:isDefinedBy <http://crossforest.eu/ifi-pt/ontology/> ;
+                                                                                                         rdfs:isDefinedBy <http://crossforest.eu/ifn-pt-df6/ontology/> ;
                                                                                                          rdfs:label "Carvalhos"@pt .
 
 
 ###  http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Castanheiro
 <http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Castanheiro> rdf:type owl:Class ;
-                                                                                                           rdfs:subClassOf ifi-pt:DominantFormation_PT_6 ;
+                                                                                                           rdfs:subClassOf ifn-pt-df6:DominantFormation_PT_6 ;
                                                                                                            rdfs:comment "Espécies dominantes presentes: castanheiro-bravo, castanheiro-manso"@pt ;
-                                                                                                           rdfs:isDefinedBy <http://crossforest.eu/ifi-pt/ontology/> ;
+                                                                                                           rdfs:isDefinedBy <http://crossforest.eu/ifn-pt-df6/ontology/> ;
                                                                                                            rdfs:label "Castanheiro"@pt .
 
 
 ###  http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Eucaliptos
 <http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Eucaliptos> rdf:type owl:Class ;
-                                                                                                          rdfs:subClassOf ifi-pt:DominantFormation_PT_6 ;
+                                                                                                          rdfs:subClassOf ifn-pt-df6:DominantFormation_PT_6 ;
                                                                                                           rdfs:comment "Espécies dominantes presentes: várias espécies do género eucalipto"@pt ;
-                                                                                                          rdfs:isDefinedBy <http://crossforest.eu/ifi-pt/ontology/> ;
+                                                                                                          rdfs:isDefinedBy <http://crossforest.eu/ifn-pt-df6/ontology/> ;
                                                                                                           rdfs:label "Eucaliptos"@pt .
 
 
 ###  http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Outras_folhosas
 <http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Outras_folhosas> rdf:type owl:Class ;
-                                                                                                               rdfs:subClassOf ifi-pt:DominantFormation_PT_6 ;
+                                                                                                               rdfs:subClassOf ifn-pt-df6:DominantFormation_PT_6 ;
                                                                                                                rdfs:comment "Espécies dominantes presentes: faia, bétula ou bidoeiro, salgueiros, ulmeiros, choupos, alfarrobeira, amieiros, freixos e outras"@pt ;
-                                                                                                               rdfs:isDefinedBy <http://crossforest.eu/ifi-pt/ontology/> ;
+                                                                                                               rdfs:isDefinedBy <http://crossforest.eu/ifn-pt-df6/ontology/> ;
                                                                                                                rdfs:label "Outras folhosas"@pt .
 
 
 ###  http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Outras_resinosas
 <http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Outras_resinosas> rdf:type owl:Class ;
-                                                                                                                rdfs:subClassOf ifi-pt:DominantFormation_PT_6 ;
+                                                                                                                rdfs:subClassOf ifn-pt-df6:DominantFormation_PT_6 ;
                                                                                                                 rdfs:comment "Espécies dominantes presentes: pinheiro-silvestre, pinheiro-de-Alepo, pseudotsuga, ciprestes, cedros e outras"@pt ;
-                                                                                                                rdfs:isDefinedBy <http://crossforest.eu/ifi-pt/ontology/> ;
+                                                                                                                rdfs:isDefinedBy <http://crossforest.eu/ifn-pt-df6/ontology/> ;
                                                                                                                 rdfs:label "Outras resinosas"@pt .
 
 
 ###  http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Pinheiro-bravo
 <http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Pinheiro-bravo> rdf:type owl:Class ;
-                                                                                                              rdfs:subClassOf ifi-pt:DominantFormation_PT_6 ;
+                                                                                                              rdfs:subClassOf ifn-pt-df6:DominantFormation_PT_6 ;
                                                                                                               rdfs:comment "Espécies dominantes presentes: pinheiro-bravo"@pt ;
-                                                                                                              rdfs:isDefinedBy <http://crossforest.eu/ifi-pt/ontology/> ;
+                                                                                                              rdfs:isDefinedBy <http://crossforest.eu/ifn-pt-df6/ontology/> ;
                                                                                                               rdfs:label "Pinheiro bravo"@pt .
 
 
 ###  http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Pinheiro-manso
 <http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Pinheiro-manso> rdf:type owl:Class ;
-                                                                                                              rdfs:subClassOf ifi-pt:DominantFormation_PT_6 ;
+                                                                                                              rdfs:subClassOf ifn-pt-df6:DominantFormation_PT_6 ;
                                                                                                               rdfs:comment "Espécies dominantes presentes: pinheiro-manso"@pt ;
-                                                                                                              rdfs:isDefinedBy <http://crossforest.eu/ifi-pt/ontology/> ;
+                                                                                                              rdfs:isDefinedBy <http://crossforest.eu/ifn-pt-df6/ontology/> ;
                                                                                                               rdfs:label "Pinheiro manso"@pt .
 
 
 ###  http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Sobreiro
 <http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/Sobreiro> rdf:type owl:Class ;
-                                                                                                        rdfs:subClassOf ifi-pt:DominantFormation_PT_6 ;
+                                                                                                        rdfs:subClassOf ifn-pt-df6:DominantFormation_PT_6 ;
                                                                                                         rdfs:comment "Espécies dominantes presentes: sobreiro"@pt ;
-                                                                                                        rdfs:isDefinedBy <http://crossforest.eu/ifi-pt/ontology/> ;
+                                                                                                        rdfs:isDefinedBy <http://crossforest.eu/ifn-pt-df6/ontology/> ;
                                                                                                         rdfs:label "Sobreiro"@pt .
 
+
+ifi-pt-df6:11 skos:exactMatch ifn-pt-df6:Sobreiro.
+ifi-pt-df6:12 skos:exactMatch ifn-pt-df6:Azinheira.
+ifi-pt-df6:13 skos:exactMatch ifn-pt-df6:Carvalhos.
+ifi-pt-df6:14 skos:exactMatch ifn-pt-df6:Castanheiro.
+ifi-pt-df6:15 skos:exactMatch ifn-pt-df6:Eucaliptos.
+ifi-pt-df6:16 skos:exactMatch ifn-pt-df6:Acácias.
+ifi-pt-df6:17 skos:exactMatch ifn-pt-df6:Alfarrobeira.
+ifi-pt-df6:18 skos:exactMatch ifn-pt-df6:Outras_folhosas.
+ifi-pt-df6:21 skos:exactMatch ifn-pt-df6:Pinheiro-bravo.
+ifi-pt-df6:22 skos:exactMatch ifn-pt-df6:Pinheiro-manso.
+ifi-pt-df6:23 skos:exactMatch ifn-pt-df6:Outras_resinosas.
+
+ifn-pt-df6:Sobreiro skos:exactMatch ifi-pt-df6:11.
+ifn-pt-df6:Azinheira skos:exactMatch ifi-pt-df6:12.
+ifn-pt-df6:Carvalhos skos:exactMatch ifi-pt-df6:13.
+ifn-pt-df6:Castanheiro skos:exactMatch ifi-pt-df6:14.
+ifn-pt-df6:Eucaliptos skos:exactMatch ifi-pt-df6:15.
+ifn-pt-df6:Acácias skos:exactMatch ifi-pt-df6:16.
+ifn-pt-df6:Alfarrobeira skos:exactMatch ifi-pt-df6:17.
+ifn-pt-df6:Outras_folhosas skos:exactMatch ifi-pt-df6:18.
+ifn-pt-df6:Pinheiro-bravo skos:exactMatch ifi-pt-df6:21.
+ifn-pt-df6:Pinheiro-manso skos:exactMatch ifi-pt-df6:22.
+ifn-pt-df6:Outras_resinosas skos:exactMatch ifi-pt-df6:23.
 
 #################################################################
 #    General axioms
