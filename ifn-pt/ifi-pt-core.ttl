@@ -13,6 +13,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix ifi-pt-df6: <http://crossforest.eu/ifi/data/dominantFormation/PT/6/DominantFormation> .
 @prefix ifn-pt-df6: <http://crossforest.eu/ifi_pt/ontology/DominantFormation/PT/6/> .
+@prefix ifn: <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> .
 @base <http://crossforest.eu/ifn-pt-df6/ontology/> .
 
 <http://crossforest.eu/ifn-pt-df6/ontology/> rdf:type owl:Ontology ;
@@ -188,6 +189,54 @@ ifn-pt-df6:Outras_folhosas skos:exactMatch ifi-pt-df6:18.
 ifn-pt-df6:Pinheiro-bravo skos:exactMatch ifi-pt-df6:21.
 ifn-pt-df6:Pinheiro-manso skos:exactMatch ifi-pt-df6:22.
 ifn-pt-df6:Outras_resinosas skos:exactMatch ifi-pt-df6:23.
+
+
+ifn-pt-df6:Sobreiro ifn:hasSpecies ifn:Species46 ;
+						rdfs:comment "Quercus suber".
+ifn-pt-df6:Azinheira ifn:hasSpecies ifn:Species45 ;
+						rdfs:comment "Quercus ilex".
+ifn-pt-df6:Carvalhos ifn:hasSpecies ifn:Genus121 ;
+						rdfs:comment "Quercus".
+ifn-pt-df6:Castanheiro ifn:hasSpecies ifn:Species72 ;
+						rdfs:comment "Castanea sativa".
+ifn-pt-df6:Eucaliptos ifn:hasSpecies ifn:Genus162 ;
+						rdfs:comment "Eucalyptus".
+ifn-pt-df6:Acácias ifn:hasSpecies ifn:Genus141 ;
+						rdfs:comment "Acacia".
+ifn-pt-df6:Alfarrobeira ifn:hasSpecies ifn:Species67 ;
+						rdfs:comment "Ceratonia siliqua".
+ifn-pt-df6:Outras_folhosas ifn:hasSpecies ifn:Class1 ;
+						rdfs:comment "Angiospermae".
+ifn-pt-df6:Pinheiro-bravo ifn:hasSpecies ifn:Species26 ;
+						rdfs:comment "Pinus pinaster".
+ifn-pt-df6:Pinheiro-manso ifn:hasSpecies ifn:Species23 ;
+						rdfs:comment "Pinus pinea".
+ifn-pt-df6:Outras_resinosas ifn:hasSpecies ifn:Class2 ;
+						rdfs:comment "Gymnospermae".
+
+
+<http://crossforest.eu/ifi/data/dominantFormation/PT/6/DominantFormation11> ifn:hasSpecies ifn:Species46 ;
+						rdfs:comment "Quercus suber".
+<http://crossforest.eu/ifi/data/dominantFormation/PT/6/DominantFormation12> ifn:hasSpecies ifn:Species45 ;
+						rdfs:comment "Quercus ilex".
+<http://crossforest.eu/ifi/data/dominantFormation/PT/6/DominantFormation13> ifn:hasSpecies ifn:Genus121 ;
+						rdfs:comment "Quercus".
+<http://crossforest.eu/ifi/data/dominantFormation/PT/6/DominantFormation14> ifn:hasSpecies ifn:Species72 ;
+						rdfs:comment "Castanea sativa".
+<http://crossforest.eu/ifi/data/dominantFormation/PT/6/DominantFormation15> ifn:hasSpecies ifn:Genus162 ;
+						rdfs:comment "Eucalyptus".
+<http://crossforest.eu/ifi/data/dominantFormation/PT/6/DominantFormation16> ifn:hasSpecies ifn:Genus141 ;
+						rdfs:comment "Acacia".
+<http://crossforest.eu/ifi/data/dominantFormation/PT/6/DominantFormation17> ifn:hasSpecies ifn:Species67 ;
+						rdfs:comment "Ceratonia siliqua".
+<http://crossforest.eu/ifi/data/dominantFormation/PT/6/DominantFormation18> ifn:hasSpecies ifn:Class1 ;
+						rdfs:comment "Angiospermae".
+<http://crossforest.eu/ifi/data/dominantFormation/PT/6/DominantFormation21> ifn:hasSpecies ifn:Species26 ;
+						rdfs:comment "Pinus pinaster".
+<http://crossforest.eu/ifi/data/dominantFormation/PT/6/DominantFormation22> ifn:hasSpecies ifn:Species23 ;
+						rdfs:comment "Pinus pinea".
+<http://crossforest.eu/ifi/data/dominantFormation/PT/6/DominantFormation23> ifn:hasSpecies ifn:Class2 ;
+						rdfs:comment "Gymnospermae".
 
 #################################################################
 #    General axioms

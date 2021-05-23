@@ -9,7 +9,7 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-
+@prefix ifn: <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> .
 
 cos: a owl:Ontology ;
   owl:imports <https://github.com/Cross-Forest/Ontologies/raw/master/iberian/ilu-core.ttl> ;
@@ -861,6 +861,43 @@ cos:Use5120 rdfs:comment "Forests of other oaks (COS2018); Open forests of cork 
 cos:Use7110 rdfs:comment "Coastal beaches, dunes and sand plains;  Inland beaches, dunes and sand plains (COS2010)"@en.
 cos:Use8120 rdfs:comment "Coastal aquaculture (COS2010)"@en.
 cos:Use9110 rdfs:comment "Natural water courses (COS2018)"@en.
+
+
+<http://crossforest.eu/cos/ontology/Use4111> ifn:hasSpecies ifn:Species46 ;
+						rdfs:comment "Quercus suber".
+<http://crossforest.eu/cos/ontology/Use4112> ifn:hasSpecies ifn:Species45 ;
+						rdfs:comment "Quercus ilex".
+<http://crossforest.eu/cos/ontology/Use4113> ifn:hasSpecies ifn:Genus121 ;
+						rdfs:comment "Quercus".
+<http://crossforest.eu/cos/ontology/Use4114> ifn:hasSpecies ifn:Species23 ;
+						rdfs:comment "Pinus pinea".
+<http://crossforest.eu/cos/ontology/Use4116> ifn:hasSpecies ifn:Species46 ;
+						rdfs:comment "Quercus suber".
+<http://crossforest.eu/cos/ontology/Use4116> ifn:hasSpecies ifn:Species45 ;
+						rdfs:comment "Quercus ilex".
+<http://crossforest.eu/cos/ontology/Use5110> ifn:hasSpecies ifn:Class1 ;
+						rdfs:comment "Angiospermae".
+<http://crossforest.eu/cos/ontology/Use5120> ifn:hasSpecies ifn:Class2 ;
+						rdfs:comment "Gymnospermae".
+<http://crossforest.eu/cos/ontology/Use5111> ifn:hasSpecies ifn:Species46 ;
+						rdfs:comment "Quercus suber".
+<http://crossforest.eu/cos/ontology/Use5112> ifn:hasSpecies ifn:Species45 ;
+						rdfs:comment "Quercus ilex".
+<http://crossforest.eu/cos/ontology/Use5113> ifn:hasSpecies ifn:Genus121 ;
+						rdfs:comment "Quercus".
+<http://crossforest.eu/cos/ontology/Use5114> ifn:hasSpecies ifn:Species72 ;
+						rdfs:comment "Castanea sativa".
+<http://crossforest.eu/cos/ontology/Use5115> ifn:hasSpecies ifn:Genus162 ;
+						rdfs:comment "Eucalyptus".
+<http://crossforest.eu/cos/ontology/Use5117> ifn:hasSpecies ifn:Class1 ;
+						rdfs:comment "Angiospermae".
+<http://crossforest.eu/cos/ontology/Use5121> ifn:hasSpecies ifn:Species26 ;
+						rdfs:comment "Pinus pinaster".
+<http://crossforest.eu/cos/ontology/Use5122> ifn:hasSpecies ifn:Species23 ;
+						rdfs:comment "Pinus pinea".
+<http://crossforest.eu/cos/ontology/Use5123> ifn:hasSpecies ifn:Class2 ;
+						rdfs:comment "Gymnospermae".
+
 
 #################################################################
 #    Object Properties
