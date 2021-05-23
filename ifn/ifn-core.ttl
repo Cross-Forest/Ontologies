@@ -1,5 +1,6 @@
 @prefix : <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ifi: <http://crossforest.eu/ifi/ontology/> .
 @prefix ifn: <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -185,6 +186,7 @@ ifn:codigo rdf:type owl:ObjectProperty .
 
 ###  http://crossforest.eu/ifn/ontology/containsSpecies
 ifn:containsSpecies rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf ifi:containsDominantFormation ;
                     rdfs:range ifn:InfoSpecies ;
                     rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                     rdfs:label "containsSpecies"@en .
@@ -2412,7 +2414,8 @@ ifn:HeightToLargestCrownWidht rdf:type owl:Class ;
 
 
 ###  http://crossforest.eu/ifn/ontology/InfoSpecies
-ifn:InfoSpecies rdf:type owl:Class .
+ifn:InfoSpecies rdf:type owl:Class ;
+                              rdfs:subClassOf ifi:InfoDominantFormation.
 
 
 ###  http://crossforest.eu/ifn/ontology/InfoSpeciesDetalle

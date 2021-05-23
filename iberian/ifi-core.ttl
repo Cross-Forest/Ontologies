@@ -11,6 +11,8 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix ifi-pt: <http://crossforest.eu/ifi-pt/ontology/> .
 @prefix country: <http://crossforest.eu/ifi/data/country/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ifn: <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> .
 @base <http://crossforest.eu/ifi/ontology/> .
 
 <http://crossforest.eu/ifi/ontology/> rdf:type owl:Ontology ;
@@ -95,6 +97,7 @@ vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 ifi:containsDominantFormation rdf:type owl:ObjectProperty ;
                               rdfs:domain owl:Thing ;
                               rdfs:range ifi:InfoDominantFormation ;
+							  skos:closeMatch ifn:containsSpecies;
                               rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
                               rdfs:label "contains dominant formation"@en ,
                                          "contiene formación dominante"@es .
@@ -311,6 +314,7 @@ ifi:Gradient rdf:type owl:Class ;
 ###  http://crossforest.eu/ifi/ontology/InfoDominantFormation
 ifi:InfoDominantFormation rdf:type owl:Class ;
                           rdfs:isDefinedBy <http://crossforest.eu/ifi/ontology/> ;
+						  skos:closeMatch ifn:InfoSpecies ;
                           rdfs:label "Info about dominant formation"@en ,
                                      "Información sobre la formación dominante"@es ,
                                      "Informação sobre espécie de árvore dominante"@pt .
