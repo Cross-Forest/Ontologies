@@ -1,11 +1,11 @@
 [ {
-  "@id" : "http://crossforest.eu/ifn/ontology/Species",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "http://crossforest.eu/ilu/ontology/Patch",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://crossforest.eu/measures/ontology/Measure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://crossforest.eu/measures/ontology/MeasureInPercentage",
@@ -17,9 +17,35 @@
   "@id" : "http://crossforest.eu/measures/ontology/hasMeasureinPercentage",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/",
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://github.com/dportoles"
+  }, {
     "@id" : "https://www.crossforest.eu/members/guiveg"
   }, {
     "@id" : "https://www.crossforest.eu/members/josgim"
@@ -44,17 +70,18 @@
     "@language" : "en",
     "@value" : "Spanish MFE Ontology"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/informacion-disponible/mfe50_descargas_ccaa.aspx"
+  } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://crossforest.eu/measures/ontology/"
-  }, {
-    "@id" : "http://crossforest.eu/position/ontology/"
+    "@id" : "https://github.com/Cross-Forest/Ontologies/raw/master/iberian/ilu-core.ttl"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "0.1"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/Area",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Area",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -64,7 +91,7 @@
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -74,127 +101,93 @@
     "@id" : "http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/BiogeographicRegion",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Biogeographic Region"
+    "@value" : "Corresponde al campo CLASMFE_IF"
   }, {
-    "@language" : "es",
-    "@value" : "Región biogeográfica"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/mfe/ontology/CanopyCover",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Canopy Cover of the Vegetation Structure"
-  }, {
-    "@language" : "es",
-    "@value" : "Representa la proporción total de la vegetación."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Canopy Cover"
-  }, {
-    "@language" : "es",
-    "@value" : "Fracción de Cabida Cubierta"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/mfe/ontology/CanopyCoverBushes",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
-    "@language" : "es",
-    "@value" : "Representa la proporción del conjunto de las especies del estrato arbustivo como porcentaje de suelo cubierto por la proyección de todas las copas. No influye en su cálculo el hecho de tratarse de masas monoespecíficas o pluriespecíficas, o el de encontrarse en distinto estado de masa las distintas especies."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Canopy Cover of Bushes"
-  }, {
-    "@language" : "es",
-    "@value" : "Fracción de Cabida Cubierta Arbustiva"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/CanopyCover"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/mfe/ontology/CanopyCoverTotal",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
-    "@language" : "es",
-    "@value" : "Representa la proporción total de la vegetación arbórea y de matorral. Proporciona información sobre la proyección sobre el suelo de los principales pisos de vegetación. En algún caso se incluirán fracciones de cabida cubierta de pastizales o cultivos. Para su cuantificación se tendrá en cuenta todas las especies en conjunto, con independencia de que se presenten por razones de edad o de otro tipo de alturas muy distintas."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Fracción de Cabida Cubierta Total"
-  }, {
-    "@language" : "es",
-    "@value" : "Total Canopy Cover"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/CanopyCover"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/mfe/ontology/CanopyCoverTrees",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
-    "@language" : "es",
-    "@value" : "Representa la proporción del conjunto de las especies del estrato arbóreo como porcentaje de suelo cubierto por la proyección de todas las copas. No influye en su cálculo el hecho de tratarse de masas monoespecíficas o pluriespecíficas, o el de encontrarse en distinto estado de masa las distintas especies."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Canopy Cover of Trees"
-  }, {
-    "@language" : "es",
-    "@value" : "Fracción de Cabida Cubierta Arbórea"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/CanopyCover"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/mfe/ontology/Classification",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
     "@value" : "Pasarela entre el Tipo Estructural y la clasificación por niveles del IFN3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
     "@value" : "Clasificación MFE-IFN"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/ForestType",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Corresponde con el campo DISTRIB"
+  }, {
+    "@language" : "es",
+    "@value" : "Indica las distintas formas en las que puede aparecer agrupada la vegetación arbórea. Está más referido a la distribución espacial visual de la mancha vegetal que a su composición específica o la relación entre especies."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Distribución"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Corresponde a los campos E1, E2 y E3."
+  }, {
+    "@language" : "es",
+    "@value" : "Indica la fase de desarrollo en que se encuentran las poblaciones de especies arbóreas presentes en la tesela."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Estado de Desarrollo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormaDeMasa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Corresponde al campo FOR_MAN"
+  }, {
+    "@language" : "en",
+    "@value" : "Diferenciates the geometric shape of the patch and vegetation asociated"
+  }, {
+    "@language" : "es",
+    "@value" : "Indica la forma geométrica que presenta la tesela"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Forma de la tesela"
+  }, {
+    "@language" : "en",
+    "@value" : "Shape of the patch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -206,16 +199,74 @@
   }, {
     "@language" : "es",
     "@value" : "Formación Arbolada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/OccupationOfSpecies",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FraccionDeCabidaCubierta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Canopy Cover of the Vegetation Structure"
+  }, {
+    "@language" : "es",
+    "@value" : "Representa la proporción total de la vegetación."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Canopy Cover"
+  }, {
+    "@language" : "es",
+    "@value" : "Fracción de Cabida Cubierta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/MeasureMFE25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Measure according to MFE25 criteria"
+  }, {
+    "@language" : "es",
+    "@value" : "Medida tomada de acuerdo con criterios del MFE25"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/Measure"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/MeasureMFE50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Measure according to MFE50 criteria"
+  }, {
+    "@language" : "es",
+    "@value" : "Medida tomada de acuerdo con criterios del MFE50"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/Measure"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/OccupationOfSpecies",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
     "@value" : "Indica la ocupación para cada una de las especies descritas. Los valores que adopta informan del grado de presencia en porcentaje de las especies arbóreas existentes, siendo tanto mayor, cuanto mayor representatividad posee la especie en cuestión, en comparación con las otras especies arbóreas presentes en la tesela."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -225,7 +276,7 @@
     "@id" : "http://crossforest.eu/measures/ontology/MeasureInPercentage"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/Patch",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -235,7 +286,7 @@
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -245,48 +296,28 @@
     "@id" : "http://crossforest.eu/ilu/ontology/Patch"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/PatchInPatch",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/PatchInPatch",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
     "@value" : "Patch contained in the patch"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
     "@value" : "Patch in the patch"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/PatchShape",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Diferenciates the geometric shape of the patch and vegetation asociated"
-  }, {
-    "@language" : "es",
-    "@value" : "Indica la forma geométrica que presenta la tesela"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Forma de la tesela"
-  }, {
-    "@language" : "en",
-    "@value" : "Shape of the patch"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/mfe/ontology/RateOfPatch",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RateOfPatch",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
     "@value" : "Indica la proporción de la tesela dentro de la agrupación."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -296,17 +327,17 @@
     "@id" : "http://crossforest.eu/measures/ontology/MeasureInPercentage"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/RateOfUse",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RateOfUse",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/RateofUse",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RateofUse",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
     "@value" : "Indica la proporción para cada una de las usos dentro de la agrupación de teselas."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -316,14 +347,30 @@
     "@id" : "http://crossforest.eu/measures/ontology/MeasureInPercentage"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/SetOfSpecies",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RegionBiogeografica",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Biogeographic Region"
+  }, {
+    "@language" : "es",
+    "@value" : "Región biogeográfica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetOfSpecies",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -333,70 +380,179 @@
     "@value" : "Set of Species"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/SpatialDistribution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Indica las distintas formas en las que puede aparecer agrupada la vegetación arbórea. Está más referido a la distribución espacial visual de la mancha vegetal que a su composición específica o la relación entre especies."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Distribución"
-  } ]
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies14-19-21-22-23-24-25-26-27-28-30-31-32-37-38-39-219-238",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/SpeciesInPatch",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies238",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies243",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies258",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies369",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies50%3B50%2F55-58%3B13%2F55-50-58%3B55%2F58-258",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies65",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies66",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies67",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies68",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies7-48-60%2F13-40-43-44-45-46-47-48%2A-50-55-56-58-60%2A-65-66-67-68-70-71-72-73-74-80-83-91-93-95-99-243-258-369-495",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies72",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies73",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies74",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies80",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies83",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SpeciesInPatch",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
     "@value" : "Species present in the patch"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
     "@value" : "Species in the patch"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/StandDevelopment",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoDeBosque",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Indica la fase de desarrollo en que se encuentran las poblaciones de especies arbóreas presentes en la tesela"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Estado de Desarrollo"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/mfe/ontology/TypeOfForest",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Corresponde al campo TIPO_BOSQU."
+  }, {
     "@language" : "es",
     "@value" : "Tipo de bosque (coníferas, frondosas o mixtas)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
     "@value" : "Tipo de Bosque"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/Use",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Corresponde al campo TIPESTR."
+  }, {
+    "@language" : "es",
+    "@value" : "Indica los distintos usos del suelo que pueden aparecer y, dentro del uso forestal, las distintas estructuras de vegetación que lo pueden ocupar, atendiendo más que a la densidad vegetal a la estructura de la vegetación que ocupa."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Tipo Estructural"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Use",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -406,34 +562,21 @@
     "@value" : "Uso del suelo"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/UseInPatch",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/UseInPatch",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
     "@value" : "Use present in the patch"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
     "@value" : "Use in the patch"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/VegetationStructure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indica los distintos usos del suelo que pueden aparecer y, dentro del uso forestal, las distintas estructuras de vegetación que lo pueden ocupar, atendiendo más que a la densidad vegetal a la estructura de la vegetación que ocupa."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Tipo Estructural"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/mfe/ontology/containsPatch",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/containsPatch",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -443,10 +586,10 @@
     "@value" : "the merged patch contains sub-patch"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/Patch"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -456,10 +599,13 @@
     "@value" : "contiene tesela"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/PatchInPatch"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/PatchInPatch"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/containsPatch"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/containsSpecies",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/containsSpecies",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -469,10 +615,10 @@
     "@value" : "the patch contains species"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/Patch"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -482,10 +628,10 @@
     "@value" : "contiene especie"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/SpeciesInPatch"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SpeciesInPatch"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/containsUse",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/containsUse",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -495,10 +641,10 @@
     "@value" : "the patch contains use"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/Patch"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -508,10 +654,10 @@
     "@value" : "contiene use"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/UseInPatch"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/UseInPatch"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/hasCanopyCoverTotal",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasCanopyCoverBushes",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -521,23 +667,23 @@
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/Patch"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/CanopyCoverTotal"
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-fraccion-cabida-cubierta/arbustiva"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://crossforest.eu/measures/ontology/hasMeasure"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/hasCanopyCoverTotalPercent",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasCanopyCoverBushesPercent",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -547,10 +693,10 @@
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/Patch"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -560,7 +706,7 @@
     "@id" : "http://crossforest.eu/measures/ontology/hasMeasureinPercentage"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/hasCanopyCoverTrees",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasCanopyCoverTotal",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -570,23 +716,23 @@
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/Patch"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/CanopyCoverTrees"
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-fraccion-cabida-cubierta/total"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://crossforest.eu/measures/ontology/hasMeasure"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/hasCanopyCoverTreesPercent",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasCanopyCoverTotalPercent",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -596,10 +742,10 @@
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/Patch"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -609,7 +755,7 @@
     "@id" : "http://crossforest.eu/measures/ontology/hasMeasureinPercentage"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/hasClassification",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasCanopyCoverTrees",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -619,20 +765,46 @@
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/Patch"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/Classification"
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-fraccion-cabida-cubierta/arborea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/hasMeasure"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/hasOccupationOfSpecies",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasCanopyCoverTreesPercent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/hasMeasureinPercentage"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasClassification",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -642,20 +814,43 @@
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/SpeciesInPatch"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/OccupationOfSpecies"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/hasPatch",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasOccupationOfSpecies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SpeciesInPatch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/OccupationOfSpecies"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasPatch",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -665,7 +860,7 @@
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -675,13 +870,193 @@
     "@value" : "tiene tesela"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/Patch"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/hasMeasure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/hasPatch"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasPatchShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormaDeMasa"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasPercentageOfPatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/PatchInPatch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/hasMeasureinPercentage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/hasPercentageOfPatch"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasPercentageOfSpecies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SpeciesInPatch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/hasMeasureinPercentage"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasPercentageOfUse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/UseInPatch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://crossforest.eu/measures/ontology/hasMeasureinPercentage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/hasPercentageOfUse"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasPolygonValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "tiene valor de campo poligon"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasRateOfUse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/UseInPatch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RateOfUse"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasRateofPatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/PatchInPatch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RateOfPatch"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetOfSpecies"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://crossforest.eu/measures/ontology/hasMeasure"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/hasPatchShape",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSpatialDistribution",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -691,135 +1066,20 @@
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/Patch"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/PatchShape"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/hasPercentageOfPatch",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
-    "@language" : "es",
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/PatchInPatch"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://crossforest.eu/measures/ontology/hasMeasureinPercentage"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/mfe/ontology/hasPercentageOfSpecies",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
-    "@language" : "es",
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/SpeciesInPatch"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://crossforest.eu/measures/ontology/hasMeasureinPercentage"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/mfe/ontology/hasPercentageOfUse",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
-    "@language" : "es",
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/UseInPatch"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://crossforest.eu/measures/ontology/hasMeasureinPercentage"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/mfe/ontology/hasRateOfUse",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
-    "@language" : "es",
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/UseInPatch"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/RateOfUse"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/mfe/ontology/hasRateofPatch",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
-    "@language" : "es",
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/PatchInPatch"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/RateOfPatch"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/mfe/ontology/hasSetOfSpecies",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSpecies",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -829,53 +1089,7 @@
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/SetOfSpecies"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://crossforest.eu/measures/ontology/hasMeasure"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/mfe/ontology/hasSpatialDistribution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
-    "@language" : "es",
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/Patch"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/SpatialDistribution"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/mfe/ontology/hasSpecies",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
-    "@language" : "es",
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -885,13 +1099,13 @@
     "@value" : "tiene especie"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://crossforest.eu/ifn/ontology/Species"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://crossforest.eu/measures/ontology/hasMeasure"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/hasStandDevelopment",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasStandDevelopment",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -901,20 +1115,20 @@
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/SpeciesInPatch"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SpeciesInPatch"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/StandDevelopment"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/hasTypeofForest",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasTypeofForest",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -924,10 +1138,10 @@
     "@value" : "Indica la tipología de bosque predominante"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/Patch"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -937,10 +1151,10 @@
     "@value" : "Tipo de Bosque"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/TypeOfForest"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoDeBosque"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/hasUse",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasUse",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -950,7 +1164,7 @@
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -960,13 +1174,16 @@
     "@value" : "tiene uso"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/Use"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Use"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://crossforest.eu/measures/ontology/hasMeasure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/hasUse"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/mfe/ontology/hasVegetationStructure",
+  "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasVegetationStructure",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -976,25 +1193,2389 @@
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/Patch"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://crossforest.eu/mfe/ontology/VegetationStructure"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
   } ]
 }, {
-  "@id" : "http://purl.org/dc/elements/1.1/creator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/110",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Clasificación MFE-IFN (110): Arbolado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"
+  } ]
 }, {
-  "@id" : "http://purl.org/dc/elements/1.1/date",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/112",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Clasificación MFE-IFN (112): Arbolado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"
+  } ]
 }, {
-  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/113",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Clasificación MFE-IFN (113): Arbolado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/120",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Clasificación MFE-IFN (120): Arbolado ralo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/122",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Clasificación MFE-IFN (122): Arbolado ralo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/123",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Clasificación MFE-IFN (123): Arbolado ralo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/130",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Clasificación MFE-IFN (130): Arbolado disperso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/132",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Clasificación MFE-IFN (132): Arbolado disperso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/133",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Clasificación MFE-IFN (133): Arbolado disperso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/140",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Siempre es desarbolado salvo cuando CLAS_IFN es 132 que entonces es arbolado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Clasificación MFE-IFN (140): Desarbolado / Arbolado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/150",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Clasificación MFE-IFN (150): Desarbolado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/200",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Clasificación MFE-IFN (200): Cultivos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/300",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Clasificación MFE-IFN (300): Artificial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/400",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Clasificación MFE-IFN (400): Mar"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/500",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Clasificación MFE-IFN (500): Agua"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Para teselas en las que el arbolado está distribuido de forma homogénea en toda su superficie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Uniform"
+  }, {
+    "@language" : "es",
+    "@value" : "Uniforme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Para teselas en las que en la distribución visual del arbolado se aprecian manchas formadas por conjuntos de árboles más o menos separadas unas de otras, más o menos grandes y más o menos globosas en cuanto a la forma de cada mancha aislada. Estas manchas están separadas entre sí por zonas más ralas o desarboladas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Discontinua en bosquetes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Para teselas arboladas en las que en la distribución visual del arbolado se aprecian manchas formadas por conjuntos de árboles, más o menos separadas unas de otras, más o menos grandes y más o menos geométricas con tendencia a la forma rectangular en cuanto a la forma de cada mancha aislada. Estas manchas están separadas entre sí por zonas más ralas o desarboladas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Discontinua en fajas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Para teselas arboladas en las que la distribución visual del paisaje vegetal está determinada por la yuxtaposición de piezas de dos o más tipos de agrupación que se reparten el terreno de forma irregular, pero repitiendo o integrando unas ciertas pautas de distribución. El mosaico es el resultado de la influencia de factores o combinaciones de factores que se distribuyen sobre la superficie del terreno con variaciones aleatorias y generalmente discontínuas de sus valores. No se especifica el tipo de mosaico (dendriforme, dinámico, intrazonal, de orientación, ...)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Discontinua en mosaico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Para teselas con arbolado agrupado en las que la distribución es irregular, sin seguir pauta alguna de las anteriormente mencionadas o conjugando varias de ellas de forma que no se pueda incluir la tesela en los grupos anteriores"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Discontinua irregular"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Para teselas con poca densidad arbórea y distribuida regular o irregularmente, pero sin formar agrupaciones de árboles que pudieran hacer pensar en manchas arbóreas dentro de la tesela"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Piés aislados"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Para teselas arboladas que por cualquier circunstancia no pueden ser incluidas en los apartados anteriores"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Otras"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Distribución adehesada: teselas con superficie forestal ocupada por un estrato arbolado, con una fracción de cabida cubierta (superficie de suelo cubierta por la proyección de la copa de los árboles) comprendida entre el 5% y el 75%, compuesto principalmente por encinas, alcornoques, quejigos, rebollos, acebuches o fresnos, y ocasionalmente por otro arbolado, que permita el desarrollo de un estrato esencialmente herbáceo (pasto), para aprovechamiento del ganado o de las especies cinegéticas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Adehesada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Estado de una población desde su nacimiento (de semilla) o brote (de cepa o raíz) hasta que se tocan las partes aéreas de los pies contiguos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Repoblado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Estado de la masa en su primera juventud, esto es, desde que empiezan a tocarse las copas nuevas de las plantas hasta alcanzar el estado de latizal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Monte bravo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Estado de masa arbórea a partir de los 8 - 10 metros de talla y hasta llegar al estado de fustal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Latizal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Estado de superior desarrollo de los montes arbolados"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Fustal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-forma-de-masa/1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El contorno de la tesela no presenta una de sus dimensiones (largo o ancho) prácticamente despreciable con respecto a la otra ni adopta una forma más o menos geométrica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Irregular"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormaDeMasa"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-forma-de-masa/2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El contorno de la tesela adopta una forma más o menos geométrica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Regular"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormaDeMasa"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-forma-de-masa/3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El contorno de la tesela arbolada o arbustiva presenta una de sus dimensiones (largo o ancho) prácticamente despreciable con respecto a la otra y además sigue el curso de una corriente de agua"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Galeria"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormaDeMasa"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-forma-de-masa/4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El contorno de la tesela arbolada o arbustiva presenta una de sus dimensiones (largo o ancho) prácticamente despreciable con respecto a la otra y además no sigue el curso de una corriente de agua"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Alineación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormaDeMasa"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Mezcla autóctonas y alóctonas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Alóctonas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Autóctonas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Bosque de coníferas"
+  }, {
+    "@language" : "en",
+    "@value" : "Conifer Stand"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Dehesas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Arbolado disperso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Masas con una especie dominante"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOALC190",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Coníferas alóctonas de gestión (Cupressus sp, Cedrus spp. otros pinos, etc.)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AL"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies19"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOALF070",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Frondosas alóctonas invasoras "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AL"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies7"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC210",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Pinar de pino albar (Pinus sylvestris)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies21"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC220",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Pinar de pino negro (Pinus uncinata)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies22"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC230",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Pinar de pino piñonero (Pinus pinea)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies23"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC238",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Sabinares canarios (Juniperus turbinata)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies238"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC240",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Pinar de pino carrasco (Pinus halepensis)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies24"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC250",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Pinar de pino salgareño (Pinus nigra)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies25"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC260",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Pinar de pino negral "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC261",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Pinar de pino pinaster en región mediterránea (P.pinaster spp. mesogeensis)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC270",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Pinar de pino canario (Pinus canariensis)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies27"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC310",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Abetales (Abies alba)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies31"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC320",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Pinsapares (Abies pinsapo)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies32"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC370",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Enebrales (Juniperus spp.)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies37"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC380",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Sabinares albares (Juniperus thurifera)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies38"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC390",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Sabinares de Juniperus phoenicea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies39"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF243",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Robledales de roble pubescente (Q. humilis)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies243"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF400",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Robledales de Q. robur y/o Q. petraea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies40"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF430",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Melojares (Quercus pyrenaica)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies43"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF440",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Quejigares (Quercus faginea)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies44"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF450",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Encinares (Quercus ilex)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies45"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF460",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Alcornocales (Quercus suber)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies46"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF470",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Quejigares de Quercus canariensis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies47"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF550",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Fresnedas (Fraxinus spp.)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies55"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF650",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Acebedas (Ilex aquifolium)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies65"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF660",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Acebuchales (Olea europaea var. sylvestris)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies66"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF670",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Algarrobales (Ceratonia siliqua)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies67"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF680",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Madroñales (Arbutus unedo)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies68"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF710",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Hayedos (Fagus sylvatica)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies71"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF720",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Castañares (Castanea sativa)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies72"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF730",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Abedulares (Betula spp.)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies73"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF940",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Avellanedas (Corylus avellana)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies74"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Bosques de frondosas"
+  }, {
+    "@language" : "es",
+    "@value" : "Frondosas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/M",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Mezcla de coníferas y frondosas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Masas mixtas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAAC882",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Coníferas alóctonas con  autóctonas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AA"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAAF881",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Las especies 48 y 60 no se combinan porque irían a la formación 38"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Frondosas alóctonas con  autóctonas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AA"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies7-48-60%2F13-40-43-44-45-46-47-48%2A-50-55-56-58-60%2A-65-66-67-68-70-71-72-73-74-80-83-91-93-95-99-243-258-369-495"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAAM883",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Coníferas con frondosas (alóctonas con  autóctonas)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AA"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/M"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC861",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Excepto: 28-30, que sería formación 38"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Mezcla de coníferas autóctonas en la región biogeográfica Alpina"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies14-19-21-22-23-24-25-26-27-28-30-31-32-37-38-39-219-238"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC862",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Excepto: 28-30, que sería formación 38"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Mezcla de coníferas autóctonas en la región biogeográfica Atlántica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies14-19-21-22-23-24-25-26-27-28-30-31-32-37-38-39-219-238"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC863",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Excepto: 28-30, que sería formación 38"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Mezcla de coníferas autóctonas en la región biogeográfica Mediterránea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies14-19-21-22-23-24-25-26-27-28-30-31-32-37-38-39-219-238"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC864",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Excepto: 28-30, que sería formación 38"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Mezcla de coníferas autóctonas en la región biogeográfica Macaronésica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies14-19-21-22-23-24-25-26-27-28-30-31-32-37-38-39-219-238"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF810",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Frondosas autóctonas en Región Biogeográfica Alpina"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Bosque mixto de frondosas en la región biogeográfica Alpina"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF820",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Frondosas autóctonas en Región Biogeográfica Atlántica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Bosque mixto de frondosas en la región biogeográfica Atlántica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF830",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Frondosas autóctonas en Región Biogeográfica Mediterránea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Bosque mixto de frondosas en la región biogeográfica Mediterránea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF840",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Frondosas autóctonas en Región Biogeográfica Macaronésica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Bosque mixto de frondosas en la región biogeográfica Macaronésica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF841",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Fayal-brezal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF841"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies83"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF842",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Laurisilvas macaronésicas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF842"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies80"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF843",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Otras mezclas de frondosas macaronésicas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF843"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF850",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Palmerales y mezclas de palmeras con otras especies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies369"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUM871",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Mezcla de coníferas y frondosas autóctonas en la región biogeográfica Alpina"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/M"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUM872",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Mezcla de coníferas y frondosas autóctonas en la región biogeográfica Atlántica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/M"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUM873",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Mezcla de coníferas y frondosas autóctonas en la región biogeográfica Mediterránea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/M"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUM874",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Mezcla de coníferas y frondosas autóctonas en la región biogeográfica Macaronésica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/M"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Repoblaciones"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Riberas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Masas mixtas o puras caracterizadas por su estructura (Tipo estructural)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STDEF920",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Tipo Estructural 3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Dehesas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DE"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STDIC932",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Arbolado disperso coníferas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DI"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STDIF931",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Arbolado disperso de frondosas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DI"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STDIM933",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Arbolado disperso coníferas y frondosas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DI"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/M"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREC262",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Pinares de pino pinaster en región atlántica (Pinus pinaster spp. atlántica)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RE"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREC280",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Pinar de pino radiata (Pinus radiata)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RE"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREC300",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Otras coníferas alóctonas de producción (Larix spp., Pseudotsuga spp., etc)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RE"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREF258",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Choperas y plataneras de producción"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RE"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies258"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREF480",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Repoblación de Quercus rubra"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RE"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREF600",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Eucaliptal (Eucaliptus spp.)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RE"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREM940",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Otras de especies de producción en mezcla"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/M"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RE"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STRIF910",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Tipo Estructural 11"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Bosque ribereño"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RI"
+  }, {
+    "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"
+  } ],
+  "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies50%3B50%2F55-58%3B13%2F55-50-58%3B55%2F58-258"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-fraccion-cabida-cubierta/arborea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Corresponde al campo TFCCARB"
+  }, {
+    "@language" : "es",
+    "@value" : "Representa la proporción del conjunto de las especies del estrato arbóreo como porcentaje de suelo cubierto por la proyección de todas las copas. No influye en su cálculo el hecho de tratarse de masas monoespecíficas o pluriespecíficas, o el de encontrarse en distinto estado de masa las distintas especies."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Canopy Cover of Trees"
+  }, {
+    "@language" : "es",
+    "@value" : "Fracción de Cabida Cubierta Arbórea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FraccionDeCabidaCubierta"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-fraccion-cabida-cubierta/arbustiva",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representa la proporción del conjunto de las especies del estrato arbustivo como porcentaje de suelo cubierto por la proyección de todas las copas. No influye en su cálculo el hecho de tratarse de masas monoespecíficas o pluriespecíficas, o el de encontrarse en distinto estado de masa las distintas especies."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Canopy Cover of Bushes"
+  }, {
+    "@language" : "es",
+    "@value" : "Fracción de Cabida Cubierta Arbustiva"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FraccionDeCabidaCubierta"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-fraccion-cabida-cubierta/total",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Corresponde al campo TFCCTOT"
+  }, {
+    "@language" : "es",
+    "@value" : "Representa la proporción total de la vegetación arbórea y de matorral. Proporciona información sobre la proyección sobre el suelo de los principales pisos de vegetación. En algún caso se incluirán fracciones de cabida cubierta de pastizales o cultivos. Para su cuantificación se tendrá en cuenta todas las especies en conjunto, con independencia de que se presenten por razones de edad o de otro tipo de alturas muy distintas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Fracción de Cabida Cubierta Total"
+  }, {
+    "@language" : "es",
+    "@value" : "Total Canopy Cover"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FraccionDeCabidaCubierta"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-region-biogeografica/ALP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Región biogeográfica Alpina"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RegionBiogeografica"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-region-biogeografica/ATL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Región biogeográfica Atlántica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RegionBiogeografica"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-region-biogeografica/MAC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Región biogeográfica Macaronésica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RegionBiogeografica"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-region-biogeografica/MED",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Región biogeográfica Mediterránea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RegionBiogeografica"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-de-bosque/C",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Coníferas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoDeBosque"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-de-bosque/F",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Frondosas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoDeBosque"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-de-bosque/M",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Mixtas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoDeBosque"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Agrupación de árboles o especies potencialmente arbóreas, en espesura con una fracción de cabida cubierta superior al 5% y uso netamente forestal. El origen del mismo es natural  o de repoblación totalmente integrada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Bosque"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Teselas que por circunstancias de composición edáfica, de pendiente, o cualquiera otra, presentan la mayor parte de su superficie desnuda de vegetación incluso herbácea. Serán los desiertos y semidesiertos de los diversos tipos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Monte sin Vegetación Superior"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Teselas forestales arboladas que se encuentran junto a los cauces de los ríos, pobladas de especies ripícolas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "A.F.M. (riberas)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Teselas que presentan arbolado fuera del monte, es decir, rodeado de otras teselas no forestales, distribuido en bosquetes individualizables y/o suficientemente próximos como para ser agrupados dentro de una misma tesela. Su superficie no excederá de 20 ha."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "A.F.M. (bosquetes)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Teselas que presentan arbolado fuera del monte, cuya distribución espacial corresponde a una alineación de varios árboles de anchura."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "A.F.M. (alineaciones)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Teselas que, teniendo un uso fundamentalmente no forestal, incluyen árboles sueltos dispersos por ellas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "A.F.M. (a. sueltos)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Teselas de uso agrícola."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Agrícola"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Contendrá las teselas en las que la influencia antrópica ha determinado que su uso no sea ya más ni agrícola ni forestal. Se exceptúan los casos 21 a 23"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Artificial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Teselas que sufren una inundación temporal pero repetitiva año tras año con carácter frecuentemente estacional, lo que condiciona la vegetación presente en ella. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Humedal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Incluye las teselas ocupadas por el agua permanentemente,  o sólo temporalmente en el caso de cursos de agua."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Agua"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Mar"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Agrupación de árboles en espesura con una fracción de cabida cubierta superior al 5% y uso netamente forestal, cuyo origen es el de plantación. Para decidir que una plantación ha dejado de serlo, adquiriendo una naturalidad fruto del paso del tiempo y de la propia dinámica de la vegetación, deberán aparecer diluidos los marcos de plantación u otros elementos que delaten su origen artificial.  Esta idea se verá reforzada si, además: los árboles tienen al menos un diámetro normal de 25 cm, o hay regeneración natural de la masa, así como árboles de diferentes dimensiones y tallas, o existe una invasión más que incipiente de matorral bajo las copas, o de otros árboles naturales de la zona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Bosque de Plantación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Fuera de Límites"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Autopistas y Autovías"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Infraestructuras de Conducción"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Minería, Escombreras y Vertederos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Prado con Setos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Comprende aquellos mosaicos en que los bosquetes arbolados no tienen una continuidad que haga que por su superficie se pueda clasificar como forestal arbolado. Los bosquetes arbolados están en mosaico con los cultivos y/o los prados. Cuando una tesela se clasifique con esta distribucción específica, en el campo especie aparecerá, dentro de las dos primeras, las dos especies forestales más importantes presentes (si sólo hubiese una, aparecerá sólamente una), quedando la tercera (o la segunda), para consignar el código del cultivo o del prado (1500 y 3400  respectivamente). En el campo ocupación se consignará la proporción relativa en que aparece el cultivo o prado respecto a las otras especies forestales y por último el campo estado, quedará vacío cuando se trate de cultivos o prados."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Mosaico Arbolado sobre Cultivo y/o Prado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Comprende aquellos mosaicos en que los bosquetes arbolados no tienen una continuidad que haga que por su superficie se pueda clasificar como forestal arbolado. Los bosquetes arbolados están en mosaico con coberturas forestales no arboladas, que podrán ser de matorral, herbazal o pastizal-matorral . Cuando una tesela se clasifique con esta distribucción específica, en el campo especie aparecerá, dentro de las dos primeras, las dos especies forestales más importantes presentes (si sólo hubiese una, aparecerá sólamente una), quedando la tercera (o la segunda), para consignar el código del matorral, herbazal o pastizal-matorral (8000, 9000 o 3500 respectivamente). En el campo ocupación se consignará la proporción relativa en que aparece el forestal no arbolado respecto a las otras especies forestales y por último, el campo estado quedará vacío cuando se trate de forestal no arbolado."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Mosaico Arbolado sobre Forestal Desarbolado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Comprende aquellos mosaicos formados por cultivos y/o prados en mezcla con coberturas forestales no arboladas (matorral, pastizal-matorral o herbazal). Cuando una tesela se clasifique con esta distribucción específica, en el campo especie se consignará en primer lugar la cobertura de mayor extensión superficial con su ocupación  hasta tres posibles valores. En todos los casos el campo estado quedará vacío. Los posibles valores para el campo especie serán: 1500,3400,3500,8000 y 9000 correspondiendo a agrícola, prados, pastizal-matorral, matorral y herbazal respectivamente."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Mosaico Desarbolado sobre Cultivo y/o Prado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Espacios dedicados exclusivamente a cultivos de secano, con un arbolado disperso, que puede superar el 5% de fcc, derivado de antiguos usos de dehesa o de bosque. Para clasificarlo como tal, el arbolado tiene que ser representativo de uso forestal (no los frutales) e intuir antiguos usos forestales (especialmente dehesas)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Cultivo con Arbolado Disperso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Espacio de gran extensión con características y uso de Parque, en las proximidades de los grandes núcleos urbanos. En él se separarán las infraestructuras de uso público y de características de uso artificial como Parques de Atracciones, Auditorios, etc.. de superficie superior a las 2,5 ha."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Parque Periurbano"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Dehesa es aquella formación arbolada (fcc > 5%), poblada habitualmente de árboles con aptitudes ganaderas de sus frutos o ramones, y en la que aunque el uso principal sea el ganadero  aparece un doble uso agrícola y forestal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Bosque Adehesado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Superficie forestal de fuerte actividad recreativa, incluso pistas de sky."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Área Recreativa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Lago natural de alta montaña."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Laguna de Alta Montaña"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Teselas pobladas por especies potencialmente arbóreas, pero que en la actualidad presentan tallas arbustivas probablemente como consecuencia del tipo de aprovechamiento."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Monte Bajo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Formaciones de porte arbustivo en un solo estrato, correspondientes a mezclas de especies arbóreas y de matorral que en la actualidad presentan tallas arbustivas, especialmente esclerófilas y laurifolias. Se presentan casi exclusivamente sobre suelos silíceos (mitad oeste peninsular). Normalmente son manchas de mezclas de encina con madroño, durillo, etc.."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Mancha"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Incluye aquella superficie poblada por pastos, con aprovechamiento ganadero patente que por sus características puede considerarse no forestal y en la que puede aparecer arbolado disperso incluso con fracción de cabida cubierta algo superior al 5%."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Prado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Superficie poblada con matorral bajo (tomillos o similares) en mezcla con herbáceas y aprovechamiento extensivo de ganado. Las zonas de erial quedarán aquí asignadas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Pastizal-Matorral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Corresponde a teselas dentro del bosque que, sin ser arboladas, están íntimamente unidas al aprovechamiento forestal del mismo. (Ej.: parques de madera, cortafuegos, …). Se pondrá como TFCCARB la del bosque que las rodea."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Complementos del Bosque"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Teselas en terreno forestal que normalmente deberían estar arboladas pero se encuentran temporalmente desarboladas por la realización de talas recientes. Se identifica por tratarse de claros en el bosque con formas geométricas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Temporalmente Desarbolado (talas)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Teselas en terreno forestal que normalmente deberían estar arboladas pero se encuentran temporalmente desarboladas por un reciente incendio."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Temporalmente Desarbolado (incendios)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Teselas en terreno forestal que normalmente deberían estar arboladas pero se encuentran temporalmente desarboladas por causa de algún fenómeno natural (vientos, aludes..)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Temporalmente Desarbolado (f. naturales)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Agrupación vegetal definida por su estructura o por su aspecto, conferidos por el hecho de que su estrato superior o el más alto con espesura están caracterizados por el predominio de matas (especies leñosas relativamente bajas y ramificadas desde su base)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Matorral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
+}, {
+  "@id" : "https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Teselas cubiertas por hierbas de origen natural. Se definen como agrupaciones o cubiertas caracterizadas por la abundancia, densidad y predominio de herbáceas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Herbazal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
+  } ]
 } ]

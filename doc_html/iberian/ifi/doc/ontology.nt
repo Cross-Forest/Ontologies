@@ -78,6 +78,15 @@
 <http://crossforest.eu/ifi/ontology/containsDominantFormation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/ontology/containsDominantFormation> <http://www.w3.org/2000/01/rdf-schema#label> "contains dominant formation"@en .
 <http://crossforest.eu/ifi/ontology/containsDominantFormation> <http://www.w3.org/2000/01/rdf-schema#label> "contiene formación dominante"@es .
+<http://crossforest.eu/ifi/ontology/containsDominantFormation> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies> .
+# 
+# http://crossforest.eu/ifi/ontology/containsDominantFormationByHa
+<http://crossforest.eu/ifi/ontology/containsDominantFormationByHa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifi/ontology/containsDominantFormationByHa> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://crossforest.eu/ifi/ontology/containsDominantFormationByHa> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifi/ontology/InfoDominantFormationByHa> .
+<http://crossforest.eu/ifi/ontology/containsDominantFormationByHa> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
+<http://crossforest.eu/ifi/ontology/containsDominantFormationByHa> <http://www.w3.org/2000/01/rdf-schema#label> "contains dominant formation by hectare"@en .
+<http://crossforest.eu/ifi/ontology/containsDominantFormationByHa> <http://www.w3.org/2000/01/rdf-schema#label> "contiene formación dominante por hectárea"@es .
 # 
 # http://crossforest.eu/ifi/ontology/hasBasalArea
 <http://crossforest.eu/ifi/ontology/hasBasalArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -111,6 +120,11 @@
 <http://crossforest.eu/ifi/ontology/hasVolumeWithBark> <http://www.w3.org/2000/01/rdf-schema#label> "has volume with bark"@en .
 <http://crossforest.eu/ifi/ontology/hasVolumeWithBark> <http://www.w3.org/2000/01/rdf-schema#label> "tiene volumen con corteza"@es .
 # 
+# http://crossforest.eu/ifi/ontology/isInCountry
+<http://crossforest.eu/ifi/ontology/isInCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://crossforest.eu/ifi/ontology/isInCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifi/ontology/NUTSUnit> .
+<http://crossforest.eu/ifi/ontology/isInCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/ifi/ontology/Country> .
+# 
 # 
 # 
 # #################################################################
@@ -130,7 +144,7 @@
 # 
 # http://crossforest.eu/ifi/ontology/hasBasalAreaInM2ByHA
 <http://crossforest.eu/ifi/ontology/hasBasalAreaInM2ByHA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://crossforest.eu/ifi/ontology/hasBasalAreaInM2ByHA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifi/ontology/InfoDominantFormationByHA> .
+<http://crossforest.eu/ifi/ontology/hasBasalAreaInM2ByHA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifi/ontology/InfoDominantFormationByHa> .
 <http://crossforest.eu/ifi/ontology/hasBasalAreaInM2ByHA> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <http://crossforest.eu/ifi/ontology/hasBasalAreaInM2ByHA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/ontology/hasBasalAreaInM2ByHA> <http://www.w3.org/2000/01/rdf-schema#label> "has basal area in square meters by hectare"@en .
@@ -146,7 +160,7 @@
 # 
 # http://crossforest.eu/ifi/ontology/hasNumberOfTreesInUnitsByHA
 <http://crossforest.eu/ifi/ontology/hasNumberOfTreesInUnitsByHA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://crossforest.eu/ifi/ontology/hasNumberOfTreesInUnitsByHA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifi/ontology/InfoDominantFormationByHA> .
+<http://crossforest.eu/ifi/ontology/hasNumberOfTreesInUnitsByHA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifi/ontology/InfoDominantFormationByHa> .
 <http://crossforest.eu/ifi/ontology/hasNumberOfTreesInUnitsByHA> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <http://crossforest.eu/ifi/ontology/hasNumberOfTreesInUnitsByHA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/ontology/hasNumberOfTreesInUnitsByHA> <http://www.w3.org/2000/01/rdf-schema#label> "has number of trees in units per hectare"@en .
@@ -169,7 +183,7 @@
 # 
 # http://crossforest.eu/ifi/ontology/hasVolumeWithBarkInM3ByHA
 <http://crossforest.eu/ifi/ontology/hasVolumeWithBarkInM3ByHA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://crossforest.eu/ifi/ontology/hasVolumeWithBarkInM3ByHA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifi/ontology/InfoDominantFormationByHA> .
+<http://crossforest.eu/ifi/ontology/hasVolumeWithBarkInM3ByHA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/ifi/ontology/InfoDominantFormationByHa> .
 <http://crossforest.eu/ifi/ontology/hasVolumeWithBarkInM3ByHA> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <http://crossforest.eu/ifi/ontology/hasVolumeWithBarkInM3ByHA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/ontology/hasVolumeWithBarkInM3ByHA> <http://www.w3.org/2000/01/rdf-schema#label> "has volume with bark in cubic meters by hectare"@en .
@@ -184,6 +198,13 @@
 # #################################################################
 # 
 # 
+# http://crossforest.eu/ifi/ontology/Altitude
+<http://crossforest.eu/ifi/ontology/Altitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifi/ontology/Altitude> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
+<http://crossforest.eu/ifi/ontology/Altitude> <http://www.w3.org/2000/01/rdf-schema#label> "Altitud"@es .
+<http://crossforest.eu/ifi/ontology/Altitude> <http://www.w3.org/2000/01/rdf-schema#label> "Altitude"@en .
+<http://crossforest.eu/ifi/ontology/Altitude> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Altitud> .
+# 
 # http://crossforest.eu/ifi/ontology/BasalArea
 <http://crossforest.eu/ifi/ontology/BasalArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://crossforest.eu/ifi/ontology/BasalArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/measures/ontology/Measure> .
@@ -192,7 +213,34 @@
 <http://crossforest.eu/ifi/ontology/BasalArea> <http://www.w3.org/2000/01/rdf-schema#label> "Basal Area"@en .
 <http://crossforest.eu/ifi/ontology/BasalArea> <http://www.w3.org/2000/01/rdf-schema#label> "Área Basimétrica"@es .
 <http://crossforest.eu/ifi/ontology/BasalArea> <http://www.w3.org/2000/01/rdf-schema#label> "Área basal"@pt .
-<http://crossforest.eu/ifi/ontology/BasalArea> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/BasalArea> .
+<http://crossforest.eu/ifi/ontology/BasalArea> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/BasalArea> .
+# 
+# http://crossforest.eu/ifi/ontology/Composition
+<http://crossforest.eu/ifi/ontology/Composition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifi/ontology/Composition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
+<http://crossforest.eu/ifi/ontology/Composition> <http://www.w3.org/2000/01/rdf-schema#label> "Composición Específica"@es .
+<http://crossforest.eu/ifi/ontology/Composition> <http://www.w3.org/2000/01/rdf-schema#label> "Composition of Vegetation"@en .
+<http://crossforest.eu/ifi/ontology/Composition> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/ComposicionEspecifica> .
+# 
+# http://crossforest.eu/ifi/ontology/Country
+<http://crossforest.eu/ifi/ontology/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifi/ontology/Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/position/ontology/SpatialEntity> .
+<http://crossforest.eu/ifi/ontology/Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en .
+<http://crossforest.eu/ifi/ontology/Country> <http://www.w3.org/2000/01/rdf-schema#label> "País"@es .
+# 
+# http://crossforest.eu/ifi/ontology/DeadLayer
+<http://crossforest.eu/ifi/ontology/DeadLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifi/ontology/DeadLayer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
+<http://crossforest.eu/ifi/ontology/DeadLayer> <http://www.w3.org/2000/01/rdf-schema#label> "Espesor de Capa Muerta"@es .
+<http://crossforest.eu/ifi/ontology/DeadLayer> <http://www.w3.org/2000/01/rdf-schema#label> "Thickness of Dead Layer"@en .
+<http://crossforest.eu/ifi/ontology/DeadLayer> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/EspesorDeCapaMuerta> .
+# 
+# http://crossforest.eu/ifi/ontology/DiametricClass
+<http://crossforest.eu/ifi/ontology/DiametricClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifi/ontology/DiametricClass> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
+<http://crossforest.eu/ifi/ontology/DiametricClass> <http://www.w3.org/2000/01/rdf-schema#label> "Clase diamétrica"@es .
+<http://crossforest.eu/ifi/ontology/DiametricClass> <http://www.w3.org/2000/01/rdf-schema#label> "Diametric class"@en .
+<http://crossforest.eu/ifi/ontology/DiametricClass> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/ClaseDiametrica> .
 # 
 # http://crossforest.eu/ifi/ontology/DominantFormation
 <http://crossforest.eu/ifi/ontology/DominantFormation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -203,13 +251,15 @@
 <http://crossforest.eu/ifi/ontology/DominantFormation> <http://www.w3.org/2000/01/rdf-schema#label> "Dominant formation"@en .
 <http://crossforest.eu/ifi/ontology/DominantFormation> <http://www.w3.org/2000/01/rdf-schema#label> "Formación dominante"@es .
 <http://crossforest.eu/ifi/ontology/DominantFormation> <http://www.w3.org/2000/01/rdf-schema#label> "Tipos de povoamentos florestais"@pt .
+<http://crossforest.eu/ifi/ontology/DominantFormation> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn-pt/ontology/DominantFormation_PT_6> .
+<http://crossforest.eu/ifi/ontology/DominantFormation> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Stratum> .
 # 
-# http://crossforest.eu/ifi/ontology/DominantFormation_PT_6
-<http://crossforest.eu/ifi/ontology/DominantFormation_PT_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://crossforest.eu/ifi/ontology/DominantFormation_PT_6> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifi/ontology/DominantFormation> .
-<http://crossforest.eu/ifi/ontology/DominantFormation_PT_6> <http://www.w3.org/2000/01/rdf-schema#label> "Dominant formation in IFN6 (Portugal)"@en .
-<http://crossforest.eu/ifi/ontology/DominantFormation_PT_6> <http://www.w3.org/2000/01/rdf-schema#label> "Formación dominante en IFN6 (Portugal)"@en .
-<http://crossforest.eu/ifi/ontology/DominantFormation_PT_6> <http://www.w3.org/2000/01/rdf-schema#label> "Tipos de povoamentos florestais (IFN6 Portugal)"@pt .
+# http://crossforest.eu/ifi/ontology/Erosion
+<http://crossforest.eu/ifi/ontology/Erosion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifi/ontology/Erosion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
+<http://crossforest.eu/ifi/ontology/Erosion> <http://www.w3.org/2000/01/rdf-schema#label> "Erosion"@en .
+<http://crossforest.eu/ifi/ontology/Erosion> <http://www.w3.org/2000/01/rdf-schema#label> "Erosión"@es .
+<http://crossforest.eu/ifi/ontology/Erosion> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/ManifestacionesErosivas> .
 # 
 # http://crossforest.eu/ifi/ontology/ForestryInventory
 <http://crossforest.eu/ifi/ontology/ForestryInventory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -219,20 +269,34 @@
 <http://crossforest.eu/ifi/ontology/ForestryInventory> <http://www.w3.org/2000/01/rdf-schema#label> "Inventario forestal"@es .
 <http://crossforest.eu/ifi/ontology/ForestryInventory> <http://www.w3.org/2000/01/rdf-schema#label> "Inventário Florestal Nacional"@pt .
 # 
+# http://crossforest.eu/ifi/ontology/FuelModel
+<http://crossforest.eu/ifi/ontology/FuelModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifi/ontology/FuelModel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
+<http://crossforest.eu/ifi/ontology/FuelModel> <http://www.w3.org/2000/01/rdf-schema#label> "Fuel Model"@en .
+<http://crossforest.eu/ifi/ontology/FuelModel> <http://www.w3.org/2000/01/rdf-schema#label> "Modelo de Combustible"@es .
+<http://crossforest.eu/ifi/ontology/FuelModel> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/ModeloCombustible> .
+# 
+# http://crossforest.eu/ifi/ontology/Gradient
+<http://crossforest.eu/ifi/ontology/Gradient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifi/ontology/Gradient> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
+<http://crossforest.eu/ifi/ontology/Gradient> <http://www.w3.org/2000/01/rdf-schema#label> "Gradient"@en .
+<http://crossforest.eu/ifi/ontology/Gradient> <http://www.w3.org/2000/01/rdf-schema#label> "Pendiente"@es .
+<http://crossforest.eu/ifi/ontology/Gradient> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Pendiente> .
+# 
 # http://crossforest.eu/ifi/ontology/InfoDominantFormation
 <http://crossforest.eu/ifi/ontology/InfoDominantFormation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://crossforest.eu/ifi/ontology/InfoDominantFormation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/ontology/InfoDominantFormation> <http://www.w3.org/2000/01/rdf-schema#label> "Info about dominant formation"@en .
 <http://crossforest.eu/ifi/ontology/InfoDominantFormation> <http://www.w3.org/2000/01/rdf-schema#label> "Información sobre la formación dominante"@es .
 <http://crossforest.eu/ifi/ontology/InfoDominantFormation> <http://www.w3.org/2000/01/rdf-schema#label> "Informação sobre espécie de árvore dominante"@pt .
+<http://crossforest.eu/ifi/ontology/InfoDominantFormation> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpecies> .
 # 
-# http://crossforest.eu/ifi/ontology/InfoDominantFormationByHA
-<http://crossforest.eu/ifi/ontology/InfoDominantFormationByHA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://crossforest.eu/ifi/ontology/InfoDominantFormationByHA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifi/ontology/InfoDominantFormation> .
-<http://crossforest.eu/ifi/ontology/InfoDominantFormationByHA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/ontology/InfoDominantFormationByHA> <http://www.w3.org/2000/01/rdf-schema#label> "Info about dominant formation by hectare"@en .
-<http://crossforest.eu/ifi/ontology/InfoDominantFormationByHA> <http://www.w3.org/2000/01/rdf-schema#label> "Información sobre la formación dominante por hectárea"@es .
-<http://crossforest.eu/ifi/ontology/InfoDominantFormationByHA> <http://www.w3.org/2000/01/rdf-schema#label> "Informação sobre espécie de árvore dominante por hectare"@pt .
+# http://crossforest.eu/ifi/ontology/InfoDominantFormationByHa
+<http://crossforest.eu/ifi/ontology/InfoDominantFormationByHa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifi/ontology/InfoDominantFormationByHa> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
+<http://crossforest.eu/ifi/ontology/InfoDominantFormationByHa> <http://www.w3.org/2000/01/rdf-schema#label> "Info about dominant formation by hectare"@en .
+<http://crossforest.eu/ifi/ontology/InfoDominantFormationByHa> <http://www.w3.org/2000/01/rdf-schema#label> "Información sobre la formación dominante por hectárea"@es .
+<http://crossforest.eu/ifi/ontology/InfoDominantFormationByHa> <http://www.w3.org/2000/01/rdf-schema#label> "Informação sobre espécie de árvore dominante por hectare"@pt .
 # 
 # http://crossforest.eu/ifi/ontology/NUTS1
 <http://crossforest.eu/ifi/ontology/NUTS1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -263,7 +327,7 @@
 <http://crossforest.eu/ifi/ontology/NUTS3> <http://www.w3.org/2000/01/rdf-schema#label> "Small region for specific diagnoses"@en .
 <http://crossforest.eu/ifi/ontology/NUTS3> <http://www.w3.org/2000/01/rdf-schema#label> "Sub-região"@pt .
 <http://crossforest.eu/ifi/ontology/NUTS3> <http://www.w3.org/2000/01/rdf-schema#label> "Subregión"@es .
-<http://crossforest.eu/ifi/ontology/NUTS3> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://crossforest.eu/ifn/ontology/Province> .
+<http://crossforest.eu/ifi/ontology/NUTS3> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Province> .
 # 
 # http://crossforest.eu/ifi/ontology/NUTSUnit
 <http://crossforest.eu/ifi/ontology/NUTSUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -284,7 +348,70 @@
 <http://crossforest.eu/ifi/ontology/NumberOfTrees> <http://www.w3.org/2000/01/rdf-schema#label> "Number of trees"@en .
 <http://crossforest.eu/ifi/ontology/NumberOfTrees> <http://www.w3.org/2000/01/rdf-schema#label> "Número de árboles"@es .
 <http://crossforest.eu/ifi/ontology/NumberOfTrees> <http://www.w3.org/2000/01/rdf-schema#label> "Número de árvores"@pt .
-<http://crossforest.eu/ifi/ontology/NumberOfTrees> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifn/ontology/NumberOfTrees> .
+<http://crossforest.eu/ifi/ontology/NumberOfTrees> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/NumberOfTrees> .
+# 
+# http://crossforest.eu/ifi/ontology/OrganicMatter
+<http://crossforest.eu/ifi/ontology/OrganicMatter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifi/ontology/OrganicMatter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
+<http://crossforest.eu/ifi/ontology/OrganicMatter> <http://www.w3.org/2000/01/rdf-schema#label> "Materia Orgánica"@es .
+<http://crossforest.eu/ifi/ontology/OrganicMatter> <http://www.w3.org/2000/01/rdf-schema#label> "Organic Matter"@en .
+<http://crossforest.eu/ifi/ontology/OrganicMatter> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/ContenidoEnMateriaOrganica> .
+# 
+# http://crossforest.eu/ifi/ontology/Orientation
+<http://crossforest.eu/ifi/ontology/Orientation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifi/ontology/Orientation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
+<http://crossforest.eu/ifi/ontology/Orientation> <http://www.w3.org/2000/01/rdf-schema#label> "Orientación"@es .
+<http://crossforest.eu/ifi/ontology/Orientation> <http://www.w3.org/2000/01/rdf-schema#label> "Orientation"@en .
+<http://crossforest.eu/ifi/ontology/Orientation> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Orientacion> .
+# 
+# http://crossforest.eu/ifi/ontology/PH
+<http://crossforest.eu/ifi/ontology/PH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifi/ontology/PH> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
+<http://crossforest.eu/ifi/ontology/PH> <http://www.w3.org/2000/01/rdf-schema#label> "PH"@en .
+<http://crossforest.eu/ifi/ontology/PH> <http://www.w3.org/2000/01/rdf-schema#label> "PH"@es .
+<http://crossforest.eu/ifi/ontology/PH> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/ReaccionDelSueloPH> .
+# 
+# http://crossforest.eu/ifi/ontology/PlotShape
+<http://crossforest.eu/ifi/ontology/PlotShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifi/ontology/PlotShape> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
+<http://crossforest.eu/ifi/ontology/PlotShape> <http://www.w3.org/2000/01/rdf-schema#label> "Forma de parcela"@es .
+<http://crossforest.eu/ifi/ontology/PlotShape> <http://www.w3.org/2000/01/rdf-schema#label> "Plot shape"@en .
+<http://crossforest.eu/ifi/ontology/PlotShape> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/FormaPrincipalDeMasa> .
+# 
+# http://crossforest.eu/ifi/ontology/PlotType
+<http://crossforest.eu/ifi/ontology/PlotType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifi/ontology/PlotType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
+<http://crossforest.eu/ifi/ontology/PlotType> <http://www.w3.org/2000/01/rdf-schema#label> "Plot Type"@en .
+<http://crossforest.eu/ifi/ontology/PlotType> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de parcela"@es .
+<http://crossforest.eu/ifi/ontology/PlotType> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/TipoDeParcela> .
+# 
+# http://crossforest.eu/ifi/ontology/Rocosity
+<http://crossforest.eu/ifi/ontology/Rocosity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifi/ontology/Rocosity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
+<http://crossforest.eu/ifi/ontology/Rocosity> <http://www.w3.org/2000/01/rdf-schema#label> "Rocosidad"@es .
+<http://crossforest.eu/ifi/ontology/Rocosity> <http://www.w3.org/2000/01/rdf-schema#label> "Rocosity"@en .
+<http://crossforest.eu/ifi/ontology/Rocosity> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Rocosidad> .
+# 
+# http://crossforest.eu/ifi/ontology/SpatialDistribution
+<http://crossforest.eu/ifi/ontology/SpatialDistribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifi/ontology/SpatialDistribution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
+<http://crossforest.eu/ifi/ontology/SpatialDistribution> <http://www.w3.org/2000/01/rdf-schema#label> "Distribución Espacial"@es .
+<http://crossforest.eu/ifi/ontology/SpatialDistribution> <http://www.w3.org/2000/01/rdf-schema#label> "Spatial Distribution"@en .
+<http://crossforest.eu/ifi/ontology/SpatialDistribution> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/DistribucionEspacialDeVegetacion> .
+# 
+# http://crossforest.eu/ifi/ontology/Texture
+<http://crossforest.eu/ifi/ontology/Texture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifi/ontology/Texture> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
+<http://crossforest.eu/ifi/ontology/Texture> <http://www.w3.org/2000/01/rdf-schema#label> "Textura"@es .
+<http://crossforest.eu/ifi/ontology/Texture> <http://www.w3.org/2000/01/rdf-schema#label> "Texture"@en .
+<http://crossforest.eu/ifi/ontology/Texture> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Textura> .
+# 
+# http://crossforest.eu/ifi/ontology/TreeShape
+<http://crossforest.eu/ifi/ontology/TreeShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ifi/ontology/TreeShape> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
+<http://crossforest.eu/ifi/ontology/TreeShape> <http://www.w3.org/2000/01/rdf-schema#label> "Forma"@es .
+<http://crossforest.eu/ifi/ontology/TreeShape> <http://www.w3.org/2000/01/rdf-schema#label> "Shape"@en .
+<http://crossforest.eu/ifi/ontology/TreeShape> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/FormaDeCubicacion> .
 # 
 # http://crossforest.eu/ifi/ontology/VolumeWithBark
 <http://crossforest.eu/ifi/ontology/VolumeWithBark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -293,84 +420,7 @@
 <http://crossforest.eu/ifi/ontology/VolumeWithBark> <http://www.w3.org/2000/01/rdf-schema#label> "Volume com casca"@pt .
 <http://crossforest.eu/ifi/ontology/VolumeWithBark> <http://www.w3.org/2000/01/rdf-schema#label> "Volume with bark"@en .
 <http://crossforest.eu/ifi/ontology/VolumeWithBark> <http://www.w3.org/2000/01/rdf-schema#label> "Volumen con corteza"@es .
-<http://crossforest.eu/ifi/ontology/VolumeWithBark> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://crossforest.eu/ifn/ontology/VolumeWithBark> .
-# 
-# http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Acácias
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Ac\u00E1cias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Ac\u00E1cias> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifi/ontology/DominantFormation_PT_6> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Ac\u00E1cias> <http://www.w3.org/2000/01/rdf-schema#comment> "Espécies dominantes presentes: acácia-dealbata, acácia-da-Austrália, outras acácias"@pt .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Ac\u00E1cias> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Ac\u00E1cias> <http://www.w3.org/2000/01/rdf-schema#label> "Acácias"@pt .
-# 
-# http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Alfarrobeira
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Alfarrobeira> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Alfarrobeira> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifi/ontology/DominantFormation_PT_6> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Alfarrobeira> <http://www.w3.org/2000/01/rdf-schema#comment> "Espécies dominantes presentes: alfarrobeira"@pt .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Alfarrobeira> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Alfarrobeira> <http://www.w3.org/2000/01/rdf-schema#label> "Alfarrobeira"@pt .
-# 
-# http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Azinheira
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Azinheira> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Azinheira> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifi/ontology/DominantFormation_PT_6> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Azinheira> <http://www.w3.org/2000/01/rdf-schema#comment> "Espécies dominantes presentes: azinheira"@pt .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Azinheira> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Azinheira> <http://www.w3.org/2000/01/rdf-schema#label> "Azinheira"@pt .
-# 
-# http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Carvalhos
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Carvalhos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Carvalhos> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifi/ontology/DominantFormation_PT_6> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Carvalhos> <http://www.w3.org/2000/01/rdf-schema#comment> "Espécies dominantes presentes: carvalho-roble, carvalho-cerquinho, carvalho-negral, outros carvalhos"@pt .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Carvalhos> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Carvalhos> <http://www.w3.org/2000/01/rdf-schema#label> "Carvalhos"@pt .
-# 
-# http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Castanheiro
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Castanheiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Castanheiro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifi/ontology/DominantFormation_PT_6> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Castanheiro> <http://www.w3.org/2000/01/rdf-schema#comment> "Espécies dominantes presentes: castanheiro-bravo, castanheiro-manso"@pt .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Castanheiro> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Castanheiro> <http://www.w3.org/2000/01/rdf-schema#label> "Castanheiro"@pt .
-# 
-# http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Eucaliptos
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Eucaliptos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Eucaliptos> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifi/ontology/DominantFormation_PT_6> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Eucaliptos> <http://www.w3.org/2000/01/rdf-schema#comment> "Espécies dominantes presentes: várias espécies do género eucalipto"@pt .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Eucaliptos> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Eucaliptos> <http://www.w3.org/2000/01/rdf-schema#label> "Eucaliptos"@pt .
-# 
-# http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_folhosas
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_folhosas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_folhosas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifi/ontology/DominantFormation_PT_6> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_folhosas> <http://www.w3.org/2000/01/rdf-schema#comment> "Espécies dominantes presentes: faia, bétula ou bidoeiro, salgueiros, ulmeiros, choupos, alfarrobeira, amieiros, freixos e outras"@pt .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_folhosas> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_folhosas> <http://www.w3.org/2000/01/rdf-schema#label> "Outras folhosas"@pt .
-# 
-# http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_resinosas
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_resinosas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_resinosas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifi/ontology/DominantFormation_PT_6> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_resinosas> <http://www.w3.org/2000/01/rdf-schema#comment> "Espécies dominantes presentes: pinheiro-silvestre, pinheiro-de-Alepo, pseudotsuga, ciprestes, cedros e outras"@pt .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_resinosas> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_resinosas> <http://www.w3.org/2000/01/rdf-schema#label> "Outras resinosas"@pt .
-# 
-# http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-bravo
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-bravo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-bravo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifi/ontology/DominantFormation_PT_6> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-bravo> <http://www.w3.org/2000/01/rdf-schema#comment> "Espécies dominantes presentes: pinheiro-bravo"@pt .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-bravo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-bravo> <http://www.w3.org/2000/01/rdf-schema#label> "Pinheiro bravo"@pt .
-# 
-# http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-manso
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-manso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-manso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifi/ontology/DominantFormation_PT_6> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-manso> <http://www.w3.org/2000/01/rdf-schema#comment> "Espécies dominantes presentes: pinheiro-manso"@pt .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-manso> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-manso> <http://www.w3.org/2000/01/rdf-schema#label> "Pinheiro manso"@pt .
-# 
-# http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Sobreiro
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Sobreiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Sobreiro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ifi/ontology/DominantFormation_PT_6> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Sobreiro> <http://www.w3.org/2000/01/rdf-schema#comment> "Espécies dominantes presentes: sobreiro"@pt .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Sobreiro> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Sobreiro> <http://www.w3.org/2000/01/rdf-schema#label> "Sobreiro"@pt .
+<http://crossforest.eu/ifi/ontology/VolumeWithBark> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/VolumeWithBark> .
 # 
 # http://crossforest.eu/measures/ontology/Measure
 <http://crossforest.eu/measures/ontology/Measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -389,6 +439,18 @@
 # #
 # #################################################################
 # 
+# 
+# http://crossforest.eu/ifi/data/country/ES
+<http://crossforest.eu/ifi/data/country/ES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifi/data/country/ES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/Country> .
+<http://crossforest.eu/ifi/data/country/ES> <http://www.w3.org/2000/01/rdf-schema#label> "España"@es .
+<http://crossforest.eu/ifi/data/country/ES> <http://www.w3.org/2000/01/rdf-schema#label> "Spain"@en .
+# 
+# http://crossforest.eu/ifi/data/country/PT
+<http://crossforest.eu/ifi/data/country/PT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://crossforest.eu/ifi/data/country/PT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/Country> .
+<http://crossforest.eu/ifi/data/country/PT> <http://www.w3.org/2000/01/rdf-schema#label> "Portugal"@en .
+<http://crossforest.eu/ifi/data/country/PT> <http://www.w3.org/2000/01/rdf-schema#label> "Portugal"@es .
 # 
 # http://crossforest.eu/ifi/data/forestryInventory/ES/3
 <http://crossforest.eu/ifi/data/forestryInventory/ES/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -417,6 +479,7 @@
 # http://crossforest.eu/ifi/data/nuts1/ES/ES1
 <http://crossforest.eu/ifi/data/nuts1/ES/ES1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS1> .
+<http://crossforest.eu/ifi/data/nuts1/ES/ES1> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES1> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES1> <http://www.w3.org/2000/01/rdf-schema#label> "NOROESTE" .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES1> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES1> .
@@ -427,6 +490,7 @@
 # http://crossforest.eu/ifi/data/nuts1/ES/ES2
 <http://crossforest.eu/ifi/data/nuts1/ES/ES2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS1> .
+<http://crossforest.eu/ifi/data/nuts1/ES/ES2> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES2> <http://www.w3.org/2000/01/rdf-schema#label> "NORESTE" .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES2> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES2> .
@@ -438,6 +502,7 @@
 # http://crossforest.eu/ifi/data/nuts1/ES/ES3
 <http://crossforest.eu/ifi/data/nuts1/ES/ES3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS1> .
+<http://crossforest.eu/ifi/data/nuts1/ES/ES3> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES3> <http://www.w3.org/2000/01/rdf-schema#label> "COMUNIDAD DE MADRID" .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES3> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES3> .
@@ -446,6 +511,7 @@
 # http://crossforest.eu/ifi/data/nuts1/ES/ES4
 <http://crossforest.eu/ifi/data/nuts1/ES/ES4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS1> .
+<http://crossforest.eu/ifi/data/nuts1/ES/ES4> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES4> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES4> <http://www.w3.org/2000/01/rdf-schema#label> "CENTRO" .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES4> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES4> .
@@ -456,6 +522,7 @@
 # http://crossforest.eu/ifi/data/nuts1/ES/ES5
 <http://crossforest.eu/ifi/data/nuts1/ES/ES5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS1> .
+<http://crossforest.eu/ifi/data/nuts1/ES/ES5> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES5> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES5> <http://www.w3.org/2000/01/rdf-schema#label> "ESTE" .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES5> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES5> .
@@ -466,6 +533,7 @@
 # http://crossforest.eu/ifi/data/nuts1/ES/ES6
 <http://crossforest.eu/ifi/data/nuts1/ES/ES6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS1> .
+<http://crossforest.eu/ifi/data/nuts1/ES/ES6> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES6> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES6> <http://www.w3.org/2000/01/rdf-schema#label> "SUR" .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES6> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES6> .
@@ -477,6 +545,7 @@
 # http://crossforest.eu/ifi/data/nuts1/ES/ES7
 <http://crossforest.eu/ifi/data/nuts1/ES/ES7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS1> .
+<http://crossforest.eu/ifi/data/nuts1/ES/ES7> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES7> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES7> <http://www.w3.org/2000/01/rdf-schema#label> "CANARIAS" .
 <http://crossforest.eu/ifi/data/nuts1/ES/ES7> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/ES7> .
@@ -485,8 +554,9 @@
 # http://crossforest.eu/ifi/data/nuts1/PT/PT1
 <http://crossforest.eu/ifi/data/nuts1/PT/PT1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts1/PT/PT1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS1> .
+<http://crossforest.eu/ifi/data/nuts1/PT/PT1> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts1/PT/PT1> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts1/PT/PT1> <http://www.w3.org/2000/01/rdf-schema#label> "CONTINENTE" .
+<http://crossforest.eu/ifi/data/nuts1/PT/PT1> <http://www.w3.org/2000/01/rdf-schema#label> "Continente" .
 <http://crossforest.eu/ifi/data/nuts1/PT/PT1> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/PT1> .
 <http://crossforest.eu/ifi/data/nuts1/PT/PT1> <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts2/PT/PT11> .
 <http://crossforest.eu/ifi/data/nuts1/PT/PT1> <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts2/PT/PT15> .
@@ -497,22 +567,25 @@
 # http://crossforest.eu/ifi/data/nuts1/PT/PT2
 <http://crossforest.eu/ifi/data/nuts1/PT/PT2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts1/PT/PT2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS1> .
+<http://crossforest.eu/ifi/data/nuts1/PT/PT2> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts1/PT/PT2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts1/PT/PT2> <http://www.w3.org/2000/01/rdf-schema#label> "REGIÃO AUTÓNOMA DOS AÇORES (NUTS 1)" .
+<http://crossforest.eu/ifi/data/nuts1/PT/PT2> <http://www.w3.org/2000/01/rdf-schema#label> "Região Autónoma dos Açores (NUTS 1)" .
 <http://crossforest.eu/ifi/data/nuts1/PT/PT2> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/PT2> .
 <http://crossforest.eu/ifi/data/nuts1/PT/PT2> <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts2/PT/PT20> .
 # 
 # http://crossforest.eu/ifi/data/nuts1/PT/PT3
 <http://crossforest.eu/ifi/data/nuts1/PT/PT3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts1/PT/PT3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS1> .
+<http://crossforest.eu/ifi/data/nuts1/PT/PT3> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts1/PT/PT3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts1/PT/PT3> <http://www.w3.org/2000/01/rdf-schema#label> "REGIÃO AUTÓNOMA DA MADEIRA (NUTS 1)" .
+<http://crossforest.eu/ifi/data/nuts1/PT/PT3> <http://www.w3.org/2000/01/rdf-schema#label> "Região Autónoma da Madeira (NUTS 1)" .
 <http://crossforest.eu/ifi/data/nuts1/PT/PT3> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/PT3> .
 <http://crossforest.eu/ifi/data/nuts1/PT/PT3> <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts2/PT/PT30> .
 # 
 # http://crossforest.eu/ifi/data/nuts2/ES/ES11
 <http://crossforest.eu/ifi/data/nuts2/ES/ES11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/ES/ES11> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES11> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES11> <http://www.w3.org/2000/01/rdf-schema#label> "GALICIA" .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES11> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES1> .
@@ -525,6 +598,7 @@
 # http://crossforest.eu/ifi/data/nuts2/ES/ES12
 <http://crossforest.eu/ifi/data/nuts2/ES/ES12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/ES/ES12> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES12> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES12> <http://www.w3.org/2000/01/rdf-schema#label> "PRINCIPADO DE ASTURIAS" .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES12> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES1> .
@@ -534,6 +608,7 @@
 # http://crossforest.eu/ifi/data/nuts2/ES/ES13
 <http://crossforest.eu/ifi/data/nuts2/ES/ES13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/ES/ES13> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES13> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES13> <http://www.w3.org/2000/01/rdf-schema#label> "CANTABRIA" .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES13> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES1> .
@@ -543,6 +618,7 @@
 # http://crossforest.eu/ifi/data/nuts2/ES/ES21
 <http://crossforest.eu/ifi/data/nuts2/ES/ES21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/ES/ES21> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES21> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES21> <http://www.w3.org/2000/01/rdf-schema#label> "PAÍS VASCO" .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES21> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES2> .
@@ -554,6 +630,7 @@
 # http://crossforest.eu/ifi/data/nuts2/ES/ES22
 <http://crossforest.eu/ifi/data/nuts2/ES/ES22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/ES/ES22> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES22> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES22> <http://www.w3.org/2000/01/rdf-schema#label> "COMUNIDAD FORAL DE NAVARRA" .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES22> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES2> .
@@ -563,6 +640,7 @@
 # http://crossforest.eu/ifi/data/nuts2/ES/ES23
 <http://crossforest.eu/ifi/data/nuts2/ES/ES23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/ES/ES23> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES23> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES23> <http://www.w3.org/2000/01/rdf-schema#label> "LA RIOJA" .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES23> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES2> .
@@ -572,6 +650,7 @@
 # http://crossforest.eu/ifi/data/nuts2/ES/ES24
 <http://crossforest.eu/ifi/data/nuts2/ES/ES24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/ES/ES24> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES24> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES24> <http://www.w3.org/2000/01/rdf-schema#label> "ARAGÓN" .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES24> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES2> .
@@ -583,6 +662,7 @@
 # http://crossforest.eu/ifi/data/nuts2/ES/ES30
 <http://crossforest.eu/ifi/data/nuts2/ES/ES30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/ES/ES30> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES30> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES30> <http://www.w3.org/2000/01/rdf-schema#label> "COMUNIDAD DE MADRID" .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES30> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES3> .
@@ -592,6 +672,7 @@
 # http://crossforest.eu/ifi/data/nuts2/ES/ES41
 <http://crossforest.eu/ifi/data/nuts2/ES/ES41> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES41> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/ES/ES41> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES41> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES41> <http://www.w3.org/2000/01/rdf-schema#label> "CASTILLA Y LEÓN" .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES41> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES4> .
@@ -609,6 +690,7 @@
 # http://crossforest.eu/ifi/data/nuts2/ES/ES42
 <http://crossforest.eu/ifi/data/nuts2/ES/ES42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/ES/ES42> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES42> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES42> <http://www.w3.org/2000/01/rdf-schema#label> "CASTILLA-LA MANCHA" .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES42> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES4> .
@@ -622,6 +704,7 @@
 # http://crossforest.eu/ifi/data/nuts2/ES/ES43
 <http://crossforest.eu/ifi/data/nuts2/ES/ES43> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES43> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/ES/ES43> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES43> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES43> <http://www.w3.org/2000/01/rdf-schema#label> "EXTREMADURA" .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES43> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES4> .
@@ -632,6 +715,7 @@
 # http://crossforest.eu/ifi/data/nuts2/ES/ES51
 <http://crossforest.eu/ifi/data/nuts2/ES/ES51> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES51> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/ES/ES51> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES51> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES51> <http://www.w3.org/2000/01/rdf-schema#label> "CATALUÑA" .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES51> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES5> .
@@ -644,6 +728,7 @@
 # http://crossforest.eu/ifi/data/nuts2/ES/ES52
 <http://crossforest.eu/ifi/data/nuts2/ES/ES52> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES52> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/ES/ES52> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES52> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES52> <http://www.w3.org/2000/01/rdf-schema#label> "COMUNIDAD VALENCIANA" .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES52> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES5> .
@@ -655,6 +740,7 @@
 # http://crossforest.eu/ifi/data/nuts2/ES/ES53
 <http://crossforest.eu/ifi/data/nuts2/ES/ES53> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES53> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/ES/ES53> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES53> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES53> <http://www.w3.org/2000/01/rdf-schema#label> "ISLAS BALEARES" .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES53> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES5> .
@@ -666,6 +752,7 @@
 # http://crossforest.eu/ifi/data/nuts2/ES/ES61
 <http://crossforest.eu/ifi/data/nuts2/ES/ES61> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES61> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/ES/ES61> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES61> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES61> <http://www.w3.org/2000/01/rdf-schema#label> "ANDALUCÍA" .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES61> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES6> .
@@ -682,6 +769,7 @@
 # http://crossforest.eu/ifi/data/nuts2/ES/ES62
 <http://crossforest.eu/ifi/data/nuts2/ES/ES62> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES62> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/ES/ES62> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES62> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES62> <http://www.w3.org/2000/01/rdf-schema#label> "REGIÓN DE MURCIA" .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES62> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES6> .
@@ -691,6 +779,7 @@
 # http://crossforest.eu/ifi/data/nuts2/ES/ES63
 <http://crossforest.eu/ifi/data/nuts2/ES/ES63> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES63> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/ES/ES63> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES63> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES63> <http://www.w3.org/2000/01/rdf-schema#label> "CIUDAD AUTÓNOMA DE CEUTA" .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES63> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES6> .
@@ -700,6 +789,7 @@
 # http://crossforest.eu/ifi/data/nuts2/ES/ES64
 <http://crossforest.eu/ifi/data/nuts2/ES/ES64> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES64> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/ES/ES64> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES64> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES64> <http://www.w3.org/2000/01/rdf-schema#label> "CIUDAD AUTÓNOMA DE MELILLA" .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES64> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES6> .
@@ -709,6 +799,7 @@
 # http://crossforest.eu/ifi/data/nuts2/ES/ES70
 <http://crossforest.eu/ifi/data/nuts2/ES/ES70> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES70> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/ES/ES70> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES70> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES70> <http://www.w3.org/2000/01/rdf-schema#label> "CANARIAS" .
 <http://crossforest.eu/ifi/data/nuts2/ES/ES70> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/ES/ES7> .
@@ -724,8 +815,9 @@
 # http://crossforest.eu/ifi/data/nuts2/PT/PT11
 <http://crossforest.eu/ifi/data/nuts2/PT/PT11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/PT/PT11> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT11> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts2/PT/PT11> <http://www.w3.org/2000/01/rdf-schema#label> "NORTE" .
+<http://crossforest.eu/ifi/data/nuts2/PT/PT11> <http://www.w3.org/2000/01/rdf-schema#label> "Norte" .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT11> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/PT/PT1> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT11> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/PT11> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT11> <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/PT/PT111> .
@@ -740,8 +832,9 @@
 # http://crossforest.eu/ifi/data/nuts2/PT/PT15
 <http://crossforest.eu/ifi/data/nuts2/PT/PT15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/PT/PT15> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT15> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts2/PT/PT15> <http://www.w3.org/2000/01/rdf-schema#label> "ALGARVE" .
+<http://crossforest.eu/ifi/data/nuts2/PT/PT15> <http://www.w3.org/2000/01/rdf-schema#label> "Algarve (NUTS2)" .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT15> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/PT/PT1> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT15> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/PT15> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT15> <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/PT/PT150> .
@@ -749,8 +842,9 @@
 # http://crossforest.eu/ifi/data/nuts2/PT/PT16
 <http://crossforest.eu/ifi/data/nuts2/PT/PT16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/PT/PT16> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT16> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts2/PT/PT16> <http://www.w3.org/2000/01/rdf-schema#label> "CENTRO" .
+<http://crossforest.eu/ifi/data/nuts2/PT/PT16> <http://www.w3.org/2000/01/rdf-schema#label> "Centro" .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT16> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/PT/PT1> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT16> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/PT16> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT16> <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/PT/PT16B> .
@@ -765,8 +859,9 @@
 # http://crossforest.eu/ifi/data/nuts2/PT/PT17
 <http://crossforest.eu/ifi/data/nuts2/PT/PT17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/PT/PT17> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT17> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts2/PT/PT17> <http://www.w3.org/2000/01/rdf-schema#label> "LISBOA" .
+<http://crossforest.eu/ifi/data/nuts2/PT/PT17> <http://www.w3.org/2000/01/rdf-schema#label> "Lisboa" .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT17> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/PT/PT1> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT17> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/PT17> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT17> <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/PT/PT170> .
@@ -774,8 +869,9 @@
 # http://crossforest.eu/ifi/data/nuts2/PT/PT18
 <http://crossforest.eu/ifi/data/nuts2/PT/PT18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/PT/PT18> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT18> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts2/PT/PT18> <http://www.w3.org/2000/01/rdf-schema#label> "ALENTEJO" .
+<http://crossforest.eu/ifi/data/nuts2/PT/PT18> <http://www.w3.org/2000/01/rdf-schema#label> "Alentejo" .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT18> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/PT/PT1> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT18> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/PT18> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT18> <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/PT/PT181> .
@@ -787,8 +883,9 @@
 # http://crossforest.eu/ifi/data/nuts2/PT/PT20
 <http://crossforest.eu/ifi/data/nuts2/PT/PT20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/PT/PT20> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT20> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts2/PT/PT20> <http://www.w3.org/2000/01/rdf-schema#label> "REGIÃO AUTÓNOMA DOS AÇORES (NUTS 2)" .
+<http://crossforest.eu/ifi/data/nuts2/PT/PT20> <http://www.w3.org/2000/01/rdf-schema#label> "Região Autónoma dos Açores (NUTS 2)" .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT20> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/PT/PT2> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT20> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/PT20> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT20> <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/PT/PT200> .
@@ -796,8 +893,9 @@
 # http://crossforest.eu/ifi/data/nuts2/PT/PT30
 <http://crossforest.eu/ifi/data/nuts2/PT/PT30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS2> .
+<http://crossforest.eu/ifi/data/nuts2/PT/PT30> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT30> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts2/PT/PT30> <http://www.w3.org/2000/01/rdf-schema#label> "REGIÃO AUTÓNOMA DA MADEIRA (NUTS 2)" .
+<http://crossforest.eu/ifi/data/nuts2/PT/PT30> <http://www.w3.org/2000/01/rdf-schema#label> "Região Autónoma da Madeira (NUTS 2)" .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT30> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts1/PT/PT3> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT30> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://nuts.geovocab.org/id/PT30> .
 <http://crossforest.eu/ifi/data/nuts2/PT/PT30> <http://www.w3.org/2004/02/skos/core#narrower> <http://crossforest.eu/ifi/data/nuts3/PT/PT300> .
@@ -805,6 +903,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES111
 <http://crossforest.eu/ifi/data/nuts3/ES/ES111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES111> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES111> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES111> <http://www.w3.org/2000/01/rdf-schema#label> "A CORUÑA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES111> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES11> .
@@ -813,6 +912,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES112
 <http://crossforest.eu/ifi/data/nuts3/ES/ES112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES112> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES112> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES112> <http://www.w3.org/2000/01/rdf-schema#label> "LUGO" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES112> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES11> .
@@ -821,6 +921,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES113
 <http://crossforest.eu/ifi/data/nuts3/ES/ES113> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES113> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES113> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES113> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES113> <http://www.w3.org/2000/01/rdf-schema#label> "ORENSE" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES113> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES11> .
@@ -829,6 +930,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES114
 <http://crossforest.eu/ifi/data/nuts3/ES/ES114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES114> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES114> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES114> <http://www.w3.org/2000/01/rdf-schema#label> "PONTEVEDRA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES114> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES11> .
@@ -837,6 +939,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES120
 <http://crossforest.eu/ifi/data/nuts3/ES/ES120> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES120> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES120> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES120> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES120> <http://www.w3.org/2000/01/rdf-schema#label> "PRINCIPADO DE ASTURIAS (NUTS 3)" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES120> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES12> .
@@ -845,6 +948,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES130
 <http://crossforest.eu/ifi/data/nuts3/ES/ES130> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES130> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES130> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES130> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES130> <http://www.w3.org/2000/01/rdf-schema#label> "CANTABRIA (NUTS 3)" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES130> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES13> .
@@ -853,6 +957,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES211
 <http://crossforest.eu/ifi/data/nuts3/ES/ES211> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES211> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES211> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES211> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES211> <http://www.w3.org/2000/01/rdf-schema#label> "ÁLAVA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES211> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES21> .
@@ -861,6 +966,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES212
 <http://crossforest.eu/ifi/data/nuts3/ES/ES212> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES212> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES212> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES212> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES212> <http://www.w3.org/2000/01/rdf-schema#label> "GUIPÚZCOA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES212> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES21> .
@@ -869,6 +975,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES213
 <http://crossforest.eu/ifi/data/nuts3/ES/ES213> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES213> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES213> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES213> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES213> <http://www.w3.org/2000/01/rdf-schema#label> "VIZCAYA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES213> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES21> .
@@ -877,6 +984,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES220
 <http://crossforest.eu/ifi/data/nuts3/ES/ES220> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES220> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES220> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES220> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES220> <http://www.w3.org/2000/01/rdf-schema#label> "COMUNIDAD FORAL DE NAVARRA (NUTS 3)" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES220> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES22> .
@@ -885,6 +993,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES230
 <http://crossforest.eu/ifi/data/nuts3/ES/ES230> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES230> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES230> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES230> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES230> <http://www.w3.org/2000/01/rdf-schema#label> "LA RIOJA (NUTS 3)" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES230> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES23> .
@@ -893,6 +1002,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES241
 <http://crossforest.eu/ifi/data/nuts3/ES/ES241> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES241> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES241> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES241> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES241> <http://www.w3.org/2000/01/rdf-schema#label> "HUESCA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES241> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES24> .
@@ -901,6 +1011,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES242
 <http://crossforest.eu/ifi/data/nuts3/ES/ES242> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES242> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES242> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES242> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES242> <http://www.w3.org/2000/01/rdf-schema#label> "TERUEL" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES242> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES24> .
@@ -909,6 +1020,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES243
 <http://crossforest.eu/ifi/data/nuts3/ES/ES243> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES243> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES243> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES243> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES243> <http://www.w3.org/2000/01/rdf-schema#label> "ZARAGOZA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES243> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES24> .
@@ -917,6 +1029,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES300
 <http://crossforest.eu/ifi/data/nuts3/ES/ES300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES300> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES300> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES300> <http://www.w3.org/2000/01/rdf-schema#label> "COMUNIDAD DE MADRID (NUTS 3)" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES300> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES30> .
@@ -925,6 +1038,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES411
 <http://crossforest.eu/ifi/data/nuts3/ES/ES411> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES411> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES411> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES411> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES411> <http://www.w3.org/2000/01/rdf-schema#label> "ÁVILA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES411> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES41> .
@@ -933,6 +1047,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES412
 <http://crossforest.eu/ifi/data/nuts3/ES/ES412> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES412> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES412> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES412> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES412> <http://www.w3.org/2000/01/rdf-schema#label> "BURGOS" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES412> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES41> .
@@ -941,6 +1056,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES413
 <http://crossforest.eu/ifi/data/nuts3/ES/ES413> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES413> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES413> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES413> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES413> <http://www.w3.org/2000/01/rdf-schema#label> "LEÓN" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES413> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES41> .
@@ -949,6 +1065,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES414
 <http://crossforest.eu/ifi/data/nuts3/ES/ES414> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES414> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES414> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES414> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES414> <http://www.w3.org/2000/01/rdf-schema#label> "PALENCIA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES414> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES41> .
@@ -957,6 +1074,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES415
 <http://crossforest.eu/ifi/data/nuts3/ES/ES415> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES415> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES415> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES415> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES415> <http://www.w3.org/2000/01/rdf-schema#label> "SALAMANCA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES415> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES41> .
@@ -965,6 +1083,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES416
 <http://crossforest.eu/ifi/data/nuts3/ES/ES416> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES416> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES416> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES416> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES416> <http://www.w3.org/2000/01/rdf-schema#label> "SEGOVIA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES416> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES41> .
@@ -973,6 +1092,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES417
 <http://crossforest.eu/ifi/data/nuts3/ES/ES417> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES417> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES417> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES417> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES417> <http://www.w3.org/2000/01/rdf-schema#label> "SORIA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES417> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES41> .
@@ -981,6 +1101,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES418
 <http://crossforest.eu/ifi/data/nuts3/ES/ES418> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES418> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES418> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES418> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES418> <http://www.w3.org/2000/01/rdf-schema#label> "VALLADOLID" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES418> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES41> .
@@ -989,6 +1110,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES419
 <http://crossforest.eu/ifi/data/nuts3/ES/ES419> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES419> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES419> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES419> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES419> <http://www.w3.org/2000/01/rdf-schema#label> "ZAMORA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES419> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES41> .
@@ -997,6 +1119,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES421
 <http://crossforest.eu/ifi/data/nuts3/ES/ES421> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES421> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES421> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES421> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES421> <http://www.w3.org/2000/01/rdf-schema#label> "ALBACETE" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES421> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES42> .
@@ -1005,6 +1128,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES422
 <http://crossforest.eu/ifi/data/nuts3/ES/ES422> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES422> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES422> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES422> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES422> <http://www.w3.org/2000/01/rdf-schema#label> "CIUDAD REAL" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES422> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES42> .
@@ -1013,6 +1137,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES423
 <http://crossforest.eu/ifi/data/nuts3/ES/ES423> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES423> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES423> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES423> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES423> <http://www.w3.org/2000/01/rdf-schema#label> "CUENCA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES423> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES42> .
@@ -1021,6 +1146,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES424
 <http://crossforest.eu/ifi/data/nuts3/ES/ES424> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES424> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES424> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES424> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES424> <http://www.w3.org/2000/01/rdf-schema#label> "GUADALAJARA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES424> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES42> .
@@ -1029,6 +1155,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES425
 <http://crossforest.eu/ifi/data/nuts3/ES/ES425> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES425> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES425> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES425> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES425> <http://www.w3.org/2000/01/rdf-schema#label> "TOLEDO" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES425> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES42> .
@@ -1037,6 +1164,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES431
 <http://crossforest.eu/ifi/data/nuts3/ES/ES431> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES431> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES431> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES431> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES431> <http://www.w3.org/2000/01/rdf-schema#label> "BADAJOZ" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES431> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES43> .
@@ -1045,6 +1173,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES432
 <http://crossforest.eu/ifi/data/nuts3/ES/ES432> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES432> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES432> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES432> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES432> <http://www.w3.org/2000/01/rdf-schema#label> "CÁCERES" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES432> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES43> .
@@ -1053,6 +1182,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES511
 <http://crossforest.eu/ifi/data/nuts3/ES/ES511> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES511> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES511> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES511> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES511> <http://www.w3.org/2000/01/rdf-schema#label> "BARCELONA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES511> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES51> .
@@ -1061,6 +1191,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES512
 <http://crossforest.eu/ifi/data/nuts3/ES/ES512> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES512> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES512> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES512> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES512> <http://www.w3.org/2000/01/rdf-schema#label> "GERONA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES512> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES51> .
@@ -1069,6 +1200,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES513
 <http://crossforest.eu/ifi/data/nuts3/ES/ES513> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES513> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES513> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES513> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES513> <http://www.w3.org/2000/01/rdf-schema#label> "LÉRIDA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES513> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES51> .
@@ -1077,6 +1209,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES514
 <http://crossforest.eu/ifi/data/nuts3/ES/ES514> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES514> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES514> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES514> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES514> <http://www.w3.org/2000/01/rdf-schema#label> "TARRAGONA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES514> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES51> .
@@ -1085,6 +1218,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES521
 <http://crossforest.eu/ifi/data/nuts3/ES/ES521> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES521> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES521> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES521> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES521> <http://www.w3.org/2000/01/rdf-schema#label> "ALICANTE" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES521> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES52> .
@@ -1093,6 +1227,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES522
 <http://crossforest.eu/ifi/data/nuts3/ES/ES522> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES522> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES522> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES522> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES522> <http://www.w3.org/2000/01/rdf-schema#label> "CASTELLÓN" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES522> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES52> .
@@ -1101,6 +1236,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES523
 <http://crossforest.eu/ifi/data/nuts3/ES/ES523> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES523> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES523> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES523> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES523> <http://www.w3.org/2000/01/rdf-schema#label> "VALENCIA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES523> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES52> .
@@ -1109,6 +1245,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES531
 <http://crossforest.eu/ifi/data/nuts3/ES/ES531> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES531> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES531> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES531> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES531> <http://www.w3.org/2000/01/rdf-schema#label> "IBIZA Y FORMENTERA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES531> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES53> .
@@ -1117,6 +1254,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES532
 <http://crossforest.eu/ifi/data/nuts3/ES/ES532> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES532> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES532> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES532> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES532> <http://www.w3.org/2000/01/rdf-schema#label> "MALLORCA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES532> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES53> .
@@ -1125,6 +1263,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES533
 <http://crossforest.eu/ifi/data/nuts3/ES/ES533> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES533> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES533> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES533> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES533> <http://www.w3.org/2000/01/rdf-schema#label> "MENORCA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES533> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES53> .
@@ -1133,6 +1272,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES611
 <http://crossforest.eu/ifi/data/nuts3/ES/ES611> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES611> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES611> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES611> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES611> <http://www.w3.org/2000/01/rdf-schema#label> "ALMERÍA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES611> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES61> .
@@ -1141,6 +1281,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES612
 <http://crossforest.eu/ifi/data/nuts3/ES/ES612> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES612> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES612> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES612> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES612> <http://www.w3.org/2000/01/rdf-schema#label> "CÁDIZ" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES612> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES61> .
@@ -1149,6 +1290,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES613
 <http://crossforest.eu/ifi/data/nuts3/ES/ES613> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES613> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES613> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES613> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES613> <http://www.w3.org/2000/01/rdf-schema#label> "CÓRDOBA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES613> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES61> .
@@ -1157,6 +1299,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES614
 <http://crossforest.eu/ifi/data/nuts3/ES/ES614> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES614> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES614> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES614> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES614> <http://www.w3.org/2000/01/rdf-schema#label> "GRANADA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES614> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES61> .
@@ -1165,6 +1308,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES615
 <http://crossforest.eu/ifi/data/nuts3/ES/ES615> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES615> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES615> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES615> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES615> <http://www.w3.org/2000/01/rdf-schema#label> "HUELVA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES615> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES61> .
@@ -1173,6 +1317,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES616
 <http://crossforest.eu/ifi/data/nuts3/ES/ES616> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES616> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES616> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES616> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES616> <http://www.w3.org/2000/01/rdf-schema#label> "JAÉN" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES616> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES61> .
@@ -1181,6 +1326,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES617
 <http://crossforest.eu/ifi/data/nuts3/ES/ES617> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES617> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES617> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES617> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES617> <http://www.w3.org/2000/01/rdf-schema#label> "MÁLAGA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES617> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES61> .
@@ -1189,6 +1335,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES618
 <http://crossforest.eu/ifi/data/nuts3/ES/ES618> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES618> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES618> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES618> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES618> <http://www.w3.org/2000/01/rdf-schema#label> "SEVILLA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES618> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES61> .
@@ -1197,6 +1344,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES620
 <http://crossforest.eu/ifi/data/nuts3/ES/ES620> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES620> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES620> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES620> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES620> <http://www.w3.org/2000/01/rdf-schema#label> "REGIÓN DE MURCIA (NUTS 3)" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES620> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES62> .
@@ -1205,6 +1353,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES630
 <http://crossforest.eu/ifi/data/nuts3/ES/ES630> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES630> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES630> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES630> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES630> <http://www.w3.org/2000/01/rdf-schema#label> "CEUTA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES630> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES63> .
@@ -1213,6 +1362,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES640
 <http://crossforest.eu/ifi/data/nuts3/ES/ES640> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES640> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES640> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES640> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES640> <http://www.w3.org/2000/01/rdf-schema#label> "MELILLA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES640> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES64> .
@@ -1221,6 +1371,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES703
 <http://crossforest.eu/ifi/data/nuts3/ES/ES703> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES703> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES703> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES703> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES703> <http://www.w3.org/2000/01/rdf-schema#label> "EL HIERRO" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES703> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES70> .
@@ -1229,6 +1380,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES704
 <http://crossforest.eu/ifi/data/nuts3/ES/ES704> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES704> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES704> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES704> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES704> <http://www.w3.org/2000/01/rdf-schema#label> "FUERTEVENTURA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES704> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES70> .
@@ -1237,6 +1389,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES705
 <http://crossforest.eu/ifi/data/nuts3/ES/ES705> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES705> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES705> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES705> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES705> <http://www.w3.org/2000/01/rdf-schema#label> "GRAN CANARIA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES705> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES70> .
@@ -1245,6 +1398,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES706
 <http://crossforest.eu/ifi/data/nuts3/ES/ES706> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES706> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES706> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES706> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES706> <http://www.w3.org/2000/01/rdf-schema#label> "LA GOMERA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES706> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES70> .
@@ -1253,6 +1407,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES707
 <http://crossforest.eu/ifi/data/nuts3/ES/ES707> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES707> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES707> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES707> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES707> <http://www.w3.org/2000/01/rdf-schema#label> "LA PALMA" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES707> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES70> .
@@ -1261,6 +1416,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES708
 <http://crossforest.eu/ifi/data/nuts3/ES/ES708> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES708> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES708> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES708> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES708> <http://www.w3.org/2000/01/rdf-schema#label> "LANZAROTE" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES708> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES70> .
@@ -1269,6 +1425,7 @@
 # http://crossforest.eu/ifi/data/nuts3/ES/ES709
 <http://crossforest.eu/ifi/data/nuts3/ES/ES709> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES709> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/ES/ES709> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/ES> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES709> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES709> <http://www.w3.org/2000/01/rdf-schema#label> "TENERIFE" .
 <http://crossforest.eu/ifi/data/nuts3/ES/ES709> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/ES/ES70> .
@@ -1277,221 +1434,201 @@
 # http://crossforest.eu/ifi/data/nuts3/PT/PT111
 <http://crossforest.eu/ifi/data/nuts3/PT/PT111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT111> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT111> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT111> <http://www.w3.org/2000/01/rdf-schema#label> "ALTO MINHO" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT111> <http://www.w3.org/2000/01/rdf-schema#label> "Alto Minho" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT111> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT11> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT112
 <http://crossforest.eu/ifi/data/nuts3/PT/PT112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT112> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT112> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT112> <http://www.w3.org/2000/01/rdf-schema#label> "CÁVADO" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT112> <http://www.w3.org/2000/01/rdf-schema#label> "Cávado" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT112> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT11> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT119
 <http://crossforest.eu/ifi/data/nuts3/PT/PT119> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT119> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT119> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT119> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT119> <http://www.w3.org/2000/01/rdf-schema#label> "AVE" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT119> <http://www.w3.org/2000/01/rdf-schema#label> "Ave" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT119> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT11> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT11A
 <http://crossforest.eu/ifi/data/nuts3/PT/PT11A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT11A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT11A> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT11A> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT11A> <http://www.w3.org/2000/01/rdf-schema#label> "ÁREA METROPOLITANA DO PORTO" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT11A> <http://www.w3.org/2000/01/rdf-schema#label> "Área Metropolitana do Porto" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT11A> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT11> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT11B
 <http://crossforest.eu/ifi/data/nuts3/PT/PT11B> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT11B> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT11B> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT11B> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT11B> <http://www.w3.org/2000/01/rdf-schema#label> "ALTO TÂMEGA" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT11B> <http://www.w3.org/2000/01/rdf-schema#label> "Alto Tâmega" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT11B> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT11> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT11C
 <http://crossforest.eu/ifi/data/nuts3/PT/PT11C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT11C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT11C> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT11C> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT11C> <http://www.w3.org/2000/01/rdf-schema#label> "TÂMEGA E SOUSA" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT11C> <http://www.w3.org/2000/01/rdf-schema#label> "Tâmega e Sousa" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT11C> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT11> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT11D
 <http://crossforest.eu/ifi/data/nuts3/PT/PT11D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT11D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT11D> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT11D> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT11D> <http://www.w3.org/2000/01/rdf-schema#label> "DOURO" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT11D> <http://www.w3.org/2000/01/rdf-schema#label> "Douro" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT11D> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT11> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT11E
 <http://crossforest.eu/ifi/data/nuts3/PT/PT11E> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT11E> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT11E> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT11E> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT11E> <http://www.w3.org/2000/01/rdf-schema#label> "TERRAS DE TRÁS-OS-MONTES" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT11E> <http://www.w3.org/2000/01/rdf-schema#label> "Terras de Trás-os-Montes" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT11E> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT11> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT150
 <http://crossforest.eu/ifi/data/nuts3/PT/PT150> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT150> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT150> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT150> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT150> <http://www.w3.org/2000/01/rdf-schema#label> "ALGARVE (NUTS 3)" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT150> <http://www.w3.org/2000/01/rdf-schema#label> "Algarve" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT150> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT15> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT16B
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16B> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16B> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16B> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16B> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT16B> <http://www.w3.org/2000/01/rdf-schema#label> "OESTE" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16B> <http://www.w3.org/2000/01/rdf-schema#label> "Oeste" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16B> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT16> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT16D
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16D> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16D> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT16D> <http://www.w3.org/2000/01/rdf-schema#label> "REGIÃO DE AVEIRO" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16D> <http://www.w3.org/2000/01/rdf-schema#label> "Região de Aveiro" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16D> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT16> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT16E
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16E> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16E> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16E> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16E> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT16E> <http://www.w3.org/2000/01/rdf-schema#label> "REGIÃO DE COIMBRA" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16E> <http://www.w3.org/2000/01/rdf-schema#label> "Região de Coimbra" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16E> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT16> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT16F
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16F> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16F> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16F> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16F> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT16F> <http://www.w3.org/2000/01/rdf-schema#label> "REGIÃO DE LEIRIA" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16F> <http://www.w3.org/2000/01/rdf-schema#label> "Região de Leiria" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16F> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT16> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT16G
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16G> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16G> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16G> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16G> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT16G> <http://www.w3.org/2000/01/rdf-schema#label> "VISEU DÃO LAFÕES" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16G> <http://www.w3.org/2000/01/rdf-schema#label> "Viseu Dão Lafões" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16G> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT16> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT16H
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16H> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16H> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16H> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16H> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT16H> <http://www.w3.org/2000/01/rdf-schema#label> "BEIRA BAIXA" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16H> <http://www.w3.org/2000/01/rdf-schema#label> "Beira Baixa" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16H> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT16> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT16I
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16I> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16I> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16I> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16I> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT16I> <http://www.w3.org/2000/01/rdf-schema#label> "MÉDIO TEJO" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16I> <http://www.w3.org/2000/01/rdf-schema#label> "Médio Tejo" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16I> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT16> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT16J
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16J> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16J> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16J> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16J> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT16J> <http://www.w3.org/2000/01/rdf-schema#label> "BEIRAS E SERRA DA ESTRELA" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT16J> <http://www.w3.org/2000/01/rdf-schema#label> "Beiras e Serra da Estrela" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT16J> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT16> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT170
 <http://crossforest.eu/ifi/data/nuts3/PT/PT170> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT170> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT170> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT170> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT170> <http://www.w3.org/2000/01/rdf-schema#label> "ÁREA METROPOLITANA DE LISBOA" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT170> <http://www.w3.org/2000/01/rdf-schema#label> "Área Metropolitana de Lisboa" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT170> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT17> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT181
 <http://crossforest.eu/ifi/data/nuts3/PT/PT181> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT181> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT181> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT181> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT181> <http://www.w3.org/2000/01/rdf-schema#label> "ALENTEJO LITORAL" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT181> <http://www.w3.org/2000/01/rdf-schema#label> "Alentejo Litoral" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT181> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT18> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT184
 <http://crossforest.eu/ifi/data/nuts3/PT/PT184> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT184> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT184> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT184> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT184> <http://www.w3.org/2000/01/rdf-schema#label> "BAIXO ALENTEJO" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT184> <http://www.w3.org/2000/01/rdf-schema#label> "Baixo Alentejo" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT184> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT18> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT185
 <http://crossforest.eu/ifi/data/nuts3/PT/PT185> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT185> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT185> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT185> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT185> <http://www.w3.org/2000/01/rdf-schema#label> "LEZÍRIA DO TEJO" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT185> <http://www.w3.org/2000/01/rdf-schema#label> "Lezíria do Tejo" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT185> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT18> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT186
 <http://crossforest.eu/ifi/data/nuts3/PT/PT186> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT186> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT186> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT186> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT186> <http://www.w3.org/2000/01/rdf-schema#label> "ALTO ALENTEJO" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT186> <http://www.w3.org/2000/01/rdf-schema#label> "Alto Alentejo" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT186> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT18> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT187
 <http://crossforest.eu/ifi/data/nuts3/PT/PT187> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT187> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT187> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT187> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT187> <http://www.w3.org/2000/01/rdf-schema#label> "ALENTEJO CENTRAL" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT187> <http://www.w3.org/2000/01/rdf-schema#label> "Alentejo Central" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT187> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT18> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT200
 <http://crossforest.eu/ifi/data/nuts3/PT/PT200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT200> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT200> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT200> <http://www.w3.org/2000/01/rdf-schema#label> "REGIÃO AUTÓNOMA DOS AÇORES (NUTS3)" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT200> <http://www.w3.org/2000/01/rdf-schema#label> "Região Autónoma dos Açores" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT200> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT20> .
 # 
 # http://crossforest.eu/ifi/data/nuts3/PT/PT300
 <http://crossforest.eu/ifi/data/nuts3/PT/PT300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://crossforest.eu/ifi/ontology/NUTS3> .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT300> <http://crossforest.eu/ifi/ontology/isInCountry> <http://crossforest.eu/ifi/data/country/PT> .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT300> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ifi/ontology/> .
-<http://crossforest.eu/ifi/data/nuts3/PT/PT300> <http://www.w3.org/2000/01/rdf-schema#label> "REGIÃO AUTÓNOMA DA MADEIRA (NUTS3)" .
+<http://crossforest.eu/ifi/data/nuts3/PT/PT300> <http://www.w3.org/2000/01/rdf-schema#label> "Região Autónoma da Madeira" .
 <http://crossforest.eu/ifi/data/nuts3/PT/PT300> <http://www.w3.org/2004/02/skos/core#broader> <http://crossforest.eu/ifi/data/nuts2/PT/PT30> .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    General axioms
-# #
-# #################################################################
-# 
-# 
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Ac\u00E1cias> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Alfarrobeira> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Azinheira> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Carvalhos> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Castanheiro> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Eucaliptos> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_folhosas> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_resinosas> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-bravo> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-manso> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Sobreiro> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 # Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

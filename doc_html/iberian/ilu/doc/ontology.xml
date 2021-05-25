@@ -7,8 +7,10 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/">
     <owl:Ontology rdf:about="http://crossforest.eu/ilu/ontology/">
+        <dc:contributor rdf:resource="https://github.com/dportoles"/>
         <dc:creator rdf:resource="https://www.crossforest.eu/members/guiveg"/>
         <dc:creator rdf:resource="https://www.crossforest.eu/members/josgim"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-17</dc:date>
@@ -34,6 +36,13 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
 
@@ -52,6 +61,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
     
 
 
@@ -236,6 +252,44 @@
     
 
 
+    <!-- http://crossforest.eu/ilu/ontology/BiogeographicRegion -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/BiogeographicRegion">
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="en">Biogeographic Region</rdfs:label>
+        <rdfs:label xml:lang="es">Región biogeográfica</rdfs:label>
+        <skos:closeMatch rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RegionBiogeografica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/CanopyCover -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/CanopyCover">
+        <rdfs:comment xml:lang="en">Canopy Cover of the Vegetation Structure</rdfs:comment>
+        <rdfs:comment xml:lang="es">Representa la proporción total de la vegetación.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="es">Canopy Cover</rdfs:label>
+        <rdfs:label xml:lang="es">Fracción de Cabida Cubierta</rdfs:label>
+        <skos:closeMatch rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FraccionDeCabidaCubierta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/Classification -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/Classification">
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="es">Clasificación</rdfs:label>
+        <rdfs:label xml:lang="en">Classification</rdfs:label>
+        <skos:closeMatch rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion_MFE_IFN"/>
+    </owl:Class>
+    
+
+
     <!-- http://crossforest.eu/ilu/ontology/ForestLand -->
 
 
@@ -247,6 +301,18 @@
         <rdfs:label xml:lang="en"></rdfs:label>
         <rdfs:label xml:lang="es">Bosques</rdfs:label>
         <rdfs:label xml:lang="pt">Superfícies agroflorestais e Florestas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/ForestType -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/ForestType">
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="en">Forest Type</rdfs:label>
+        <rdfs:label xml:lang="es">Formación Arbolada</rdfs:label>
+        <skos:closeMatch rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"/>
     </owl:Class>
     
 
@@ -289,6 +355,41 @@
     
 
 
+    <!-- http://crossforest.eu/ilu/ontology/PatchShape -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/PatchShape">
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="es">Forma de la tesela</rdfs:label>
+        <rdfs:label xml:lang="en">Shape of the patch</rdfs:label>
+        <skos:closeMatch rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormaDeMasa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/SpatialDistribution -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/SpatialDistribution">
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="es">Distribución</rdfs:label>
+        <skos:closeMatch rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/StandDevelopment -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/StandDevelopment">
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="es">Estado de Desarrollo</rdfs:label>
+        <rdfs:label xml:lang="en">Stand development</rdfs:label>
+        <skos:closeMatch rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo"/>
+    </owl:Class>
+    
+
+
     <!-- http://crossforest.eu/ilu/ontology/TreelessLand -->
 
 
@@ -300,6 +401,17 @@
         <rdfs:label xml:lang="en"></rdfs:label>
         <rdfs:label xml:lang="pt">Espaços descobertos ou com pouca vegetação e matos</rdfs:label>
         <rdfs:label xml:lang="es">Terreno desarbolado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/TypeOfForest -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/TypeOfForest">
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="es">Tipo de Bosque</rdfs:label>
+        <skos:closeMatch rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoDeBosque"/>
     </owl:Class>
     
 
@@ -318,6 +430,18 @@
         <rdfs:comment xml:lang="es">Use present in the patch</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
         <rdfs:label xml:lang="es">Use in the patch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://crossforest.eu/ilu/ontology/VegetationStructure -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/ilu/ontology/VegetationStructure">
+        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/ilu/ontology/"/>
+        <rdfs:label xml:lang="es">Tipo Estructural</rdfs:label>
+        <rdfs:label xml:lang="en">Vegetation structure</rdfs:label>
+        <skos:closeMatch rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
     </owl:Class>
     
 

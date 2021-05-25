@@ -63,10 +63,10 @@
     "id" : "30",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "26",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "26",
     "type" : "owl:Class"
   }, {
     "id" : "14",
@@ -114,10 +114,10 @@
     "id" : "16",
     "type" : "owl:Class"
   }, {
-    "id" : "24",
+    "id" : "46",
     "type" : "owl:Class"
   }, {
-    "id" : "46",
+    "id" : "24",
     "type" : "owl:Class"
   }, {
     "id" : "50",
@@ -232,23 +232,6 @@
       "undefined" : "Literal"
     }
   }, {
-    "iri" : "http://crossforest.eu/measures/ontology/MeasureInHectares",
-    "baseIri" : "http://crossforest.eu/measures/ontology",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/measures/ontology/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "MeasureInHectares"
-    },
-    "id" : "26",
-    "superClasses" : [ "5" ]
-  }, {
     "iri" : "http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters",
     "baseIri" : "http://crossforest.eu/measures/ontology",
     "instances" : 0,
@@ -270,6 +253,23 @@
       "es" : "Entidad de la cual se toma una medida en metros cuadrados"
     },
     "id" : "9"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasureInHectares",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasureInHectares"
+    },
+    "id" : "26",
+    "superClasses" : [ "5" ]
   }, {
     "iri" : "http://crossforest.eu/measures/ontology/MeasureInUnities",
     "baseIri" : "http://crossforest.eu/measures/ontology",
@@ -422,23 +422,6 @@
     },
     "id" : "16"
   }, {
-    "iri" : "http://crossforest.eu/measures/ontology/MeasureInSquareMeters",
-    "baseIri" : "http://crossforest.eu/measures/ontology",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/measures/ontology/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "MeasureInSquareMeters"
-    },
-    "id" : "24",
-    "superClasses" : [ "5" ]
-  }, {
     "iri" : "http://crossforest.eu/measures/ontology/Reliability",
     "baseIri" : "http://crossforest.eu/measures/ontology",
     "instances" : 0,
@@ -460,6 +443,23 @@
       "es" : "Fiabilidad de la medida"
     },
     "id" : "46"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasureInSquareMeters",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasureInSquareMeters"
+    },
+    "id" : "24",
+    "superClasses" : [ "5" ]
   }, {
     "iri" : "http://crossforest.eu/measures/ontology/MeasureInDecimeters",
     "baseIri" : "http://crossforest.eu/measures/ontology",
@@ -854,26 +854,6 @@
         "es" : "Grados Centesimales"
       }
     }, {
-      "iri" : "http://crossforest.eu/measures/data/unit/Percentage",
-      "baseIri" : "http://crossforest.eu/measures/data/unit",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/measures/ontology/",
-          "type" : "iri"
-        } ]
-      },
-      "comment" : {
-        "en" : "100 as a unity of measure",
-        "es" : "100 como unidad de medida"
-      },
-      "labels" : {
-        "IRI-based" : "Percentage",
-        "en" : "Percentage",
-        "es" : "Porcentaje"
-      }
-    }, {
       "iri" : "http://crossforest.eu/measures/data/unit/Millimeters",
       "baseIri" : "http://crossforest.eu/measures/data/unit",
       "annotations" : {
@@ -892,6 +872,26 @@
         "IRI-based" : "Millimeters",
         "en" : "Millimeters",
         "es" : "Milímetros"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/measures/data/unit/Percentage",
+      "baseIri" : "http://crossforest.eu/measures/data/unit",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/measures/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "100 as a unity of measure",
+        "es" : "100 como unidad de medida"
+      },
+      "labels" : {
+        "IRI-based" : "Percentage",
+        "en" : "Percentage",
+        "es" : "Porcentaje"
       }
     }, {
       "iri" : "http://crossforest.eu/measures/data/unit/M3byHA",

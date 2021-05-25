@@ -2,7 +2,7 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "pt", "en", "es", "undefined" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://crossforest.eu/cos/ontology", "http://crossforest.eu/ilu/ontology" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://crossforest.eu/measures/ontology", "http://www.w3.org/2000/01/rdf-schema", "http://crossforest.eu/position/ontology", "http://www.w3.org/2001/XMLSchema", "http://crossforest.eu/cos/ontology", "http://crossforest.eu/ilu/ontology" ],
     "iri" : "http://crossforest.eu/cos/ontology/",
     "version" : "0.1",
     "author" : [ "https://www.crossforest.eu/members/josgim", "https://www.crossforest.eu/members/guiveg" ],
@@ -26,12 +26,12 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://www.crossforest.eu/members/josgim",
+        "value" : "https://www.crossforest.eu/members/guiveg",
         "type" : "iri"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://www.crossforest.eu/members/guiveg",
+        "value" : "https://www.crossforest.eu/members/josgim",
         "type" : "iri"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -53,262 +53,220 @@
     "id" : "11",
     "type" : "owl:Class"
   }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
     "id" : "12",
-    "type" : "owl:Class"
-  }, {
-    "id" : "19",
-    "type" : "owl:Class"
-  }, {
-    "id" : "25",
-    "type" : "owl:Class"
-  }, {
-    "id" : "27",
-    "type" : "owl:Class"
-  }, {
-    "id" : "36",
     "type" : "owl:Class"
   }, {
     "id" : "26",
     "type" : "owl:Class"
   }, {
-    "id" : "37",
-    "type" : "owl:Class"
-  }, {
-    "id" : "40",
-    "type" : "owl:Class"
-  }, {
-    "id" : "39",
-    "type" : "owl:Class"
-  }, {
-    "id" : "42",
-    "type" : "owl:Class"
-  }, {
-    "id" : "18",
-    "type" : "owl:Class"
-  }, {
-    "id" : "68",
-    "type" : "owl:Class"
-  }, {
-    "id" : "70",
-    "type" : "owl:Class"
-  }, {
-    "id" : "71",
-    "type" : "owl:Class"
-  }, {
-    "id" : "69",
-    "type" : "owl:Class"
-  }, {
-    "id" : "72",
-    "type" : "owl:Class"
-  }, {
-    "id" : "73",
-    "type" : "owl:Class"
-  }, {
-    "id" : "63",
-    "type" : "owl:Class"
-  }, {
-    "id" : "74",
-    "type" : "owl:Class"
-  }, {
-    "id" : "86",
-    "type" : "owl:Class"
-  }, {
-    "id" : "33",
-    "type" : "owl:Class"
-  }, {
-    "id" : "90",
-    "type" : "owl:Class"
-  }, {
-    "id" : "91",
-    "type" : "owl:Class"
-  }, {
-    "id" : "92",
-    "type" : "owl:Class"
-  }, {
-    "id" : "93",
-    "type" : "owl:Class"
-  }, {
-    "id" : "94",
-    "type" : "owl:Class"
-  }, {
-    "id" : "95",
-    "type" : "owl:Class"
-  }, {
-    "id" : "96",
-    "type" : "owl:Class"
-  }, {
-    "id" : "97",
-    "type" : "owl:Class"
-  }, {
-    "id" : "98",
-    "type" : "owl:Class"
-  }, {
-    "id" : "99",
-    "type" : "owl:Class"
-  }, {
-    "id" : "38",
-    "type" : "owl:Class"
-  }, {
-    "id" : "88",
-    "type" : "owl:Class"
-  }, {
-    "id" : "105",
-    "type" : "owl:Class"
-  }, {
-    "id" : "32",
-    "type" : "owl:Class"
-  }, {
-    "id" : "107",
-    "type" : "owl:Class"
-  }, {
-    "id" : "106",
-    "type" : "owl:Class"
-  }, {
-    "id" : "83",
-    "type" : "owl:Class"
-  }, {
-    "id" : "44",
-    "type" : "owl:Class"
-  }, {
-    "id" : "113",
-    "type" : "owl:Class"
-  }, {
-    "id" : "79",
-    "type" : "owl:Class"
-  }, {
-    "id" : "81",
-    "type" : "owl:Class"
-  }, {
-    "id" : "78",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "51",
-    "type" : "owl:Class"
-  }, {
-    "id" : "56",
-    "type" : "owl:Class"
-  }, {
-    "id" : "54",
-    "type" : "owl:Class"
-  }, {
-    "id" : "52",
-    "type" : "owl:Class"
-  }, {
-    "id" : "59",
-    "type" : "owl:Class"
-  }, {
-    "id" : "57",
-    "type" : "owl:Class"
-  }, {
-    "id" : "24",
-    "type" : "owl:Class"
-  }, {
-    "id" : "131",
-    "type" : "owl:Class"
-  }, {
-    "id" : "132",
-    "type" : "owl:Class"
-  }, {
-    "id" : "133",
-    "type" : "owl:Class"
-  }, {
-    "id" : "137",
-    "type" : "owl:Class"
-  }, {
-    "id" : "140",
-    "type" : "owl:Class"
-  }, {
-    "id" : "45",
-    "type" : "owl:Class"
-  }, {
-    "id" : "8",
-    "type" : "owl:Class"
-  }, {
-    "id" : "21",
-    "type" : "owl:Class"
-  }, {
-    "id" : "22",
-    "type" : "owl:Class"
-  }, {
-    "id" : "157",
-    "type" : "owl:Class"
-  }, {
-    "id" : "159",
+    "id" : "25",
     "type" : "owl:Class"
   }, {
     "id" : "31",
     "type" : "owl:Class"
   }, {
-    "id" : "160",
+    "id" : "32",
     "type" : "owl:Class"
   }, {
-    "id" : "158",
+    "id" : "34",
     "type" : "owl:Class"
   }, {
-    "id" : "150",
+    "id" : "41",
     "type" : "owl:Class"
   }, {
-    "id" : "85",
+    "id" : "33",
     "type" : "owl:Class"
   }, {
-    "id" : "87",
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
     "type" : "owl:Class"
   }, {
     "id" : "109",
     "type" : "owl:Class"
   }, {
-    "id" : "112",
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
     "type" : "owl:Class"
   }, {
     "id" : "110",
     "type" : "owl:Class"
   }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
     "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
     "type" : "owl:Class"
   }, {
     "id" : "116",
     "type" : "owl:Class"
   }, {
-    "id" : "118",
+    "id" : "124",
     "type" : "owl:Class"
   }, {
-    "id" : "119",
+    "id" : "101",
     "type" : "owl:Class"
   }, {
-    "id" : "7",
+    "id" : "127",
     "type" : "owl:Class"
   }, {
-    "id" : "184",
+    "id" : "129",
     "type" : "owl:Class"
   }, {
-    "id" : "30",
+    "id" : "37",
     "type" : "owl:Class"
   }, {
-    "id" : "186",
+    "id" : "130",
     "type" : "owl:Class"
   }, {
-    "id" : "187",
+    "id" : "128",
     "type" : "owl:Class"
   }, {
-    "id" : "185",
+    "id" : "133",
     "type" : "owl:Class"
   }, {
-    "id" : "188",
+    "id" : "135",
     "type" : "owl:Class"
   }, {
-    "id" : "190",
+    "id" : "141",
+    "type" : "owl:Class"
+  }, {
+    "id" : "143",
+    "type" : "owl:Class"
+  }, {
+    "id" : "134",
+    "type" : "owl:Class"
+  }, {
+    "id" : "161",
+    "type" : "owl:Class"
+  }, {
+    "id" : "164",
+    "type" : "owl:Class"
+  }, {
+    "id" : "162",
+    "type" : "owl:Class"
+  }, {
+    "id" : "165",
+    "type" : "owl:Class"
+  }, {
+    "id" : "167",
+    "type" : "owl:Class"
+  }, {
+    "id" : "169",
+    "type" : "owl:Class"
+  }, {
+    "id" : "170",
+    "type" : "owl:Class"
+  }, {
+    "id" : "166",
+    "type" : "owl:Class"
+  }, {
+    "id" : "168",
+    "type" : "owl:Class"
+  }, {
+    "id" : "171",
+    "type" : "owl:Class"
+  }, {
+    "id" : "173",
+    "type" : "owl:Class"
+  }, {
+    "id" : "174",
+    "type" : "owl:Class"
+  }, {
+    "id" : "175",
+    "type" : "owl:Class"
+  }, {
+    "id" : "178",
+    "type" : "owl:Class"
+  }, {
+    "id" : "142",
     "type" : "owl:Class"
   }, {
     "id" : "181",
     "type" : "owl:Class"
   }, {
-    "id" : "198",
+    "id" : "187",
     "type" : "owl:Class"
   }, {
-    "id" : "201",
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "203",
+    "type" : "owl:Class"
+  }, {
+    "id" : "172",
     "type" : "owl:Class"
   }, {
     "id" : "204",
@@ -317,64 +275,34 @@
     "id" : "206",
     "type" : "owl:Class"
   }, {
-    "id" : "211",
+    "id" : "36",
     "type" : "owl:Class"
   }, {
-    "id" : "210",
+    "id" : "207",
     "type" : "owl:Class"
   }, {
-    "id" : "152",
+    "id" : "205",
     "type" : "owl:Class"
   }, {
-    "id" : "197",
+    "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "193",
+    "id" : "160",
     "type" : "owl:Class"
   }, {
-    "id" : "195",
+    "id" : "15",
     "type" : "owl:Class"
   }, {
-    "id" : "203",
+    "id" : "230",
     "type" : "owl:Class"
   }, {
-    "id" : "182",
-    "type" : "owl:Class"
-  }, {
-    "id" : "200",
-    "type" : "owl:Class"
-  }, {
-    "id" : "192",
-    "type" : "owl:Class"
-  }, {
-    "id" : "213",
-    "type" : "owl:Class"
-  }, {
-    "id" : "214",
-    "type" : "owl:Class"
-  }, {
-    "id" : "216",
-    "type" : "owl:Class"
-  }, {
-    "id" : "217",
-    "type" : "owl:Class"
-  }, {
-    "id" : "183",
-    "type" : "owl:Class"
-  }, {
-    "id" : "215",
-    "type" : "owl:Class"
-  }, {
-    "id" : "228",
-    "type" : "owl:Class"
-  }, {
-    "id" : "229",
+    "id" : "232",
     "type" : "owl:Class"
   }, {
     "id" : "231",
     "type" : "owl:Class"
   }, {
-    "id" : "29",
+    "id" : "233",
     "type" : "owl:Class"
   }, {
     "id" : "234",
@@ -383,88 +311,76 @@
     "id" : "235",
     "type" : "owl:Class"
   }, {
-    "id" : "128",
+    "id" : "180",
     "type" : "owl:Class"
   }, {
-    "id" : "238",
+    "id" : "202",
     "type" : "owl:Class"
   }, {
-    "id" : "236",
-    "type" : "owl:Class"
-  }, {
-    "id" : "208",
-    "type" : "owl:Class"
-  }, {
-    "id" : "139",
-    "type" : "owl:Class"
-  }, {
-    "id" : "239",
-    "type" : "owl:Class"
-  }, {
-    "id" : "250",
-    "type" : "owl:Class"
-  }, {
-    "id" : "254",
-    "type" : "owl:Class"
-  }, {
-    "id" : "255",
-    "type" : "owl:Class"
-  }, {
-    "id" : "251",
-    "type" : "owl:Class"
-  }, {
-    "id" : "252",
-    "type" : "owl:Class"
-  }, {
-    "id" : "14",
-    "type" : "owl:Class"
-  }, {
-    "id" : "48",
-    "type" : "owl:Class"
-  }, {
-    "id" : "267",
-    "type" : "owl:Class"
-  }, {
-    "id" : "149",
-    "type" : "owl:Class"
-  }, {
-    "id" : "135",
-    "type" : "owl:Class"
-  }, {
-    "id" : "264",
-    "type" : "owl:Class"
-  }, {
-    "id" : "265",
-    "type" : "owl:Class"
-  }, {
-    "id" : "266",
-    "type" : "owl:Class"
-  }, {
-    "id" : "237",
+    "id" : "243",
     "type" : "owl:Class"
   }, {
     "id" : "35",
     "type" : "owl:Class"
   }, {
-    "id" : "156",
+    "id" : "244",
     "type" : "owl:Class"
   }, {
-    "id" : "17",
+    "id" : "30",
     "type" : "owl:Class"
   }, {
-    "id" : "281",
+    "id" : "245",
     "type" : "owl:Class"
   }, {
-    "id" : "279",
+    "id" : "177",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
     "type" : "owl:Class"
   }, {
     "id" : "49",
     "type" : "owl:Class"
   }, {
-    "id" : "61",
+    "id" : "51",
     "type" : "owl:Class"
   }, {
-    "id" : "28",
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
     "type" : "owl:Class"
   }, {
     "id" : "1",
@@ -473,76 +389,229 @@
     "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "5",
+    "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "4",
+    "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "170",
-    "type" : "owl:Class"
-  }, {
-    "id" : "142",
-    "type" : "owl:Class"
-  }, {
-    "id" : "173",
-    "type" : "owl:Class"
-  }, {
-    "id" : "75",
-    "type" : "owl:Class"
-  }, {
-    "id" : "103",
-    "type" : "owl:Class"
-  }, {
-    "id" : "164",
-    "type" : "owl:Class"
-  }, {
-    "id" : "166",
-    "type" : "owl:Class"
-  }, {
-    "id" : "146",
-    "type" : "owl:Class"
-  }, {
-    "id" : "34",
-    "type" : "owl:Class"
-  }, {
-    "id" : "65",
-    "type" : "owl:Class"
-  }, {
-    "id" : "136",
+    "id" : "10",
     "type" : "owl:Class"
   }, {
     "id" : "64",
     "type" : "owl:Class"
   }, {
-    "id" : "154",
+    "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "129",
+    "id" : "20",
     "type" : "owl:Class"
   }, {
-    "id" : "172",
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "239",
+    "type" : "owl:Class"
+  }, {
+    "id" : "200",
+    "type" : "owl:Class"
+  }, {
+    "id" : "223",
+    "type" : "owl:Class"
+  }, {
+    "id" : "218",
+    "type" : "owl:Class"
+  }, {
+    "id" : "283",
+    "type" : "owl:Class"
+  }, {
+    "id" : "241",
+    "type" : "owl:Class"
+  }, {
+    "id" : "220",
+    "type" : "owl:Class"
+  }, {
+    "id" : "289",
+    "type" : "owl:Class"
+  }, {
+    "id" : "193",
+    "type" : "owl:Class"
+  }, {
+    "id" : "198",
+    "type" : "owl:Class"
+  }, {
+    "id" : "196",
+    "type" : "owl:Class"
+  }, {
+    "id" : "229",
+    "type" : "owl:Class"
+  }, {
+    "id" : "225",
+    "type" : "owl:Class"
+  }, {
+    "id" : "227",
+    "type" : "owl:Class"
+  }, {
+    "id" : "189",
+    "type" : "owl:Class"
+  }, {
+    "id" : "215",
+    "type" : "owl:Class"
+  }, {
+    "id" : "145",
+    "type" : "owl:Class"
+  }, {
+    "id" : "216",
+    "type" : "owl:Class"
+  }, {
+    "id" : "211",
+    "type" : "owl:Class"
+  }, {
+    "id" : "191",
+    "type" : "owl:Class"
+  }, {
+    "id" : "213",
+    "type" : "owl:Class"
+  }, {
+    "id" : "209",
+    "type" : "owl:Class"
+  }, {
+    "id" : "194",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "184",
+    "type" : "owl:Class"
+  }, {
+    "id" : "148",
+    "type" : "owl:Class"
+  }, {
+    "id" : "186",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "183",
+    "type" : "owl:Class"
+  }, {
+    "id" : "328",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "138",
+    "type" : "owl:Class"
+  }, {
+    "id" : "126",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "140",
+    "type" : "owl:Class"
+  }, {
+    "id" : "150",
+    "type" : "owl:Class"
+  }, {
+    "id" : "146",
+    "type" : "owl:Class"
+  }, {
+    "id" : "151",
+    "type" : "owl:Class"
+  }, {
+    "id" : "155",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "257",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "236",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "279",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "136",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "325",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
     "type" : "owl:Class"
   }, {
     "id" : "121",
     "type" : "owl:Class"
   }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
     "id" : "123",
     "type" : "owl:Class"
   }, {
-    "id" : "89",
+    "id" : "39",
     "type" : "owl:Class"
   }, {
-    "id" : "76",
+    "id" : "71",
     "type" : "owl:Class"
   }, {
-    "id" : "41",
+    "id" : "69",
     "type" : "owl:Class"
   }, {
-    "id" : "101",
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "298",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "288",
+    "type" : "owl:Class"
+  }, {
+    "id" : "292",
+    "type" : "owl:Class"
+  }, {
+    "id" : "358",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "273",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -560,11 +629,21 @@
     "label" : {
       "IRI-based" : "Use7112",
       "pt" : "Praias, dunas e areais costeiros",
+      "en" : "Coastal beaches, dunes and sand plains",
       "es" : "Playas, dunas y arenales costeros"
     },
-    "comment" : { },
     "id" : "11",
     "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/Use",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Use"
+    },
+    "subClasses" : [ "14", "15", "16", "17", "18" ],
+    "attributes" : [ "external" ],
+    "id" : "13"
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use7110",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -580,12 +659,36 @@
     "label" : {
       "IRI-based" : "Use7110",
       "pt" : "Praias, dunas e areais",
+      "en" : "Beaches, dunes and sand plains",
       "es" : "Playas, dunas y arenales"
     },
-    "subClasses" : [ "11", "19" ],
-    "comment" : { },
+    "subClasses" : [ "11", "25" ],
+    "comment" : {
+      "en" : "Coastal beaches, dunes and sand plains;  Inland beaches, dunes and sand plains (COS2010)"
+    },
     "id" : "12",
-    "superClasses" : [ "18" ]
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/LandUse",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LandUse",
+      "pt" : "Uso e Ocupação do Solo",
+      "en" : "Land Use",
+      "es" : "Uso de la Tierra"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "26"
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use7111",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -601,11 +704,36 @@
     "label" : {
       "IRI-based" : "Use7111",
       "pt" : "Praias, dunas e areais interiores",
+      "en" : "Inland beaches, dunes and sand plains",
       "es" : "Playas, dunas y arenales interiores"
     },
-    "comment" : { },
-    "id" : "19",
+    "id" : "25",
     "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/ForestType",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ],
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ForestType",
+      "en" : "Forest Type",
+      "es" : "Formación Arbolada"
+    },
+    "attributes" : [ "external" ],
+    "id" : "31"
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1122",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -621,11 +749,11 @@
     "label" : {
       "IRI-based" : "Use1122",
       "pt" : "Tecido edificado descontínuo esparso",
+      "en" : "Sparse discontinuous urban fabric",
       "es" : "Tejido edificado discontínuo escaso"
     },
-    "comment" : { },
-    "id" : "25",
-    "superClasses" : [ "26" ]
+    "id" : "32",
+    "superClasses" : [ "33" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1000",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -641,12 +769,15 @@
     "label" : {
       "IRI-based" : "Use1000",
       "pt" : "Territórios artificializados",
+      "en" : "Artificial areas",
       "es" : "Territorios artificializados"
     },
-    "subClasses" : [ "29", "30", "31", "32", "33", "34", "35" ],
-    "comment" : { },
-    "id" : "27",
-    "superClasses" : [ "28" ]
+    "subClasses" : [ "28", "35", "36", "37", "38", "39", "40" ],
+    "comment" : {
+      "en" : "Abandoned sites in artificial areas (COS2010)"
+    },
+    "id" : "34",
+    "superClasses" : [ "16" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1121",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -662,11 +793,11 @@
     "label" : {
       "IRI-based" : "Use1121",
       "pt" : "Tecido edificado descontínuo",
+      "en" : "Discontinuous urban fabric",
       "es" : "Tejido edificado discontínuo"
     },
-    "comment" : { },
-    "id" : "36",
-    "superClasses" : [ "26" ]
+    "id" : "41",
+    "superClasses" : [ "33" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1120",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -682,12 +813,12 @@
     "label" : {
       "IRI-based" : "Use1120",
       "pt" : "Tecido edificado descontínuo",
+      "en" : "Discontinuous urban fabric",
       "es" : "Tejido edificado discontinuo"
     },
-    "subClasses" : [ "25", "36" ],
-    "comment" : { },
-    "id" : "26",
-    "superClasses" : [ "33" ]
+    "subClasses" : [ "32", "41" ],
+    "id" : "33",
+    "superClasses" : [ "38" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2330",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -703,12 +834,12 @@
     "label" : {
       "IRI-based" : "Use2330",
       "pt" : "Agricultura com espaços naturais e seminaturais",
+      "en" : "Agriculture with natural and semi-natural vegetation",
       "es" : "Agricultura con espacios naturales y semi-naturales"
     },
-    "subClasses" : [ "39" ],
-    "comment" : { },
-    "id" : "37",
-    "superClasses" : [ "38" ]
+    "subClasses" : [ "44" ],
+    "id" : "42",
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2210",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -724,12 +855,12 @@
     "label" : {
       "IRI-based" : "Use2210",
       "pt" : "Vinhas",
+      "en" : "Vineyards",
       "es" : "Viñas"
     },
-    "subClasses" : [ "42" ],
-    "comment" : { },
-    "id" : "40",
-    "superClasses" : [ "41" ]
+    "subClasses" : [ "47" ],
+    "id" : "45",
+    "superClasses" : [ "46" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2331",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -745,11 +876,11 @@
     "label" : {
       "IRI-based" : "Use2331",
       "pt" : "Agricultura com espaços naturais e seminaturais",
+      "en" : "Agriculture with natural and semi-natural vegetation",
       "es" : "Agricultura con espacios naturales y semi-naturales"
     },
-    "comment" : { },
-    "id" : "39",
-    "superClasses" : [ "37" ]
+    "id" : "44",
+    "superClasses" : [ "42" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2211",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -765,11 +896,21 @@
     "label" : {
       "IRI-based" : "Use2211",
       "pt" : "Vinhas",
+      "en" : "Vineyards",
       "es" : "Viñas"
     },
-    "comment" : { },
-    "id" : "42",
-    "superClasses" : [ "40" ]
+    "id" : "47",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MeasurableEntityInSquareMeters"
+    },
+    "subClasses" : [ "64" ],
+    "attributes" : [ "external" ],
+    "id" : "63"
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use7100",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -785,12 +926,12 @@
     "label" : {
       "IRI-based" : "Use7100",
       "pt" : "Espaços descobertos ou com pouca vegetação",
+      "en" : "Flats uncovered or with little vegetation",
       "es" : "Zonas descubiertas con poca vegetación"
     },
-    "subClasses" : [ "5", "65", "12" ],
-    "comment" : { },
-    "id" : "18",
-    "superClasses" : [ "64" ]
+    "subClasses" : [ "70", "71", "12" ],
+    "id" : "24",
+    "superClasses" : [ "69" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1112",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -806,11 +947,11 @@
     "label" : {
       "IRI-based" : "Use1112",
       "pt" : "Tecido edificado contínuo predominantemente horizontal",
+      "en" : "Continuous urban fabric predominantly horizontal",
       "es" : "Tejido edificado continuo predominantemente horizontal"
     },
-    "comment" : { },
-    "id" : "68",
-    "superClasses" : [ "69" ]
+    "id" : "76",
+    "superClasses" : [ "77" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1111",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -826,11 +967,11 @@
     "label" : {
       "IRI-based" : "Use1111",
       "pt" : "Tecido edificado contínuo predominantemente vertical",
+      "en" : "Continuous urban fabric predominantly vertical",
       "es" : "Tejido edificado continuo predominantemente vertical"
     },
-    "comment" : { },
-    "id" : "70",
-    "superClasses" : [ "69" ]
+    "id" : "78",
+    "superClasses" : [ "77" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1231",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -845,12 +986,12 @@
     },
     "label" : {
       "IRI-based" : "Use1231",
-      "pt" : "nstalações agrícolas",
+      "pt" : "Instalações agrícolas",
+      "en" : "Agricultural facilities",
       "es" : "Instalaciones agrícolas"
     },
-    "comment" : { },
-    "id" : "71",
-    "superClasses" : [ "72" ]
+    "id" : "79",
+    "superClasses" : [ "80" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1110",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -866,12 +1007,15 @@
     "label" : {
       "IRI-based" : "Use1110",
       "pt" : "Tecido edificado contínuo",
+      "en" : "Continuous urban fabric ",
       "es" : "Tejido edificado continuo"
     },
-    "subClasses" : [ "68", "70" ],
-    "comment" : { },
-    "id" : "69",
-    "superClasses" : [ "33" ]
+    "subClasses" : [ "76", "78" ],
+    "comment" : {
+      "en" : "Continuous urban fabric predominantly vertical (COS2018)"
+    },
+    "id" : "77",
+    "superClasses" : [ "38" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1230",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -887,12 +1031,12 @@
     "label" : {
       "IRI-based" : "Use1230",
       "pt" : "Instalações agrícolas",
+      "en" : "Agricultural facilities",
       "es" : "Instalaciones agrícolas"
     },
-    "subClasses" : [ "71" ],
-    "comment" : { },
-    "id" : "72",
-    "superClasses" : [ "32" ]
+    "subClasses" : [ "79" ],
+    "id" : "80",
+    "superClasses" : [ "37" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2320",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -908,12 +1052,12 @@
     "label" : {
       "IRI-based" : "Use2320",
       "pt" : "Mosaicos culturais e parcelares complexos",
+      "en" : "Complex cultivation patterns",
       "es" : "Sistemas culturales y parcelas complejas"
     },
-    "subClasses" : [ "74" ],
-    "comment" : { },
-    "id" : "73",
-    "superClasses" : [ "38" ]
+    "subClasses" : [ "82" ],
+    "id" : "81",
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2200",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -929,12 +1073,15 @@
     "label" : {
       "IRI-based" : "Use2200",
       "pt" : "Culturas permanentes",
+      "en" : "Permanent crops",
       "es" : "Cultivos permanentes"
     },
-    "subClasses" : [ "75", "76" ],
-    "comment" : { },
-    "id" : "63",
-    "superClasses" : [ "61" ]
+    "subClasses" : [ "85", "86" ],
+    "comment" : {
+      "en" : "AFS of other species with permanent crops (COS2010)"
+    },
+    "id" : "83",
+    "superClasses" : [ "84" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2321",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -950,11 +1097,11 @@
     "label" : {
       "IRI-based" : "Use2321",
       "pt" : "Mosaicos culturais e parcelares complexos",
+      "en" : "Complex cultivation patterns",
       "es" : "Sistemas culturales y parcelas complejas"
     },
-    "comment" : { },
-    "id" : "74",
-    "superClasses" : [ "73" ]
+    "id" : "82",
+    "superClasses" : [ "81" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use6000",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -970,12 +1117,12 @@
     "label" : {
       "IRI-based" : "Use6000",
       "pt" : "Matos",
+      "en" : "Shrublands",
       "es" : "Matorrales"
     },
-    "subClasses" : [ "88" ],
-    "comment" : { },
-    "id" : "86",
-    "superClasses" : [ "87" ]
+    "subClasses" : [ "101" ],
+    "id" : "100",
+    "superClasses" : [ "15" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1100",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -991,12 +1138,15 @@
     "label" : {
       "IRI-based" : "Use1100",
       "pt" : "Tecido edificado",
+      "en" : "Urban fabric ",
       "es" : "Tejido edificado"
     },
-    "subClasses" : [ "69", "26", "89" ],
-    "comment" : { },
-    "id" : "33",
-    "superClasses" : [ "27" ]
+    "subClasses" : [ "77", "33", "102" ],
+    "comment" : {
+      "en" : "Continuous urban fabric predominantly vertical (COS2018)"
+    },
+    "id" : "38",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1221",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1012,11 +1162,11 @@
     "label" : {
       "IRI-based" : "Use1221",
       "pt" : "Comércio",
+      "en" : "Commercial units",
       "es" : "Comercio"
     },
-    "comment" : { },
-    "id" : "90",
-    "superClasses" : [ "91" ]
+    "id" : "103",
+    "superClasses" : [ "104" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1220",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1032,12 +1182,12 @@
     "label" : {
       "IRI-based" : "Use1220",
       "pt" : "Comércio",
+      "en" : "Commercial units",
       "es" : "Comercio"
     },
-    "subClasses" : [ "90" ],
-    "comment" : { },
-    "id" : "91",
-    "superClasses" : [ "32" ]
+    "subClasses" : [ "103" ],
+    "id" : "104",
+    "superClasses" : [ "37" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2310",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1053,12 +1203,15 @@
     "label" : {
       "IRI-based" : "Use2310",
       "pt" : "Culturas temporárias e/ou pastagens melhoradas associadas a culturas permanentes",
+      "en" : "Arable land or pastures with permanent crops",
       "es" : "Cultivos temporales y/o pastos asociados a cultivos permanentes"
     },
-    "subClasses" : [ "93", "94", "95" ],
-    "comment" : { },
-    "id" : "92",
-    "superClasses" : [ "38" ]
+    "subClasses" : [ "106", "107", "108" ],
+    "comment" : {
+      "en" : "Arable land or pastures associated with vineyards (COS2018); AFS of other species with permanent crops (COS2010)"
+    },
+    "id" : "105",
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2311",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1074,11 +1227,32 @@
     "label" : {
       "IRI-based" : "Use2311",
       "pt" : "Culturas temporárias e/ou pastagens melhoradas associadas a vinha",
+      "en" : "Arable land or pastures associated with vineyards",
       "es" : "Cultivos temporales y/o pastos asociados con vides"
     },
-    "comment" : { },
-    "id" : "93",
-    "superClasses" : [ "92" ]
+    "id" : "106",
+    "superClasses" : [ "105" ]
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/PatchInPatch",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PatchInPatch",
+      "es" : "Patch in the patch"
+    },
+    "comment" : {
+      "es" : "Patch contained in the patch"
+    },
+    "attributes" : [ "external" ],
+    "id" : "109"
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2312",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1094,11 +1268,11 @@
     "label" : {
       "IRI-based" : "Use2312",
       "pt" : "Culturas temporárias e/ou pastagens melhoradas associadas a pomar",
+      "en" : "Arable land or pastures associated with orchards",
       "es" : "Cultivos temporales y/o pastos asociados con huertos"
     },
-    "comment" : { },
-    "id" : "94",
-    "superClasses" : [ "92" ]
+    "id" : "107",
+    "superClasses" : [ "105" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2313",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1114,11 +1288,11 @@
     "label" : {
       "IRI-based" : "Use2313",
       "pt" : "Culturas temporárias e/ou pastagens melhoradas associadas a olival",
+      "en" : "Arable land or pastures associated with olive groves",
       "es" : "Cultivos temporales y/o pastos asociados con olivares"
     },
-    "comment" : { },
-    "id" : "95",
-    "superClasses" : [ "92" ]
+    "id" : "108",
+    "superClasses" : [ "105" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use6111",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1134,11 +1308,11 @@
     "label" : {
       "IRI-based" : "Use6111",
       "pt" : "Matos",
+      "en" : "Shrublands",
       "es" : "Matorrales"
     },
-    "comment" : { },
-    "id" : "96",
-    "superClasses" : [ "97" ]
+    "id" : "110",
+    "superClasses" : [ "111" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use6110",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1154,12 +1328,37 @@
     "label" : {
       "IRI-based" : "Use6110",
       "pt" : "Matos",
+      "en" : "Shrublands",
       "es" : "Matorrales"
     },
-    "subClasses" : [ "96" ],
-    "comment" : { },
-    "id" : "97",
-    "superClasses" : [ "88" ]
+    "subClasses" : [ "110" ],
+    "id" : "111",
+    "superClasses" : [ "101" ]
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/StandDevelopment",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ],
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "StandDevelopment",
+      "en" : "Stand development",
+      "es" : "Estado de Desarrollo"
+    },
+    "attributes" : [ "external" ],
+    "id" : "112"
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1211",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1175,11 +1374,11 @@
     "label" : {
       "IRI-based" : "Use1211",
       "pt" : "Indústria",
+      "en" : "Industrial units",
       "es" : "Industria"
     },
-    "comment" : { },
-    "id" : "98",
-    "superClasses" : [ "99" ]
+    "id" : "113",
+    "superClasses" : [ "114" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1210",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1195,12 +1394,37 @@
     "label" : {
       "IRI-based" : "Use1210",
       "pt" : "Indústria",
+      "en" : "Industrial units",
       "es" : "Industria"
     },
-    "subClasses" : [ "98" ],
-    "comment" : { },
-    "id" : "99",
-    "superClasses" : [ "32" ]
+    "subClasses" : [ "113" ],
+    "id" : "114",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/Classification",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ],
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion_MFE_IFN",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Classification",
+      "en" : "Classification",
+      "es" : "Clasificación"
+    },
+    "attributes" : [ "external" ],
+    "id" : "115"
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2300",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1216,12 +1440,62 @@
     "label" : {
       "IRI-based" : "Use2300",
       "pt" : "Áreas agrícolas heterogéneas",
+      "en" : "Heterogeneous agricultural land",
       "es" : "Áreas agrícolas heterogéneas"
     },
-    "subClasses" : [ "37", "73", "92" ],
-    "comment" : { },
-    "id" : "38",
-    "superClasses" : [ "61" ]
+    "subClasses" : [ "42", "81", "105" ],
+    "id" : "43",
+    "superClasses" : [ "84" ]
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/VegetationStructure",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ],
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "VegetationStructure",
+      "en" : "Vegetation structure",
+      "es" : "Tipo Estructural"
+    },
+    "attributes" : [ "external" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/BiogeographicRegion",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ],
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RegionBiogeografica",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BiogeographicRegion",
+      "en" : "Biogeographic Region",
+      "es" : "Región biogeográfica"
+    },
+    "attributes" : [ "external" ],
+    "id" : "124"
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use6100",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1237,12 +1511,12 @@
     "label" : {
       "IRI-based" : "Use6100",
       "pt" : "Matos",
+      "en" : "Shrublands",
       "es" : "Matorrales"
     },
-    "subClasses" : [ "97" ],
-    "comment" : { },
-    "id" : "88",
-    "superClasses" : [ "86" ]
+    "subClasses" : [ "111" ],
+    "id" : "101",
+    "superClasses" : [ "100" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1322",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1258,11 +1532,32 @@
     "label" : {
       "IRI-based" : "Use1322",
       "pt" : "Infraestruturas de tratamento de resíduos e águas residuais",
+      "en" : "Waste and wastewater treatment infrastructure",
       "es" : "Infraestructuras de tratamiento de residuos y aguas residuales"
     },
-    "comment" : { },
-    "id" : "105",
-    "superClasses" : [ "106" ]
+    "id" : "127",
+    "superClasses" : [ "128" ]
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/UseInPatch",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UseInPatch",
+      "es" : "Use in the patch"
+    },
+    "comment" : {
+      "es" : "Use present in the patch"
+    },
+    "attributes" : [ "external" ],
+    "id" : "129"
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1200",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1278,12 +1573,15 @@
     "label" : {
       "IRI-based" : "Use1200",
       "pt" : "Indústria, comércio e instalações agrícolas",
+      "en" : "Industrial and commercial units and agricultural facilities",
       "es" : "Industria, comercie, e instalaciones agrícolas"
     },
-    "subClasses" : [ "99", "91", "72" ],
-    "comment" : { },
-    "id" : "32",
-    "superClasses" : [ "27" ]
+    "subClasses" : [ "114", "104", "80" ],
+    "comment" : {
+      "en" : "Industrial units (COS2018); Commercial units (COS2018); Agricultural facilities (COS2018)"
+    },
+    "id" : "37",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1321",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1299,11 +1597,11 @@
     "label" : {
       "IRI-based" : "Use1321",
       "pt" : "Infraestruturas para captação, tratamento e abastecimento de águas para consumo",
+      "en" : "Water supply infrastructure",
       "es" : "Infraestructuras para captación tratamiento y abastecimiento de aguas para el consumo"
     },
-    "comment" : { },
-    "id" : "107",
-    "superClasses" : [ "106" ]
+    "id" : "130",
+    "superClasses" : [ "128" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1320",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1319,12 +1617,12 @@
     "label" : {
       "IRI-based" : "Use1320",
       "pt" : "Infraestruturas de águas e tratamento de resíduos",
+      "en" : "Waste and wastewater treatment infrastructure",
       "es" : "Infraestruturas de aguas y tratamiento de resíduos"
     },
-    "subClasses" : [ "105", "107" ],
-    "comment" : { },
-    "id" : "106",
-    "superClasses" : [ "31" ]
+    "subClasses" : [ "127", "130" ],
+    "id" : "128",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use5123",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1335,16 +1633,35 @@
         "language" : "undefined",
         "value" : "http://crossforest.eu/cos/ontology/",
         "type" : "iri"
+      } ],
+      "hasSpecies" : [ {
+        "identifier" : "hasSpecies",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Class2",
+        "type" : "iri"
       } ]
     },
     "label" : {
       "IRI-based" : "Use5123",
       "pt" : "Florestas de outras resinosas",
+      "en" : "Forests of other coniferous species",
       "es" : "Bosques de otras resinosas"
     },
-    "comment" : { },
-    "id" : "83",
-    "superClasses" : [ "79" ]
+    "comment" : {
+      "undefined" : "Gymnospermae"
+    },
+    "id" : "133",
+    "superClasses" : [ "134" ]
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/SpatialEntity",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpatialEntity"
+    },
+    "subClasses" : [ "136" ],
+    "attributes" : [ "external" ],
+    "id" : "135"
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2410",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1360,12 +1677,12 @@
     "label" : {
       "IRI-based" : "Use2410",
       "pt" : "Agricultura protegida e viveiros",
+      "en" : "Greenhouses and nurseries",
       "es" : "Agricultura protegida y viveros"
     },
-    "subClasses" : [ "113" ],
-    "comment" : { },
-    "id" : "44",
-    "superClasses" : [ "45" ]
+    "subClasses" : [ "143" ],
+    "id" : "141",
+    "superClasses" : [ "142" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2411",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1381,11 +1698,11 @@
     "label" : {
       "IRI-based" : "Use2411",
       "pt" : "Agricultura protegida e viveiros",
+      "en" : "Greenhouses and nurseries",
       "es" : "Agricultura protegida y viveros"
     },
-    "comment" : { },
-    "id" : "113",
-    "superClasses" : [ "44" ]
+    "id" : "143",
+    "superClasses" : [ "141" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use5120",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1396,17 +1713,27 @@
         "language" : "undefined",
         "value" : "http://crossforest.eu/cos/ontology/",
         "type" : "iri"
+      } ],
+      "hasSpecies" : [ {
+        "identifier" : "hasSpecies",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Class2",
+        "type" : "iri"
       } ]
     },
     "label" : {
       "IRI-based" : "Use5120",
       "pt" : "Florestas de resinosas",
+      "en" : "Forests of coniferous trees",
       "es" : "Coníferas"
     },
-    "subClasses" : [ "81", "78", "83" ],
-    "comment" : { },
-    "id" : "79",
-    "superClasses" : [ "85" ]
+    "subClasses" : [ "161", "162", "133" ],
+    "comment" : {
+      "en" : "Forests of other oaks (COS2018); Open forests of cork oak with coniferous trees (COS2010)",
+      "undefined" : "Gymnospermae"
+    },
+    "id" : "134",
+    "superClasses" : [ "160" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use5122",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1417,36 +1744,25 @@
         "language" : "undefined",
         "value" : "http://crossforest.eu/cos/ontology/",
         "type" : "iri"
+      } ],
+      "hasSpecies" : [ {
+        "identifier" : "hasSpecies",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species23",
+        "type" : "iri"
       } ]
     },
     "label" : {
       "IRI-based" : "Use5122",
       "pt" : "Florestas de pinheiro manso",
+      "en" : "Stone pine forests",
       "es" : "Bosques de Pinus pinea"
     },
-    "comment" : { },
-    "id" : "81",
-    "superClasses" : [ "79" ]
-  }, {
-    "iri" : "http://crossforest.eu/cos/ontology/Use5121",
-    "baseIri" : "http://crossforest.eu/cos/ontology",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/cos/ontology/",
-        "type" : "iri"
-      } ]
+    "comment" : {
+      "undefined" : "Pinus pinea"
     },
-    "label" : {
-      "IRI-based" : "Use5121",
-      "pt" : "Florestas de pinheiro bravo",
-      "es" : "Bosques de Pinus pinaster"
-    },
-    "comment" : { },
-    "id" : "78",
-    "superClasses" : [ "79" ]
+    "id" : "161",
+    "superClasses" : [ "134" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use5000",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1462,12 +1778,44 @@
     "label" : {
       "IRI-based" : "Use5000",
       "pt" : "Florestas",
+      "en" : "Forest",
       "es" : "Bosques"
     },
-    "subClasses" : [ "85" ],
-    "comment" : { },
-    "id" : "10",
-    "superClasses" : [ "8" ]
+    "subClasses" : [ "160" ],
+    "comment" : {
+      "en" : "Cork oak forests (COS2018); Forests of other oaks (COS2018);…"
+    },
+    "id" : "164",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://crossforest.eu/cos/ontology/Use5121",
+    "baseIri" : "http://crossforest.eu/cos/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/cos/ontology/",
+        "type" : "iri"
+      } ],
+      "hasSpecies" : [ {
+        "identifier" : "hasSpecies",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species26",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Use5121",
+      "pt" : "Florestas de pinheiro bravo",
+      "en" : "Maritime pine forests",
+      "es" : "Bosques de Pinus pinaster"
+    },
+    "comment" : {
+      "undefined" : "Pinus pinaster"
+    },
+    "id" : "162",
+    "superClasses" : [ "134" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1312",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1483,11 +1831,11 @@
     "label" : {
       "IRI-based" : "Use1312",
       "pt" : "Infraestruturas de produção de energia não renovável",
+      "en" : "Non-renewable energy production infrastructure",
       "es" : "Infraestructuras de producción de energia no renovable"
     },
-    "comment" : { },
-    "id" : "51",
-    "superClasses" : [ "52" ]
+    "id" : "165",
+    "superClasses" : [ "166" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1432",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1503,11 +1851,11 @@
     "label" : {
       "IRI-based" : "Use1432",
       "pt" : "Aeródromos",
+      "en" : "Airfields",
       "es" : "Aeródromos"
     },
-    "comment" : { },
-    "id" : "56",
-    "superClasses" : [ "57" ]
+    "id" : "167",
+    "superClasses" : [ "168" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1311",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1522,33 +1870,12 @@
     },
     "label" : {
       "IRI-based" : "Use1311",
-      "pt" : "nfraestruturas de produção de energia renovável",
+      "pt" : "Infraestruturas de produção de energia renovável",
+      "en" : "Renewable energy production infrastructure",
       "es" : "Infraestructuras de producción de energia renovable"
     },
-    "comment" : { },
-    "id" : "54",
-    "superClasses" : [ "52" ]
-  }, {
-    "iri" : "http://crossforest.eu/cos/ontology/Use1310",
-    "baseIri" : "http://crossforest.eu/cos/ontology",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/cos/ontology/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Use1310",
-      "pt" : "Infraestruturas de produção de energia",
-      "es" : "Infraestruturas de producción de energía"
-    },
-    "subClasses" : [ "51", "54" ],
-    "comment" : { },
-    "id" : "52",
-    "superClasses" : [ "31" ]
+    "id" : "169",
+    "superClasses" : [ "166" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1431",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1564,11 +1891,35 @@
     "label" : {
       "IRI-based" : "Use1431",
       "pt" : "Aeroportos",
+      "en" : "Airports",
       "es" : "Aeropuertos"
     },
-    "comment" : { },
-    "id" : "59",
-    "superClasses" : [ "57" ]
+    "id" : "170",
+    "superClasses" : [ "168" ]
+  }, {
+    "iri" : "http://crossforest.eu/cos/ontology/Use1310",
+    "baseIri" : "http://crossforest.eu/cos/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/cos/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Use1310",
+      "pt" : "Infraestruturas de produção de energia",
+      "en" : "Renewable energy production infrastructure",
+      "es" : "Infraestruturas de producción de energía"
+    },
+    "subClasses" : [ "165", "169" ],
+    "comment" : {
+      "en" : "Renewable energy production infrastructure (COS2018)"
+    },
+    "id" : "166",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1430",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1584,12 +1935,15 @@
     "label" : {
       "IRI-based" : "Use1430",
       "pt" : "Aeroportos e aeródromos",
+      "en" : "Airports and Aeródromos",
       "es" : "Aeropuertos y aeródromos"
     },
-    "subClasses" : [ "56", "59" ],
-    "comment" : { },
-    "id" : "57",
-    "superClasses" : [ "30" ]
+    "subClasses" : [ "167", "170" ],
+    "comment" : {
+      "en" : "Airports; Aeródromos (COS2010)"
+    },
+    "id" : "168",
+    "superClasses" : [ "35" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use5113",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1600,16 +1954,25 @@
         "language" : "undefined",
         "value" : "http://crossforest.eu/cos/ontology/",
         "type" : "iri"
+      } ],
+      "hasSpecies" : [ {
+        "identifier" : "hasSpecies",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Genus121",
+        "type" : "iri"
       } ]
     },
     "label" : {
       "IRI-based" : "Use5113",
       "pt" : "Florestas de outros carvalhos",
+      "en" : "Forests of other oaks",
       "es" : "Bosques de otros Quercus"
     },
-    "comment" : { },
-    "id" : "24",
-    "superClasses" : [ "22" ]
+    "comment" : {
+      "undefined" : "Quercus"
+    },
+    "id" : "171",
+    "superClasses" : [ "172" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use5112",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1620,16 +1983,25 @@
         "language" : "undefined",
         "value" : "http://crossforest.eu/cos/ontology/",
         "type" : "iri"
+      } ],
+      "hasSpecies" : [ {
+        "identifier" : "hasSpecies",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species45",
+        "type" : "iri"
       } ]
     },
     "label" : {
       "IRI-based" : "Use5112",
       "pt" : "Florestas de azinheira",
+      "en" : "Holm oak forests",
       "es" : "Bosques de Quercus rotundifolia"
     },
-    "comment" : { },
-    "id" : "131",
-    "superClasses" : [ "22" ]
+    "comment" : {
+      "undefined" : "Quercus ilex"
+    },
+    "id" : "173",
+    "superClasses" : [ "172" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use5115",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1640,16 +2012,25 @@
         "language" : "undefined",
         "value" : "http://crossforest.eu/cos/ontology/",
         "type" : "iri"
+      } ],
+      "hasSpecies" : [ {
+        "identifier" : "hasSpecies",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Genus162",
+        "type" : "iri"
       } ]
     },
     "label" : {
       "IRI-based" : "Use5115",
       "pt" : "Florestas de eucalipto",
+      "en" : "Eucalyptus forests",
       "es" : "Bosques de eucaliptos"
     },
-    "comment" : { },
-    "id" : "132",
-    "superClasses" : [ "22" ]
+    "comment" : {
+      "undefined" : "Eucalyptus"
+    },
+    "id" : "174",
+    "superClasses" : [ "172" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use5114",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1660,16 +2041,25 @@
         "language" : "undefined",
         "value" : "http://crossforest.eu/cos/ontology/",
         "type" : "iri"
+      } ],
+      "hasSpecies" : [ {
+        "identifier" : "hasSpecies",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species72",
+        "type" : "iri"
       } ]
     },
     "label" : {
       "IRI-based" : "Use5114",
       "pt" : "Florestas de castanheiro",
+      "en" : "Sweet chestnut forests",
       "es" : "Bosques de castaños"
     },
-    "comment" : { },
-    "id" : "133",
-    "superClasses" : [ "22" ]
+    "comment" : {
+      "undefined" : "Castanea sativa"
+    },
+    "id" : "175",
+    "superClasses" : [ "172" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use5117",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1680,36 +2070,25 @@
         "language" : "undefined",
         "value" : "http://crossforest.eu/cos/ontology/",
         "type" : "iri"
+      } ],
+      "hasSpecies" : [ {
+        "identifier" : "hasSpecies",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Class1",
+        "type" : "iri"
       } ]
     },
     "label" : {
       "IRI-based" : "Use5117",
       "pt" : "Florestas de outras folhosas",
+      "en" : "Forests of other broad-leaved species",
       "es" : "Bosques de otras frondosas"
     },
-    "comment" : { },
-    "id" : "137",
-    "superClasses" : [ "22" ]
-  }, {
-    "iri" : "http://crossforest.eu/cos/ontology/Use5116",
-    "baseIri" : "http://crossforest.eu/cos/ontology",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/cos/ontology/",
-        "type" : "iri"
-      } ]
+    "comment" : {
+      "undefined" : "Angiospermae"
     },
-    "label" : {
-      "IRI-based" : "Use5116",
-      "pt" : "Florestas de espécies invasoras",
-      "es" : "Bosques de especies invasoras"
-    },
-    "comment" : { },
-    "id" : "140",
-    "superClasses" : [ "22" ]
+    "id" : "178",
+    "superClasses" : [ "172" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2400",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1725,22 +2104,78 @@
     "label" : {
       "IRI-based" : "Use2400",
       "pt" : "Agricultura protegida e viveiros",
+      "en" : "Greenhouses and nurseries",
       "es" : "Agricultura protegida y viveros"
     },
-    "subClasses" : [ "44" ],
-    "comment" : { },
-    "id" : "45",
-    "superClasses" : [ "61" ]
+    "subClasses" : [ "141" ],
+    "id" : "142",
+    "superClasses" : [ "84" ]
+  }, {
+    "iri" : "http://crossforest.eu/cos/ontology/Use5116",
+    "baseIri" : "http://crossforest.eu/cos/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/cos/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Use5116",
+      "pt" : "Florestas de espécies invasoras",
+      "en" : "Forests of invasive species",
+      "es" : "Bosques de especies invasoras"
+    },
+    "id" : "181",
+    "superClasses" : [ "172" ]
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/TypeOfForest",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ],
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoDeBosque",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TypeOfForest",
+      "es" : "Tipo de Bosque"
+    },
+    "attributes" : [ "external" ],
+    "id" : "187"
   }, {
     "iri" : "http://crossforest.eu/ilu/ontology/ForestLand",
     "baseIri" : "http://crossforest.eu/ilu/ontology",
     "instances" : 0,
-    "label" : {
-      "IRI-based" : "ForestLand"
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
     },
-    "subClasses" : [ "7", "10" ],
+    "label" : {
+      "IRI-based" : "ForestLand",
+      "pt" : "Superfícies agroflorestais e Florestas",
+      "es" : "Bosques"
+    },
+    "subClasses" : [ "202", "164" ],
+    "comment" : { },
     "attributes" : [ "external" ],
-    "id" : "8"
+    "id" : "14",
+    "superClasses" : [ "13" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use5111",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1751,16 +2186,25 @@
         "language" : "undefined",
         "value" : "http://crossforest.eu/cos/ontology/",
         "type" : "iri"
+      } ],
+      "hasSpecies" : [ {
+        "identifier" : "hasSpecies",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species46",
+        "type" : "iri"
       } ]
     },
     "label" : {
       "IRI-based" : "Use5111",
       "pt" : "Florestas de sobreiro",
+      "en" : "Cork oak forests",
       "es" : "Bosques de Quercus suber"
     },
-    "comment" : { },
-    "id" : "21",
-    "superClasses" : [ "22" ]
+    "comment" : {
+      "undefined" : "Quercus suber"
+    },
+    "id" : "203",
+    "superClasses" : [ "172" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use5110",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1771,17 +2215,27 @@
         "language" : "undefined",
         "value" : "http://crossforest.eu/cos/ontology/",
         "type" : "iri"
+      } ],
+      "hasSpecies" : [ {
+        "identifier" : "hasSpecies",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Class1",
+        "type" : "iri"
       } ]
     },
     "label" : {
       "IRI-based" : "Use5110",
       "pt" : "Florestas de folhosas",
+      "en" : "Forests of broad-leaved species",
       "es" : "Bosques de frondosas"
     },
-    "subClasses" : [ "21", "24", "131", "132", "133", "137", "140" ],
-    "comment" : { },
-    "id" : "22",
-    "superClasses" : [ "85" ]
+    "subClasses" : [ "203", "171", "173", "174", "175", "178", "181" ],
+    "comment" : {
+      "en" : "Forests of other broad-leaved species (COS2010)",
+      "undefined" : "Angiospermae"
+    },
+    "id" : "172",
+    "superClasses" : [ "160" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1423",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1797,11 +2251,11 @@
     "label" : {
       "IRI-based" : "Use1423",
       "pt" : "Marinas e docas pesca",
+      "en" : "Marinas and fishing harbours",
       "es" : "Marinas y muelles de pesca"
     },
-    "comment" : { },
-    "id" : "157",
-    "superClasses" : [ "158" ]
+    "id" : "204",
+    "superClasses" : [ "205" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1422",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1817,11 +2271,11 @@
     "label" : {
       "IRI-based" : "Use1422",
       "pt" : "Estaleiros navais e docas secas",
+      "en" : "Ship construction and repairement docks",
       "es" : "Astilleros y diques secos"
     },
-    "comment" : { },
-    "id" : "159",
-    "superClasses" : [ "158" ]
+    "id" : "206",
+    "superClasses" : [ "205" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1300",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1837,12 +2291,15 @@
     "label" : {
       "IRI-based" : "Use1300",
       "pt" : "Infraestruturas",
+      "en" : "Infrastructure",
       "es" : "Infraestructuras"
     },
-    "subClasses" : [ "52", "106" ],
-    "comment" : { },
-    "id" : "31",
-    "superClasses" : [ "27" ]
+    "subClasses" : [ "166", "128" ],
+    "comment" : {
+      "en" : "Renewable energy production infrastructure (COS2018); Non-renewable energy production infrastructure (COS2018);…"
+    },
+    "id" : "36",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1421",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1858,11 +2315,11 @@
     "label" : {
       "IRI-based" : "Use1421",
       "pt" : "Terminais portuários de mar e de rio",
+      "en" : "Sea and river ports",
       "es" : "Terminales portuarias de mar y de río"
     },
-    "comment" : { },
-    "id" : "160",
-    "superClasses" : [ "158" ]
+    "id" : "207",
+    "superClasses" : [ "205" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1420",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1878,22 +2335,34 @@
     "label" : {
       "IRI-based" : "Use1420",
       "pt" : "Áreas portuárias",
+      "en" : "Port areas",
       "es" : "Áreas portuarias"
     },
-    "subClasses" : [ "157", "159", "160" ],
-    "comment" : { },
-    "id" : "158",
-    "superClasses" : [ "30" ]
+    "subClasses" : [ "204", "206", "207" ],
+    "id" : "205",
+    "superClasses" : [ "35" ]
   }, {
     "iri" : "http://crossforest.eu/ilu/ontology/WetLand",
     "baseIri" : "http://crossforest.eu/ilu/ontology",
     "instances" : 0,
-    "label" : {
-      "IRI-based" : "WetLand"
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
     },
-    "subClasses" : [ "149", "152" ],
+    "label" : {
+      "IRI-based" : "WetLand",
+      "pt" : "Zonas húmidas e massas de água superficiais",
+      "es" : "Humedales y masas de agua"
+    },
+    "subClasses" : [ "191", "89" ],
+    "comment" : { },
     "attributes" : [ "external" ],
-    "id" : "150"
+    "id" : "18",
+    "superClasses" : [ "13" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use5100",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1909,22 +2378,37 @@
     "label" : {
       "IRI-based" : "Use5100",
       "pt" : "Florestas",
+      "en" : "Forest",
       "es" : "Bosques"
     },
-    "subClasses" : [ "79", "22" ],
-    "comment" : { },
-    "id" : "85",
-    "superClasses" : [ "10" ]
+    "subClasses" : [ "134", "172" ],
+    "comment" : {
+      "en" : "Cork oak forests (COS2018); Forests of other oaks (COS2018);…"
+    },
+    "id" : "160",
+    "superClasses" : [ "164" ]
   }, {
     "iri" : "http://crossforest.eu/ilu/ontology/TreelessLand",
     "baseIri" : "http://crossforest.eu/ilu/ontology",
     "instances" : 0,
-    "label" : {
-      "IRI-based" : "TreelessLand"
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
     },
-    "subClasses" : [ "64", "86" ],
+    "label" : {
+      "IRI-based" : "TreelessLand",
+      "pt" : "Espaços descobertos ou com pouca vegetação e matos",
+      "es" : "Terreno desarbolado"
+    },
+    "subClasses" : [ "69", "100" ],
+    "comment" : { },
     "attributes" : [ "external" ],
-    "id" : "87"
+    "id" : "15",
+    "superClasses" : [ "13" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1412",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1940,11 +2424,11 @@
     "label" : {
       "IRI-based" : "Use1412",
       "pt" : "Rede ferroviária e espaços associados",
+      "en" : "Rail network and associated land",
       "es" : "Red ferroviaria y espacios asociados"
     },
-    "comment" : { },
-    "id" : "109",
-    "superClasses" : [ "110" ]
+    "id" : "230",
+    "superClasses" : [ "231" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1411",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1960,11 +2444,11 @@
     "label" : {
       "IRI-based" : "Use1411",
       "pt" : "Rede viária e espaços associados",
+      "en" : "Road network and associated land",
       "es" : "Red viaria y espacios asociados"
     },
-    "comment" : { },
-    "id" : "112",
-    "superClasses" : [ "110" ]
+    "id" : "232",
+    "superClasses" : [ "231" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1410",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -1980,12 +2464,15 @@
     "label" : {
       "IRI-based" : "Use1410",
       "pt" : "Redes viárias e ferroviárias e espaços associados",
-      "es" : "'Redes viarias y ferroviarias y espacios asociados'"
+      "en" : "Road and rail networks and associated land",
+      "es" : "Redes viarias y ferroviarias y espacios asociados'"
     },
-    "subClasses" : [ "109", "112" ],
-    "comment" : { },
-    "id" : "110",
-    "superClasses" : [ "30" ]
+    "subClasses" : [ "230", "232" ],
+    "comment" : {
+      "en" : "Road network and associated land (COS2018); Rail network and associated land (COS2018)"
+    },
+    "id" : "231",
+    "superClasses" : [ "35" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1531",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2001,11 +2488,11 @@
     "label" : {
       "IRI-based" : "Use1531",
       "pt" : "Áreas em construção",
+      "en" : "Construction sites",
       "es" : "Áreas de construcción"
     },
-    "comment" : { },
-    "id" : "115",
-    "superClasses" : [ "116" ]
+    "id" : "233",
+    "superClasses" : [ "234" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1530",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2021,12 +2508,12 @@
     "label" : {
       "IRI-based" : "Use1530",
       "pt" : "Áreas em construção",
+      "en" : "Construction sites",
       "es" : "Áreas en construcción"
     },
-    "subClasses" : [ "115" ],
-    "comment" : { },
-    "id" : "116",
-    "superClasses" : [ "29" ]
+    "subClasses" : [ "233" ],
+    "id" : "234",
+    "superClasses" : [ "28" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1651",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2042,11 +2529,11 @@
     "label" : {
       "IRI-based" : "Use1651",
       "pt" : "Outros equipamentos e instalações turísticas",
+      "en" : "Public and private facilities",
       "es" : "Otros equipamientos e instalaciones turísticas "
     },
-    "comment" : { },
-    "id" : "118",
-    "superClasses" : [ "119" ]
+    "id" : "235",
+    "superClasses" : [ "180" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1650",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2062,12 +2549,12 @@
     "label" : {
       "IRI-based" : "Use1650",
       "pt" : "Outros equipamentos e instalações turísticas",
+      "en" : "Public and private facilities",
       "es" : "Otros equipamientos e instalaciones turísticas"
     },
-    "subClasses" : [ "118" ],
-    "comment" : { },
-    "id" : "119",
-    "superClasses" : [ "35" ]
+    "subClasses" : [ "235" ],
+    "id" : "180",
+    "superClasses" : [ "40" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use4000",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2083,12 +2570,15 @@
     "label" : {
       "IRI-based" : "Use4000",
       "pt" : "Superfícies agroflorestais",
+      "en" : "AFS",
       "es" : "Superficies agroforestales"
     },
-    "subClasses" : [ "183" ],
-    "comment" : { },
-    "id" : "7",
-    "superClasses" : [ "8" ]
+    "subClasses" : [ "10" ],
+    "comment" : {
+      "en" : "(Agroforestry surfaces); AFS of cork oak (COS2018); AFS of holm oak (COS2018);…"
+    },
+    "id" : "202",
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1522",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2104,11 +2594,11 @@
     "label" : {
       "IRI-based" : "Use1522",
       "pt" : "Lixeiras e Sucatas",
+      "en" : "Dumps and scrap yards",
       "es" : "Vertederos y desechos"
     },
-    "comment" : { },
-    "id" : "184",
-    "superClasses" : [ "185" ]
+    "id" : "243",
+    "superClasses" : [ "30" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1400",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2124,12 +2614,15 @@
     "label" : {
       "IRI-based" : "Use1400",
       "pt" : "Infraestruturas",
+      "en" : "Infrastructure",
       "es" : "Transportes"
     },
-    "subClasses" : [ "110", "158", "57" ],
-    "comment" : { },
-    "id" : "30",
-    "superClasses" : [ "27" ]
+    "subClasses" : [ "231", "205", "168" ],
+    "comment" : {
+      "en" : "Renewable energy production infrastructure (COS2018); Non-renewable energy production infrastructure (COS2018);…"
+    },
+    "id" : "35",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1521",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2145,31 +2638,11 @@
     "label" : {
       "IRI-based" : "Use1521",
       "pt" : "Aterros",
+      "en" : "Landfills",
       "es" : "Aterros"
     },
-    "comment" : { },
-    "id" : "186",
-    "superClasses" : [ "185" ]
-  }, {
-    "iri" : "http://crossforest.eu/cos/ontology/Use1641",
-    "baseIri" : "http://crossforest.eu/cos/ontology",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/cos/ontology/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Use1641",
-      "pt" : "Cemitérios",
-      "es" : "Cementerios"
-    },
-    "comment" : { },
-    "id" : "187",
-    "superClasses" : [ "188" ]
+    "id" : "244",
+    "superClasses" : [ "30" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1520",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2185,12 +2658,32 @@
     "label" : {
       "IRI-based" : "Use1520",
       "pt" : "Áreas de deposição de resíduos",
+      "en" : "Waste disposal areas",
       "es" : "Áreas de deposición de resíduos"
     },
-    "subClasses" : [ "184", "186" ],
-    "comment" : { },
-    "id" : "185",
-    "superClasses" : [ "29" ]
+    "subClasses" : [ "243", "244" ],
+    "id" : "30",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://crossforest.eu/cos/ontology/Use1641",
+    "baseIri" : "http://crossforest.eu/cos/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/cos/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Use1641",
+      "pt" : "Cemitérios",
+      "en" : "Cemeteries",
+      "es" : "Cementerios"
+    },
+    "id" : "245",
+    "superClasses" : [ "177" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1640",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2205,13 +2698,13 @@
     },
     "label" : {
       "IRI-based" : "Use1640",
-      "pt" : "Cementerios",
+      "pt" : "Cemitérios",
+      "en" : "Cemeteries",
       "es" : "Cementerios"
     },
-    "subClasses" : [ "187" ],
-    "comment" : { },
-    "id" : "188",
-    "superClasses" : [ "35" ]
+    "subClasses" : [ "245" ],
+    "id" : "177",
+    "superClasses" : [ "40" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use4112",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2222,16 +2715,25 @@
         "language" : "undefined",
         "value" : "http://crossforest.eu/cos/ontology/",
         "type" : "iri"
+      } ],
+      "hasSpecies" : [ {
+        "identifier" : "hasSpecies",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species45",
+        "type" : "iri"
       } ]
     },
     "label" : {
       "IRI-based" : "Use4112",
       "pt" : "Superfícies agroflorestais de azinheira",
+      "en" : "AFS of holm oak",
       "es" : "Superficies agroforestales de Quercus rotundifolia"
     },
-    "comment" : { },
-    "id" : "190",
-    "superClasses" : [ "182" ]
+    "comment" : {
+      "undefined" : "Quercus ilex"
+    },
+    "id" : "62",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use4111",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2242,16 +2744,25 @@
         "language" : "undefined",
         "value" : "http://crossforest.eu/cos/ontology/",
         "type" : "iri"
+      } ],
+      "hasSpecies" : [ {
+        "identifier" : "hasSpecies",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species46",
+        "type" : "iri"
       } ]
     },
     "label" : {
       "IRI-based" : "Use4111",
       "pt" : "Superfícies agroflorestais de sobreiro",
+      "en" : "AFS of cork oak",
       "es" : "Superficies agroforestales de Quercus suber"
     },
-    "comment" : { },
-    "id" : "181",
-    "superClasses" : [ "182" ]
+    "comment" : {
+      "undefined" : "Quercus suber"
+    },
+    "id" : "66",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use4114",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2262,16 +2773,25 @@
         "language" : "undefined",
         "value" : "http://crossforest.eu/cos/ontology/",
         "type" : "iri"
+      } ],
+      "hasSpecies" : [ {
+        "identifier" : "hasSpecies",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species23",
+        "type" : "iri"
       } ]
     },
     "label" : {
       "IRI-based" : "Use4114",
       "pt" : "Superfícies agroflorestais de pinheiro manso",
+      "en" : "AFS of Stone pine",
       "es" : "Superficies agroforestales de Pinus pinea"
     },
-    "comment" : { },
-    "id" : "198",
-    "superClasses" : [ "182" ]
+    "comment" : {
+      "undefined" : "Pinus pinea"
+    },
+    "id" : "68",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use4113",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2282,16 +2802,25 @@
         "language" : "undefined",
         "value" : "http://crossforest.eu/cos/ontology/",
         "type" : "iri"
+      } ],
+      "hasSpecies" : [ {
+        "identifier" : "hasSpecies",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Genus121",
+        "type" : "iri"
       } ]
     },
     "label" : {
       "IRI-based" : "Use4113",
       "pt" : "Superfícies agroflorestais de outros carvalhos",
+      "en" : "AFS of other oaks",
       "es" : "Superficies agroforestales de otros Quercus"
     },
-    "comment" : { },
-    "id" : "201",
-    "superClasses" : [ "182" ]
+    "comment" : {
+      "undefined" : "Quercus"
+    },
+    "id" : "73",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use4116",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2302,16 +2831,30 @@
         "language" : "undefined",
         "value" : "http://crossforest.eu/cos/ontology/",
         "type" : "iri"
+      } ],
+      "hasSpecies" : [ {
+        "identifier" : "hasSpecies",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species45",
+        "type" : "iri"
+      }, {
+        "identifier" : "hasSpecies",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species46",
+        "type" : "iri"
       } ]
     },
     "label" : {
       "IRI-based" : "Use4116",
       "pt" : "Superfícies agroflorestais de sobreiro com azinheira",
+      "en" : "AFS of cork and holm oaks",
       "es" : "Superficies agroforestales de Querqus suber y Quercus rotundifolia"
     },
-    "comment" : { },
-    "id" : "204",
-    "superClasses" : [ "182" ]
+    "comment" : {
+      "undefined" : "Quercus suber"
+    },
+    "id" : "75",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use4115",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2327,11 +2870,11 @@
     "label" : {
       "IRI-based" : "Use4115",
       "pt" : "Superfícies agroflorestais de outras espécies",
+      "en" : "AFS of other species",
       "es" : "Superficies agroforestales de otras especies"
     },
-    "comment" : { },
-    "id" : "206",
-    "superClasses" : [ "182" ]
+    "id" : "49",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use4117",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2347,11 +2890,11 @@
     "label" : {
       "IRI-based" : "Use4117",
       "pt" : "Superfícies agroflorestais de outras misturas",
+      "en" : "AFS of other mixtures",
       "es" : "Superficies agroforestales de otras mezclas"
     },
-    "comment" : { },
-    "id" : "211",
-    "superClasses" : [ "182" ]
+    "id" : "51",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use9122",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2367,11 +2910,11 @@
     "label" : {
       "IRI-based" : "Use9122",
       "pt" : "Lagos e lagoas interiores naturais",
+      "en" : "Natural inland lakes and lagoons",
       "es" : "Lagos y lagunas naturales"
     },
-    "comment" : { },
-    "id" : "210",
-    "superClasses" : [ "193" ]
+    "id" : "93",
+    "superClasses" : [ "54" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use9000",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2387,12 +2930,12 @@
     "label" : {
       "IRI-based" : "Use9000",
       "pt" : "Massas de água superficiais",
+      "en" : "Surface water bodies",
       "es" : "Aguas superficiales"
     },
-    "subClasses" : [ "208", "136", "49" ],
-    "comment" : { },
-    "id" : "152",
-    "superClasses" : [ "150" ]
+    "subClasses" : [ "220", "91", "88" ],
+    "id" : "89",
+    "superClasses" : [ "18" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use9121",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2408,11 +2951,11 @@
     "label" : {
       "IRI-based" : "Use9121",
       "pt" : "Lagos e lagoas interiores artificiais",
+      "en" : "Artificial inland lakes and lagoons",
       "es" : "Lagos y lagunas artificiales"
     },
-    "comment" : { },
-    "id" : "197",
-    "superClasses" : [ "193" ]
+    "id" : "95",
+    "superClasses" : [ "54" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use9120",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2428,12 +2971,12 @@
     "label" : {
       "IRI-based" : "Use9120",
       "pt" : "Planos de água",
+      "en" : "Water plans",
       "es" : "Planos de agua"
     },
-    "subClasses" : [ "210", "197", "195", "203", "200", "192" ],
-    "comment" : { },
-    "id" : "193",
-    "superClasses" : [ "208" ]
+    "subClasses" : [ "93", "95", "53", "56", "58", "60" ],
+    "id" : "54",
+    "superClasses" : [ "220" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use9126",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2449,11 +2992,11 @@
     "label" : {
       "IRI-based" : "Use9126",
       "pt" : "Aquicultura",
+      "en" : "Aquaculture",
       "es" : "Acuicultura"
     },
-    "comment" : { },
-    "id" : "195",
-    "superClasses" : [ "193" ]
+    "id" : "53",
+    "superClasses" : [ "54" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use9125",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2469,11 +3012,11 @@
     "label" : {
       "IRI-based" : "Use9125",
       "pt" : "Charcas",
+      "en" : "Artificial ponds",
       "es" : "Charcas"
     },
-    "comment" : { },
-    "id" : "203",
-    "superClasses" : [ "193" ]
+    "id" : "56",
+    "superClasses" : [ "54" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use4110",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2489,12 +3032,15 @@
     "label" : {
       "IRI-based" : "Use4110",
       "pt" : "Superfícies agroflorestais",
+      "en" : "AFS",
       "es" : "Superficies agroforestales"
     },
-    "subClasses" : [ "190", "181", "198", "201", "204", "206", "211" ],
-    "comment" : { },
-    "id" : "182",
-    "superClasses" : [ "183" ]
+    "subClasses" : [ "62", "66", "68", "73", "75", "49", "51" ],
+    "comment" : {
+      "en" : "(Agroforestry surfaces); AFS of cork oak (COS2018); AFS of holm oak (COS2018);…"
+    },
+    "id" : "9",
+    "superClasses" : [ "10" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use9124",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2510,11 +3056,11 @@
     "label" : {
       "IRI-based" : "Use9124",
       "pt" : "Albufeiras de represas ou de açudes",
+      "en" : "Small dam reservoirs",
       "es" : "Depósitos de presa o vertederos"
     },
-    "comment" : { },
-    "id" : "200",
-    "superClasses" : [ "193" ]
+    "id" : "58",
+    "superClasses" : [ "54" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use9123",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2530,11 +3076,11 @@
     "label" : {
       "IRI-based" : "Use9123",
       "pt" : "Albufeiras de barragens",
+      "en" : "Barrage reservoirs",
       "es" : "Embalses de presa"
     },
-    "comment" : { },
-    "id" : "192",
-    "superClasses" : [ "193" ]
+    "id" : "60",
+    "superClasses" : [ "54" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1511",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2550,11 +3096,11 @@
     "label" : {
       "IRI-based" : "Use1511",
       "pt" : "Minas a céu aberto",
+      "en" : "Surface mines",
       "es" : "Minas a cielo abierto"
     },
-    "comment" : { },
-    "id" : "213",
-    "superClasses" : [ "214" ]
+    "id" : "1",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1510",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2570,12 +3116,12 @@
     "label" : {
       "IRI-based" : "Use1510",
       "pt" : "Áreas de extração de inertes",
+      "en" : "Inert extraction areas",
       "es" : "Áreas de extracción de inertes"
     },
-    "subClasses" : [ "213", "215" ],
-    "comment" : { },
-    "id" : "214",
-    "superClasses" : [ "29" ]
+    "subClasses" : [ "1", "4" ],
+    "id" : "2",
+    "superClasses" : [ "28" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1631",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2591,11 +3137,11 @@
     "label" : {
       "IRI-based" : "Use1631",
       "pt" : "Equipamentos culturais",
+      "en" : "Cultural facilities",
       "es" : "Equipamientos culturales"
     },
-    "comment" : { },
-    "id" : "216",
-    "superClasses" : [ "217" ]
+    "id" : "6",
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1630",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2611,12 +3157,12 @@
     "label" : {
       "IRI-based" : "Use1630",
       "pt" : "Equipamentos culturais",
+      "en" : "Cultural facilities",
       "es" : "Equipamientos culturales"
     },
-    "subClasses" : [ "216" ],
-    "comment" : { },
-    "id" : "217",
-    "superClasses" : [ "35" ]
+    "subClasses" : [ "6" ],
+    "id" : "7",
+    "superClasses" : [ "40" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use4100",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2632,12 +3178,34 @@
     "label" : {
       "IRI-based" : "Use4100",
       "pt" : "Superfícies agroflorestais",
+      "en" : "AFS",
       "es" : "Superficies agroforestales"
     },
-    "subClasses" : [ "182" ],
+    "subClasses" : [ "9" ],
+    "comment" : {
+      "en" : "(Agroforestry surfaces); AFS of cork oak (COS2018); AFS of holm oak (COS2018);…"
+    },
+    "id" : "10",
+    "superClasses" : [ "202" ]
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/Area",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Area"
+    },
     "comment" : { },
-    "id" : "183",
-    "superClasses" : [ "7" ]
+    "attributes" : [ "external" ],
+    "id" : "64",
+    "superClasses" : [ "63" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1512",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2653,11 +3221,11 @@
     "label" : {
       "IRI-based" : "Use1512",
       "pt" : "Pedreiras",
+      "en" : "Quarries",
       "es" : "Canteras"
     },
-    "comment" : { },
-    "id" : "215",
-    "superClasses" : [ "214" ]
+    "id" : "4",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use9111",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2673,11 +3241,11 @@
     "label" : {
       "IRI-based" : "Use9111",
       "pt" : "Cursos de água naturais",
+      "en" : "Natural water courses",
       "es" : "Cursos de agua naturales"
     },
-    "comment" : { },
-    "id" : "228",
-    "superClasses" : [ "229" ]
+    "id" : "20",
+    "superClasses" : [ "21" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use9110",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2693,12 +3261,15 @@
     "label" : {
       "IRI-based" : "Use9110",
       "pt" : "Cursos de água",
+      "en" : "Water courses",
       "es" : "Cursos de agua"
     },
-    "subClasses" : [ "228", "231" ],
-    "comment" : { },
-    "id" : "229",
-    "superClasses" : [ "208" ]
+    "subClasses" : [ "20", "23" ],
+    "comment" : {
+      "en" : "Natural water courses (COS2018)"
+    },
+    "id" : "21",
+    "superClasses" : [ "220" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use9112",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2714,11 +3285,11 @@
     "label" : {
       "IRI-based" : "Use9112",
       "pt" : "Cursos de água modificados ou artificializados",
+      "en" : "Artificial water channels",
       "es" : "Cursos de agua con alteraciones artificiales"
     },
-    "comment" : { },
-    "id" : "231",
-    "superClasses" : [ "229" ]
+    "id" : "23",
+    "superClasses" : [ "21" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1500",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2734,12 +3305,12 @@
     "label" : {
       "IRI-based" : "Use1500",
       "pt" : "Áreas de extração de inertes, áreas de deposição de resíduos e estaleiros de construção",
+      "en" : "Inert extraction areas, waste disposal areas and construction sites",
       "es" : "Áreas de extracción inerte o áreas de eliminación de resíduos y obras"
     },
-    "subClasses" : [ "214", "185", "116" ],
-    "comment" : { },
-    "id" : "29",
-    "superClasses" : [ "27" ]
+    "subClasses" : [ "2", "30", "234" ],
+    "id" : "28",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1621",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2755,11 +3326,11 @@
     "label" : {
       "IRI-based" : "Use1621",
       "pt" : "Parques de campismo",
+      "en" : "Campsites",
       "es" : "Campings"
     },
-    "comment" : { },
-    "id" : "234",
-    "superClasses" : [ "235" ]
+    "id" : "239",
+    "superClasses" : [ "200" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1620",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2775,33 +3346,15 @@
     "label" : {
       "IRI-based" : "Use1620",
       "pt" : "Equipamentos de lazer e parques de campismo",
+      "en" : "Leisure and campsites facilities",
       "es" : "Instalaciones de ocio y camping"
     },
-    "subClasses" : [ "234", "236" ],
-    "comment" : { },
-    "id" : "235",
-    "superClasses" : [ "35" ]
-  }, {
-    "iri" : "http://crossforest.eu/cos/ontology/Use3000",
-    "baseIri" : "http://crossforest.eu/cos/ontology",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/cos/ontology/",
-        "type" : "iri"
-      } ]
+    "subClasses" : [ "239", "241" ],
+    "comment" : {
+      "en" : "Others Leisure facilities (COS2018);  Campsites (COS2018)"
     },
-    "label" : {
-      "IRI-based" : "Use3000",
-      "pt" : "Pastagens",
-      "es" : "Pastos"
-    },
-    "subClasses" : [ "237" ],
-    "comment" : { },
-    "id" : "128",
-    "superClasses" : [ "129" ]
+    "id" : "200",
+    "superClasses" : [ "40" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use3121",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2817,11 +3370,59 @@
     "label" : {
       "IRI-based" : "Use3121",
       "pt" : "Pastagens espontâneas",
+      "en" : "Natural herbaceous vegetation",
       "es" : "Pastos espontáneos"
     },
-    "comment" : { },
-    "id" : "238",
-    "superClasses" : [ "239" ]
+    "id" : "223",
+    "superClasses" : [ "193" ]
+  }, {
+    "iri" : "http://crossforest.eu/cos/ontology/Use3000",
+    "baseIri" : "http://crossforest.eu/cos/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/cos/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Use3000",
+      "pt" : "Pastagens",
+      "en" : "Pastures",
+      "es" : "Pastos"
+    },
+    "subClasses" : [ "194" ],
+    "comment" : {
+      "en" : "Permanent pastures (COS2018)"
+    },
+    "id" : "218",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/SpatialDistribution",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ],
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SpatialDistribution",
+      "es" : "Distribución"
+    },
+    "attributes" : [ "external" ],
+    "id" : "283"
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1622",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2837,11 +3438,11 @@
     "label" : {
       "IRI-based" : "Use1622",
       "pt" : "Equipamentos de lazer",
+      "en" : "Other leisure facilities",
       "es" : "Instalaciones de ocio"
     },
-    "comment" : { },
-    "id" : "236",
-    "superClasses" : [ "235" ]
+    "id" : "241",
+    "superClasses" : [ "200" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use9100",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2857,12 +3458,12 @@
     "label" : {
       "IRI-based" : "Use9100",
       "pt" : "Massas de água interiores",
+      "en" : "Inland water bodies",
       "es" : "Masas de agua interiores"
     },
-    "subClasses" : [ "229", "193" ],
-    "comment" : { },
-    "id" : "208",
-    "superClasses" : [ "152" ]
+    "subClasses" : [ "21", "54" ],
+    "id" : "220",
+    "superClasses" : [ "89" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use9340",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2878,11 +3479,11 @@
     "label" : {
       "IRI-based" : "Use9340",
       "pt" : "Oceano",
+      "en" : "Ocean",
       "es" : "Océano"
     },
-    "comment" : { },
-    "id" : "139",
-    "superClasses" : [ "136" ]
+    "id" : "289",
+    "superClasses" : [ "91" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use3120",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2898,12 +3499,12 @@
     "label" : {
       "IRI-based" : "Use3120",
       "pt" : "Pastagens espontâneas",
+      "en" : "Natural herbaceous vegetation",
       "es" : "Pastos espontáneos"
     },
-    "subClasses" : [ "238" ],
-    "comment" : { },
-    "id" : "239",
-    "superClasses" : [ "237" ]
+    "subClasses" : [ "223" ],
+    "id" : "193",
+    "superClasses" : [ "194" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1610",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2919,12 +3520,15 @@
     "label" : {
       "IRI-based" : "Use1610",
       "pt" : "Equipamentos desportivos",
+      "en" : "Sports facilities",
       "es" : "Equipamentos deportivos"
     },
-    "subClasses" : [ "251", "252" ],
-    "comment" : { },
-    "id" : "250",
-    "superClasses" : [ "35" ]
+    "subClasses" : [ "225", "227" ],
+    "comment" : {
+      "en" : "Other sports facilities (COS2018); Cultural facilities (COS2018)"
+    },
+    "id" : "198",
+    "superClasses" : [ "40" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use3110",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2940,12 +3544,12 @@
     "label" : {
       "IRI-based" : "Use3110",
       "pt" : "Pastagens melhoradas",
+      "en" : "Permanent pastures",
       "es" : "Pastos mejorados"
     },
-    "subClasses" : [ "255" ],
-    "comment" : { },
-    "id" : "254",
-    "superClasses" : [ "237" ]
+    "subClasses" : [ "229" ],
+    "id" : "196",
+    "superClasses" : [ "194" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use3111",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2961,11 +3565,11 @@
     "label" : {
       "IRI-based" : "Use3111",
       "pt" : "Pastagens melhoradas",
+      "en" : "Permanent pastures",
       "es" : "Pastos mejoraoos"
     },
-    "comment" : { },
-    "id" : "255",
-    "superClasses" : [ "254" ]
+    "id" : "229",
+    "superClasses" : [ "196" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1612",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -2981,11 +3585,11 @@
     "label" : {
       "IRI-based" : "Use1612",
       "pt" : "Instalações desportivas",
+      "en" : "Other sports facilities",
       "es" : "Instalaciones deportivas"
     },
-    "comment" : { },
-    "id" : "251",
-    "superClasses" : [ "250" ]
+    "id" : "225",
+    "superClasses" : [ "198" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1611",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3001,32 +3605,11 @@
     "label" : {
       "IRI-based" : "Use1611",
       "pt" : "Campos de golfe",
+      "en" : "Golf courses",
       "es" : "Campos de golf"
     },
-    "comment" : { },
-    "id" : "252",
-    "superClasses" : [ "250" ]
-  }, {
-    "iri" : "http://crossforest.eu/cos/ontology/Use8120",
-    "baseIri" : "http://crossforest.eu/cos/ontology",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/cos/ontology/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Use8120",
-      "pt" : "Zonas húmidas litorais",
-      "es" : "Zonas húmedas litorales"
-    },
-    "subClasses" : [ "264", "265" ],
-    "comment" : { },
-    "id" : "14",
-    "superClasses" : [ "15" ]
+    "id" : "227",
+    "superClasses" : [ "198" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use9210",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3042,12 +3625,12 @@
     "label" : {
       "IRI-based" : "Use9210",
       "pt" : "Aquicultura",
+      "en" : "Aquaculture",
       "es" : "Acuicultura"
     },
-    "subClasses" : [ "266" ],
-    "comment" : { },
-    "id" : "48",
-    "superClasses" : [ "49" ]
+    "subClasses" : [ "209" ],
+    "id" : "189",
+    "superClasses" : [ "88" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use9331",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3063,13 +3646,13 @@
     "label" : {
       "IRI-based" : "Use9331",
       "pt" : "Oceano",
+      "en" : "Ocean",
       "es" : "Océano"
     },
-    "comment" : { },
-    "id" : "267",
-    "superClasses" : [ "135" ]
+    "id" : "215",
+    "superClasses" : [ "216" ]
   }, {
-    "iri" : "http://crossforest.eu/cos/ontology/Use8000",
+    "iri" : "http://crossforest.eu/cos/ontology/Use8120",
     "baseIri" : "http://crossforest.eu/cos/ontology",
     "instances" : 0,
     "annotations" : {
@@ -3081,14 +3664,17 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "Use8000",
-      "pt" : "Zonas húmidas",
-      "es" : "Zonas húmedas"
+      "IRI-based" : "Use8120",
+      "pt" : "Zonas húmidas litorais",
+      "en" : "Coastal wet areas",
+      "es" : "Zonas húmedas litorales"
     },
-    "subClasses" : [ "15" ],
-    "comment" : { },
-    "id" : "149",
-    "superClasses" : [ "150" ]
+    "subClasses" : [ "211", "213" ],
+    "comment" : {
+      "en" : "Coastal aquaculture (COS2010)"
+    },
+    "id" : "145",
+    "superClasses" : [ "146" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use9330",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3104,12 +3690,12 @@
     "label" : {
       "IRI-based" : "Use9330",
       "pt" : "Desembocaduras fluviais",
+      "en" : "Rivers mouths",
       "es" : "Desembocaduras fluviales"
     },
-    "subClasses" : [ "267" ],
-    "comment" : { },
-    "id" : "135",
-    "superClasses" : [ "136" ]
+    "subClasses" : [ "215" ],
+    "id" : "216",
+    "superClasses" : [ "91" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use8121",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3125,11 +3711,32 @@
     "label" : {
       "IRI-based" : "Use8121",
       "pt" : "Sapais",
+      "en" : "Salt marshes",
       "es" : "Marismas"
     },
-    "comment" : { },
-    "id" : "264",
-    "superClasses" : [ "14" ]
+    "id" : "211",
+    "superClasses" : [ "145" ]
+  }, {
+    "iri" : "http://crossforest.eu/cos/ontology/Use8000",
+    "baseIri" : "http://crossforest.eu/cos/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/cos/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Use8000",
+      "pt" : "Zonas húmidas",
+      "en" : "Wet areas",
+      "es" : "Zonas húmedas"
+    },
+    "subClasses" : [ "146" ],
+    "id" : "191",
+    "superClasses" : [ "18" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use8122",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3145,11 +3752,11 @@
     "label" : {
       "IRI-based" : "Use8122",
       "pt" : "Zonas entremarés",
+      "en" : "Intertidal flats",
       "es" : "Zonas intermareales"
     },
-    "comment" : { },
-    "id" : "265",
-    "superClasses" : [ "14" ]
+    "id" : "213",
+    "superClasses" : [ "145" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use9211",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3165,11 +3772,11 @@
     "label" : {
       "IRI-based" : "Use9211",
       "pt" : "Salinas",
+      "en" : "Salines",
       "es" : "Salinas"
     },
-    "comment" : { },
-    "id" : "266",
-    "superClasses" : [ "48" ]
+    "id" : "209",
+    "superClasses" : [ "189" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use3100",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3185,12 +3792,12 @@
     "label" : {
       "IRI-based" : "Use3100",
       "pt" : "Pastagens",
+      "en" : "Pastures",
       "es" : "Pastos"
     },
-    "subClasses" : [ "239", "254" ],
-    "comment" : { },
-    "id" : "237",
-    "superClasses" : [ "128" ]
+    "subClasses" : [ "193", "196" ],
+    "id" : "194",
+    "superClasses" : [ "218" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1600",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3206,12 +3813,15 @@
     "label" : {
       "IRI-based" : "Use1600",
       "pt" : "Equipamentos",
+      "en" : "Facilities",
       "es" : "Equipamientos"
     },
-    "subClasses" : [ "250", "235", "217", "188", "119" ],
-    "comment" : { },
-    "id" : "35",
-    "superClasses" : [ "27" ]
+    "subClasses" : [ "198", "200", "7", "177", "180" ],
+    "comment" : {
+      "en" : "Public and private facilities (COS2010)"
+    },
+    "id" : "40",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use9320",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3227,12 +3837,12 @@
     "label" : {
       "IRI-based" : "Use9320",
       "pt" : "Lagoas costeiras",
+      "en" : "Coastal lagoons",
       "es" : "Lagos costeros"
     },
-    "subClasses" : [ "279" ],
-    "comment" : { },
-    "id" : "156",
-    "superClasses" : [ "136" ]
+    "subClasses" : [ "183" ],
+    "id" : "184",
+    "superClasses" : [ "91" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use8110",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3248,12 +3858,12 @@
     "label" : {
       "IRI-based" : "Use8110",
       "pt" : "Zonas húmidas interiores",
+      "en" : "Inland wet areas",
       "es" : "Zonas húmedas interiores"
     },
-    "subClasses" : [ "281" ],
-    "comment" : { },
-    "id" : "17",
-    "superClasses" : [ "15" ]
+    "subClasses" : [ "186" ],
+    "id" : "148",
+    "superClasses" : [ "146" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use8111",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3269,31 +3879,11 @@
     "label" : {
       "IRI-based" : "Use8111",
       "pt" : "Pauis",
+      "en" : "Inland marshes",
       "es" : "Turberas"
     },
-    "comment" : { },
-    "id" : "281",
-    "superClasses" : [ "17" ]
-  }, {
-    "iri" : "http://crossforest.eu/cos/ontology/Use9321",
-    "baseIri" : "http://crossforest.eu/cos/ontology",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/cos/ontology/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Use9321",
-      "pt" : "Desembocaduras fluviais",
-      "es" : "Desembocaduras fluviales"
-    },
-    "comment" : { },
-    "id" : "279",
-    "superClasses" : [ "156" ]
+    "id" : "186",
+    "superClasses" : [ "148" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use9200",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3309,12 +3899,60 @@
     "label" : {
       "IRI-based" : "Use9200",
       "pt" : "Aquicultura",
+      "en" : "Aquaculture",
       "es" : "Acuicultura"
     },
-    "subClasses" : [ "48" ],
-    "comment" : { },
-    "id" : "49",
-    "superClasses" : [ "152" ]
+    "subClasses" : [ "189" ],
+    "id" : "88",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "http://crossforest.eu/cos/ontology/Use9321",
+    "baseIri" : "http://crossforest.eu/cos/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/cos/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Use9321",
+      "pt" : "Desembocaduras fluviais",
+      "en" : "Rivers mouths",
+      "es" : "Desembocaduras fluviales"
+    },
+    "id" : "183",
+    "superClasses" : [ "184" ]
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/CanopyCover",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ],
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FraccionDeCabidaCubierta",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CanopyCover",
+      "es" : "Fracción de Cabida Cubierta"
+    },
+    "comment" : {
+      "en" : "Canopy Cover of the Vegetation Structure",
+      "es" : "Representa la proporción total de la vegetación."
+    },
+    "attributes" : [ "external" ],
+    "id" : "328"
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2000",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3330,22 +3968,34 @@
     "label" : {
       "IRI-based" : "Use2000",
       "pt" : "Agricultura",
+      "en" : "Agriculture",
       "es" : "Agricultura"
     },
-    "subClasses" : [ "41", "63", "38", "45" ],
-    "comment" : { },
-    "id" : "61",
-    "superClasses" : [ "129" ]
+    "subClasses" : [ "46", "83", "43", "142" ],
+    "id" : "84",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "http://crossforest.eu/ilu/ontology/ArtificialLand",
     "baseIri" : "http://crossforest.eu/ilu/ontology",
     "instances" : 0,
-    "label" : {
-      "IRI-based" : "ArtificialLand"
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
     },
-    "subClasses" : [ "27" ],
+    "label" : {
+      "IRI-based" : "ArtificialLand",
+      "pt" : "Territórios artificializado",
+      "es" : "Territorios Artificiales"
+    },
+    "subClasses" : [ "34" ],
+    "comment" : { },
     "attributes" : [ "external" ],
-    "id" : "28"
+    "id" : "16",
+    "superClasses" : [ "13" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1711",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3361,11 +4011,11 @@
     "label" : {
       "IRI-based" : "Use1711",
       "pt" : "Parques e jardins",
+      "en" : "Parks and gardens",
       "es" : "Parques y jardines"
     },
-    "comment" : { },
-    "id" : "1",
-    "superClasses" : [ "2" ]
+    "id" : "138",
+    "superClasses" : [ "126" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1710",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3381,12 +4031,12 @@
     "label" : {
       "IRI-based" : "Use1710",
       "pt" : "Parques e jardins ",
+      "en" : "Parks and gardens",
       "es" : "Parques y jardines"
     },
-    "subClasses" : [ "1" ],
-    "comment" : { },
-    "id" : "2",
-    "superClasses" : [ "34" ]
+    "subClasses" : [ "138" ],
+    "id" : "126",
+    "superClasses" : [ "39" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use7130",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3402,12 +4052,12 @@
     "label" : {
       "IRI-based" : "Use7130",
       "pt" : "Vegetação esparsa",
+      "en" : "Sparsely vegetated areas",
       "es" : "Vegetación escasa"
     },
-    "subClasses" : [ "4" ],
-    "comment" : { },
-    "id" : "5",
-    "superClasses" : [ "18" ]
+    "subClasses" : [ "140" ],
+    "id" : "70",
+    "superClasses" : [ "24" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use7131",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3423,32 +4073,11 @@
     "label" : {
       "IRI-based" : "Use7131",
       "pt" : "Vegetação esparsa",
+      "en" : "Sparsely vegetated areas",
       "es" : "Vegetación escasa"
     },
-    "comment" : { },
-    "id" : "4",
-    "superClasses" : [ "5" ]
-  }, {
-    "iri" : "http://crossforest.eu/cos/ontology/Use8100",
-    "baseIri" : "http://crossforest.eu/cos/ontology",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/cos/ontology/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Use8100",
-      "pt" : "Zonas húmidas",
-      "es" : "Zonas húmedas"
-    },
-    "subClasses" : [ "14", "17" ],
-    "comment" : { },
-    "id" : "15",
-    "superClasses" : [ "149" ]
+    "id" : "140",
+    "superClasses" : [ "70" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use9311",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3464,11 +4093,32 @@
     "label" : {
       "IRI-based" : "Use9311",
       "pt" : "Lagoas costeiras",
+      "en" : "Coastal lagoons",
       "es" : "Lagos costeros"
     },
-    "comment" : { },
-    "id" : "170",
-    "superClasses" : [ "142" ]
+    "id" : "150",
+    "superClasses" : [ "151" ]
+  }, {
+    "iri" : "http://crossforest.eu/cos/ontology/Use8100",
+    "baseIri" : "http://crossforest.eu/cos/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/cos/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Use8100",
+      "pt" : "Zonas húmidas",
+      "en" : "Wet areas",
+      "es" : "Zonas húmedas"
+    },
+    "subClasses" : [ "145", "148" ],
+    "id" : "146",
+    "superClasses" : [ "191" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use9310",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3484,22 +4134,81 @@
     "label" : {
       "IRI-based" : "Use9310",
       "pt" : "Salinas",
+      "en" : "Salines",
       "es" : "Salinas"
     },
-    "subClasses" : [ "170" ],
-    "comment" : { },
-    "id" : "142",
-    "superClasses" : [ "136" ]
+    "subClasses" : [ "150" ],
+    "id" : "151",
+    "superClasses" : [ "91" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "155",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "132",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "257",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "236",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "279",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
   }, {
     "iri" : "http://crossforest.eu/ilu/ontology/Patch",
     "baseIri" : "http://crossforest.eu/ilu/ontology",
     "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
     "label" : {
       "IRI-based" : "Patch"
     },
-    "subClasses" : [ "172" ],
+    "subClasses" : [ "98" ],
+    "comment" : { },
     "attributes" : [ "external" ],
-    "id" : "173"
+    "id" : "136",
+    "superClasses" : [ "135" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "97",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "325",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2230",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3515,33 +4224,12 @@
     "label" : {
       "IRI-based" : "Use2230",
       "pt" : "Olivais",
+      "en" : "Olive groves",
       "es" : "Olivares"
     },
-    "subClasses" : [ "164" ],
-    "comment" : { },
-    "id" : "75",
-    "superClasses" : [ "63" ]
-  }, {
-    "iri" : "http://crossforest.eu/cos/ontology/Use2110",
-    "baseIri" : "http://crossforest.eu/cos/ontology",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/cos/ontology/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Use2110",
-      "pt" : "Culturas temporárias de sequeiro e regadio e arrozais",
-      "es" : "Cultivos temporales de secano y regadío y arrozales"
-    },
-    "subClasses" : [ "166", "146" ],
-    "comment" : { },
-    "id" : "103",
-    "superClasses" : [ "41" ]
+    "subClasses" : [ "118" ],
+    "id" : "85",
+    "superClasses" : [ "83" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2231",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3557,11 +4245,35 @@
     "label" : {
       "IRI-based" : "Use2231",
       "pt" : "Olivais",
+      "en" : "Olive groves",
       "es" : "Olivares"
     },
-    "comment" : { },
-    "id" : "164",
-    "superClasses" : [ "75" ]
+    "id" : "118",
+    "superClasses" : [ "85" ]
+  }, {
+    "iri" : "http://crossforest.eu/cos/ontology/Use2110",
+    "baseIri" : "http://crossforest.eu/cos/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/cos/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Use2110",
+      "pt" : "Culturas temporárias de sequeiro e regadio e arrozais",
+      "en" : "Irrigated and non-irrigated arable land and Rice fields",
+      "es" : "Cultivos temporales de secano y regadío y arrozales"
+    },
+    "subClasses" : [ "120", "123" ],
+    "comment" : {
+      "en" : "Irrigated and non-irrigated arable land (COS2018)"
+    },
+    "id" : "121",
+    "superClasses" : [ "46" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2111",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3577,11 +4289,11 @@
     "label" : {
       "IRI-based" : "Use2111",
       "pt" : "Culturas temporárias de sequeiro e regadio",
+      "en" : "Irrigated and non-irrigated arable land",
       "es" : "Cultivos temporales de secano y regadío"
     },
-    "comment" : { },
-    "id" : "166",
-    "superClasses" : [ "103" ]
+    "id" : "120",
+    "superClasses" : [ "121" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2112",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3597,11 +4309,11 @@
     "label" : {
       "IRI-based" : "Use2112",
       "pt" : "Arrozais",
+      "en" : "Rice fields",
       "es" : "Arrozales"
     },
-    "comment" : { },
-    "id" : "146",
-    "superClasses" : [ "103" ]
+    "id" : "123",
+    "superClasses" : [ "121" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1700",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3617,12 +4329,12 @@
     "label" : {
       "IRI-based" : "Use1700",
       "pt" : "Parques e jardins",
+      "en" : "Parks and gardens",
       "es" : "Parques y jardines"
     },
-    "subClasses" : [ "2" ],
-    "comment" : { },
-    "id" : "34",
-    "superClasses" : [ "27" ]
+    "subClasses" : [ "126" ],
+    "id" : "39",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use7120",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3638,33 +4350,12 @@
     "label" : {
       "IRI-based" : "Use7120",
       "pt" : "Rocha nua",
+      "en" : "Bare rock",
       "es" : "Roca desnuda"
     },
-    "subClasses" : [ "154" ],
-    "comment" : { },
-    "id" : "65",
-    "superClasses" : [ "18" ]
-  }, {
-    "iri" : "http://crossforest.eu/cos/ontology/Use9300",
-    "baseIri" : "http://crossforest.eu/cos/ontology",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/cos/ontology/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Use9300",
-      "pt" : "Massas de água de transição e costeiras",
-      "es" : "Masas de agua de transición y costeras"
-    },
-    "subClasses" : [ "156", "135", "139", "142" ],
-    "comment" : { },
-    "id" : "136",
-    "superClasses" : [ "152" ]
+    "subClasses" : [ "298" ],
+    "id" : "71",
+    "superClasses" : [ "24" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use7000",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3680,12 +4371,33 @@
     "label" : {
       "IRI-based" : "Use7000",
       "pt" : "Espaços descobertos ou com pouca vegetação",
+      "en" : "Flats uncovered or with little vegetation",
       "es" : "Zonas descubiertas con poca vegetación"
     },
-    "subClasses" : [ "18" ],
-    "comment" : { },
-    "id" : "64",
-    "superClasses" : [ "87" ]
+    "subClasses" : [ "24" ],
+    "id" : "69",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://crossforest.eu/cos/ontology/Use9300",
+    "baseIri" : "http://crossforest.eu/cos/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/cos/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Use9300",
+      "pt" : "Massas de água de transição e costeiras",
+      "en" : "Transitional and coastal water bodies",
+      "es" : "Masas de agua de transición y costeras"
+    },
+    "subClasses" : [ "184", "216", "289", "151" ],
+    "id" : "91",
+    "superClasses" : [ "89" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use7121",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3701,21 +4413,33 @@
     "label" : {
       "IRI-based" : "Use7121",
       "pt" : "Rocha nua",
+      "en" : "Bare rock",
       "es" : "Roca desnuda"
     },
-    "comment" : { },
-    "id" : "154",
-    "superClasses" : [ "65" ]
+    "id" : "298",
+    "superClasses" : [ "71" ]
   }, {
     "iri" : "http://crossforest.eu/ilu/ontology/AgriculturalLand",
     "baseIri" : "http://crossforest.eu/ilu/ontology",
     "instances" : 0,
-    "label" : {
-      "IRI-based" : "AgriculturalLand"
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
     },
-    "subClasses" : [ "128", "61" ],
+    "label" : {
+      "IRI-based" : "AgriculturalLand",
+      "pt" : "Agricultura e Pastagens",
+      "es" : "Terreno agrícola"
+    },
+    "subClasses" : [ "218", "84" ],
+    "comment" : { },
     "attributes" : [ "external" ],
-    "id" : "129"
+    "id" : "17",
+    "superClasses" : [ "13" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Patch",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3731,9 +4455,8 @@
     "label" : {
       "IRI-based" : "Patch"
     },
-    "comment" : { },
-    "id" : "172",
-    "superClasses" : [ "173" ]
+    "id" : "98",
+    "superClasses" : [ "136" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1132",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3749,11 +4472,11 @@
     "label" : {
       "IRI-based" : "Use1132",
       "pt" : "Espaços vazios sem construção",
+      "en" : "Abandoned sites in artificial areas",
       "es" : "Espacios vacios sin construir"
     },
-    "comment" : { },
-    "id" : "121",
-    "superClasses" : [ "89" ]
+    "id" : "288",
+    "superClasses" : [ "102" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1131",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3769,11 +4492,36 @@
     "label" : {
       "IRI-based" : "Use1131",
       "pt" : "Áreas de estacionamentos e logradouros",
+      "en" : "Parking lots and yards",
       "es" : "Áreas de estacionamentos y lugares pùblicos"
     },
-    "comment" : { },
-    "id" : "123",
-    "superClasses" : [ "89" ]
+    "id" : "292",
+    "superClasses" : [ "102" ]
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/PatchShape",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ],
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormaDeMasa",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PatchShape",
+      "en" : "Shape of the patch",
+      "es" : "Forma de la tesela"
+    },
+    "attributes" : [ "external" ],
+    "id" : "358"
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use1130",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3788,13 +4536,13 @@
     },
     "label" : {
       "IRI-based" : "Use1130",
-      "pt" : " Espaços vazios em tecido edificado",
+      "pt" : "Espaços vazios em tecido edificado",
+      "en" : "Urban fabric in artificial areas",
       "es" : "Espacios vacios sin construir"
     },
-    "subClasses" : [ "121", "123" ],
-    "comment" : { },
-    "id" : "89",
-    "superClasses" : [ "33" ]
+    "subClasses" : [ "288", "292" ],
+    "id" : "102",
+    "superClasses" : [ "38" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2220",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3810,12 +4558,12 @@
     "label" : {
       "IRI-based" : "Use2220",
       "pt" : "Pomares",
+      "en" : "Orchards",
       "es" : "Huertos"
     },
-    "subClasses" : [ "101" ],
-    "comment" : { },
-    "id" : "76",
-    "superClasses" : [ "63" ]
+    "subClasses" : [ "273" ],
+    "id" : "86",
+    "superClasses" : [ "83" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2100",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3831,12 +4579,15 @@
     "label" : {
       "IRI-based" : "Use2100",
       "pt" : "Culturas temporárias",
+      "en" : "Arable land ",
       "es" : "Cultivos temporales"
     },
-    "subClasses" : [ "103", "40" ],
-    "comment" : { },
-    "id" : "41",
-    "superClasses" : [ "61" ]
+    "subClasses" : [ "121", "45" ],
+    "comment" : {
+      "en" : "Arable land or pastures associated with vineyards (COS2018)"
+    },
+    "id" : "46",
+    "superClasses" : [ "84" ]
   }, {
     "iri" : "http://crossforest.eu/cos/ontology/Use2221",
     "baseIri" : "http://crossforest.eu/cos/ontology",
@@ -3852,11 +4603,11 @@
     "label" : {
       "IRI-based" : "Use2221",
       "pt" : "Pomares",
+      "en" : "Orchards",
       "es" : "Huertos"
     },
-    "comment" : { },
-    "id" : "101",
-    "superClasses" : [ "76" ]
+    "id" : "273",
+    "superClasses" : [ "86" ]
   } ],
   "property" : [ {
     "id" : "0",
@@ -3865,226 +4616,172 @@
     "id" : "3",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "6",
+    "id" : "5",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "9",
+    "id" : "8",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "13",
+    "id" : "19",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "16",
+    "id" : "22",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "20",
+    "id" : "27",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "23",
+    "id" : "29",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "43",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "46",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "47",
+    "id" : "48",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "50",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "53",
+    "id" : "52",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "55",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "58",
+    "id" : "57",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "60",
+    "id" : "59",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "62",
+    "id" : "61",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "66",
+    "id" : "65",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "67",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "77",
+    "id" : "72",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "80",
+    "id" : "74",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "82",
+    "id" : "87",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "84",
+    "id" : "90",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "100",
+    "id" : "92",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "102",
+    "id" : "94",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "104",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "108",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "111",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "114",
-    "type" : "rdfs:SubClassOf"
+    "id" : "96",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "117",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "120",
+    "id" : "119",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "122",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "124",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "125",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "126",
+    "id" : "131",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "137",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "127",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "130",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "134",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "138",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "141",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "143",
+    "id" : "139",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "144",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "145",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "147",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "148",
+    "id" : "149",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "151",
+    "id" : "152",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "153",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "155",
+    "id" : "154",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "161",
+    "id" : "99",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "158",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "162",
+    "id" : "159",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "163",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "165",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "167",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "168",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "169",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "171",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "174",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "175",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "176",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "177",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "178",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "179",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "180",
+    "id" : "182",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "189",
+    "id" : "185",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "191",
+    "id" : "188",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "194",
+    "id" : "190",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "196",
+    "id" : "192",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "197",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "199",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "202",
+    "id" : "201",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "205",
+    "id" : "208",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "207",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "209",
+    "id" : "210",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "212",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "218",
+    "id" : "214",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "217",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "219",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "220",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "221",
@@ -4093,46 +4790,28 @@
     "id" : "222",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "223",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "224",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "225",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "226",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "227",
+    "id" : "228",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "230",
+    "id" : "157",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "237",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "232",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "233",
+    "id" : "238",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "240",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "241",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "242",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "243",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "244",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "245",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "246",
@@ -4147,14 +4826,29 @@
     "id" : "249",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "250",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "251",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "252",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "253",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "256",
+    "id" : "254",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "257",
+    "id" : "255",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "256",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "258",
     "type" : "rdfs:SubClassOf"
@@ -4174,6 +4868,18 @@
     "id" : "263",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "264",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "265",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "266",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "267",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "268",
     "type" : "rdfs:SubClassOf"
   }, {
@@ -4189,9 +4895,6 @@
     "id" : "272",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "273",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "274",
     "type" : "rdfs:SubClassOf"
   }, {
@@ -4205,15 +4908,15 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "278",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "280",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "282",
+    "id" : "281",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "283",
+    "id" : "282",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "284",
@@ -4228,19 +4931,10 @@
     "id" : "287",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "288",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "289",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "290",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "291",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "292",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "293",
@@ -4256,9 +4950,6 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "297",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "298",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "299",
@@ -4335,801 +5026,1147 @@
   }, {
     "id" : "323",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "324",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "326",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "327",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "329",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "330",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "331",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "332",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "333",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "334",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "335",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "336",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "337",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "338",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "339",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "340",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "341",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "342",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "343",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "344",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "345",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "346",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "347",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "348",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "349",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "350",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "351",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "352",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "353",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "354",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "355",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "356",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "357",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "359",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "360",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "361",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "362",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "363",
+    "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "0"
   }, {
-    "range" : "5",
+    "range" : "2",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "3"
   }, {
-    "range" : "8",
-    "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "6"
-  }, {
-    "range" : "8",
-    "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "9"
-  }, {
-    "range" : "15",
-    "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "13"
-  }, {
-    "range" : "15",
-    "domain" : "17",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "16"
-  }, {
-    "range" : "22",
-    "domain" : "21",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "20"
-  }, {
-    "range" : "22",
-    "domain" : "24",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "23"
-  }, {
-    "range" : "45",
-    "domain" : "44",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "43"
-  }, {
-    "range" : "28",
-    "domain" : "27",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "46"
-  }, {
-    "range" : "49",
-    "domain" : "48",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "47"
-  }, {
-    "range" : "52",
-    "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "50"
-  }, {
-    "range" : "52",
-    "domain" : "54",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "53"
-  }, {
-    "range" : "57",
-    "domain" : "56",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "55"
-  }, {
-    "range" : "57",
-    "domain" : "59",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "58"
-  }, {
-    "range" : "61",
-    "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "60"
-  }, {
-    "range" : "61",
-    "domain" : "63",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "62"
-  }, {
-    "range" : "61",
-    "domain" : "38",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "66"
-  }, {
-    "range" : "61",
-    "domain" : "45",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "67"
-  }, {
-    "range" : "79",
-    "domain" : "78",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "77"
-  }, {
-    "range" : "79",
-    "domain" : "81",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "80"
-  }, {
-    "range" : "79",
-    "domain" : "83",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "82"
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "5"
   }, {
     "range" : "10",
-    "domain" : "85",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "84"
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
   }, {
-    "range" : "76",
-    "domain" : "101",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "100"
+    "range" : "21",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
   }, {
-    "range" : "41",
-    "domain" : "103",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "102"
+    "range" : "21",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
   }, {
-    "range" : "41",
-    "domain" : "40",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "104"
+    "range" : "28",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
   }, {
-    "range" : "110",
-    "domain" : "109",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "108"
+    "range" : "28",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
   }, {
-    "range" : "110",
-    "domain" : "112",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "111"
+    "range" : "9",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
   }, {
-    "range" : "116",
-    "domain" : "115",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "114"
+    "range" : "9",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
   }, {
-    "range" : "119",
+    "range" : "54",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "range" : "54",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "54",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "54",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "9",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "range" : "9",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "range" : "9",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
+    "range" : "9",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "72"
+  }, {
+    "range" : "9",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "range" : "89",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
+  }, {
+    "range" : "89",
+    "domain" : "91",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
+  }, {
+    "range" : "54",
+    "domain" : "93",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "92"
+  }, {
+    "range" : "54",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://crossforest.eu/cos/ontology/hasPatch",
+    "baseIri" : "http://crossforest.eu/cos/ontology",
+    "range" : "98",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/cos/ontology/",
+        "type" : "iri"
+      } ],
+      "exactMatch" : [ {
+        "identifier" : "exactMatch",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/hasPatch",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPatch"
+    },
+    "superproperty" : [ "99" ],
+    "domain" : "97",
+    "attributes" : [ "object" ],
+    "id" : "96"
+  }, {
+    "range" : "85",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "117"
   }, {
-    "range" : "89",
-    "domain" : "121",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "120"
+    "range" : "121",
+    "domain" : "120",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "119"
   }, {
-    "range" : "89",
+    "range" : "121",
     "domain" : "123",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "122"
   }, {
-    "range" : "64",
-    "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "124"
-  }, {
-    "range" : "87",
-    "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "39",
+    "domain" : "126",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "125"
   }, {
-    "range" : "87",
-    "domain" : "86",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "126"
+    "iri" : "http://crossforest.eu/ilu/ontology/hasPercentageOfUse",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "range" : "132",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPercentageOfUse"
+    },
+    "domain" : "129",
+    "comment" : { },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "131"
   }, {
-    "range" : "129",
-    "domain" : "128",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "127"
+    "range" : "126",
+    "domain" : "138",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "137"
   }, {
-    "range" : "129",
-    "domain" : "61",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "130"
+    "range" : "70",
+    "domain" : "140",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "139"
   }, {
-    "range" : "136",
-    "domain" : "135",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "134"
-  }, {
-    "range" : "136",
-    "domain" : "139",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "138"
-  }, {
-    "range" : "136",
-    "domain" : "142",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "141"
-  }, {
-    "range" : "85",
-    "domain" : "79",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "143"
-  }, {
-    "range" : "85",
-    "domain" : "22",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "146",
+    "domain" : "145",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "144"
   }, {
-    "range" : "103",
-    "domain" : "146",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "145"
-  }, {
-    "range" : "34",
-    "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "146",
+    "domain" : "148",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "147"
   }, {
-    "range" : "150",
-    "domain" : "149",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "148"
-  }, {
-    "range" : "150",
-    "domain" : "152",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "151"
-  }, {
-    "range" : "65",
-    "domain" : "154",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "153"
+    "range" : "151",
+    "domain" : "150",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
   }, {
     "range" : "136",
-    "domain" : "156",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "155"
+    "domain" : "98",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "152"
   }, {
-    "range" : "158",
-    "domain" : "159",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "161"
+    "range" : "84",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
   }, {
-    "range" : "158",
-    "domain" : "160",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "162"
+    "range" : "84",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
   }, {
-    "range" : "75",
-    "domain" : "164",
-    "attributes" : [ "object", "anonymous" ],
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasure",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "155",
+    "label" : {
+      "IRI-based" : "hasMeasure"
+    },
+    "domain" : "155",
+    "subproperty" : [ "96", "156", "157" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "99"
+  }, {
+    "range" : "84",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "range" : "84",
+    "domain" : "142",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "159"
+  }, {
+    "range" : "16",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "163"
   }, {
-    "range" : "103",
-    "domain" : "166",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "165"
-  }, {
-    "range" : "22",
-    "domain" : "137",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "167"
-  }, {
-    "range" : "22",
-    "domain" : "140",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "168"
-  }, {
-    "range" : "142",
-    "domain" : "170",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "169"
-  }, {
-    "range" : "173",
-    "domain" : "172",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "171"
-  }, {
-    "range" : "31",
-    "domain" : "52",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "174"
-  }, {
-    "range" : "31",
-    "domain" : "106",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "175"
-  }, {
-    "range" : "158",
-    "domain" : "157",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "40",
+    "domain" : "177",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "176"
   }, {
-    "range" : "22",
-    "domain" : "131",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "177"
-  }, {
-    "range" : "22",
-    "domain" : "132",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "178"
-  }, {
-    "range" : "22",
-    "domain" : "133",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "40",
+    "domain" : "180",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "179"
   }, {
-    "range" : "182",
-    "domain" : "181",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "180"
+    "range" : "184",
+    "domain" : "183",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
   }, {
-    "range" : "182",
-    "domain" : "190",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "189"
+    "range" : "148",
+    "domain" : "186",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "185"
   }, {
-    "range" : "193",
-    "domain" : "192",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "191"
+    "range" : "88",
+    "domain" : "189",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "188"
   }, {
-    "range" : "193",
-    "domain" : "195",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "194"
+    "range" : "191",
+    "domain" : "146",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "190"
   }, {
-    "range" : "193",
-    "domain" : "197",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "196"
+    "range" : "194",
+    "domain" : "193",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "192"
   }, {
-    "range" : "193",
-    "domain" : "200",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "199"
-  }, {
-    "range" : "193",
-    "domain" : "203",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "202"
-  }, {
-    "range" : "152",
-    "domain" : "136",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "205"
-  }, {
-    "range" : "152",
-    "domain" : "208",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "207"
-  }, {
-    "range" : "193",
-    "domain" : "210",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "209"
-  }, {
-    "range" : "152",
-    "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "212"
-  }, {
-    "range" : "37",
-    "domain" : "39",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "218"
-  }, {
-    "range" : "26",
-    "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "219"
+    "range" : "194",
+    "domain" : "196",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "195"
   }, {
     "range" : "40",
-    "domain" : "42",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "220"
+    "domain" : "198",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "197"
   }, {
-    "range" : "27",
-    "domain" : "34",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "40",
+    "domain" : "200",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "199"
+  }, {
+    "range" : "40",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "201"
+  }, {
+    "range" : "189",
+    "domain" : "209",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "208"
+  }, {
+    "range" : "145",
+    "domain" : "211",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "210"
+  }, {
+    "range" : "145",
+    "domain" : "213",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "212"
+  }, {
+    "range" : "216",
+    "domain" : "215",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "214"
+  }, {
+    "range" : "218",
+    "domain" : "194",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "217"
+  }, {
+    "range" : "220",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "219"
+  }, {
+    "range" : "220",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "221"
   }, {
-    "range" : "27",
-    "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "193",
+    "domain" : "223",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "222"
   }, {
-    "range" : "26",
-    "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "223"
-  }, {
-    "range" : "27",
-    "domain" : "35",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "198",
+    "domain" : "225",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "224"
   }, {
-    "range" : "27",
-    "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "225"
-  }, {
-    "range" : "27",
-    "domain" : "32",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "198",
+    "domain" : "227",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "226"
   }, {
-    "range" : "27",
-    "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "227"
+    "range" : "196",
+    "domain" : "229",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "228"
   }, {
-    "range" : "229",
-    "domain" : "231",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "230"
+    "iri" : "http://crossforest.eu/ilu/ontology/hasUse",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "range" : "26",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUse",
+      "en" : "has use",
+      "es" : "tiene uso"
+    },
+    "superproperty" : [ "99" ],
+    "domain" : "236",
+    "comment" : { },
+    "attributes" : [ "object", "external" ],
+    "id" : "157"
   }, {
-    "range" : "29",
-    "domain" : "214",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "232"
+    "range" : "28",
+    "domain" : "234",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "237"
   }, {
-    "range" : "86",
-    "domain" : "88",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "233"
+    "range" : "200",
+    "domain" : "239",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "238"
   }, {
-    "range" : "63",
-    "domain" : "75",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "200",
+    "domain" : "241",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "240"
   }, {
-    "range" : "73",
-    "domain" : "74",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "241"
-  }, {
-    "range" : "229",
-    "domain" : "228",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "77",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "242"
   }, {
-    "range" : "63",
+    "range" : "77",
     "domain" : "76",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "243"
-  }, {
-    "range" : "69",
-    "domain" : "70",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "244"
-  }, {
-    "range" : "69",
-    "domain" : "68",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "245"
-  }, {
-    "range" : "183",
-    "domain" : "182",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "246"
   }, {
-    "range" : "72",
-    "domain" : "71",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "24",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "247"
   }, {
-    "range" : "217",
-    "domain" : "216",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "63",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "248"
   }, {
-    "range" : "214",
-    "domain" : "215",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "45",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "249"
   }, {
-    "range" : "214",
-    "domain" : "213",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "24",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "250"
+  }, {
+    "range" : "24",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "251"
+  }, {
+    "range" : "33",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "252"
+  }, {
+    "range" : "34",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "253"
   }, {
-    "range" : "18",
-    "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "42",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "254"
+  }, {
+    "range" : "33",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "255"
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/containsUse",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "range" : "129",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "containsUse",
+      "en" : "contains use",
+      "es" : "contiene use"
+    },
+    "domain" : "136",
+    "comment" : {
+      "en" : "the patch contains use",
+      "es" : "la tesela contiene uso"
+    },
+    "attributes" : [ "object", "external" ],
     "id" : "256"
   }, {
-    "range" : "182",
-    "domain" : "211",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "257"
+    "iri" : "http://crossforest.eu/ilu/ontology/hasPatch",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "range" : "136",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPatch",
+      "en" : "has patch",
+      "es" : "tiene tesela"
+    },
+    "superproperty" : [ "99" ],
+    "domain" : "257",
+    "comment" : { },
+    "attributes" : [ "object", "external" ],
+    "id" : "156"
   }, {
-    "range" : "18",
-    "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "258"
   }, {
-    "range" : "18",
-    "domain" : "65",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "259"
   }, {
-    "range" : "182",
-    "domain" : "201",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "260"
   }, {
-    "range" : "182",
-    "domain" : "198",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "261"
   }, {
-    "range" : "182",
-    "domain" : "206",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "12",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "262"
   }, {
-    "range" : "182",
-    "domain" : "204",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "263"
   }, {
-    "range" : "254",
-    "domain" : "255",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "268"
+    "range" : "34",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "264"
   }, {
-    "range" : "99",
-    "domain" : "98",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "269"
-  }, {
-    "range" : "38",
-    "domain" : "73",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "270"
-  }, {
-    "range" : "38",
-    "domain" : "37",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "271"
-  }, {
-    "range" : "250",
-    "domain" : "252",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "272"
-  }, {
-    "range" : "250",
-    "domain" : "251",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "273"
-  }, {
-    "range" : "239",
-    "domain" : "238",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "274"
-  }, {
-    "range" : "208",
-    "domain" : "229",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "275"
-  }, {
-    "range" : "92",
-    "domain" : "95",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "276"
-  }, {
-    "range" : "97",
-    "domain" : "96",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "277"
-  }, {
-    "range" : "208",
-    "domain" : "193",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "278"
-  }, {
-    "range" : "128",
-    "domain" : "237",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "280"
-  }, {
-    "range" : "91",
-    "domain" : "90",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "282"
-  }, {
-    "range" : "92",
-    "domain" : "94",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "283"
-  }, {
-    "range" : "92",
-    "domain" : "93",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "284"
-  }, {
-    "range" : "33",
-    "domain" : "26",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "285"
-  }, {
-    "range" : "33",
-    "domain" : "69",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "286"
-  }, {
-    "range" : "33",
-    "domain" : "89",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "287"
-  }, {
-    "range" : "29",
-    "domain" : "116",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "288"
-  }, {
-    "range" : "29",
-    "domain" : "185",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "289"
-  }, {
-    "range" : "235",
-    "domain" : "236",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "290"
-  }, {
-    "range" : "235",
-    "domain" : "234",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "291"
-  }, {
-    "range" : "35",
-    "domain" : "119",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "292"
-  }, {
-    "range" : "35",
-    "domain" : "188",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "293"
-  }, {
-    "range" : "17",
-    "domain" : "281",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "294"
-  }, {
-    "range" : "156",
-    "domain" : "279",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "295"
-  }, {
-    "range" : "35",
-    "domain" : "250",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "296"
-  }, {
-    "range" : "35",
-    "domain" : "217",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "297"
-  }, {
-    "range" : "35",
-    "domain" : "235",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "298"
-  }, {
-    "range" : "12",
-    "domain" : "19",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "299"
-  }, {
-    "range" : "30",
-    "domain" : "110",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "300"
-  }, {
-    "range" : "30",
-    "domain" : "158",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "301"
-  }, {
-    "range" : "30",
-    "domain" : "57",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "302"
-  }, {
-    "range" : "185",
-    "domain" : "184",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "303"
-  }, {
-    "range" : "185",
-    "domain" : "186",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "304"
-  }, {
-    "range" : "188",
-    "domain" : "187",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "305"
-  }, {
-    "range" : "27",
-    "domain" : "29",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "306"
-  }, {
-    "range" : "7",
-    "domain" : "183",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "307"
+    "range" : "13",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "265"
   }, {
     "range" : "12",
     "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "308"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "266"
   }, {
-    "range" : "237",
-    "domain" : "239",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "309"
+    "range" : "13",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "267"
   }, {
-    "range" : "106",
-    "domain" : "107",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "310"
+    "range" : "37",
+    "domain" : "104",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "268"
   }, {
-    "range" : "44",
-    "domain" : "113",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "311"
+    "range" : "128",
+    "domain" : "127",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "269"
   }, {
-    "range" : "237",
-    "domain" : "254",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "312"
+    "range" : "37",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "270"
   }, {
-    "range" : "32",
-    "domain" : "91",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "313"
-  }, {
-    "range" : "32",
-    "domain" : "99",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "314"
-  }, {
-    "range" : "106",
+    "range" : "43",
     "domain" : "105",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "315"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "271"
   }, {
-    "range" : "32",
-    "domain" : "72",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "316"
+    "range" : "86",
+    "domain" : "273",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "272"
   }, {
-    "range" : "88",
-    "domain" : "97",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "317"
+    "range" : "43",
+    "domain" : "81",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "274"
   }, {
-    "range" : "135",
-    "domain" : "267",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "318"
+    "range" : "46",
+    "domain" : "121",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "275"
   }, {
-    "range" : "149",
-    "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "319"
+    "range" : "37",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "276"
   }, {
-    "range" : "14",
-    "domain" : "264",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "320"
+    "range" : "46",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "277"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureinPercentage",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "279",
+    "label" : {
+      "IRI-based" : "hasMeasureinPercentage"
+    },
+    "domain" : "155",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "278"
+  }, {
+    "range" : "101",
+    "domain" : "111",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "280"
+  }, {
+    "range" : "111",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "281"
+  }, {
+    "range" : "105",
+    "domain" : "108",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "282"
+  }, {
+    "range" : "43",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "284"
+  }, {
+    "range" : "114",
+    "domain" : "113",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "285"
+  }, {
+    "range" : "17",
+    "domain" : "84",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "286"
+  }, {
+    "range" : "102",
+    "domain" : "288",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "287"
+  }, {
+    "range" : "105",
+    "domain" : "107",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "290"
+  }, {
+    "range" : "102",
+    "domain" : "292",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "291"
+  }, {
+    "range" : "105",
+    "domain" : "106",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "293"
+  }, {
+    "range" : "104",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "294"
   }, {
     "range" : "38",
-    "domain" : "92",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "321"
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "295"
   }, {
-    "range" : "48",
-    "domain" : "266",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "322"
+    "range" : "100",
+    "domain" : "101",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "296"
+  }, {
+    "range" : "71",
+    "domain" : "298",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "297"
+  }, {
+    "range" : "38",
+    "domain" : "102",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "299"
+  }, {
+    "range" : "69",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "300"
+  }, {
+    "range" : "38",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "301"
+  }, {
+    "range" : "91",
+    "domain" : "184",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "302"
+  }, {
+    "range" : "81",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "303"
+  }, {
+    "range" : "91",
+    "domain" : "216",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "304"
+  }, {
+    "range" : "80",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "305"
+  }, {
+    "range" : "91",
+    "domain" : "289",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "306"
+  }, {
+    "range" : "83",
+    "domain" : "86",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "307"
+  }, {
+    "range" : "91",
+    "domain" : "151",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "308"
+  }, {
+    "range" : "83",
+    "domain" : "85",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "309"
+  }, {
+    "range" : "17",
+    "domain" : "218",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "310"
+  }, {
+    "range" : "172",
+    "domain" : "178",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "311"
+  }, {
+    "range" : "172",
+    "domain" : "175",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "312"
+  }, {
+    "range" : "36",
+    "domain" : "166",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "313"
+  }, {
+    "range" : "172",
+    "domain" : "181",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "314"
+  }, {
+    "range" : "172",
+    "domain" : "174",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "315"
+  }, {
+    "range" : "172",
+    "domain" : "173",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "316"
+  }, {
+    "range" : "172",
+    "domain" : "171",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "317"
   }, {
     "range" : "14",
-    "domain" : "265",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "202",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "318"
+  }, {
+    "range" : "142",
+    "domain" : "141",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "319"
+  }, {
+    "range" : "172",
+    "domain" : "203",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "320"
+  }, {
+    "range" : "14",
+    "domain" : "164",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "321"
+  }, {
+    "range" : "166",
+    "domain" : "169",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "322"
+  }, {
+    "range" : "166",
+    "domain" : "165",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "323"
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/hasPercentageOfPatch",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "range" : "325",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPercentageOfPatch"
+    },
+    "domain" : "109",
+    "comment" : { },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "324"
+  }, {
+    "range" : "168",
+    "domain" : "170",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "326"
+  }, {
+    "range" : "168",
+    "domain" : "167",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "327"
+  }, {
+    "range" : "134",
+    "domain" : "133",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "329"
+  }, {
+    "range" : "134",
+    "domain" : "162",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "330"
+  }, {
+    "range" : "164",
+    "domain" : "160",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "331"
+  }, {
+    "range" : "135",
+    "domain" : "136",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "332"
+  }, {
+    "range" : "128",
+    "domain" : "130",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "333"
+  }, {
+    "range" : "134",
+    "domain" : "161",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "334"
+  }, {
+    "range" : "141",
+    "domain" : "143",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "335"
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/containsPatch",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "range" : "109",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "containsPatch",
+      "en" : "contains patch",
+      "es" : "contiene tesela"
+    },
+    "domain" : "136",
+    "comment" : {
+      "en" : "the merged patch contains sub-patch",
+      "es" : "la tesela agregada contiene sub-tesela"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "336"
+  }, {
+    "range" : "30",
+    "domain" : "244",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "337"
+  }, {
+    "range" : "30",
+    "domain" : "243",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "338"
+  }, {
+    "range" : "89",
+    "domain" : "220",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "339"
+  }, {
+    "range" : "177",
+    "domain" : "245",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "340"
+  }, {
+    "range" : "35",
+    "domain" : "231",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "341"
+  }, {
+    "range" : "35",
+    "domain" : "168",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "342"
+  }, {
+    "range" : "35",
+    "domain" : "205",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "343"
+  }, {
+    "range" : "13",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "344"
+  }, {
+    "range" : "13",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "345"
+  }, {
+    "range" : "13",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "346"
+  }, {
+    "range" : "234",
+    "domain" : "233",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "347"
+  }, {
+    "range" : "231",
+    "domain" : "232",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "348"
+  }, {
+    "range" : "202",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "349"
+  }, {
+    "range" : "180",
+    "domain" : "235",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "350"
+  }, {
+    "range" : "15",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "351"
+  }, {
+    "range" : "160",
+    "domain" : "172",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "352"
+  }, {
+    "range" : "231",
+    "domain" : "230",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "353"
+  }, {
+    "range" : "15",
+    "domain" : "100",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "354"
+  }, {
+    "range" : "160",
+    "domain" : "134",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "355"
+  }, {
+    "range" : "18",
+    "domain" : "89",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "356"
+  }, {
+    "iri" : "http://crossforest.eu/cos/ontology/containsPatch",
+    "baseIri" : "http://crossforest.eu/cos/ontology",
+    "range" : "97",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/cos/ontology/",
+        "type" : "iri"
+      } ],
+      "exactMatch" : [ {
+        "identifier" : "exactMatch",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/containsPatch",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "containsPatch"
+    },
+    "domain" : "98",
+    "attributes" : [ "object" ],
+    "id" : "357"
+  }, {
+    "range" : "18",
+    "domain" : "191",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "359"
+  }, {
+    "range" : "205",
+    "domain" : "204",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "360"
+  }, {
+    "range" : "36",
+    "domain" : "128",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "361"
+  }, {
+    "range" : "205",
+    "domain" : "207",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "362"
+  }, {
+    "range" : "205",
+    "domain" : "206",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "363"
   } ]
 }

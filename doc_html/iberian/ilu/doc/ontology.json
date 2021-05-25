@@ -1,6 +1,9 @@
 [ {
   "@id" : "http://crossforest.eu/ilu/ontology/",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@id" : "https://github.com/dportoles"
+  } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@id" : "https://www.crossforest.eu/members/guiveg"
   }, {
@@ -104,6 +107,61 @@
     "@id" : "http://crossforest.eu/ilu/ontology/Use"
   } ]
 }, {
+  "@id" : "http://crossforest.eu/ilu/ontology/BiogeographicRegion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Biogeographic Region"
+  }, {
+    "@language" : "es",
+    "@value" : "Región biogeográfica"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RegionBiogeografica"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/CanopyCover",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Canopy Cover of the Vegetation Structure"
+  }, {
+    "@language" : "es",
+    "@value" : "Representa la proporción total de la vegetación."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Canopy Cover"
+  }, {
+    "@language" : "es",
+    "@value" : "Fracción de Cabida Cubierta"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FraccionDeCabidaCubierta"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/Classification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Clasificación"
+  }, {
+    "@language" : "en",
+    "@value" : "Classification"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion_MFE_IFN"
+  } ]
+}, {
   "@id" : "http://crossforest.eu/ilu/ontology/ForestLand",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -128,6 +186,22 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://crossforest.eu/ilu/ontology/Use"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/ForestType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Forest Type"
+  }, {
+    "@language" : "es",
+    "@value" : "Formación Arbolada"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"
   } ]
 }, {
   "@id" : "http://crossforest.eu/ilu/ontology/LandUse",
@@ -187,6 +261,51 @@
     "@value" : "Patch in the patch"
   } ]
 }, {
+  "@id" : "http://crossforest.eu/ilu/ontology/PatchShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Forma de la tesela"
+  }, {
+    "@language" : "en",
+    "@value" : "Shape of the patch"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormaDeMasa"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/SpatialDistribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Distribución"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/StandDevelopment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Estado de Desarrollo"
+  }, {
+    "@language" : "en",
+    "@value" : "Stand development"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo"
+  } ]
+}, {
   "@id" : "http://crossforest.eu/ilu/ontology/TreelessLand",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -213,6 +332,19 @@
     "@id" : "http://crossforest.eu/ilu/ontology/Use"
   } ]
 }, {
+  "@id" : "http://crossforest.eu/ilu/ontology/TypeOfForest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Tipo de Bosque"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoDeBosque"
+  } ]
+}, {
   "@id" : "http://crossforest.eu/ilu/ontology/Use",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -228,6 +360,22 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
     "@value" : "Use in the patch"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ilu/ontology/VegetationStructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ilu/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Tipo Estructural"
+  }, {
+    "@language" : "en",
+    "@value" : "Vegetation structure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"
   } ]
 }, {
   "@id" : "http://crossforest.eu/ilu/ontology/WetLand",
@@ -418,6 +566,9 @@
   "@id" : "http://crossforest.eu/position/ontology/SpatialEntity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -425,5 +576,8 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#closeMatch",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 } ]

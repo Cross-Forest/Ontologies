@@ -1,16 +1,18 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://crossforest.eu/mfe/ontology/"
-     xml:base="http://crossforest.eu/mfe/ontology/"
+<rdf:RDF xmlns="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
+     xml:base="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:mfe="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/">
-    <owl:Ontology rdf:about="http://crossforest.eu/mfe/ontology/">
-        <owl:imports rdf:resource="http://crossforest.eu/measures/ontology/"/>
-        <owl:imports rdf:resource="http://crossforest.eu/position/ontology/"/>
+    <owl:Ontology rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/">
+        <owl:imports rdf:resource="https://github.com/Cross-Forest/Ontologies/raw/master/iberian/ilu-core.ttl"/>
+        <dc:creator rdf:resource="https://github.com/dportoles"/>
         <dc:creator rdf:resource="https://www.crossforest.eu/members/guiveg"/>
         <dc:creator rdf:resource="https://www.crossforest.eu/members/josgim"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-17</dc:date>
@@ -19,6 +21,7 @@
         <rdfs:comment>Ontología para publicar datos del Mapa Forestal Nacional de España</rdfs:comment>
         <rdfs:label xml:lang="es">Ontología del MFE de España</rdfs:label>
         <rdfs:label xml:lang="en">Spanish MFE Ontology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/informacion-disponible/mfe50_descargas_ccaa.aspx"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
     </owl:Ontology>
     
@@ -33,6 +36,13 @@
      -->
 
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
     
 
 
@@ -57,6 +67,20 @@
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -76,262 +100,280 @@
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/containsPatch -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/containsPatch -->
 
 
-    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/containsPatch">
-        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
-        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/PatchInPatch"/>
+    <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/containsPatch">
+        <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"/>
+        <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/PatchInPatch"/>
         <rdfs:comment xml:lang="es">la tesela agregada contiene sub-tesela</rdfs:comment>
         <rdfs:comment xml:lang="en">the merged patch contains sub-patch</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="en">contains patch</rdfs:label>
         <rdfs:label xml:lang="es">contiene tesela</rdfs:label>
+        <skos:exactMatch rdf:resource="http://crossforest.eu/ilu/ontology/containsPatch"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/containsSpecies -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/containsSpecies -->
 
 
-    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/containsSpecies">
-        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
-        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/SpeciesInPatch"/>
+    <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/containsSpecies">
+        <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"/>
+        <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SpeciesInPatch"/>
         <rdfs:comment xml:lang="es">la tesela agregada contiene especie</rdfs:comment>
         <rdfs:comment xml:lang="en">the patch contains species</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="en">contains species</rdfs:label>
         <rdfs:label xml:lang="es">contiene especie</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/containsUse -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/containsUse -->
 
 
-    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/containsUse">
-        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
-        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/UseInPatch"/>
+    <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/containsUse">
+        <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"/>
+        <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/UseInPatch"/>
         <rdfs:comment xml:lang="es">la tesela contiene uso</rdfs:comment>
         <rdfs:comment xml:lang="en">the patch contains use</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="en">contains use</rdfs:label>
         <rdfs:label xml:lang="es">contiene use</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/hasCanopyCoverTotal -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasCanopyCoverBushes -->
 
 
-    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasCanopyCoverTotal">
+    <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasCanopyCoverBushes">
         <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasure"/>
-        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
-        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/CanopyCoverTotal"/>
+        <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"/>
+        <rdfs:range rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-fraccion-cabida-cubierta/arbustiva"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es"></rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/hasCanopyCoverTrees -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasCanopyCoverTotal -->
 
 
-    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasCanopyCoverTrees">
+    <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasCanopyCoverTotal">
         <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasure"/>
-        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
-        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/CanopyCoverTrees"/>
+        <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"/>
+        <rdfs:range rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-fraccion-cabida-cubierta/total"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es"></rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/hasClassification -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasCanopyCoverTrees -->
 
 
-    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasClassification">
-        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
-        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/Classification"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
-        <rdfs:label xml:lang="es"></rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://crossforest.eu/mfe/ontology/hasOccupationOfSpecies -->
-
-
-    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasOccupationOfSpecies">
-        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/SpeciesInPatch"/>
-        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/OccupationOfSpecies"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
-        <rdfs:label xml:lang="es"></rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://crossforest.eu/mfe/ontology/hasPatch -->
-
-
-    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasPatch">
+    <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasCanopyCoverTrees">
         <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasure"/>
-        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
+        <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"/>
+        <rdfs:range rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-fraccion-cabida-cubierta/arborea"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasClassification -->
+
+
+    <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasClassification">
+        <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"/>
+        <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasOccupationOfSpecies -->
+
+
+    <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasOccupationOfSpecies">
+        <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SpeciesInPatch"/>
+        <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/OccupationOfSpecies"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasPatch -->
+
+
+    <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasPatch">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasure"/>
+        <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="en">has patch</rdfs:label>
         <rdfs:label xml:lang="es">tiene tesela</rdfs:label>
+        <skos:exactMatch rdf:resource="http://crossforest.eu/ilu/ontology/hasPatch"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/hasPatchShape -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasPatchShape -->
 
 
-    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasPatchShape">
-        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
-        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/PatchShape"/>
+    <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasPatchShape">
+        <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"/>
+        <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormaDeMasa"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es"></rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/hasRateOfUse -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasRateOfUse -->
 
 
-    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasRateOfUse">
-        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/UseInPatch"/>
-        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/RateOfUse"/>
+    <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasRateOfUse">
+        <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/UseInPatch"/>
+        <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RateOfUse"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es"></rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/hasRateofPatch -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasRateofPatch -->
 
 
-    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasRateofPatch">
-        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/PatchInPatch"/>
-        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/RateOfPatch"/>
+    <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasRateofPatch">
+        <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/PatchInPatch"/>
+        <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RateOfPatch"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es"></rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/hasSetOfSpecies -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies -->
 
 
-    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasSetOfSpecies">
+    <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSetOfSpecies">
         <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasure"/>
-        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/SetOfSpecies"/>
+        <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetOfSpecies"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es"></rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/hasSpatialDistribution -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSpatialDistribution -->
 
 
-    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasSpatialDistribution">
-        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
-        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/SpatialDistribution"/>
+    <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSpatialDistribution">
+        <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"/>
+        <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es"></rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/hasSpecies -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSpecies -->
 
 
-    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasSpecies">
+    <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasSpecies">
         <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasure"/>
-        <rdfs:range rdf:resource="http://crossforest.eu/ifn/ontology/Species"/>
+        <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="en">has species</rdfs:label>
         <rdfs:label xml:lang="es">tiene especie</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/hasStandDevelopment -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasStandDevelopment -->
 
 
-    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasStandDevelopment">
-        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/SpeciesInPatch"/>
-        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/StandDevelopment"/>
+    <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasStandDevelopment">
+        <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SpeciesInPatch"/>
+        <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es"></rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/hasTypeofForest -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasTypeofForest -->
 
 
-    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasTypeofForest">
-        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
-        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/TypeOfForest"/>
+    <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasTypeofForest">
+        <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"/>
+        <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoDeBosque"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es">Indica la tipología de bosque predominante</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="en"></rdfs:label>
         <rdfs:label xml:lang="es">Tipo de Bosque</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/hasUse -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasUse -->
 
 
-    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasUse">
+    <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasUse">
         <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasure"/>
-        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/Use"/>
+        <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Use"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="en">has use</rdfs:label>
         <rdfs:label xml:lang="es">tiene uso</rdfs:label>
+        <skos:exactMatch rdf:resource="http://crossforest.eu/ilu/ontology/hasUse"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/hasVegetationStructure -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasVegetationStructure -->
 
 
-    <owl:ObjectProperty rdf:about="http://crossforest.eu/mfe/ontology/hasVegetationStructure">
-        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
-        <rdfs:range rdf:resource="http://crossforest.eu/mfe/ontology/VegetationStructure"/>
+    <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasVegetationStructure">
+        <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"/>
+        <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es"></rdfs:label>
     </owl:ObjectProperty>
     
@@ -356,72 +398,98 @@
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/hasCanopyCoverTotalPercent -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasCanopyCoverBushesPercent -->
 
 
-    <owl:DatatypeProperty rdf:about="http://crossforest.eu/mfe/ontology/hasCanopyCoverTotalPercent">
+    <owl:DatatypeProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasCanopyCoverBushesPercent">
         <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasureinPercentage"/>
-        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
+        <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es"></rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/hasCanopyCoverTreesPercent -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasCanopyCoverTotalPercent -->
 
 
-    <owl:DatatypeProperty rdf:about="http://crossforest.eu/mfe/ontology/hasCanopyCoverTreesPercent">
+    <owl:DatatypeProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasCanopyCoverTotalPercent">
         <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasureinPercentage"/>
-        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/Patch"/>
+        <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es"></rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/hasPercentageOfPatch -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasCanopyCoverTreesPercent -->
 
 
-    <owl:DatatypeProperty rdf:about="http://crossforest.eu/mfe/ontology/hasPercentageOfPatch">
+    <owl:DatatypeProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasCanopyCoverTreesPercent">
         <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasureinPercentage"/>
-        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/PatchInPatch"/>
+        <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es"></rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/hasPercentageOfSpecies -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasPercentageOfPatch -->
 
 
-    <owl:DatatypeProperty rdf:about="http://crossforest.eu/mfe/ontology/hasPercentageOfSpecies">
+    <owl:DatatypeProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasPercentageOfPatch">
         <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasureinPercentage"/>
-        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/SpeciesInPatch"/>
+        <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/PatchInPatch"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es"></rdfs:label>
+        <skos:exactMatch rdf:resource="http://crossforest.eu/ilu/ontology/hasPercentageOfPatch"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasPercentageOfSpecies -->
+
+
+    <owl:DatatypeProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasPercentageOfSpecies">
+        <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasureinPercentage"/>
+        <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SpeciesInPatch"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es"></rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/hasPercentageOfUse -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasPercentageOfUse -->
 
 
-    <owl:DatatypeProperty rdf:about="http://crossforest.eu/mfe/ontology/hasPercentageOfUse">
+    <owl:DatatypeProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasPercentageOfUse">
         <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/measures/ontology/hasMeasureinPercentage"/>
-        <rdfs:domain rdf:resource="http://crossforest.eu/mfe/ontology/UseInPatch"/>
+        <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/UseInPatch"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es"></rdfs:label>
+        <skos:exactMatch rdf:resource="http://crossforest.eu/ilu/ontology/hasPercentageOfUse"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasPolygonValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/hasPolygonValue">
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">tiene valor de campo poligon</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -435,13 +503,6 @@
      -->
 
 
-    
-
-
-    <!-- http://crossforest.eu/ifn/ontology/Species -->
-
-
-    <owl:Class rdf:about="http://crossforest.eu/ifn/ontology/Species"/>
     
 
 
@@ -459,6 +520,13 @@
     
 
 
+    <!-- http://crossforest.eu/measures/ontology/Measure -->
+
+
+    <owl:Class rdf:about="http://crossforest.eu/measures/ontology/Measure"/>
+    
+
+
     <!-- http://crossforest.eu/measures/ontology/MeasureInPercentage -->
 
 
@@ -466,101 +534,92 @@
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/Area -->
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
 
 
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/Area">
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Area -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Area">
         <rdfs:subClassOf rdf:resource="http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es"></rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/BiogeographicRegion -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN -->
 
 
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/BiogeographicRegion">
-        <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
-        <rdfs:label xml:lang="en">Biogeographic Region</rdfs:label>
-        <rdfs:label xml:lang="es">Región biogeográfica</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://crossforest.eu/mfe/ontology/CanopyCover -->
-
-
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/CanopyCover">
-        <rdfs:comment xml:lang="en">Canopy Cover of the Vegetation Structure</rdfs:comment>
-        <rdfs:comment xml:lang="es">Representa la proporción total de la vegetación.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
-        <rdfs:label xml:lang="es">Canopy Cover</rdfs:label>
-        <rdfs:label xml:lang="es">Fracción de Cabida Cubierta</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://crossforest.eu/mfe/ontology/CanopyCoverBushes -->
-
-
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/CanopyCoverBushes">
-        <rdfs:subClassOf rdf:resource="http://crossforest.eu/mfe/ontology/CanopyCover"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:comment xml:lang="es">Representa la proporción del conjunto de las especies del estrato arbustivo como porcentaje de suelo cubierto por la proyección de todas las copas. No influye en su cálculo el hecho de tratarse de masas monoespecíficas o pluriespecíficas, o el de encontrarse en distinto estado de masa las distintas especies.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
-        <rdfs:label xml:lang="es">Canopy Cover of Bushes</rdfs:label>
-        <rdfs:label xml:lang="es">Fracción de Cabida Cubierta Arbustiva</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://crossforest.eu/mfe/ontology/CanopyCoverTotal -->
-
-
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/CanopyCoverTotal">
-        <rdfs:subClassOf rdf:resource="http://crossforest.eu/mfe/ontology/CanopyCover"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:comment xml:lang="es">Representa la proporción total de la vegetación arbórea y de matorral. Proporciona información sobre la proyección sobre el suelo de los principales pisos de vegetación. En algún caso se incluirán fracciones de cabida cubierta de pastizales o cultivos. Para su cuantificación se tendrá en cuenta todas las especies en conjunto, con independencia de que se presenten por razones de edad o de otro tipo de alturas muy distintas.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
-        <rdfs:label xml:lang="es">Fracción de Cabida Cubierta Total</rdfs:label>
-        <rdfs:label xml:lang="es">Total Canopy Cover</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://crossforest.eu/mfe/ontology/CanopyCoverTrees -->
-
-
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/CanopyCoverTrees">
-        <rdfs:subClassOf rdf:resource="http://crossforest.eu/mfe/ontology/CanopyCover"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:comment xml:lang="es">Representa la proporción del conjunto de las especies del estrato arbóreo como porcentaje de suelo cubierto por la proyección de todas las copas. No influye en su cálculo el hecho de tratarse de masas monoespecíficas o pluriespecíficas, o el de encontrarse en distinto estado de masa las distintas especies.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
-        <rdfs:label xml:lang="es">Canopy Cover of Trees</rdfs:label>
-        <rdfs:label xml:lang="es">Fracción de Cabida Cubierta Arbórea</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://crossforest.eu/mfe/ontology/Classification -->
-
-
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/Classification">
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:comment xml:lang="es">Corresponde al campo CLASMFE_IF</rdfs:comment>
         <rdfs:comment xml:lang="es">Pasarela entre el Tipo Estructural y la clasificación por niveles del IFN3</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es">Clasificación MFE-IFN</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/ForestType -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial -->
 
 
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/ForestType">
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:comment xml:lang="es">Corresponde con el campo DISTRIB</rdfs:comment>
+        <rdfs:comment xml:lang="es">Indica las distintas formas en las que puede aparecer agrupada la vegetación arbórea. Está más referido a la distribución espacial visual de la mancha vegetal que a su composición específica o la relación entre especies.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Distribución</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:comment xml:lang="es">Corresponde a los campos E1, E2 y E3.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Indica la fase de desarrollo en que se encuentran las poblaciones de especies arbóreas presentes en la tesela.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Estado de Desarrollo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormaDeMasa -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormaDeMasa">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:comment xml:lang="es">Corresponde al campo FOR_MAN</rdfs:comment>
+        <rdfs:comment xml:lang="en">Diferenciates the geometric shape of the patch and vegetation asociated</rdfs:comment>
+        <rdfs:comment xml:lang="es">Indica la forma geométrica que presenta la tesela</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Forma de la tesela</rdfs:label>
+        <rdfs:label xml:lang="en">Shape of the patch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:comment xml:lang="es">La Formación Arbolada representa la comunidad vegetal arbórea de orden superior con fisiología y biología homogénea y viene determinada por la Ocupación de la especie principal o por la Ocupación formada por las especies presentes.</rdfs:comment>
         <rdfs:label xml:lang="en">Forest Type</rdfs:label>
         <rdfs:label xml:lang="es">Formación Arbolada</rdfs:label>
@@ -568,173 +627,2744 @@
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/OccupationOfSpecies -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FraccionDeCabidaCubierta -->
 
 
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/OccupationOfSpecies">
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FraccionDeCabidaCubierta">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Canopy Cover of the Vegetation Structure</rdfs:comment>
+        <rdfs:comment xml:lang="es">Representa la proporción total de la vegetación.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Canopy Cover</rdfs:label>
+        <rdfs:label xml:lang="es">Fracción de Cabida Cubierta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/MeasureMFE25 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/MeasureMFE25">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/measures/ontology/Measure"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="en">Measure according to MFE25 criteria</rdfs:label>
+        <rdfs:label xml:lang="es">Medida tomada de acuerdo con criterios del MFE25</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/MeasureMFE50 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/MeasureMFE50">
+        <rdfs:subClassOf rdf:resource="http://crossforest.eu/measures/ontology/Measure"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="en">Measure according to MFE50 criteria</rdfs:label>
+        <rdfs:label xml:lang="es">Medida tomada de acuerdo con criterios del MFE50</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/OccupationOfSpecies -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/OccupationOfSpecies">
         <rdfs:subClassOf rdf:resource="http://crossforest.eu/measures/ontology/MeasureInPercentage"/>
         <rdfs:comment xml:lang="es">Indica la ocupación para cada una de las especies descritas. Los valores que adopta informan del grado de presencia en porcentaje de las especies arbóreas existentes, siendo tanto mayor, cuanto mayor representatividad posee la especie en cuestión, en comparación con las otras especies arbóreas presentes en la tesela.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es">Ocupación de especie</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/Patch -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch -->
 
 
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/Patch">
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Patch">
         <rdfs:subClassOf rdf:resource="http://crossforest.eu/ilu/ontology/Patch"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es"></rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/PatchInPatch -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/PatchInPatch -->
 
 
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/PatchInPatch">
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/PatchInPatch">
         <rdfs:comment xml:lang="es">Patch contained in the patch</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es">Patch in the patch</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/PatchShape -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RateOfPatch -->
 
 
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/PatchShape">
-        <rdfs:comment xml:lang="en">Diferenciates the geometric shape of the patch and vegetation asociated</rdfs:comment>
-        <rdfs:comment xml:lang="es">Indica la forma geométrica que presenta la tesela</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
-        <rdfs:label xml:lang="es">Forma de la tesela</rdfs:label>
-        <rdfs:label xml:lang="en">Shape of the patch</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://crossforest.eu/mfe/ontology/RateOfPatch -->
-
-
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/RateOfPatch">
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RateOfPatch">
         <rdfs:subClassOf rdf:resource="http://crossforest.eu/measures/ontology/MeasureInPercentage"/>
         <rdfs:comment xml:lang="es">Indica la proporción de la tesela dentro de la agrupación.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es">Proporción de la tesela</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/RateOfUse -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RateOfUse -->
 
 
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/RateOfUse"/>
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RateOfUse"/>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/RateofUse -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RateofUse -->
 
 
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/RateofUse">
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RateofUse">
         <rdfs:subClassOf rdf:resource="http://crossforest.eu/measures/ontology/MeasureInPercentage"/>
         <rdfs:comment xml:lang="es">Indica la proporción para cada una de las usos dentro de la agrupación de teselas.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es">Propoción del uso</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/SetOfSpecies -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RegionBiogeografica -->
 
 
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/SetOfSpecies">
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RegionBiogeografica">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="en">Biogeographic Region</rdfs:label>
+        <rdfs:label xml:lang="es">Región biogeográfica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetOfSpecies -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetOfSpecies">
         <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es">Agrupación de Especies</rdfs:label>
         <rdfs:label xml:lang="en">Set of Species</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/SpatialDistribution -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SpeciesInPatch -->
 
 
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/SpatialDistribution">
-        <rdfs:comment xml:lang="es">Indica las distintas formas en las que puede aparecer agrupada la vegetación arbórea. Está más referido a la distribución espacial visual de la mancha vegetal que a su composición específica o la relación entre especies.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
-        <rdfs:label xml:lang="es">Distribución</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://crossforest.eu/mfe/ontology/SpeciesInPatch -->
-
-
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/SpeciesInPatch">
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SpeciesInPatch">
         <rdfs:comment xml:lang="es">Species present in the patch</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es">Species in the patch</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/StandDevelopment -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoDeBosque -->
 
 
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/StandDevelopment">
-        <rdfs:comment xml:lang="es">Indica la fase de desarrollo en que se encuentran las poblaciones de especies arbóreas presentes en la tesela</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
-        <rdfs:label xml:lang="es">Estado de Desarrollo</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://crossforest.eu/mfe/ontology/TypeOfForest -->
-
-
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/TypeOfForest">
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoDeBosque">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:comment xml:lang="es">Corresponde al campo TIPO_BOSQU.</rdfs:comment>
         <rdfs:comment xml:lang="es">Tipo de bosque (coníferas, frondosas o mixtas)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es">Tipo de Bosque</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/Use -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural -->
 
 
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/Use">
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:comment xml:lang="es">Corresponde al campo TIPESTR.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Indica los distintos usos del suelo que pueden aparecer y, dentro del uso forestal, las distintas estructuras de vegetación que lo pueden ocupar, atendiendo más que a la densidad vegetal a la estructura de la vegetación que ocupa.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Tipo Estructural</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Use -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Use">
         <rdfs:comment xml:lang="es"></rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="en">Soil use</rdfs:label>
         <rdfs:label xml:lang="es">Uso del suelo</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/UseInPatch -->
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/UseInPatch -->
 
 
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/UseInPatch">
+    <owl:Class rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/UseInPatch">
         <rdfs:comment xml:lang="es">Use present in the patch</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
         <rdfs:label xml:lang="es">Use in the patch</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://crossforest.eu/mfe/ontology/VegetationStructure -->
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/110 -->
 
 
-    <owl:Class rdf:about="http://crossforest.eu/mfe/ontology/VegetationStructure">
-        <rdfs:comment>Indica los distintos usos del suelo que pueden aparecer y, dentro del uso forestal, las distintas estructuras de vegetación que lo pueden ocupar, atendiendo más que a la densidad vegetal a la estructura de la vegetación que ocupa.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://crossforest.eu/mfe/ontology/"/>
-        <rdfs:label xml:lang="es">Tipo Estructural</rdfs:label>
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/110">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"/>
+        <rdfs:label xml:lang="es">Clasificación MFE-IFN (110): Arbolado</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/112 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/112">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"/>
+        <rdfs:label xml:lang="es">Clasificación MFE-IFN (112): Arbolado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/113 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/113">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"/>
+        <rdfs:label xml:lang="es">Clasificación MFE-IFN (113): Arbolado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/120 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/120">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"/>
+        <rdfs:label xml:lang="es">Clasificación MFE-IFN (120): Arbolado ralo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/122 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/122">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"/>
+        <rdfs:label xml:lang="es">Clasificación MFE-IFN (122): Arbolado ralo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/123 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/123">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"/>
+        <rdfs:label xml:lang="es">Clasificación MFE-IFN (123): Arbolado ralo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/130 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/130">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"/>
+        <rdfs:label xml:lang="es">Clasificación MFE-IFN (130): Arbolado disperso</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/132 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/132">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"/>
+        <rdfs:label xml:lang="es">Clasificación MFE-IFN (132): Arbolado disperso</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/133 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/133">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"/>
+        <rdfs:label xml:lang="es">Clasificación MFE-IFN (133): Arbolado disperso</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/140 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/140">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"/>
+        <rdfs:comment xml:lang="es">Siempre es desarbolado salvo cuando CLAS_IFN es 132 que entonces es arbolado</rdfs:comment>
+        <rdfs:label xml:lang="es">Clasificación MFE-IFN (140): Desarbolado / Arbolado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/150 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/150">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"/>
+        <rdfs:label xml:lang="es">Clasificación MFE-IFN (150): Desarbolado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/200 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/200">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"/>
+        <rdfs:label xml:lang="es">Clasificación MFE-IFN (200): Cultivos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/300 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/300">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"/>
+        <rdfs:label xml:lang="es">Clasificación MFE-IFN (300): Artificial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/400 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/400">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"/>
+        <rdfs:label xml:lang="es">Clasificación MFE-IFN (400): Mar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/500 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-clasificacion-mfe-ifn/500">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion-MFE-IFN"/>
+        <rdfs:label xml:lang="es">Clasificación MFE-IFN (500): Agua</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/1 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/1">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial"/>
+        <rdfs:comment xml:lang="es">Para teselas en las que el arbolado está distribuido de forma homogénea en toda su superficie</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="en">Uniform</rdfs:label>
+        <rdfs:label xml:lang="es">Uniforme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/3 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/3">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial"/>
+        <rdfs:comment xml:lang="es">Para teselas en las que en la distribución visual del arbolado se aprecian manchas formadas por conjuntos de árboles más o menos separadas unas de otras, más o menos grandes y más o menos globosas en cuanto a la forma de cada mancha aislada. Estas manchas están separadas entre sí por zonas más ralas o desarboladas</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Discontinua en bosquetes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/4 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/4">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial"/>
+        <rdfs:comment xml:lang="es">Para teselas arboladas en las que en la distribución visual del arbolado se aprecian manchas formadas por conjuntos de árboles, más o menos separadas unas de otras, más o menos grandes y más o menos geométricas con tendencia a la forma rectangular en cuanto a la forma de cada mancha aislada. Estas manchas están separadas entre sí por zonas más ralas o desarboladas.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Discontinua en fajas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/5 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/5">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial"/>
+        <rdfs:comment xml:lang="es">Para teselas arboladas en las que la distribución visual del paisaje vegetal está determinada por la yuxtaposición de piezas de dos o más tipos de agrupación que se reparten el terreno de forma irregular, pero repitiendo o integrando unas ciertas pautas de distribución. El mosaico es el resultado de la influencia de factores o combinaciones de factores que se distribuyen sobre la superficie del terreno con variaciones aleatorias y generalmente discontínuas de sus valores. No se especifica el tipo de mosaico (dendriforme, dinámico, intrazonal, de orientación, ...)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Discontinua en mosaico</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/6 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/6">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial"/>
+        <rdfs:comment xml:lang="es">Para teselas con arbolado agrupado en las que la distribución es irregular, sin seguir pauta alguna de las anteriormente mencionadas o conjugando varias de ellas de forma que no se pueda incluir la tesela en los grupos anteriores</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Discontinua irregular</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/7 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/7">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial"/>
+        <rdfs:comment xml:lang="es">Para teselas con poca densidad arbórea y distribuida regular o irregularmente, pero sin formar agrupaciones de árboles que pudieran hacer pensar en manchas arbóreas dentro de la tesela</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Piés aislados</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/8 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/8">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial"/>
+        <rdfs:comment xml:lang="es">Para teselas arboladas que por cualquier circunstancia no pueden ser incluidas en los apartados anteriores</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Otras</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/9 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-distribucion-espacial/9">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial"/>
+        <rdfs:comment xml:lang="es">Distribución adehesada: teselas con superficie forestal ocupada por un estrato arbolado, con una fracción de cabida cubierta (superficie de suelo cubierta por la proyección de la copa de los árboles) comprendida entre el 5% y el 75%, compuesto principalmente por encinas, alcornoques, quejigos, rebollos, acebuches o fresnos, y ocasionalmente por otro arbolado, que permita el desarrollo de un estrato esencialmente herbáceo (pasto), para aprovechamiento del ganado o de las especies cinegéticas.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Adehesada</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/1 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/1">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/2 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/2">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/3 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/3">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/4 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/4">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-forma-de-masa/1 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-forma-de-masa/1">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormaDeMasa"/>
+        <rdfs:comment xml:lang="es">El contorno de la tesela no presenta una de sus dimensiones (largo o ancho) prácticamente despreciable con respecto a la otra ni adopta una forma más o menos geométrica</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Irregular</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-forma-de-masa/2 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-forma-de-masa/2">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormaDeMasa"/>
+        <rdfs:comment xml:lang="es">El contorno de la tesela adopta una forma más o menos geométrica</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Regular</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-forma-de-masa/3 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-forma-de-masa/3">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormaDeMasa"/>
+        <rdfs:comment xml:lang="es">El contorno de la tesela arbolada o arbustiva presenta una de sus dimensiones (largo o ancho) prácticamente despreciable con respecto a la otra y además sigue el curso de una corriente de agua</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Galeria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-forma-de-masa/4 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-forma-de-masa/4">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormaDeMasa"/>
+        <rdfs:comment xml:lang="es">El contorno de la tesela arbolada o arbustiva presenta una de sus dimensiones (largo o ancho) prácticamente despreciable con respecto a la otra y además no sigue el curso de una corriente de agua</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Alineación</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AA -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AA">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"/>
+        <rdfs:label xml:lang="es">Mezcla autóctonas y alóctonas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AL -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AL">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"/>
+        <rdfs:label xml:lang="es">Alóctonas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"/>
+        <rdfs:label xml:lang="es">Autóctonas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"/>
+        <rdfs:label xml:lang="es">Bosque de coníferas</rdfs:label>
+        <rdfs:label xml:lang="en">Conifer Stand</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DE -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DE">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"/>
+        <rdfs:label xml:lang="es">Dehesas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DI -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DI">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"/>
+        <rdfs:label xml:lang="es">Arbolado disperso</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"/>
+        <rdfs:label xml:lang="es">Masas con una especie dominante</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOALC190 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOALC190">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AL"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOALF070 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOALF070">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AL"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC210 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC210">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC220 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC220">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC230 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC230">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC238 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC238">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC240 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC240">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC250 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC250">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC260 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC260">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+        <rdfs:label xml:lang="es">Pinar de pino negral </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC261 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC261">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+        <rdfs:label xml:lang="es">Pinar de pino pinaster en región mediterránea (P.pinaster spp. mesogeensis)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC270 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC270">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC310 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC310">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC320 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC320">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC370 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC370">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC380 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC380">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC390 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC390">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF243 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF243">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF400 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF400">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF430 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF430">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF440 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF440">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF450 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF450">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF460 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF460">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF470 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF470">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF550 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF550">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF650 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF650">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF660 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF660">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF670 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF670">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF680 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF680">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF710 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF710">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF720 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF720">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF730 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF730">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF940 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF940">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DO"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"/>
+        <rdfs:label xml:lang="es">Bosques de frondosas</rdfs:label>
+        <rdfs:label xml:lang="es">Frondosas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/M -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/M">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"/>
+        <rdfs:label xml:lang="es">Mezcla de coníferas y frondosas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"/>
+        <rdfs:label xml:lang="es">Masas mixtas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAAC882 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAAC882">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AA"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"/>
+        <rdfs:label xml:lang="es">Coníferas alóctonas con  autóctonas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAAF881 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAAF881">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AA"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAAM883 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAAM883">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AA"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/M"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"/>
+        <rdfs:label xml:lang="es">Coníferas con frondosas (alóctonas con  autóctonas)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC861 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC861">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC862 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC862">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC863 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC863">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC864 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC864">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF810 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF810">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"/>
+        <rdfs:comment xml:lang="es">Frondosas autóctonas en Región Biogeográfica Alpina</rdfs:comment>
+        <rdfs:label xml:lang="es">Bosque mixto de frondosas en la región biogeográfica Alpina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF820 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF820">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"/>
+        <rdfs:comment xml:lang="es">Frondosas autóctonas en Región Biogeográfica Atlántica</rdfs:comment>
+        <rdfs:label xml:lang="es">Bosque mixto de frondosas en la región biogeográfica Atlántica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF830 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF830">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"/>
+        <rdfs:comment xml:lang="es">Frondosas autóctonas en Región Biogeográfica Mediterránea</rdfs:comment>
+        <rdfs:label xml:lang="es">Bosque mixto de frondosas en la región biogeográfica Mediterránea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF840 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF840">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"/>
+        <rdfs:comment xml:lang="es">Frondosas autóctonas en Región Biogeográfica Macaronésica</rdfs:comment>
+        <rdfs:label xml:lang="es">Bosque mixto de frondosas en la región biogeográfica Macaronésica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF841 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF841">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF841"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF842 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF842">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF842"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF843 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF843">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF843"/>
+        <rdfs:label xml:lang="es">Otras mezclas de frondosas macaronésicas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF850 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF850">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUM871 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUM871">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/M"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"/>
+        <rdfs:label xml:lang="es">Mezcla de coníferas y frondosas autóctonas en la región biogeográfica Alpina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUM872 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUM872">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/M"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"/>
+        <rdfs:label xml:lang="es">Mezcla de coníferas y frondosas autóctonas en la región biogeográfica Atlántica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUM873 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUM873">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/M"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"/>
+        <rdfs:label xml:lang="es">Mezcla de coníferas y frondosas autóctonas en la región biogeográfica Mediterránea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUM874 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUM874">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/AU"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/M"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MX"/>
+        <rdfs:label xml:lang="es">Mezcla de coníferas y frondosas autóctonas en la región biogeográfica Macaronésica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RE -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RE">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"/>
+        <rdfs:label xml:lang="es">Repoblaciones</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RI -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RI">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"/>
+        <rdfs:label xml:lang="es">Riberas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada"/>
+        <rdfs:label xml:lang="es">Masas mixtas o puras caracterizadas por su estructura (Tipo estructural)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STDEF920 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STDEF920">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DE"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"/>
+        <rdfs:comment xml:lang="es">Tipo Estructural 3</rdfs:comment>
+        <rdfs:label xml:lang="es">Dehesas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STDIC932 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STDIC932">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DI"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"/>
+        <rdfs:label xml:lang="es">Arbolado disperso coníferas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STDIF931 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STDIF931">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DI"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"/>
+        <rdfs:label xml:lang="es">Arbolado disperso de frondosas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STDIM933 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STDIM933">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DI"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/M"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"/>
+        <rdfs:label xml:lang="es">Arbolado disperso coníferas y frondosas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREC262 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREC262">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RE"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"/>
+        <rdfs:label xml:lang="es">Pinares de pino pinaster en región atlántica (Pinus pinaster spp. atlántica)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREC280 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREC280">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RE"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"/>
+        <rdfs:label xml:lang="es">Pinar de pino radiata (Pinus radiata)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREC300 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREC300">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/C"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RE"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"/>
+        <rdfs:label xml:lang="es">Otras coníferas alóctonas de producción (Larix spp., Pseudotsuga spp., etc)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREF258 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREF258">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RE"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREF480 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREF480">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RE"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"/>
+        <rdfs:label xml:lang="es">Repoblación de Quercus rubra</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREF600 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREF600">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RE"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"/>
+        <rdfs:label xml:lang="es">Eucaliptal (Eucaliptus spp.)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREM940 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREM940">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/M"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RE"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"/>
+        <rdfs:label xml:lang="es">Otras de especies de producción en mezcla</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STRIF910 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STRIF910">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/F"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/RI"/>
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/ST"/>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-fraccion-cabida-cubierta/arborea -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-fraccion-cabida-cubierta/arborea">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FraccionDeCabidaCubierta"/>
+        <rdfs:comment xml:lang="es">Corresponde al campo TFCCARB</rdfs:comment>
+        <rdfs:comment xml:lang="es">Representa la proporción del conjunto de las especies del estrato arbóreo como porcentaje de suelo cubierto por la proyección de todas las copas. No influye en su cálculo el hecho de tratarse de masas monoespecíficas o pluriespecíficas, o el de encontrarse en distinto estado de masa las distintas especies.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Canopy Cover of Trees</rdfs:label>
+        <rdfs:label xml:lang="es">Fracción de Cabida Cubierta Arbórea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-fraccion-cabida-cubierta/arbustiva -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-fraccion-cabida-cubierta/arbustiva">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FraccionDeCabidaCubierta"/>
+        <rdfs:comment xml:lang="es">Representa la proporción del conjunto de las especies del estrato arbustivo como porcentaje de suelo cubierto por la proyección de todas las copas. No influye en su cálculo el hecho de tratarse de masas monoespecíficas o pluriespecíficas, o el de encontrarse en distinto estado de masa las distintas especies.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Canopy Cover of Bushes</rdfs:label>
+        <rdfs:label xml:lang="es">Fracción de Cabida Cubierta Arbustiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-fraccion-cabida-cubierta/total -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-fraccion-cabida-cubierta/total">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FraccionDeCabidaCubierta"/>
+        <rdfs:comment xml:lang="es">Corresponde al campo TFCCTOT</rdfs:comment>
+        <rdfs:comment xml:lang="es">Representa la proporción total de la vegetación arbórea y de matorral. Proporciona información sobre la proyección sobre el suelo de los principales pisos de vegetación. En algún caso se incluirán fracciones de cabida cubierta de pastizales o cultivos. Para su cuantificación se tendrá en cuenta todas las especies en conjunto, con independencia de que se presenten por razones de edad o de otro tipo de alturas muy distintas.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Fracción de Cabida Cubierta Total</rdfs:label>
+        <rdfs:label xml:lang="es">Total Canopy Cover</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-region-biogeografica/ALP -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-region-biogeografica/ALP">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RegionBiogeografica"/>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Región biogeográfica Alpina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-region-biogeografica/ATL -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-region-biogeografica/ATL">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RegionBiogeografica"/>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Región biogeográfica Atlántica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-region-biogeografica/MAC -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-region-biogeografica/MAC">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RegionBiogeografica"/>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Región biogeográfica Macaronésica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-region-biogeografica/MED -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-region-biogeografica/MED">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RegionBiogeografica"/>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Región biogeográfica Mediterránea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-de-bosque/C -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-de-bosque/C">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoDeBosque"/>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Coníferas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-de-bosque/F -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-de-bosque/F">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoDeBosque"/>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Frondosas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-de-bosque/M -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-de-bosque/M">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoDeBosque"/>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Mixtas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/1 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/1">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Agrupación de árboles o especies potencialmente arbóreas, en espesura con una fracción de cabida cubierta superior al 5% y uso netamente forestal. El origen del mismo es natural  o de repoblación totalmente integrada</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Bosque</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/10 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/10">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Teselas que por circunstancias de composición edáfica, de pendiente, o cualquiera otra, presentan la mayor parte de su superficie desnuda de vegetación incluso herbácea. Serán los desiertos y semidesiertos de los diversos tipos.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Monte sin Vegetación Superior</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/11 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/11">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Teselas forestales arboladas que se encuentran junto a los cauces de los ríos, pobladas de especies ripícolas</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">A.F.M. (riberas)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/12 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/12">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Teselas que presentan arbolado fuera del monte, es decir, rodeado de otras teselas no forestales, distribuido en bosquetes individualizables y/o suficientemente próximos como para ser agrupados dentro de una misma tesela. Su superficie no excederá de 20 ha.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">A.F.M. (bosquetes)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/13 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/13">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Teselas que presentan arbolado fuera del monte, cuya distribución espacial corresponde a una alineación de varios árboles de anchura.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">A.F.M. (alineaciones)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/14 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/14">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Teselas que, teniendo un uso fundamentalmente no forestal, incluyen árboles sueltos dispersos por ellas.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">A.F.M. (a. sueltos)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/15 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/15">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Teselas de uso agrícola.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Agrícola</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/16 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/16">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Contendrá las teselas en las que la influencia antrópica ha determinado que su uso no sea ya más ni agrícola ni forestal. Se exceptúan los casos 21 a 23</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Artificial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/17 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/17">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Teselas que sufren una inundación temporal pero repetitiva año tras año con carácter frecuentemente estacional, lo que condiciona la vegetación presente en ella. </rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Humedal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/18 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/18">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Incluye las teselas ocupadas por el agua permanentemente,  o sólo temporalmente en el caso de cursos de agua.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Agua</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/19 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/19">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Mar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/2 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/2">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Agrupación de árboles en espesura con una fracción de cabida cubierta superior al 5% y uso netamente forestal, cuyo origen es el de plantación. Para decidir que una plantación ha dejado de serlo, adquiriendo una naturalidad fruto del paso del tiempo y de la propia dinámica de la vegetación, deberán aparecer diluidos los marcos de plantación u otros elementos que delaten su origen artificial.  Esta idea se verá reforzada si, además: los árboles tienen al menos un diámetro normal de 25 cm, o hay regeneración natural de la masa, así como árboles de diferentes dimensiones y tallas, o existe una invasión más que incipiente de matorral bajo las copas, o de otros árboles naturales de la zona</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Bosque de Plantación</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/20 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/20">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Fuera de Límites</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/21 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/21">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Autopistas y Autovías</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/22 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/22">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Infraestructuras de Conducción</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/23 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/23">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Minería, Escombreras y Vertederos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/24 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/24">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Prado con Setos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/25 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/25">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Comprende aquellos mosaicos en que los bosquetes arbolados no tienen una continuidad que haga que por su superficie se pueda clasificar como forestal arbolado. Los bosquetes arbolados están en mosaico con los cultivos y/o los prados. Cuando una tesela se clasifique con esta distribucción específica, en el campo especie aparecerá, dentro de las dos primeras, las dos especies forestales más importantes presentes (si sólo hubiese una, aparecerá sólamente una), quedando la tercera (o la segunda), para consignar el código del cultivo o del prado (1500 y 3400  respectivamente). En el campo ocupación se consignará la proporción relativa en que aparece el cultivo o prado respecto a las otras especies forestales y por último el campo estado, quedará vacío cuando se trate de cultivos o prados.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Mosaico Arbolado sobre Cultivo y/o Prado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/26 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/26">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Comprende aquellos mosaicos en que los bosquetes arbolados no tienen una continuidad que haga que por su superficie se pueda clasificar como forestal arbolado. Los bosquetes arbolados están en mosaico con coberturas forestales no arboladas, que podrán ser de matorral, herbazal o pastizal-matorral . Cuando una tesela se clasifique con esta distribucción específica, en el campo especie aparecerá, dentro de las dos primeras, las dos especies forestales más importantes presentes (si sólo hubiese una, aparecerá sólamente una), quedando la tercera (o la segunda), para consignar el código del matorral, herbazal o pastizal-matorral (8000, 9000 o 3500 respectivamente). En el campo ocupación se consignará la proporción relativa en que aparece el forestal no arbolado respecto a las otras especies forestales y por último, el campo estado quedará vacío cuando se trate de forestal no arbolado.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Mosaico Arbolado sobre Forestal Desarbolado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/27 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/27">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Comprende aquellos mosaicos formados por cultivos y/o prados en mezcla con coberturas forestales no arboladas (matorral, pastizal-matorral o herbazal). Cuando una tesela se clasifique con esta distribucción específica, en el campo especie se consignará en primer lugar la cobertura de mayor extensión superficial con su ocupación  hasta tres posibles valores. En todos los casos el campo estado quedará vacío. Los posibles valores para el campo especie serán: 1500,3400,3500,8000 y 9000 correspondiendo a agrícola, prados, pastizal-matorral, matorral y herbazal respectivamente.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Mosaico Desarbolado sobre Cultivo y/o Prado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/28 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/28">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Espacios dedicados exclusivamente a cultivos de secano, con un arbolado disperso, que puede superar el 5% de fcc, derivado de antiguos usos de dehesa o de bosque. Para clasificarlo como tal, el arbolado tiene que ser representativo de uso forestal (no los frutales) e intuir antiguos usos forestales (especialmente dehesas).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Cultivo con Arbolado Disperso</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/29 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/29">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Espacio de gran extensión con características y uso de Parque, en las proximidades de los grandes núcleos urbanos. En él se separarán las infraestructuras de uso público y de características de uso artificial como Parques de Atracciones, Auditorios, etc.. de superficie superior a las 2,5 ha.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Parque Periurbano</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/3 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/3">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Dehesa es aquella formación arbolada (fcc &gt; 5%), poblada habitualmente de árboles con aptitudes ganaderas de sus frutos o ramones, y en la que aunque el uso principal sea el ganadero  aparece un doble uso agrícola y forestal</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Bosque Adehesado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/30 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/30">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Superficie forestal de fuerte actividad recreativa, incluso pistas de sky.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Área Recreativa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/31 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/31">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Lago natural de alta montaña.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Laguna de Alta Montaña</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/32 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/32">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Teselas pobladas por especies potencialmente arbóreas, pero que en la actualidad presentan tallas arbustivas probablemente como consecuencia del tipo de aprovechamiento.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Monte Bajo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/33 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/33">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Formaciones de porte arbustivo en un solo estrato, correspondientes a mezclas de especies arbóreas y de matorral que en la actualidad presentan tallas arbustivas, especialmente esclerófilas y laurifolias. Se presentan casi exclusivamente sobre suelos silíceos (mitad oeste peninsular). Normalmente son manchas de mezclas de encina con madroño, durillo, etc..</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Mancha</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/34 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/34">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Incluye aquella superficie poblada por pastos, con aprovechamiento ganadero patente que por sus características puede considerarse no forestal y en la que puede aparecer arbolado disperso incluso con fracción de cabida cubierta algo superior al 5%.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Prado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/35 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/35">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Superficie poblada con matorral bajo (tomillos o similares) en mezcla con herbáceas y aprovechamiento extensivo de ganado. Las zonas de erial quedarán aquí asignadas.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Pastizal-Matorral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/4 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/4">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Corresponde a teselas dentro del bosque que, sin ser arboladas, están íntimamente unidas al aprovechamiento forestal del mismo. (Ej.: parques de madera, cortafuegos, …). Se pondrá como TFCCARB la del bosque que las rodea.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Complementos del Bosque</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/5 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/5">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Teselas en terreno forestal que normalmente deberían estar arboladas pero se encuentran temporalmente desarboladas por la realización de talas recientes. Se identifica por tratarse de claros en el bosque con formas geométricas.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Temporalmente Desarbolado (talas)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/6 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/6">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Teselas en terreno forestal que normalmente deberían estar arboladas pero se encuentran temporalmente desarboladas por un reciente incendio.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Temporalmente Desarbolado (incendios)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/7 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/7">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Teselas en terreno forestal que normalmente deberían estar arboladas pero se encuentran temporalmente desarboladas por causa de algún fenómeno natural (vientos, aludes..).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Temporalmente Desarbolado (f. naturales)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/8 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/8">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Agrupación vegetal definida por su estructura o por su aspecto, conferidos por el hecho de que su estrato superior o el más alto con espesura están caracterizados por el predominio de matas (especies leñosas relativamente bajas y ramificadas desde su base).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Matorral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/9 -->
+
+
+    <owl:Class rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-tipo-estructural/9">
+        <rdfs:subClassOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural"/>
+        <rdfs:comment xml:lang="es">Teselas cubiertas por hierbas de origen natural. Se definen como agrupaciones o cubiertas caracterizadas por la abundancia, densidad y predominio de herbáceas</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Herbazal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies14-19-21-22-23-24-25-26-27-28-30-31-32-37-38-39-219-238 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies14-19-21-22-23-24-25-26-27-28-30-31-32-37-38-39-219-238"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies19 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies19"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies21 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies21"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies22 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies22"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies23 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies23"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies238 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies238"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies24 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies24"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies243 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies243"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies25 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies25"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies258 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies258"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies27 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies27"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies31 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies31"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies32 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies32"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies369 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies369"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies37 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies37"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies38 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies38"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies39 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies39"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies40 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies40"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies43 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies43"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies44 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies44"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies45 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies45"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies46 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies46"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies47 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies47"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies55 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies55"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies65 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies65"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies66 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies66"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies67 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies67"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies68 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies68"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies7 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies7"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies71 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies71"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies72 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies72"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies73 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies73"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies74 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies74"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies80 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies80"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies83 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies83"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies50%3B50%2F55-58%3B13%2F55-50-58%3B55%2F58-258 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies50%3B50%2F55-58%3B13%2F55-50-58%3B55%2F58-258"/>
+    
+
+
+    <!-- https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies7-48-60%2F13-40-43-44-45-46-47-48%2A-50-55-56-58-60%2A-65-66-67-68-70-71-72-73-74-80-83-91-93-95-99-243-258-369-495 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies7-48-60%2F13-40-43-44-45-46-47-48%2A-50-55-56-58-60%2A-65-66-67-68-70-71-72-73-74-80-83-91-93-95-99-243-258-369-495"/>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/1">
+        <rdf:type rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/2">
+        <rdf:type rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/3">
+        <rdf:type rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/4">
+        <rdf:type rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOALC190 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOALC190">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies19"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOALF070 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOALF070">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC210 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC210">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies21"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC220 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC220">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies22"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC230 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC230">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies23"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC238 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC238">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies238"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC240 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC240">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies24"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC250 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC250">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies25"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC270 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC270">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies27"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC310 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC310">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies31"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC320 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC320">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies32"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC370 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC370">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies37"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC380 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC380">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies38"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC390 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC390">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies39"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF243 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF243">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies243"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF400 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF400">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies40"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF430 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF430">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies43"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF440 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF440">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies44"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF450 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF450">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies45"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF460 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF460">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies46"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF470 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF470">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies47"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF550 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF550">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies55"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF650 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF650">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies65"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF660 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF660">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies66"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF670 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF670">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies67"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF680 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF680">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies68"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF710 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF710">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies71"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF720 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF720">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies72"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF730 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF730">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies73"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF940 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF940">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies74"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAAF881 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAAF881">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies7-48-60%2F13-40-43-44-45-46-47-48%2A-50-55-56-58-60%2A-65-66-67-68-70-71-72-73-74-80-83-91-93-95-99-243-258-369-495"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC861 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC861">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies14-19-21-22-23-24-25-26-27-28-30-31-32-37-38-39-219-238"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC862 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC862">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies14-19-21-22-23-24-25-26-27-28-30-31-32-37-38-39-219-238"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC863 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC863">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies14-19-21-22-23-24-25-26-27-28-30-31-32-37-38-39-219-238"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC864 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC864">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies14-19-21-22-23-24-25-26-27-28-30-31-32-37-38-39-219-238"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF841 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF841">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies83"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF842 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF842">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies80"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF850 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF850">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies369"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREF258 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREF258">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STRIF910 -->
+
+
+    <owl:NamedIndividual rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STRIF910">
+        <hasSetOfSpecies rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/SetofSpecies50%3B50%2F55-58%3B13%2F55-50-58%3B55%2F58-258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/1">
+        <rdfs:comment xml:lang="es">Estado de una población desde su nacimiento (de semilla) o brote (de cepa o raíz) hasta que se tocan las partes aéreas de los pies contiguos</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Repoblado</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/2">
+        <rdfs:comment xml:lang="es">Estado de la masa en su primera juventud, esto es, desde que empiezan a tocarse las copas nuevas de las plantas hasta alcanzar el estado de latizal</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Monte bravo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/3">
+        <rdfs:comment xml:lang="es">Estado de masa arbórea a partir de los 8 - 10 metros de talla y hasta llegar al estado de fustal</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Latizal</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-estado-de-desarrollo/4">
+        <rdfs:comment xml:lang="es">Estado de superior desarrollo de los montes arbolados</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/"/>
+        <rdfs:label xml:lang="es">Fustal</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOALC190">
+        <rdfs:label xml:lang="es">Coníferas alóctonas de gestión (Cupressus sp, Cedrus spp. otros pinos, etc.)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOALF070">
+        <rdfs:label xml:lang="es">Frondosas alóctonas invasoras </rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC210">
+        <rdfs:label xml:lang="es">Pinar de pino albar (Pinus sylvestris)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC220">
+        <rdfs:label xml:lang="es">Pinar de pino negro (Pinus uncinata)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC230">
+        <rdfs:label xml:lang="es">Pinar de pino piñonero (Pinus pinea)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC238">
+        <rdfs:label xml:lang="es">Sabinares canarios (Juniperus turbinata)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC240">
+        <rdfs:label xml:lang="es">Pinar de pino carrasco (Pinus halepensis)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC250">
+        <rdfs:label xml:lang="es">Pinar de pino salgareño (Pinus nigra)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC270">
+        <rdfs:label xml:lang="es">Pinar de pino canario (Pinus canariensis)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC310">
+        <rdfs:label xml:lang="es">Abetales (Abies alba)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC320">
+        <rdfs:label xml:lang="es">Pinsapares (Abies pinsapo)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC370">
+        <rdfs:label xml:lang="es">Enebrales (Juniperus spp.)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC380">
+        <rdfs:label xml:lang="es">Sabinares albares (Juniperus thurifera)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUC390">
+        <rdfs:label xml:lang="es">Sabinares de Juniperus phoenicea</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF243">
+        <rdfs:label xml:lang="es">Robledales de roble pubescente (Q. humilis)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF400">
+        <rdfs:label xml:lang="es">Robledales de Q. robur y/o Q. petraea</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF430">
+        <rdfs:label xml:lang="es">Melojares (Quercus pyrenaica)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF440">
+        <rdfs:label xml:lang="es">Quejigares (Quercus faginea)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF450">
+        <rdfs:label xml:lang="es">Encinares (Quercus ilex)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF460">
+        <rdfs:label xml:lang="es">Alcornocales (Quercus suber)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF470">
+        <rdfs:label xml:lang="es">Quejigares de Quercus canariensis</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF550">
+        <rdfs:label xml:lang="es">Fresnedas (Fraxinus spp.)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF650">
+        <rdfs:label xml:lang="es">Acebedas (Ilex aquifolium)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF660">
+        <rdfs:label xml:lang="es">Acebuchales (Olea europaea var. sylvestris)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF670">
+        <rdfs:label xml:lang="es">Algarrobales (Ceratonia siliqua)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF680">
+        <rdfs:label xml:lang="es">Madroñales (Arbutus unedo)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF710">
+        <rdfs:label xml:lang="es">Hayedos (Fagus sylvatica)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF720">
+        <rdfs:label xml:lang="es">Castañares (Castanea sativa)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF730">
+        <rdfs:label xml:lang="es">Abedulares (Betula spp.)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/DOAUF940">
+        <rdfs:label xml:lang="es">Avellanedas (Corylus avellana)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAAF881">
+        <rdfs:comment xml:lang="es">Las especies 48 y 60 no se combinan porque irían a la formación 38</rdfs:comment>
+        <rdfs:label xml:lang="es">Frondosas alóctonas con  autóctonas</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC861">
+        <rdfs:comment xml:lang="es">Excepto: 28-30, que sería formación 38</rdfs:comment>
+        <rdfs:label xml:lang="es">Mezcla de coníferas autóctonas en la región biogeográfica Alpina</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC862">
+        <rdfs:comment xml:lang="es">Excepto: 28-30, que sería formación 38</rdfs:comment>
+        <rdfs:label xml:lang="es">Mezcla de coníferas autóctonas en la región biogeográfica Atlántica</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC863">
+        <rdfs:comment xml:lang="es">Excepto: 28-30, que sería formación 38</rdfs:comment>
+        <rdfs:label xml:lang="es">Mezcla de coníferas autóctonas en la región biogeográfica Mediterránea</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUC864">
+        <rdfs:comment xml:lang="es">Excepto: 28-30, que sería formación 38</rdfs:comment>
+        <rdfs:label xml:lang="es">Mezcla de coníferas autóctonas en la región biogeográfica Macaronésica</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF841">
+        <rdfs:label xml:lang="es">Fayal-brezal</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF842">
+        <rdfs:label xml:lang="es">Laurisilvas macaronésicas</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/MXAUF850">
+        <rdfs:label xml:lang="es">Palmerales y mezclas de palmeras con otras especies</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STREF258">
+        <rdfs:label xml:lang="es">Choperas y plataneras de producción</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/mfe-formacion-arbolada/STRIF910">
+        <rdfs:comment xml:lang="es">Tipo Estructural 11</rdfs:comment>
+        <rdfs:label xml:lang="es">Bosque ribereño</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 

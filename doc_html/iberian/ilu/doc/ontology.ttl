@@ -7,6 +7,7 @@
 @base <http://crossforest.eu/ilu/ontology/> .
 
 <http://crossforest.eu/ilu/ontology/> rdf:type owl:Ontology ;
+                                       <http://purl.org/dc/elements/1.1/contributor> <https://github.com/dportoles> ;
                                        <http://purl.org/dc/elements/1.1/creator> <https://www.crossforest.eu/members/guiveg> ,
                                                                                  <https://www.crossforest.eu/members/josgim> ;
                                        <http://purl.org/dc/elements/1.1/date> "2020-07-17"^^xsd:date ;
@@ -21,6 +22,10 @@
 #    Annotation properties
 #################################################################
 
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/elements/1.1/creator
 <http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
 
@@ -31,6 +36,10 @@
 
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
 <http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#closeMatch
+<http://www.w3.org/2004/02/skos/core#closeMatch> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -148,6 +157,32 @@
                            "Territórios artificializado"@pt .
 
 
+###  http://crossforest.eu/ilu/ontology/BiogeographicRegion
+:BiogeographicRegion rdf:type owl:Class ;
+                     rdfs:isDefinedBy <http://crossforest.eu/ilu/ontology/> ;
+                     rdfs:label "Biogeographic Region"@en ,
+                                "Región biogeográfica"@es ;
+                     <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RegionBiogeografica> .
+
+
+###  http://crossforest.eu/ilu/ontology/CanopyCover
+:CanopyCover rdf:type owl:Class ;
+             rdfs:comment "Canopy Cover of the Vegetation Structure"@en ,
+                          "Representa la proporción total de la vegetación."@es ;
+             rdfs:isDefinedBy <http://crossforest.eu/ilu/ontology/> ;
+             rdfs:label "Canopy Cover"@es ,
+                        "Fracción de Cabida Cubierta"@es ;
+             <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FraccionDeCabidaCubierta> .
+
+
+###  http://crossforest.eu/ilu/ontology/Classification
+:Classification rdf:type owl:Class ;
+                rdfs:isDefinedBy <http://crossforest.eu/ilu/ontology/> ;
+                rdfs:label "Clasificación"@es ,
+                           "Classification"@en ;
+                <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion_MFE_IFN> .
+
+
 ###  http://crossforest.eu/ilu/ontology/ForestLand
 :ForestLand rdf:type owl:Class ;
             rdfs:subClassOf :Use ;
@@ -157,6 +192,14 @@
             rdfs:label ""@en ,
                        "Bosques"@es ,
                        "Superfícies agroflorestais e Florestas"@pt .
+
+
+###  http://crossforest.eu/ilu/ontology/ForestType
+:ForestType rdf:type owl:Class ;
+            rdfs:isDefinedBy <http://crossforest.eu/ilu/ontology/> ;
+            rdfs:label "Forest Type"@en ,
+                       "Formación Arbolada"@es ;
+            <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada> .
 
 
 ###  http://crossforest.eu/ilu/ontology/LandUse
@@ -185,6 +228,29 @@
               rdfs:label "Patch in the patch"@es .
 
 
+###  http://crossforest.eu/ilu/ontology/PatchShape
+:PatchShape rdf:type owl:Class ;
+            rdfs:isDefinedBy <http://crossforest.eu/ilu/ontology/> ;
+            rdfs:label "Forma de la tesela"@es ,
+                       "Shape of the patch"@en ;
+            <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormaDeMasa> .
+
+
+###  http://crossforest.eu/ilu/ontology/SpatialDistribution
+:SpatialDistribution rdf:type owl:Class ;
+                     rdfs:isDefinedBy <http://crossforest.eu/ilu/ontology/> ;
+                     rdfs:label "Distribución"@es ;
+                     <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial> .
+
+
+###  http://crossforest.eu/ilu/ontology/StandDevelopment
+:StandDevelopment rdf:type owl:Class ;
+                  rdfs:isDefinedBy <http://crossforest.eu/ilu/ontology/> ;
+                  rdfs:label "Estado de Desarrollo"@es ,
+                             "Stand development"@en ;
+                  <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo> .
+
+
 ###  http://crossforest.eu/ilu/ontology/TreelessLand
 :TreelessLand rdf:type owl:Class ;
               rdfs:subClassOf :Use ;
@@ -196,6 +262,13 @@
                          "Terreno desarbolado"@es .
 
 
+###  http://crossforest.eu/ilu/ontology/TypeOfForest
+:TypeOfForest rdf:type owl:Class ;
+              rdfs:isDefinedBy <http://crossforest.eu/ilu/ontology/> ;
+              rdfs:label "Tipo de Bosque"@es ;
+              <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoDeBosque> .
+
+
 ###  http://crossforest.eu/ilu/ontology/Use
 :Use rdf:type owl:Class .
 
@@ -205,6 +278,14 @@
             rdfs:comment "Use present in the patch"@es ;
             rdfs:isDefinedBy <http://crossforest.eu/ilu/ontology/> ;
             rdfs:label "Use in the patch"@es .
+
+
+###  http://crossforest.eu/ilu/ontology/VegetationStructure
+:VegetationStructure rdf:type owl:Class ;
+                     rdfs:isDefinedBy <http://crossforest.eu/ilu/ontology/> ;
+                     rdfs:label "Tipo Estructural"@es ,
+                                "Vegetation structure"@en ;
+                     <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural> .
 
 
 ###  http://crossforest.eu/ilu/ontology/WetLand

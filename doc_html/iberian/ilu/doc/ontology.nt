@@ -1,4 +1,5 @@
 <http://crossforest.eu/ilu/ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://crossforest.eu/ilu/ontology/> <http://purl.org/dc/elements/1.1/contributor> <https://github.com/dportoles> .
 <http://crossforest.eu/ilu/ontology/> <http://purl.org/dc/elements/1.1/creator> <https://www.crossforest.eu/members/guiveg> .
 <http://crossforest.eu/ilu/ontology/> <http://purl.org/dc/elements/1.1/creator> <https://www.crossforest.eu/members/josgim> .
 <http://crossforest.eu/ilu/ontology/> <http://purl.org/dc/elements/1.1/date> "2020-07-17"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -17,6 +18,9 @@
 # #################################################################
 # 
 # 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/elements/1.1/creator
 <http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -25,6 +29,9 @@
 # 
 # http://purl.org/vocab/vann/preferredNamespacePrefix
 <http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#closeMatch
+<http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -147,6 +154,29 @@
 <http://crossforest.eu/ilu/ontology/ArtificialLand> <http://www.w3.org/2000/01/rdf-schema#label> "Territorios Artificiales"@es .
 <http://crossforest.eu/ilu/ontology/ArtificialLand> <http://www.w3.org/2000/01/rdf-schema#label> "Territórios artificializado"@pt .
 # 
+# http://crossforest.eu/ilu/ontology/BiogeographicRegion
+<http://crossforest.eu/ilu/ontology/BiogeographicRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ilu/ontology/BiogeographicRegion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ilu/ontology/> .
+<http://crossforest.eu/ilu/ontology/BiogeographicRegion> <http://www.w3.org/2000/01/rdf-schema#label> "Biogeographic Region"@en .
+<http://crossforest.eu/ilu/ontology/BiogeographicRegion> <http://www.w3.org/2000/01/rdf-schema#label> "Región biogeográfica"@es .
+<http://crossforest.eu/ilu/ontology/BiogeographicRegion> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/RegionBiogeografica> .
+# 
+# http://crossforest.eu/ilu/ontology/CanopyCover
+<http://crossforest.eu/ilu/ontology/CanopyCover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ilu/ontology/CanopyCover> <http://www.w3.org/2000/01/rdf-schema#comment> "Canopy Cover of the Vegetation Structure"@en .
+<http://crossforest.eu/ilu/ontology/CanopyCover> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa la proporción total de la vegetación."@es .
+<http://crossforest.eu/ilu/ontology/CanopyCover> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ilu/ontology/> .
+<http://crossforest.eu/ilu/ontology/CanopyCover> <http://www.w3.org/2000/01/rdf-schema#label> "Canopy Cover"@es .
+<http://crossforest.eu/ilu/ontology/CanopyCover> <http://www.w3.org/2000/01/rdf-schema#label> "Fracción de Cabida Cubierta"@es .
+<http://crossforest.eu/ilu/ontology/CanopyCover> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FraccionDeCabidaCubierta> .
+# 
+# http://crossforest.eu/ilu/ontology/Classification
+<http://crossforest.eu/ilu/ontology/Classification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ilu/ontology/Classification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ilu/ontology/> .
+<http://crossforest.eu/ilu/ontology/Classification> <http://www.w3.org/2000/01/rdf-schema#label> "Clasificación"@es .
+<http://crossforest.eu/ilu/ontology/Classification> <http://www.w3.org/2000/01/rdf-schema#label> "Classification"@en .
+<http://crossforest.eu/ilu/ontology/Classification> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/Clasificacion_MFE_IFN> .
+# 
 # http://crossforest.eu/ilu/ontology/ForestLand
 <http://crossforest.eu/ilu/ontology/ForestLand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://crossforest.eu/ilu/ontology/ForestLand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ilu/ontology/Use> .
@@ -156,6 +186,13 @@
 <http://crossforest.eu/ilu/ontology/ForestLand> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
 <http://crossforest.eu/ilu/ontology/ForestLand> <http://www.w3.org/2000/01/rdf-schema#label> "Bosques"@es .
 <http://crossforest.eu/ilu/ontology/ForestLand> <http://www.w3.org/2000/01/rdf-schema#label> "Superfícies agroflorestais e Florestas"@pt .
+# 
+# http://crossforest.eu/ilu/ontology/ForestType
+<http://crossforest.eu/ilu/ontology/ForestType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ilu/ontology/ForestType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ilu/ontology/> .
+<http://crossforest.eu/ilu/ontology/ForestType> <http://www.w3.org/2000/01/rdf-schema#label> "Forest Type"@en .
+<http://crossforest.eu/ilu/ontology/ForestType> <http://www.w3.org/2000/01/rdf-schema#label> "Formación Arbolada"@es .
+<http://crossforest.eu/ilu/ontology/ForestType> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormacionArbolada> .
 # 
 # http://crossforest.eu/ilu/ontology/LandUse
 <http://crossforest.eu/ilu/ontology/LandUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -181,6 +218,26 @@
 <http://crossforest.eu/ilu/ontology/PatchInPatch> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ilu/ontology/> .
 <http://crossforest.eu/ilu/ontology/PatchInPatch> <http://www.w3.org/2000/01/rdf-schema#label> "Patch in the patch"@es .
 # 
+# http://crossforest.eu/ilu/ontology/PatchShape
+<http://crossforest.eu/ilu/ontology/PatchShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ilu/ontology/PatchShape> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ilu/ontology/> .
+<http://crossforest.eu/ilu/ontology/PatchShape> <http://www.w3.org/2000/01/rdf-schema#label> "Forma de la tesela"@es .
+<http://crossforest.eu/ilu/ontology/PatchShape> <http://www.w3.org/2000/01/rdf-schema#label> "Shape of the patch"@en .
+<http://crossforest.eu/ilu/ontology/PatchShape> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/FormaDeMasa> .
+# 
+# http://crossforest.eu/ilu/ontology/SpatialDistribution
+<http://crossforest.eu/ilu/ontology/SpatialDistribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ilu/ontology/SpatialDistribution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ilu/ontology/> .
+<http://crossforest.eu/ilu/ontology/SpatialDistribution> <http://www.w3.org/2000/01/rdf-schema#label> "Distribución"@es .
+<http://crossforest.eu/ilu/ontology/SpatialDistribution> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/DistribucionEspacial> .
+# 
+# http://crossforest.eu/ilu/ontology/StandDevelopment
+<http://crossforest.eu/ilu/ontology/StandDevelopment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ilu/ontology/StandDevelopment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ilu/ontology/> .
+<http://crossforest.eu/ilu/ontology/StandDevelopment> <http://www.w3.org/2000/01/rdf-schema#label> "Estado de Desarrollo"@es .
+<http://crossforest.eu/ilu/ontology/StandDevelopment> <http://www.w3.org/2000/01/rdf-schema#label> "Stand development"@en .
+<http://crossforest.eu/ilu/ontology/StandDevelopment> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/EstadoDeDesarrollo> .
+# 
 # http://crossforest.eu/ilu/ontology/TreelessLand
 <http://crossforest.eu/ilu/ontology/TreelessLand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://crossforest.eu/ilu/ontology/TreelessLand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/ilu/ontology/Use> .
@@ -191,6 +248,12 @@
 <http://crossforest.eu/ilu/ontology/TreelessLand> <http://www.w3.org/2000/01/rdf-schema#label> "Espaços descobertos ou com pouca vegetação e matos"@pt .
 <http://crossforest.eu/ilu/ontology/TreelessLand> <http://www.w3.org/2000/01/rdf-schema#label> "Terreno desarbolado"@es .
 # 
+# http://crossforest.eu/ilu/ontology/TypeOfForest
+<http://crossforest.eu/ilu/ontology/TypeOfForest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ilu/ontology/TypeOfForest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ilu/ontology/> .
+<http://crossforest.eu/ilu/ontology/TypeOfForest> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de Bosque"@es .
+<http://crossforest.eu/ilu/ontology/TypeOfForest> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoDeBosque> .
+# 
 # http://crossforest.eu/ilu/ontology/Use
 # 
 # http://crossforest.eu/ilu/ontology/UseInPatch
@@ -198,6 +261,13 @@
 <http://crossforest.eu/ilu/ontology/UseInPatch> <http://www.w3.org/2000/01/rdf-schema#comment> "Use present in the patch"@es .
 <http://crossforest.eu/ilu/ontology/UseInPatch> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ilu/ontology/> .
 <http://crossforest.eu/ilu/ontology/UseInPatch> <http://www.w3.org/2000/01/rdf-schema#label> "Use in the patch"@es .
+# 
+# http://crossforest.eu/ilu/ontology/VegetationStructure
+<http://crossforest.eu/ilu/ontology/VegetationStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://crossforest.eu/ilu/ontology/VegetationStructure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/ilu/ontology/> .
+<http://crossforest.eu/ilu/ontology/VegetationStructure> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo Estructural"@es .
+<http://crossforest.eu/ilu/ontology/VegetationStructure> <http://www.w3.org/2000/01/rdf-schema#label> "Vegetation structure"@en .
+<http://crossforest.eu/ilu/ontology/VegetationStructure> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/mfe/TipoEstructural> .
 # 
 # http://crossforest.eu/ilu/ontology/WetLand
 <http://crossforest.eu/ilu/ontology/WetLand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

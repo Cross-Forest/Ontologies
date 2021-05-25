@@ -1,30 +1,22 @@
 [ {
-  "@id" : "_:genid1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Acácias"
-    }, {
-      "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Alfarrobeira"
-    }, {
-      "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Azinheira"
-    }, {
-      "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Carvalhos"
-    }, {
-      "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Castanheiro"
-    }, {
-      "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Eucaliptos"
-    }, {
-      "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_folhosas"
-    }, {
-      "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_resinosas"
-    }, {
-      "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-bravo"
-    }, {
-      "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-manso"
-    }, {
-      "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Sobreiro"
-    } ]
+  "@id" : "http://crossforest.eu/ifi/data/country/ES",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/Country" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "España"
+  }, {
+    "@language" : "en",
+    "@value" : "Spain"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ifi/data/country/PT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/Country" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Portugal"
+  }, {
+    "@language" : "es",
+    "@value" : "Portugal"
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/forestryInventory/ES/3",
@@ -81,6 +73,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts1/ES/ES1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS1" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -100,6 +95,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts1/ES/ES2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS1" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -121,6 +119,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts1/ES/ES3",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS1" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -136,6 +137,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts1/ES/ES4",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS1" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -155,6 +159,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts1/ES/ES5",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS1" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -174,6 +181,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts1/ES/ES6",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS1" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -195,6 +205,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts1/ES/ES7",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS1" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -210,11 +223,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts1/PT/PT1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS1" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "CONTINENTE"
+    "@value" : "Continente"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://nuts.geovocab.org/id/PT1"
@@ -233,11 +249,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts1/PT/PT2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS1" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "REGIÃO AUTÓNOMA DOS AÇORES (NUTS 1)"
+    "@value" : "Região Autónoma dos Açores (NUTS 1)"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://nuts.geovocab.org/id/PT2"
@@ -248,11 +267,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts1/PT/PT3",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS1" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "REGIÃO AUTÓNOMA DA MADEIRA (NUTS 1)"
+    "@value" : "Região Autónoma da Madeira (NUTS 1)"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://nuts.geovocab.org/id/PT3"
@@ -263,6 +285,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES11",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -287,6 +312,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES12",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -305,6 +333,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES13",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -323,6 +354,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES21",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -345,6 +379,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES22",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -363,6 +400,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES23",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -381,6 +421,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES24",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -403,6 +446,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES30",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -421,6 +467,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES41",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -455,6 +504,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES42",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -481,6 +533,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES43",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -501,6 +556,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES51",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -525,6 +583,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES52",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -547,6 +608,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES53",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -569,6 +633,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES61",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -601,6 +668,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES62",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -619,6 +689,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES63",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -637,6 +710,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES64",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -655,6 +731,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES70",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -685,11 +764,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT11",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "NORTE"
+    "@value" : "Norte"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts1/PT/PT1"
@@ -717,11 +799,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT15",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ALGARVE"
+    "@value" : "Algarve (NUTS2)"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts1/PT/PT1"
@@ -735,11 +820,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT16",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "CENTRO"
+    "@value" : "Centro"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts1/PT/PT1"
@@ -767,11 +855,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT17",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "LISBOA"
+    "@value" : "Lisboa"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts1/PT/PT1"
@@ -785,11 +876,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT18",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ALENTEJO"
+    "@value" : "Alentejo"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts1/PT/PT1"
@@ -811,11 +905,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT20",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "REGIÃO AUTÓNOMA DOS AÇORES (NUTS 2)"
+    "@value" : "Região Autónoma dos Açores (NUTS 2)"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts1/PT/PT2"
@@ -829,11 +926,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT30",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "REGIÃO AUTÓNOMA DA MADEIRA (NUTS 2)"
+    "@value" : "Região Autónoma da Madeira (NUTS 2)"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts1/PT/PT3"
@@ -847,6 +947,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES111",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -862,6 +965,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES112",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -877,6 +983,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES113",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -892,6 +1001,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES114",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -907,6 +1019,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES120",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -922,6 +1037,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES130",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -937,6 +1055,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES211",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -952,6 +1073,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES212",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -967,6 +1091,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES213",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -982,6 +1109,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES220",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -997,6 +1127,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES230",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1012,6 +1145,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES241",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1027,6 +1163,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES242",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1042,6 +1181,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES243",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1057,6 +1199,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES300",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1072,6 +1217,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES411",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1087,6 +1235,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES412",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1102,6 +1253,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES413",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1117,6 +1271,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES414",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1132,6 +1289,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES415",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1147,6 +1307,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES416",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1162,6 +1325,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES417",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1177,6 +1343,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES418",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1192,6 +1361,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES419",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1207,6 +1379,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES421",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1222,6 +1397,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES422",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1237,6 +1415,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES423",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1252,6 +1433,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES424",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1267,6 +1451,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES425",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1282,6 +1469,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES431",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1297,6 +1487,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES432",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1312,6 +1505,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES511",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1327,6 +1523,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES512",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1342,6 +1541,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES513",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1357,6 +1559,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES514",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1372,6 +1577,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES521",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1387,6 +1595,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES522",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1402,6 +1613,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES523",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1417,6 +1631,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES531",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1432,6 +1649,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES532",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1447,6 +1667,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES533",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1462,6 +1685,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES611",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1477,6 +1703,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES612",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1492,6 +1721,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES613",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1507,6 +1739,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES614",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1522,6 +1757,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES615",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1537,6 +1775,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES616",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1552,6 +1793,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES617",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1567,6 +1811,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES618",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1582,6 +1829,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES620",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1597,6 +1847,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES630",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1612,6 +1865,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES640",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1627,6 +1883,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES703",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1642,6 +1901,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES704",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1657,6 +1919,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES705",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1672,6 +1937,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES706",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1687,6 +1955,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES707",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1702,6 +1973,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES708",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1717,6 +1991,9 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES709",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
@@ -1732,11 +2009,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT111",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ALTO MINHO"
+    "@value" : "Alto Minho"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT11"
@@ -1744,11 +2024,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT112",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "CÁVADO"
+    "@value" : "Cávado"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT11"
@@ -1756,11 +2039,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT119",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "AVE"
+    "@value" : "Ave"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT11"
@@ -1768,11 +2054,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11A",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ÁREA METROPOLITANA DO PORTO"
+    "@value" : "Área Metropolitana do Porto"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT11"
@@ -1780,11 +2069,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11B",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ALTO TÂMEGA"
+    "@value" : "Alto Tâmega"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT11"
@@ -1792,11 +2084,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11C",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "TÂMEGA E SOUSA"
+    "@value" : "Tâmega e Sousa"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT11"
@@ -1804,11 +2099,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11D",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "DOURO"
+    "@value" : "Douro"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT11"
@@ -1816,11 +2114,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11E",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "TERRAS DE TRÁS-OS-MONTES"
+    "@value" : "Terras de Trás-os-Montes"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT11"
@@ -1828,11 +2129,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT150",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ALGARVE (NUTS 3)"
+    "@value" : "Algarve"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT15"
@@ -1840,11 +2144,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16B",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "OESTE"
+    "@value" : "Oeste"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT16"
@@ -1852,11 +2159,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16D",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "REGIÃO DE AVEIRO"
+    "@value" : "Região de Aveiro"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT16"
@@ -1864,11 +2174,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16E",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "REGIÃO DE COIMBRA"
+    "@value" : "Região de Coimbra"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT16"
@@ -1876,11 +2189,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16F",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "REGIÃO DE LEIRIA"
+    "@value" : "Região de Leiria"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT16"
@@ -1888,11 +2204,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16G",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "VISEU DÃO LAFÕES"
+    "@value" : "Viseu Dão Lafões"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT16"
@@ -1900,11 +2219,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16H",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "BEIRA BAIXA"
+    "@value" : "Beira Baixa"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT16"
@@ -1912,11 +2234,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16I",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "MÉDIO TEJO"
+    "@value" : "Médio Tejo"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT16"
@@ -1924,11 +2249,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16J",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "BEIRAS E SERRA DA ESTRELA"
+    "@value" : "Beiras e Serra da Estrela"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT16"
@@ -1936,11 +2264,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT170",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ÁREA METROPOLITANA DE LISBOA"
+    "@value" : "Área Metropolitana de Lisboa"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT17"
@@ -1948,11 +2279,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT181",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ALENTEJO LITORAL"
+    "@value" : "Alentejo Litoral"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT18"
@@ -1960,11 +2294,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT184",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "BAIXO ALENTEJO"
+    "@value" : "Baixo Alentejo"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT18"
@@ -1972,11 +2309,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT185",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "LEZÍRIA DO TEJO"
+    "@value" : "Lezíria do Tejo"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT18"
@@ -1984,11 +2324,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT186",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ALTO ALENTEJO"
+    "@value" : "Alto Alentejo"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT18"
@@ -1996,11 +2339,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT187",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ALENTEJO CENTRAL"
+    "@value" : "Alentejo Central"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT18"
@@ -2008,11 +2354,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT200",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "REGIÃO AUTÓNOMA DOS AÇORES (NUTS3)"
+    "@value" : "Região Autónoma dos Açores"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT20"
@@ -2020,11 +2369,14 @@
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT300",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
+    "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "REGIÃO AUTÓNOMA DA MADEIRA (NUTS3)"
+    "@value" : "Região Autónoma da Madeira"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT30"
@@ -2073,6 +2425,22 @@
     "@value" : "0.1"
   } ]
 }, {
+  "@id" : "http://crossforest.eu/ifi/ontology/Altitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Altitud"
+  }, {
+    "@language" : "en",
+    "@value" : "Altitude"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Altitud"
+  } ]
+}, {
   "@id" : "http://crossforest.eu/ifi/ontology/BasalArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2096,7 +2464,68 @@
     "@id" : "http://crossforest.eu/measures/ontology/Measure"
   } ],
   "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
-    "@id" : "http://crossforest.eu/ifn/ontology/BasalArea"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/BasalArea"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ifi/ontology/Composition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Composición Específica"
+  }, {
+    "@language" : "en",
+    "@value" : "Composition of Vegetation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/ComposicionEspecifica"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ifi/ontology/Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Country"
+  }, {
+    "@language" : "es",
+    "@value" : "País"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://crossforest.eu/position/ontology/SpatialEntity"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ifi/ontology/DeadLayer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Espesor de Capa Muerta"
+  }, {
+    "@language" : "en",
+    "@value" : "Thickness of Dead Layer"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/EspesorDeCapaMuerta"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ifi/ontology/DiametricClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Clase diamétrica"
+  }, {
+    "@language" : "en",
+    "@value" : "Diametric class"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/ClaseDiametrica"
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/ontology/DominantFormation",
@@ -2123,22 +2552,27 @@
   }, {
     "@language" : "pt",
     "@value" : "Tipos de povoamentos florestais"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "http://crossforest.eu/ifn-pt/ontology/DominantFormation_PT_6"
+  }, {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Stratum"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/ifi/ontology/DominantFormation_PT_6",
+  "@id" : "http://crossforest.eu/ifi/ontology/Erosion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Dominant formation in IFN6 (Portugal)"
+    "@value" : "Erosion"
   }, {
-    "@language" : "en",
-    "@value" : "Formación dominante en IFN6 (Portugal)"
-  }, {
-    "@language" : "pt",
-    "@value" : "Tipos de povoamentos florestais (IFN6 Portugal)"
+    "@language" : "es",
+    "@value" : "Erosión"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/DominantFormation"
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/ManifestacionesErosivas"
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/ontology/ForestryInventory",
@@ -2161,6 +2595,38 @@
     "@value" : "Inventário Florestal Nacional"
   } ]
 }, {
+  "@id" : "http://crossforest.eu/ifi/ontology/FuelModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fuel Model"
+  }, {
+    "@language" : "es",
+    "@value" : "Modelo de Combustible"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/ModeloCombustible"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ifi/ontology/Gradient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Gradient"
+  }, {
+    "@language" : "es",
+    "@value" : "Pendiente"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Pendiente"
+  } ]
+}, {
   "@id" : "http://crossforest.eu/ifi/ontology/InfoDominantFormation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
@@ -2175,9 +2641,12 @@
   }, {
     "@language" : "pt",
     "@value" : "Informação sobre espécie de árvore dominante"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpecies"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/ifi/ontology/InfoDominantFormationByHA",
+  "@id" : "http://crossforest.eu/ifi/ontology/InfoDominantFormationByHa",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2191,9 +2660,6 @@
   }, {
     "@language" : "pt",
     "@value" : "Informação sobre espécie de árvore dominante por hectare"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/InfoDominantFormation"
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/ontology/NUTS1",
@@ -2274,7 +2740,7 @@
     "@id" : "http://crossforest.eu/ifi/ontology/NUTSUnit"
   } ],
   "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
-    "@id" : "http://crossforest.eu/ifn/ontology/Province"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Province"
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/ontology/NUTSUnit",
@@ -2329,7 +2795,151 @@
     "@id" : "http://crossforest.eu/measures/ontology/MeasureInUnities"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "http://crossforest.eu/ifn/ontology/NumberOfTrees"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/NumberOfTrees"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ifi/ontology/OrganicMatter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Materia Orgánica"
+  }, {
+    "@language" : "en",
+    "@value" : "Organic Matter"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/ContenidoEnMateriaOrganica"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ifi/ontology/Orientation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Orientación"
+  }, {
+    "@language" : "en",
+    "@value" : "Orientation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Orientacion"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ifi/ontology/PH",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PH"
+  }, {
+    "@language" : "es",
+    "@value" : "PH"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/ReaccionDelSueloPH"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ifi/ontology/PlotShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Forma de parcela"
+  }, {
+    "@language" : "en",
+    "@value" : "Plot shape"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/FormaPrincipalDeMasa"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ifi/ontology/PlotType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Plot Type"
+  }, {
+    "@language" : "es",
+    "@value" : "Tipo de parcela"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/TipoDeParcela"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ifi/ontology/Rocosity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Rocosidad"
+  }, {
+    "@language" : "en",
+    "@value" : "Rocosity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Rocosidad"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ifi/ontology/SpatialDistribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Distribución Espacial"
+  }, {
+    "@language" : "en",
+    "@value" : "Spatial Distribution"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/DistribucionEspacialDeVegetacion"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ifi/ontology/Texture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Textura"
+  }, {
+    "@language" : "en",
+    "@value" : "Texture"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Textura"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ifi/ontology/TreeShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Forma"
+  }, {
+    "@language" : "en",
+    "@value" : "Shape"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/FormaDeCubicacion"
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/ontology/VolumeWithBark",
@@ -2351,7 +2961,7 @@
     "@id" : "http://crossforest.eu/measures/ontology/Measure"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "http://crossforest.eu/ifn/ontology/VolumeWithBark"
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/VolumeWithBark"
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/ontology/containsDominantFormation",
@@ -2371,6 +2981,28 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/InfoDominantFormation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies"
+  } ]
+}, {
+  "@id" : "http://crossforest.eu/ifi/ontology/containsDominantFormationByHa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contains dominant formation by hectare"
+  }, {
+    "@language" : "es",
+    "@value" : "contiene formación dominante por hectárea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/InfoDominantFormationByHa"
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/ontology/hasBasalArea",
@@ -2414,7 +3046,7 @@
   "@id" : "http://crossforest.eu/ifi/ontology/hasBasalAreaInM2ByHA",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/InfoDominantFormationByHA"
+    "@id" : "http://crossforest.eu/ifi/ontology/InfoDominantFormationByHa"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2490,7 +3122,7 @@
   "@id" : "http://crossforest.eu/ifi/ontology/hasNumberOfTreesInUnitsByHA",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/InfoDominantFormationByHA"
+    "@id" : "http://crossforest.eu/ifi/ontology/InfoDominantFormationByHa"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2563,7 +3195,7 @@
   "@id" : "http://crossforest.eu/ifi/ontology/hasVolumeWithBarkInM3ByHA",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/InfoDominantFormationByHA"
+    "@id" : "http://crossforest.eu/ifi/ontology/InfoDominantFormationByHa"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2579,191 +3211,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
-  "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Acácias",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "pt",
-    "@value" : "Espécies dominantes presentes: acácia-dealbata, acácia-da-Austrália, outras acácias"
+  "@id" : "http://crossforest.eu/ifi/ontology/isInCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTSUnit"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "pt",
-    "@value" : "Acácias"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/DominantFormation_PT_6"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Alfarrobeira",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "pt",
-    "@value" : "Espécies dominantes presentes: alfarrobeira"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "pt",
-    "@value" : "Alfarrobeira"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/DominantFormation_PT_6"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Azinheira",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "pt",
-    "@value" : "Espécies dominantes presentes: azinheira"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "pt",
-    "@value" : "Azinheira"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/DominantFormation_PT_6"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Carvalhos",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "pt",
-    "@value" : "Espécies dominantes presentes: carvalho-roble, carvalho-cerquinho, carvalho-negral, outros carvalhos"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "pt",
-    "@value" : "Carvalhos"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/DominantFormation_PT_6"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Castanheiro",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "pt",
-    "@value" : "Espécies dominantes presentes: castanheiro-bravo, castanheiro-manso"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "pt",
-    "@value" : "Castanheiro"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/DominantFormation_PT_6"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Eucaliptos",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "pt",
-    "@value" : "Espécies dominantes presentes: várias espécies do género eucalipto"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "pt",
-    "@value" : "Eucaliptos"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/DominantFormation_PT_6"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_folhosas",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "pt",
-    "@value" : "Espécies dominantes presentes: faia, bétula ou bidoeiro, salgueiros, ulmeiros, choupos, alfarrobeira, amieiros, freixos e outras"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "pt",
-    "@value" : "Outras folhosas"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/DominantFormation_PT_6"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Outras_resinosas",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "pt",
-    "@value" : "Espécies dominantes presentes: pinheiro-silvestre, pinheiro-de-Alepo, pseudotsuga, ciprestes, cedros e outras"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "pt",
-    "@value" : "Outras resinosas"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/DominantFormation_PT_6"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-bravo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "pt",
-    "@value" : "Espécies dominantes presentes: pinheiro-bravo"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "pt",
-    "@value" : "Pinheiro bravo"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/DominantFormation_PT_6"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Pinheiro-manso",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "pt",
-    "@value" : "Espécies dominantes presentes: pinheiro-manso"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "pt",
-    "@value" : "Pinheiro manso"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/DominantFormation_PT_6"
-  } ]
-}, {
-  "@id" : "http://crossforest.eu/ifi/ontology/http://crossforest.eu/ifi/ontology/DominantFormation/PT/6/Sobreiro",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "pt",
-    "@value" : "Espécies dominantes presentes: sobreiro"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "pt",
-    "@value" : "Sobreiro"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://crossforest.eu/ifi/ontology/DominantFormation_PT_6"
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/Country"
   } ]
 }, {
   "@id" : "http://crossforest.eu/measures/ontology/Measure",
