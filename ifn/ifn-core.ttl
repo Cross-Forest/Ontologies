@@ -192,6 +192,13 @@ ifn:containsSpecies rdf:type owl:ObjectProperty ;
                     rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                     rdfs:label "containsSpecies"@en .
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPlot
+ifn:containsSpeciesPlot rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf ifi:containsSpecies ;
+                    rdfs:range ifn:InfoSpeciesPlot ;
+                    rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
+                    rdfs:label "contiene información sobre especies en una parcela"@en .
+
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesDetail
 ifn:containsSpeciesDetail rdf:type owl:ObjectProperty ;
@@ -1089,7 +1096,7 @@ ifn:Bush rdf:type owl:Class ;
 ifn:BushSpecies rdf:type owl:Class ;
                 rdfs:subClassOf ifn:PlantSpecies ;
                 rdfs:comment "Bush species, as recorded in the inventory. It is possible that the individuals of this class are not strictly species, but genus, sub-genus, mix of species, etc."@en ,
-                             "Especie arbustiva, tal y como se ha registrado en el inventario. Es posible que los indivíduos de esta clase no sean estrictamente especies. Genus, sub-genus, y mezclas de especies son también indivíduos posibles."@es ;
+                             "Especie arbustiva, tal y como se ha registrado en el inventario. Es posible que los individuos de esta clase no sean estrictamente especies. Genus, sub-genus, y mezclas de especies son también individuos posibles."@es ;
                 rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                 rdfs:label "Bush Species"@en ,
                            "Especie arbustiva"@es .
@@ -2418,6 +2425,10 @@ ifn:HeightToLargestCrownWidht rdf:type owl:Class ;
 ifn:InfoSpecies rdf:type owl:Class ;
                               rdfs:subClassOf ifi:InfoDominantFormation.
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpeciesPlot
+ifn:InfoSpeciesPlot rdf:type owl:Class ;
+                       rdfs:subClassOf ifn:InfoSpecies ;
+                       rdfs:label "Información sobre especies en una parcela"@es .
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpeciesDetalle
 ifn:InfoSpeciesDetalle rdf:type owl:Class ;
@@ -3144,7 +3155,7 @@ ifn:PlantMeasure rdf:type owl:Class ;
 ifn:PlantSpecies rdf:type owl:Class ;
                  owl:disjointWith ifn:Plot ,
                                   ifn:Tree ;
-                 rdfs:comment "Especie vegetal, tal y como se ha registrado en el inventario. Es posible que los indivíduos de esta clase no sean estrictamente especies. Genus, sub-genus, y mezclas de especies son también indivíduos posibles."@es ,
+                 rdfs:comment "Especie vegetal, tal y como se ha registrado en el inventario. Es posible que los individuos de esta clase no sean estrictamente especies. Genus, sub-genus, y mezclas de especies son también individuos posibles."@es ,
                               "Plant species, as recorded in the inventory. It is possible that the individuals of this class are not strictly species, but genus, sub-genus, mix of species, etc."@en ;
                  rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                  rdfs:label "Especie vegetal"@es ,
@@ -4766,7 +4777,7 @@ ifn:TreeMeasure rdf:type owl:Class .
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/TreeSpecies
 ifn:TreeSpecies rdf:type owl:Class ;
                 rdfs:subClassOf ifn:PlantSpecies ;
-                rdfs:comment "Especie arbórea, tal y como se ha registrado en el inventario. Es posible que los indivíduos de esta clase no sean estrictamente especies. Genus, sub-genus, y mezclas de especies son también indivíduos posibles."@es ,
+                rdfs:comment "Especie arbórea, tal y como se ha registrado en el inventario. Es posible que los individuos de esta clase no sean estrictamente especies. Genus, sub-genus, y mezclas de especies son también individuos posibles."@es ,
                              "Tree species, as recorded in the inventory. It is possible that the individuals of this class are not strictly species, but genus, sub-genus, mix of species, etc."@en ;
                 rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                 rdfs:label "Especie arbórea"@en ,
