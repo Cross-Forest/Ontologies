@@ -194,10 +194,24 @@ ifn:containsSpecies rdf:type owl:ObjectProperty ;
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPlot
 ifn:containsSpeciesPlot rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf ifi:containsSpecies ;
+                          rdfs:subPropertyOf ifn:containsSpecies ;
                     rdfs:range ifn:InfoSpeciesPlot ;
                     rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                     rdfs:label "contiene información sobre especies en una parcela"@en .
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesProv
+ifn:containsSpeciesProv rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf ifn:containsSpecies ;
+                    rdfs:range ifn:InfoSpeciesProv ;
+                    rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
+                    rdfs:label "contiene información sobre especies en una provincia"@en .
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesStratum
+ifn:containsSpeciesStratum rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf ifn:containsSpecies ;
+                    rdfs:range ifn:InfoSpeciesEstrato ;
+                    rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
+                    rdfs:label "contiene información sobre especies en un estrato"@en .
 
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesDetail
@@ -2424,6 +2438,16 @@ ifn:HeightToLargestCrownWidht rdf:type owl:Class ;
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpecies
 ifn:InfoSpecies rdf:type owl:Class ;
                               rdfs:subClassOf ifi:InfoDominantFormation.
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpeciesProv
+ifn:InfoSpeciesProv rdf:type owl:Class ;
+                       rdfs:subClassOf ifn:InfoSpecies ;
+                       rdfs:label "Información sobre especies en una provincia"@es .
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpeciesEstrato
+ifn:InfoSpeciesEstrato rdf:type owl:Class ;
+                       rdfs:subClassOf ifn:InfoSpecies ;
+                       rdfs:label "Información sobre especies en un estrato"@es .
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpeciesPlot
 ifn:InfoSpeciesPlot rdf:type owl:Class ;
