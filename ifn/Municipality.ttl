@@ -1,0 +1,61 @@
+@prefix : <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> .
+@prefix ifn: <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix spo: <http://crossforest.eu/position/ontology/> .
+#################################################################
+#    Classes
+#################################################################
+
+ ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Municipality
+ifn:Municipality rdf:type owl:Class ;
+             rdfs:subClassOf spo:SpatialEntity ;
+             rdfs:comment ""@en ,
+                          ""@es ;
+             rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
+             rdfs:label "Municipality"@en ,
+                        "Municipio"@es .
+
+################################################################
+#    Object properties
+#################################################################
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/isInMunicipality
+ifn:isInMunicipality rdf:type owl:ObjectProperty ;
+                 rdfs:domain spo:SpatialEntity ;
+                 rdfs:range ifn:Municipality ;
+                 rdfs:comment "Municipality in which the entity is located"@en ,
+                              "Municipio en la que la entidad está situada"@es ;
+                 rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
+                 rdfs:label "en el municipio"@es ,
+                            "in municipality"@en .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasCheckDigit
+ifn:hasCheckDigit rdf:type owl:DatatypeProperty ;
+                    rdfs:domain ifn:Municipality ;
+                    rdfs:comment "Check digit from INE to detect errors in municipalities"@en ,
+                                 "Código de control del INE para la detección de errores en municipios"@es ;
+                    rdfs:label "Código de control"@es ,
+                               "Check digit"@en .
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasMunicipalityCode
+ifn:hasMunicipalityCode rdf:type owl:DatatypeProperty ;
+                    rdfs:domain ifn:Municipality ;
+                    rdfs:comment "Municipality code in a province from INE"@en ,
+                                 "Código de municipio del INE dentro de una provincia"@es ;
+                    rdfs:label "Código de municipio"@es ,
+                               "Municipality code"@en .
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode
+ifn:hasProvinceCode rdf:type owl:DatatypeProperty ;
+                    rdfs:domain ifn:Province ;
+                    rdfs:comment "Province code from INE"@en ,
+                                 "Código de provincia del INE"@es ;
+                    rdfs:label "Código de provincia"@es ,
+                               "Province code"@en .

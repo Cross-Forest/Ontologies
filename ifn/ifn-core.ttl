@@ -667,6 +667,17 @@ ifn:isInProvince rdf:type owl:ObjectProperty ;
                             "in province"@en .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/isInMunicipality
+ifn:isInMunicipality rdf:type owl:ObjectProperty ;
+                 rdfs:domain spo:SpatialEntity ;
+                 rdfs:range ifn:Municipality ;
+                 rdfs:comment "Municipality in which the entity is located"@en ,
+                              "Municipio en la que la entidad está situada"@es ;
+                 rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
+                 rdfs:label "en el municipio"@es ,
+                            "in municipality"@en .
+
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/numberOfPlots
 ifn:numberOfPlots rdf:type owl:ObjectProperty .
 
@@ -900,6 +911,29 @@ spo:hasForestAreaInSquareMeters rdf:type owl:DatatypeProperty ;
                                 rdfs:label ""@es ,
                                            "has forest area in square meters"@en .
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasCheckDigit
+ifn:hasCheckDigit rdf:type owl:DatatypeProperty ;
+                    rdfs:domain ifn:Municipality ;
+                    rdfs:comment "Check digit from INE to detect errors in municipalities"@en ,
+                                 "Código de control del INE para la detección de errores en municipios"@es ;
+                    rdfs:label "Código de control"@es ,
+                               "Check digit"@en .
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasMunicipalityCode
+ifn:hasMunicipalityCode rdf:type owl:DatatypeProperty ;
+                    rdfs:domain ifn:Municipality ;
+                    rdfs:comment "Municipality code in a province from INE"@en ,
+                                 "Código de municipio del INE dentro de una provincia"@es ;
+                    rdfs:label "Código de municipio"@es ,
+                               "Municipality code"@en .
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode
+ifn:hasProvinceCode rdf:type owl:DatatypeProperty ;
+                    rdfs:domain ifn:Province ;
+                    rdfs:comment "Province code from INE"@en ,
+                                 "Código de provincia del INE"@es ;
+                    rdfs:label "Código de provincia"@es ,
+                               "Province code"@en .
 
 #################################################################
 #    Classes
@@ -3438,6 +3472,15 @@ ifn:Province rdf:type owl:Class ;
              rdfs:label "Province"@en ,
                         "Provincia"@es .
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Municipality
+ifn:Municipality rdf:type owl:Class ;
+             rdfs:subClassOf spo:SpatialEntity ;
+             rdfs:comment ""@en ,
+                          ""@es ;
+             rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
+             rdfs:label "Municipality"@en ,
+                        "Municipio"@es .
+
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/ReaccionDelSueloPH
 ifn:ReaccionDelSueloPH rdf:type owl:Class ;
@@ -5326,6 +5369,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/01
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/01> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "01" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Alava> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Alava> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5335,6 +5379,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/02
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/02> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "02" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Albacete> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Albacete> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5344,6 +5389,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/03
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/03> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "03" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Alicante> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Alicante> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5353,6 +5399,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/04
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/04> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "04" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Almeria> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Almeria> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5362,6 +5409,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/05
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/05> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "05" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Avila> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Avila> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5371,6 +5419,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/06
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/06> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "06" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Badajoz> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Badajoz> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5380,6 +5429,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/07
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/07> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "07" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Illes-Balears> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Illes-Balears> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5389,6 +5439,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/08
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/08> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "08" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Barcelona> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Barcelona> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5398,6 +5449,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/09
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/09> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "09" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Burgos> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Burgos> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5407,6 +5459,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/10
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/10> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "10" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5416,6 +5469,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/11
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/11> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "11" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cadiz> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cadiz> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5425,6 +5479,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/12
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/12> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "12" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Castellon> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Castellon> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5434,6 +5489,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/13
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/13> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "13" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Ciudad-Real> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Ciudad-Real> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5443,6 +5499,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/14
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/14> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "14" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cordoba> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cordoba> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5452,6 +5509,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/15
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/15> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "15" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/A-Coruna> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/A-Coruna> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5461,6 +5519,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/16
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/16> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "16" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cuenca> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cuenca> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5470,6 +5529,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/17
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/17> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "17" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Girona> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Girona> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5479,6 +5539,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/18
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/18> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "18" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Granada> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Granada> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5488,6 +5549,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/19
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/19> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "19" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Guadalajara> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Guadalajara> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5497,6 +5559,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/20
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/20> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "20" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Guipuzcoa> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Guipuzcoa> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5506,6 +5569,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/21
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/21> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "21" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Huelva> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Huelva> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5515,6 +5579,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/22
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/22> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "22" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Huesca> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Huesca> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5524,6 +5589,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/23
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/23> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "23" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Jaen> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Jaen> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5533,6 +5599,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/24
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/24> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "24" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Leon> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Leon> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5542,6 +5609,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/25
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/25> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "25" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Lleida> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Lleida> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5551,6 +5619,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/26
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/26> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "26" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/La-Rioja> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/La-Rioja> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5560,6 +5629,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/27
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/27> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "27" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Lugo> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Lugo> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5569,6 +5639,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/28
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/28> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "28" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Madrid> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Madrid> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5578,6 +5649,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/29
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/29> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "29" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Malaga> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Malaga> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5587,6 +5659,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/30
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/30> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "30" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Murcia> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Murcia> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5596,6 +5669,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/31
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/31> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "31" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Navarra> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Navarra> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5605,6 +5679,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/32
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/32> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "32" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Ourense> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Ourense> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5614,6 +5689,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/33
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/33> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "33" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Asturias> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Asturias> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5623,6 +5699,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/34
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/34> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "34" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Palencia> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Palencia> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5632,6 +5709,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/35
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/35> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "35" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Las-Palmas> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Las-Palmas> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5641,6 +5719,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/36
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/36> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "36" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Pontevedra> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Pontevedra> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5650,6 +5729,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/37
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/37> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "37" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Salamanca> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Salamanca> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5659,6 +5739,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/38
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/38> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "38" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Santa-Cruz-Tenerife> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Santa-Cruz-Tenerife> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5668,6 +5749,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/39
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/39> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "39" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cantabria> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cantabria> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5677,6 +5759,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/40
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/40> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "40" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Segovia> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Segovia> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5686,6 +5769,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/41
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/41> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "41" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Sevilla> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Sevilla> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5695,6 +5779,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/42
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/42> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "42" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Soria> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Soria> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5704,6 +5789,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/43
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/43> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "43" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Tarragona> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Tarragona> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5713,6 +5799,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/44
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/44> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "44" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Teruel> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Teruel> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5722,6 +5809,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/45
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/45> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "45" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Toledo> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Toledo> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5731,6 +5819,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/46
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/46> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "46" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Valencia> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Valencia> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5740,6 +5829,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/47
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/47> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "47" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Valladolid> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Valladolid> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5749,6 +5839,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/48
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/48> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "48" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Vizcaya> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Vizcaya> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5758,6 +5849,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/49
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/49> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "49" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Zamora> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Zamora> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5767,6 +5859,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/50
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/50> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "50" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Zaragoza> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Zaragoza> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5776,6 +5869,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/51
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/51> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "51" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Ceuta> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Ceuta> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
@@ -5785,6 +5879,7 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/52
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/52> rdf:type owl:NamedIndividual ,
                                                       ifn:Province ;
+                                             ifn:hasProvinceCode "52" ;
                                              owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Melilla> ;
                                              <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Melilla> ;
                                              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
