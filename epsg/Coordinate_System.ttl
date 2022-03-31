@@ -13,7 +13,7 @@
 @prefix fun:   <http://w3id.org/sparql-generate/fn/> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-crs:4460  a                     epsg:CoordinateSystem ;
+cs:4460  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4460"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -21,7 +21,7 @@ crs:4460  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for north polar azimuthal lonO 0°E. Axes: E,N. Orientations: E along 90°E, N along 180°E meridians. UoM: m." ;
         epsg:remarks            "Used for North Pole tangential and secant projections." .
 
-crs:6510  a                     epsg:CoordinateSystem ;
+cs:6510  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2014.047" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6510"^^xsd:nonNegativeInteger ;
@@ -30,7 +30,7 @@ crs:6510  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: plant E, Plant N (x,y). Orientations: northeast, northwest. UoM: m." ;
         epsg:remarks            "Used in engineering coordinate reference systems." .
 
-crs:6429  a                     epsg:CoordinateSystem ;
+cs:6429  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2015.018" ;
         epsg:dataSource         "IOGP" ;
         epsg:hasEPSGcode        "6429"^^xsd:nonNegativeInteger ;
@@ -39,7 +39,7 @@ crs:6429  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 2D CS. Axes: longitude, latitude. Orientations: east, north. UoM: rad" ;
         epsg:remarks            "Used in geographic 2D coordinate reference systems for web mapping. Not recommended for use at the human interface: use of CS code 6428 is preferred." .
 
-crs:6498  a                     epsg:CoordinateSystem ;
+cs:6498  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6498"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -47,7 +47,7 @@ crs:6498  a                     epsg:CoordinateSystem ;
         epsg:name               "Vertical CS. Axis: depth (D). Orientation: down. UoM: m." ;
         epsg:remarks            "Used in vertical coordinate reference systems." .
 
-crs:4404  a                     epsg:CoordinateSystem ;
+cs:4404  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4404"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -55,7 +55,7 @@ crs:4404  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: easting, northing (E,N). Orientations: east, north. UoM: ftGC." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:4473  a                     epsg:CoordinateSystem ;
+cs:4473  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4473"^^xsd:nonNegativeInteger ;
@@ -64,7 +64,7 @@ crs:4473  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 135°W. Axes: E,N. Orientations: E along 45°W, N along 135°W meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:1042  a                     epsg:CoordinateSystem ;
+cs:1042  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2016.003" ;
         epsg:dataSource         "IOGP" ;
         epsg:hasEPSGcode        "1042"^^xsd:nonNegativeInteger ;
@@ -73,7 +73,7 @@ crs:1042  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 3D CS. Axes: x,y,z. Orientations: starboard, forward, up. UoM: m." ;
         epsg:remarks            "Right-handed Cartesian 3D CS, used on moving platforms. Axes directions are for the platform body when it is at rest." .
 
-crs:4486  a                     epsg:CoordinateSystem ;
+cs:4486  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4486"^^xsd:nonNegativeInteger ;
@@ -82,7 +82,7 @@ crs:4486  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 135°E. Axes: E,N. Orientations: E along 135°W, N along 135°E meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:6410  a                     epsg:CoordinateSystem ;
+cs:6410  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6410"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -90,7 +90,7 @@ crs:6410  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: HDM" ;
         epsg:remarks            "Used in geographic 2D coordinate reference systems adopting an alternative representation to degree minute second hemisphere." .
 
-crs:6508  a                     epsg:CoordinateSystem ;
+cs:6508  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2011.106" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6508"^^xsd:nonNegativeInteger ;
@@ -99,7 +99,7 @@ crs:6508  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: bin grid J, bin grid I (J,I). Orientations: nne/ese. UoM: 12.5 x 25m." ;
         epsg:remarks            "Used in engineering coordinate reference systems for seismic bin grids." .
 
-crs:1027  a                     epsg:CoordinateSystem ;
+cs:1027  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2010.022" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "1027"^^xsd:nonNegativeInteger ;
@@ -108,7 +108,7 @@ crs:1027  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for UPS south. Axes: E,N. Orientations: E along 90°E, N along 0°E meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:4499  a                     epsg:CoordinateSystem ;
+cs:4499  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4499"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -116,7 +116,7 @@ crs:4499  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: easting, northing (X,Y). Orientations: east, north. UoM: m." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:6423  a                     epsg:CoordinateSystem ;
+cs:6423  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045 2015.018" ;
         epsg:dataSource         "IOGP" ;
         epsg:hasEPSGcode        "6423"^^xsd:nonNegativeInteger ;
@@ -125,7 +125,7 @@ crs:6423  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 3D CS. Axes: latitude, longitude, ellipsoidal height. Orientations: north, east, up. UoM: degree, degree, metre." ;
         epsg:remarks            "Horizontal coordinates referenced to this CS are in degrees. Any degree representation (e.g. DMSH, decimal, etc.) may be used but that used must be declared for the user. Used in geographic 3D coordinate reference systems." .
 
-crs:6408  a                     epsg:CoordinateSystem ;
+cs:6408  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6408"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -133,7 +133,7 @@ crs:6408  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: DM" ;
         epsg:remarks            "Used in geographic 2D coordinate reference systems adopting an alternative representation to degree minute second hemisphere." .
 
-crs:4480  a                     epsg:CoordinateSystem ;
+cs:4480  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4480"^^xsd:nonNegativeInteger ;
@@ -142,7 +142,7 @@ crs:4480  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 15°E. Axes: E,N. Orientations: E along 105°E, N along 15°E meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:6502  a                     epsg:CoordinateSystem ;
+cs:6502  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6502"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -150,7 +150,7 @@ crs:6502  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: westing, southing (Y,X). Orientations: west, south. UoM: GLM." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:4493  a                     epsg:CoordinateSystem ;
+cs:4493  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045 2010.022" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4493"^^xsd:nonNegativeInteger ;
@@ -159,7 +159,7 @@ crs:4493  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for UPS north. Axes: N,E. Orientations: N along 180°E meridian, E along 90°E meridian. UoM: m." ;
         epsg:remarks            "Used for North Pole tangential and secant projections." .
 
-crs:4465  a                     epsg:CoordinateSystem ;
+cs:4465  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4465"^^xsd:nonNegativeInteger ;
@@ -168,7 +168,7 @@ crs:4465  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for north polar azimuthal lonO 40°W. Axes: X,Y. Orientations: X along 50°E, Y along 140°E meridians. UoM: m." ;
         epsg:remarks            "Used for North Pole tangential and secant projections." .
 
-crs:1034  a                     epsg:CoordinateSystem ;
+cs:1034  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2011.106" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "1034"^^xsd:nonNegativeInteger ;
@@ -177,7 +177,7 @@ crs:1034  a                     epsg:CoordinateSystem ;
         epsg:name               "Bin grid CS (I = J-90°). Axes: I,J." ;
         epsg:remarks            "I-axis positive direction is rotated 90° counter-clockwise from J-axis when viewed from above. Geographical direction of axes and bin dimensions in map grid units are defined in associated coordinate operation." .
 
-crs:4409  a                     epsg:CoordinateSystem ;
+cs:4409  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4409"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -185,7 +185,7 @@ crs:4409  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: easting, northing (E,N). Orientations: east, north. UoM: ydSe." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:6430  a                     epsg:CoordinateSystem ;
+cs:6430  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2015.018" ;
         epsg:dataSource         "IOGP" ;
         epsg:hasEPSGcode        "6430"^^xsd:nonNegativeInteger ;
@@ -194,7 +194,7 @@ crs:6430  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 3D CS. Axes: latitude, longitude, ellipsoidal height. Orientations: north, east, up. UoM: rad, rad, m." ;
         epsg:remarks            "Used in geographic 3D coordinate reference systems." .
 
-crs:4478  a                     epsg:CoordinateSystem ;
+cs:4478  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4478"^^xsd:nonNegativeInteger ;
@@ -203,7 +203,7 @@ crs:4478  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 30°W. Axes: E,N. Orientations: E along 60°E, N along 30°W meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:6402  a                     epsg:CoordinateSystem ;
+cs:6402  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2002.850" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6402"^^xsd:nonNegativeInteger ;
@@ -212,7 +212,7 @@ crs:6402  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: DMSH." ;
         epsg:remarks            "Used in geographic 2D coordinate reference systems. Preferred axis unit format for human interface." .
 
-crs:4531  a                     epsg:CoordinateSystem ;
+cs:4531  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4531"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -220,7 +220,7 @@ crs:4531  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: northing, easting (x,y). Orientations: north, east. UoM: m." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:1047  a                     epsg:CoordinateSystem ;
+cs:1047  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2017.040" ;
         epsg:dataSource         "IOGP" ;
         epsg:hasEPSGcode        "1047"^^xsd:nonNegativeInteger ;
@@ -229,7 +229,7 @@ crs:1047  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: local northing, local easting (n,e). Orientations: north, east. UoM: m." ;
         epsg:remarks            "Used in local engineering coordinate reference systems, for example wellbore survey." .
 
-crs:6415  a                     epsg:CoordinateSystem ;
+cs:6415  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6415"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -237,7 +237,7 @@ crs:6415  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 3D CS. Axes: latitude, longitude, ellipsoidal height. Orientations: north, east, up. UoM: Hdeg, Hdeg, m." ;
         epsg:remarks            "Used in geographic 3D coordinate reference systems adopting an alternative representation to degree minute second hemisphere." .
 
-crs:6428  a                     epsg:CoordinateSystem ;
+cs:6428  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2015.018" ;
         epsg:dataSource         "IOGP" ;
         epsg:hasEPSGcode        "6428"^^xsd:nonNegativeInteger ;
@@ -246,7 +246,7 @@ crs:6428  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: rad" ;
         epsg:remarks            "Used in geographic 2D coordinate reference systems." .
 
-crs:6497  a                     epsg:CoordinateSystem ;
+cs:6497  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6497"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -254,7 +254,7 @@ crs:6497  a                     epsg:CoordinateSystem ;
         epsg:name               "Vertical CS. Axis: height (H). Orientation: up. UoM: ftUS." ;
         epsg:remarks            "Used in vertical coordinate reference systems." .
 
-crs:4403  a                     epsg:CoordinateSystem ;
+cs:4403  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4403"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -262,7 +262,7 @@ crs:4403  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: easting, northing (E,N). Orientations: east, north. UoM: ftCla." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:4472  a                     epsg:CoordinateSystem ;
+cs:4472  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4472"^^xsd:nonNegativeInteger ;
@@ -271,7 +271,7 @@ crs:4472  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 150°W. Axes: E,N. Orientations: E along 60°W, N along 150°W meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:1041  a                     epsg:CoordinateSystem ;
+cs:1041  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2016.003" ;
         epsg:dataSource         "IOGP" ;
         epsg:hasEPSGcode        "1041"^^xsd:nonNegativeInteger ;
@@ -280,7 +280,7 @@ crs:1041  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 3D CS. Axes: x,y,z. Orientations: forward, starboard, down. UoM: m." ;
         epsg:remarks            "Right-handed Cartesian 3D CS, used on moving platforms. Axes directions are for the platform body when it is at rest." .
 
-crs:4485  a                     epsg:CoordinateSystem ;
+cs:4485  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4485"^^xsd:nonNegativeInteger ;
@@ -289,7 +289,7 @@ crs:4485  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 105°E. Axes: E,N. Orientations: E along 165°W, N along 105°E meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:6507  a                     epsg:CoordinateSystem ;
+cs:6507  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6507"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -297,7 +297,7 @@ crs:6507  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: 1st local axis, 2nd local axis (X,Y). Orientations: north, west. UoM: m." ;
         epsg:remarks            "Used in engineering coordinate reference systems." .
 
-crs:1026  a                     epsg:CoordinateSystem ;
+cs:1026  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2010.022" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "1026"^^xsd:nonNegativeInteger ;
@@ -306,7 +306,7 @@ crs:1026  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for UPS north. Axes: E,N. Orientations: E along 90°E meridian, N along 180°E meridian. UoM: m." ;
         epsg:remarks            "Used for North Pole tangential and secant projections." .
 
-crs:4498  a                     epsg:CoordinateSystem ;
+cs:4498  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4498"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -314,7 +314,7 @@ crs:4498  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: easting, northing (Y,X). Orientations: east, north. UoM: m." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:6422  a                     epsg:CoordinateSystem ;
+cs:6422  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045 2015.018" ;
         epsg:dataSource         "IOGP" ;
         epsg:hasEPSGcode        "6422"^^xsd:nonNegativeInteger ;
@@ -323,7 +323,7 @@ crs:6422  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: degree" ;
         epsg:remarks            "Coordinates referenced to this CS are in degrees. Any degree representation (e.g. DMSH, decimal, etc.) may be used but that used must be declared for the user by the supplier of data. Used in geographic 2D coordinate reference systems." .
 
-crs:1039  a                     epsg:CoordinateSystem ;
+cs:1039  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2012.095" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "1039"^^xsd:nonNegativeInteger ;
@@ -332,7 +332,7 @@ crs:1039  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: easting, northing (E,N). Orientations: east, north. UoM: ft." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:6407  a                     epsg:CoordinateSystem ;
+cs:6407  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6407"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -340,7 +340,7 @@ crs:6407  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: Hdeg" ;
         epsg:remarks            "Used in geographic 2D coordinate reference systems adopting an alternative representation to degree minute second hemisphere." .
 
-crs:4410  a                     epsg:CoordinateSystem ;
+cs:4410  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4410"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -348,7 +348,7 @@ crs:4410  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: easting, northing (E,N). Orientations: east, north. UoM: chSe(T)." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:6501  a                     epsg:CoordinateSystem ;
+cs:6501  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6501"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -356,7 +356,7 @@ crs:6501  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: southing, westing (X,Y). Orientations: south, west. UoM: m." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:4492  a                     epsg:CoordinateSystem ;
+cs:4492  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045 2009.034" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4492"^^xsd:nonNegativeInteger ;
@@ -365,7 +365,7 @@ crs:4492  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 140°E. Axes: X,Y. Orientations: X along 130°W, Y along 140°E meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:4464  a                     epsg:CoordinateSystem ;
+cs:4464  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4464"^^xsd:nonNegativeInteger ;
@@ -374,7 +374,7 @@ crs:4464  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for north polar azimuthal lonO 180°E. Axes: X,Y. Orientations: X along 90°W, Y along 0°E meridians. UoM: m." ;
         epsg:remarks            "Used for North Pole tangential and secant projections." .
 
-crs:1033  a                     epsg:CoordinateSystem ;
+cs:1033  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2011.106" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "1033"^^xsd:nonNegativeInteger ;
@@ -383,7 +383,7 @@ crs:1033  a                     epsg:CoordinateSystem ;
         epsg:name               "Bin grid CS (I = J+90°). Axes: I,J." ;
         epsg:remarks            "I-axis positive direction is rotated 90° clockwise from J-axis when viewed from above. Geographical direction of axes and bin dimensions in map grid units are defined in associated coordinate operation." .
 
-crs:4408  a                     epsg:CoordinateSystem ;
+cs:4408  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4408"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -391,7 +391,7 @@ crs:4408  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: easting, northing (E,N). Orientations: east, north. UoM: ydInd." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:4477  a                     epsg:CoordinateSystem ;
+cs:4477  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4477"^^xsd:nonNegativeInteger ;
@@ -400,7 +400,7 @@ crs:4477  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 45°W. Axes: E,N. Orientations: E along 45°E, N along 45°W meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:6401  a                     epsg:CoordinateSystem ;
+cs:6401  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2002.850" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6401"^^xsd:nonNegativeInteger ;
@@ -409,7 +409,7 @@ crs:6401  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 3D CS. Axes: latitude, longitude, ellipsoidal height. Orientations: north, east, up. UoM: DMSH, DMSH, m." ;
         epsg:remarks            "Used in geographic 3D coordinate reference systems. Preferred axis unit format for human interface." .
 
-crs:4530  a                     epsg:CoordinateSystem ;
+cs:4530  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4530"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -417,7 +417,7 @@ crs:4530  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: northing, easting (X,Y). Orientations: north, east. UoM: m." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:4502  a                     epsg:CoordinateSystem ;
+cs:4502  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4502"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -425,7 +425,7 @@ crs:4502  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: northing, easting (N,E). Orientations: north, east. UoM: ftCla." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:6414  a                     epsg:CoordinateSystem ;
+cs:6414  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6414"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -433,7 +433,7 @@ crs:6414  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 3D CS. Axes: latitude, longitude, ellipsoidal height. Orientations: north, east, up. UoM: degH, degH, m." ;
         epsg:remarks            "Used in geographic 3D coordinate reference systems adopting an alternative representation to degree minute second hemisphere." .
 
-crs:6427  a                     epsg:CoordinateSystem ;
+cs:6427  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2015.018" ;
         epsg:dataSource         "IOGP" ;
         epsg:hasEPSGcode        "6427"^^xsd:nonNegativeInteger ;
@@ -442,7 +442,7 @@ crs:6427  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 3D CS. Axes: longitude, latitude, ellipsoidal height. Orientations: east, north, up. UoM: grads, grads, m." ;
         epsg:remarks            "Used in geographic 3D coordinate reference systems for web mapping. Not recommended for use at the human interface: use of CS code 6421 is preferred." .
 
-crs:6496  a                     epsg:CoordinateSystem ;
+cs:6496  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6496"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -450,7 +450,7 @@ crs:6496  a                     epsg:CoordinateSystem ;
         epsg:name               "Vertical CS. Axis: height (H). Orientation: up. UoM: ft(Br36)." ;
         epsg:remarks            "Used in vertical coordinate reference systems." .
 
-crs:4402  a                     epsg:CoordinateSystem ;
+cs:4402  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4402"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -458,7 +458,7 @@ crs:4402  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: easting, northing (E,N). Orientations: east, north. UoM: chSe." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:4471  a                     epsg:CoordinateSystem ;
+cs:4471  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4471"^^xsd:nonNegativeInteger ;
@@ -467,7 +467,7 @@ crs:4471  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 165°W. Axes: E,N. Orientations: E along 75°W, N along 165°W meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:1040  a                     epsg:CoordinateSystem ;
+cs:1040  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2016.003" ;
         epsg:dataSource         "IOGP" ;
         epsg:hasEPSGcode        "1040"^^xsd:nonNegativeInteger ;
@@ -476,7 +476,7 @@ crs:1040  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 3D CS. Axes: x,y,z. Orientations: forward, starboard, up. UoM: m." ;
         epsg:remarks            "Left-handed Cartesian 3D CS, used on moving platforms. Axes directions are for the platform body when it is at rest." .
 
-crs:4484  a                     epsg:CoordinateSystem ;
+cs:4484  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4484"^^xsd:nonNegativeInteger ;
@@ -485,7 +485,7 @@ crs:4484  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 90°E. Axes: E,N. Orientations: E along 180°E, N along 90°E meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:6506  a                     epsg:CoordinateSystem ;
+cs:6506  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2014.047" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6506"^^xsd:nonNegativeInteger ;
@@ -494,7 +494,7 @@ crs:6506  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: 1st local axis, 2nd local axis (I,J). Orientations: ese/nne. UoM: 165 x 330 ftUS." ;
         epsg:remarks            "Used in engineering coordinate reference systems for seismic bin grids." .
 
-crs:1025  a                     epsg:CoordinateSystem ;
+cs:1025  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2009.034" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "1025"^^xsd:nonNegativeInteger ;
@@ -503,7 +503,7 @@ crs:1025  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 140°E. Axes: X,Y. Orientations: X along 130°W, Y along 140°E meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:4497  a                     epsg:CoordinateSystem ;
+cs:4497  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4497"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -511,7 +511,7 @@ crs:4497  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: easting, northing (X,Y). Orientations: east, north. UoM: ftUS." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:6421  a                     epsg:CoordinateSystem ;
+cs:6421  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2015.018" ;
         epsg:dataSource         "IOGP" ;
         epsg:hasEPSGcode        "6421"^^xsd:nonNegativeInteger ;
@@ -520,7 +520,7 @@ crs:6421  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 3D CS. Axes: latitude, longitude, ellipsoidal height. Orientations: north, east, up. UoM: grads, grads, m." ;
         epsg:remarks            "Used in geographic 3D coordinate reference systems." .
 
-crs:4469  a                     epsg:CoordinateSystem ;
+cs:4469  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4469"^^xsd:nonNegativeInteger ;
@@ -529,7 +529,7 @@ crs:4469  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for north polar azimuthal lonO 0°E. Axes: X,Y. Orientations: X along 90°E, Y along 180°E meridians. UoM: m." ;
         epsg:remarks            "Used for North Pole tangential and secant projections." .
 
-crs:1038  a                     epsg:CoordinateSystem ;
+cs:1038  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2012.088" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "1038"^^xsd:nonNegativeInteger ;
@@ -538,7 +538,7 @@ crs:1038  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for north polar azimuthal lonO 105°E. Axes: X,Y. Orientations: X along 165°W, Y along 75°W meridians. UoM: m." ;
         epsg:remarks            "Used for North Pole tangential and secant projections." .
 
-crs:6406  a                     epsg:CoordinateSystem ;
+cs:6406  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6406"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -546,7 +546,7 @@ crs:6406  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: degH" ;
         epsg:remarks            "Used in geographic 2D coordinate reference systems adopting an alternative representation to degree minute second hemisphere." .
 
-crs:6500  a                     epsg:CoordinateSystem ;
+cs:6500  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6500"^^xsd:nonNegativeInteger ;
@@ -555,7 +555,7 @@ crs:6500  a                     epsg:CoordinateSystem ;
         epsg:name               "Earth centred, earth fixed, righthanded 3D coordinate system, consisting of 3 orthogonal axes with X and Y axes in the equatorial plane, positive Z-axis parallel to mean earth rotation axis and pointing towards North Pole. UoM: m." ;
         epsg:remarks            "Cartesian 3D CS, used in geocentric coordinate reference systems." .
 
-crs:6419  a                     epsg:CoordinateSystem ;
+cs:6419  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6419"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -563,7 +563,7 @@ crs:6419  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 3D CS. Axes: latitude, longitude, ellipsoidal height. Orientations: north, east, up. UoM: DMS, DMS, m." ;
         epsg:remarks            "Used in geographic 3D coordinate reference systems adopting an alternative representation to degree minute second hemisphere." .
 
-crs:4491  a                     epsg:CoordinateSystem ;
+cs:4491  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4491"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "Landmaelingar Islands (National Land Survey of Iceland)." ;
@@ -571,7 +571,7 @@ crs:4491  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: westing, northing (W,N). Orientations: west, north. UoM: m." ;
         epsg:remarks            "Used in old Danish coordinate reference systems." .
 
-crs:4463  a                     epsg:CoordinateSystem ;
+cs:4463  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4463"^^xsd:nonNegativeInteger ;
@@ -580,7 +580,7 @@ crs:4463  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for north polar azimuthal lonO 10°E. Axes: X,Y. Orientations: X along 100°E, Y along 170°W meridians. UoM: m." ;
         epsg:remarks            "Used for North Pole tangential and secant projections." .
 
-crs:1032  a                     epsg:CoordinateSystem ;
+cs:1032  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2012.068" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "1032"^^xsd:nonNegativeInteger ;
@@ -589,7 +589,7 @@ crs:1032  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 3D CS (gravity-related Topocentric). Axes: plant E, Plant N, height (x,y,z). Orientations: east, north, up. UoM: m." ;
         epsg:remarks            "Used in engineering coordinate reference systems. x and y are in the horizontal plane and z is the local vertical. Not to be confused with CS 4461." .
 
-crs:4407  a                     epsg:CoordinateSystem ;
+cs:4407  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4407"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -597,7 +597,7 @@ crs:4407  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: easting, northing (E,N). Orientations: east, north. UoM: lkCla." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:4476  a                     epsg:CoordinateSystem ;
+cs:4476  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4476"^^xsd:nonNegativeInteger ;
@@ -606,7 +606,7 @@ crs:4476  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 75°W. Axes: E,N. Orientations: E along 15°E, N along 75°W meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:1045  a                     epsg:CoordinateSystem ;
+cs:1045  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2016.003" ;
         epsg:dataSource         "IOGP" ;
         epsg:hasEPSGcode        "1045"^^xsd:nonNegativeInteger ;
@@ -615,7 +615,7 @@ crs:1045  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 3D CS. Axes: x,y,z. Orientations: starboard, forward, down. UoM: m." ;
         epsg:remarks            "Left-handed Cartesian 3D CS, used on moving platforms. Axes directions are for the platform body when it is at rest." .
 
-crs:4501  a                     epsg:CoordinateSystem ;
+cs:4501  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4501"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -623,7 +623,7 @@ crs:4501  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: northing, westing (N,E). Orientations: north, west. UoM: m." ;
         epsg:remarks            "Used in Danish projected coordinate reference systems. Note that second axis has abbreviation E but is positive west." .
 
-crs:4489  a                     epsg:CoordinateSystem ;
+cs:4489  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4489"^^xsd:nonNegativeInteger ;
@@ -632,7 +632,7 @@ crs:4489  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 70°E. Axes: E,N. Orientations: E along 160°E, N along 70°E meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:6413  a                     epsg:CoordinateSystem ;
+cs:6413  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6413"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -640,7 +640,7 @@ crs:6413  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 3D CS. Axes: latitude, longitude, ellipsoidal height. Orientations: north, east, up. UoM: dec deg, dec deg, m." ;
         epsg:remarks            "Used for computer interchange of geographic 3D coordinate reference systems." .
 
-crs:6426  a                     epsg:CoordinateSystem ;
+cs:6426  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045 2015.018" ;
         epsg:dataSource         "IOGP" ;
         epsg:hasEPSGcode        "6426"^^xsd:nonNegativeInteger ;
@@ -649,7 +649,7 @@ crs:6426  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 3D CS. Axes: longitude, latitude, ellipsoidal height. Orientations: east, north, up. UoM: degree, degree, metre." ;
         epsg:remarks            "Used in some geographic 3D CRSs for web mapping. CS code 6423 recommended instead. Horizontal coordinates referenced to this CS are in degrees. Any degree representation (e.g. DMSH, decimal, etc.) may be used but that used must be declared for the user." .
 
-crs:6495  a                     epsg:CoordinateSystem ;
+cs:6495  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6495"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -657,7 +657,7 @@ crs:6495  a                     epsg:CoordinateSystem ;
         epsg:name               "Vertical CS. Axis: depth (D). Orientation: down. UoM: ft." ;
         epsg:remarks            "Used in vertical coordinate reference systems." .
 
-crs:4401  a                     epsg:CoordinateSystem ;
+cs:4401  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4401"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -665,7 +665,7 @@ crs:4401  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: easting, northing (E,N). Orientations: east, north. UoM: chBnB." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:4470  a                     epsg:CoordinateSystem ;
+cs:4470  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4470"^^xsd:nonNegativeInteger ;
@@ -674,7 +674,7 @@ crs:4470  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 0°E. Axes: X,Y. Orientations: X along 90°E, Y along 0°E meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:4483  a                     epsg:CoordinateSystem ;
+cs:4483  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4483"^^xsd:nonNegativeInteger ;
@@ -683,7 +683,7 @@ crs:4483  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 75°E. Axes: E,N. Orientations: E along 165°E, N along 75°E meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:6505  a                     epsg:CoordinateSystem ;
+cs:6505  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2014.047" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6505"^^xsd:nonNegativeInteger ;
@@ -692,7 +692,7 @@ crs:6505  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: 1st local axis, 2nd local axis (n,e). Orientations: northwest, northeast. UoM: m." ;
         epsg:remarks            "Used in engineering coordinate reference systems." .
 
-crs:1024  a                     epsg:CoordinateSystem ;
+cs:1024  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2009.085" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "1024"^^xsd:nonNegativeInteger ;
@@ -701,7 +701,7 @@ crs:1024  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: easting, northing (M,P). Orientations east, north. UoM m." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems in Portuguese territories." .
 
-crs:4496  a                     epsg:CoordinateSystem ;
+cs:4496  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4496"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -709,7 +709,7 @@ crs:4496  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: easting, northing [E(X),N(Y)]. Orientations: east, north. UoM: m." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:6420  a                     epsg:CoordinateSystem ;
+cs:6420  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6420"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -717,7 +717,7 @@ crs:6420  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 3D CS. Axes: latitude, longitude, ellipsoidal height. Orientations: north, east, up. UoM: HDMS, HDMS, m." ;
         epsg:remarks            "Used in geographic 3D coordinate reference systems adopting an alternative representation to degree minute second hemisphere." .
 
-crs:4468  a                     epsg:CoordinateSystem ;
+cs:4468  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4468"^^xsd:nonNegativeInteger ;
@@ -726,7 +726,7 @@ crs:4468  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for north polar azimuthal lonO 45°W. Axes: X,Y. Orientations: X along 45°E, Y along 135°E meridians. UoM: m." ;
         epsg:remarks            "Used for North Pole tangential and secant projections." .
 
-crs:1037  a                     epsg:CoordinateSystem ;
+cs:1037  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2012.088" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "1037"^^xsd:nonNegativeInteger ;
@@ -735,7 +735,7 @@ crs:1037  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for north polar azimuthal lonO 18°E. Axes: X,Y. Orientations: X along 108°E, Y along 162°W meridians. UoM: m." ;
         epsg:remarks            "Used for North Pole tangential and secant projections." .
 
-crs:6405  a                     epsg:CoordinateSystem ;
+cs:6405  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6405"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -743,7 +743,7 @@ crs:6405  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: dec deg" ;
         epsg:remarks            "Used for computer interchange of geographic 2D coordinate reference systems." .
 
-crs:4534  a                     epsg:CoordinateSystem ;
+cs:4534  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4534"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -751,7 +751,7 @@ crs:4534  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: northing, easting (no abbrev). Orientations: north, east. UoM: m." ;
         epsg:remarks            "Used in projected coordinate reference systems for nautical charting." .
 
-crs:6418  a                     epsg:CoordinateSystem ;
+cs:6418  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6418"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -759,7 +759,7 @@ crs:6418  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 3D CS. Axes: latitude, longitude, ellipsoidal height. Orientations: north, east, up. UoM: HDM, HDM, m." ;
         epsg:remarks            "Used in geographic 3D coordinate reference systems adopting an alternative representation to degree minute second hemisphere." .
 
-crs:4490  a                     epsg:CoordinateSystem ;
+cs:4490  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4490"^^xsd:nonNegativeInteger ;
@@ -768,7 +768,7 @@ crs:4490  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 0°E. Axes: E,N. Orientations: E along 90°E, N along 0°E meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:4462  a                     epsg:CoordinateSystem ;
+cs:4462  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045 2012.096" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4462"^^xsd:nonNegativeInteger ;
@@ -777,7 +777,7 @@ crs:4462  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for north polar azimuthal lonO 90°E. Axes: X,Y. Orientations: X along 180°W, Y along 90°W meridians. UoM: m." ;
         epsg:remarks            "Used for North Pole tangential and secant projections." .
 
-crs:6512  a                     epsg:CoordinateSystem ;
+cs:6512  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.086 2012.068" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6512"^^xsd:nonNegativeInteger ;
@@ -786,7 +786,7 @@ crs:6512  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 3D CS (gravity-related Topocentric). Axes: plant E, Plant N, height (x,y,z). Orientations: east, north, up. UoM: m." ;
         epsg:remarks            "Used in engineering coordinate reference systems. x and y are in the horizontal plane and z is the local vertical. Not to be confused with CS 4461." .
 
-crs:1031  a                     epsg:CoordinateSystem ;
+cs:1031  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2011.085" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "1031"^^xsd:nonNegativeInteger ;
@@ -795,7 +795,7 @@ crs:1031  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: northing, westing (Y,X). Orientations: north, west. UoM: m." ;
         epsg:remarks            "Used in Danish projected coordinate reference systems." .
 
-crs:4406  a                     epsg:CoordinateSystem ;
+cs:4406  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4406"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -803,7 +803,7 @@ crs:4406  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: easting, northing (E,N). Orientations: east, north. UoM: km." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:4475  a                     epsg:CoordinateSystem ;
+cs:4475  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4475"^^xsd:nonNegativeInteger ;
@@ -812,7 +812,7 @@ crs:4475  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 90°W. Axes: E,N. Orientations: E along 0°E, N along 90°W meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:1044  a                     epsg:CoordinateSystem ;
+cs:1044  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2014.046" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "1044"^^xsd:nonNegativeInteger ;
@@ -821,7 +821,7 @@ crs:1044  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 180°E. Axes: N,E. Orientations: N along 180°E, E along 90°W meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:4500  a                     epsg:CoordinateSystem ;
+cs:4500  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4500"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -829,7 +829,7 @@ crs:4500  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: northing, easting (N,E). Orientations: north, east. UoM: m." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:4488  a                     epsg:CoordinateSystem ;
+cs:4488  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4488"^^xsd:nonNegativeInteger ;
@@ -838,7 +838,7 @@ crs:4488  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 165°E. Axes: E,N. Orientations: E along 105°W, N along 165°E meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:6412  a                     epsg:CoordinateSystem ;
+cs:6412  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6412"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -846,7 +846,7 @@ crs:6412  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: HDMS" ;
         epsg:remarks            "Used in geographic 2D coordinate reference systems adopting an alternative representation to degree minute second hemisphere." .
 
-crs:1029  a                     epsg:CoordinateSystem ;
+cs:1029  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2011.074" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "1029"^^xsd:nonNegativeInteger ;
@@ -855,7 +855,7 @@ crs:1029  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: northing, easting (N,E). Orientations: north, east. UoM: ft." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:6425  a                     epsg:CoordinateSystem ;
+cs:6425  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2015.018" ;
         epsg:dataSource         "IOGP" ;
         epsg:hasEPSGcode        "6425"^^xsd:nonNegativeInteger ;
@@ -864,7 +864,7 @@ crs:6425  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 2D CS. Axes: longitude, latitude. Orientations: east, north. UoM: grads." ;
         epsg:remarks            "Used in geographic 2D coordinate reference systems for web mapping. Not recommended for use at the human interface: use of CS code 6403 is preferred." .
 
-crs:4400  a                     epsg:CoordinateSystem ;
+cs:4400  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4400"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -872,7 +872,7 @@ crs:4400  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: easting, northing (E,N). Orientations: east, north. UoM: m." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:4482  a                     epsg:CoordinateSystem ;
+cs:4482  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4482"^^xsd:nonNegativeInteger ;
@@ -881,7 +881,7 @@ crs:4482  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 45°E. Axes: E,N. Orientations: E along 135°E, N along 45°E meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:6504  a                     epsg:CoordinateSystem ;
+cs:6504  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2014.047" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6504"^^xsd:nonNegativeInteger ;
@@ -890,7 +890,7 @@ crs:6504  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: plant N, Plant E (n,e). Orientations: northwest, northeast. UoM: m." ;
         epsg:remarks            "Used in engineering coordinate reference systems." .
 
-crs:4495  a                     epsg:CoordinateSystem ;
+cs:4495  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4495"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -898,7 +898,7 @@ crs:4495  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: easting, northing (X,Y). Orientations: east, north. UoM: ft." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:4467  a                     epsg:CoordinateSystem ;
+cs:4467  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4467"^^xsd:nonNegativeInteger ;
@@ -907,7 +907,7 @@ crs:4467  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for north polar azimuthal lonO 150°W. Axes: X,Y. Orientations: X along 60°W, Y along 30°E meridians. UoM: m." ;
         epsg:remarks            "Used for North Pole tangential and secant projections." .
 
-crs:1036  a                     epsg:CoordinateSystem ;
+cs:1036  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2012.088" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "1036"^^xsd:nonNegativeInteger ;
@@ -916,7 +916,7 @@ crs:1036  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for north polar azimuthal lonO 33°W. Axes: X,Y. Orientations: X along 57°E, Y along 147°E meridians. UoM: m." ;
         epsg:remarks            "Used for North Pole tangential and secant projections." .
 
-crs:6404  a                     epsg:CoordinateSystem ;
+cs:6404  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2002.300 2003.390" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6404"^^xsd:nonNegativeInteger ;
@@ -925,7 +925,7 @@ crs:6404  a                     epsg:CoordinateSystem ;
         epsg:name               "Spherical 3D CS. Axes: latitude, longitude, radius. Orientations: north, east, up. UoM: degrees, degrees, metres." ;
         epsg:remarks            "Used in geocentric 3D coordinate reference systems." .
 
-crs:4533  a                     epsg:CoordinateSystem ;
+cs:4533  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4533"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -933,7 +933,7 @@ crs:4533  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: northing, easting (X,Y). Orientations: north, east. UoM: lk." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:1049  a                     epsg:CoordinateSystem ;
+cs:1049  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2017.040" ;
         epsg:dataSource         "IOGP" ;
         epsg:hasEPSGcode        "1049"^^xsd:nonNegativeInteger ;
@@ -942,7 +942,7 @@ crs:1049  a                     epsg:CoordinateSystem ;
         epsg:name               "Vertical CS. Axis: local depth (d). Orientation: down. UoM: m." ;
         epsg:remarks            "Used in vertical coordinate reference systems, for example wellbore survey." .
 
-crs:6417  a                     epsg:CoordinateSystem ;
+cs:6417  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6417"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -950,7 +950,7 @@ crs:6417  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 3D CS. Axes: latitude, longitude, ellipsoidal height. Orientations: north, east, up. UoM: DMH, DMH, m." ;
         epsg:remarks            "Used in geographic 3D coordinate reference systems adopting an alternative representation to degree minute second hemisphere." .
 
-crs:4461  a                     epsg:CoordinateSystem ;
+cs:4461  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4461"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -958,7 +958,7 @@ crs:4461  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 3D CS (ellipsoid-based Topocentric). Axes: easting, northing, topocentric height (U,V,W). Orientations: east, north, up. UoM: m." ;
         epsg:remarks            "U = tangent to ellipsoidal surface at topocentric origin, positive east; V = tangent to ellipsoid surface at topocentric origin, positive north; and W = orthogonal to ellipsoidal surface passing through topocentric origin and positive up." .
 
-crs:6511  a                     epsg:CoordinateSystem ;
+cs:6511  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2011.106" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6511"^^xsd:nonNegativeInteger ;
@@ -967,7 +967,7 @@ crs:6511  a                     epsg:CoordinateSystem ;
         epsg:name               "Seismic acquisition bin grid. Axes: Inline, Crossline (I,J). Orientations: Along rx line, across rx line. UoM: 25m x 12.5m." ;
         epsg:remarks            "Bin grid increment on I axis = 1 bin, bin grid increment on J axis = 1 bin.\r\nBy definition, I axis is rotated 90 degrees clockwise from J axis." .
 
-crs:6499  a                     epsg:CoordinateSystem ;
+cs:6499  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6499"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -975,7 +975,7 @@ crs:6499  a                     epsg:CoordinateSystem ;
         epsg:name               "Vertical CS. Axis: height (H). Orientation: up. UoM: m." ;
         epsg:remarks            "Used in vertical coordinate reference systems." .
 
-crs:1030  a                     epsg:CoordinateSystem ;
+cs:1030  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2011.086" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "1030"^^xsd:nonNegativeInteger ;
@@ -984,7 +984,7 @@ crs:1030  a                     epsg:CoordinateSystem ;
         epsg:name               "Vertical CS. Axis: height (H). Orientation: up. UoM: ft." ;
         epsg:remarks            "Used in vertical coordinate reference systems." .
 
-crs:4405  a                     epsg:CoordinateSystem ;
+cs:4405  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4405"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -992,7 +992,7 @@ crs:4405  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: easting, northing (E,N). Orientations: east, north. UoM: ftSe." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:4474  a                     epsg:CoordinateSystem ;
+cs:4474  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4474"^^xsd:nonNegativeInteger ;
@@ -1001,7 +1001,7 @@ crs:4474  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 105°W. Axes: E,N. Orientations: E along 15°W, N along 105°W meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:1043  a                     epsg:CoordinateSystem ;
+cs:1043  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2013.028" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "1043"^^xsd:nonNegativeInteger ;
@@ -1010,7 +1010,7 @@ crs:1043  a                     epsg:CoordinateSystem ;
         epsg:name               "Vertical CS. Axis: depth (D). Orientation: down. UoM: ftUS." ;
         epsg:remarks            "Used in US vertical coordinate reference systems." .
 
-crs:4487  a                     epsg:CoordinateSystem ;
+cs:4487  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4487"^^xsd:nonNegativeInteger ;
@@ -1019,7 +1019,7 @@ crs:4487  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 150°E. Axes: E,N. Orientations: E along 120°W, N along 150°E meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:6411  a                     epsg:CoordinateSystem ;
+cs:6411  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6411"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -1027,7 +1027,7 @@ crs:6411  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: DMS" ;
         epsg:remarks            "Used in geographic 2D coordinate reference systems adopting an alternative representation to degree minute second hemisphere." .
 
-crs:6509  a                     epsg:CoordinateSystem ;
+cs:6509  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6509"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -1035,7 +1035,7 @@ crs:6509  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: southing, westing (P,M). Orientations: south, west. UoM: m." ;
         epsg:remarks            "Used in old projected coordinate reference systems in Portugal." .
 
-crs:1028  a                     epsg:CoordinateSystem ;
+cs:1028  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2011.026" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "1028"^^xsd:nonNegativeInteger ;
@@ -1044,7 +1044,7 @@ crs:1028  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: easting, northing (E,N). Orientations: east, north. UoM: ydCl." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:6424  a                     epsg:CoordinateSystem ;
+cs:6424  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045 2015.018" ;
         epsg:dataSource         "IOGP" ;
         epsg:hasEPSGcode        "6424"^^xsd:nonNegativeInteger ;
@@ -1053,7 +1053,7 @@ crs:6424  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 2D CS. Axes: longitude, latitude. Orientations: east, north. UoM: degree" ;
         epsg:remarks            "Used in geog2D CRSs for some web mapping: CS code 6422 recommended. Coordinates referenced to this CS are in degrees. Any degree representation (e.g. DMSH, decimal, etc.) may be used but that used must be declared for the user by the supplier of data." .
 
-crs:6409  a                     epsg:CoordinateSystem ;
+cs:6409  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6409"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -1061,7 +1061,7 @@ crs:6409  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: DMH" ;
         epsg:remarks            "Used in geographic 2D coordinate reference systems adopting an alternative representation to degree minute second hemisphere." .
 
-crs:4481  a                     epsg:CoordinateSystem ;
+cs:4481  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4481"^^xsd:nonNegativeInteger ;
@@ -1070,7 +1070,7 @@ crs:4481  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 30°E. Axes: E,N. Orientations: E along 120°E, N along 30°Emeridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:1050  a                     epsg:CoordinateSystem ;
+cs:1050  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2017.040" ;
         epsg:dataSource         "IOGP" ;
         epsg:hasEPSGcode        "1050"^^xsd:nonNegativeInteger ;
@@ -1079,7 +1079,7 @@ crs:1050  a                     epsg:CoordinateSystem ;
         epsg:name               "Vertical CS. Axis: local depth (d). Orientation: down. UoM: ft." ;
         epsg:remarks            "Used in vertical coordinate reference systems, for example wellbore survey." .
 
-crs:6503  a                     epsg:CoordinateSystem ;
+cs:6503  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6503"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -1087,7 +1087,7 @@ crs:6503  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: westing, southing (Y,X). Orientations: west, south. UoM: m." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:4494  a                     epsg:CoordinateSystem ;
+cs:4494  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4494"^^xsd:nonNegativeInteger ;
@@ -1096,7 +1096,7 @@ crs:4494  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for UPS south. Axes: N,E. Orientations: N along 0°E, E along 90°E meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:4466  a                     epsg:CoordinateSystem ;
+cs:4466  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4466"^^xsd:nonNegativeInteger ;
@@ -1105,7 +1105,7 @@ crs:4466  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for north polar azimuthal lonO 100°W. Axes: X,Y. Orientations: X along 10°W, Y along 80°E meridians. UoM: m." ;
         epsg:remarks            "Used for North Pole tangential and secant projections." .
 
-crs:1035  a                     epsg:CoordinateSystem ;
+cs:1035  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2012.084" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "1035"^^xsd:nonNegativeInteger ;
@@ -1114,7 +1114,7 @@ crs:1035  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for north polar azimuthal lonO 90°E. Axes: X,Y. Orientations: X along 180°E, Y along 90°W meridians. UoM: m." ;
         epsg:remarks            "Used for North Pole tangential and secant projections." .
 
-crs:6431  a                     epsg:CoordinateSystem ;
+cs:6431  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2015.018" ;
         epsg:dataSource         "IOGP" ;
         epsg:hasEPSGcode        "6431"^^xsd:nonNegativeInteger ;
@@ -1123,7 +1123,7 @@ crs:6431  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 3D CS. Axes: longitude, latitude, ellipsoidal height. Orientations: east, north, up. UoM: rad, rad, m." ;
         epsg:remarks            "Used in geographic 3D coordinate reference systems for web mapping. Not recommended for use at the human interface: use of CS code 6430 is preferred." .
 
-crs:4479  a                     epsg:CoordinateSystem ;
+cs:4479  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2008.045" ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4479"^^xsd:nonNegativeInteger ;
@@ -1132,7 +1132,7 @@ crs:4479  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS for south polar azimuthal lonO 15°W. Axes: E,N. Orientations: E along 75°E, N along 15°W meridians. UoM: m." ;
         epsg:remarks            "Used for South Pole tangential and secant projections." .
 
-crs:6403  a                     epsg:CoordinateSystem ;
+cs:6403  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2002.850 2015.018" ;
         epsg:dataSource         "IOGP" ;
         epsg:hasEPSGcode        "6403"^^xsd:nonNegativeInteger ;
@@ -1141,7 +1141,7 @@ crs:6403  a                     epsg:CoordinateSystem ;
         epsg:name               "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: grads." ;
         epsg:remarks            "Used in geographic 2D coordinate reference systems." .
 
-crs:4532  a                     epsg:CoordinateSystem ;
+cs:4532  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "4532"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
@@ -1149,7 +1149,7 @@ crs:4532  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: northing, easting (Y,X). Orientations: north, east. UoM: m." ;
         epsg:remarks            "Used in projected and engineering coordinate reference systems." .
 
-crs:1048  a                     epsg:CoordinateSystem ;
+cs:1048  a                     epsg:CoordinateSystem ;
         epsg:changeID           "2017.040" ;
         epsg:dataSource         "IOGP" ;
         epsg:hasEPSGcode        "1048"^^xsd:nonNegativeInteger ;
@@ -1158,7 +1158,7 @@ crs:1048  a                     epsg:CoordinateSystem ;
         epsg:name               "Cartesian 2D CS. Axes: local northing, local easting (n,e). Orientations: north, east. UoM: ft." ;
         epsg:remarks            "Used in local engineering coordinate reference systems, for example wellbore survey." .
 
-crs:6416  a                     epsg:CoordinateSystem ;
+cs:6416  a                     epsg:CoordinateSystem ;
         epsg:dataSource         "OGP" ;
         epsg:hasEPSGcode        "6416"^^xsd:nonNegativeInteger ;
         epsg:informationSource  "OGP" ;
