@@ -18,15 +18,6 @@
 # #################################################################
 # 
 # 
-# http://purl.org/dc/elements/1.1/creator
-<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/elements/1.1/date
-<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://www.w3.org/1999/02/22-rdf-syntax-ns#label
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -64,7 +55,6 @@
 <http://crossforest.eu/position/ontology/hasArea> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/measures/ontology/hasMeasureIn> .
 <http://crossforest.eu/position/ontology/hasArea> <http://www.w3.org/2000/01/rdf-schema#domain> <http://crossforest.eu/position/ontology/Position> .
 <http://crossforest.eu/position/ontology/hasArea> <http://www.w3.org/2000/01/rdf-schema#range> <http://crossforest.eu/measures/ontology/MeasureInHectares> .
-<http://crossforest.eu/measures/ontology/MeasureInHectares> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://crossforest.eu/position/ontology/hasArea> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
 <http://crossforest.eu/position/ontology/hasArea> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
 <http://crossforest.eu/position/ontology/hasArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
@@ -236,9 +226,6 @@
 # http://crossforest.eu/measures/ontology/hasMeasureInHectares
 <http://crossforest.eu/measures/ontology/hasMeasureInHectares> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
-# http://crossforest.eu/measures/ontology/hasMeasureInMeters
-<http://crossforest.eu/measures/ontology/hasMeasureInMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
 # http://crossforest.eu/measures/ontology/hasMeasureInSquareMeters
 <http://crossforest.eu/measures/ontology/hasMeasureInSquareMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
@@ -288,11 +275,6 @@
 # #
 # #################################################################
 # 
-# 
-# http://crossforest.eu/measures/ontology/Measure
-<http://crossforest.eu/measures/ontology/Measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://crossforest.eu/measures/ontology/MeasureInHectares
 # 
 # http://crossforest.eu/position/ontology/AllocentricPosition
 <http://crossforest.eu/position/ontology/AllocentricPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -406,9 +388,9 @@
 # http://crossforest.eu/position/ontology/ReferenceEntity
 <http://crossforest.eu/position/ontology/ReferenceEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://crossforest.eu/position/ontology/ReferenceEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://crossforest.eu/measures/ontology/hasPosition> .
 _:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://crossforest.eu/position/ontology/ReferencePosition> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://crossforest.eu/measures/ontology/hasPosition> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://crossforest.eu/position/ontology/ReferenceEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://crossforest.eu/position/ontology/SpatialEntity> .
 <http://crossforest.eu/position/ontology/ReferenceEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Entidad tomada como referencia para el posicionamient de otras entidades espaciales"@es .
 <http://crossforest.eu/position/ontology/ReferenceEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Entity taken as reference for the position of other spatial entities"@en .
@@ -447,4 +429,4 @@ _:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://crossforest.eu/p
 <http://crossforest.eu/position/ontology/UpperBound> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://crossforest.eu/position/ontology/> .
 <http://crossforest.eu/position/ontology/UpperBound> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
 # 
-# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

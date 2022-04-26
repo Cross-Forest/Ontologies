@@ -1,18 +1,18 @@
 {
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
-    "languages" : [ "en", "es", "undefined" ],
+    "languages" : [ "em", "en", "es", "undefined" ],
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://crossforest.eu/measures/ontology", "http://www.w3.org/2000/01/rdf-schema", "http://crossforest.eu/position/ontology", "http://www.w3.org/2001/XMLSchema" ],
     "iri" : "http://crossforest.eu/position/ontology/",
     "version" : "0.1",
     "author" : [ "https://www.crossforest.eu/members/josgim", "https://www.crossforest.eu/members/guiveg" ],
     "labels" : {
       "en" : "Spatial Position Ontology",
-      "es" : "OntologÌa de Posiciones Espaciales"
+      "es" : "Ontolog√≠a de Posiciones Espaciales"
     },
     "comments" : {
       "en" : "An ontology to publish data about spatial entities and their positions in various reference systems, including relative positions",
-      "es" : "Una ontologÌa para publicar datos sobre entidades espaciales y sus posiciones en m˙ltiples sistemas de referencia, incluyendo posiciones relativas"
+      "es" : "Una ontolog√≠a para publicar datos sobre entidades espaciales y sus posiciones en m√∫ltiples sistemas de referencia, incluyendo posiciones relativas"
     },
     "other" : {
       "date" : [ {
@@ -24,12 +24,12 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://www.crossforest.eu/members/guiveg",
+        "value" : "https://www.crossforest.eu/members/josgim",
         "type" : "iri"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://www.crossforest.eu/members/josgim",
+        "value" : "https://www.crossforest.eu/members/guiveg",
         "type" : "iri"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -48,118 +48,239 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "15",
+    "id" : "3",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "4",
     "type" : "owl:Class"
   }, {
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "16",
-    "type" : "owl:Class"
-  }, {
-    "id" : "9",
-    "type" : "owl:Class"
-  }, {
-    "id" : "30",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "31",
-    "type" : "owl:Class"
-  }, {
-    "id" : "33",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "34",
-    "type" : "owl:Class"
-  }, {
-    "id" : "36",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "37",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "38",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "42",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "43",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "39",
-    "type" : "owl:Class"
-  }, {
-    "id" : "45",
-    "type" : "owl:Class"
-  }, {
-    "id" : "52",
-    "type" : "owl:Class"
-  }, {
-    "id" : "26",
-    "type" : "owl:Class"
-  }, {
-    "id" : "28",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "18",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "57",
-    "type" : "owl:Class"
-  }, {
-    "id" : "32",
-    "type" : "owl:Class"
-  }, {
-    "id" : "47",
-    "type" : "owl:Thing"
-  }, {
     "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "10",
+    "id" : "11",
     "type" : "owl:Thing"
   }, {
-    "id" : "4",
+    "id" : "12",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "62",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "14",
+    "id" : "16",
     "type" : "rdfs:Literal"
   }, {
     "id" : "2",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "1",
+    "id" : "17",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "18",
     "type" : "owl:Thing"
   }, {
     "id" : "19",
-    "type" : "owl:Class"
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "66",
-    "type" : "owl:Class"
-  }, {
-    "id" : "48",
-    "type" : "owl:Class"
+    "id" : "1",
+    "type" : "owl:Thing"
   }, {
     "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
     "type" : "owl:Class"
   }, {
-    "id" : "53",
+    "id" : "31",
     "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "91",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "61",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "36",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "100",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "33",
+    "type" : "owl:Thing"
   }, {
     "id" : "29",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "78",
     "type" : "owl:Class"
   }, {
-    "id" : "58",
+    "id" : "54",
     "type" : "owl:Class"
   }, {
-    "id" : "12",
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "126",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "135",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "143",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "137",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "145",
+    "type" : "owl:Class"
+  }, {
+    "id" : "154",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "147",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "3",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
     "iri" : "http://crossforest.eu/position/ontology/GeocentricPosition",
     "baseIri" : "http://crossforest.eu/position/ontology",
     "instances" : 0,
@@ -174,36 +295,37 @@
     "label" : {
       "IRI-based" : "GeocentricPosition",
       "en" : "Geocentric Position",
-      "es" : "PosiciÛn geocÈntrica"
+      "es" : "Posici√≥n geoc√©ntrica"
     },
     "comment" : {
-      "es" : "PosiciÛn que utiliza un sistema geodÈtico de coordenadas de referencia",
+      "es" : "Posici√≥n que utiliza un sistema geod√©tico de coordenadas de referencia",
       "undefined" : "Position that uses a geodetic coordinate reference system"
     },
-    "id" : "15",
-    "superClasses" : [ "7" ]
+    "id" : "4",
+    "superClasses" : [ "5" ]
   }, {
-    "iri" : "http://crossforest.eu/position/ontology/AllocentricPosition",
-    "baseIri" : "http://crossforest.eu/position/ontology",
+    "iri" : "http://crossforest.eu/measures/ontology/MeasurableEntity",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
     "instances" : 0,
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://crossforest.eu/position/ontology/",
+        "value" : "http://crossforest.eu/measures/ontology/",
         "type" : "iri"
       } ]
     },
     "label" : {
-      "IRI-based" : "AllocentricPosition",
-      "undefined" : "PosiciÛn AlocÈntrica"
+      "IRI-based" : "MeasurableEntity",
+      "en" : "Measurable Entity",
+      "es" : "Entidad medible"
     },
     "comment" : {
-      "en" : "Position from a set of points",
-      "es" : "PosiciÛn desde un conjunto de puntos"
+      "en" : "Entity from which a measure or a number of measures is taken",
+      "es" : "Entidad de la cual se toma una o varias medidas"
     },
-    "id" : "6",
-    "superClasses" : [ "7" ]
+    "attributes" : [ "external" ],
+    "id" : "6"
   }, {
     "iri" : "http://crossforest.eu/position/ontology/Axis",
     "baseIri" : "http://crossforest.eu/position/ontology",
@@ -211,84 +333,38 @@
     "label" : {
       "IRI-based" : "Axis"
     },
-    "id" : "16"
-  }, {
-    "iri" : "http://crossforest.eu/position/ontology/EgocentricPosition",
-    "baseIri" : "http://crossforest.eu/position/ontology",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/position/ontology/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "EgocentricPosition",
-      "undefined" : "PosiciÛn EgocÈntrica"
-    },
-    "comment" : {
-      "en" : "Position from a point of reference",
-      "es" : "PosiciÛn desde un punto de referencia"
-    },
-    "id" : "9",
-    "superClasses" : [ "7" ]
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "30",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://crossforest.eu/position/ontology/SpatialEntity",
-    "baseIri" : "http://crossforest.eu/position/ontology",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/position/ontology/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "SpatialEntity",
-      "en" : "Spatial Entity",
-      "es" : "Entidad espacial"
-    },
-    "subClasses" : [ "32" ],
-    "comment" : {
-      "en" : "Entity with Spatial Position",
-      "es" : "Entidad con posiciÛn espacial"
-    },
-    "id" : "31"
+    "id" : "7"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "33",
+    "id" : "11",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
-    "iri" : "http://crossforest.eu/position/ontology/EPSGentity",
-    "baseIri" : "http://crossforest.eu/position/ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "EPSGentity"
-    },
-    "id" : "34"
-  }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "36",
+    "id" : "12",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "37",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "17",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -296,23 +372,30 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "38",
+    "id" : "18",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "42",
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "19",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
+      "IRI-based" : "decimal"
     }
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "43",
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "decimal"
     }
   }, {
     "iri" : "http://crossforest.eu/position/ontology/Bound",
@@ -330,36 +413,48 @@
       "IRI-based" : "Bound"
     },
     "comment" : { },
-    "id" : "39"
+    "id" : "30"
   }, {
-    "iri" : "http://crossforest.eu/measures/ontology/MeasureInHectares",
+    "iri" : "http://crossforest.eu/measures/ontology/MeasurableEntityInSquareMeters",
     "baseIri" : "http://crossforest.eu/measures/ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MeasureInHectares"
-    },
-    "attributes" : [ "external" ],
-    "id" : "45"
-  }, {
-    "iri" : "http://crossforest.eu/position/ontology/Distance",
-    "baseIri" : "http://crossforest.eu/position/ontology",
     "instances" : 0,
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://crossforest.eu/position/ontology/",
+        "value" : "http://crossforest.eu/measures/ontology/",
         "type" : "iri"
       } ]
     },
     "label" : {
-      "IRI-based" : "Distance",
-      "en" : "Distance",
-      "es" : "distancia"
+      "IRI-based" : "MeasurableEntityInSquareMeters",
+      "en" : "Measurable Entity in Square Meters",
+      "es" : "Entidad medible en metros cuadrados"
     },
-    "comment" : { },
-    "id" : "52",
-    "superClasses" : [ "53" ]
+    "comment" : {
+      "en" : "Entity from which a measure in square meters is taken",
+      "es" : "Entidad de la cual se toma una medida en metros cuadrados"
+    },
+    "attributes" : [ "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasureInMillimeters",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasureInMillimeters"
+    },
+    "attributes" : [ "external" ],
+    "id" : "43",
+    "superClasses" : [ "44" ]
   }, {
     "iri" : "http://crossforest.eu/position/ontology/Polygon",
     "baseIri" : "http://crossforest.eu/position/ontology",
@@ -376,39 +471,8 @@
       "IRI-based" : "Polygon"
     },
     "comment" : { },
-    "id" : "26",
-    "superClasses" : [ "7" ]
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "28",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "18",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://crossforest.eu/position/ontology/UpperBound",
-    "baseIri" : "http://crossforest.eu/position/ontology",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/position/ontology/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "UpperBound"
-    },
-    "comment" : { },
-    "id" : "57"
+    "id" : "45",
+    "superClasses" : [ "5" ]
   }, {
     "iri" : "http://crossforest.eu/position/ontology/ReferenceEntity",
     "baseIri" : "http://crossforest.eu/position/ontology",
@@ -430,15 +494,8 @@
       "en" : "Entity taken as reference for the position of other spatial entities",
       "es" : "Entidad tomada como referencia para el posicionamient de otras entidades espaciales"
     },
-    "id" : "32",
-    "superClasses" : [ "31" ]
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "47",
-    "label" : {
-      "undefined" : "Thing"
-    }
+    "id" : "21",
+    "superClasses" : [ "52" ]
   }, {
     "iri" : "http://crossforest.eu/position/ontology/Position",
     "baseIri" : "http://crossforest.eu/position/ontology",
@@ -454,24 +511,132 @@
     "label" : {
       "IRI-based" : "Position",
       "en" : "Position",
-      "es" : "PosiciÛn"
+      "es" : "Posici√≥n"
     },
-    "subClasses" : [ "26", "9", "6", "15", "58" ],
+    "subClasses" : [ "45", "47", "54", "4", "22" ],
     "comment" : {
       "en" : "Position where a spatial entity can be located",
-      "es" : "PosiciÛn donde una entidad espacial puede estar situada"
+      "es" : "Posici√≥n donde una entidad espacial puede estar situada"
     },
-    "id" : "7"
+    "id" : "5"
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "10",
+    "iri" : "http://crossforest.eu/measures/ontology/MeasureInSquareMeters",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
     "label" : {
-      "undefined" : "Thing"
+      "IRI-based" : "MeasureInSquareMeters"
+    },
+    "attributes" : [ "external" ],
+    "id" : "72",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasureInGradians",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasureInGradians"
+    },
+    "attributes" : [ "external" ],
+    "id" : "73",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasureInPercentage",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasureInPercentage"
+    },
+    "attributes" : [ "external" ],
+    "id" : "74",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/Source",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Source",
+      "en" : "Source",
+      "es" : "Fuente"
+    },
+    "comment" : {
+      "en" : "Source of the measure",
+      "es" : "Fuente de la medida"
+    },
+    "attributes" : [ "external" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "77",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/Measure",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Measure",
+      "en" : "Measure",
+      "es" : "Medida"
+    },
+    "subClasses" : [ "78", "25", "72", "79", "43", "80", "81", "82", "73", "83", "74", "84", "85" ],
+    "comment" : {
+      "en" : "Measure with a value and expressed used some concrete units",
+      "es" : "Una medida con un valor y expresada en unas unidades concretas"
+    },
+    "attributes" : [ "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "4",
+    "id" : "90",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -479,20 +644,50 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "62",
+    "id" : "91",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasurableEntityInHectares",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasurableEntityInHectares",
+      "en" : "Measurable Entity in Hectares",
+      "es" : "Entidad medible en hect√°reas"
+    },
+    "comment" : {
+      "en" : "Entity from which a measure in hectares is taken",
+      "es" : "Entidad de la cual se toma una medida en hect√°reas"
+    },
+    "attributes" : [ "external" ],
+    "id" : "28"
+  }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "14",
+    "id" : "92",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "2",
+    "id" : "93",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "89",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -500,10 +695,346 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "1",
+    "id" : "61",
     "label" : {
       "undefined" : "Thing"
     }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasureInYears",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasureInYears"
+    },
+    "attributes" : [ "external" ],
+    "id" : "80",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/ReferencePosition",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/position/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ReferencePosition",
+      "en" : "Reference Position",
+      "es" : "Posici√≥n de Referencia"
+    },
+    "comment" : {
+      "en" : "Position taken as reference for the position of other spatial entities",
+      "es" : "Posici√≥n tomada como referencia para el posicionamient de otras entidades espaciales"
+    },
+    "id" : "22",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasurableEntityInMillimeters",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasurableEntityInMillimeters",
+      "en" : "Measurable Entity in Millimeters",
+      "es" : "Entidad medible en mil√≠metros"
+    },
+    "comment" : {
+      "en" : "Entity from which a measure in millimeters is taken",
+      "es" : "Entidad de la cual se toma una medida en mil√≠metros"
+    },
+    "attributes" : [ "external" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "36",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "97",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasurableEntityInGradians",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MeasurableEntityInGradians"
+    },
+    "attributes" : [ "external" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "100",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "101",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "33",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasureInMeters",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasureInMeters"
+    },
+    "attributes" : [ "external" ],
+    "id" : "78",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/AllocentricPosition",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/position/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AllocentricPosition",
+      "undefined" : "Posici√≥n Aloc√©ntrica"
+    },
+    "comment" : {
+      "en" : "Position from a set of points",
+      "es" : "Posici√≥n desde un conjunto de puntos"
+    },
+    "id" : "54",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/EgocentricPosition",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/position/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EgocentricPosition",
+      "undefined" : "Egocentric Position"
+    },
+    "comment" : {
+      "en" : "Position from a point of reference",
+      "es" : "Posici√≥n desde un punto de referencia"
+    },
+    "id" : "47",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/SpatialEntity",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/position/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SpatialEntity",
+      "en" : "Spatial Entity",
+      "es" : "Entidad espacial"
+    },
+    "subClasses" : [ "21" ],
+    "comment" : {
+      "en" : "Entity with Spatial Position",
+      "es" : "Entidad con posici√≥n espacial"
+    },
+    "id" : "52"
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/EPSGentity",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EPSGentity"
+    },
+    "id" : "51"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasureInHectares",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasureInHectares"
+    },
+    "attributes" : [ "external" ],
+    "id" : "25",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasureInUnities",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasureInUnities"
+    },
+    "attributes" : [ "external" ],
+    "id" : "79",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/Distance",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/position/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Distance",
+      "en" : "Distance",
+      "es" : "distancia"
+    },
+    "comment" : { },
+    "id" : "81",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasureInCentimeters",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasureInCentimeters"
+    },
+    "attributes" : [ "external" ],
+    "id" : "83",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/Hectares",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hectares"
+    },
+    "attributes" : [ "external" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/UpperBound",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/position/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UpperBound"
+    },
+    "comment" : { },
+    "id" : "126"
   }, {
     "iri" : "http://crossforest.eu/position/ontology/RightBound",
     "baseIri" : "http://crossforest.eu/position/ontology",
@@ -520,7 +1051,53 @@
       "IRI-based" : "RightBound"
     },
     "comment" : { },
-    "id" : "19"
+    "id" : "110"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasurableEntityInYears",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasurableEntityInYears",
+      "en" : "Measurable Entity in Years",
+      "es" : "Entidad medible en a√±os"
+    },
+    "comment" : {
+      "en" : "Entity from which a measure in years is taken",
+      "es" : "Entidad de la cual se toma una medida en a√±os"
+    },
+    "attributes" : [ "external" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/Reliability",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Reliability",
+      "en" : "Reliability",
+      "es" : "Fiabilidad"
+    },
+    "comment" : {
+      "en" : "Reliability of the measure",
+      "es" : "Fiabilidad de la medida"
+    },
+    "attributes" : [ "external" ],
+    "id" : "135"
   }, {
     "iri" : "http://crossforest.eu/position/ontology/Coordinate",
     "baseIri" : "http://crossforest.eu/position/ontology",
@@ -528,7 +1105,7 @@
     "label" : {
       "IRI-based" : "Coordinate"
     },
-    "id" : "66"
+    "id" : "56"
   }, {
     "iri" : "http://crossforest.eu/position/ontology/LeftBound",
     "baseIri" : "http://crossforest.eu/position/ontology",
@@ -545,7 +1122,25 @@
       "IRI-based" : "LeftBound"
     },
     "comment" : { },
-    "id" : "48"
+    "id" : "34"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasureInDecimeters",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasureInDecimeters"
+    },
+    "attributes" : [ "external" ],
+    "id" : "82",
+    "superClasses" : [ "44" ]
   }, {
     "iri" : "http://crossforest.eu/position/ontology/Layer",
     "baseIri" : "http://crossforest.eu/position/ontology",
@@ -564,17 +1159,80 @@
       "es" : "Capa"
     },
     "comment" : { },
-    "id" : "23"
+    "id" : "10"
   }, {
-    "iri" : "http://crossforest.eu/measures/ontology/Measure",
+    "iri" : "http://crossforest.eu/measures/ontology/MeasurableEntityInDecimeters",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasurableEntityInDecimeters",
+      "en" : "Measurable Entity in Decimeters",
+      "es" : "Entidad medible en dec√≠metros"
+    },
+    "comment" : {
+      "en" : "Entity from which a measure in decimeters is taken",
+      "es" : "Entidad de la cual se toma una medida en dec√≠metros"
+    },
+    "attributes" : [ "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasureSquareMeters",
     "baseIri" : "http://crossforest.eu/measures/ontology",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Measure"
+      "IRI-based" : "MeasureSquareMeters"
     },
-    "subClasses" : [ "12", "52" ],
     "attributes" : [ "external" ],
-    "id" : "53"
+    "id" : "143"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasureInDegrees",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasureInDegrees"
+    },
+    "attributes" : [ "external" ],
+    "id" : "84",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasurableEntityInCentimeters",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasurableEntityInCentimeters",
+      "en" : "Measurable Entity in Centimeters",
+      "es" : "Entidad medible en cent√≠metros"
+    },
+    "comment" : {
+      "en" : "Entity from which a measure in centimeters is taken",
+      "es" : "Entidad de la cual se toma una medida en cent√≠metros"
+    },
+    "attributes" : [ "external" ],
+    "id" : "137"
   }, {
     "iri" : "http://crossforest.eu/position/ontology/LowerBound",
     "baseIri" : "http://crossforest.eu/position/ontology",
@@ -591,30 +1249,25 @@
       "IRI-based" : "LowerBound"
     },
     "comment" : { },
-    "id" : "29"
+    "id" : "14"
   }, {
-    "iri" : "http://crossforest.eu/position/ontology/ReferencePosition",
-    "baseIri" : "http://crossforest.eu/position/ontology",
+    "iri" : "http://crossforest.eu/measures/ontology/Years",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
     "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/position/ontology/",
-        "type" : "iri"
-      } ]
-    },
     "label" : {
-      "IRI-based" : "ReferencePosition",
-      "en" : "Reference Position",
-      "es" : "PosiciÛn de Referencia"
+      "IRI-based" : "Years"
     },
-    "comment" : {
-      "en" : "Position taken as reference for the position of other spatial entities",
-      "es" : "PosiciÛn tomada como referencia para el posicionamient de otras entidades espaciales"
+    "attributes" : [ "external" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasurableEntityInDegrees",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MeasurableEntityInDegrees"
     },
-    "id" : "58",
-    "superClasses" : [ "7" ]
+    "attributes" : [ "external" ],
+    "id" : "154"
   }, {
     "iri" : "http://crossforest.eu/position/ontology/Direction",
     "baseIri" : "http://crossforest.eu/position/ontology",
@@ -633,95 +1286,413 @@
       "es" : "Rumbo"
     },
     "comment" : { },
-    "id" : "12",
-    "superClasses" : [ "53" ]
+    "id" : "85",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/Unit",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Unit",
+      "en" : "Unit",
+      "es" : "Unidades"
+    },
+    "individuals" : [ {
+      "iri" : "http://crossforest.eu/measures/data/unit/Decimeters",
+      "baseIri" : "http://crossforest.eu/measures/data/unit",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/measures/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Decimeter as unit for a measure",
+        "es" : "Dec√≠metro como unidad de una medida"
+      },
+      "labels" : {
+        "IRI-based" : "Decimeters",
+        "en" : "Decimeters",
+        "es" : "Dec√≠metros"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/measures/data/unit/Degrees",
+      "baseIri" : "http://crossforest.eu/measures/data/unit",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/measures/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "em" : "Degree as a unit for angular measure. A degree is equivalent to 0.017453292519943278 radians",
+        "es" : "Grado como unidad de medida angular. Cada grado es equivalente a 0.017453292519943278 radianes"
+      },
+      "labels" : {
+        "IRI-based" : "Degrees",
+        "en" : "Degrees",
+        "es" : "Grados"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/measures/data/unit/Unities",
+      "baseIri" : "http://crossforest.eu/measures/data/unit",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/measures/ontology/",
+          "type" : "iri"
+        } ],
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://iopscience.iop.org/article/10.1088/0026-1394/31/6/013/meta",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Unity (i.e., the number 1) as a unity of measure",
+        "es" : "Unidad (i.e., el n√∫mero 1) como unidad de medida"
+      },
+      "labels" : {
+        "IRI-based" : "Unities",
+        "en" : "Unities",
+        "es" : "Unidades"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/measures/data/unit/Hectares",
+      "baseIri" : "http://crossforest.eu/measures/data/unit",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/measures/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Hectares as a unity of measure",
+        "es" : "Hect√°reas como unidad de medida"
+      },
+      "labels" : {
+        "IRI-based" : "Hectares",
+        "en" : "Hectares",
+        "es" : "Hect√°reas"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/measures/data/unit/Centimeters",
+      "baseIri" : "http://crossforest.eu/measures/data/unit",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/measures/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Centimeter as unit for a measure",
+        "es" : "Cent√≠metro como unidad de una medida"
+      },
+      "labels" : {
+        "IRI-based" : "Centimeters",
+        "en" : "Centimeters",
+        "es" : "Cent√≠metros"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/measures/data/unit/Gradians",
+      "baseIri" : "http://crossforest.eu/measures/data/unit",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/measures/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "em" : "Gradians as a unit for angular measure. A gradian is equivalent to 0.015707963267948966192 radians",
+        "es" : "Gradi√°n como unidad de medida angular. Cada gradi√°n es equivalente a 0.015707963267948966192 radianes"
+      },
+      "labels" : {
+        "IRI-based" : "Gradians",
+        "en" : "Gradians",
+        "es" : "Grados Centesimales"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/measures/data/unit/Millimeters",
+      "baseIri" : "http://crossforest.eu/measures/data/unit",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/measures/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Millimeter as unit for a measure",
+        "es" : "Mil√≠metro como unidad de una medida"
+      },
+      "labels" : {
+        "IRI-based" : "Millimeters",
+        "en" : "Millimeters",
+        "es" : "Mil√≠metros"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/measures/data/unit/Percentage",
+      "baseIri" : "http://crossforest.eu/measures/data/unit",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/measures/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "100 as a unity of measure",
+        "es" : "100 como unidad de medida"
+      },
+      "labels" : {
+        "IRI-based" : "Percentage",
+        "en" : "Percentage",
+        "es" : "Porcentaje"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/measures/data/unit/M3byHA",
+      "baseIri" : "http://crossforest.eu/measures/data/unit",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/measures/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Cubic Meters by Hectare as a unity of measure",
+        "es" : "Metros c√∫bicos por hect√°rea como unidad de medida"
+      },
+      "labels" : {
+        "IRI-based" : "M3byHA",
+        "en" : "Cubic Meters by Hectare",
+        "es" : "Metros c√∫bicos por hect√°rea"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/measures/data/unit/SquareMeters",
+      "baseIri" : "http://crossforest.eu/measures/data/unit",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/measures/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "em" : "Square meters as a unit for area measure.",
+        "es" : "Metros cuadrados como unidad de medida de √°rea."
+      },
+      "labels" : {
+        "IRI-based" : "SquareMeters",
+        "en" : "Square Meters",
+        "es" : "Metros Cuadrados"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/measures/data/unit/Years",
+      "baseIri" : "http://crossforest.eu/measures/data/unit",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/measures/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Years as a unity of measure",
+        "es" : "A√±os como unidad de medida"
+      },
+      "labels" : {
+        "IRI-based" : "Years",
+        "en" : "Years",
+        "es" : "A√±os"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/measures/data/unit/M2byHA",
+      "baseIri" : "http://crossforest.eu/measures/data/unit",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/measures/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Square Meters by Hectare as a unity of measure",
+        "es" : "Metros cuadrados por hect√°rea como unidad de medida"
+      },
+      "labels" : {
+        "IRI-based" : "M2byHA",
+        "en" : "Square Meters by Hectare",
+        "es" : "Metros cuadrados por hect√°rea"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/measures/data/unit/Meters",
+      "baseIri" : "http://crossforest.eu/measures/data/unit",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/measures/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Meter as unit for a measure",
+        "es" : "Metro como unidad de una medida"
+      },
+      "labels" : {
+        "IRI-based" : "Meters",
+        "en" : "Meters",
+        "es" : "Metros"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/measures/data/unit/UnitsByHA",
+      "baseIri" : "http://crossforest.eu/measures/data/unit",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/measures/ontology/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Units by Hectare as a unity of measure",
+        "es" : "Unidades por hect√°rea como unidad de medida"
+      },
+      "labels" : {
+        "IRI-based" : "UnitsByHA",
+        "en" : "Units by Hectare",
+        "es" : "Unidades por hect√°rea"
+      }
+    } ],
+    "comment" : {
+      "en" : "Unit in which a measure is taken",
+      "es" : "Unidades en las que se toma una medida"
+    },
+    "attributes" : [ "external" ],
+    "id" : "147"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasurableEntityInMeters",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasurableEntityInMeters",
+      "en" : "Measurable Entity in Meters",
+      "es" : "Entidad medible en metros"
+    },
+    "comment" : {
+      "en" : "Entity from which a measure in meters is taken",
+      "es" : "Entidad de la cual se toma una medida en metros"
+    },
+    "attributes" : [ "external" ],
+    "id" : "104"
   } ],
   "property" : [ {
     "id" : "0",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "3",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "5",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "8",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "11",
+    "id" : "9",
     "type" : "owl:objectProperty"
   }, {
     "id" : "13",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "17",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "21",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "22",
-    "type" : "owl:objectProperty"
+    "id" : "20",
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "24",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "25",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
     "type" : "owl:objectProperty"
   }, {
     "id" : "35",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "20",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "44",
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
     "type" : "owl:objectProperty"
   }, {
     "id" : "46",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "40",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "49",
-    "type" : "owl:objectProperty"
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "50",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "51",
+    "id" : "53",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "55",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "54",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "56",
-    "type" : "owl:datatypeProperty"
   }, {
     "id" : "59",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "60",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "61",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "63",
+    "id" : "62",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "64",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "41",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "65",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "66",
     "type" : "owl:disjointWith"
   }, {
     "id" : "67",
@@ -731,55 +1702,172 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "69",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "70",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "71",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "72",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "73",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "74",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "75",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "55",
+    "id" : "58",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "76",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "77",
-    "type" : "owl:objectProperty"
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "78",
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "79",
+    "id" : "131",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "80",
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "116",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "81",
-    "type" : "rdfs:SubClassOf"
+    "id" : "136",
+    "type" : "owl:someValuesFrom"
   }, {
-    "id" : "82",
-    "type" : "rdfs:SubClassOf"
+    "id" : "138",
+    "type" : "owl:someValuesFrom"
   }, {
-    "id" : "83",
+    "id" : "139",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "140",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "141",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "142",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "144",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "146",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "148",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "149",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "150",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "84",
-    "type" : "rdfs:SubClassOf"
+    "id" : "151",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "152",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "155",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
     "iri" : "http://crossforest.eu/measures/ontology/hasMeasureInGradians",
@@ -789,25 +1877,20 @@
       "IRI-based" : "hasMeasureInGradians"
     },
     "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "0"
   }, {
-    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureInMeters",
-    "baseIri" : "http://crossforest.eu/measures/ontology",
-    "range" : "4",
+    "iri" : "http://crossforest.eu/position/ontology/fromReference",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "range" : "1",
     "label" : {
-      "IRI-based" : "hasMeasureInMeters"
+      "IRI-based" : "fromReference"
     },
     "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "3"
+    "attributes" : [ "object" ],
+    "id" : "8"
   }, {
-    "range" : "7",
-    "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "5"
-  }, {
-    "iri" : "http://crossforest.eu/position/ontology/hasDistance",
+    "iri" : "http://crossforest.eu/position/ontology/isInLayer",
     "baseIri" : "http://crossforest.eu/position/ontology",
     "range" : "10",
     "annotations" : {
@@ -819,43 +1902,16 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "hasDistance",
-      "en" : "distance",
-      "es" : "distancia"
+      "IRI-based" : "isInLayer",
+      "en" : "is in layer",
+      "es" : "est√° en la capa"
     },
-    "domain" : "9",
-    "comment" : {
-      "en" : "distance from the position to the position of reference",
-      "es" : "distancia de la posiciÛn a la posiciÛn de referencia"
-    },
+    "domain" : "5",
+    "comment" : { },
     "attributes" : [ "object" ],
-    "id" : "8"
+    "id" : "9"
   }, {
-    "iri" : "http://crossforest.eu/position/ontology/hasDirection",
-    "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "12",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/position/ontology/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasDirection",
-      "en" : "direction",
-      "es" : "rumbo"
-    },
-    "domain" : "9",
-    "comment" : {
-      "en" : "direction of the position from the position of reference",
-      "es" : "rumbo de la posiciÛn respecto a la posiciÛn de referencia"
-    },
-    "attributes" : [ "object" ],
-    "id" : "11"
-  }, {
-    "iri" : "http://crossforest.eu/position/ontology/hasDirectionInGradians",
+    "iri" : "http://crossforest.eu/position/ontology/hasLowerBound",
     "baseIri" : "http://crossforest.eu/position/ontology",
     "range" : "14",
     "annotations" : {
@@ -867,124 +1923,26 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "hasDirectionInGradians",
-      "en" : "direction",
-      "es" : "rumbo"
-    },
-    "domain" : "9",
-    "comment" : {
-      "en" : "direction in degress of the position from the position of reference",
-      "es" : "rumbo en grados de la posiciÛn respecto a la posiciÛn de referencia"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "13"
-  }, {
-    "iri" : "http://crossforest.eu/position/ontology/hasRightBound",
-    "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "19",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/position/ontology/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasRightBound"
-    },
-    "superproperty" : [ "20" ],
-    "domain" : "18",
-    "attributes" : [ "object" ],
-    "id" : "17"
-  }, {
-    "iri" : "http://crossforest.eu/position/ontology/fromReference",
-    "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "fromReference"
-    },
-    "domain" : "1",
-    "attributes" : [ "object" ],
-    "id" : "21"
-  }, {
-    "iri" : "http://crossforest.eu/position/ontology/isInLayer",
-    "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "23",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/position/ontology/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "isInLayer",
-      "en" : "is in layer",
-      "es" : "est· en la capa"
-    },
-    "domain" : "7",
-    "comment" : { },
-    "attributes" : [ "object" ],
-    "id" : "22"
-  }, {
-    "range" : "7",
-    "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "24"
-  }, {
-    "range" : "7",
-    "domain" : "26",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "25"
-  }, {
-    "iri" : "http://crossforest.eu/position/ontology/hasLowerBound",
-    "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "29",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/position/ontology/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
       "IRI-based" : "hasLowerBound"
     },
-    "superproperty" : [ "20" ],
-    "domain" : "28",
+    "superproperty" : [ "15" ],
+    "domain" : "3",
     "attributes" : [ "object" ],
-    "id" : "27"
+    "id" : "13"
   }, {
-    "range" : "31",
-    "domain" : "32",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "35"
-  }, {
-    "iri" : "http://crossforest.eu/position/ontology/hasBound",
-    "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "39",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/position/ontology/",
-        "type" : "iri"
-      } ]
-    },
+    "iri" : "http://crossforest.eu/measures/ontology/hasPosition",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "22",
     "label" : {
-      "IRI-based" : "hasBound"
+      "IRI-based" : "hasPosition"
     },
-    "domain" : "7",
-    "subproperty" : [ "17", "40", "27", "41" ],
-    "attributes" : [ "object" ],
+    "domain" : "21",
+    "attributes" : [ "object", "external", "someValues" ],
     "id" : "20"
   }, {
     "iri" : "http://crossforest.eu/position/ontology/hasArea",
     "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "45",
+    "range" : "25",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -998,26 +1956,39 @@
       "en" : "has area",
       "es" : "tiene area"
     },
-    "superproperty" : [ "46" ],
-    "domain" : "7",
+    "superproperty" : [ "26" ],
+    "domain" : "5",
     "comment" : { },
     "attributes" : [ "object" ],
-    "id" : "44"
+    "id" : "24"
   }, {
-    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureIn",
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureinHectares",
     "baseIri" : "http://crossforest.eu/measures/ontology",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "hasMeasureIn"
+    "range" : "29",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
     },
-    "domain" : "1",
-    "subproperty" : [ "44" ],
-    "attributes" : [ "object", "external" ],
-    "id" : "46"
+    "label" : {
+      "IRI-based" : "hasMeasureinHectares",
+      "en" : "value in hectares",
+      "es" : "valor en hect√°reas"
+    },
+    "domain" : "28",
+    "comment" : {
+      "en" : "value of an meausure in hectares",
+      "es" : "valor de una medida en hect√°reas"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "27"
   }, {
     "iri" : "http://crossforest.eu/position/ontology/hasLeftBound",
     "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "48",
+    "range" : "34",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1029,14 +2000,14 @@
     "label" : {
       "IRI-based" : "hasLeftBound"
     },
-    "superproperty" : [ "20" ],
-    "domain" : "47",
+    "superproperty" : [ "15" ],
+    "domain" : "33",
     "attributes" : [ "object" ],
-    "id" : "40"
+    "id" : "32"
   }, {
     "iri" : "http://crossforest.eu/position/ontology/hasCoordinate",
     "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "38",
+    "range" : "36",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1050,17 +2021,17 @@
       "en" : "coordinate",
       "es" : "coordenada"
     },
-    "domain" : "15",
+    "domain" : "4",
     "comment" : {
       "en" : "coordinate of the position",
-      "es" : "coordenada de la posiciÛn"
+      "es" : "coordenada de la posici√≥n"
     },
     "attributes" : [ "object" ],
-    "id" : "49"
+    "id" : "35"
   }, {
     "iri" : "http://crossforest.eu/position/ontology/hasAreaInHC",
     "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "37",
+    "range" : "38",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1072,14 +2043,38 @@
     "label" : {
       "IRI-based" : "hasAreaInHC"
     },
-    "domain" : "7",
+    "domain" : "5",
     "comment" : { },
     "attributes" : [ "datatype" ],
-    "id" : "50"
+    "id" : "37"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureInDecimeters",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "41",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMeasureInDecimeters",
+      "en" : "value in decimeters",
+      "es" : "valor en dec√≠metros"
+    },
+    "domain" : "40",
+    "comment" : {
+      "en" : "value of a measure in decimeters",
+      "es" : "valor de una medida en dec√≠metros"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "39"
   }, {
     "iri" : "http://crossforest.eu/position/ontology/hasCoordinateReferenceSystem",
     "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "38",
+    "range" : "36",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1093,52 +2088,47 @@
       "en" : "coordinate reference system",
       "es" : "sistema de coordenadas de referencia"
     },
-    "domain" : "15",
+    "domain" : "4",
     "comment" : {
       "en" : "coordinate reference system used for the position",
-      "es" : "sistema de coordenadas de referencia usado para la posiciÛn"
+      "es" : "sistema de coordenadas de referencia usado para la posici√≥n"
     },
     "attributes" : [ "object" ],
-    "id" : "51"
+    "id" : "42"
   }, {
-    "iri" : "http://crossforest.eu/position/ontology/hasEgocentricPosition",
-    "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "9",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/position/ontology/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasEgocentricPosition",
-      "en" : "has egocentric position",
-      "es" : "tiene posiciÛn egocÈntrica"
-    },
-    "superproperty" : [ "55" ],
-    "domain" : "10",
-    "comment" : {
-      "en" : "the spatial entity has this position from a point of reference (which is probably the posicion of another spatial entity)",
-      "es" : "la entidad espacial tiene esta posiciÛn desde un punto de referencia (que es probablemente la posiciÛn de otra entidad espacial)"
-    },
-    "attributes" : [ "object" ],
-    "id" : "54"
+    "range" : "4",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
   }, {
     "iri" : "http://crossforest.eu/measures/ontology/hasMeasureInHectares",
     "baseIri" : "http://crossforest.eu/measures/ontology",
-    "range" : "43",
+    "range" : "49",
     "label" : {
       "IRI-based" : "hasMeasureInHectares"
     },
     "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "56"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "48"
+  }, {
+    "range" : "52",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "52",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "range" : "5",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
   }, {
     "iri" : "http://crossforest.eu/position/ontology/hasGeocentricPosition",
     "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "15",
+    "range" : "4",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1150,20 +2140,25 @@
     "label" : {
       "IRI-based" : "hasGeocentricPosition",
       "en" : "has geocentric position",
-      "es" : "tiene posiciÛn geocÈntrica"
+      "es" : "tiene posici√≥n geoc√©ntrica"
     },
-    "superproperty" : [ "55" ],
-    "domain" : "38",
+    "superproperty" : [ "58" ],
+    "domain" : "36",
     "comment" : {
       "en" : "the spacial entity has this position in a geodetic CRS",
-      "es" : "la entidad espacial tiene esta posiciÛn en un Sistema de Coordenadas de Referencia GeodÈsico"
+      "es" : "la entidad espacial tiene esta posici√≥n en un Sistema de Coordenadas de Referencia Geod√©sico"
     },
     "attributes" : [ "object" ],
+    "id" : "57"
+  }, {
+    "range" : "5",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "59"
   }, {
     "iri" : "http://crossforest.eu/position/ontology/hasPolygon",
     "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "26",
+    "range" : "45",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1175,20 +2170,20 @@
     "label" : {
       "IRI-based" : "hasPolygon",
       "en" : "has polygon",
-      "es" : "tiene polÌgono"
+      "es" : "tiene pol√≠gono"
     },
-    "superproperty" : [ "55" ],
-    "domain" : "33",
+    "superproperty" : [ "58" ],
+    "domain" : "61",
     "comment" : {
       "en" : "the spatial entity is located in this polygon",
-      "es" : "la entidad espacial est· en este polÌgono"
+      "es" : "la entidad espacial est√° en este pol√≠gono"
     },
     "attributes" : [ "object" ],
     "id" : "60"
   }, {
     "iri" : "http://crossforest.eu/position/ontology/hasDistanceInMeters",
     "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "42",
+    "range" : "63",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1202,115 +2197,57 @@
       "en" : "distance",
       "es" : "distancia"
     },
-    "domain" : "9",
+    "domain" : "47",
     "comment" : {
       "en" : "distance in meters from the position to the position of reference",
-      "es" : "distancia en metros de la posiciÛn a la posiciÛn de referencia"
+      "es" : "distancia en metros de la posici√≥n a la posici√≥n de referencia"
     },
     "attributes" : [ "datatype" ],
-    "id" : "61"
+    "id" : "62"
   }, {
-    "iri" : "http://crossforest.eu/position/ontology/hasAreaInSquareMeters",
-    "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "36",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/position/ontology/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasAreaInSquareMeters"
-    },
-    "domain" : "7",
-    "comment" : { },
-    "attributes" : [ "datatype" ],
-    "id" : "63"
-  }, {
-    "iri" : "http://crossforest.eu/measures/ontology/hasPosition",
-    "baseIri" : "http://crossforest.eu/measures/ontology",
-    "range" : "58",
-    "label" : {
-      "IRI-based" : "hasPosition"
-    },
-    "domain" : "32",
-    "attributes" : [ "someValues", "object", "external" ],
+    "range" : "5",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "64"
   }, {
-    "iri" : "http://crossforest.eu/position/ontology/hasUpperBound",
-    "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "57",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/position/ontology/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasUpperBound"
-    },
-    "superproperty" : [ "20" ],
-    "domain" : "62",
-    "attributes" : [ "object" ],
-    "id" : "41"
-  }, {
-    "range" : "31",
-    "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "52",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "65"
   }, {
-    "range" : "7",
-    "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "4",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
+  }, {
+    "range" : "52",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "67"
   }, {
-    "range" : "7",
-    "domain" : "66",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "47",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "68"
   }, {
-    "range" : "31",
-    "domain" : "66",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "5",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "69"
   }, {
-    "range" : "7",
-    "domain" : "34",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "70"
   }, {
-    "range" : "31",
-    "domain" : "34",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "5",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "71"
-  }, {
-    "range" : "15",
-    "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "72"
-  }, {
-    "range" : "31",
-    "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "73"
-  }, {
-    "range" : "9",
-    "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "74"
-  }, {
-    "range" : "15",
-    "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "75"
   }, {
     "iri" : "http://crossforest.eu/position/ontology/hasPosition",
     "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "7",
+    "range" : "5",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1324,43 +2261,47 @@
       "en" : "has location",
       "es" : "situada en"
     },
-    "domain" : "31",
-    "subproperty" : [ "54", "59", "60" ],
+    "domain" : "52",
+    "subproperty" : [ "76", "57", "60" ],
     "comment" : {
       "en" : "the spatial entity has this location",
-      "es" : "la entidad espacial tiene esta posiciÛn"
+      "es" : "la entidad espacial tiene esta posici√≥n"
     },
     "attributes" : [ "object" ],
-    "id" : "55"
+    "id" : "58"
   }, {
-    "iri" : "http://crossforest.eu/position/ontology/referenceOf",
-    "inverse" : "21",
-    "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "9",
+    "range" : "5",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureinPercentage",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "89",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://crossforest.eu/position/ontology/",
+        "value" : "http://crossforest.eu/measures/ontology/",
         "type" : "iri"
       } ]
     },
     "label" : {
-      "IRI-based" : "referenceOf",
-      "en" : "is reference of",
-      "es" : "es referencia de"
+      "IRI-based" : "hasMeasureinPercentage",
+      "en" : "value in percentage",
+      "es" : "valor en porcentaje"
     },
-    "domain" : "58",
+    "domain" : "31",
     "comment" : {
-      "en" : "the position for which the entity is used as a reference",
-      "es" : "la posiciÛn para la cual la entidad se usa como referencia"
+      "en" : "value of an meausure in percentage",
+      "es" : "valor de una medida en porcentaje"
     },
-    "attributes" : [ "object" ],
-    "id" : "76"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "88"
   }, {
     "iri" : "http://crossforest.eu/position/ontology/samePosition",
     "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "7",
+    "range" : "5",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1372,69 +2313,53 @@
     "label" : {
       "IRI-based" : "samePosition",
       "en" : "same position as",
-      "es" : "misma posiciÛn que"
+      "es" : "misma posici√≥n que"
     },
-    "domain" : "7",
+    "domain" : "5",
     "comment" : {
       "en" : "same phisical position, probably in a different coordinate reference system",
-      "undefined" : "misma posiciÛn fÌsica, probablemente en un sistema de coordenadas de referencia diferente"
+      "undefined" : "misma posici√≥n f√≠sica, probablemente en un sistema de coordenadas de referencia diferente"
     },
-    "attributes" : [ "object", "reflexive", "symmetric" ],
-    "id" : "77"
+    "attributes" : [ "symmetric", "object", "reflexive" ],
+    "id" : "94"
   }, {
-    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureInSquareMeters",
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureInMillimeters",
     "baseIri" : "http://crossforest.eu/measures/ontology",
-    "range" : "30",
-    "label" : {
-      "IRI-based" : "hasMeasureInSquareMeters"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "78"
-  }, {
-    "range" : "7",
-    "domain" : "58",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "79"
-  }, {
-    "iri" : "http://crossforest.eu/position/ontology/egocentricPositionOf",
-    "inverse" : "54",
-    "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "31",
+    "range" : "77",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://crossforest.eu/position/ontology/",
+        "value" : "http://crossforest.eu/measures/ontology/",
         "type" : "iri"
       } ]
     },
     "label" : {
-      "IRI-based" : "egocentricPositionOf",
-      "en" : "egocentric position of",
-      "es" : "posiciÛn egocÈntrica de"
+      "IRI-based" : "hasMeasureInMillimeters",
+      "en" : "value in millimeters",
+      "es" : "valor en mil√≠metros"
     },
-    "domain" : "9",
+    "domain" : "95",
     "comment" : {
-      "en" : "target entity of the egocentric position",
-      "es" : "entidad objetico de la posiciÛn egocÈntrica"
+      "en" : "value of a measure in millimeters",
+      "es" : "valor de una medida en mil√≠metros"
     },
-    "attributes" : [ "object" ],
-    "id" : "80"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "96"
   }, {
-    "range" : "7",
-    "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "81"
-  }, {
-    "range" : "53",
-    "domain" : "52",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "82"
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureInSquareMeters",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "hasMeasureInSquareMeters"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "99"
   }, {
     "iri" : "http://crossforest.eu/position/ontology/hasReference",
     "baseIri" : "http://crossforest.eu/position/ontology",
-    "range" : "58",
+    "range" : "22",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1448,17 +2373,744 @@
       "en" : "from reference",
       "es" : "desde la referencia"
     },
-    "domain" : "9",
+    "domain" : "47",
     "comment" : {
       "en" : "the position is w.r.t. this position of reference",
-      "es" : "la posiciÛn es relativa a esta posiciÛn de referencia"
+      "es" : "la posici√≥n es relativa a esta posici√≥n de referencia"
     },
     "attributes" : [ "object" ],
-    "id" : "83"
+    "id" : "102"
   }, {
-    "range" : "53",
-    "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "84"
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureInMeters",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "16",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMeasureInMeters",
+      "en" : "value in meters",
+      "es" : "valor en metros"
+    },
+    "domain" : "104",
+    "comment" : {
+      "en" : "value of a measure in meters",
+      "es" : "valor de una medida en metros"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/hasDistance",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "range" : "18",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/position/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDistance",
+      "en" : "distance",
+      "es" : "distancia"
+    },
+    "domain" : "47",
+    "comment" : {
+      "en" : "distance from the position to the position of reference",
+      "es" : "distancia de la posici√≥n a la posici√≥n de referencia"
+    },
+    "attributes" : [ "object" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/hasDirection",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "range" : "85",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/position/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDirection",
+      "en" : "direction",
+      "es" : "rumbo"
+    },
+    "domain" : "47",
+    "comment" : {
+      "en" : "direction of the position from the position of reference",
+      "es" : "rumbo de la posici√≥n respecto a la posici√≥n de referencia"
+    },
+    "attributes" : [ "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/hasDirectionInGradians",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "range" : "17",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/position/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDirectionInGradians",
+      "en" : "direction",
+      "es" : "rumbo"
+    },
+    "domain" : "47",
+    "comment" : {
+      "en" : "direction in degress of the position from the position of reference",
+      "es" : "rumbo en grados de la posici√≥n respecto a la posici√≥n de referencia"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureinSquareMeters",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "12",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMeasureinSquareMeters",
+      "en" : "value in square meters",
+      "es" : "valor en square meters"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "value of an meausure in square meters",
+      "es" : "valor de una medida en square meters"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/hasRightBound",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "range" : "110",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/position/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRightBound"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureinYears",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "101",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMeasureinYears",
+      "en" : "value in years",
+      "es" : "valor en a√±os"
+    },
+    "domain" : "112",
+    "comment" : {
+      "en" : "value of an meausure in years",
+      "es" : "valor de una medida en a√±os"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureLiteral",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMeasureLiteral",
+      "en" : "measure",
+      "es" : "medida"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "measure expressed as a decimal literal",
+      "es" : "medida expresada directamente en un literal decimal"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "113"
+  }, {
+    "range" : "44",
+    "domain" : "84",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "114"
+  }, {
+    "range" : "44",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/hasBound",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "range" : "30",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/position/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasBound"
+    },
+    "domain" : "5",
+    "subproperty" : [ "109", "32", "13", "116" ],
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "range" : "52",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "117"
+  }, {
+    "range" : "44",
+    "domain" : "85",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "118"
+  }, {
+    "range" : "44",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "119"
+  }, {
+    "range" : "44",
+    "domain" : "81",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasure",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "44",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMeasure",
+      "en" : "has measure",
+      "es" : "tiene medida"
+    },
+    "domain" : "100",
+    "comment" : {
+      "en" : "has a measure with a value and expressed using some concrete units",
+      "es" : "tiene una medida con un valor y expresada en unas unidades concretas"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "121"
+  }, {
+    "range" : "44",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
+  }, {
+    "range" : "44",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureIn",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasMeasureIn"
+    },
+    "domain" : "1",
+    "subproperty" : [ "24" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureinGradians",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "97",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMeasureinGradians",
+      "en" : "value in gradians",
+      "es" : "valor en gradianes"
+    },
+    "domain" : "98",
+    "comment" : {
+      "en" : "value of an angular meausure in gradians",
+      "es" : "valor de una medida angular en gradianes"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/hasEgocentricPosition",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "range" : "47",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/position/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasEgocentricPosition",
+      "en" : "has egocentric position",
+      "es" : "tiene posici√≥n egoc√©ntrica"
+    },
+    "superproperty" : [ "58" ],
+    "domain" : "18",
+    "comment" : {
+      "en" : "the spatial entity has this position from a point of reference (which is probably the posicion of another spatial entity)",
+      "es" : "la entidad espacial tiene esta posici√≥n desde un punto de referencia (que es probablemente la posici√≥n de otra entidad espacial)"
+    },
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "range" : "44",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "range" : "44",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "44",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/hasAreaInSquareMeters",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "range" : "92",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/position/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasAreaInSquareMeters"
+    },
+    "domain" : "5",
+    "comment" : { },
+    "attributes" : [ "datatype" ],
+    "id" : "130"
+  }, {
+    "range" : "44",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "131"
+  }, {
+    "range" : "5",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "range" : "44",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "133"
+  }, {
+    "range" : "44",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/hasUpperBound",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "range" : "126",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/position/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUpperBound"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "91",
+    "attributes" : [ "object" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasure",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "83",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMeasure",
+      "en" : "has measure",
+      "es" : "tiene medida"
+    },
+    "domain" : "137",
+    "comment" : {
+      "en" : "has a measure with a value and expressed using some concrete units",
+      "es" : "tiene una medida con un valor y expresada en unas unidades concretas"
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasure",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "82",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMeasure",
+      "en" : "has measure",
+      "es" : "tiene medida"
+    },
+    "domain" : "40",
+    "comment" : {
+      "en" : "has a measure with a value and expressed using some concrete units",
+      "es" : "tiene una medida con un valor y expresada en unas unidades concretas"
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasure",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "124",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMeasure",
+      "en" : "has measure",
+      "es" : "tiene medida"
+    },
+    "domain" : "28",
+    "comment" : {
+      "en" : "has a measure with a value and expressed using some concrete units",
+      "es" : "tiene una medida con un valor y expresada en unas unidades concretas"
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasure",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "78",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMeasure",
+      "en" : "has measure",
+      "es" : "tiene medida"
+    },
+    "domain" : "104",
+    "comment" : {
+      "en" : "has a measure with a value and expressed using some concrete units",
+      "es" : "tiene una medida con un valor y expresada en unas unidades concretas"
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasure",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "43",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMeasure",
+      "en" : "has measure",
+      "es" : "tiene medida"
+    },
+    "domain" : "95",
+    "comment" : {
+      "en" : "has a measure with a value and expressed using some concrete units",
+      "es" : "tiene una medida con un valor y expresada en unas unidades concretas"
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasure",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "143",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMeasure",
+      "en" : "has measure",
+      "es" : "tiene medida"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "has a measure with a value and expressed using some concrete units",
+      "es" : "tiene una medida con un valor y expresada en unas unidades concretas"
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasure",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "145",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMeasure",
+      "en" : "has measure",
+      "es" : "tiene medida"
+    },
+    "domain" : "112",
+    "comment" : {
+      "en" : "has a measure with a value and expressed using some concrete units",
+      "es" : "tiene una medida con un valor y expresada en unas unidades concretas"
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "144"
+  }, {
+    "range" : "147",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "range" : "44",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "147",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/referenceOf",
+    "inverse" : "8",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "range" : "47",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/position/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "referenceOf",
+      "en" : "is reference of",
+      "es" : "es referencia de"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "the position for which the entity is used as a reference",
+      "es" : "la posici√≥n para la cual la entidad se usa como referencia"
+    },
+    "attributes" : [ "object" ],
+    "id" : "150"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureInCentimeters",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "93",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMeasureInCentimeters",
+      "en" : "value in centimeters",
+      "es" : "valor en cent√≠metros"
+    },
+    "domain" : "83",
+    "comment" : {
+      "en" : "value of a measure in centimeters",
+      "es" : "valor de una medida en cent√≠metros"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasValue",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "23",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasValue",
+      "en" : "value",
+      "es" : "valor"
+    },
+    "domain" : "44",
+    "comment" : {
+      "en" : "value of a measure",
+      "es" : "valor de una medida"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "152"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasureinDegrees",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "86",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMeasureinDegrees",
+      "en" : "value in degrees",
+      "es" : "valor en grados"
+    },
+    "domain" : "154",
+    "comment" : {
+      "en" : "value of an angular meausure in degrees",
+      "es" : "valor de una medida angular en grados"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasUnit",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "147",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/measures/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "en" : "has unit",
+      "es" : "tiene unidades"
+    },
+    "domain" : "44",
+    "comment" : {
+      "en" : "units of a measure",
+      "es" : "unidades de una medida"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "155"
+  }, {
+    "iri" : "http://crossforest.eu/position/ontology/egocentricPositionOf",
+    "inverse" : "76",
+    "baseIri" : "http://crossforest.eu/position/ontology",
+    "range" : "52",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/position/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "egocentricPositionOf",
+      "en" : "egocentric position of",
+      "es" : "posici√≥n egoc√©ntrica de"
+    },
+    "domain" : "47",
+    "comment" : {
+      "en" : "target entity of the egocentric position",
+      "es" : "entidad objetico de la posici√≥n egoc√©ntrica"
+    },
+    "attributes" : [ "object" ],
+    "id" : "156"
   } ]
 }

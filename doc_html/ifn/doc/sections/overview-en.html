@@ -2,7 +2,7 @@
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
-<ul class="hlist">
+<ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
       <a href="#Plot-A3E"
          title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Plot-A3E"/>
@@ -1418,6 +1418,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#https://datos.iepnb.es/kos/sector-publico/medio-ambiente/ifn-modelo-cubicacion/VSC"
          title="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/ifn-modelo-cubicacion/VSC">Modelo estadístico de cubicación para VSC</a>
+   </li>
+   <li>
+      <a href="#Municipality"
+         title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Municipality">Municipality</a>
    </li>
    <li>
       <a href="#Plot-NN"
@@ -3165,7 +3169,7 @@ This ontology has the following classes and properties.</span>
       <a href="#https://datos.iepnb.es/kos/sector-publico/medio-ambiente/ifn-tarifa-aplic/AT"
          title="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/ifn-tarifa-aplic/AT">Árbol tipo</a>
    </li>
-</ul><h4>Object Properties</h4><ul class="hlist">
+</ul><h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
       <a href="#hasOccupationOfSpecies"
          title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasOccupationOfSpecies"/>
@@ -3323,6 +3327,10 @@ This ontology has the following classes and properties.</span>
          title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasVolumeWithoutBarkInM3">has volume without bark in cubic meters</a>
    </li>
    <li>
+      <a href="#isInMunicipality"
+         title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/isInMunicipality">in municipality</a>
+   </li>
+   <li>
       <a href="#inPatch"
          title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/inPatch">in patch</a>
    </li>
@@ -3370,10 +3378,14 @@ This ontology has the following classes and properties.</span>
       <a href="#hasTarifaTipoAplic"
          title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasTarifaTipoAplic">tiene tipo de aplicación de tarifa</a>
    </li>
-</ul><h4>Data Properties</h4><ul class="hlist">
+</ul><h4>Data Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
       <a href="#hasPercentageOfSpecies"
          title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasPercentageOfSpecies"/>
+   </li>
+   <li>
+      <a href="#hasCheckDigit"
+         title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasCheckDigit">Check digit</a>
    </li>
    <li>
       <a href="#hasCoefDetermR2"
@@ -3471,7 +3483,15 @@ This ontology has the following classes and properties.</span>
       <a href="#hasTotalHeightInMeters"
          title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasTotalHeightInMeters">has total height in meters</a>
    </li>
-</ul><h4>Named Individuals</h4><ul class="hlist">
+   <li>
+      <a href="#hasMunicipalityCode"
+         title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasMunicipalityCode">Municipality code</a>
+   </li>
+   <li>
+      <a href="#hasProvinceCode"
+         title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+   </li>
+</ul><h4>Named Individuals</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
       <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/A-Coruna"
          title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/A-Coruna">
@@ -5376,7 +5396,8 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://dbpedia.org/resource/Arbutus_canariensis" title="http://dbpedia.org/resource/Arbutus_canariensis">
+      <a href="#http://dbpedia.org/resource/Arbutus_canariensis"
+         title="http://dbpedia.org/resource/Arbutus_canariensis">
          <span>arbutus canariensis</span>
       </a>
    </li>
@@ -5674,7 +5695,8 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://dbpedia.org/resource/Crataegus_laevigata" title="http://dbpedia.org/resource/Crataegus_laevigata">
+      <a href="#http://dbpedia.org/resource/Crataegus_laevigata"
+         title="http://dbpedia.org/resource/Crataegus_laevigata">
          <span>crataegus laevigata</span>
       </a>
    </li>
@@ -5710,7 +5732,8 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://dbpedia.org/resource/Cupressus_arizonica" title="http://dbpedia.org/resource/Cupressus_arizonica">
+      <a href="#http://dbpedia.org/resource/Cupressus_arizonica"
+         title="http://dbpedia.org/resource/Cupressus_arizonica">
          <span>cupressus arizonica</span>
       </a>
    </li>
@@ -5794,7 +5817,8 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://dbpedia.org/resource/Eucalyptus_globulus" title="http://dbpedia.org/resource/Eucalyptus_globulus">
+      <a href="#http://dbpedia.org/resource/Eucalyptus_globulus"
+         title="http://dbpedia.org/resource/Eucalyptus_globulus">
          <span>eucalyptus globulus</span>
       </a>
    </li>

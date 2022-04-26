@@ -619,6 +619,17 @@
                     "in patch"@en .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/isInMunicipality
+:isInMunicipality rdf:type owl:ObjectProperty ;
+                  rdfs:domain <http://crossforest.eu/position/ontology/SpatialEntity> ;
+                  rdfs:range :Municipality ;
+                  rdfs:comment "Municipality in which the entity is located"@en ,
+                               "Municipio en la que la entidad está situada"@es ;
+                  rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
+                  rdfs:label "en el municipio"@es ,
+                             "in municipality"@en .
+
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/isInPlot
 :isInPlot rdf:type owl:ObjectProperty ;
           rdfs:domain :Tree ;
@@ -694,6 +705,15 @@
                                                                       rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                       rdfs:label ""@es ,
                                                                                  "has forest area in square meters"@en .
+
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasCheckDigit
+:hasCheckDigit rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Municipality ;
+               rdfs:comment "Check digit from INE to detect errors in municipalities"@en ,
+                            "Código de control del INE para la detección de errores en municipios"@es ;
+               rdfs:label "Check digit"@en ,
+                          "Código de control"@es .
 
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasCoefDetermR2
@@ -830,6 +850,15 @@
                               "tiene altura en metros"@es .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasMunicipalityCode
+:hasMunicipalityCode rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Municipality ;
+                     rdfs:comment "Código de municipio del INE dentro de una provincia"@es ,
+                                  "Municipality code in a province from INE"@en ;
+                     rdfs:label "Código de municipio"@es ,
+                                "Municipality code"@en .
+
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasPercentageOfSpecies
 :hasPercentageOfSpecies rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf <http://crossforest.eu/measures/ontology/hasMeasureinPercentage> ;
@@ -838,6 +867,15 @@
                                      ""@es ;
                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                         rdfs:label ""@es .
+
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode
+:hasProvinceCode rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Province ;
+                 rdfs:comment "Código de provincia del INE"@es ,
+                              "Province code from INE"@en ;
+                 rdfs:label "Código de provincia"@es ,
+                            "Province code"@en .
 
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasTarifaCoef
@@ -1851,6 +1889,16 @@
                   rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
                   <http://purl.org/dc/terms/source> "Anexo 19 (Documentador sig)" ;
                   rdfs:label "Modelo estadístico de cubicación"@es .
+
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Municipality
+:Municipality rdf:type owl:Class ;
+              rdfs:subClassOf <http://crossforest.eu/position/ontology/SpatialEntity> ;
+              rdfs:comment ""@en ,
+                           ""@es ;
+              rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
+              rdfs:label "Municipality"@en ,
+                         "Municipio"@es .
 
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/NumberOfTrees
@@ -5219,570 +5267,798 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
                                                                            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/15> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/15
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Alava
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Alava> rdf:type owl:NamedIndividual ;
                                                                         owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/01> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/01
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Albacete
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Albacete> rdf:type owl:NamedIndividual ;
                                                                            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/02> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/02
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Alicante
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Alicante> rdf:type owl:NamedIndividual ;
                                                                            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/03> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/03
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Almeria
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Almeria> rdf:type owl:NamedIndividual ;
                                                                           owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/04> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/04
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Asturias
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Asturias> rdf:type owl:NamedIndividual ;
                                                                            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/33> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/33
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Avila
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Avila> rdf:type owl:NamedIndividual ;
                                                                         owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/05> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/05
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Badajoz
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Badajoz> rdf:type owl:NamedIndividual ;
                                                                           owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/06> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/06
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Barcelona
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Barcelona> rdf:type owl:NamedIndividual ;
                                                                             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/08> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/08
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Burgos
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Burgos> rdf:type owl:NamedIndividual ;
                                                                          owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/09> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/09
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres> rdf:type owl:NamedIndividual ;
                                                                           owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/10> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/10
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cadiz
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cadiz> rdf:type owl:NamedIndividual ;
                                                                         owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/11> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/11
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cantabria
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cantabria> rdf:type owl:NamedIndividual ;
                                                                             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/39> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/39
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Castellon
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Castellon> rdf:type owl:NamedIndividual ;
                                                                             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/12> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/12
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Ceuta
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Ceuta> rdf:type owl:NamedIndividual ;
                                                                         owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/51> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/51
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Ciudad-Real
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Ciudad-Real> rdf:type owl:NamedIndividual ;
                                                                               owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/13> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/13
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cordoba
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cordoba> rdf:type owl:NamedIndividual ;
                                                                           owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/14> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/14
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cuenca
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cuenca> rdf:type owl:NamedIndividual ;
                                                                          owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/16> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/16
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Girona
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Girona> rdf:type owl:NamedIndividual ;
                                                                          owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/17> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/17
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Granada
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Granada> rdf:type owl:NamedIndividual ;
                                                                           owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/18> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/18
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Guadalajara
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Guadalajara> rdf:type owl:NamedIndividual ;
                                                                               owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/19> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/19
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Guipuzcoa
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Guipuzcoa> rdf:type owl:NamedIndividual ;
                                                                             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/20> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/20
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Huelva
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Huelva> rdf:type owl:NamedIndividual ;
                                                                          owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/21> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/21
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Huesca
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Huesca> rdf:type owl:NamedIndividual ;
                                                                          owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/22> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/22
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Illes-Balears
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Illes-Balears> rdf:type owl:NamedIndividual ;
                                                                                 owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/07> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/07
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Jaen
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Jaen> rdf:type owl:NamedIndividual ;
                                                                        owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/23> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/23
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/La-Rioja
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/La-Rioja> rdf:type owl:NamedIndividual ;
                                                                            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/26> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/26
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Las-Palmas
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Las-Palmas> rdf:type owl:NamedIndividual ;
                                                                              owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/35> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/35
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Leon
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Leon> rdf:type owl:NamedIndividual ;
                                                                        owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/24> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/24
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Lleida
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Lleida> rdf:type owl:NamedIndividual ;
                                                                          owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/25> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/25
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Lugo
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Lugo> rdf:type owl:NamedIndividual ;
                                                                        owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/27> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/27
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Madrid
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Madrid> rdf:type owl:NamedIndividual ;
                                                                          owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/28> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/28
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Malaga
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Malaga> rdf:type owl:NamedIndividual ;
                                                                          owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/29> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/29
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Melilla
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Melilla> rdf:type owl:NamedIndividual ;
                                                                           owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/52> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/52
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Murcia
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Murcia> rdf:type owl:NamedIndividual ;
                                                                          owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/30> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/30
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Navarra
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Navarra> rdf:type owl:NamedIndividual ;
                                                                           owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/31> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/31
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Ourense
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Ourense> rdf:type owl:NamedIndividual ;
                                                                           owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/32> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/32
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Palencia
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Palencia> rdf:type owl:NamedIndividual ;
                                                                            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/34> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/34
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Pontevedra
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Pontevedra> rdf:type owl:NamedIndividual ;
                                                                              owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/36> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/36
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Salamanca
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Salamanca> rdf:type owl:NamedIndividual ;
                                                                             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/37> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/37
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Santa-Cruz-Tenerife
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Santa-Cruz-Tenerife> rdf:type owl:NamedIndividual ;
                                                                                       owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/38> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/38
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Segovia
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Segovia> rdf:type owl:NamedIndividual ;
                                                                           owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/40> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/40
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Sevilla
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Sevilla> rdf:type owl:NamedIndividual ;
                                                                           owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/41> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/41
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Soria
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Soria> rdf:type owl:NamedIndividual ;
                                                                         owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/42> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/42
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Tarragona
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Tarragona> rdf:type owl:NamedIndividual ;
                                                                             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/43> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/43
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Teruel
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Teruel> rdf:type owl:NamedIndividual ;
                                                                          owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/44> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/44
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Toledo
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Toledo> rdf:type owl:NamedIndividual ;
                                                                          owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/45> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/45
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Valencia
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Valencia> rdf:type owl:NamedIndividual ;
                                                                            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/46> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/46
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Valladolid
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Valladolid> rdf:type owl:NamedIndividual ;
                                                                              owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/47> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/47
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Vizcaya
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Vizcaya> rdf:type owl:NamedIndividual ;
                                                                           owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/48> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/48
 
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Zamora
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Zamora> rdf:type owl:NamedIndividual ;
                                                                          owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/49> .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/49
+
 ###  http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Zaragoza
 <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Zaragoza> rdf:type owl:NamedIndividual ;
                                                                            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/50> .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/50
 
 ###  http://dbpedia.org/resource/Abies_alba
 <http://dbpedia.org/resource/Abies_alba> rdf:type owl:NamedIndividual ;
                                          owl:sameAs :Species31 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species31
+
 ###  http://dbpedia.org/resource/Abies_pinsapo
 <http://dbpedia.org/resource/Abies_pinsapo> rdf:type owl:NamedIndividual ;
                                             owl:sameAs :Species32 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species32
 
 ###  http://dbpedia.org/resource/Acacia
 <http://dbpedia.org/resource/Acacia> rdf:type owl:NamedIndividual ;
                                      owl:sameAs :Species7 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species7
+
 ###  http://dbpedia.org/resource/Acacia_dealbata
 <http://dbpedia.org/resource/Acacia_dealbata> rdf:type owl:NamedIndividual ;
                                               owl:sameAs :Species307 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species307
 
 ###  http://dbpedia.org/resource/Acacia_melanoxylon
 <http://dbpedia.org/resource/Acacia_melanoxylon> rdf:type owl:NamedIndividual ;
                                                  owl:sameAs :Species207 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species207
+
 ###  http://dbpedia.org/resource/Acer_campestre
 <http://dbpedia.org/resource/Acer_campestre> rdf:type owl:NamedIndividual ;
                                              owl:sameAs :Species76 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species76
 
 ###  http://dbpedia.org/resource/Acer_monspessulanum
 <http://dbpedia.org/resource/Acer_monspessulanum> rdf:type owl:NamedIndividual ;
                                                   owl:sameAs :Species276 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species276
+
 ###  http://dbpedia.org/resource/Acer_negundo
 <http://dbpedia.org/resource/Acer_negundo> rdf:type owl:NamedIndividual ;
                                            owl:sameAs :Species376 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species376
 
 ###  http://dbpedia.org/resource/Acer_opalus
 <http://dbpedia.org/resource/Acer_opalus> rdf:type owl:NamedIndividual ;
                                           owl:sameAs :Species476 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species476
+
 ###  http://dbpedia.org/resource/Acer_platanoides
 <http://dbpedia.org/resource/Acer_platanoides> rdf:type owl:NamedIndividual ;
                                                owl:sameAs :Species676 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species676
 
 ###  http://dbpedia.org/resource/Acer_pseudoplatanus
 <http://dbpedia.org/resource/Acer_pseudoplatanus> rdf:type owl:NamedIndividual ;
                                                   owl:sameAs :Species576 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species576
+
 ###  http://dbpedia.org/resource/Adoxaceae
 <http://dbpedia.org/resource/Adoxaceae> rdf:type owl:NamedIndividual ;
                                         owl:sameAs :Family31 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family31
 
 ###  http://dbpedia.org/resource/Ailanthus_altissima
 <http://dbpedia.org/resource/Ailanthus_altissima> rdf:type owl:NamedIndividual ;
                                                   owl:sameAs :Species11 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species11
+
 ###  http://dbpedia.org/resource/Alnus_glutinosa
 <http://dbpedia.org/resource/Alnus_glutinosa> rdf:type owl:NamedIndividual ;
                                               owl:sameAs :Species54 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species54
 
 ###  http://dbpedia.org/resource/Amelanchier_ovalis
 <http://dbpedia.org/resource/Amelanchier_ovalis> rdf:type owl:NamedIndividual ;
                                                  owl:sameAs :Species2 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species2
+
 ###  http://dbpedia.org/resource/Anacardiaceae
 <http://dbpedia.org/resource/Anacardiaceae> rdf:type owl:NamedIndividual ;
                                             owl:sameAs :Family18 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family18
 
 ###  http://dbpedia.org/resource/Apollonias_barbujana
 <http://dbpedia.org/resource/Apollonias_barbujana> rdf:type owl:NamedIndividual ;
                                                    owl:sameAs :Species88 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species88
+
 ###  http://dbpedia.org/resource/Aquifoliaceae
 <http://dbpedia.org/resource/Aquifoliaceae> rdf:type owl:NamedIndividual ;
                                             owl:sameAs :Family32 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family32
 
 ###  http://dbpedia.org/resource/Arbutus_canariensis
 <http://dbpedia.org/resource/Arbutus_canariensis> rdf:type owl:NamedIndividual ;
                                                   owl:sameAs :Species268 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species268
+
 ###  http://dbpedia.org/resource/Arbutus_unedo
 <http://dbpedia.org/resource/Arbutus_unedo> rdf:type owl:NamedIndividual ;
                                             owl:sameAs :Species68 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species68
 
 ###  http://dbpedia.org/resource/Arecaceae
 <http://dbpedia.org/resource/Arecaceae> rdf:type owl:NamedIndividual ;
                                         owl:sameAs :Family33 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family33
+
 ###  http://dbpedia.org/resource/Asparagaceae
 <http://dbpedia.org/resource/Asparagaceae> rdf:type owl:NamedIndividual ;
                                            owl:sameAs :Family34 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family34
 
 ###  http://dbpedia.org/resource/Betula_pendula
 <http://dbpedia.org/resource/Betula_pendula> rdf:type owl:NamedIndividual ;
                                              owl:sameAs :Species373 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species373
+
 ###  http://dbpedia.org/resource/Betula_pubescens
 <http://dbpedia.org/resource/Betula_pubescens> rdf:type owl:NamedIndividual ;
                                                owl:sameAs :Species273 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species273
 
 ###  http://dbpedia.org/resource/Betulaceae
 <http://dbpedia.org/resource/Betulaceae> rdf:type owl:NamedIndividual ;
                                          owl:sameAs :Family19 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family19
+
 ###  http://dbpedia.org/resource/Birch
 <http://dbpedia.org/resource/Birch> rdf:type owl:NamedIndividual ;
                                     owl:sameAs :Species73 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species73
 
 ###  http://dbpedia.org/resource/Buxaceae
 <http://dbpedia.org/resource/Buxaceae> rdf:type owl:NamedIndividual ;
                                        owl:sameAs :Family35 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family35
+
 ###  http://dbpedia.org/resource/Buxus_balearica
 <http://dbpedia.org/resource/Buxus_balearica> rdf:type owl:NamedIndividual ;
                                               owl:sameAs :Species291 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species291
 
 ###  http://dbpedia.org/resource/Buxus_sempervirens
 <http://dbpedia.org/resource/Buxus_sempervirens> rdf:type owl:NamedIndividual ;
                                                  owl:sameAs :Species91 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species91
+
 ###  http://dbpedia.org/resource/Cannabaceae
 <http://dbpedia.org/resource/Cannabaceae> rdf:type owl:NamedIndividual ;
                                           owl:sameAs :Family36 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family36
 
 ###  http://dbpedia.org/resource/Carpinus_betulus
 <http://dbpedia.org/resource/Carpinus_betulus> rdf:type owl:NamedIndividual ;
                                                owl:sameAs :Species98 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species98
+
 ###  http://dbpedia.org/resource/Castanea_sativa
 <http://dbpedia.org/resource/Castanea_sativa> rdf:type owl:NamedIndividual ;
                                               owl:sameAs :Species72 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species72
 
 ###  http://dbpedia.org/resource/Cedrus
 <http://dbpedia.org/resource/Cedrus> rdf:type owl:NamedIndividual ;
                                      owl:sameAs :Species917 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species917
+
 ###  http://dbpedia.org/resource/Cedrus_atlantica
 <http://dbpedia.org/resource/Cedrus_atlantica> rdf:type owl:NamedIndividual ;
                                                owl:sameAs :Species17 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species17
 
 ###  http://dbpedia.org/resource/Cedrus_deodara
 <http://dbpedia.org/resource/Cedrus_deodara> rdf:type owl:NamedIndividual ;
                                              owl:sameAs :Species217 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species217
+
 ###  http://dbpedia.org/resource/Cedrus_libani
 <http://dbpedia.org/resource/Cedrus_libani> rdf:type owl:NamedIndividual ;
                                             owl:sameAs :Species317 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species317
 
 ###  http://dbpedia.org/resource/Celastraceae
 <http://dbpedia.org/resource/Celastraceae> rdf:type owl:NamedIndividual ;
                                            owl:sameAs :Family37 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family37
+
 ###  http://dbpedia.org/resource/Celtis_australis
 <http://dbpedia.org/resource/Celtis_australis> rdf:type owl:NamedIndividual ;
                                                owl:sameAs :Species13 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species13
 
 ###  http://dbpedia.org/resource/Ceratonia_siliqua
 <http://dbpedia.org/resource/Ceratonia_siliqua> rdf:type owl:NamedIndividual ;
                                                 owl:sameAs :Species67 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species67
+
 ###  http://dbpedia.org/resource/Chamaecyparis_lawsoniana
 <http://dbpedia.org/resource/Chamaecyparis_lawsoniana> rdf:type owl:NamedIndividual ;
                                                        owl:sameAs :Species18 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species18
 
 ###  http://dbpedia.org/resource/Chamaerops
 <http://dbpedia.org/resource/Chamaerops> rdf:type owl:NamedIndividual ;
                                          owl:sameAs :Species369 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species369
+
 ###  http://dbpedia.org/resource/Common_fig
 <http://dbpedia.org/resource/Common_fig> rdf:type owl:NamedIndividual ;
                                          owl:sameAs :Species299 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species299
 
 ###  http://dbpedia.org/resource/Cornaceae
 <http://dbpedia.org/resource/Cornaceae> rdf:type owl:NamedIndividual ;
                                         owl:sameAs :Family38 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family38
+
 ###  http://dbpedia.org/resource/Cornus_sanguinea
 <http://dbpedia.org/resource/Cornus_sanguinea> rdf:type owl:NamedIndividual ;
                                                owl:sameAs :Species9 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species9
 
 ###  http://dbpedia.org/resource/Corylus_avellana
 <http://dbpedia.org/resource/Corylus_avellana> rdf:type owl:NamedIndividual ;
                                                owl:sameAs :Species74 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species74
+
 ###  http://dbpedia.org/resource/Crataegus
 <http://dbpedia.org/resource/Crataegus> rdf:type owl:NamedIndividual ;
                                         owl:sameAs :Species15 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species15
 
 ###  http://dbpedia.org/resource/Crataegus_azarolus
 <http://dbpedia.org/resource/Crataegus_azarolus> rdf:type owl:NamedIndividual ;
                                                  owl:sameAs :Species515 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species515
+
 ###  http://dbpedia.org/resource/Crataegus_laevigata
 <http://dbpedia.org/resource/Crataegus_laevigata> rdf:type owl:NamedIndividual ;
                                                   owl:sameAs :Species315 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species315
 
 ###  http://dbpedia.org/resource/Crataegus_monogyna
 <http://dbpedia.org/resource/Crataegus_monogyna> rdf:type owl:NamedIndividual ;
                                                  owl:sameAs :Species215 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species215
+
 ###  http://dbpedia.org/resource/Crataegus_orientalis
 <http://dbpedia.org/resource/Crataegus_orientalis> rdf:type owl:NamedIndividual ;
                                                    owl:sameAs :Species415 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species415
 
 ###  http://dbpedia.org/resource/Cupressaceae
 <http://dbpedia.org/resource/Cupressaceae> rdf:type owl:NamedIndividual ;
                                            owl:sameAs :Family22 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family22
+
 ###  http://dbpedia.org/resource/Cupressus
 <http://dbpedia.org/resource/Cupressus> rdf:type owl:NamedIndividual ;
                                         owl:sameAs :Species936 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species936
 
 ###  http://dbpedia.org/resource/Cupressus_arizonica
 <http://dbpedia.org/resource/Cupressus_arizonica> rdf:type owl:NamedIndividual ;
                                                   owl:sameAs :Species236 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species236
+
 ###  http://dbpedia.org/resource/Cupressus_lusitanica
 <http://dbpedia.org/resource/Cupressus_lusitanica> rdf:type owl:NamedIndividual ;
                                                    owl:sameAs :Species336 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species336
 
 ###  http://dbpedia.org/resource/Cupressus_macrocarpa
 <http://dbpedia.org/resource/Cupressus_macrocarpa> rdf:type owl:NamedIndividual ;
                                                    owl:sameAs :Species436 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species436
+
 ###  http://dbpedia.org/resource/Cupressus_sempervirens
 <http://dbpedia.org/resource/Cupressus_sempervirens> rdf:type owl:NamedIndividual ;
                                                      owl:sameAs :Species36 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species36
 
 ###  http://dbpedia.org/resource/Douglas_fir
 <http://dbpedia.org/resource/Douglas_fir> rdf:type owl:NamedIndividual ;
                                           owl:sameAs :Species34 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species34
+
 ###  http://dbpedia.org/resource/Dracaena_draco
 <http://dbpedia.org/resource/Dracaena_draco> rdf:type owl:NamedIndividual ;
                                              owl:sameAs :Species569 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species569
 
 ###  http://dbpedia.org/resource/Elm
 <http://dbpedia.org/resource/Elm> rdf:type owl:NamedIndividual ;
                                   owl:sameAs :Species956 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species956
+
 ###  http://dbpedia.org/resource/Erica_arborea
 <http://dbpedia.org/resource/Erica_arborea> rdf:type owl:NamedIndividual ;
                                             owl:sameAs :Species83 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species83
 
 ###  http://dbpedia.org/resource/Erica_scoparia
 <http://dbpedia.org/resource/Erica_scoparia> rdf:type owl:NamedIndividual ;
                                              owl:sameAs :Species283 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species283
+
 ###  http://dbpedia.org/resource/Ericaceae
 <http://dbpedia.org/resource/Ericaceae> rdf:type owl:NamedIndividual ;
                                         owl:sameAs :Family15 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family15
 
 ###  http://dbpedia.org/resource/Eucalyptus
 <http://dbpedia.org/resource/Eucalyptus> rdf:type owl:NamedIndividual ;
@@ -5790,45 +6066,65 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
                                                     :Species63 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species60
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species63
+
 ###  http://dbpedia.org/resource/Eucalyptus_camaldulensis
 <http://dbpedia.org/resource/Eucalyptus_camaldulensis> rdf:type owl:NamedIndividual ;
                                                        owl:sameAs :Species62 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species62
 
 ###  http://dbpedia.org/resource/Eucalyptus_globulus
 <http://dbpedia.org/resource/Eucalyptus_globulus> rdf:type owl:NamedIndividual ;
                                                   owl:sameAs :Species61 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species61
+
 ###  http://dbpedia.org/resource/Eucalyptus_gomphocephala
 <http://dbpedia.org/resource/Eucalyptus_gomphocephala> rdf:type owl:NamedIndividual ;
                                                        owl:sameAs :Species364 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species364
 
 ###  http://dbpedia.org/resource/Eucalyptus_nitens
 <http://dbpedia.org/resource/Eucalyptus_nitens> rdf:type owl:NamedIndividual ;
                                                 owl:sameAs :Species64 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species64
+
 ###  http://dbpedia.org/resource/Eucalyptus_viminalis
 <http://dbpedia.org/resource/Eucalyptus_viminalis> rdf:type owl:NamedIndividual ;
                                                    owl:sameAs :Species264 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species264
 
 ###  http://dbpedia.org/resource/Euonymus_europaeus
 <http://dbpedia.org/resource/Euonymus_europaeus> rdf:type owl:NamedIndividual ;
                                                  owl:sameAs :Species5 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species5
+
 ###  http://dbpedia.org/resource/Fagaceae
 <http://dbpedia.org/resource/Fagaceae> rdf:type owl:NamedIndividual ;
                                        owl:sameAs :Family12 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family12
+
 ###  http://dbpedia.org/resource/Fagus_sylvatica
 <http://dbpedia.org/resource/Fagus_sylvatica> rdf:type owl:NamedIndividual ;
                                               owl:sameAs :Species71 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species71
 
 ###  http://dbpedia.org/resource/Flowering_plant
 <http://dbpedia.org/resource/Flowering_plant> rdf:type owl:NamedIndividual ;
@@ -5838,115 +6134,167 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
                                                          :Species99 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Class1
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species70
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species90
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species99
+
 ###  http://dbpedia.org/resource/Frangula_alnus
 <http://dbpedia.org/resource/Frangula_alnus> rdf:type owl:NamedIndividual ;
                                              owl:sameAs :Species3 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species3
 
 ###  http://dbpedia.org/resource/Fraxinus
 <http://dbpedia.org/resource/Fraxinus> rdf:type owl:NamedIndividual ;
                                        owl:sameAs :Species955 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species955
+
 ###  http://dbpedia.org/resource/Fraxinus_angustifolia
 <http://dbpedia.org/resource/Fraxinus_angustifolia> rdf:type owl:NamedIndividual ;
                                                     owl:sameAs :Species55 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species55
 
 ###  http://dbpedia.org/resource/Fraxinus_excelsior
 <http://dbpedia.org/resource/Fraxinus_excelsior> rdf:type owl:NamedIndividual ;
                                                  owl:sameAs :Species255 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species255
+
 ###  http://dbpedia.org/resource/Fraxinus_ornus
 <http://dbpedia.org/resource/Fraxinus_ornus> rdf:type owl:NamedIndividual ;
                                              owl:sameAs :Species355 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species355
 
 ###  http://dbpedia.org/resource/Gymnosperm
 <http://dbpedia.org/resource/Gymnosperm> rdf:type owl:NamedIndividual ;
                                          owl:sameAs :Class2 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Class2
+
 ###  http://dbpedia.org/resource/Heberdenia_excelsa
 <http://dbpedia.org/resource/Heberdenia_excelsa> rdf:type owl:NamedIndividual ;
                                                  owl:sameAs :Species1 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species1
 
 ###  http://dbpedia.org/resource/Honey_locust
 <http://dbpedia.org/resource/Honey_locust> rdf:type owl:NamedIndividual ;
                                            owl:sameAs :Species392 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species392
+
 ###  http://dbpedia.org/resource/Ilex_aquifolium
 <http://dbpedia.org/resource/Ilex_aquifolium> rdf:type owl:NamedIndividual ;
                                               owl:sameAs :Species65 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species65
 
 ###  http://dbpedia.org/resource/Ilex_canariensis
 <http://dbpedia.org/resource/Ilex_canariensis> rdf:type owl:NamedIndividual ;
                                                owl:sameAs :Species82 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species82
+
 ###  http://dbpedia.org/resource/Juglandaceae
 <http://dbpedia.org/resource/Juglandaceae> rdf:type owl:NamedIndividual ;
                                            owl:sameAs :Family39 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family39
 
 ###  http://dbpedia.org/resource/Juglans
 <http://dbpedia.org/resource/Juglans> rdf:type owl:NamedIndividual ;
                                       owl:sameAs :Species975 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species975
+
 ###  http://dbpedia.org/resource/Juglans_nigra
 <http://dbpedia.org/resource/Juglans_nigra> rdf:type owl:NamedIndividual ;
                                             owl:sameAs :Species275 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species275
 
 ###  http://dbpedia.org/resource/Juglans_regia
 <http://dbpedia.org/resource/Juglans_regia> rdf:type owl:NamedIndividual ;
                                             owl:sameAs :Species75 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species75
+
 ###  http://dbpedia.org/resource/Juniper
 <http://dbpedia.org/resource/Juniper> rdf:type owl:NamedIndividual ;
                                       owl:sameAs :Species937 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species937
 
 ###  http://dbpedia.org/resource/Juniperus_cedrus
 <http://dbpedia.org/resource/Juniperus_cedrus> rdf:type owl:NamedIndividual ;
                                                owl:sameAs :Species337 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species337
+
 ###  http://dbpedia.org/resource/Juniperus_communis
 <http://dbpedia.org/resource/Juniperus_communis> rdf:type owl:NamedIndividual ;
                                                  owl:sameAs :Species37 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species37
 
 ###  http://dbpedia.org/resource/Juniperus_oxycedrus
 <http://dbpedia.org/resource/Juniperus_oxycedrus> rdf:type owl:NamedIndividual ;
                                                   owl:sameAs :Species237 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species237
+
 ###  http://dbpedia.org/resource/Juniperus_phoenicea
 <http://dbpedia.org/resource/Juniperus_phoenicea> rdf:type owl:NamedIndividual ;
                                                   owl:sameAs :Species39 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species39
 
 ###  http://dbpedia.org/resource/Juniperus_sabina
 <http://dbpedia.org/resource/Juniperus_sabina> rdf:type owl:NamedIndividual ;
                                                owl:sameAs :Species239 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species239
+
 ###  http://dbpedia.org/resource/Juniperus_thurifera
 <http://dbpedia.org/resource/Juniperus_thurifera> rdf:type owl:NamedIndividual ;
                                                   owl:sameAs :Species38 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species38
+
 ###  http://dbpedia.org/resource/Juniperus_turbinata
 <http://dbpedia.org/resource/Juniperus_turbinata> rdf:type owl:NamedIndividual ;
                                                   owl:sameAs :Species238 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species238
 
 ###  http://dbpedia.org/resource/Larch
 <http://dbpedia.org/resource/Larch> rdf:type owl:NamedIndividual ;
@@ -5954,20 +6302,30 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
                                                :Species435 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species35
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species435
+
 ###  http://dbpedia.org/resource/Larix_decidua
 <http://dbpedia.org/resource/Larix_decidua> rdf:type owl:NamedIndividual ;
                                             owl:sameAs :Species235 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species235
 
 ###  http://dbpedia.org/resource/Larix_kaempferi
 <http://dbpedia.org/resource/Larix_kaempferi> rdf:type owl:NamedIndividual ;
                                               owl:sameAs :Species335 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species335
+
 ###  http://dbpedia.org/resource/Lauraceae
 <http://dbpedia.org/resource/Lauraceae> rdf:type owl:NamedIndividual ;
                                         owl:sameAs :Family40 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family40
 
 ###  http://dbpedia.org/resource/Laurel_forest
 <http://dbpedia.org/resource/Laurel_forest> rdf:type owl:NamedIndividual ;
@@ -5975,70 +6333,100 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
                                                        :Species89 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species80
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species89
+
 ###  http://dbpedia.org/resource/Laurus_azorica
 <http://dbpedia.org/resource/Laurus_azorica> rdf:type owl:NamedIndividual ;
                                              owl:sameAs :Species294 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species294
 
 ###  http://dbpedia.org/resource/Laurus_nobilis
 <http://dbpedia.org/resource/Laurus_nobilis> rdf:type owl:NamedIndividual ;
                                              owl:sameAs :Species94 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species94
+
 ###  http://dbpedia.org/resource/Leguminosae
 <http://dbpedia.org/resource/Leguminosae> rdf:type owl:NamedIndividual ;
                                           owl:sameAs :Family14 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family14
 
 ###  http://dbpedia.org/resource/Malus_sylvestris
 <http://dbpedia.org/resource/Malus_sylvestris> rdf:type owl:NamedIndividual ;
                                                owl:sameAs :Species12 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species12
+
 ###  http://dbpedia.org/resource/Malvaceae
 <http://dbpedia.org/resource/Malvaceae> rdf:type owl:NamedIndividual ;
                                         owl:sameAs :Family41 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family41
 
 ###  http://dbpedia.org/resource/Maple
 <http://dbpedia.org/resource/Maple> rdf:type owl:NamedIndividual ;
                                     owl:sameAs :Species976 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species976
+
 ###  http://dbpedia.org/resource/Moraceae
 <http://dbpedia.org/resource/Moraceae> rdf:type owl:NamedIndividual ;
                                        owl:sameAs :Family42 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family42
 
 ###  http://dbpedia.org/resource/Morus_alba
 <http://dbpedia.org/resource/Morus_alba> rdf:type owl:NamedIndividual ;
                                          owl:sameAs :Species499 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species499
+
 ###  http://dbpedia.org/resource/Morus_nigra
 <http://dbpedia.org/resource/Morus_nigra> rdf:type owl:NamedIndividual ;
                                           owl:sameAs :Species599 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species599
 
 ###  http://dbpedia.org/resource/Myrica_faya
 <http://dbpedia.org/resource/Myrica_faya> rdf:type owl:NamedIndividual ;
                                           owl:sameAs :Species81 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species81
+
 ###  http://dbpedia.org/resource/Myricaceae
 <http://dbpedia.org/resource/Myricaceae> rdf:type owl:NamedIndividual ;
                                          owl:sameAs :Family43 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family43
 
 ###  http://dbpedia.org/resource/Myrtaceae
 <http://dbpedia.org/resource/Myrtaceae> rdf:type owl:NamedIndividual ;
                                         owl:sameAs :Family16 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family16
+
 ###  http://dbpedia.org/resource/Myrtus_communis
 <http://dbpedia.org/resource/Myrtus_communis> rdf:type owl:NamedIndividual ;
                                               owl:sameAs :Species6 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species6
 
 ###  http://dbpedia.org/resource/Oak
 <http://dbpedia.org/resource/Oak> rdf:type owl:NamedIndividual ;
@@ -6046,60 +6434,86 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
                                              :Species49 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species40
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species49
+
 ###  http://dbpedia.org/resource/Ocotea_foetens
 <http://dbpedia.org/resource/Ocotea_foetens> rdf:type owl:NamedIndividual ;
                                              owl:sameAs :Species87 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species87
 
 ###  http://dbpedia.org/resource/Oleaceae
 <http://dbpedia.org/resource/Oleaceae> rdf:type owl:NamedIndividual ;
                                        owl:sameAs :Family44 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family44
+
 ###  http://dbpedia.org/resource/Olive
 <http://dbpedia.org/resource/Olive> rdf:type owl:NamedIndividual ;
                                     owl:sameAs :Species66 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species66
 
 ###  http://dbpedia.org/resource/Pear
 <http://dbpedia.org/resource/Pear> rdf:type owl:NamedIndividual ;
                                    owl:sameAs :Species16 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species16
+
 ###  http://dbpedia.org/resource/Pentaphylacaceae
 <http://dbpedia.org/resource/Pentaphylacaceae> rdf:type owl:NamedIndividual ;
                                                owl:sameAs :Family45 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family45
 
 ###  http://dbpedia.org/resource/Persea_indica
 <http://dbpedia.org/resource/Persea_indica> rdf:type owl:NamedIndividual ;
                                             owl:sameAs :Species84 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species84
+
 ###  http://dbpedia.org/resource/Phillyrea_latifolia
 <http://dbpedia.org/resource/Phillyrea_latifolia> rdf:type owl:NamedIndividual ;
                                                   owl:sameAs :Species8 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species8
 
 ###  http://dbpedia.org/resource/Phoenix_canariensis
 <http://dbpedia.org/resource/Phoenix_canariensis> rdf:type owl:NamedIndividual ;
                                                   owl:sameAs :Species469 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species469
+
 ###  http://dbpedia.org/resource/Picconia_excelsa
 <http://dbpedia.org/resource/Picconia_excelsa> rdf:type owl:NamedIndividual ;
                                                owl:sameAs :Species86 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species86
 
 ###  http://dbpedia.org/resource/Picea_abies
 <http://dbpedia.org/resource/Picea_abies> rdf:type owl:NamedIndividual ;
                                           owl:sameAs :Species33 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species33
+
 ###  http://dbpedia.org/resource/Pinaceae
 <http://dbpedia.org/resource/Pinaceae> rdf:type owl:NamedIndividual ;
                                        owl:sameAs :Family21 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family21
 
 ###  http://dbpedia.org/resource/Pine
 <http://dbpedia.org/resource/Pine> rdf:type owl:NamedIndividual ;
@@ -6107,191 +6521,271 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
                                               :Species29 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species20
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species29
+
 ###  http://dbpedia.org/resource/Pinophyta
 <http://dbpedia.org/resource/Pinophyta> rdf:type owl:NamedIndividual ;
                                         owl:sameAs :Species19 ,
                                                    :Species30 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species19
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species30
+
 ###  http://dbpedia.org/resource/Pinus_canariensis
 <http://dbpedia.org/resource/Pinus_canariensis> rdf:type owl:NamedIndividual ;
                                                 owl:sameAs :Species27 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species27
 
 ###  http://dbpedia.org/resource/Pinus_halepensis
 <http://dbpedia.org/resource/Pinus_halepensis> rdf:type owl:NamedIndividual ;
                                                owl:sameAs :Species24 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species24
+
 ###  http://dbpedia.org/resource/Pinus_mugo
 <http://dbpedia.org/resource/Pinus_mugo> rdf:type owl:NamedIndividual ;
                                          owl:sameAs :Species22 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species22
 
 ###  http://dbpedia.org/resource/Pinus_nigra
 <http://dbpedia.org/resource/Pinus_nigra> rdf:type owl:NamedIndividual ;
                                           owl:sameAs :Species25 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species25
+
 ###  http://dbpedia.org/resource/Pinus_pinaster
 <http://dbpedia.org/resource/Pinus_pinaster> rdf:type owl:NamedIndividual ;
                                              owl:sameAs :Species26 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species26
 
 ###  http://dbpedia.org/resource/Pinus_radiata
 <http://dbpedia.org/resource/Pinus_radiata> rdf:type owl:NamedIndividual ;
                                             owl:sameAs :Species28 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species28
+
 ###  http://dbpedia.org/resource/Pistacia_atlantica
 <http://dbpedia.org/resource/Pistacia_atlantica> rdf:type owl:NamedIndividual ;
                                                  owl:sameAs :Species293 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species293
 
 ###  http://dbpedia.org/resource/Pistacia_terebinthus
 <http://dbpedia.org/resource/Pistacia_terebinthus> rdf:type owl:NamedIndividual ;
                                                    owl:sameAs :Species93 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species93
+
 ###  http://dbpedia.org/resource/Platanaceae
 <http://dbpedia.org/resource/Platanaceae> rdf:type owl:NamedIndividual ;
                                           owl:sameAs :Family46 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family46
 
 ###  http://dbpedia.org/resource/Platanus_orientalis
 <http://dbpedia.org/resource/Platanus_orientalis> rdf:type owl:NamedIndividual ;
                                                   owl:sameAs :Species279 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species279
+
 ###  http://dbpedia.org/resource/Platanus_x_acerifolia
 <http://dbpedia.org/resource/Platanus_x_acerifolia> rdf:type owl:NamedIndividual ;
                                                     owl:sameAs :Species79 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species79
 
 ###  http://dbpedia.org/resource/Pleiomeris_canariensis
 <http://dbpedia.org/resource/Pleiomeris_canariensis> rdf:type owl:NamedIndividual ;
                                                      owl:sameAs :Species289 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species289
+
 ###  http://dbpedia.org/resource/Populus_alba
 <http://dbpedia.org/resource/Populus_alba> rdf:type owl:NamedIndividual ;
                                            owl:sameAs :Species51 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species51
 
 ###  http://dbpedia.org/resource/Populus_nigra
 <http://dbpedia.org/resource/Populus_nigra> rdf:type owl:NamedIndividual ;
                                             owl:sameAs :Species58 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species58
+
 ###  http://dbpedia.org/resource/Populus_tremula
 <http://dbpedia.org/resource/Populus_tremula> rdf:type owl:NamedIndividual ;
                                               owl:sameAs :Species52 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species52
 
 ###  http://dbpedia.org/resource/Populus_x_canadensis
 <http://dbpedia.org/resource/Populus_x_canadensis> rdf:type owl:NamedIndividual ;
                                                    owl:sameAs :Species258 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species258
+
 ###  http://dbpedia.org/resource/Primulaceae
 <http://dbpedia.org/resource/Primulaceae> rdf:type owl:NamedIndividual ;
                                           owl:sameAs :Family47 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family47
 
 ###  http://dbpedia.org/resource/Prunus
 <http://dbpedia.org/resource/Prunus> rdf:type owl:NamedIndividual ;
                                      owl:sameAs :Species95 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species95
+
 ###  http://dbpedia.org/resource/Prunus_avium
 <http://dbpedia.org/resource/Prunus_avium> rdf:type owl:NamedIndividual ;
                                            owl:sameAs :Species395 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species395
 
 ###  http://dbpedia.org/resource/Prunus_lusitanica
 <http://dbpedia.org/resource/Prunus_lusitanica> rdf:type owl:NamedIndividual ;
                                                 owl:sameAs :Species495 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species495
+
 ###  http://dbpedia.org/resource/Prunus_padus
 <http://dbpedia.org/resource/Prunus_padus> rdf:type owl:NamedIndividual ;
                                            owl:sameAs :Species595 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species595
 
 ###  http://dbpedia.org/resource/Prunus_spinosa
 <http://dbpedia.org/resource/Prunus_spinosa> rdf:type owl:NamedIndividual ;
                                              owl:sameAs :Species295 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species295
+
 ###  http://dbpedia.org/resource/Quercus_canariensis
 <http://dbpedia.org/resource/Quercus_canariensis> rdf:type owl:NamedIndividual ;
                                                   owl:sameAs :Species47 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species47
 
 ###  http://dbpedia.org/resource/Quercus_faginea
 <http://dbpedia.org/resource/Quercus_faginea> rdf:type owl:NamedIndividual ;
                                               owl:sameAs :Species44 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species44
+
 ###  http://dbpedia.org/resource/Quercus_ilex
 <http://dbpedia.org/resource/Quercus_ilex> rdf:type owl:NamedIndividual ;
                                            owl:sameAs :Species45 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species45
 
 ###  http://dbpedia.org/resource/Quercus_lusitanica
 <http://dbpedia.org/resource/Quercus_lusitanica> rdf:type owl:NamedIndividual ;
                                                  owl:sameAs :Species244 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species244
+
 ###  http://dbpedia.org/resource/Quercus_petraea
 <http://dbpedia.org/resource/Quercus_petraea> rdf:type owl:NamedIndividual ;
                                               owl:sameAs :Species42 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species42
 
 ###  http://dbpedia.org/resource/Quercus_pubescens
 <http://dbpedia.org/resource/Quercus_pubescens> rdf:type owl:NamedIndividual ;
                                                 owl:sameAs :Species243 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species243
+
 ###  http://dbpedia.org/resource/Quercus_pyrenaica
 <http://dbpedia.org/resource/Quercus_pyrenaica> rdf:type owl:NamedIndividual ;
                                                 owl:sameAs :Species43 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species43
 
 ###  http://dbpedia.org/resource/Quercus_robur
 <http://dbpedia.org/resource/Quercus_robur> rdf:type owl:NamedIndividual ;
                                             owl:sameAs :Species41 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species41
+
 ###  http://dbpedia.org/resource/Quercus_rubra
 <http://dbpedia.org/resource/Quercus_rubra> rdf:type owl:NamedIndividual ;
                                             owl:sameAs :Species48 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species48
 
 ###  http://dbpedia.org/resource/Quercus_suber
 <http://dbpedia.org/resource/Quercus_suber> rdf:type owl:NamedIndividual ;
                                             owl:sameAs :Species46 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species46
+
 ###  http://dbpedia.org/resource/Rhamnaceae
 <http://dbpedia.org/resource/Rhamnaceae> rdf:type owl:NamedIndividual ;
                                          owl:sameAs :Family48 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family48
 
 ###  http://dbpedia.org/resource/Rhamnus_alaternus
 <http://dbpedia.org/resource/Rhamnus_alaternus> rdf:type owl:NamedIndividual ;
                                                 owl:sameAs :Species4 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species4
+
 ###  http://dbpedia.org/resource/Rhamnus_glandulosa
 <http://dbpedia.org/resource/Rhamnus_glandulosa> rdf:type owl:NamedIndividual ;
                                                  owl:sameAs :Species389 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species389
+
 ###  http://dbpedia.org/resource/Rhus_coriaria
 <http://dbpedia.org/resource/Rhus_coriaria> rdf:type owl:NamedIndividual ;
                                             owl:sameAs :Species96 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species96
 
 ###  http://dbpedia.org/resource/River_ecosystem
 <http://dbpedia.org/resource/River_ecosystem> rdf:type owl:NamedIndividual ;
@@ -6299,240 +6793,338 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
                                                          :Species59 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species50
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species59
+
 ###  http://dbpedia.org/resource/Robinia_pseudoacacia
 <http://dbpedia.org/resource/Robinia_pseudoacacia> rdf:type owl:NamedIndividual ;
                                                    owl:sameAs :Species92 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species92
 
 ###  http://dbpedia.org/resource/Rosaceae
 <http://dbpedia.org/resource/Rosaceae> rdf:type owl:NamedIndividual ;
                                        owl:sameAs :Family49 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family49
+
 ###  http://dbpedia.org/resource/Salicaceae
 <http://dbpedia.org/resource/Salicaceae> rdf:type owl:NamedIndividual ;
                                          owl:sameAs :Family13 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family13
 
 ###  http://dbpedia.org/resource/Salix_alba
 <http://dbpedia.org/resource/Salix_alba> rdf:type owl:NamedIndividual ;
                                          owl:sameAs :Species257 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species257
+
 ###  http://dbpedia.org/resource/Salix_atrocinerea
 <http://dbpedia.org/resource/Salix_atrocinerea> rdf:type owl:NamedIndividual ;
                                                 owl:sameAs :Species357 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species357
 
 ###  http://dbpedia.org/resource/Salix_babylonica
 <http://dbpedia.org/resource/Salix_babylonica> rdf:type owl:NamedIndividual ;
                                                owl:sameAs :Species457 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species457
+
 ###  http://dbpedia.org/resource/Salix_canariensis
 <http://dbpedia.org/resource/Salix_canariensis> rdf:type owl:NamedIndividual ;
                                                 owl:sameAs :Species858 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species858
 
 ###  http://dbpedia.org/resource/Salix_cantabrica
 <http://dbpedia.org/resource/Salix_cantabrica> rdf:type owl:NamedIndividual ;
                                                owl:sameAs :Species557 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species557
+
 ###  http://dbpedia.org/resource/Salix_caprea
 <http://dbpedia.org/resource/Salix_caprea> rdf:type owl:NamedIndividual ;
                                            owl:sameAs :Species657 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species657
 
 ###  http://dbpedia.org/resource/Salix_eleagnos
 <http://dbpedia.org/resource/Salix_eleagnos> rdf:type owl:NamedIndividual ;
                                              owl:sameAs :Species757 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species757
+
 ###  http://dbpedia.org/resource/Salix_fragilis
 <http://dbpedia.org/resource/Salix_fragilis> rdf:type owl:NamedIndividual ;
                                              owl:sameAs :Species857 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species857
 
 ###  http://dbpedia.org/resource/Salix_purpurea
 <http://dbpedia.org/resource/Salix_purpurea> rdf:type owl:NamedIndividual ;
                                              owl:sameAs :Species957 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species957
+
 ###  http://dbpedia.org/resource/Sambucus
 <http://dbpedia.org/resource/Sambucus> rdf:type owl:NamedIndividual ;
                                        owl:sameAs :Species997 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species997
 
 ###  http://dbpedia.org/resource/Sambucus_nigra
 <http://dbpedia.org/resource/Sambucus_nigra> rdf:type owl:NamedIndividual ;
                                              owl:sameAs :Species97 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species97
+
 ###  http://dbpedia.org/resource/Sambucus_racemosa
 <http://dbpedia.org/resource/Sambucus_racemosa> rdf:type owl:NamedIndividual ;
                                                 owl:sameAs :Species297 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species297
 
 ###  http://dbpedia.org/resource/Sapindaceae
 <http://dbpedia.org/resource/Sapindaceae> rdf:type owl:NamedIndividual ;
                                           owl:sameAs :Family17 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family17
+
 ###  http://dbpedia.org/resource/Sapotaceae
 <http://dbpedia.org/resource/Sapotaceae> rdf:type owl:NamedIndividual ;
                                          owl:sameAs :Family50 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family50
 
 ###  http://dbpedia.org/resource/Scots_pine
 <http://dbpedia.org/resource/Scots_pine> rdf:type owl:NamedIndividual ;
                                          owl:sameAs :Species21 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species21
+
 ###  http://dbpedia.org/resource/Sideroxylon_mirmulano
 <http://dbpedia.org/resource/Sideroxylon_mirmulano> rdf:type owl:NamedIndividual ;
                                                     owl:sameAs :Species85 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species85
 
 ###  http://dbpedia.org/resource/Simaroubaceae
 <http://dbpedia.org/resource/Simaroubaceae> rdf:type owl:NamedIndividual ;
                                             owl:sameAs :Family51 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family51
+
 ###  http://dbpedia.org/resource/Sorbus
 <http://dbpedia.org/resource/Sorbus> rdf:type owl:NamedIndividual ;
                                      owl:sameAs :Species78 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species78
 
 ###  http://dbpedia.org/resource/Sorbus_aria
 <http://dbpedia.org/resource/Sorbus_aria> rdf:type owl:NamedIndividual ;
                                           owl:sameAs :Species278 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species278
+
 ###  http://dbpedia.org/resource/Sorbus_aucuparia
 <http://dbpedia.org/resource/Sorbus_aucuparia> rdf:type owl:NamedIndividual ;
                                                owl:sameAs :Species378 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species378
 
 ###  http://dbpedia.org/resource/Sorbus_chamaemespilus
 <http://dbpedia.org/resource/Sorbus_chamaemespilus> rdf:type owl:NamedIndividual ;
                                                     owl:sameAs :Species778 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species778
+
 ###  http://dbpedia.org/resource/Sorbus_domestica
 <http://dbpedia.org/resource/Sorbus_domestica> rdf:type owl:NamedIndividual ;
                                                owl:sameAs :Species478 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species478
 
 ###  http://dbpedia.org/resource/Sorbus_latifolia
 <http://dbpedia.org/resource/Sorbus_latifolia> rdf:type owl:NamedIndividual ;
                                                owl:sameAs :Species678 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species678
+
 ###  http://dbpedia.org/resource/Sorbus_torminalis
 <http://dbpedia.org/resource/Sorbus_torminalis> rdf:type owl:NamedIndividual ;
                                                 owl:sameAs :Species578 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species578
 
 ###  http://dbpedia.org/resource/Stone_pine
 <http://dbpedia.org/resource/Stone_pine> rdf:type owl:NamedIndividual ;
                                          owl:sameAs :Species23 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species23
+
 ###  http://dbpedia.org/resource/Styphnolobium_japonicum
 <http://dbpedia.org/resource/Styphnolobium_japonicum> rdf:type owl:NamedIndividual ;
                                                       owl:sameAs :Species292 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species292
 
 ###  http://dbpedia.org/resource/Tamaricaceae
 <http://dbpedia.org/resource/Tamaricaceae> rdf:type owl:NamedIndividual ;
                                            owl:sameAs :Family52 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family52
+
 ###  http://dbpedia.org/resource/Tamarix
 <http://dbpedia.org/resource/Tamarix> rdf:type owl:NamedIndividual ;
                                       owl:sameAs :Species53 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species53
 
 ###  http://dbpedia.org/resource/Tamarix_canariensis
 <http://dbpedia.org/resource/Tamarix_canariensis> rdf:type owl:NamedIndividual ;
                                                   owl:sameAs :Species253 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species253
+
 ###  http://dbpedia.org/resource/Taxaceae
 <http://dbpedia.org/resource/Taxaceae> rdf:type owl:NamedIndividual ;
                                        owl:sameAs :Family23 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family23
 
 ###  http://dbpedia.org/resource/Taxus_baccata
 <http://dbpedia.org/resource/Taxus_baccata> rdf:type owl:NamedIndividual ;
                                             owl:sameAs :Species14 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species14
+
 ###  http://dbpedia.org/resource/Tetraclinis
 <http://dbpedia.org/resource/Tetraclinis> rdf:type owl:NamedIndividual ;
                                           owl:sameAs :Species219 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species219
 
 ###  http://dbpedia.org/resource/Thuja
 <http://dbpedia.org/resource/Thuja> rdf:type owl:NamedIndividual ;
                                     owl:sameAs :Species319 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species319
+
 ###  http://dbpedia.org/resource/Tilia
 <http://dbpedia.org/resource/Tilia> rdf:type owl:NamedIndividual ;
                                     owl:sameAs :Species77 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species77
 
 ###  http://dbpedia.org/resource/Tilia_cordata
 <http://dbpedia.org/resource/Tilia_cordata> rdf:type owl:NamedIndividual ;
                                             owl:sameAs :Species277 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species277
+
 ###  http://dbpedia.org/resource/Tilia_platyphyllos
 <http://dbpedia.org/resource/Tilia_platyphyllos> rdf:type owl:NamedIndividual ;
                                                  owl:sameAs :Species377 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species377
 
 ###  http://dbpedia.org/resource/Ulmaceae
 <http://dbpedia.org/resource/Ulmaceae> rdf:type owl:NamedIndividual ;
                                        owl:sameAs :Family11 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family11
+
 ###  http://dbpedia.org/resource/Ulmus_glabra
 <http://dbpedia.org/resource/Ulmus_glabra> rdf:type owl:NamedIndividual ;
                                            owl:sameAs :Species256 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species256
 
 ###  http://dbpedia.org/resource/Ulmus_minor
 <http://dbpedia.org/resource/Ulmus_minor> rdf:type owl:NamedIndividual ;
                                           owl:sameAs :Species56 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species56
+
 ###  http://dbpedia.org/resource/Ulmus_pumila
 <http://dbpedia.org/resource/Ulmus_pumila> rdf:type owl:NamedIndividual ;
                                            owl:sameAs :Species356 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species356
 
 ###  http://dbpedia.org/resource/Visnea_mocanera
 <http://dbpedia.org/resource/Visnea_mocanera> rdf:type owl:NamedIndividual ;
                                               owl:sameAs :Species489 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species489
+
 ###  http://dbpedia.org/resource/Willow
 <http://dbpedia.org/resource/Willow> rdf:type owl:NamedIndividual ;
                                      owl:sameAs :Species57 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species57
 
 ###  http://dbpedia.org/resource/Morus_(plant)
 <http://dbpedia.org/resource/Morus_(plant)> rdf:type owl:NamedIndividual ;
                                             owl:sameAs :Species399 .
 
 
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species399
+
 ###  http://dbpedia.org/resource/Phoenix_(plant)
 <http://dbpedia.org/resource/Phoenix_(plant)> rdf:type owl:NamedIndividual ;
                                               owl:sameAs :Species69 .
 
+
+###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species69
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/AcceptedNameClass1
 :AcceptedNameClass1 rdf:type owl:NamedIndividual ,
@@ -9309,6 +9901,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
           :hasScientificSynonym :ScientificSynonym1 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/26589
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species11
 :Species11 rdf:type owl:NamedIndividual ,
                     :Species ;
@@ -9317,12 +9911,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasScientificSynonym :ScientificSynonym11 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1807
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species12
 :Species12 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/6190> ;
            :hasAcceptedName :AcceptedNameSpecies12 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/6190
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species13
 :Species13 rdf:type owl:NamedIndividual ,
@@ -9331,12 +9929,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasAcceptedName :AcceptedNameSpecies13 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3200
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species14
 :Species14 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/8650> ;
            :hasAcceptedName :AcceptedNameSpecies14 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/8650
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species15
 :Species15 rdf:type owl:NamedIndividual ,
@@ -9357,12 +9959,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasAcceptedName :AcceptedNameSpecies17 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3196
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species18
 :Species18 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3481> ;
            :hasAcceptedName :AcceptedNameSpecies18 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3481
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species19
 :Species19 rdf:type owl:NamedIndividual ,
@@ -9377,6 +9983,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
           :hasAcceptedName :AcceptedNameSpecies2 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/2114
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species20
 :Species20 rdf:type owl:NamedIndividual ,
                     :Genus ;
@@ -9390,12 +9998,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies207 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1912
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species21
 :Species21 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7126> ;
            :hasAcceptedName :AcceptedNameSpecies21 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7126
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species215
 :Species215 rdf:type owl:NamedIndividual ,
@@ -9404,6 +10016,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies215 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3857
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species217
 :Species217 rdf:type owl:NamedIndividual ,
                      :Species ;
@@ -9411,12 +10025,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies217 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3197
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species219
 :Species219 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/8758> ;
             :hasAcceptedName :AcceptedNameSpecies219 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/8758
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species22
 :Species22 rdf:type owl:NamedIndividual ,
@@ -9426,12 +10044,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasScientificSynonym :ScientificSynonym22 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7127
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species23
 :Species23 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7124> ;
            :hasAcceptedName :AcceptedNameSpecies23 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7124
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species235
 :Species235 rdf:type owl:NamedIndividual ,
@@ -9440,12 +10062,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies235 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/5660
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species236
 :Species236 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3883> ;
             :hasAcceptedName :AcceptedNameSpecies236 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3883
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species237
 :Species237 rdf:type owl:NamedIndividual ,
@@ -9454,12 +10080,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies237 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/5505
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species238
 :Species238 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/24329> ;
             :hasAcceptedName :AcceptedNameSpecies238 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/24329
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species239
 :Species239 rdf:type owl:NamedIndividual ,
@@ -9468,12 +10098,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies239 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/5512
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species24
 :Species24 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7118> ;
            :hasAcceptedName :AcceptedNameSpecies24 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7118
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species243
 :Species243 rdf:type owl:NamedIndividual ,
@@ -9489,6 +10123,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasScientificSynonym :ScientificSynonym244 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7381
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species25
 :Species25 rdf:type owl:NamedIndividual ,
                     :Species ;
@@ -9497,12 +10133,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasScientificSynonym :ScientificSynonym25 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7120
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species253
 :Species253 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/8549> ;
             :hasAcceptedName :AcceptedNameSpecies253 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/8549
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species255
 :Species255 rdf:type owl:NamedIndividual ,
@@ -9511,6 +10151,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies255 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/4625
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species256
 :Species256 rdf:type owl:NamedIndividual ,
                      :Species ;
@@ -9518,12 +10160,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies256 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/9144
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species257
 :Species257 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7881> ;
             :hasAcceptedName :AcceptedNameSpecies257 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7881
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species258
 :Species258 rdf:type owl:NamedIndividual ,
@@ -9533,12 +10179,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasScientificSynonym :ScientificSynonym258 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/26363
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species26
 :Species26 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7123> ;
            :hasAcceptedName :AcceptedNameSpecies26 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7123
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species264
 :Species264 rdf:type owl:NamedIndividual ,
@@ -9547,6 +10197,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies264 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/26351
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species268
 :Species268 rdf:type owl:NamedIndividual ,
                      :Species ;
@@ -9554,12 +10206,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies268 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1176
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species27
 :Species27 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1385> ;
            :hasAcceptedName :AcceptedNameSpecies27 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1385
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species273
 :Species273 rdf:type owl:NamedIndividual ,
@@ -9569,12 +10225,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasScientificSynonym :ScientificSynonym273 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/2767
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species275
 :Species275 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/9747> ;
             :hasAcceptedName :AcceptedNameSpecies275 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/9747
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species276
 :Species276 rdf:type owl:NamedIndividual ,
@@ -9583,12 +10243,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies276 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1924
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species277
 :Species277 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/8960> ;
             :hasAcceptedName :AcceptedNameSpecies277 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/8960
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species278
 :Species278 rdf:type owl:NamedIndividual ,
@@ -9597,12 +10261,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies278 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/8557
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species279
 :Species279 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/26362> ;
             :hasAcceptedName :AcceptedNameSpecies279 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/26362
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species28
 :Species28 rdf:type owl:NamedIndividual ,
@@ -9612,12 +10280,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasScientificSynonym :ScientificSynonym28 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7125
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species282
 :Species282 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/26354> ;
             :hasAcceptedName :AcceptedNameSpecies282 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/26354
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species283
 :Species283 rdf:type owl:NamedIndividual ,
@@ -9626,12 +10298,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies283 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/4373
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species289
 :Species289 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/977> ;
             :hasAcceptedName :AcceptedNameSpecies289 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/977
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species29
 :Species29 rdf:type owl:NamedIndividual ,
@@ -9646,12 +10322,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies291 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/2858
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species292
 :Species292 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/8553> ;
             :hasAcceptedName :AcceptedNameSpecies292 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/8553
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species293
 :Species293 rdf:type owl:NamedIndividual ,
@@ -9660,12 +10340,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies293 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1408
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species294
 :Species294 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/26359> ;
             :hasAcceptedName :AcceptedNameSpecies294 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/26359
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species295
 :Species295 rdf:type owl:NamedIndividual ,
@@ -9674,12 +10358,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies295 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7397
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species297
 :Species297 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7952> ;
             :hasAcceptedName :AcceptedNameSpecies297 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7952
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species299
 :Species299 rdf:type owl:NamedIndividual ,
@@ -9688,6 +10376,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies299 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/4592
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species3
 :Species3 rdf:type owl:NamedIndividual ,
                    :Species ;
@@ -9695,6 +10385,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
           :hasAcceptedName :AcceptedNameSpecies3 ;
           :hasScientificSynonym :ScientificSynonym3 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/4610
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species30
 :Species30 rdf:type owl:NamedIndividual ,
@@ -9709,12 +10401,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies307 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1906
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species31
 :Species31 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1899> ;
            :hasAcceptedName :AcceptedNameSpecies31 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1899
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species315
 :Species315 rdf:type owl:NamedIndividual ,
@@ -9723,12 +10419,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies315 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3856
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species317
 :Species317 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/26348> ;
             :hasAcceptedName :AcceptedNameSpecies317 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/26348
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species319
 :Species319 rdf:type owl:NamedIndividual ,
@@ -9743,6 +10443,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasAcceptedName :AcceptedNameSpecies32 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1901
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species33
 :Species33 rdf:type owl:NamedIndividual ,
                     :Species ;
@@ -9751,12 +10453,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasScientificSynonym :ScientificSynonym33 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/6999
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species335
 :Species335 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/26355> ;
             :hasAcceptedName :AcceptedNameSpecies335 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/26355
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species336
 :Species336 rdf:type owl:NamedIndividual ,
@@ -9765,12 +10471,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies336 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3885
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species337
 :Species337 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1019> ;
             :hasAcceptedName :AcceptedNameSpecies337 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1019
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species34
 :Species34 rdf:type owl:NamedIndividual ,
@@ -9779,6 +10489,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasAcceptedName :AcceptedNameSpecies34 ;
            :hasScientificSynonym :ScientificSynonym34 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7410
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species35
 :Species35 rdf:type owl:NamedIndividual ,
@@ -9793,12 +10505,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies355 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/4628
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species356
 :Species356 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/26372> ;
             :hasAcceptedName :AcceptedNameSpecies356 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/26372
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species357
 :Species357 rdf:type owl:NamedIndividual ,
@@ -9807,12 +10523,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies357 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7883
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species36
 :Species36 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3887> ;
            :hasAcceptedName :AcceptedNameSpecies36 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3887
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species364
 :Species364 rdf:type owl:NamedIndividual ,
@@ -9821,6 +10541,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies364 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/4448
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species369
 :Species369 rdf:type owl:NamedIndividual ,
                      :Species ;
@@ -9828,12 +10550,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies369 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3518
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species37
 :Species37 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/5499> ;
            :hasAcceptedName :AcceptedNameSpecies37 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/5499
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species373
 :Species373 rdf:type owl:NamedIndividual ,
@@ -9843,6 +10569,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasScientificSynonym :ScientificSynonym373 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/2769
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species376
 :Species376 rdf:type owl:NamedIndividual ,
                      :Species ;
@@ -9851,12 +10579,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasScientificSynonym :ScientificSynonym376 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1926
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species377
 :Species377 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/8962> ;
             :hasAcceptedName :AcceptedNameSpecies377 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/8962
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species378
 :Species378 rdf:type owl:NamedIndividual ,
@@ -9865,12 +10597,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies378 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/8558
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species38
 :Species38 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/5513> ;
            :hasAcceptedName :AcceptedNameSpecies38 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/5513
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species389
 :Species389 rdf:type owl:NamedIndividual ,
@@ -9879,12 +10615,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies389 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1437
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species39
 :Species39 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/5509> ;
            :hasAcceptedName :AcceptedNameSpecies39 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/5509
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species392
 :Species392 rdf:type owl:NamedIndividual ,
@@ -9893,12 +10633,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies392 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/4849
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species395
 :Species395 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7237> ;
             :hasAcceptedName :AcceptedNameSpecies395 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7237
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species399
 :Species399 rdf:type owl:NamedIndividual ,
@@ -9913,6 +10657,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
           :hasAcceptedName :AcceptedNameSpecies4 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7684
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species40
 :Species40 rdf:type owl:NamedIndividual ,
                     :Genus ;
@@ -9926,6 +10672,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasAcceptedName :AcceptedNameSpecies41 ;
            :hasScientificSynonym :ScientificSynonym41 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7226
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species415
 :Species415 rdf:type owl:NamedIndividual ,
@@ -9942,6 +10690,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasScientificSynonym :ScientificSynonym42 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7222
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species43
 :Species43 rdf:type owl:NamedIndividual ,
                     :Species ;
@@ -9950,6 +10700,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasScientificSynonym :ScientificSynonym43 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7225
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species435
 :Species435 rdf:type owl:NamedIndividual ,
                      :Species ;
@@ -9957,12 +10709,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies435 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/26357
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species436
 :Species436 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3886> ;
             :hasAcceptedName :AcceptedNameSpecies436 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3886
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species44
 :Species44 rdf:type owl:NamedIndividual ,
@@ -9972,6 +10728,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasScientificSynonym :ScientificSynonym44 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7479
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species45
 :Species45 rdf:type owl:NamedIndividual ,
                     :Species ;
@@ -9980,12 +10738,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasScientificSynonym :ScientificSynonym45 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7483
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species457
 :Species457 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/26366> ;
             :hasAcceptedName :AcceptedNameSpecies457 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/26366
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species46
 :Species46 rdf:type owl:NamedIndividual ,
@@ -9994,12 +10756,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasAcceptedName :AcceptedNameSpecies46 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7228
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species469
 :Species469 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7088> ;
             :hasAcceptedName :AcceptedNameSpecies469 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7088
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species47
 :Species47 rdf:type owl:NamedIndividual ,
@@ -10009,6 +10775,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasScientificSynonym :ScientificSynonym47 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7476
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species476
 :Species476 rdf:type owl:NamedIndividual ,
                      :Species ;
@@ -10016,12 +10784,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies476 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1927
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species478
 :Species478 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/8560> ;
             :hasAcceptedName :AcceptedNameSpecies478 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/8560
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species48
 :Species48 rdf:type owl:NamedIndividual ,
@@ -10031,12 +10803,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasScientificSynonym :ScientificSynonym48 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7227
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species489
 :Species489 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1512> ;
             :hasAcceptedName :AcceptedNameSpecies489 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1512
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species49
 :Species49 rdf:type owl:NamedIndividual ,
@@ -10051,6 +10827,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies495 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7388
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species499
 :Species499 rdf:type owl:NamedIndividual ,
                      :Species ;
@@ -10058,12 +10836,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies499 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/6407
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species5
 :Species5 rdf:type owl:NamedIndividual ,
                    :Species ;
           owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/4453> ;
           :hasAcceptedName :AcceptedNameSpecies5 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/4453
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species50
 :Species50 rdf:type owl:NamedIndividual ,
@@ -10078,6 +10860,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasAcceptedName :AcceptedNameSpecies51 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7290
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species515
 :Species515 rdf:type owl:NamedIndividual ,
                      :Species ;
@@ -10085,12 +10869,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies515 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3852
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species52
 :Species52 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7293> ;
            :hasAcceptedName :AcceptedNameSpecies52 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7293
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species53
 :Species53 rdf:type owl:NamedIndividual ,
@@ -10105,12 +10893,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasAcceptedName :AcceptedNameSpecies54 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/2038
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species55
 :Species55 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/4623> ;
            :hasAcceptedName :AcceptedNameSpecies55 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/4623
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species557
 :Species557 rdf:type owl:NamedIndividual ,
@@ -10120,6 +10912,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasScientificSynonym :ScientificSynonym557 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7887
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species56
 :Species56 rdf:type owl:NamedIndividual ,
                     :Species ;
@@ -10128,12 +10922,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasScientificSynonym :ScientificSynonym56 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/9147
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species569
 :Species569 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/897> ;
             :hasAcceptedName :AcceptedNameSpecies569 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/897
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species57
 :Species57 rdf:type owl:NamedIndividual ,
@@ -10148,6 +10946,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies576 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1801
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species578
 :Species578 rdf:type owl:NamedIndividual ,
                      :Species ;
@@ -10155,12 +10955,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies578 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/8566
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species58
 :Species58 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7292> ;
            :hasAcceptedName :AcceptedNameSpecies58 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7292
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species59
 :Species59 rdf:type owl:NamedIndividual ,
@@ -10175,6 +10979,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies595 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7391
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species599
 :Species599 rdf:type owl:NamedIndividual ,
                      :Species ;
@@ -10182,12 +10988,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies599 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/6291
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species6
 :Species6 rdf:type owl:NamedIndividual ,
                    :Species ;
           owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/6498> ;
           :hasAcceptedName :AcceptedNameSpecies6 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/6498
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species60
 :Species60 rdf:type owl:NamedIndividual ,
@@ -10202,12 +11012,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasAcceptedName :AcceptedNameSpecies61 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/4445
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species62
 :Species62 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/4444> ;
            :hasAcceptedName :AcceptedNameSpecies62 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/4444
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species63
 :Species63 rdf:type owl:NamedIndividual ,
@@ -10222,6 +11036,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasAcceptedName :AcceptedNameSpecies64 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/26350
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species65
 :Species65 rdf:type owl:NamedIndividual ,
                     :Species ;
@@ -10229,12 +11045,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasAcceptedName :AcceptedNameSpecies65 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/5361
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species657
 :Species657 rdf:type owl:NamedIndividual ,
                      :Species ;
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7888> ;
             :hasAcceptedName :AcceptedNameSpecies657 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7888
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species66
 :Species66 rdf:type owl:NamedIndividual ,
@@ -10244,12 +11064,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasScientificSynonym :ScientificSynonym66 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/6644
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species67
 :Species67 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3422> ;
            :hasAcceptedName :AcceptedNameSpecies67 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3422
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species676
 :Species676 rdf:type owl:NamedIndividual ,
@@ -10258,6 +11082,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies676 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1800
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species678
 :Species678 rdf:type owl:NamedIndividual ,
                      :Species ;
@@ -10265,12 +11091,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies678 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/8564
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species68
 :Species68 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/2284> ;
            :hasAcceptedName :AcceptedNameSpecies68 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/2284
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species69
 :Species69 rdf:type owl:NamedIndividual ,
@@ -10297,6 +11127,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasAcceptedName :AcceptedNameSpecies71 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/4566
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species72
 :Species72 rdf:type owl:NamedIndividual ,
                     :Species ;
@@ -10304,6 +11136,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasAcceptedName :AcceptedNameSpecies72 ;
            :hasScientificSynonym :ScientificSynonym72 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3189
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species73
 :Species73 rdf:type owl:NamedIndividual ,
@@ -10318,12 +11152,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasAcceptedName :AcceptedNameSpecies74 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3755
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species75
 :Species75 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/5457> ;
            :hasAcceptedName :AcceptedNameSpecies75 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/5457
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species757
 :Species757 rdf:type owl:NamedIndividual ,
@@ -10338,6 +11176,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasAcceptedName :AcceptedNameSpecies76 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1922
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species77
 :Species77 rdf:type owl:NamedIndividual ,
                     :Genus ;
@@ -10350,6 +11190,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/8559> ;
             :hasAcceptedName :AcceptedNameSpecies778 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/8559
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species78
 :Species78 rdf:type owl:NamedIndividual ,
@@ -10365,12 +11207,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasScientificSynonym :ScientificSynonym79 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7182
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species8
 :Species8 rdf:type owl:NamedIndividual ,
                    :Species ;
           owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7079> ;
           :hasAcceptedName :AcceptedNameSpecies8 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7079
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species80
 :Species80 rdf:type owl:NamedIndividual ,
@@ -10385,12 +11231,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasAcceptedName :AcceptedNameSpecies81 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/6481
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species82
 :Species82 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1011> ;
            :hasAcceptedName :AcceptedNameSpecies82 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1011
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species83
 :Species83 rdf:type owl:NamedIndividual ,
@@ -10399,12 +11249,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasAcceptedName :AcceptedNameSpecies83 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/4364
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species84
 :Species84 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1401> ;
            :hasAcceptedName :AcceptedNameSpecies84 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1401
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species85
 :Species85 rdf:type owl:NamedIndividual ,
@@ -10419,6 +11273,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies857 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7893
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species858
 :Species858 rdf:type owl:NamedIndividual ,
                      :Species ;
@@ -10426,6 +11282,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies858 ;
             :hasScientificSynonym :ScientificSynonym858 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1448
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species86
 :Species86 rdf:type owl:NamedIndividual ,
@@ -10435,12 +11293,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasScientificSynonym :ScientificSynonym86 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1386
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species87
 :Species87 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/9640> ;
            :hasAcceptedName :AcceptedNameSpecies87 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/9640
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species88
 :Species88 rdf:type owl:NamedIndividual ,
@@ -10449,6 +11311,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasAcceptedName :AcceptedNameSpecies88 ;
            :hasScientificSynonym :ScientificSynonym88 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1175
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species89
 :Species89 rdf:type owl:NamedIndividual ,
@@ -10463,6 +11327,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
           :hasAcceptedName :AcceptedNameSpecies9 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3728
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species90
 :Species90 rdf:type owl:NamedIndividual ,
                     :Class ;
@@ -10475,6 +11341,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/2860> ;
            :hasAcceptedName :AcceptedNameSpecies91 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/2860
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species917
 :Species917 rdf:type owl:NamedIndividual ,
@@ -10495,6 +11363,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasAcceptedName :AcceptedNameSpecies93 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7130
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species936
 :Species936 rdf:type owl:NamedIndividual ,
                      :Genus ;
@@ -10513,6 +11383,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/5728> ;
            :hasAcceptedName :AcceptedNameSpecies94 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/5728
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species95
 :Species95 rdf:type owl:NamedIndividual ,
@@ -10539,6 +11411,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             :hasAcceptedName :AcceptedNameSpecies957 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7900
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species96
 :Species96 rdf:type owl:NamedIndividual ,
                     :Species ;
@@ -10546,12 +11420,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasAcceptedName :AcceptedNameSpecies96 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7774
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species97
 :Species97 rdf:type owl:NamedIndividual ,
                     :Species ;
            owl:sameAs <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7950> ;
            :hasAcceptedName :AcceptedNameSpecies97 .
 
+
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/7950
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species975
 :Species975 rdf:type owl:NamedIndividual ,
@@ -10572,6 +11450,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
            :hasAcceptedName :AcceptedNameSpecies98 .
 
 
+###  https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3170
+
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species99
 :Species99 rdf:type owl:NamedIndividual ,
                     :Class ;
@@ -10590,6 +11470,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 
 
 ###  https://datos.iepnb.es/kos/sector-publico/medio-ambiente/ifn-altitud/-9999
+
+###  https://datos.iepnb.es/kos/sector-publico/medio-ambiente/ifn-altitud/-9999
 <https://datos.iepnb.es/kos/sector-publico/medio-ambiente/ifn-altitud/-9999> rdf:type owl:NamedIndividual .
 
 
@@ -10597,6 +11479,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 <https://datos.iepnb.es/kos/sector-publico/medio-ambiente/ifn-pendiente/-99> rdf:type owl:NamedIndividual ;
                                                                              owl:sameAs <https://datos.iepnb.es/kos/sector-publico/medio-ambiente/ifn-pendiente/-9999> .
 
+
+###  https://datos.iepnb.es/kos/sector-publico/medio-ambiente/ifn-pendiente/-9999
 
 ###  https://datos.iepnb.es/kos/sector-publico/medio-ambiente/ifn-pendiente/-9999
 <https://datos.iepnb.es/kos/sector-publico/medio-ambiente/ifn-pendiente/-9999> rdf:type owl:NamedIndividual .
@@ -11408,6 +12292,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/01
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/01> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "01" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Alava> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Álava"@es .
@@ -11416,6 +12301,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/02
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/02> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "02" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Albacete> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Albacete"@es .
@@ -11424,6 +12310,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/03
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/03> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "03" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Alicante> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Alicante"@es .
@@ -11432,6 +12319,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/04
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/04> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "04" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Almeria> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Almería"@es .
@@ -11440,6 +12328,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/05
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/05> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "05" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Avila> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Ávila"@es .
@@ -11448,6 +12337,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/06
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/06> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "06" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Badajoz> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Badajoz"@es .
@@ -11456,6 +12346,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/07
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/07> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "07" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Illes-Balears> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Baleares"@es .
@@ -11464,6 +12355,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/08
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/08> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "08" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Barcelona> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Barcelona"@es .
@@ -11472,6 +12364,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/09
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/09> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "09" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Burgos> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Burgos"@es .
@@ -11480,6 +12373,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/10
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/10> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "10" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Cáceres"@es .
@@ -11488,6 +12382,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/11
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/11> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "11" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cadiz> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Cádiz"@es .
@@ -11496,6 +12391,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/12
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/12> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "12" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Castellon> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Castellón"@es .
@@ -11504,6 +12400,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/13
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/13> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "13" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Ciudad-Real> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Ciudad real"@es .
@@ -11512,6 +12409,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/14
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/14> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "14" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cordoba> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Córdoba"@es .
@@ -11520,6 +12418,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/15
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/15> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "15" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/A-Coruna> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "La Coruña"@es .
@@ -11528,6 +12427,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/16
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/16> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "16" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cuenca> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Cuenca"@es .
@@ -11536,6 +12436,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/17
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/17> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "17" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Girona> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Gerona"@es .
@@ -11544,6 +12445,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/18
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/18> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "18" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Granada> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Granada"@es .
@@ -11552,6 +12454,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/19
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/19> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "19" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Guadalajara> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Guadalajara"@es .
@@ -11560,6 +12463,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/20
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/20> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "20" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Guipuzcoa> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Guipúzcoa"@es .
@@ -11568,6 +12472,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/21
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/21> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "21" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Huelva> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Huelva"@es .
@@ -11576,6 +12481,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/22
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/22> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "22" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Huesca> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Huesca"@es .
@@ -11584,6 +12490,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/23
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/23> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "23" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Jaen> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Jaén"@es .
@@ -11592,6 +12499,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/24
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/24> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "24" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Leon> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "León"@es .
@@ -11600,6 +12508,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/25
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/25> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "25" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Lleida> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Lérida"@es .
@@ -11608,6 +12517,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/26
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/26> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "26" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/La-Rioja> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "La Rioja"@es .
@@ -11616,6 +12526,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/27
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/27> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "27" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Lugo> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Lugo"@es .
@@ -11624,6 +12535,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/28
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/28> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "28" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Madrid> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Madrid"@es .
@@ -11632,6 +12544,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/29
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/29> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "29" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Malaga> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Málaga"@es .
@@ -11640,6 +12553,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/30
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/30> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "30" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Murcia> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Murcia"@es .
@@ -11648,6 +12562,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/31
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/31> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "31" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Navarra> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Navarra"@es .
@@ -11656,6 +12571,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/32
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/32> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "32" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Ourense> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Orense"@es .
@@ -11664,6 +12580,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/33
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/33> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "33" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Asturias> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Asturias"@es .
@@ -11672,6 +12589,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/34
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/34> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "34" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Palencia> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Palencia"@es .
@@ -11680,6 +12598,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/35
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/35> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "35" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Las-Palmas> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Las Palmas"@es .
@@ -11688,6 +12607,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/36
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/36> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "36" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Pontevedra> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Pontevedra"@es .
@@ -11696,6 +12616,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/37
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/37> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "37" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Salamanca> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Salamanca"@es .
@@ -11704,6 +12625,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/38
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/38> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "38" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Santa-Cruz-Tenerife> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Santa Cruz de Tenerife"@es .
@@ -11712,6 +12634,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/39
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/39> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "39" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cantabria> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Cantabria"@es .
@@ -11720,6 +12643,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/40
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/40> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "40" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Segovia> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Segovia"@es .
@@ -11728,6 +12652,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/41
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/41> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "41" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Sevilla> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Savilla"@es .
@@ -11736,6 +12661,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/42
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/42> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "42" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Soria> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Soria"@es .
@@ -11744,6 +12670,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/43
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/43> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "43" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Tarragona> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Tarragona"@es .
@@ -11752,6 +12679,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/44
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/44> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "44" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Teruel> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Teruel"@es .
@@ -11760,6 +12688,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/45
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/45> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "45" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Toledo> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Toledo"@es .
@@ -11768,6 +12697,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/46
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/46> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "46" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Valencia> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Valencia"@es .
@@ -11776,6 +12706,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/47
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/47> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "47" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Valladolid> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Valladolid"@es .
@@ -11784,6 +12715,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/48
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/48> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "48" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Vizcaya> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Vizcaya"@es .
@@ -11792,6 +12724,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/49
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/49> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "49" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Zamora> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Zamora"@es .
@@ -11800,6 +12733,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/50
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/50> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "50" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Zaragoza> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Zaragoza"@es .
@@ -11808,6 +12742,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/51
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/51> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "51" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Ceuta> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Ceuta"@es .
@@ -11816,6 +12751,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ###  https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/52
 <https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/52> rdf:type owl:NamedIndividual ,
                                                                                  :Province ;
+                                                                        :hasProvinceCode "52" ;
                                                                         <http://schema.org/sameAs> <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Melilla> ;
                                                                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
                                                                         rdfs:label "Melilla"@es .
@@ -15122,4 +16058,4 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
 ] .
 
 
-###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

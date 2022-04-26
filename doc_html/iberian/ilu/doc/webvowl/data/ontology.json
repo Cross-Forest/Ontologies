@@ -8,11 +8,11 @@
     "author" : [ "https://www.crossforest.eu/members/josgim", "https://www.crossforest.eu/members/guiveg" ],
     "labels" : {
       "en" : "Iberian Land Usage Ontology",
-      "es" : "Ontología ibérica de uso del suelo"
+      "es" : "OntologÃ­a ibÃ©rica de uso del suelo"
     },
     "comments" : {
       "en" : "Ontology to publish data about land use in the iberian peninsula",
-      "es" : "Ontología para publicar datos deuso del suelo en la península ibérica"
+      "es" : "OntologÃ­a para publicar datos deuso del suelo en la penÃ­nsula ibÃ©rica"
     },
     "other" : {
       "date" : [ {
@@ -24,12 +24,12 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://www.crossforest.eu/members/josgim",
+        "value" : "https://www.crossforest.eu/members/guiveg",
         "type" : "iri"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://www.crossforest.eu/members/guiveg",
+        "value" : "https://www.crossforest.eu/members/josgim",
         "type" : "iri"
       } ],
       "contributor" : [ {
@@ -129,10 +129,10 @@
     "id" : "33",
     "type" : "owl:Class"
   }, {
-    "id" : "7",
+    "id" : "39",
     "type" : "owl:Class"
   }, {
-    "id" : "39",
+    "id" : "7",
     "type" : "owl:Class"
   }, {
     "id" : "41",
@@ -159,7 +159,7 @@
     "label" : {
       "IRI-based" : "BiogeographicRegion",
       "en" : "Biogeographic Region",
-      "es" : "Región biogeográfica"
+      "es" : "RegiÃ³n biogeogrÃ¡fica"
     },
     "id" : "3"
   }, {
@@ -185,7 +185,7 @@
     },
     "label" : {
       "IRI-based" : "ForestLand",
-      "pt" : "Superfícies agroflorestais e Florestas",
+      "pt" : "SuperfÃ­cies agroflorestais e Florestas",
       "es" : "Bosques"
     },
     "comment" : { },
@@ -205,7 +205,7 @@
     },
     "label" : {
       "IRI-based" : "LandUse",
-      "pt" : "Uso e Ocupação do Solo",
+      "pt" : "Uso e OcupaÃ§Ã£o do Solo",
       "en" : "Land Use",
       "es" : "Uso de la Tierra"
     },
@@ -298,7 +298,7 @@
     "label" : {
       "IRI-based" : "ForestType",
       "en" : "Forest Type",
-      "es" : "Formación Arbolada"
+      "es" : "FormaciÃ³n Arbolada"
     },
     "id" : "22"
   }, {
@@ -365,7 +365,7 @@
     },
     "label" : {
       "IRI-based" : "SpatialDistribution",
-      "es" : "Distribución"
+      "es" : "DistribuciÃ³n"
     },
     "id" : "26"
   }, {
@@ -382,7 +382,7 @@
     },
     "label" : {
       "IRI-based" : "WetLand",
-      "pt" : "Zonas húmidas e massas de água superficiais",
+      "pt" : "Zonas hÃºmidas e massas de Ã¡gua superficiais",
       "es" : "Humedales y masas de agua"
     },
     "comment" : { },
@@ -412,7 +412,7 @@
     },
     "label" : {
       "IRI-based" : "TreelessLand",
-      "pt" : "Espaços descobertos ou com pouca vegetação e matos",
+      "pt" : "EspaÃ§os descobertos ou com pouca vegetaÃ§Ã£o e matos",
       "es" : "Terreno desarbolado"
     },
     "comment" : { },
@@ -442,7 +442,7 @@
     },
     "comment" : {
       "en" : "Canopy Cover of the Vegetation Structure",
-      "es" : "Representa la proporción total de la vegetación."
+      "es" : "Representa la proporciÃ³n total de la vegetaciÃ³n."
     },
     "id" : "34"
   }, {
@@ -460,7 +460,7 @@
     "label" : {
       "IRI-based" : "AgriculturalLand",
       "pt" : "Agricultura e Pastagens",
-      "es" : "Terreno agrícola"
+      "es" : "Terreno agrÃ­cola"
     },
     "comment" : { },
     "id" : "8",
@@ -534,7 +534,7 @@
     "label" : {
       "IRI-based" : "Classification",
       "en" : "Classification",
-      "es" : "Clasificación"
+      "es" : "ClasificaciÃ³n"
     },
     "id" : "37"
   }, {
@@ -555,26 +555,6 @@
     "comment" : { },
     "id" : "33",
     "superClasses" : [ "32" ]
-  }, {
-    "iri" : "http://crossforest.eu/ilu/ontology/ArtificialLand",
-    "baseIri" : "http://crossforest.eu/ilu/ontology",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/ilu/ontology/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "ArtificialLand",
-      "pt" : "Territórios artificializado",
-      "es" : "Territorios Artificiales"
-    },
-    "comment" : { },
-    "id" : "7",
-    "superClasses" : [ "4" ]
   }, {
     "iri" : "http://crossforest.eu/ilu/ontology/VegetationStructure",
     "baseIri" : "http://crossforest.eu/ilu/ontology",
@@ -599,6 +579,26 @@
       "es" : "Tipo Estructural"
     },
     "id" : "39"
+  }, {
+    "iri" : "http://crossforest.eu/ilu/ontology/ArtificialLand",
+    "baseIri" : "http://crossforest.eu/ilu/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ilu/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ArtificialLand",
+      "pt" : "TerritÃ³rios artificializado",
+      "es" : "Territorios Artificiales"
+    },
+    "comment" : { },
+    "id" : "7",
+    "superClasses" : [ "4" ]
   }, {
     "iri" : "http://crossforest.eu/ilu/ontology/TypeOfForest",
     "baseIri" : "http://crossforest.eu/ilu/ontology",
@@ -649,15 +649,15 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "28",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "31",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "29",
     "type" : "owl:objectProperty"
   }, {
     "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
     "type" : "owl:objectProperty"
   }, {
     "id" : "38",
@@ -740,7 +740,7 @@
       "IRI-based" : "hasMeasureinPercentage"
     },
     "domain" : "24",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "25"
   }, {
     "iri" : "http://crossforest.eu/ilu/ontology/containsUse",
@@ -767,17 +767,6 @@
     "attributes" : [ "object" ],
     "id" : "27"
   }, {
-    "iri" : "http://crossforest.eu/measures/ontology/hasMeasure",
-    "baseIri" : "http://crossforest.eu/measures/ontology",
-    "range" : "24",
-    "label" : {
-      "IRI-based" : "hasMeasure"
-    },
-    "domain" : "24",
-    "subproperty" : [ "29", "30" ],
-    "attributes" : [ "object", "external" ],
-    "id" : "28"
-  }, {
     "iri" : "http://crossforest.eu/ilu/ontology/hasPercentageOfPatch",
     "baseIri" : "http://crossforest.eu/ilu/ontology",
     "range" : "23",
@@ -795,7 +784,18 @@
     "domain" : "2",
     "comment" : { },
     "attributes" : [ "datatype" ],
-    "id" : "31"
+    "id" : "28"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/hasMeasure",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasMeasure"
+    },
+    "domain" : "24",
+    "subproperty" : [ "30", "31" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "29"
   }, {
     "iri" : "http://crossforest.eu/ilu/ontology/hasPatch",
     "baseIri" : "http://crossforest.eu/ilu/ontology",
@@ -813,11 +813,11 @@
       "en" : "has patch",
       "es" : "tiene tesela"
     },
-    "superproperty" : [ "28" ],
+    "superproperty" : [ "29" ],
     "domain" : "12",
     "comment" : { },
     "attributes" : [ "object" ],
-    "id" : "29"
+    "id" : "30"
   }, {
     "iri" : "http://crossforest.eu/ilu/ontology/hasUse",
     "baseIri" : "http://crossforest.eu/ilu/ontology",
@@ -835,11 +835,11 @@
       "en" : "has use",
       "es" : "tiene uso"
     },
-    "superproperty" : [ "28" ],
+    "superproperty" : [ "29" ],
     "domain" : "13",
     "comment" : { },
     "attributes" : [ "object" ],
-    "id" : "30"
+    "id" : "31"
   }, {
     "range" : "4",
     "domain" : "9",

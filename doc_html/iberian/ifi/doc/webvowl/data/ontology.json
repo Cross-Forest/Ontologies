@@ -5,21 +5,21 @@
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://crossforest.eu/measures/ontology", "http://www.w3.org/2000/01/rdf-schema", "http://crossforest.eu/ifi/ontology", "http://crossforest.eu/position/ontology", "http://www.w3.org/2001/XMLSchema" ],
     "title" : {
       "en" : "Iberian Forestry Inventory Ontology",
-      "es" : "OntologÌa ibÈrica de inventario forestal"
+      "es" : "Ontolog√≠a ib√©rica de inventario forestal"
     },
     "iri" : "http://crossforest.eu/ifi/ontology/",
     "version" : "0.1",
     "author" : [ "https://www.crossforest.eu/members/dportoles", "https://www.crossforest.eu/members/guiveg" ],
     "description" : {
       "en" : "Ontology to publish data about forestry inventory in the Iberian Peninsula",
-      "es" : "OntologÌa para publicar datos de inventario forestal en la PenÌnsula ibÈrica"
+      "es" : "Ontolog√≠a para publicar datos de inventario forestal en la Pen√≠nsula ib√©rica"
     },
     "labels" : {
-      "es" : "OntologÌa ibÈrica de inventario forestal"
+      "es" : "Ontolog√≠a ib√©rica de inventario forestal"
     },
     "comments" : {
       "en" : "Ontology to publish data about forestry inventory in the Iberian Peninsula",
-      "es" : "OntologÌa para publicar datos de inventario forestal en la PenÌnsula ibÈrica"
+      "es" : "Ontolog√≠a para publicar datos de inventario forestal en la Pen√≠nsula ib√©rica"
     },
     "other" : {
       "date" : [ {
@@ -54,7 +54,7 @@
       "title" : [ {
         "identifier" : "title",
         "language" : "es",
-        "value" : "OntologÌa ibÈrica de inventario forestal",
+        "value" : "Ontolog√≠a ib√©rica de inventario forestal",
         "type" : "label"
       }, {
         "identifier" : "title",
@@ -93,7 +93,7 @@
     "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "19",
+    "id" : "20",
     "type" : "owl:Class"
   }, {
     "id" : "23",
@@ -111,7 +111,7 @@
     "id" : "38",
     "type" : "owl:Class"
   }, {
-    "id" : "20",
+    "id" : "19",
     "type" : "owl:Class"
   }, {
     "id" : "40",
@@ -156,10 +156,10 @@
     "id" : "22",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "48",
+    "id" : "29",
     "type" : "owl:Class"
   }, {
-    "id" : "29",
+    "id" : "48",
     "type" : "owl:Class"
   }, {
     "id" : "49",
@@ -191,16 +191,16 @@
     "baseIri" : "http://crossforest.eu/ifi/ontology",
     "instances" : 0,
     "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/ifi/ontology/",
-        "type" : "iri"
-      } ],
       "exactMatch" : [ {
         "identifier" : "exactMatch",
         "language" : "undefined",
         "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Textura",
+        "type" : "iri"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifi/ontology/",
         "type" : "iri"
       } ]
     },
@@ -231,7 +231,7 @@
     "label" : {
       "IRI-based" : "OrganicMatter",
       "en" : "Organic Matter",
-      "es" : "Materia Org·nica"
+      "es" : "Materia Org√°nica"
     },
     "id" : "1"
   }, {
@@ -254,12 +254,12 @@
     },
     "label" : {
       "IRI-based" : "BasalArea",
-      "pt" : "¡rea basal",
+      "pt" : "√Årea basal",
       "en" : "Basal Area",
-      "es" : "¡rea BasimÈtrica"
+      "es" : "√Årea Basim√©trica"
     },
     "comment" : {
-      "pt" : "Soma das ·reas seccionais das ·rvores a 1,30 m do solo."
+      "pt" : "Soma das √°reas seccionais das √°rvores a 1,30 m do solo."
     },
     "id" : "5",
     "superClasses" : [ "6" ]
@@ -326,16 +326,16 @@
     "baseIri" : "http://crossforest.eu/ifi/ontology",
     "instances" : 0,
     "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/ifi/ontology/",
-        "type" : "iri"
-      } ],
       "exactMatch" : [ {
         "identifier" : "exactMatch",
         "language" : "undefined",
         "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Rocosidad",
+        "type" : "iri"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifi/ontology/",
         "type" : "iri"
       } ]
     },
@@ -366,9 +366,19 @@
     "label" : {
       "IRI-based" : "Composition",
       "en" : "Composition of Vegetation",
-      "es" : "ComposiciÛn EspecÌfica"
+      "es" : "Composici√≥n Espec√≠fica"
     },
     "id" : "17"
+  }, {
+    "iri" : "http://crossforest.eu/measures/ontology/MeasureInUnities",
+    "baseIri" : "http://crossforest.eu/measures/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MeasureInUnities"
+    },
+    "subClasses" : [ "19" ],
+    "attributes" : [ "external" ],
+    "id" : "18"
   }, {
     "iri" : "http://crossforest.eu/ifi/ontology/SpatialDistribution",
     "baseIri" : "http://crossforest.eu/ifi/ontology",
@@ -390,19 +400,9 @@
     "label" : {
       "IRI-based" : "SpatialDistribution",
       "en" : "Spatial Distribution",
-      "es" : "DistribuciÛn Espacial"
+      "es" : "Distribuci√≥n Espacial"
     },
-    "id" : "18"
-  }, {
-    "iri" : "http://crossforest.eu/measures/ontology/MeasureInUnities",
-    "baseIri" : "http://crossforest.eu/measures/ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MeasureInUnities"
-    },
-    "subClasses" : [ "20" ],
-    "attributes" : [ "external" ],
-    "id" : "19"
+    "id" : "20"
   }, {
     "iri" : "http://crossforest.eu/ifi/ontology/DeadLayer",
     "baseIri" : "http://crossforest.eu/ifi/ontology",
@@ -471,9 +471,9 @@
     },
     "label" : {
       "IRI-based" : "InfoDominantFormation",
-      "pt" : "InformaÁ„o sobre espÈcie de ·rvore dominante",
+      "pt" : "Informa√ß√£o sobre esp√©cie de √°rvore dominante",
       "en" : "Info about dominant formation",
-      "es" : "InformaciÛn sobre la formaciÛn dominante"
+      "es" : "Informaci√≥n sobre la formaci√≥n dominante"
     },
     "id" : "3"
   }, {
@@ -490,9 +490,9 @@
     },
     "label" : {
       "IRI-based" : "InfoDominantFormationByHa",
-      "pt" : "InformaÁ„o sobre espÈcie de ·rvore dominante por hectare",
+      "pt" : "Informa√ß√£o sobre esp√©cie de √°rvore dominante por hectare",
       "en" : "Info about dominant formation by hectare",
-      "es" : "InformaciÛn sobre la formaciÛn dominante por hect·rea"
+      "es" : "Informaci√≥n sobre la formaci√≥n dominante por hect√°rea"
     },
     "id" : "15"
   }, {
@@ -524,42 +524,42 @@
     "baseIri" : "http://crossforest.eu/ifi/ontology",
     "instances" : 0,
     "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/ifi/ontology/",
-        "type" : "iri"
-      } ],
       "exactMatch" : [ {
         "identifier" : "exactMatch",
         "language" : "undefined",
         "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/NumberOfTrees",
         "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "NumberOfTrees",
-      "pt" : "N˙mero de ·rvores",
-      "en" : "Number of trees",
-      "es" : "N˙mero de ·rboles"
-    },
-    "id" : "20",
-    "superClasses" : [ "19" ]
-  }, {
-    "iri" : "http://crossforest.eu/ifi/ontology/Altitude",
-    "baseIri" : "http://crossforest.eu/ifi/ontology",
-    "instances" : 0,
-    "annotations" : {
-      "exactMatch" : [ {
-        "identifier" : "exactMatch",
-        "language" : "undefined",
-        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Altitud",
-        "type" : "iri"
       } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "http://crossforest.eu/ifi/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NumberOfTrees",
+      "pt" : "N√∫mero de √°rvores",
+      "en" : "Number of trees",
+      "es" : "N√∫mero de √°rboles"
+    },
+    "id" : "19",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifi/ontology/Altitude",
+    "baseIri" : "http://crossforest.eu/ifi/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifi/ontology/",
+        "type" : "iri"
+      } ],
+      "exactMatch" : [ {
+        "identifier" : "exactMatch",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Altitud",
         "type" : "iri"
       } ]
     },
@@ -611,12 +611,12 @@
       "closeMatch" : [ {
         "identifier" : "closeMatch",
         "language" : "undefined",
-        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Stratum",
+        "value" : "http://crossforest.eu/ifn-pt/ontology/DominantFormation_PT_6",
         "type" : "iri"
       }, {
         "identifier" : "closeMatch",
         "language" : "undefined",
-        "value" : "http://crossforest.eu/ifn-pt/ontology/DominantFormation_PT_6",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Stratum",
         "type" : "iri"
       } ]
     },
@@ -624,11 +624,11 @@
       "IRI-based" : "DominantFormation",
       "pt" : "Tipos de povoamentos florestais",
       "en" : "Dominant formation",
-      "es" : "FormaciÛn dominante"
+      "es" : "Formaci√≥n dominante"
     },
     "comment" : {
-      "pt" : "EspÈcie de ·rvore existente num povoamento florestal com a maior percentagem de coberto.",
-      "es" : "En el Inventario Forestal Nacional se corresponde con el concepto de Estrato, el cual depende de cada provincia y versiÛn de inventario."
+      "pt" : "Esp√©cie de √°rvore existente num povoamento florestal com a maior percentagem de coberto.",
+      "es" : "En Portugal es una categorizaci√≥n nacional, la misma para todos los NUTS3 en el caso del invetario portugu√©s en versi√≥n 6."
     },
     "id" : "4"
   }, {
@@ -671,9 +671,9 @@
     },
     "subClasses" : [ "37", "31", "29" ],
     "comment" : {
-      "pt" : "NUTS classificaÁ„o (Nomenclatura das Unidades Territoriais para Fins EstatÌsticos).",
+      "pt" : "NUTS classifica√ß√£o (Nomenclatura das Unidades Territoriais para Fins Estat√≠sticos).",
       "en" : "NUTS classification (Nomenclature of territorial units for statistics)",
-      "es" : "ClasificaciÛn NUTS (Nomenclatura de las Unidades Territoriales EstadÌsticas)."
+      "es" : "Clasificaci√≥n NUTS (Nomenclatura de las Unidades Territoriales Estad√≠sticas)."
     },
     "id" : "9",
     "superClasses" : [ "12" ]
@@ -705,7 +705,7 @@
     "label" : {
       "IRI-based" : "Orientation",
       "en" : "Orientation",
-      "es" : "OrientaciÛn"
+      "es" : "Orientaci√≥n"
     },
     "id" : "47"
   }, {
@@ -722,9 +722,9 @@
     },
     "label" : {
       "IRI-based" : "NUTS2",
-      "pt" : "Regi„o",
+      "pt" : "Regi√£o",
       "en" : "Basic region for the application of regional policies",
-      "es" : "RegiÛn b·sica para la aplicaciÛn de polÌticas regionales"
+      "es" : "Regi√≥n b√°sica para la aplicaci√≥n de pol√≠ticas regionales"
     },
     "individuals" : [ {
       "iri" : "http://crossforest.eu/ifi/data/nuts2/ES/ES13",
@@ -763,27 +763,22 @@
       "iri" : "http://crossforest.eu/ifi/data/nuts2/ES/ES51",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts2/ES",
       "annotations" : {
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES51",
-          "type" : "iri"
-        } ],
         "isDefinedBy" : [ {
           "identifier" : "isDefinedBy",
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/ontology/",
           "type" : "iri"
         } ],
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES51",
+          "type" : "iri"
+        } ],
         "narrower" : [ {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES514",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES513",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES511",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
@@ -793,7 +788,12 @@
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES511",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES514",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES513",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -805,40 +805,7 @@
       },
       "labels" : {
         "IRI-based" : "ES51",
-        "undefined" : "CATALU—A"
-      }
-    }, {
-      "iri" : "http://crossforest.eu/ifi/data/nuts2/ES/ES30",
-      "baseIri" : "http://crossforest.eu/ifi/data/nuts2/ES",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES30",
-          "type" : "iri"
-        } ],
-        "narrower" : [ {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES300",
-          "type" : "iri"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts1/ES/ES3",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "ES30",
-        "undefined" : "COMUNIDAD DE MADRID"
+        "undefined" : "CATALU√ëA"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts2/ES/ES52",
@@ -864,12 +831,12 @@
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES523",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES522",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES522",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES523",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -882,6 +849,39 @@
       "labels" : {
         "IRI-based" : "ES52",
         "undefined" : "COMUNIDAD VALENCIANA"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifi/data/nuts2/ES/ES30",
+      "baseIri" : "http://crossforest.eu/ifi/data/nuts2/ES",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES30",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "narrower" : [ {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES300",
+          "type" : "iri"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts1/ES/ES3",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ES30",
+        "undefined" : "COMUNIDAD DE MADRID"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts2/ES/ES11",
@@ -912,12 +912,12 @@
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES113",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES114",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES114",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES113",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -935,16 +935,16 @@
       "iri" : "http://crossforest.eu/ifi/data/nuts2/ES/ES12",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts2/ES",
       "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
         "exactMatch" : [ {
           "identifier" : "exactMatch",
           "language" : "undefined",
           "value" : "http://nuts.geovocab.org/id/ES12",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
           "type" : "iri"
         } ],
         "narrower" : [ {
@@ -968,27 +968,27 @@
       "iri" : "http://crossforest.eu/ifi/data/nuts2/ES/ES53",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts2/ES",
       "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
         "exactMatch" : [ {
           "identifier" : "exactMatch",
           "language" : "undefined",
           "value" : "http://nuts.geovocab.org/id/ES53",
           "type" : "iri"
         } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
         "narrower" : [ {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES531",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES533",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES533",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES531",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
@@ -1038,7 +1038,7 @@
       },
       "labels" : {
         "IRI-based" : "PT30",
-        "undefined" : "Regi„o AutÛnoma da Madeira (NUTS 2)"
+        "undefined" : "Regi√£o Aut√≥noma da Madeira (NUTS 2)"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts2/PT/PT11",
@@ -1059,17 +1059,17 @@
         "narrower" : [ {
           "identifier" : "narrower",
           "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11D",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT111",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11B",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11C",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11A",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
@@ -1079,7 +1079,7 @@
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11D",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11C",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
@@ -1089,12 +1089,12 @@
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11E",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11B",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11A",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11E",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -1160,32 +1160,17 @@
         "narrower" : [ {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16E",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16J",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16F",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16D",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16G",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16I",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16I",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16J",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
@@ -1196,6 +1181,21 @@
           "identifier" : "narrower",
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16H",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16G",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16E",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16F",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -1261,7 +1261,7 @@
         "narrower" : [ {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT185",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT184",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
@@ -1271,17 +1271,17 @@
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT181",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT187",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT184",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT181",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/PT/PT185",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -1299,16 +1299,16 @@
       "iri" : "http://crossforest.eu/ifi/data/nuts2/ES/ES24",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts2/ES",
       "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
         "exactMatch" : [ {
           "identifier" : "exactMatch",
           "language" : "undefined",
           "value" : "http://nuts.geovocab.org/id/ES24",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
           "type" : "iri"
         } ],
         "narrower" : [ {
@@ -1319,12 +1319,12 @@
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES241",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES242",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES242",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES241",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -1336,22 +1336,22 @@
       },
       "labels" : {
         "IRI-based" : "ES24",
-        "undefined" : "ARAG”N"
+        "undefined" : "ARAG√ìN"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts2/ES/ES62",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts2/ES",
       "annotations" : {
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES62",
-          "type" : "iri"
-        } ],
         "isDefinedBy" : [ {
           "identifier" : "isDefinedBy",
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES62",
           "type" : "iri"
         } ],
         "narrower" : [ {
@@ -1369,38 +1369,28 @@
       },
       "labels" : {
         "IRI-based" : "ES62",
-        "undefined" : "REGI”N DE MURCIA"
+        "undefined" : "REGI√ìN DE MURCIA"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts2/ES/ES41",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts2/ES",
       "annotations" : {
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES41",
-          "type" : "iri"
-        } ],
         "isDefinedBy" : [ {
           "identifier" : "isDefinedBy",
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/ontology/",
           "type" : "iri"
         } ],
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES41",
+          "type" : "iri"
+        } ],
         "narrower" : [ {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES412",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES417",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES414",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES419",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
@@ -1410,17 +1400,17 @@
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES417",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES413",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES419",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES415",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES411",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
@@ -1430,7 +1420,17 @@
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES411",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES412",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES414",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES415",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -1442,22 +1442,22 @@
       },
       "labels" : {
         "IRI-based" : "ES41",
-        "undefined" : "CASTILLA Y LE”N"
+        "undefined" : "CASTILLA Y LE√ìN"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts2/ES/ES63",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts2/ES",
       "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
         "exactMatch" : [ {
           "identifier" : "exactMatch",
           "language" : "undefined",
           "value" : "http://nuts.geovocab.org/id/ES63",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
           "type" : "iri"
         } ],
         "narrower" : [ {
@@ -1475,7 +1475,7 @@
       },
       "labels" : {
         "IRI-based" : "ES63",
-        "undefined" : "CIUDAD AUT”NOMA DE CEUTA"
+        "undefined" : "CIUDAD AUT√ìNOMA DE CEUTA"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts2/ES/ES61",
@@ -1496,17 +1496,12 @@
         "narrower" : [ {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES613",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES617",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES616",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES615",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
@@ -1521,7 +1516,12 @@
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES617",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES613",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES614",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
@@ -1531,7 +1531,7 @@
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES614",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES615",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -1543,22 +1543,22 @@
       },
       "labels" : {
         "IRI-based" : "ES61",
-        "undefined" : "ANDALUCÕA"
+        "undefined" : "ANDALUC√çA"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts2/ES/ES22",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts2/ES",
       "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
         "exactMatch" : [ {
           "identifier" : "exactMatch",
           "language" : "undefined",
           "value" : "http://nuts.geovocab.org/id/ES22",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
           "type" : "iri"
         } ],
         "narrower" : [ {
@@ -1582,16 +1582,16 @@
       "iri" : "http://crossforest.eu/ifi/data/nuts2/ES/ES23",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts2/ES",
       "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
         "exactMatch" : [ {
           "identifier" : "exactMatch",
           "language" : "undefined",
           "value" : "http://nuts.geovocab.org/id/ES23",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
           "type" : "iri"
         } ],
         "narrower" : [ {
@@ -1612,39 +1612,6 @@
         "undefined" : "LA RIOJA"
       }
     }, {
-      "iri" : "http://crossforest.eu/ifi/data/nuts2/ES/ES64",
-      "baseIri" : "http://crossforest.eu/ifi/data/nuts2/ES",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES64",
-          "type" : "iri"
-        } ],
-        "narrower" : [ {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES640",
-          "type" : "iri"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts1/ES/ES6",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "ES64",
-        "undefined" : "CIUDAD AUT”NOMA DE MELILLA"
-      }
-    }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts2/ES/ES42",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts2/ES",
       "annotations" : {
@@ -1663,7 +1630,7 @@
         "narrower" : [ {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES423",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES425",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
@@ -1673,17 +1640,17 @@
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES425",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES424",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES423",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES421",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES424",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -1696,6 +1663,39 @@
       "labels" : {
         "IRI-based" : "ES42",
         "undefined" : "CASTILLA-LA MANCHA"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifi/data/nuts2/ES/ES64",
+      "baseIri" : "http://crossforest.eu/ifi/data/nuts2/ES",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES64",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "narrower" : [ {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES640",
+          "type" : "iri"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts1/ES/ES6",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ES64",
+        "undefined" : "CIUDAD AUT√ìNOMA DE MELILLA"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts2/ES/ES21",
@@ -1721,12 +1721,12 @@
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES212",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES211",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES211",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES212",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -1738,7 +1738,7 @@
       },
       "labels" : {
         "IRI-based" : "ES21",
-        "undefined" : "PAÕS VASCO"
+        "undefined" : "PA√çS VASCO"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts2/ES/ES43",
@@ -1759,12 +1759,12 @@
         "narrower" : [ {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES432",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES431",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES431",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES432",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -1809,7 +1809,7 @@
       },
       "labels" : {
         "IRI-based" : "PT20",
-        "undefined" : "Regi„o AutÛnoma dos AÁores (NUTS 2)"
+        "undefined" : "Regi√£o Aut√≥noma dos A√ßores (NUTS 2)"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts2/ES/ES70",
@@ -1830,12 +1830,7 @@
         "narrower" : [ {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES709",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES707",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES705",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
@@ -1850,17 +1845,22 @@
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES706",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES703",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES705",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES706",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES709",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts3/ES/ES707",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -1876,8 +1876,8 @@
       }
     } ],
     "comment" : {
-      "pt" : "As NUTS II correspondem ao sete unidades, as regiıes, das quais cinco no continente e os territÛrios das Regiıes AutÛnomas dos AÁores e da Madeira",
-      "es" : "En EspaÒa se corresponden con Comunidades y ciudades autÛnomas"
+      "pt" : "As NUTS II correspondem ao sete unidades, as regi√µes, das quais cinco no continente e os territ√≥rios das Regi√µes Aut√≥nomas dos A√ßores e da Madeira",
+      "es" : "En Espa√±a se corresponden con Comunidades y ciudades aut√≥nomas"
     },
     "id" : "37",
     "superClasses" : [ "9" ]
@@ -1895,27 +1895,32 @@
     },
     "label" : {
       "IRI-based" : "NUTS1",
-      "pt" : "Sub-regi„o",
+      "pt" : "Sub-regi√£o",
       "en" : "Major socio-economic region",
-      "es" : "Gran regiÛn socioeconÛmica"
+      "es" : "Gran regi√≥n socioecon√≥mica"
     },
     "individuals" : [ {
       "iri" : "http://crossforest.eu/ifi/data/nuts1/ES/ES4",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts1/ES",
       "annotations" : {
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES4",
-          "type" : "iri"
-        } ],
         "isDefinedBy" : [ {
           "identifier" : "isDefinedBy",
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/ontology/",
           "type" : "iri"
         } ],
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES4",
+          "type" : "iri"
+        } ],
         "narrower" : [ {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES43",
+          "type" : "iri"
+        }, {
           "identifier" : "narrower",
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES41",
@@ -1924,11 +1929,6 @@
           "identifier" : "narrower",
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES42",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES43",
           "type" : "iri"
         } ]
       },
@@ -1988,16 +1988,58 @@
       },
       "labels" : {
         "IRI-based" : "PT2",
-        "undefined" : "Regi„o AutÛnoma dos AÁores (NUTS 1)"
+        "undefined" : "Regi√£o Aut√≥noma dos A√ßores (NUTS 1)"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts1/ES/ES6",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts1/ES",
       "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
         "exactMatch" : [ {
           "identifier" : "exactMatch",
           "language" : "undefined",
           "value" : "http://nuts.geovocab.org/id/ES6",
+          "type" : "iri"
+        } ],
+        "narrower" : [ {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES63",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES61",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES62",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES64",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ES6",
+        "undefined" : "SUR"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifi/data/nuts1/PT/PT1",
+      "baseIri" : "http://crossforest.eu/ifi/data/nuts1/PT",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/PT1",
           "type" : "iri"
         } ],
         "isDefinedBy" : [ {
@@ -2009,28 +2051,33 @@
         "narrower" : [ {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES61",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/PT/PT11",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES63",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/PT/PT15",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES64",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/PT/PT17",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES62",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/PT/PT18",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/PT/PT16",
           "type" : "iri"
         } ]
       },
       "labels" : {
-        "IRI-based" : "ES6",
-        "undefined" : "SUR"
+        "IRI-based" : "PT1",
+        "undefined" : "Continente"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts1/ES/ES5",
@@ -2051,17 +2098,17 @@
         "narrower" : [ {
           "identifier" : "narrower",
           "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES53",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES52",
           "type" : "iri"
         }, {
           "identifier" : "narrower",
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES51",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES53",
           "type" : "iri"
         } ]
       },
@@ -2070,74 +2117,22 @@
         "undefined" : "ESTE"
       }
     }, {
-      "iri" : "http://crossforest.eu/ifi/data/nuts1/PT/PT1",
-      "baseIri" : "http://crossforest.eu/ifi/data/nuts1/PT",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/PT1",
-          "type" : "iri"
-        } ],
-        "narrower" : [ {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/PT/PT15",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/PT/PT17",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/PT/PT11",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/PT/PT18",
-          "type" : "iri"
-        }, {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/PT/PT16",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "PT1",
-        "undefined" : "Continente"
-      }
-    }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts1/ES/ES2",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts1/ES",
       "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
         "exactMatch" : [ {
           "identifier" : "exactMatch",
           "language" : "undefined",
           "value" : "http://nuts.geovocab.org/id/ES2",
           "type" : "iri"
         } ],
-        "narrower" : [ {
-          "identifier" : "narrower",
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
           "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES22",
+          "value" : "http://crossforest.eu/ifi/ontology/",
           "type" : "iri"
-        }, {
+        } ],
+        "narrower" : [ {
           "identifier" : "narrower",
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES24",
@@ -2152,6 +2147,11 @@
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES21",
           "type" : "iri"
+        }, {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES22",
+          "type" : "iri"
         } ]
       },
       "labels" : {
@@ -2162,16 +2162,16 @@
       "iri" : "http://crossforest.eu/ifi/data/nuts1/ES/ES1",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts1/ES",
       "annotations" : {
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES1",
-          "type" : "iri"
-        } ],
         "isDefinedBy" : [ {
           "identifier" : "isDefinedBy",
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES1",
           "type" : "iri"
         } ],
         "narrower" : [ {
@@ -2220,7 +2220,7 @@
       },
       "labels" : {
         "IRI-based" : "PT3",
-        "undefined" : "Regi„o AutÛnoma da Madeira (NUTS 1)"
+        "undefined" : "Regi√£o Aut√≥noma da Madeira (NUTS 1)"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts1/ES/ES7",
@@ -2251,8 +2251,8 @@
       }
     } ],
     "comment" : {
-      "pt" : "As NUTS I correspondem ao trÍs unidades, correspondentes ao territÛrio do continente e de cada uma das Regiıes AutÛnomas dos AÁores e da Madeira",
-      "es" : "En EspaÒa se corresponden con la agrupaciÛn de comunidades autÛnomas"
+      "pt" : "As NUTS I correspondem ao tr√™s unidades, correspondentes ao territ√≥rio do continente e de cada uma das Regi√µes Aut√≥nomas dos A√ßores e da Madeira",
+      "es" : "En Espa√±a se corresponden con la agrupaci√≥n de comunidades aut√≥nomas"
     },
     "id" : "31",
     "superClasses" : [ "9" ]
@@ -2263,30 +2263,6 @@
     "label" : {
       "IRI-based" : "float"
     }
-  }, {
-    "iri" : "http://crossforest.eu/ifi/ontology/Erosion",
-    "baseIri" : "http://crossforest.eu/ifi/ontology",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/ifi/ontology/",
-        "type" : "iri"
-      } ],
-      "closeMatch" : [ {
-        "identifier" : "closeMatch",
-        "language" : "undefined",
-        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/ManifestacionesErosivas",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Erosion",
-      "en" : "Erosion",
-      "es" : "ErosiÛn"
-    },
-    "id" : "48"
   }, {
     "iri" : "http://crossforest.eu/ifi/ontology/NUTS3",
     "baseIri" : "http://crossforest.eu/ifi/ontology",
@@ -2307,9 +2283,9 @@
     },
     "label" : {
       "IRI-based" : "NUTS3",
-      "pt" : "Sub-regi„o",
+      "pt" : "Sub-regi√£o",
       "en" : "Small region for specific diagnoses",
-      "es" : "SubregiÛn"
+      "es" : "Subregi√≥n"
     },
     "individuals" : [ {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11E",
@@ -2330,7 +2306,7 @@
       },
       "labels" : {
         "IRI-based" : "PT11E",
-        "undefined" : "Terras de Tr·s-os-Montes"
+        "undefined" : "Terras de Tr√°s-os-Montes"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES618",
@@ -2378,7 +2354,7 @@
       },
       "labels" : {
         "IRI-based" : "PT11C",
-        "undefined" : "T‚mega e Sousa"
+        "undefined" : "T√¢mega e Sousa"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11D",
@@ -2420,7 +2396,7 @@
       },
       "labels" : {
         "IRI-based" : "PT11A",
-        "undefined" : "¡rea Metropolitana do Porto"
+        "undefined" : "√Årea Metropolitana do Porto"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11B",
@@ -2441,22 +2417,22 @@
       },
       "labels" : {
         "IRI-based" : "PT11B",
-        "undefined" : "Alto T‚mega"
+        "undefined" : "Alto T√¢mega"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES613",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
       "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
         "exactMatch" : [ {
           "identifier" : "exactMatch",
           "language" : "undefined",
           "value" : "http://nuts.geovocab.org/id/ES613",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -2468,7 +2444,7 @@
       },
       "labels" : {
         "IRI-based" : "ES613",
-        "undefined" : "C”RDOBA"
+        "undefined" : "C√ìRDOBA"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES415",
@@ -2528,16 +2504,16 @@
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES612",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
       "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
         "exactMatch" : [ {
           "identifier" : "exactMatch",
           "language" : "undefined",
           "value" : "http://nuts.geovocab.org/id/ES612",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -2549,34 +2525,7 @@
       },
       "labels" : {
         "IRI-based" : "ES612",
-        "undefined" : "C¡DIZ"
-      }
-    }, {
-      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES413",
-      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
-      "annotations" : {
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES413",
-          "type" : "iri"
-        } ],
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES41",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "ES413",
-        "undefined" : "LE”N"
+        "undefined" : "C√ÅDIZ"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES611",
@@ -2603,7 +2552,34 @@
       },
       "labels" : {
         "IRI-based" : "ES611",
-        "undefined" : "ALMERÕA"
+        "undefined" : "ALMER√çA"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES413",
+      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES413",
+          "type" : "iri"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES41",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ES413",
+        "undefined" : "LE√ìN"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES412",
@@ -2636,16 +2612,16 @@
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES533",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
       "annotations" : {
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES533",
-          "type" : "iri"
-        } ],
         "isDefinedBy" : [ {
           "identifier" : "isDefinedBy",
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES533",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -2663,16 +2639,16 @@
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES419",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
       "annotations" : {
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES419",
-          "type" : "iri"
-        } ],
         "isDefinedBy" : [ {
           "identifier" : "isDefinedBy",
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES419",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -2690,16 +2666,16 @@
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES617",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
       "annotations" : {
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES617",
-          "type" : "iri"
-        } ],
         "isDefinedBy" : [ {
           "identifier" : "isDefinedBy",
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES617",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -2711,7 +2687,7 @@
       },
       "labels" : {
         "IRI-based" : "ES617",
-        "undefined" : "M¡LAGA"
+        "undefined" : "M√ÅLAGA"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES616",
@@ -2738,7 +2714,7 @@
       },
       "labels" : {
         "IRI-based" : "ES616",
-        "undefined" : "JA…N"
+        "undefined" : "JA√âN"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES418",
@@ -2822,33 +2798,6 @@
         "undefined" : "SORIA"
       }
     }, {
-      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES416",
-      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES416",
-          "type" : "iri"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES41",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "ES416",
-        "undefined" : "SEGOVIA"
-      }
-    }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES614",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
       "annotations" : {
@@ -2876,19 +2825,46 @@
         "undefined" : "GRANADA"
       }
     }, {
-      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES220",
+      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES416",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
       "annotations" : {
         "exactMatch" : [ {
           "identifier" : "exactMatch",
           "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES220",
+          "value" : "http://nuts.geovocab.org/id/ES416",
           "type" : "iri"
         } ],
         "isDefinedBy" : [ {
           "identifier" : "isDefinedBy",
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES41",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ES416",
+        "undefined" : "SEGOVIA"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES220",
+      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES220",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -2906,16 +2882,16 @@
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES620",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
       "annotations" : {
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES620",
-          "type" : "iri"
-        } ],
         "isDefinedBy" : [ {
           "identifier" : "isDefinedBy",
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES620",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -2927,22 +2903,22 @@
       },
       "labels" : {
         "IRI-based" : "ES620",
-        "undefined" : "REGI”N DE MURCIA (NUTS 3)"
+        "undefined" : "REGI√ìN DE MURCIA (NUTS 3)"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES422",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
       "annotations" : {
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES422",
-          "type" : "iri"
-        } ],
         "isDefinedBy" : [ {
           "identifier" : "isDefinedBy",
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES422",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -2955,6 +2931,33 @@
       "labels" : {
         "IRI-based" : "ES422",
         "undefined" : "CIUDAD REAL"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES421",
+      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES421",
+          "type" : "iri"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES42",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ES421",
+        "undefined" : "ALBACETE"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES300",
@@ -2984,33 +2987,6 @@
         "undefined" : "COMUNIDAD DE MADRID (NUTS 3)"
       }
     }, {
-      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES421",
-      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
-      "annotations" : {
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES421",
-          "type" : "iri"
-        } ],
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES42",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "ES421",
-        "undefined" : "ALBACETE"
-      }
-    }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/PT/PT200",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/PT",
       "annotations" : {
@@ -3029,7 +3005,7 @@
       },
       "labels" : {
         "IRI-based" : "PT200",
-        "undefined" : "Regi„o AutÛnoma dos AÁores"
+        "undefined" : "Regi√£o Aut√≥noma dos A√ßores"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16D",
@@ -3050,7 +3026,7 @@
       },
       "labels" : {
         "IRI-based" : "PT16D",
-        "undefined" : "Regi„o de Aveiro"
+        "undefined" : "Regi√£o de Aveiro"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16E",
@@ -3071,7 +3047,7 @@
       },
       "labels" : {
         "IRI-based" : "PT16E",
-        "undefined" : "Regi„o de Coimbra"
+        "undefined" : "Regi√£o de Coimbra"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16B",
@@ -3098,16 +3074,16 @@
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES709",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
       "annotations" : {
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES709",
-          "type" : "iri"
-        } ],
         "isDefinedBy" : [ {
           "identifier" : "isDefinedBy",
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES709",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -3125,16 +3101,16 @@
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES708",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
       "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
         "exactMatch" : [ {
           "identifier" : "exactMatch",
           "language" : "undefined",
           "value" : "http://nuts.geovocab.org/id/ES708",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -3206,16 +3182,16 @@
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES425",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
       "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
         "exactMatch" : [ {
           "identifier" : "exactMatch",
           "language" : "undefined",
           "value" : "http://nuts.geovocab.org/id/ES425",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -3233,16 +3209,16 @@
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES424",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
       "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
         "exactMatch" : [ {
           "identifier" : "exactMatch",
           "language" : "undefined",
           "value" : "http://nuts.geovocab.org/id/ES424",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -3287,16 +3263,16 @@
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES705",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
       "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
         "exactMatch" : [ {
           "identifier" : "exactMatch",
           "language" : "undefined",
           "value" : "http://nuts.geovocab.org/id/ES705",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -3309,33 +3285,6 @@
       "labels" : {
         "IRI-based" : "ES705",
         "undefined" : "GRAN CANARIA"
-      }
-    }, {
-      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES704",
-      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES704",
-          "type" : "iri"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES70",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "ES704",
-        "undefined" : "FUERTEVENTURA"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/PT/PT150",
@@ -3357,6 +3306,33 @@
       "labels" : {
         "IRI-based" : "PT150",
         "undefined" : "Algarve"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES704",
+      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES704",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES70",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ES704",
+        "undefined" : "FUERTEVENTURA"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES703",
@@ -3416,16 +3392,16 @@
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES114",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
       "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
         "exactMatch" : [ {
           "identifier" : "exactMatch",
           "language" : "undefined",
           "value" : "http://nuts.geovocab.org/id/ES114",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -3464,7 +3440,7 @@
       },
       "labels" : {
         "IRI-based" : "ES432",
-        "undefined" : "C¡CERES"
+        "undefined" : "C√ÅCERES"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES113",
@@ -3497,16 +3473,16 @@
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES630",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
       "annotations" : {
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES630",
-          "type" : "iri"
-        } ],
         "isDefinedBy" : [ {
           "identifier" : "isDefinedBy",
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES630",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -3519,33 +3495,6 @@
       "labels" : {
         "IRI-based" : "ES630",
         "undefined" : "CEUTA"
-      }
-    }, {
-      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES431",
-      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES431",
-          "type" : "iri"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES43",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "ES431",
-        "undefined" : "BADAJOZ"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/PT/PT111",
@@ -3567,6 +3516,33 @@
       "labels" : {
         "IRI-based" : "PT111",
         "undefined" : "Alto Minho"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES431",
+      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES431",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES43",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ES431",
+        "undefined" : "BADAJOZ"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES112",
@@ -3596,6 +3572,33 @@
         "undefined" : "LUGO"
       }
     }, {
+      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES111",
+      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES111",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES11",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ES111",
+        "undefined" : "A CORU√ëA"
+      }
+    }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/PT/PT112",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/PT",
       "annotations" : {
@@ -3614,34 +3617,7 @@
       },
       "labels" : {
         "IRI-based" : "PT112",
-        "undefined" : "C·vado"
-      }
-    }, {
-      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES111",
-      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES111",
-          "type" : "iri"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES11",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "ES111",
-        "undefined" : "A CORU—A"
+        "undefined" : "C√°vado"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/PT/PT119",
@@ -3665,6 +3641,33 @@
         "undefined" : "Ave"
       }
     }, {
+      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES514",
+      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES514",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES51",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ES514",
+        "undefined" : "TARRAGONA"
+      }
+    }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/PT/PT186",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/PT",
       "annotations" : {
@@ -3686,46 +3689,19 @@
         "undefined" : "Alto Alentejo"
       }
     }, {
-      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES514",
-      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES514",
-          "type" : "iri"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES51",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "ES514",
-        "undefined" : "TARRAGONA"
-      }
-    }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES513",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
       "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
         "exactMatch" : [ {
           "identifier" : "exactMatch",
           "language" : "undefined",
           "value" : "http://nuts.geovocab.org/id/ES513",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -3737,7 +3713,7 @@
       },
       "labels" : {
         "IRI-based" : "ES513",
-        "undefined" : "L…RIDA"
+        "undefined" : "L√âRIDA"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/PT/PT187",
@@ -3761,6 +3737,33 @@
         "undefined" : "Alentejo Central"
       }
     }, {
+      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES512",
+      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES512",
+          "type" : "iri"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES51",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ES512",
+        "undefined" : "GERONA"
+      }
+    }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/PT/PT184",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/PT",
       "annotations" : {
@@ -3780,33 +3783,6 @@
       "labels" : {
         "IRI-based" : "PT184",
         "undefined" : "Baixo Alentejo"
-      }
-    }, {
-      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES512",
-      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
-      "annotations" : {
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES512",
-          "type" : "iri"
-        } ],
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES51",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "ES512",
-        "undefined" : "GERONA"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES511",
@@ -3854,7 +3830,7 @@
       },
       "labels" : {
         "IRI-based" : "PT185",
-        "undefined" : "LezÌria do Tejo"
+        "undefined" : "Lez√≠ria do Tejo"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/PT/PT181",
@@ -3908,16 +3884,16 @@
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES241",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
       "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
         "exactMatch" : [ {
           "identifier" : "exactMatch",
           "language" : "undefined",
           "value" : "http://nuts.geovocab.org/id/ES241",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -3935,16 +3911,16 @@
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES120",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
       "annotations" : {
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES120",
-          "type" : "iri"
-        } ],
         "isDefinedBy" : [ {
           "identifier" : "isDefinedBy",
           "language" : "undefined",
           "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES120",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -3957,27 +3933,6 @@
       "labels" : {
         "IRI-based" : "ES120",
         "undefined" : "PRINCIPADO DE ASTURIAS (NUTS 3)"
-      }
-    }, {
-      "iri" : "http://crossforest.eu/ifi/data/nuts3/PT/PT300",
-      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/PT",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/PT/PT30",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "PT300",
-        "undefined" : "Regi„o AutÛnoma da Madeira"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES521",
@@ -4005,6 +3960,27 @@
       "labels" : {
         "IRI-based" : "ES521",
         "undefined" : "ALICANTE"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifi/data/nuts3/PT/PT300",
+      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/PT",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/PT/PT30",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PT300",
+        "undefined" : "Regi√£o Aut√≥noma da Madeira"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES640",
@@ -4121,7 +4097,7 @@
       },
       "labels" : {
         "IRI-based" : "PT16I",
-        "undefined" : "MÈdio Tejo"
+        "undefined" : "M√©dio Tejo"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16F",
@@ -4142,7 +4118,7 @@
       },
       "labels" : {
         "IRI-based" : "PT16F",
-        "undefined" : "Regi„o de Leiria"
+        "undefined" : "Regi√£o de Leiria"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16G",
@@ -4163,7 +4139,7 @@
       },
       "labels" : {
         "IRI-based" : "PT16G",
-        "undefined" : "Viseu D„o Lafıes"
+        "undefined" : "Viseu D√£o Laf√µes"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES523",
@@ -4217,7 +4193,7 @@
       },
       "labels" : {
         "IRI-based" : "ES522",
-        "undefined" : "CASTELL”N"
+        "undefined" : "CASTELL√ìN"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/PT/PT170",
@@ -4238,7 +4214,7 @@
       },
       "labels" : {
         "IRI-based" : "PT170",
-        "undefined" : "¡rea Metropolitana de Lisboa"
+        "undefined" : "√Årea Metropolitana de Lisboa"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES130",
@@ -4268,46 +4244,19 @@
         "undefined" : "CANTABRIA (NUTS 3)"
       }
     }, {
-      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES532",
-      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES532",
-          "type" : "iri"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES53",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "ES532",
-        "undefined" : "MALLORCA"
-      }
-    }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES411",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
       "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
         "exactMatch" : [ {
           "identifier" : "exactMatch",
           "language" : "undefined",
           "value" : "http://nuts.geovocab.org/id/ES411",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
           "type" : "iri"
         } ],
         "broader" : [ {
@@ -4319,7 +4268,7 @@
       },
       "labels" : {
         "IRI-based" : "ES411",
-        "undefined" : "¡VILA"
+        "undefined" : "√ÅVILA"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES213",
@@ -4349,6 +4298,60 @@
         "undefined" : "VIZCAYA"
       }
     }, {
+      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES532",
+      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES532",
+          "type" : "iri"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES53",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ES532",
+        "undefined" : "MALLORCA"
+      }
+    }, {
+      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES212",
+      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://nuts.geovocab.org/id/ES212",
+          "type" : "iri"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/ontology/",
+          "type" : "iri"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES21",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ES212",
+        "undefined" : "GUIP√öZCOA"
+      }
+    }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES531",
       "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
       "annotations" : {
@@ -4373,34 +4376,7 @@
       },
       "labels" : {
         "IRI-based" : "ES531",
-        "undefined" : "IBIZA†Y†FORMENTERA"
-      }
-    }, {
-      "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES212",
-      "baseIri" : "http://crossforest.eu/ifi/data/nuts3/ES",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/ontology/",
-          "type" : "iri"
-        } ],
-        "exactMatch" : [ {
-          "identifier" : "exactMatch",
-          "language" : "undefined",
-          "value" : "http://nuts.geovocab.org/id/ES212",
-          "type" : "iri"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "http://crossforest.eu/ifi/data/nuts2/ES/ES21",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "ES212",
-        "undefined" : "GUIP⁄ZCOA"
+        "undefined" : "IBIZA¬†Y¬†FORMENTERA"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/nuts3/ES/ES211",
@@ -4427,15 +4403,39 @@
       },
       "labels" : {
         "IRI-based" : "ES211",
-        "undefined" : "¡LAVA"
+        "undefined" : "√ÅLAVA"
       }
     } ],
     "comment" : {
-      "pt" : "As NUTS III correspondem ao territÛrio das Entidades Intermunicipais (Comunidades Intermunicipais e ¡reas Metropolitanas, no caso de Lisboa e Porto)",
-      "es" : "En EspaÒa se corresponden con las provincias peninsulares, ciudades autÛnomas e islas"
+      "pt" : "As NUTS III correspondem ao territ√≥rio das Entidades Intermunicipais (Comunidades Intermunicipais e √Åreas Metropolitanas, no caso de Lisboa e Porto)",
+      "es" : "En Espa√±a se corresponden con las provincias peninsulares, ciudades aut√≥nomas e islas"
     },
     "id" : "29",
     "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://crossforest.eu/ifi/ontology/Erosion",
+    "baseIri" : "http://crossforest.eu/ifi/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifi/ontology/",
+        "type" : "iri"
+      } ],
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/ManifestacionesErosivas",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Erosion",
+      "en" : "Erosion",
+      "es" : "Erosi√≥n"
+    },
+    "id" : "48"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#float",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -4467,7 +4467,7 @@
     },
     "label" : {
       "IRI-based" : "ForestryInventory",
-      "pt" : "Invent·rio Florestal Nacional",
+      "pt" : "Invent√°rio Florestal Nacional",
       "en" : "Forestry inventory",
       "es" : "Inventario forestal"
     },
@@ -4489,7 +4489,7 @@
         } ]
       },
       "comment" : {
-        "undefined" : "Proyecto realizado entre los aÒos 1997 a 2007"
+        "undefined" : "Proyecto realizado entre los a√±os 1997 a 2007"
       },
       "labels" : {
         "IRI-based" : "3",
@@ -4507,7 +4507,7 @@
         } ]
       },
       "comment" : {
-        "pt" : "Este Invent·rio tem 2015 como ano de referÍncia, correspondendo este ao ano em que foi realizada a cobertura nacional aerofotogr·fica digital que serve de base ‡ avaliaÁ„o do uso/ocupaÁ„o do solo, e em que foi efetuado o trabalho de mediÁ„o e avaliaÁ„o da vegetaÁ„o no terreno."
+        "pt" : "Este Invent√°rio tem 2015 como ano de refer√™ncia, correspondendo este ao ano em que foi realizada a cobertura nacional aerofotogr√°fica digital que serve de base √† avalia√ß√£o do uso/ocupa√ß√£o do solo, e em que foi efetuado o trabalho de medi√ß√£o e avalia√ß√£o da vegeta√ß√£o no terreno."
       },
       "labels" : {
         "IRI-based" : "6"
@@ -4529,7 +4529,7 @@
       }
     } ],
     "comment" : {
-      "pt" : "O Invent·rio Florestal Nacional (IFN) È o processo de produÁ„o de estatÌsticas, e de cartografia-base, sobre a abund‚ncia, estado e condiÁ„o dos recursos florestais nacionais. Baseia-se em recolhas de dados a partir de imagens aÈreas e em mediÁıes da vegetaÁ„o no terreno, ao longo de todo o territÛrio."
+      "pt" : "O Invent√°rio Florestal Nacional (IFN) √© o processo de produ√ß√£o de estat√≠sticas, e de cartografia-base, sobre a abund√¢ncia, estado e condi√ß√£o dos recursos florestais nacionais. Baseia-se em recolhas de dados a partir de imagens a√©reas e em medi√ß√µes da vegeta√ß√£o no terreno, ao longo de todo o territ√≥rio."
     },
     "id" : "26"
   }, {
@@ -4539,7 +4539,7 @@
     "label" : {
       "IRI-based" : "Country",
       "en" : "Country",
-      "es" : "PaÌs"
+      "es" : "Pa√≠s"
     },
     "individuals" : [ {
       "iri" : "http://crossforest.eu/ifi/data/country/ES",
@@ -4547,7 +4547,7 @@
       "labels" : {
         "IRI-based" : "ES",
         "en" : "Spain",
-        "es" : "EspaÒa"
+        "es" : "Espa√±a"
       }
     }, {
       "iri" : "http://crossforest.eu/ifi/data/country/PT",
@@ -4589,16 +4589,16 @@
     "baseIri" : "http://crossforest.eu/ifi/ontology",
     "instances" : 0,
     "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://crossforest.eu/ifi/ontology/",
-        "type" : "iri"
-      } ],
       "exactMatch" : [ {
         "identifier" : "exactMatch",
         "language" : "undefined",
         "value" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/VolumeWithBark",
+        "type" : "iri"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://crossforest.eu/ifi/ontology/",
         "type" : "iri"
       } ]
     },
@@ -4631,7 +4631,7 @@
     "label" : {
       "IRI-based" : "DiametricClass",
       "en" : "Diametric class",
-      "es" : "Clase diamÈtrica"
+      "es" : "Clase diam√©trica"
     },
     "id" : "56"
   }, {
@@ -4741,7 +4741,7 @@
     "label" : {
       "IRI-based" : "hasDominantFormation",
       "en" : "has dominant formation",
-      "es" : "tiene formaciÛn dominante"
+      "es" : "tiene formaci√≥n dominante"
     },
     "domain" : "3",
     "attributes" : [ "object" ],
@@ -4771,7 +4771,7 @@
     "label" : {
       "IRI-based" : "hasVolumeWithBarkInM3ByHA",
       "en" : "has volume with bark in cubic meters by hectare",
-      "es" : "tiene volumen con corteza en metros c˙bicos por hect·rea"
+      "es" : "tiene volumen con corteza en metros c√∫bicos por hect√°rea"
     },
     "domain" : "15",
     "attributes" : [ "datatype" ],
@@ -4791,7 +4791,7 @@
     "label" : {
       "IRI-based" : "hasBasalAreaInM2",
       "en" : "has basal area in square meters",
-      "es" : "tiene ·rea basimÈtrica en metros cuadrados"
+      "es" : "tiene √°rea basim√©trica en metros cuadrados"
     },
     "domain" : "3",
     "attributes" : [ "datatype" ],
@@ -4803,7 +4803,7 @@
     "label" : {
       "IRI-based" : "hasVersionId",
       "en" : "has version identifier",
-      "es" : "tiene identificador de versiÛn"
+      "es" : "tiene identificador de versi√≥n"
     },
     "domain" : "26",
     "attributes" : [ "datatype" ],
@@ -4839,8 +4839,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "36"
   }, {
-    "range" : "19",
-    "domain" : "20",
+    "range" : "18",
+    "domain" : "19",
     "attributes" : [ "object", "anonymous" ],
     "id" : "39"
   }, {
@@ -4863,7 +4863,7 @@
     "label" : {
       "IRI-based" : "hasNumberOfTreesInUnits",
       "en" : "has number of trees in units",
-      "es" : "tiene n˙mero de ·rboles en unidades"
+      "es" : "tiene n√∫mero de √°rboles en unidades"
     },
     "domain" : "3",
     "attributes" : [ "datatype" ],
@@ -4871,7 +4871,7 @@
   }, {
     "iri" : "http://crossforest.eu/ifi/ontology/hasNumberOfTrees",
     "baseIri" : "http://crossforest.eu/ifi/ontology",
-    "range" : "20",
+    "range" : "19",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -4883,7 +4883,7 @@
     "label" : {
       "IRI-based" : "hasNumberOfTrees",
       "en" : "has number of trees",
-      "es" : "tiene n˙mero de ·rboles"
+      "es" : "tiene n√∫mero de √°rboles"
     },
     "domain" : "3",
     "attributes" : [ "object" ],
@@ -4903,7 +4903,7 @@
     "label" : {
       "IRI-based" : "hasBasalArea",
       "en" : "has basal area",
-      "es" : "tiene ·rea basimÈtrica"
+      "es" : "tiene √°rea basim√©trica"
     },
     "domain" : "3",
     "attributes" : [ "object" ],
@@ -4923,7 +4923,7 @@
     "label" : {
       "IRI-based" : "hasVolumeWithBarkInM3",
       "en" : "has volume with bark in cubic meters",
-      "es" : "tiene volumen con corteza en metros c˙bicos"
+      "es" : "tiene volumen con corteza en metros c√∫bicos"
     },
     "domain" : "3",
     "attributes" : [ "datatype" ],
@@ -4949,7 +4949,7 @@
     "label" : {
       "IRI-based" : "containsDominantFormation",
       "en" : "contains dominant formation",
-      "es" : "contiene formaciÛn dominante"
+      "es" : "contiene formaci√≥n dominante"
     },
     "domain" : "44",
     "attributes" : [ "object" ],
@@ -4969,7 +4969,7 @@
     "label" : {
       "IRI-based" : "hasNumberOfTreesInUnitsByHA",
       "en" : "has number of trees in units per hectare",
-      "es" : "tiene n˙mero de ·rboles en unidades por hect·rea"
+      "es" : "tiene n√∫mero de √°rboles en unidades por hect√°rea"
     },
     "domain" : "15",
     "attributes" : [ "datatype" ],
@@ -4989,7 +4989,7 @@
     "label" : {
       "IRI-based" : "hasBasalAreaInM2ByHA",
       "en" : "has basal area in square meters by hectare",
-      "es" : "tiene ·rea basimÈtrica en metros cuadrados por hect·rea"
+      "es" : "tiene √°rea basim√©trica en metros cuadrados por hect√°rea"
     },
     "domain" : "15",
     "attributes" : [ "datatype" ],
@@ -5009,7 +5009,7 @@
     "label" : {
       "IRI-based" : "containsDominantFormationByHa",
       "en" : "contains dominant formation by hectare",
-      "es" : "contiene formaciÛn dominante por hect·rea"
+      "es" : "contiene formaci√≥n dominante por hect√°rea"
     },
     "domain" : "45",
     "attributes" : [ "object" ],

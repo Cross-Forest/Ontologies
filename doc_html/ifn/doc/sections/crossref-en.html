@@ -1,6 +1,6 @@
-<h2 id="crossreference" class="list">Cross reference for Spanish IFN Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="crossreference" class="list">Cross-reference for Spanish IFN Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by Spanish IFN Ontology.
-<div id="classes">
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
@@ -1418,6 +1418,10 @@ This section provides details for each class and property defined by Spanish IFN
       <li>
          <a href="#https://datos.iepnb.es/kos/sector-publico/medio-ambiente/ifn-modelo-cubicacion/VSC"
             title="https://datos.iepnb.es/kos/sector-publico/medio-ambiente/ifn-modelo-cubicacion/VSC">Modelo estadístico de cubicación para VSC</a>
+      </li>
+      <li>
+         <a href="#Municipality"
+            title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Municipality">Municipality</a>
       </li>
       <li>
          <a href="#Plot-NN"
@@ -13744,6 +13748,46 @@ troncos maderables de 4 o más metros, ramificarse por la parte superior y no pe
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Municipality">
+      <h3>Municipality<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Municipality</p>
+      <div class="comment">
+         <span class="markdown"/>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/">https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://crossforest.eu/position/ontology/SpatialEntity"
+               target="_blank"
+               title="http://crossforest.eu/position/ontology/SpatialEntity">spatial entity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasCheckDigit"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasCheckDigit">Check digit</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMunicipalityCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasMunicipalityCode">Municipality code</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isInMunicipality"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/isInMunicipality">in municipality</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Plot-NN">
       <h3>New Plot<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -15845,6 +15889,12 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
                target="_blank"
                title="http://crossforest.eu/position/ontology/SpatialEntity">spatial entity</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -24351,7 +24401,7 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          </dd>
       </dl>
    </div>
-</div><div id="objectproperties">
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
@@ -24509,6 +24559,10 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
       <li>
          <a href="#hasVolumeWithoutBarkInM3"
             title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasVolumeWithoutBarkInM3">has volume without bark in cubic meters</a>
+      </li>
+      <li>
+         <a href="#isInMunicipality"
+            title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/isInMunicipality">in municipality</a>
       </li>
       <li>
          <a href="#inPatch"
@@ -25665,6 +25719,40 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          </dl>
       </div>
    </div>
+   <div class="entity" id="isInMunicipality">
+      <h3>in municipality<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/isInMunicipality</p>
+      <div class="comment">
+         <span class="markdown">Municipality in which the entity is located</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/">https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://crossforest.eu/position/ontology/SpatialEntity"
+                  target="_blank"
+                  title="http://crossforest.eu/position/ontology/SpatialEntity">spatial entity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Municipality"
+                  title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Municipality">Municipality</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="inPatch">
       <h3>in patch<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -26019,12 +26107,16 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          </dl>
       </div>
    </div>
-</div><div id="dataproperties">
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
          <a href="#hasPercentageOfSpecies"
             title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasPercentageOfSpecies"/>
+      </li>
+      <li>
+         <a href="#hasCheckDigit"
+            title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasCheckDigit">Check digit</a>
       </li>
       <li>
          <a href="#hasCoefDetermR2"
@@ -26122,6 +26214,14 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <a href="#hasTotalHeightInMeters"
             title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasTotalHeightInMeters">has total height in meters</a>
       </li>
+      <li>
+         <a href="#hasMunicipalityCode"
+            title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasMunicipalityCode">Municipality code</a>
+      </li>
+      <li>
+         <a href="#hasProvinceCode"
+            title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+      </li>
    </ul>
    <div class="entity" id="hasPercentageOfSpecies">
       <h3>
@@ -26153,6 +26253,27 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <dd>
                <a href="#InfoSpecies"
                   title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpecies">info species</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasCheckDigit">
+      <h3>Check digit<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasCheckDigit</p>
+      <div class="comment">
+         <span class="markdown">Check digit from INE to detect errors in municipalities</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Municipality"
+                  title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Municipality">Municipality</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -26727,7 +26848,49 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          </dl>
       </div>
    </div>
-</div><div id="namedindividuals">
+   <div class="entity" id="hasMunicipalityCode">
+      <h3>Municipality code<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasMunicipalityCode</p>
+      <div class="comment">
+         <span class="markdown">Municipality code in a province from INE</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Municipality"
+                  title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Municipality">Municipality</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasProvinceCode">
+      <h3>Province code<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode</p>
+      <div class="comment">
+         <span class="markdown">Province code from INE</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Province"
+                  title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Province">Province</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
       <li>
@@ -28634,7 +28797,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          </a>
       </li>
       <li>
-         <a href="#http://dbpedia.org/resource/Arbutus_canariensis" title="http://dbpedia.org/resource/Arbutus_canariensis">
+         <a href="#http://dbpedia.org/resource/Arbutus_canariensis"
+            title="http://dbpedia.org/resource/Arbutus_canariensis">
             <span>arbutus canariensis</span>
          </a>
       </li>
@@ -28932,7 +29096,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          </a>
       </li>
       <li>
-         <a href="#http://dbpedia.org/resource/Crataegus_laevigata" title="http://dbpedia.org/resource/Crataegus_laevigata">
+         <a href="#http://dbpedia.org/resource/Crataegus_laevigata"
+            title="http://dbpedia.org/resource/Crataegus_laevigata">
             <span>crataegus laevigata</span>
          </a>
       </li>
@@ -28968,7 +29133,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          </a>
       </li>
       <li>
-         <a href="#http://dbpedia.org/resource/Cupressus_arizonica" title="http://dbpedia.org/resource/Cupressus_arizonica">
+         <a href="#http://dbpedia.org/resource/Cupressus_arizonica"
+            title="http://dbpedia.org/resource/Cupressus_arizonica">
             <span>cupressus arizonica</span>
          </a>
       </li>
@@ -29052,7 +29218,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          </a>
       </li>
       <li>
-         <a href="#http://dbpedia.org/resource/Eucalyptus_globulus" title="http://dbpedia.org/resource/Eucalyptus_globulus">
+         <a href="#http://dbpedia.org/resource/Eucalyptus_globulus"
+            title="http://dbpedia.org/resource/Eucalyptus_globulus">
             <span>eucalyptus globulus</span>
          </a>
       </li>
@@ -37137,6 +37304,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Albacete"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Albacete">albacete</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"02"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Alicante">
@@ -37179,6 +37353,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Alicante"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Alicante">alicante</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"03"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Almeria">
@@ -37220,6 +37401,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Almeria"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Almeria">almeria</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"04"</span>
          </dd>
       </dl>
    </div>
@@ -37486,6 +37674,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Asturias"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Asturias">asturias</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"33"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Avila">
@@ -37543,6 +37738,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Badajoz"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Badajoz">badajoz</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"06"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/ifn/reliability/2">
@@ -37592,6 +37794,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Illes-Balears"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Illes-Balears">illes balears</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"07"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Barcelona">
@@ -37633,6 +37842,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Barcelona"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Barcelona">barcelona</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"08"</span>
          </dd>
       </dl>
    </div>
@@ -37757,6 +37973,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Burgos"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Burgos">burgos</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"09"</span>
          </dd>
       </dl>
    </div>
@@ -37890,6 +38113,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cantabria"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cantabria">cantabria</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"39"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://dbpedia.org/resource/Carpinus_betulus">
@@ -37961,6 +38191,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Castellon"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Castellon">castellon</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"12"</span>
          </dd>
       </dl>
    </div>
@@ -38209,6 +38446,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Ceuta"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Ceuta">ceuta</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"51"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://dbpedia.org/resource/Chamaecyparis_lawsoniana">
@@ -38280,6 +38524,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Ciudad-Real"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Ciudad-Real">ciudad real</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"13"</span>
          </dd>
       </dl>
    </div>
@@ -38551,6 +38802,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cuenca"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cuenca">cuenca</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"16"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://dbpedia.org/resource/Cupressaceae">
@@ -38668,6 +38926,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres">caceres</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"10"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/11">
@@ -38695,6 +38960,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cadiz"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cadiz">cadiz</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"11"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/14">
@@ -38721,6 +38993,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cordoba"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Cordoba">cordoba</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"14"</span>
          </dd>
       </dl>
    </div>
@@ -42191,6 +42470,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Girona"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Girona">girona</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"17"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Girona">
@@ -42267,6 +42553,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Granada"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Granada">granada</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"18"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Guadalajara">
@@ -42309,6 +42602,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Guadalajara"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Guadalajara">guadalajara</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"19"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Guipuzcoa">
@@ -42350,6 +42650,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Guipuzcoa"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Guipuzcoa">guipuzcoa</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"20"</span>
          </dd>
       </dl>
    </div>
@@ -42463,6 +42770,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Huelva"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Huelva">huelva</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"21"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Huesca">
@@ -42504,6 +42818,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Huesca"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Huesca">huesca</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"22"</span>
          </dd>
       </dl>
    </div>
@@ -42591,6 +42912,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Jaen"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Jaen">jaen</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"23"</span>
          </dd>
       </dl>
    </div>
@@ -42824,6 +43152,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/A-Coruna"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/A-Coruna">a coruna</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"15"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/La-Rioja">
@@ -42865,6 +43200,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/La-Rioja"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/La-Rioja">la rioja</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"26"</span>
          </dd>
       </dl>
    </div>
@@ -42953,6 +43295,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Las-Palmas"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Las-Palmas">las palmas</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"35"</span>
          </dd>
       </dl>
    </div>
@@ -43072,6 +43421,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Leon"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Leon">leon</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"24"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Lleida">
@@ -43129,6 +43485,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Lugo"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Lugo">lugo</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"27"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/25">
@@ -43155,6 +43518,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Lleida"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Lleida">lleida</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"25"</span>
          </dd>
       </dl>
    </div>
@@ -43197,6 +43567,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Madrid"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Madrid">madrid</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"28"</span>
          </dd>
       </dl>
    </div>
@@ -43321,6 +43698,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Melilla"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Melilla">melilla</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"52"</span>
          </dd>
       </dl>
    </div>
@@ -43565,6 +43949,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Murcia"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Murcia">murcia</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"30"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://dbpedia.org/resource/Myrica_faya">
@@ -43652,6 +44043,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Malaga"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Malaga">malaga</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"29"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/ifn/origin/11">
@@ -43737,6 +44135,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Navarra"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Navarra">navarra</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"31"</span>
          </dd>
       </dl>
    </div>
@@ -43851,6 +44256,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Ourense"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Ourense">ourense</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"32"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/ifn/source/7">
@@ -43932,6 +44344,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Palencia"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Palencia">palencia</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"34"</span>
          </dd>
       </dl>
    </div>
@@ -44343,6 +44762,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Pontevedra"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Pontevedra">pontevedra</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"36"</span>
          </dd>
       </dl>
    </div>
@@ -44792,6 +45218,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Salamanca"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Salamanca">salamanca</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"37"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://dbpedia.org/resource/Salicaceae">
@@ -45014,6 +45447,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Santa-Cruz-Tenerife"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Santa-Cruz-Tenerife">santa cruz tenerife</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"38"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Santa-Cruz-Tenerife">
@@ -45085,6 +45525,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Sevilla"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Sevilla">sevilla</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"41"</span>
          </dd>
       </dl>
    </div>
@@ -45639,6 +46086,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Segovia"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Segovia">segovia</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"40"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/ifn/origin/21">
@@ -45852,6 +46306,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Soria"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Soria">soria</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"42"</span>
          </dd>
       </dl>
    </div>
@@ -46563,7 +47024,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          </dd>
          <dt>is same as</dt>
          <dd>
-            <a href="#http://dbpedia.org/resource/Cupressus_arizonica" title="http://dbpedia.org/resource/Cupressus_arizonica">cupressus arizonica</a>, <a href="https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3883"
+            <a href="#http://dbpedia.org/resource/Cupressus_arizonica"
+               title="http://dbpedia.org/resource/Cupressus_arizonica">cupressus arizonica</a>, <a href="https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3883"
                target="_blank"
                title="https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3883">3883</a>
          </dd>
@@ -47097,7 +47559,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          </dd>
          <dt>is same as</dt>
          <dd>
-            <a href="#http://dbpedia.org/resource/Arbutus_canariensis" title="http://dbpedia.org/resource/Arbutus_canariensis">arbutus canariensis</a>, <a href="https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1176"
+            <a href="#http://dbpedia.org/resource/Arbutus_canariensis"
+               title="http://dbpedia.org/resource/Arbutus_canariensis">arbutus canariensis</a>, <a href="https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1176"
                target="_blank"
                title="https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/1176">1176</a>
          </dd>
@@ -47933,7 +48396,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          </dd>
          <dt>is same as</dt>
          <dd>
-            <a href="#http://dbpedia.org/resource/Crataegus_laevigata" title="http://dbpedia.org/resource/Crataegus_laevigata">crataegus laevigata</a>, <a href="https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3856"
+            <a href="#http://dbpedia.org/resource/Crataegus_laevigata"
+               title="http://dbpedia.org/resource/Crataegus_laevigata">crataegus laevigata</a>, <a href="https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3856"
                target="_blank"
                title="https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/3856">3856</a>
          </dd>
@@ -50331,7 +50795,8 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          </dd>
          <dt>is same as</dt>
          <dd>
-            <a href="#http://dbpedia.org/resource/Eucalyptus_globulus" title="http://dbpedia.org/resource/Eucalyptus_globulus">eucalyptus globulus</a>, <a href="https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/4445"
+            <a href="#http://dbpedia.org/resource/Eucalyptus_globulus"
+               title="http://dbpedia.org/resource/Eucalyptus_globulus">eucalyptus globulus</a>, <a href="https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/4445"
                target="_blank"
                title="https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/4445">4445</a>
          </dd>
@@ -52406,6 +52871,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Tarragona"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Tarragona">tarragona</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"43"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://dbpedia.org/resource/Taxaceae">
@@ -52477,6 +52949,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Teruel"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Teruel">teruel</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"44"</span>
          </dd>
       </dl>
    </div>
@@ -52620,6 +53099,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Toledo"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Toledo">toledo</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"45"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://dbpedia.org/resource/Ulmaceae">
@@ -52722,6 +53208,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Valencia"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Valencia">valencia</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"46"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Valladolid">
@@ -52763,6 +53256,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Valladolid"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Valladolid">valladolid</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"47"</span>
          </dd>
       </dl>
    </div>
@@ -52846,6 +53346,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Vizcaya"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Vizcaya">vizcaya</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"48"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://dbpedia.org/resource/Willow">
@@ -52903,6 +53410,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Zamora"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Zamora">zamora</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"49"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Zaragoza">
@@ -52945,6 +53459,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Zaragoza"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Zaragoza">zaragoza</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"50"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/01">
@@ -52972,6 +53493,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Alava"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Alava">alava</a>
          </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"01"</span>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="https://datos.iepnb.es/recurso/sector-publico/territorio/Provincia/05">
@@ -52998,6 +53526,13 @@ En los casos dudosos de árboles bifurcados la norma es preferir que sea un solo
          <dd>
             <a href="#http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Avila"
                title="http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Avila">avila</a>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasProvinceCode"
+               title="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasProvinceCode">Province code</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"05"</span>
          </dd>
       </dl>
    </div>

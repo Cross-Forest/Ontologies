@@ -1,6 +1,9 @@
 [ {
   "@id" : "http://crossforest.eu/ifi/data/country/ES",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/Country" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/Country"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
     "@value" : "España"
@@ -10,7 +13,10 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/country/PT",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/Country" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/Country"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Portugal"
@@ -20,13 +26,16 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/forestryInventory/ES/3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/ForestryInventory" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/hasVersionId" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "3"
   } ],
   "http://purl.org/dc/elements/1.1/identifier" : [ {
     "@value" : "IFN3"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/ForestryInventory"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Proyecto realizado entre los años 1997 a 2007"
@@ -40,7 +49,7 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/forestryInventory/ES/4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/ForestryInventory" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/hasVersionId" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "4"
@@ -48,13 +57,16 @@
   "http://purl.org/dc/elements/1.1/identifier" : [ {
     "@value" : "IFN4"
   } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/ForestryInventory"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
     "@value" : "Cuarto Inventario Forestal Nacional (IFN4)"
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/forestryInventory/PT/6",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/ForestryInventory" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/hasVersionId" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "6"
@@ -62,6 +74,9 @@
   "http://purl.org/dc/elements/1.1/identifier" : [ {
     "@language" : "pt",
     "@value" : "IFN6"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/ForestryInventory"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "pt",
@@ -72,9 +87,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts1/ES/ES1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS1" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -94,9 +112,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts1/ES/ES2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS1" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -118,9 +139,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts1/ES/ES3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS1" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -136,9 +160,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts1/ES/ES4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS1" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -158,9 +185,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts1/ES/ES5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS1" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -180,9 +210,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts1/ES/ES6",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS1" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -204,9 +237,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts1/ES/ES7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS1" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -222,9 +258,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts1/PT/PT1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS1" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -248,9 +287,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts1/PT/PT2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS1" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -266,9 +308,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts1/PT/PT3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS1" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -284,9 +329,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES11",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -311,9 +359,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES12",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -332,9 +383,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES13",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -353,9 +407,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES21",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -378,9 +435,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES22",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -399,9 +459,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES23",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -420,9 +483,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES24",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -445,9 +511,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES30",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -466,9 +535,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES41",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -503,9 +575,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES42",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -532,9 +607,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES43",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -555,9 +633,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES51",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -582,9 +663,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES52",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -607,9 +691,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES53",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -632,9 +719,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES61",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -667,9 +757,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES62",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -688,9 +781,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES63",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -709,9 +805,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES64",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -730,9 +829,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/ES/ES70",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -763,9 +865,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT11",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -798,9 +903,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT15",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -819,9 +927,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT16",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -854,9 +965,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT17",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -875,9 +989,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT18",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -904,9 +1021,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT20",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -925,9 +1045,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts2/PT/PT30",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS2" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -946,9 +1069,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES111",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -964,9 +1090,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES112",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -982,9 +1111,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES113",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1000,9 +1132,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES114",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1018,9 +1153,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES120",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1036,9 +1174,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES130",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1054,9 +1195,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES211",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1072,9 +1216,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES212",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1090,9 +1237,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES213",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1108,9 +1258,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES220",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1126,9 +1279,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES230",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1144,9 +1300,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES241",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1162,9 +1321,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES242",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1180,9 +1342,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES243",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1198,9 +1363,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES300",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1216,9 +1384,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES411",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1234,9 +1405,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES412",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1252,9 +1426,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES413",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1270,9 +1447,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES414",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1288,9 +1468,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES415",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1306,9 +1489,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES416",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1324,9 +1510,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES417",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1342,9 +1531,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES418",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1360,9 +1552,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES419",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1378,9 +1573,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES421",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1396,9 +1594,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES422",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1414,9 +1615,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES423",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1432,9 +1636,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES424",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1450,9 +1657,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES425",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1468,9 +1678,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES431",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1486,9 +1699,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES432",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1504,9 +1720,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES511",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1522,9 +1741,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES512",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1540,9 +1762,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES513",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1558,9 +1783,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES514",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1576,9 +1804,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES521",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1594,9 +1825,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES522",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1612,9 +1846,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES523",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1630,9 +1867,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES531",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1648,9 +1888,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES532",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1666,9 +1909,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES533",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1684,9 +1930,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES611",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1702,9 +1951,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES612",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1720,9 +1972,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES613",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1738,9 +1993,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES614",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1756,9 +2014,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES615",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1774,9 +2035,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES616",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1792,9 +2056,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES617",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1810,9 +2077,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES618",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1828,9 +2098,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES620",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1846,9 +2119,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES630",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1864,9 +2140,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES640",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1882,9 +2161,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES703",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1900,9 +2182,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES704",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1918,9 +2203,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES705",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1936,9 +2224,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES706",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1954,9 +2245,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES707",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1972,9 +2266,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES708",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -1990,9 +2287,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/ES/ES709",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/ES"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2008,9 +2308,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT111",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2023,9 +2326,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT112",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2038,9 +2344,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT119",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2053,9 +2362,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11A",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2068,9 +2380,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11B",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2083,9 +2398,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11C",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2098,9 +2416,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11D",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2113,9 +2434,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT11E",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2128,9 +2452,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT150",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2143,9 +2470,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16B",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2158,9 +2488,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16D",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2173,9 +2506,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16E",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2188,9 +2524,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16F",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2203,9 +2542,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16G",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2218,9 +2560,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16H",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2233,9 +2578,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16I",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2248,9 +2596,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT16J",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2263,9 +2614,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT170",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2278,9 +2632,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT181",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2293,9 +2650,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT184",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2308,9 +2668,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT185",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2323,9 +2686,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT186",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2338,9 +2704,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT187",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2353,9 +2722,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT200",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
@@ -2368,9 +2740,12 @@
   } ]
 }, {
   "@id" : "http://crossforest.eu/ifi/data/nuts3/PT/PT300",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://crossforest.eu/ifi/ontology/NUTS3" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://crossforest.eu/ifi/ontology/isInCountry" : [ {
     "@id" : "http://crossforest.eu/ifi/data/country/PT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://crossforest.eu/ifi/ontology/NUTS3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://crossforest.eu/ifi/ontology/"
