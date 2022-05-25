@@ -55,7 +55,7 @@
                                        dc:date "2019-07-17"^^xsd:date ;
                                        vann:preferredNamespacePrefix "ifn" ;
                                        rdfs:comment "Ontology to publish data of the Spanish National Forest inventory"@en ,
-                                                    "Ontología para publicar datos del Inventario Forestal Nacional de España" ;
+                                                    "Ontología para publicar datos del Inventario Forestal Nacional de España"@es ;
                                        rdfs:label "Ontología del IFN de España"@es ,
                                                   "Spanish IFN Ontology"@en ;
                                        rdfs:seeAlso <https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/documentador_bdcampo_ifn3_tcm30-282240.pdf> ,
@@ -191,56 +191,64 @@ ifn:containsSpecies rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf ifi:containsDominantFormation ;
                     rdfs:range ifn:InfoSpecies ;
                     rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
-                    rdfs:label "containsSpecies"@en .
+                    rdfs:label "contains species"@en ,
+                    	       "contiene especie"@es .
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPlot
 ifn:containsSpeciesPlot rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf ifn:containsSpecies ;
                     rdfs:range ifn:InfoSpeciesPlot ;
                     rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
-                    rdfs:label "contiene información sobre especies en una parcela"@en .
+                    rdfs:label "contains information about species in a plot"@en ,
+                               "contiene información sobre especies en una parcela"@es .
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesProv
 ifn:containsSpeciesProv rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf ifn:containsSpecies ;
                     rdfs:range ifn:InfoSpeciesProv ;
                     rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
-                    rdfs:label "contiene información sobre especies en una provincia"@en .
+                    rdfs:label "contains information about species in a province"@en ,
+                               "contiene información sobre especies en una provincia"@es .
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesStratum
 ifn:containsSpeciesStratum rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf ifn:containsSpecies ;
                     rdfs:range ifn:InfoSpeciesEstrato ;
                     rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
-                    rdfs:label "contiene información sobre especies en un estrato"@en .
+                    rdfs:label "contains information about species in a stratum"@en ,
+                    	       "contiene información sobre especies en un estrato"@es .
 
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesDetail
 ifn:containsSpeciesDetail rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf ifn:containsSpecies ;
                           rdfs:range ifn:InfoSpeciesDetalle ;
-                          rdfs:label "contiene información detallada sobre especies"@es .
+                          rdfs:label "contains detailed information about species"@en ,
+                          	     "contiene información detallada sobre especies"@es .
 
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcEspParc
 ifn:containsSpeciesPcEspParc rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf ifn:containsSpecies ;
                              rdfs:range ifn:InfoSpeciesPcEspParc ;
-                             rdfs:label "contiene información sobre especies de la tabla PcEspParc"@es .
+                             rdfs:label "contiene información sobre especies de la tabla PcEspParc"@es ,
+                                        "contains information about species from PcEspParc table"@en .
 
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcMatorral
 ifn:containsSpeciesPcMatorral rdf:type owl:ObjectProperty ;
                               rdfs:subPropertyOf ifn:containsSpecies ;
                               rdfs:range ifn:InfoSpeciesPcMatorral ;
-                              rdfs:label "contiene información sobre especies de la tabla PcMatorral"@es .
+                              rdfs:label "contiene información sobre especies de la tabla PcMatorral"@es , 
+                              		 "contains information about species from PcMatorral table"@en .
 
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcRegenera
 ifn:containsSpeciesPcRegenera rdf:type owl:ObjectProperty ;
                               rdfs:subPropertyOf ifn:containsSpecies ;
                               rdfs:range ifn:InfoSpeciesPcRegenera ;
-                              rdfs:label "contiene información sobre especies de la tabla PcRegenera"@es .
+                              rdfs:label "contiene información sobre especies de la tabla PcRegenera"@es ,
+                              		 "contains information about species from PcRegenera table"@en .
 
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasAcceptedName
@@ -258,7 +266,7 @@ ifn:hasAge rdf:type owl:ObjectProperty ;
            rdfs:comment "Age of trees in a plot"@en ,
                         "Edad en años en las formas coetáneas y regulares"@es ;
            rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
-           rdfs:label "has age"@es ,
+           rdfs:label "has age"@en ,
                       "tiene edad"@es .
 
 
@@ -268,7 +276,7 @@ ifn:hasAgeInYears rdf:type owl:ObjectProperty ;
                   rdfs:comment "Age in years"@en ,
                                "Edad en años en las formas coetáneas y regulares"@es ;
                   rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
-                  rdfs:label "age in years"@es ,
+                  rdfs:label "age in years"@en ,
                              "edad en años"@es .
 
 
@@ -351,7 +359,7 @@ ifn:hasDiameterAtBreastHeight rdf:type owl:ObjectProperty ;
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasDiametricClass
 ifn:hasDiametricClass rdf:type owl:ObjectProperty ;
                       rdfs:range ifn:ClaseDiametrica ;
-                      rdfs:label "tiene clase diamétrica" .
+                      rdfs:label "tiene clase diamétrica"@es .
 
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasDominantSpecies
@@ -426,7 +434,7 @@ ifn:hasOccupationOfSpecies rdf:type owl:ObjectProperty ;
                            rdfs:comment ""@en ,
                                         ""@es ;
                            rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
-                           rdfs:label ""@es .
+                           rdfs:label "has occupation of species"@en .
 
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasOccupationOrder
@@ -439,7 +447,7 @@ ifn:hasOrigin rdf:type owl:ObjectProperty ;
               rdfs:domain ifn:InfoSpecies ;
               rdfs:range ifn:Origin ;
               rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
-              rdfs:label "has origin"@es ,
+              rdfs:label "has origin"@en ,
                          "tiene origen"@es .
 
 
@@ -487,7 +495,7 @@ ifn:hasStandDevelopment rdf:type owl:ObjectProperty ;
                         rdfs:comment ""@en ,
                                      ""@es ;
                         rdfs:isDefinedBy <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> ;
-                        rdfs:label ""@es .
+                        rdfs:label "has stand development"@en .
 
 
 ###  https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasSystem
