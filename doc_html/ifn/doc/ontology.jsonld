@@ -2021,6 +2021,7 @@
     "@language" : "en",
     "@value" : "Ontology to publish data of the Spanish National Forest inventory"
   }, {
+    "@language" : "es",
     "@value" : "Ontología para publicar datos del Inventario Forestal Nacional de España"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -21544,7 +21545,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "containsSpecies"
+    "@value" : "contains species"
+  }, {
+    "@language" : "es",
+    "@value" : "contiene especie"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpecies"
@@ -21556,6 +21560,9 @@
   "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesDetail",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contains detailed information about species"
+  }, {
     "@language" : "es",
     "@value" : "contiene información detallada sobre especies"
   } ],
@@ -21569,6 +21576,9 @@
   "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcEspParc",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contains information about species from PcEspParc table"
+  }, {
     "@language" : "es",
     "@value" : "contiene información sobre especies de la tabla PcEspParc"
   } ],
@@ -21582,6 +21592,9 @@
   "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcMatorral",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contains information about species from PcMatorral table"
+  }, {
     "@language" : "es",
     "@value" : "contiene información sobre especies de la tabla PcMatorral"
   } ],
@@ -21595,6 +21608,9 @@
   "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcRegenera",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contains information about species from PcRegenera table"
+  }, {
     "@language" : "es",
     "@value" : "contiene información sobre especies de la tabla PcRegenera"
   } ],
@@ -21612,6 +21628,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
+    "@value" : "contains information about species in a plot"
+  }, {
+    "@language" : "es",
     "@value" : "contiene información sobre especies en una parcela"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
@@ -21628,6 +21647,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
+    "@value" : "contains information about species in a province"
+  }, {
+    "@language" : "es",
     "@value" : "contiene información sobre especies en una provincia"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
@@ -21644,6 +21666,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
+    "@value" : "contains information about species in a stratum"
+  }, {
+    "@language" : "es",
     "@value" : "contiene información sobre especies en un estrato"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
@@ -21682,7 +21707,7 @@
     "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
+    "@language" : "en",
     "@value" : "has age"
   }, {
     "@language" : "es",
@@ -21711,7 +21736,7 @@
     "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
+    "@language" : "en",
     "@value" : "age in years"
   }, {
     "@language" : "es",
@@ -22104,6 +22129,7 @@
   "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasDiametricClass",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
     "@value" : "tiene clase diamétrica"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
@@ -22304,8 +22330,8 @@
     "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : ""
+    "@language" : "en",
+    "@value" : "has occupation of species"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/OccupationOfSpecies"
@@ -22326,7 +22352,7 @@
     "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
+    "@language" : "en",
     "@value" : "has origin"
   }, {
     "@language" : "es",
@@ -22452,8 +22478,8 @@
     "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : ""
+    "@language" : "en",
+    "@value" : "has stand development"
   } ]
 }, {
   "@id" : "https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasSystem",

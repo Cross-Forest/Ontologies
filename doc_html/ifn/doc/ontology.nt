@@ -6,7 +6,7 @@
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> <http://purl.org/dc/elements/1.1/date> "2019-07-17"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ifn" .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology to publish data of the Spanish National Forest inventory"@en .
-<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontología para publicar datos del Inventario Forestal Nacional de España" .
+<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontología para publicar datos del Inventario Forestal Nacional de España"@es .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> <http://www.w3.org/2000/01/rdf-schema#label> "Ontología del IFN de España"@es .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> <http://www.w3.org/2000/01/rdf-schema#label> "Spanish IFN Ontology"@en .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/documentador_bdcampo_ifn3_tcm30-282240.pdf> .
@@ -137,30 +137,35 @@
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://crossforest.eu/ifi/ontology/containsDominantFormation> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies> <http://www.w3.org/2000/01/rdf-schema#range> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpecies> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> .
-<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "containsSpecies"@en .
+<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "contains species"@en .
+<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "contiene especie"@es .
 # 
 # https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesDetail
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesDetail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesDetail> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesDetail> <http://www.w3.org/2000/01/rdf-schema#range> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpeciesDetalle> .
+<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesDetail> <http://www.w3.org/2000/01/rdf-schema#label> "contains detailed information about species"@en .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesDetail> <http://www.w3.org/2000/01/rdf-schema#label> "contiene información detallada sobre especies"@es .
 # 
 # https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcEspParc
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcEspParc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcEspParc> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcEspParc> <http://www.w3.org/2000/01/rdf-schema#range> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpeciesPcEspParc> .
+<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcEspParc> <http://www.w3.org/2000/01/rdf-schema#label> "contains information about species from PcEspParc table"@en .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcEspParc> <http://www.w3.org/2000/01/rdf-schema#label> "contiene información sobre especies de la tabla PcEspParc"@es .
 # 
 # https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcMatorral
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcMatorral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcMatorral> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcMatorral> <http://www.w3.org/2000/01/rdf-schema#range> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpeciesPcMatorral> .
+<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcMatorral> <http://www.w3.org/2000/01/rdf-schema#label> "contains information about species from PcMatorral table"@en .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcMatorral> <http://www.w3.org/2000/01/rdf-schema#label> "contiene información sobre especies de la tabla PcMatorral"@es .
 # 
 # https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcRegenera
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcRegenera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcRegenera> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcRegenera> <http://www.w3.org/2000/01/rdf-schema#range> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpeciesPcRegenera> .
+<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcRegenera> <http://www.w3.org/2000/01/rdf-schema#label> "contains information about species from PcRegenera table"@en .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcRegenera> <http://www.w3.org/2000/01/rdf-schema#label> "contiene información sobre especies de la tabla PcRegenera"@es .
 # 
 # https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPlot
@@ -168,21 +173,24 @@
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPlot> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPlot> <http://www.w3.org/2000/01/rdf-schema#range> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpeciesPlot> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPlot> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> .
-<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPlot> <http://www.w3.org/2000/01/rdf-schema#label> "contiene información sobre especies en una parcela"@en .
+<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPlot> <http://www.w3.org/2000/01/rdf-schema#label> "contains information about species in a plot"@en .
+<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPlot> <http://www.w3.org/2000/01/rdf-schema#label> "contiene información sobre especies en una parcela"@es .
 # 
 # https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesProv
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesProv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesProv> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesProv> <http://www.w3.org/2000/01/rdf-schema#range> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpeciesProv> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesProv> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> .
-<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesProv> <http://www.w3.org/2000/01/rdf-schema#label> "contiene información sobre especies en una provincia"@en .
+<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesProv> <http://www.w3.org/2000/01/rdf-schema#label> "contains information about species in a province"@en .
+<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesProv> <http://www.w3.org/2000/01/rdf-schema#label> "contiene información sobre especies en una provincia"@es .
 # 
 # https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesStratum
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesStratum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesStratum> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesStratum> <http://www.w3.org/2000/01/rdf-schema#range> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpeciesEstrato> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesStratum> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> .
-<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesStratum> <http://www.w3.org/2000/01/rdf-schema#label> "contiene información sobre especies en un estrato"@en .
+<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesStratum> <http://www.w3.org/2000/01/rdf-schema#label> "contains information about species in a stratum"@en .
+<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesStratum> <http://www.w3.org/2000/01/rdf-schema#label> "contiene información sobre especies en un estrato"@es .
 # 
 # https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasAcceptedName
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasAcceptedName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -198,7 +206,7 @@
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Age of trees in a plot"@en .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Edad en años en las formas coetáneas y regulares"@es .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasAge> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> .
-<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasAge> <http://www.w3.org/2000/01/rdf-schema#label> "has age"@es .
+<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasAge> <http://www.w3.org/2000/01/rdf-schema#label> "has age"@en .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasAge> <http://www.w3.org/2000/01/rdf-schema#label> "tiene edad"@es .
 # 
 # https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasAgeInYears
@@ -207,7 +215,7 @@
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasAgeInYears> <http://www.w3.org/2000/01/rdf-schema#comment> "Age in years"@en .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasAgeInYears> <http://www.w3.org/2000/01/rdf-schema#comment> "Edad en años en las formas coetáneas y regulares"@es .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasAgeInYears> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> .
-<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasAgeInYears> <http://www.w3.org/2000/01/rdf-schema#label> "age in years"@es .
+<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasAgeInYears> <http://www.w3.org/2000/01/rdf-schema#label> "age in years"@en .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasAgeInYears> <http://www.w3.org/2000/01/rdf-schema#label> "edad en años"@es .
 # 
 # https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasAverageHeight
@@ -279,7 +287,7 @@
 # https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasDiametricClass
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasDiametricClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasDiametricClass> <http://www.w3.org/2000/01/rdf-schema#range> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/ClaseDiametrica> .
-<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasDiametricClass> <http://www.w3.org/2000/01/rdf-schema#label> "tiene clase diamétrica" .
+<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasDiametricClass> <http://www.w3.org/2000/01/rdf-schema#label> "tiene clase diamétrica"@es .
 # 
 # https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasDominantSpecies
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasDominantSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -343,7 +351,7 @@
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasOccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasOccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasOccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> .
-<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasOccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasOccupationOfSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "has occupation of species"@en .
 # 
 # https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasOccupationOrder
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasOccupationOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -354,7 +362,7 @@
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpecies> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Origin> .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> .
-<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "has origin"@es .
+<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "has origin"@en .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "tiene origen"@es .
 # 
 # https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasOriginalSpecies
@@ -394,7 +402,7 @@
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasStandDevelopment> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasStandDevelopment> <http://www.w3.org/2000/01/rdf-schema#comment> ""@es .
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasStandDevelopment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/> .
-<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasStandDevelopment> <http://www.w3.org/2000/01/rdf-schema#label> ""@es .
+<https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasStandDevelopment> <http://www.w3.org/2000/01/rdf-schema#label> "has stand development"@en .
 # 
 # https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasSystem
 <https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

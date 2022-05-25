@@ -21,7 +21,7 @@
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-17</dc:date>
         <vann:preferredNamespacePrefix>ifn</vann:preferredNamespacePrefix>
         <rdfs:comment xml:lang="en">Ontology to publish data of the Spanish National Forest inventory</rdfs:comment>
-        <rdfs:comment>Ontología para publicar datos del Inventario Forestal Nacional de España</rdfs:comment>
+        <rdfs:comment xml:lang="es">Ontología para publicar datos del Inventario Forestal Nacional de España</rdfs:comment>
         <rdfs:label xml:lang="es">Ontología del IFN de España</rdfs:label>
         <rdfs:label xml:lang="en">Spanish IFN Ontology</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/documentador_bdcampo_ifn3_tcm30-282240.pdf"/>
@@ -274,7 +274,8 @@
         <rdfs:subPropertyOf rdf:resource="http://crossforest.eu/ifi/ontology/containsDominantFormation"/>
         <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpecies"/>
         <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/"/>
-        <rdfs:label xml:lang="en">containsSpecies</rdfs:label>
+        <rdfs:label xml:lang="en">contains species</rdfs:label>
+        <rdfs:label xml:lang="es">contiene especie</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -285,6 +286,7 @@
     <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesDetail">
         <rdfs:subPropertyOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies"/>
         <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpeciesDetalle"/>
+        <rdfs:label xml:lang="en">contains detailed information about species</rdfs:label>
         <rdfs:label xml:lang="es">contiene información detallada sobre especies</rdfs:label>
     </owl:ObjectProperty>
     
@@ -296,6 +298,7 @@
     <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcEspParc">
         <rdfs:subPropertyOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies"/>
         <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpeciesPcEspParc"/>
+        <rdfs:label xml:lang="en">contains information about species from PcEspParc table</rdfs:label>
         <rdfs:label xml:lang="es">contiene información sobre especies de la tabla PcEspParc</rdfs:label>
     </owl:ObjectProperty>
     
@@ -307,6 +310,7 @@
     <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcMatorral">
         <rdfs:subPropertyOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies"/>
         <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpeciesPcMatorral"/>
+        <rdfs:label xml:lang="en">contains information about species from PcMatorral table</rdfs:label>
         <rdfs:label xml:lang="es">contiene información sobre especies de la tabla PcMatorral</rdfs:label>
     </owl:ObjectProperty>
     
@@ -318,6 +322,7 @@
     <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpeciesPcRegenera">
         <rdfs:subPropertyOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies"/>
         <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpeciesPcRegenera"/>
+        <rdfs:label xml:lang="en">contains information about species from PcRegenera table</rdfs:label>
         <rdfs:label xml:lang="es">contiene información sobre especies de la tabla PcRegenera</rdfs:label>
     </owl:ObjectProperty>
     
@@ -330,7 +335,8 @@
         <rdfs:subPropertyOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies"/>
         <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpeciesPlot"/>
         <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/"/>
-        <rdfs:label xml:lang="en">contiene información sobre especies en una parcela</rdfs:label>
+        <rdfs:label xml:lang="en">contains information about species in a plot</rdfs:label>
+        <rdfs:label xml:lang="es">contiene información sobre especies en una parcela</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -342,7 +348,8 @@
         <rdfs:subPropertyOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies"/>
         <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpeciesProv"/>
         <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/"/>
-        <rdfs:label xml:lang="en">contiene información sobre especies en una provincia</rdfs:label>
+        <rdfs:label xml:lang="en">contains information about species in a province</rdfs:label>
+        <rdfs:label xml:lang="es">contiene información sobre especies en una provincia</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -354,7 +361,8 @@
         <rdfs:subPropertyOf rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/containsSpecies"/>
         <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpeciesEstrato"/>
         <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/"/>
-        <rdfs:label xml:lang="en">contiene información sobre especies en un estrato</rdfs:label>
+        <rdfs:label xml:lang="en">contains information about species in a stratum</rdfs:label>
+        <rdfs:label xml:lang="es">contiene información sobre especies en un estrato</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -380,7 +388,7 @@
         <rdfs:comment xml:lang="en">Age of trees in a plot</rdfs:comment>
         <rdfs:comment xml:lang="es">Edad en años en las formas coetáneas y regulares</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/"/>
-        <rdfs:label xml:lang="es">has age</rdfs:label>
+        <rdfs:label xml:lang="en">has age</rdfs:label>
         <rdfs:label xml:lang="es">tiene edad</rdfs:label>
     </owl:ObjectProperty>
     
@@ -394,7 +402,7 @@
         <rdfs:comment xml:lang="en">Age in years</rdfs:comment>
         <rdfs:comment xml:lang="es">Edad en años en las formas coetáneas y regulares</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/"/>
-        <rdfs:label xml:lang="es">age in years</rdfs:label>
+        <rdfs:label xml:lang="en">age in years</rdfs:label>
         <rdfs:label xml:lang="es">edad en años</rdfs:label>
     </owl:ObjectProperty>
     
@@ -517,7 +525,7 @@
 
     <owl:ObjectProperty rdf:about="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/hasDiametricClass">
         <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/ClaseDiametrica"/>
-        <rdfs:label>tiene clase diamétrica</rdfs:label>
+        <rdfs:label xml:lang="es">tiene clase diamétrica</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -632,7 +640,7 @@
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es"></rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/"/>
-        <rdfs:label xml:lang="es"></rdfs:label>
+        <rdfs:label xml:lang="en">has occupation of species</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -652,7 +660,7 @@
         <rdfs:domain rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/InfoSpecies"/>
         <rdfs:range rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Origin"/>
         <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/"/>
-        <rdfs:label xml:lang="es">has origin</rdfs:label>
+        <rdfs:label xml:lang="en">has origin</rdfs:label>
         <rdfs:label xml:lang="es">tiene origen</rdfs:label>
     </owl:ObjectProperty>
     
@@ -728,7 +736,7 @@
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="es"></rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/"/>
-        <rdfs:label xml:lang="es"></rdfs:label>
+        <rdfs:label xml:lang="en">has stand development</rdfs:label>
     </owl:ObjectProperty>
     
 
